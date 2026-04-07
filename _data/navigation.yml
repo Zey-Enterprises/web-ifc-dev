@@ -1,0 +1,19 @@
+main:
+#  - title: "Home"
+#    url: /
+  - title: "Approach"
+    url: /approach/
+  - title: "Resources"
+    url: /resources/
+  - title: "Media"
+    url: /media/
+  - title: "About"
+    url: /about/
+  - title: "Results"
+    url: /results/
+  - title: "FAQ"
+    url: /faq/
+  - title: "Pricing"
+    url: /pricing/
+  - title: "Apply"
+    url: /apply/

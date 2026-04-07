@@ -1,0 +1,45 @@
+{% comment %}
+  Front matter contract for include hero=page.hero_image:
+
+  hero_image:
+    image: /assets/images/example.jpg
+    kicker: Optional short uppercase line above the headline
+    headline: Main hero headline
+    lead: Optional supporting copy
+    background_position: center
+    mobile_background_position: center 0px
+
+  background_position and mobile_background_position accept any valid CSS
+  background-position value. Common examples:
+  - center
+  - center top
+  - center 20%
+  - 65% center
+  - center -10px
+  - right 24px top 10px
+
+  Practical rule of thumb:
+  - Use the first value to move left/right.
+  - Use the second value to move up/down.
+  - Negative vertical pixel values move the image up inside the hero.
+  - Positive vertical pixel values move the image down inside the hero.
+{% endcomment %}
+{% assign hero = include.hero %}
+{% if hero and hero.image %}
+  <div
+    class="page__hero--overlay ifc-page-hero"
+    style="--ifc-page-hero-position: {{ hero.background_position | default: 'center' }};{% if hero.mobile_background_position %} --ifc-page-hero-mobile-position: {{ hero.mobile_background_position }};{% endif %} background-image: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24)), url('{{ hero.image | relative_url }}');"
+  >
+    <div class="wrapper">
+      {% if hero.kicker %}
+        <p class="ifc-kicker ifc-kicker--overlay">{{ hero.kicker }}</p>
+      {% endif %}
+      {% if hero.headline %}
+        <h1 class="page__title">{{ hero.headline }}</h1>
+      {% endif %}
+      {% if hero.lead %}
+        <p class="page__lead">{{ hero.lead }}</p>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

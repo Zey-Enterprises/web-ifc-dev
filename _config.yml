@@ -1,0 +1,150 @@
+# Integrated Fitness Coaching
+# Keep this file small and descriptive so future edits stay easy to reason about.
+
+title: "Integrated Fitness Coaching"
+title_separator: " | "
+description: "Integrated coaching for physical capability, nutrition, emotional steadiness, and intellectual self-direction."
+url: "https://www.integratedfitnesscoaching.com"
+baseurl: ""
+repository: "zey-enterprises/web-ifc"
+timezone: "America/Denver"
+locale: "en-US"
+permalink: /:categories/:title/
+
+logo: "/assets/images/ifc-logo.png"
+masthead_title: "Integrated Fitness Coaching"
+minimal_mistakes_skin: "air"
+search: true
+
+remote_theme: "mmistakes/minimal-mistakes@4.27.1"
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+include:
+  - _pages
+
+collections:
+  guides:
+    output: true
+    permalink: /resources/guides/:slug/
+  testimonials:
+    output: true
+    permalink: /results/testimonials/:slug/
+  case_studies:
+    output: true
+    permalink: /results/case-studies/:slug/
+  media:
+    output: true
+    permalink: /media/library/:slug/
+  faqs:
+    output: true
+    permalink: /faq/library/:slug/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: false
+      classes: wide
+      show_date: false
+      toc: false
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      permalink: /resources/articles/:slug/
+      classes: wide
+      show_date: true
+      read_time: true
+      share: false
+  - scope:
+      path: ""
+      type: guides
+    values:
+      layout: single
+      classes: wide
+      share: false
+  - scope:
+      path: ""
+      type: testimonials
+    values:
+      layout: single
+      classes: wide
+      share: false
+  - scope:
+      path: ""
+      type: case_studies
+    values:
+      layout: single
+      classes: wide
+      share: false
+  - scope:
+      path: ""
+      type: media
+    values:
+      layout: single
+      classes: wide
+      share: false
+  - scope:
+      path: ""
+      type: faqs
+    values:
+      layout: single
+      classes: wide
+      share: false
+
+author:
+  name: "Arthur Zey"
+  avatar: "/assets/images/arthurzey-avatar.jpg"
+  bio: "Integrated fitness coach focused on sustainable body composition, capability, recovery, and practical self-direction."
+  links:
+    - label: "Apply"
+      icon: "fas fa-arrow-right"
+      url: "/apply/"
+    - label: "Resources"
+      icon: "fas fa-book-open"
+      url: "/resources/"
+
+footer:
+  links:
+    - label: "Apply"
+      icon: "fas fa-arrow-right"
+      url: "/apply/"
+    - label: "Instagram"
+      icon: "fab fa-instagram"
+      url: "https://www.instagram.com/"
+    - label: "YouTube"
+      icon: "fab fa-youtube"
+      url: "https://www.youtube.com/"
+    - label: "Facebook"
+      icon: "fab fa-facebook"
+      url: "https://www.facebook.com/"
+
+atom_feed:
+  hide: true
+
+sass:
+  style: compressed
+
+category_archive:
+  type: liquid
+  path: /categories/
+
+tag_archive:
+  type: liquid
+  path: /tags/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false

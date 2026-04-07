@@ -1,0 +1,90 @@
+---
+title: "Pricing"
+permalink: /pricing/
+description: "Integrated coaching packages, add-ons, and delivery options."
+---
+
+The pricing structure is built around one integrated coaching relationship rather than separate line items for nutrition, training, mindfulness, or intellectual coaching. In practice, that works better than fragmenting the work into disconnected silos.
+
+The basic structure is a monthly retainer with clearly defined scope, plus optional add-ons when you want in-person work or extra time beyond the normal package. That model is common in remote fitness coaching and life coaching, while hourly add-ons are a practical carryover from tutoring and consulting.
+
+## Coaching tiers
+
+<div class="ifc-grid">
+  <div class="ifc-panel">
+    <h3>Foundation</h3>
+    <p><strong>$295/month</strong></p>
+    <p>Best for clients with one clear primary focus who still want an integrated lens.</p>
+    <ul>
+      <li>Initial assessment and strategic plan</li>
+      <li>1 live coaching session per month (up to 45 minutes)</li>
+      <li>Weekly check-in and plan adjustments</li>
+      <li>Text or email accountability and support</li>
+      <li>Training, nutrition, mindfulness, or intellectual support as needed within the package scope</li>
+    </ul>
+  </div>
+  <div class="ifc-panel">
+    <h3>Integrated</h3>
+    <p><strong>$495/month</strong></p>
+    <p>The best fit for most clients who want steady progress and broader support across multiple areas.</p>
+    <ul>
+      <li>Everything in Foundation</li>
+      <li>2 live coaching sessions per month (up to 45 minutes each)</li>
+      <li>Deeper review of adherence, decision-making, and obstacles</li>
+      <li>More active support for habit change, emotional steadiness, and course correction</li>
+    </ul>
+  </div>
+  <div class="ifc-panel">
+    <h3>Intensive</h3>
+    <p><strong>$795/month</strong></p>
+    <p>For clients with demanding goals, complex schedules, or a need for higher-touch support.</p>
+    <ul>
+      <li>Everything in Integrated</li>
+      <li>4 live coaching sessions per month (up to 45 minutes each), or the equivalent amount of scheduled live time</li>
+      <li>Priority response and closer support during demanding phases</li>
+      <li>Best for aggressive short-term sprints, high-accountability needs, or unusually complex situations</li>
+    </ul>
+  </div>
+</div>
+
+## Add-ons
+
+<div class="ifc-grid">
+  <div class="ifc-panel">
+    <h3>In-person session</h3>
+    <p><strong>$95 per 60-minute session</strong></p>
+    <p>Available only for clients within about a 30-minute drive of Bailey, Colorado.</p>
+  </div>
+  <div class="ifc-panel">
+    <h3>Additional live time</h3>
+    <p><strong>$50 per additional 30 minutes</strong></p>
+    <p>Useful if you want extra virtual discussion, review, or support beyond the included monthly session time.</p>
+  </div>
+  <div class="ifc-panel">
+    <h3>Demanding sprint support</h3>
+    <p><strong>Quoted as needed</strong></p>
+    <p>For unusually high-touch short periods such as travel-heavy phases, competition prep, or concentrated habit-reset work.</p>
+  </div>
+</div>
+
+## What is not included
+
+The cost of external apps, tools, services, subscriptions, gym memberships, labs, devices, meal services, or books is not included in coaching fees. If I recommend something like RP Hypertrophy, RP Diet Coach, Headspace, or a reading list, those costs remain separate.
+
+## Why these tiers make sense
+
+The pricing is intentionally positioned between lower-cost remote fitness subscriptions and higher-touch coaching or tutoring arrangements. As of April 6, 2026, public pricing examples include [Future at $199/month](https://www.future.co/squaredance50p), while Wyzant publicly shows many tutors averaging around [$35 to $60 per hour](https://www.wyzant.com/Florida_tutors.aspx), and Noomii notes that life coaches commonly use [monthly packages rather than only per-session billing](https://www.noomii.com/life-coaching). That combination supports a structure like this one: monthly retainers for continuity and accountability, with hourly-style add-ons when extra time is needed.
+
+## Which tier to choose
+
+- Choose `Foundation` if you have one main goal and want a lean, disciplined structure.
+- Choose `Integrated` if you want the best balance of depth, accountability, and flexibility.
+- Choose `Intensive` if you want close support, faster iteration, or help through a more demanding season.
+
+If you are not sure, apply and describe your situation. I can recommend the most appropriate starting tier.
+
+<div class="ifc-panel">
+  <h2>Next step</h2>
+  <p>If the structure looks right, the next move is to read the [FAQ](/faq/) if you still have questions, or [apply](/apply/) if you are ready to start.</p>
+  <p><a class="ifc-button" href="/apply/">Apply for coaching</a></p>
+</div>

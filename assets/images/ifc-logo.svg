@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="ifcLogoTitle ifcLogoDesc">
+  <title id="ifcLogoTitle">Integrated Fitness Coaching logo</title>
+  <desc id="ifcLogoDesc">A triquetra-style emblem with symbols for training, nutrition, mind, and mindfulness.</desc>
+  <rect width="1024" height="1024" fill="#000"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="512" cy="535" r="376" stroke="#1f537e" stroke-width="20"/>
+    <circle cx="512" cy="535" r="331" stroke="#f4f2ea" stroke-width="18"/>
+    <path d="M513 107 816 646H208Z" stroke="#f4f2ea" stroke-width="18"/>
+    <path d="M260 687c23-176 121-288 252-384 129 96 227 208 252 384" stroke="#f4f2ea" stroke-width="18"/>
+    <path d="M163 678c89-134 215-214 349-214s260 80 349 214" stroke="#f4f2ea" stroke-width="18"/>
+    <path d="M512 83 838 664" stroke="#4fb4f5" stroke-width="16"/>
+    <path d="M186 664 512 83" stroke="#4fb4f5" stroke-width="16"/>
+    <path d="M163 678h698" stroke="#4fb4f5" stroke-width="14"/>
+    <path d="M278 273c91-48 158-66 234-66 76 0 143 18 234 66" stroke="#1f537e" stroke-width="16"/>
+    <path d="M263 684c71-137 173-214 249-278 76 64 178 141 249 278" stroke="#1f537e" stroke-width="16"/>
+    <path d="M207 514c86-91 190-136 305-136 114 0 219 45 305 136" stroke="#1f537e" stroke-width="16"/>
+  </g>
+  <g transform="translate(440 320)" fill="none" stroke="#4fb4f5" stroke-linecap="round">
+    <path d="M20 24h104" stroke-width="18"/>
+    <path d="M56 0v48" stroke-width="14"/>
+    <path d="M88 0v48" stroke-width="14"/>
+    <path d="M0 24h20M124 24h20" stroke-width="10"/>
+    <path d="M-8 24h-10M142 24h10" stroke-width="10"/>
+  </g>
+  <g transform="translate(412 374)" fill="#4fb4f5">
+    <circle cx="100" cy="54" r="26"/>
+    <path d="M50 112c28-28 53-38 100-38s72 10 100 38l-10 25c-17-11-33-16-50-16h-18v88h-20v-52h-20v52h-20v-88h-18c-17 0-33 5-50 16z"/>
+    <path d="M42 148c22 24 58 38 96 38s74-14 96-38l-4 26c-15 25-49 42-92 42s-77-17-92-42z"/>
+  </g>
+  <g transform="translate(252 606)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="73" cy="37" rx="67" ry="42" stroke="#4f96d8" stroke-width="10"/>
+    <ellipse cx="62" cy="37" rx="24" ry="18" stroke="#4f96d8" stroke-width="8"/>
+    <path d="M25 62c25 17 68 19 105 5" stroke="#1f537e" stroke-width="8"/>
+  </g>
+  <g transform="translate(646 606)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 42c0-25 21-42 46-42 19 0 32 8 41 22 8-4 16-6 24-6 34 0 56 24 56 50 0 27-23 48-51 48H62C33 114 14 84 14 42Z" stroke="#4fb4f5" stroke-width="12"/>
+    <path d="M72 76c10-12 19-20 32-26" stroke="#1f537e" stroke-width="9"/>
+  </g>
+  <g transform="translate(452 796)" fill="none" stroke="#4fb4f5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 0c-18 18-28 36-28 55 0 19 12 34 28 46 16-12 28-27 28-46 0-19-10-37-28-55Z" stroke-width="8"/>
+    <path d="M60 25c-36 9-58 36-58 66 16-8 31-12 45-12 4-14 7-27 13-39 6 12 9 25 13 39 14 0 29 4 45 12 0-30-22-57-58-66Z" stroke-width="8"/>
+  </g>
+</svg>
