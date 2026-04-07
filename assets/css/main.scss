@@ -191,12 +191,24 @@ body {
 
 .page__hero--overlay.ifc-page-hero {
   position: relative;
+  isolation: isolate;
   width: 100vw;
   min-height: clamp(22rem, 46vw, 34rem);
   margin: 0 0 2.25rem calc(50% - 50vw);
+  overflow: clip;
+  background-image: var(--ifc-page-hero-image);
   background-position: var(--ifc-page-hero-position, center);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.page__hero--overlay.ifc-page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24));
+  pointer-events: none;
 }
 
 .page__hero--overlay .wrapper {

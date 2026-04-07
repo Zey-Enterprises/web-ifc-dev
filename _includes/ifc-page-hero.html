@@ -28,7 +28,7 @@
 {% if hero and hero.image %}
   <div
     class="page__hero--overlay ifc-page-hero"
-    style="--ifc-page-hero-position: {{ hero.background_position | default: 'center' }};{% if hero.mobile_background_position %} --ifc-page-hero-mobile-position: {{ hero.mobile_background_position }};{% endif %} background-image: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24)), url('{{ hero.image | relative_url }}');"
+    style="--ifc-page-hero-image: url('{{ hero.image | relative_url }}'); --ifc-page-hero-position: {{ hero.background_position | default: 'center' }};{% if hero.mobile_background_position %} --ifc-page-hero-mobile-position: {{ hero.mobile_background_position }};{% endif %}"
   >
     <div class="wrapper">
       {% if hero.kicker %}
