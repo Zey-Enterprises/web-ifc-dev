@@ -1740,11 +1740,6 @@ body.ifc-toc-widget--overlay-open {
     border-radius: 1.15rem;
   }
 
-  .ifc-toc-widget[data-open="true"] .ifc-toc-widget__toggle {
-    opacity: 0;
-    pointer-events: none;
-  }
-
   .ifc-toc-widget__panel-header {
     padding: 1rem 1rem 0.8rem;
   }
