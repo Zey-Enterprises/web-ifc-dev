@@ -12,8 +12,6 @@ hero_image:
   lead: The goal of this section is to become a durable library rather than a stream of disposable content. It is organized so guides, articles, and media can grow over time without making the site harder to manage.
 ---
 
-{% include ifc-page-hero.html hero=page.hero_image %}
-
 ## Topic pathways
 
 <div class="ifc-topic-grid">

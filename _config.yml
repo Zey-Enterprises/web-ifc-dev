@@ -70,6 +70,7 @@ defaults:
     values:
       layout: single
       classes: wide
+      read_time: true
       share: false
   - scope:
       path: ""

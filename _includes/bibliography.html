@@ -1,0 +1,82 @@
+{% comment %}
+Render an in-page bibliography from the current page's front matter citation map.
+
+Purpose:
+- Produce a semantic references section tied to the same `_data/citation.json` source
+  used by `citation.html`.
+- Keep citation numbering/labels local to each page while preserving canonical source
+  records centrally.
+
+Parameters:
+- `style`: optional citation style. Defaults to `site`. `chicago` currently aliases to
+  the same renderer but is accepted intentionally as a future extension point.
+- `title`: optional section heading override. Defaults to `References`.
+- `class`: optional extra root class names.
+
+Supported page front matter:
+- Hash mapping:
+  ---
+  citations:
+    "1": hall-2022-metabolism
+    "2": schoenfeld-2018-protein
+  ---
+
+- Ordered array:
+  ---
+  citations:
+    - label: "1"
+      id: hall-2022-metabolism
+    - label: "2"
+      id: schoenfeld-2018-protein
+  ---
+
+Example usage:
+- `{% include bibliography.html %}`
+- `{% include bibliography.html style="chicago" %}`
+
+Notes:
+- Pages without `citations` quietly render nothing.
+- Missing source IDs are surfaced inline so broken mappings are visible during review.
+{% endcomment %}
+
+{% assign style_name = include.style | default: "site" %}
+{% assign bibliography_class = include.class | default: "" | strip %}
+
+{% if page.citations %}
+  <section class="ifc-bibliography{% if bibliography_class != "" %} {{ bibliography_class }}{% endif %}" data-bibliography>
+    <h2 class="ifc-bibliography__title">{{ include.title | default: "References" }}</h2>
+    <ol class="ifc-bibliography__list">
+      {% if page.citations.first and page.citations.first.label %}
+        {% for citation_entry in page.citations %}
+          {% assign source = site.data.citation[citation_entry.id] %}
+          <li class="ifc-bibliography__item" id="reference-{{ citation_entry.label | slugify }}">
+            <span class="ifc-bibliography__label">{{ citation_entry.label }}</span>
+            <span class="ifc-bibliography__content">
+              {% if source %}
+                {% include _citation_reference.html source=source style=style_name context="bibliography" %}
+              {% else %}
+                <span class="ifc-bibliography__missing">Missing citation source: {{ citation_entry.id }}</span>
+              {% endif %}
+            </span>
+          </li>
+        {% endfor %}
+      {% else %}
+        {% for citation_pair in page.citations %}
+          {% assign label = citation_pair[0] %}
+          {% assign source_id = citation_pair[1] %}
+          {% assign source = site.data.citation[source_id] %}
+          <li class="ifc-bibliography__item" id="reference-{{ label | slugify }}">
+            <span class="ifc-bibliography__label">{{ label }}</span>
+            <span class="ifc-bibliography__content">
+              {% if source %}
+                {% include _citation_reference.html source=source style=style_name context="bibliography" %}
+              {% else %}
+                <span class="ifc-bibliography__missing">Missing citation source: {{ source_id }}</span>
+              {% endif %}
+            </span>
+          </li>
+        {% endfor %}
+      {% endif %}
+    </ol>
+  </section>
+{% endif %}

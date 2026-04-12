@@ -12,8 +12,6 @@ hero_image:
   lead: Placeholder supporting copy goes here for now. This can summarize how body, mind, and spirit are developed together through clear principles, practical execution, and long-term coaching.
 ---
 
-{% include ifc-page-hero.html hero=page.hero_image %}
-
 Arthur Zey is the coach behind Integrated Fitness Coaching, a practice built around sustainable improvement in physical capability, nutrition, emotional steadiness, and intellectual self-direction. His work is informed by systems thinking, product discipline, and a strong commitment to treating fitness as part of a broader human life rather than an isolated body project.
 
 The term <em>integrated</em> is deliberate. It refers to the overlap between physical action, psychological regulation, and philosophical orientation. Human beings do not improve in one domain in total isolation from the others.

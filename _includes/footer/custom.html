@@ -7,3 +7,16 @@
     </div>
   </div>
 </section>
+<script>
+  window.IFC_ANNOTATIONS = window.IFC_ANNOTATIONS || {};
+  window.IFC_ANNOTATIONS.glossary = {{ site.data.glossary | jsonify }};
+  window.IFC_ANNOTATIONS.citation = {{ site.data.citation | jsonify }};
+  window.IFC_ANNOTATIONS.pageCitations = {{ page.citations | default: empty | jsonify }};
+</script>
+<script src="{{ '/assets/js/annotations.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/heading-permalinks.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/toc-widget.js' | relative_url }}"></script>
+{% assign reading_time_collections = "posts|guides" | split: "|" %}
+{% if page.read_time and reading_time_collections contains page.collection %}
+  <script src="{{ '/assets/js/reading-time.js' | relative_url }}"></script>
+{% endif %}

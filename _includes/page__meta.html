@@ -1,0 +1,31 @@
+{%- assign date_format = site.date_format | default: "%B %-d, %Y" -%}
+{%- assign reading_time_collections = "posts|guides" | split: "|" -%}
+{%- assign show_read_time = false -%}
+
+{%- if page.read_time and reading_time_collections contains page.collection -%}
+  {%- assign show_read_time = true -%}
+{%- endif -%}
+
+{%- if show_read_time or (page.show_date and page.date) -%}
+  <p class="page__meta">
+    {%- if page.show_date and page.date -%}
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: date_format }}</time>
+      </span>
+    {%- endif -%}
+
+    {%- if show_read_time -%}
+      <span
+        class="page__meta-readtime"
+        data-reading-time
+        data-reading-time-body-selector=".page__content"
+        hidden
+        aria-hidden="true"
+      >
+        <i class="far fa-clock" aria-hidden="true"></i>
+        <span data-reading-time-label></span>
+      </span>
+    {%- endif -%}
+  </p>
+{%- endif -%}

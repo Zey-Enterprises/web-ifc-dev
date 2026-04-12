@@ -1,0 +1,16 @@
+{% comment %}
+Inline separator helper for adjacent citation markers.
+
+Purpose:
+- Provide a compact authoring helper when multiple citation includes need to appear
+  in one superscript run.
+- Avoid repeating the raw separator span markup in Markdown content.
+
+Usage:
+- `{% include citation.html label="3" %}{% include citation_sep.html %}{% include citation.html label="37" %}`
+
+Notes:
+- This renders only the visible comma marker.
+- Spacing around the separator is normalized by the shared annotation JavaScript.
+{% endcomment -%}
+<span class="ifc-citation-marker" aria-hidden="true">,</span>

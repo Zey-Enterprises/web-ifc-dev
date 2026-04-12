@@ -1,0 +1,145 @@
+{% comment %}
+Author-facing citation annotation include.
+
+Purpose:
+- Pull canonical citation records from `_data/citation.json`.
+- Resolve page-local labels such as `label="3"` through the current page's front matter
+  `citations` map or array when available.
+- Delegate all shared annotation markup and interaction hooks to `_annotation.html`.
+
+Parameters:
+- `label`: optional page-local citation label. Preferred for Jekyll 3 compatibility.
+- `n`: optional page-local citation label alias. Supported on a best-effort basis.
+- `id`: optional direct canonical citation ID fallback from `_data/citation.json`.
+- `text`: optional visible trigger text override. If omitted, numbered superscript
+  markers are used when a label exists.
+- `extra`: optional one-off appended content.
+- `style`: optional citation rendering style. Defaults to `site`.
+- `class`: optional extra root class names.
+
+Supported front matter structures:
+- Hash mapping, convenient for short numeric labels:
+  ---
+  citations:
+    "1": hall-2022-metabolism
+    "2": schoenfeld-2018-protein
+  ---
+
+- Ordered array, useful when you want explicit sequence control or non-numeric labels:
+  ---
+  citations:
+    - label: "1"
+      id: hall-2022-metabolism
+    - label: "2"
+      id: schoenfeld-2018-protein
+  ---
+
+Example usage:
+- `{% include citation.html label="3" %}`
+- `{% include citation.html label="3" extra="Cited here specifically for the adaptive thermogenesis discussion." %}`
+- `{% include citation.html id="hall-2022-metabolism" label="7" %}`
+
+Notes:
+- If both `id` and `label`/`n` are provided, the explicit `id` wins.
+- On Jekyll 3, `label` is the more reliable inline parameter and should be preferred in
+  authored content.
+- Citation links default to opening in a new tab. Data fields such as `url_newtab`,
+  `doi_newtab`, and `links[].newtab` can override that behavior.
+- The current default renderer is `site`; `chicago` is accepted as an alias so future
+  style-specific branches can be introduced without changing author syntax.
+{% endcomment %}
+
+{%- assign include_label = include.label -%}
+{%- assign include_n = include.n -%}
+{%- assign include_id = include.id -%}
+{%- assign include_text = include.text -%}
+{%- assign include_extra = include.extra -%}
+{%- assign include_class = include.class -%}
+{%- assign include_style = include.style -%}
+
+{%- for include_pair in include -%}
+  {%- assign include_key = include_pair[0] | append: "" -%}
+  {%- if include_key == "label" and include_label == blank -%}{%- assign include_label = include_pair[1] -%}{%- endif -%}
+  {%- if include_key == "n" and include_n == blank -%}{%- assign include_n = include_pair[1] -%}{%- endif -%}
+  {%- if include_key == "id" and include_id == blank -%}{%- assign include_id = include_pair[1] -%}{%- endif -%}
+  {%- if include_key == "text" and include_text == blank -%}{%- assign include_text = include_pair[1] -%}{%- endif -%}
+  {%- if include_key == "extra" and include_extra == blank -%}{%- assign include_extra = include_pair[1] -%}{%- endif -%}
+  {%- if include_key == "class" and include_class == blank -%}{%- assign include_class = include_pair[1] -%}{%- endif -%}
+  {%- if include_key == "style" and include_style == blank -%}{%- assign include_style = include_pair[1] -%}{%- endif -%}
+{%- endfor -%}
+
+{%- assign style_name = include_style | default: "site" -%}
+{%- assign citation_label = include_label | default: include_n | append: "" -%}
+{%- assign source_id = include_id -%}
+
+{%- if source_id == blank and citation_label != blank and page.citations -%}
+  {%- if page.citations.first and page.citations.first.label -%}
+    {%- capture resolved_source_id -%}
+      {%- for citation_entry in page.citations -%}
+        {%- assign entry_label = citation_entry.label | append: "" -%}
+        {%- if entry_label == citation_label -%}
+          {{- citation_entry.id -}}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endcapture -%}
+  {%- else -%}
+    {%- capture resolved_source_id -%}
+      {%- for citation_pair in page.citations -%}
+        {%- assign pair_label = citation_pair[0] | append: "" -%}
+        {%- if pair_label == citation_label -%}
+          {{- citation_pair[1] -}}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endcapture -%}
+  {%- endif -%}
+  {%- assign source_id = resolved_source_id | strip -%}
+{%- endif -%}
+
+{%- assign source = site.data.citation[source_id] -%}
+{%- assign display_text = include_text -%}
+
+{%- if source or citation_label != blank or include_id != blank -%}
+  {%- if display_text == blank -%}
+    {%- if citation_label != blank -%}
+      {%- capture display_text -%}<span class="ifc-citation-marker" aria-hidden="true">{{ citation_label }}</span><span class="screen-reader-text">Citation {{ citation_label }}</span>{%- endcapture -%}
+    {%- elsif source -%}
+      {%- assign display_text = source.short_title | default: source.title -%}
+    {%- else -%}
+      {%- assign display_text = "[citation]" -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if source -%}
+    {%- capture reference_html -%}{%- include _citation_reference.html source=source style=style_name context="popover" -%}{%- endcapture -%}
+    {%- capture body_html -%}
+      <span class="ifc-annotation__para ifc-annotation__lede ifc-annotation__lede--citation">{{ reference_html | strip }}</span>
+      {%- if source.quote -%}<span class="ifc-annotation__quote">{{ source.quote }}</span>{%- elsif source.excerpt -%}<span class="ifc-annotation__quote">{{ source.excerpt }}</span>{%- endif -%}
+      {%- if source.notes -%}<span class="ifc-annotation__para ifc-annotation__meta">{{ source.notes }}</span>{%- endif -%}
+    {%- endcapture -%}
+    {%- capture aria_label -%}Show citation{% if citation_label %} {{ citation_label }}{% endif %} for {{ source.short_title | default: source.title }}{%- endcapture -%}
+  {%- else -%}
+    {%- capture body_html -%}<span class="ifc-annotation__para ifc-annotation__lede ifc-annotation__lede--citation"></span>{%- endcapture -%}
+    {%- capture aria_label -%}Show citation{% if citation_label %} {{ citation_label }}{% endif %}{%- endcapture -%}
+  {%- endif -%}
+
+  {%- capture extra_html -%}{%- if include_extra -%}<span class="ifc-annotation__para">{{ include_extra }}</span>{%- endif -%}{%- endcapture -%}
+  {%- capture trigger_html -%}{{ display_text }}{%- endcapture -%}
+
+  {%- include _annotation.html
+    kind="citation"
+    trigger_html=trigger_html
+    eyebrow="Citation"
+    body_html=body_html
+    extra_html=extra_html
+    class=include_class
+    style=style_name
+    aria_label=aria_label
+    source_id=source_id
+    citation_label=citation_label
+  -%}
+{%- else -%}
+  {%- capture fallback_label -%}{% if display_text != blank %}{{ display_text }}{% elsif citation_label %}[{{ citation_label }}]{% elsif include_id %}{{ include_id }}{% else %}[citation]{% endif %}{%- endcapture -%}
+<span class="ifc-annotation ifc-annotation--missing" title="Missing citation entry{% if source_id %}: {{ source_id }}{% endif %}">{{ fallback_label | strip }}</span>
+{%- endif -%}

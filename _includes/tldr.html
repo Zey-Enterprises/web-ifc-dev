@@ -1,0 +1,49 @@
+{% comment %}
+Render an optional TL;DR card near the top of a page.
+
+Purpose:
+- Surface a short page summary from front matter without requiring manual Markdown
+  authoring on each page.
+- Reuse the same restrained card treatment as the bibliography so summary blocks and
+  references feel native to the site.
+
+Data source:
+- `page.tldr`
+
+Supported forms:
+- Plain string:
+  ---
+  tldr: A concise summary of the page.
+  ---
+
+- Array of strings:
+  ---
+  tldr:
+    - First key takeaway.
+    - Second key takeaway.
+  ---
+
+Notes:
+- Blank or missing `page.tldr` renders nothing.
+- This include is intended to be called by the page layout rather than manually inside
+  page content.
+{% endcomment %}
+
+{% assign tldr_value = page.tldr %}
+
+{% if tldr_value %}
+  <section class="ifc-bibliography ifc-bibliography--summary" data-tldr>
+    <h2 class="ifc-bibliography__title">TL;DR</h2>
+    <div class="ifc-bibliography__content">
+      {% if tldr_value.first %}
+        <ul class="ifc-summary__list">
+          {% for item in tldr_value %}
+            <li class="ifc-summary__item">{{ item }}</li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p class="ifc-summary__text">{{ tldr_value }}</p>
+      {% endif %}
+    </div>
+  </section>
+{% endif %}

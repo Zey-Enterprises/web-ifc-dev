@@ -1,0 +1,46 @@
+{% comment %}
+Shared internal annotation renderer for glossary and citation popovers.
+
+Purpose:
+- Provide a single markup contract for all inline annotations so CSS and JavaScript
+  only target one structure.
+- Normalize accessibility hooks, trigger markup, popover shell markup, and shared
+  content regions such as extra notes.
+
+Expected inputs from wrapper includes:
+- `kind`: required. Normalized variant name, typically `glossary` or `citation`.
+- `trigger_html`: required. Safe inline HTML used inside the trigger button.
+- `heading`: optional. Popover heading text.
+- `eyebrow`: optional. Small type label above the heading.
+- `body_html`: optional. Main popover body HTML.
+- `extra_html`: optional. One-off appended content shown in the shared "extra" slot.
+- `class`: optional. Extra class names added to the root wrapper.
+- `aria_label`: optional. Override for the trigger button's accessible label.
+- `style`: optional. Reserved for future rendering variants.
+- `source_id`: optional. Canonical source ID for citation hydration.
+- `citation_label`: optional. Page-local citation label for citation hydration/marker output.
+
+Behavior notes:
+- The root `[data-annotation]` element is the contract targeted by the site CSS/JS.
+- Without JavaScript, the popover still becomes visible on hover and focus via CSS.
+- With JavaScript enabled, click/tap toggling, outside-click dismissal, Escape
+  dismissal, and viewport-aware positioning are added.
+
+Example internal use:
+- `{% include _annotation.html kind="glossary" trigger_html=trigger_html heading=entry.term body_html=body_html extra_html=extra_html %}`
+{% endcomment %}
+
+{%- capture annotation_serial -%}{% increment ifc_annotation_serial %}{%- endcapture -%}
+{%- assign annotation_id = "ifc-annotation-" | append: annotation_serial -%}
+{%- assign popover_id = annotation_id | append: "-popover" -%}
+{%- assign heading_id = annotation_id | append: "-heading" -%}
+{%- assign root_class = include.class | default: "" | strip -%}
+{%- assign kind = include.kind | default: "annotation" -%}
+{%- assign aria_label = include.aria_label -%}
+{%- if aria_label == blank -%}
+  {%- assign aria_label = include.heading -%}
+{%- endif -%}
+{%- if aria_label == blank -%}
+  {%- assign aria_label = kind | append: " annotation" -%}
+{%- endif -%}
+<span class="ifc-annotation ifc-annotation--{{ kind }}{% if root_class != "" %} {{ root_class }}{% endif %}" data-annotation data-annotation-kind="{{ kind }}"{% if include.style %} data-annotation-style="{{ include.style }}"{% endif %}{% if include.entry_id %} data-entry-id="{{ include.entry_id }}"{% endif %}{% if include.source_id %} data-source-id="{{ include.source_id }}"{% endif %}{% if include.citation_label %} data-citation-label="{{ include.citation_label }}"{% endif %}><button class="ifc-annotation__trigger" type="button" aria-expanded="false" aria-controls="{{ popover_id }}" aria-label="{{ aria_label | strip_html | strip_newlines | replace: '  ', ' ' | strip | escape }}" data-annotation-trigger>{% if kind == "citation" and include.citation_label %}<span class="ifc-citation-marker" aria-hidden="true">{{ include.citation_label }}</span><span class="screen-reader-text">Citation {{ include.citation_label }}</span>{% else %}{{ include.trigger_html | strip }}{% endif %}</button><span class="ifc-annotation__popover" id="{{ popover_id }}" role="dialog" aria-modal="false" aria-hidden="true"{% if include.heading %} aria-labelledby="{{ heading_id }}"{% else %} aria-label="{{ include.eyebrow | default: aria_label | strip_html | strip_newlines | replace: '  ', ' ' | strip | escape }}"{% endif %} data-annotation-popover><span class="ifc-annotation__card">{% if kind == "glossary" %}<span class="ifc-annotation__nav"><button class="ifc-annotation__back" type="button" data-annotation-back hidden aria-label="Go back to the previous glossary entry"><span aria-hidden="true">‹</span></button></span>{% endif %}<button class="ifc-annotation__close" type="button" data-annotation-close hidden aria-label="Close popover"><span aria-hidden="true">×</span></button>{% if include.eyebrow %}<span class="ifc-annotation__eyebrow">{{ include.eyebrow }}</span>{% endif %}{% if include.heading %}<span class="ifc-annotation__heading" id="{{ heading_id }}">{{ include.heading }}</span>{% endif %}{% if include.body_html %}<span class="ifc-annotation__body">{{ include.body_html | strip }}</span>{% endif %}{% if include.extra_html and include.extra_html != "" %}<span class="ifc-annotation__extra">{{ include.extra_html | strip }}</span>{% endif %}</span></span></span>

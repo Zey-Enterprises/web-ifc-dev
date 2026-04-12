@@ -1,0 +1,43 @@
+{% comment %}
+Shared link renderer for glossary and citation output.
+
+Purpose:
+- Keep link target behavior and outbound-icon treatment consistent across the
+  annotation system.
+- Default glossary-style/internal links to same-tab behavior unless `newtab` is set.
+- Default citation/external links to new-tab behavior unless `newtab=false` is set.
+
+Parameters:
+- `href`: required URL.
+- `label`: optional visible label. Defaults to `href`.
+- `newtab`: optional boolean-like value. When blank, `default_newtab` is used.
+- `default_newtab`: optional boolean-like fallback for the link type/context.
+- `class`: optional link class additions.
+
+Notes:
+- New-tab links get `target="_blank"`, `rel="noopener noreferrer"`, and an appended
+  outbound icon that remains part of the clickable anchor.
+- Accepts boolean-like values such as `true`, `false`, `"true"`, and `"false"`.
+{% endcomment %}
+
+{%- assign href = include.href | default: "" | strip -%}
+{%- assign label = include.label | default: href -%}
+{%- assign class_name = include.class | default: "" | strip -%}
+{%- assign raw_newtab = include.newtab -%}
+{%- assign raw_default_newtab = include.default_newtab -%}
+
+{%- capture normalized_newtab -%}{{ raw_newtab | default: "" | strip | downcase }}{%- endcapture -%}
+{%- capture normalized_default_newtab -%}{{ raw_default_newtab | default: "" | strip | downcase }}{%- endcapture -%}
+
+{%- assign open_newtab = false -%}
+{%- if normalized_newtab == "true" or raw_newtab == true -%}
+  {%- assign open_newtab = true -%}
+{%- elsif normalized_newtab == "false" or raw_newtab == false -%}
+  {%- assign open_newtab = false -%}
+{%- elsif normalized_default_newtab == "true" or raw_default_newtab == true -%}
+  {%- assign open_newtab = true -%}
+{%- endif -%}
+
+{%- if href != "" -%}
+<a href="{{ href }}"{% if class_name != "" %} class="{{ class_name }}"{% endif %}{% if open_newtab %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ label }}{% if open_newtab %}<i class="fas fa-external-link-alt ifc-link-icon" aria-hidden="true"></i>{% endif %}</a>
+{%- endif -%}

@@ -1,0 +1,144 @@
+{% comment %}
+Shared citation formatter used by both citation popovers and bibliography output.
+
+Purpose:
+- Keep the default site citation rendering in one place so citation popovers and the
+  bibliography stay coherent.
+- Preserve extension points for future style-specific branches without changing the
+  author-facing includes.
+
+Parameters:
+- `source`: required citation object from `_data/citation.json`.
+- `style`: optional style name. `site`, `default`, and `chicago` currently map to the
+  same renderer, but the conditional is intentionally structured for future branching.
+- `context`: optional. `popover` or `bibliography` for small markup differences.
+
+Data expectations:
+- The citation schema is intentionally broad enough to support books, articles,
+  reports, legal authorities, webpages, and preprints with one sane Liquid-friendly
+  structure.
+
+Example:
+- Assign the source first, then pass the variable into the include:
+- `assign example_source = site.data.citation[source_id]`
+- `include _citation_reference.html source=example_source style="site" context="popover"`
+
+Link behavior:
+- Citation links default to opening in a new tab.
+- Individual links can override that default with sibling flags such as
+  `url_newtab`, `doi_newtab`, or `links[].newtab`.
+{% endcomment %}
+
+{%- assign source = include.source -%}
+{%- if source -%}
+  {%- assign style_name = include.style | default: "site" -%}
+  {%- assign context = include.context | default: "bibliography" -%}
+  {%- assign container_title = source.container_title | default: source.publication | default: source.journal -%}
+  {%- capture doi_href -%}https://doi.org/{{ source.doi | replace: 'https://doi.org/', '' }}{%- endcapture -%}
+  {%- assign doi_href = doi_href | strip -%}
+
+  {%- capture author_list -%}
+    {%- if source.authors and source.authors.size > 0 -%}
+      {%- for author in source.authors -%}
+        {%- assign name = author.literal -%}
+        {%- if name == blank -%}
+          {%- capture name -%}{{ author.given }}{% if author.given and author.family %} {% endif %}{{ author.family }}{% if author.suffix %}, {{ author.suffix }}{% endif %}{%- endcapture -%}
+        {%- endif -%}
+        {%- assign clean_name = name | strip -%}
+        {%- if clean_name != "" and forloop.first -%}
+          {{ clean_name }}
+        {%- elsif clean_name != "" and forloop.last -%}
+          {%- if source.authors.size == 2 -%} and {{ clean_name }}{% else %}, and {{ clean_name }}{% endif -%}
+        {%- elsif clean_name != "" -%}
+          , {{ clean_name }}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- elsif source.organization -%}
+      {{ source.organization }}
+    {%- endif -%}
+  {%- endcapture -%}
+  {%- assign author_list = author_list | strip -%}
+
+  {%- capture title_line -%}<span class="ifc-citation-ref__title">{{ source.title }}</span>{% if source.subtitle %}: <span class="ifc-citation-ref__subtitle">{{ source.subtitle }}</span>{% endif %}{%- endcapture -%}
+
+  {%- capture issued_display -%}
+    {%- if source.issued -%}
+      {%- if source.issued.month and source.issued.day -%}{{ source.issued.month }}/{{ source.issued.day }}/{{ source.issued.year }}{% elsif source.issued.month %}{{ source.issued.month }}/{{ source.issued.year }}{% else %}{{ source.issued.year }}{% endif %}
+    {%- elsif source.year -%}
+      {{ source.year }}
+    {%- endif -%}
+  {%- endcapture -%}
+  {%- assign issued_display = issued_display | strip -%}
+
+  {%- capture accessed_display -%}
+    {%- if source.accessed -%}
+      {%- if source.accessed.month and source.accessed.day -%}{{ source.accessed.month }}/{{ source.accessed.day }}/{{ source.accessed.year }}{% elsif source.accessed.month %}{{ source.accessed.month }}/{{ source.accessed.year }}{% else %}{{ source.accessed.year }}{% endif %}
+    {%- endif -%}
+  {%- endcapture -%}
+  {%- assign accessed_display = accessed_display | strip -%}
+
+  {%- case style_name -%}
+    {%- when "default", "site", "chicago" -%}
+      <span class="ifc-citation-ref ifc-citation-ref--{{ context }} ifc-citation-ref--{{ source.type }}">
+        {% if source.type == "journal-article" %}
+          {% if author_list != "" %}<span class="ifc-citation-ref__authors">{{ author_list }}</span>. {% endif %}
+          {{ title_line }}.
+          {% if container_title %} <span class="ifc-citation-ref__container">{{ container_title }}</span>{% endif %}
+          {% if source.volume %} <span class="ifc-citation-ref__volume">{{ source.volume }}</span>{% endif %}
+          {% if source.issue %}<span class="ifc-citation-ref__issue">, no. {{ source.issue }}</span>{% endif %}
+          {% if issued_display != "" %} ({{ issued_display }}){% endif %}
+          {% if source.pages %}: <span class="ifc-citation-ref__pages">{{ source.pages }}</span>{% endif %}.
+          {% if source.doi %} DOI: {% include _link.html href=doi_href label=source.doi newtab=source.doi_newtab default_newtab=true %}.{% elsif source.url %} {% include _link.html href=source.url label="Source" newtab=source.url_newtab default_newtab=true %}.{% endif %}
+        {% elsif source.type == "book" %}
+          {% if author_list != "" %}<span class="ifc-citation-ref__authors">{{ author_list }}</span>. {% endif %}
+          {{ title_line }}.
+          {% if source.edition %} <span class="ifc-citation-ref__edition">{{ source.edition }}</span>.{% endif %}
+          {% if source.place or source.publisher %}
+            {% if source.place %} {{ source.place }}{% endif %}{% if source.place and source.publisher %}: {% endif %}{% if source.publisher %}{{ source.publisher }}{% endif %}{% if issued_display != "" %}, {{ issued_display }}{% endif %}.
+          {% elsif issued_display != "" %}
+            {{ issued_display }}.
+          {% endif %}
+          {% if source.isbn %} ISBN: {{ source.isbn }}.{% endif %}
+        {% elsif source.type == "report" %}
+          {% if author_list != "" %}<span class="ifc-citation-ref__authors">{{ author_list }}</span>. {% endif %}
+          {{ title_line }}.
+          {% if source.place or source.publisher %}
+            {% if source.place %} {{ source.place }}{% endif %}{% if source.place and source.publisher %}: {% endif %}{% if source.publisher %}{{ source.publisher }}{% endif %}{% if issued_display != "" %}, {{ issued_display }}{% endif %}.
+          {% elsif issued_display != "" %}
+            {{ issued_display }}.
+          {% endif %}
+          {% if source.url %} {% include _link.html href=source.url label="Source" newtab=source.url_newtab default_newtab=true %}.{% endif %}
+        {% elsif source.type == "legal-case" %}
+          <span class="ifc-citation-ref__title">{{ source.title }}</span>.
+          {% if source.reporter_volume %} {{ source.reporter_volume }}{% endif %}
+          {% if source.reporter %} {{ source.reporter }}{% endif %}
+          {% if source.first_page %} {{ source.first_page }}{% endif %}
+          {% if source.pinpoint %}, {{ source.pinpoint }}{% endif %}
+          {% if source.court or issued_display != "" %} ({% if source.court %}{{ source.court }}{% endif %}{% if source.court and issued_display != "" %} {% endif %}{% if issued_display != "" %}{{ source.year | default: issued_display }}{% endif %}){% endif %}.
+          {% if source.docket %} {{ source.docket }}.{% endif %}
+          {% if source.url %} {% include _link.html href=source.url label="Source" newtab=source.url_newtab default_newtab=true %}.{% endif %}
+        {% elsif source.type == "preprint" %}
+          {% if author_list != "" %}<span class="ifc-citation-ref__authors">{{ author_list }}</span>. {% endif %}
+          {{ title_line }}.
+          {% if container_title %} <span class="ifc-citation-ref__container">{{ container_title }}</span>{% endif %}
+          {% if issued_display != "" %} ({{ issued_display }}){% endif %}.
+          {% if source.doi %} DOI: {% include _link.html href=doi_href label=source.doi newtab=source.doi_newtab default_newtab=true %}.{% elsif source.url %} {% include _link.html href=source.url label="Source" newtab=source.url_newtab default_newtab=true %}.{% endif %}
+        {% else %}
+          {% if author_list != "" %}<span class="ifc-citation-ref__authors">{{ author_list }}</span>. {% endif %}
+          {{ title_line }}.
+          {% if container_title %} <span class="ifc-citation-ref__container">{{ container_title }}</span>.{% elsif source.organization %} <span class="ifc-citation-ref__container">{{ source.organization }}</span>.{% endif %}
+          {% if issued_display != "" %} {{ issued_display }}.{% endif %}
+          {% if source.url %} {% include _link.html href=source.url label="Source" newtab=source.url_newtab default_newtab=true %}.{% endif %}
+          {% if accessed_display != "" %} Accessed {{ accessed_display }}.{% endif %}
+        {% endif %}
+        {% if source.links and source.links.size > 0 %}
+          {% for link in source.links %}
+            {% include _link.html href=link.url label=link.label newtab=link.newtab default_newtab=true %}
+            {% unless forloop.last %} {% endunless %}
+          {% endfor %}
+        {% endif %}
+      </span>
+    {%- else -%}
+      {%- include _citation_reference.html source=source style="site" context=context -%}
+  {%- endcase -%}
+{%- endif -%}

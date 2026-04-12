@@ -12,8 +12,6 @@ hero_image:
   lead: Placeholder supporting copy goes here for now. This can summarize how body, mind, and spirit are developed together through clear principles, practical execution, and long-term coaching.
 ---
 
-{% include ifc-page-hero.html hero=page.hero_image %}
-
 Integrated Fitness Coaching is built on a simple claim: the body (your physical being) and your mind (your intellect and your spirit) are not separate silos. Physical capability, intellectual clarity, and emotional steadiness affect each other constantly. Neglect one area, and the others become harder to sustain. Strengthen one area, and the others usually become easier to build.
 
 That integrated view is the foundation of the coaching, but coaching can still have a clear starting point. Some clients come primarily for strength, body composition, endurance, or better nutrition. Others need help with adherence, emotional regulation, stress, or inner steadiness. Others want more deliberate thinking about values, agency, standards, and how to live well. We can begin in one domain while still working in a way that supports the whole person.

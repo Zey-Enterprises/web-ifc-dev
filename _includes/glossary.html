@@ -1,0 +1,59 @@
+{% comment %}
+Author-facing glossary annotation include.
+
+Purpose:
+- Pull a canonical glossary entry from `_data/glossary.json`.
+- Keep authoring syntax compact inside Markdown while delegating shared markup,
+  behavior hooks, and styling to `_annotation.html`.
+
+Parameters:
+- `id`: required glossary entry ID from `_data/glossary.json`.
+- `text`: optional visible trigger text. Defaults to the entry's `term`.
+- `extra`: optional one-off appended content shown in the shared extra slot.
+- `class`: optional extra root class names.
+- `style`: optional reserved variant hook for future renderer differences.
+
+Expected data source:
+- `site.data.glossary[include.id]`
+
+Example usage:
+- `{% include glossary.html id="calorie-balance" %}`
+- `{% include glossary.html id="calorie-balance" text="energy balance" %}`
+- `{% include glossary.html id="calorie-balance" text="calorie balance" extra="This article uses the term in the bodyweight-regulation sense." %}`
+
+Notes:
+- Missing IDs fail softly by rendering plain fallback text with a visible missing-state
+  style instead of hard-failing the page build.
+- `extra` is appended consistently through the shared `_annotation.html` template.
+- `links[]` entries may include `newtab: true` or `newtab: false`. Glossary links
+  default to same-tab behavior when `newtab` is omitted.
+{% endcomment %}
+
+{%- assign entry = site.data.glossary[include.id] -%}
+{%- assign trigger_text = include.text | default: entry.term | default: include.id -%}
+
+{%- if entry -%}
+  {%- capture body_html -%}
+    {%- if entry.short -%}<span class="ifc-annotation__para ifc-annotation__lede">{{ entry.short }}</span>{%- endif -%}
+    {%- if entry.long -%}<span class="ifc-annotation__para">{{ entry.long }}</span>{%- endif -%}
+    {%- if entry.see_also and entry.see_also.size > 0 -%}<span class="ifc-annotation__para ifc-annotation__meta"><strong>See also:</strong>{% for related_id in entry.see_also %}{% assign related_entry = site.data.glossary[related_id] %}<button class="ifc-annotation__pill" type="button" data-related-glossary="{{ related_id }}">{{ related_entry.term | default: related_id }}</button>{% endfor %}</span>{%- endif -%}
+    {%- if entry.links and entry.links.size > 0 -%}<span class="ifc-annotation__link-list">{% for link in entry.links %}<span class="ifc-annotation__link-item">{% include _link.html href=link.url label=link.label newtab=link.newtab default_newtab=false %}</span>{% endfor %}</span>{%- endif -%}
+  {%- endcapture -%}
+  {%- capture extra_html -%}{%- if include.extra -%}<span class="ifc-annotation__para">{{ include.extra }}</span>{%- endif -%}{%- endcapture -%}
+  {%- capture trigger_html -%}<span class="ifc-annotation__trigger-text">{{ trigger_text }}</span>{%- endcapture -%}
+  {%- capture aria_label -%}Show glossary note for {{ trigger_text }}{%- endcapture -%}
+  {%- include _annotation.html
+    kind="glossary"
+    trigger_html=trigger_html
+    heading=entry.term
+    eyebrow="Glossary"
+    body_html=body_html
+    extra_html=extra_html
+    class=include.class
+    style=include.style
+    aria_label=aria_label
+    entry_id=include.id
+  -%}
+{%- else -%}
+<span class="ifc-annotation ifc-annotation--missing" title="Missing glossary entry: {{ include.id }}">{{ trigger_text }}</span>
+{%- endif -%}

@@ -1,0 +1,324 @@
+{
+  "absorption": {
+    "id": "absorption",
+    "term": "absorption",
+    "short": "The process by which digested nutrients and usable energy move from the gut into the body.",
+    "long": "Absorption is not perfectly fixed. Food structure, processing, fiber, gut function, and the microbiome can all change how much of what you eat is actually taken up and made available for use or storage.",
+    "see_also": ["calories-in", "microbiome"]
+  },
+  "bile-acid-derivatives": {
+    "id": "bile-acid-derivatives",
+    "term": "bile-acid derivatives",
+    "short": "Metabolites made from bile acids that can act as signaling molecules in the gut and throughout the body.",
+    "long": "Bile-acid derivatives are influenced in part by the microbiome. They can affect digestion, glucose regulation, appetite-related signaling, and broader metabolic processes.",
+    "see_also": ["microbiome", "scfa"]
+  },
+  "breathwork": {
+    "id": "breathwork",
+    "term": "breathwork",
+    "short": "Deliberate breathing practices used to regulate arousal, attention, and stress.",
+    "long": "In coaching contexts, breathwork is usually a practical self-regulation tool rather than a mystical shortcut. Slowing and structuring breathing can reduce perceived stress, improve state control, and make it easier to follow through on nutrition and training plans.",
+    "see_also": ["cortisol", "cognitive-reframing"]
+  },
+  "calorie-balance": {
+    "id": "calorie-balance",
+    "term": "calorie balance",
+    "short": "The relationship between energy taken in and energy expended over time.",
+    "long": "When intake exceeds expenditure, body mass tends to rise. When expenditure exceeds intake, body mass tends to fall. In practice, this governing constraint is shaped by hunger, satiety, absorption, activity, recovery, and adherence rather than replaced by them.",
+    "see_also": ["calories-in", "calories-out", "partitioning"]
+  },
+  "calories-in": {
+    "id": "calories-in",
+    "term": "calories in",
+    "short": "The energy entering the body through food and drink, adjusted by digestion and absorption.",
+    "long": "For body-composition purposes, calories in is not just what is swallowed. It is the effective energy that reaches the body after factors like food form, digestibility, gut function, and microbial activity are taken into account.",
+    "see_also": ["calorie-balance", "absorption", "hyperpalatable", "calories-out"]
+  },
+  "calories-out": {
+    "id": "calories-out",
+    "term": "calories out",
+    "short": "The energy the body expends through resting metabolism, digestion, activity, and heat production.",
+    "long": "Calories out includes resting metabolic processes, the thermic effect of food, structured exercise, and everyday movement such as NEAT. It changes with body size, diet history, training, sleep, stress, and many medical factors.",
+    "see_also": ["calorie-balance", "metabolism", "thermogenesis", "neat", "calories-in"]
+  },
+  "cognitive-reframing": {
+    "id": "cognitive-reframing",
+    "term": "cognitive reframing",
+    "short": "A technique for changing how a situation is interpreted so behavior becomes easier to guide.",
+    "long": "Cognitive reframing helps people replace unhelpful narratives like all-or-nothing thinking, moralized food judgments, or stress-driven catastrophizing with interpretations that support steadier action.",
+    "see_also": ["breathwork", "cortisol"]
+  },
+  "corticosteroids": {
+    "id": "corticosteroids",
+    "term": "corticosteroids",
+    "short": "A class of steroid medications often used to reduce inflammation or suppress immune activity.",
+    "long": "Corticosteroids can affect appetite, fluid retention, blood glucose regulation, and fat distribution. They do not bypass calorie balance, but they can materially change how difficult it is to manage intake and body composition.",
+    "see_also": ["cortisol", "endocrine", "calorie-balance"]
+  },
+  "cortisol": {
+    "id": "cortisol",
+    "term": "cortisol",
+    "short": "A hormone involved in stress response, energy availability, and circadian regulation.",
+    "long": "Cortisol helps coordinate how the body responds to stress, waking, fueling needs, and inflammation. Chronically elevated or poorly timed cortisol is often more relevant because of what it does to appetite, mood, sleep, and behavior than because of any single direct fat-storage effect.",
+    "see_also": ["circadian-rhythm", "endocrine", "breathwork", "cognitive-reframing"]
+  },
+  "cut": {
+    "id": "cut",
+    "term": "cut",
+    "short": "A planned dieting phase aimed at reducing body fat while preserving as much lean mass as possible.",
+    "long": "A cut usually combines a sustained calorie deficit with enough protein, resistance training, and recovery to improve the quality of weight loss. It is different from casual under-eating because it is typically intentional and goal-directed.",
+    "see_also": ["calorie-balance", "calories-in", "partitioning", "protein-synthesis", "periodization"]
+  },
+  "circadian-rhythm": {
+    "id": "circadian-rhythm",
+    "term": "circadian rhythm",
+    "short": "The roughly 24-hour timing system that helps coordinate sleep, hormone release, hunger, temperature, and alertness.",
+    "long": "Circadian rhythm is strongly shaped by light exposure, wake timing, meal timing, and routine. Better alignment often improves sleep quality, appetite regulation, energy levels, and consistency, which then influences calorie balance.",
+    "see_also": ["cortisol", "metabolism"]
+  },
+  "dopaminergic": {
+    "id": "dopaminergic",
+    "term": "dopaminergic",
+    "short": "Related to dopamine signaling and the brain systems involved in motivation, reward, and reinforcement.",
+    "long": "When a food environment or behavior is described as dopaminergic, the point is usually that it strongly engages reward circuitry. That can raise cue-driven eating, cravings, and repetition without implying that pleasure itself is the problem.",
+    "see_also": ["hyperpalatable", "ghrelin", "leptin"]
+  },
+  "endocrine": {
+    "id": "endocrine",
+    "term": "endocrine",
+    "short": "Relating to hormones and the glands and tissues that produce them.",
+    "long": "Endocrine factors help regulate metabolism, appetite, reproduction, thyroid function, stress response, and blood-glucose control. In body-composition discussions, endocrine changes matter because they alter intake, expenditure, partitioning, recovery, and symptom burden.",
+    "see_also": ["insulin", "cortisol", "hypothyroidism", "hyperthyroidism", "pcos", "menopause"]
+  },
+  "energy-availability": {
+    "id": "energy-availability",
+    "term": "energy availability",
+    "short": "The amount of dietary energy left to support normal physiology after exercise expenditure is accounted for.",
+    "long": "Low energy availability can impair recovery, mood, reproductive function, training quality, sleep, and long-term adherence. It is especially relevant for highly active people who can unintentionally underfuel even when their bodyweight goal is not aggressive fat loss.",
+    "see_also": ["calorie-balance", "recovery", "calories-out"],
+    "links": [
+      {
+        "label": "Guide: Recovery, Stress, and Consistency",
+        "url": "/resources/guides/recovery-stress-and-consistency/",
+        "newtab": false
+      }
+    ]
+  },
+  "ghrelin": {
+    "id": "ghrelin",
+    "term": "ghrelin",
+    "short": "A hormone that tends to rise before meals and is commonly associated with hunger signaling.",
+    "long": "Ghrelin helps cue meal initiation and can be influenced by sleep, dieting, stress, and eating patterns. It is one part of appetite regulation rather than a single master switch.",
+    "see_also": ["leptin", "glp-1", "pyy", "calorie-balance"]
+  },
+  "glp-1": {
+    "id": "glp-1",
+    "term": "GLP-1",
+    "short": "Glucagon-like peptide-1, a gut-derived hormone involved in satiety, gastric emptying, and blood-glucose regulation.",
+    "long": "GLP-1 rises after eating and helps reduce appetite, slow gastric emptying, and improve insulin response. It is one reason food composition, gut signaling, and certain medications can meaningfully affect calorie intake.",
+    "see_also": ["glp-1-agonists", "pyy", "insulin", "scfa"]
+  },
+  "glp-1-agonists": {
+    "id": "glp-1-agonists",
+    "term": "GLP-1 agonists",
+    "short": "Medications that mimic or amplify GLP-1 signaling to improve appetite control and glucose regulation.",
+    "long": "GLP-1 agonists are used clinically for diabetes and obesity management. Their body-composition effects usually come from making calorie intake easier to control, not from suspending basic energy accounting.",
+    "see_also": ["glp-1", "insulin-sensitivity", "calories-in"]
+  },
+  "gluten": {
+    "id": "gluten",
+    "term": "gluten",
+    "short": "A family of proteins found in wheat, barley, and rye.",
+    "long": "For people with celiac disease, strict gluten avoidance is medically necessary. Outside of clear clinical sensitivity, removing gluten usually affects body composition indirectly by changing food choices, symptom burden, and adherence rather than by acting as a unique fat-gain agent.",
+    "see_also": ["absorption", "calories-in", "microbiome"]
+  },
+  "glyphosate": {
+    "id": "glyphosate",
+    "term": "glyphosate",
+    "short": "A widely used herbicide (typically known as Roundup) often discussed in relation to environmental exposure and food systems.",
+    "long": "Concerns about glyphosate usually focus on toxicology, microbiome effects, and long-term health implications. In body-composition discussions, any effect would still matter through indirect changes in appetite, gut function, or activity rather than as an independent override of calorie balance.",
+    "see_also": ["microbiome", "absorption", "endocrine"]
+  },
+  "hyperpalatable": {
+    "id": "hyperpalatable",
+    "term": "hyperpalatable",
+    "short": "Describes foods formulated or combined to be unusually rewarding and easy to overeat.",
+    "long": "Hyperpalatable foods often combine refined carbohydrate, fat, salt, texture, and convenience in ways that raise reward value while lowering how hard it feels to keep eating. The main issue is usually passive overconsumption, not a special exemption from calorie balance.",
+    "see_also": ["ultraprocessed", "calories-in", "calorie-balance", "dopaminergic"]
+  },
+  "hyperthyroidism": {
+    "id": "hyperthyroidism",
+    "term": "hyperthyroidism",
+    "short": "A condition in which thyroid hormone levels are too high.",
+    "long": "Hyperthyroidism often raises metabolic rate and can affect appetite, heart rate, temperature tolerance, and bodyweight. It changes the dynamics of energy expenditure and symptoms, but not the need for energy balance to explain body-composition change.",
+    "see_also": ["hypothyroidism", "endocrine", "metabolism"]
+  },
+  "hypothyroidism": {
+    "id": "hypothyroidism",
+    "term": "hypothyroidism",
+    "short": "A condition in which thyroid hormone levels are too low.",
+    "long": "Hypothyroidism can reduce metabolic rate, energy, and exercise tolerance while increasing fatigue and symptom burden. Those changes can make body-composition management harder without invalidating calorie balance.",
+    "see_also": ["hyperthyroidism", "endocrine", "metabolism"]
+  },
+  "insulin": {
+    "id": "insulin",
+    "term": "insulin",
+    "short": "A hormone that helps move nutrients, especially glucose, into tissues and supports energy storage and use.",
+    "long": "Insulin plays a central role in blood-glucose control and nutrient handling. It matters for partitioning and health, but the common mistake is treating insulin as though it can override energy balance by itself.",
+    "see_also": ["insulin-sensitivity", "glp-1", "partitioning", "endocrine"]
+  },
+  "insulin-sensitivity": {
+    "id": "insulin-sensitivity",
+    "term": "insulin sensitivity",
+    "short": "How responsive the body is to insulin's signals.",
+    "long": "Higher insulin sensitivity generally means the body needs less insulin to manage glucose effectively. It is influenced by body fat, sleep, training, meal timing, medication use, menopause, PCOS, and overall metabolic health.",
+    "see_also": ["insulin", "glp-1", "metabolism", "pcos", "menopause"]
+  },
+  "keto": {
+    "id": "keto",
+    "term": "keto",
+    "short": "A dietary approach designed to keep carbohydrate intake low enough to promote nutritional ketosis.",
+    "long": "Keto diets usually reduce carbohydrate substantially and often raise protein or fat, depending on implementation. In practice, their success tends to come from changes in satiety, food selection, and adherence rather than a bypass of calorie balance.",
+    "see_also": ["paleo", "insulin", "calories-in"]
+  },
+  "leptin": {
+    "id": "leptin",
+    "term": "leptin",
+    "short": "A hormone involved in energy sufficiency signaling and appetite regulation.",
+    "long": "Leptin is produced largely by fat tissue and helps communicate longer-term energy status to the brain. During dieting, falling leptin can make hunger and food focus increase, which is one reason deficits get harder to sustain over time.",
+    "see_also": ["ghrelin", "calories-in", "hyperpalatable"]
+  },
+  "menopause": {
+    "id": "menopause",
+    "term": "menopause",
+    "short": "The life stage marking the end of menstrual cycles, with major hormonal changes that can affect symptoms, recovery, and body composition.",
+    "long": "Menopause can shift appetite, sleep quality, recovery, insulin sensitivity, and where fat is more likely to be stored. That often changes the experience and strategy of body-composition work without changing the governing role of calorie balance.",
+    "see_also": ["endocrine", "insulin-sensitivity", "pcos", "calorie-balance"]
+  },
+  "metabolism": {
+    "id": "metabolism",
+    "term": "metabolism",
+    "short": "The sum of the body's chemical processes that use, transform, and store energy.",
+    "long": "In everyday nutrition talk, metabolism usually refers to how much energy the body uses and how dynamic that use is. It is real and adjustable, but it still operates within calorie balance rather than replacing it.",
+    "see_also": ["calories-out", "thermogenesis", "insulin-sensitivity"]
+  },
+  "microbiome": {
+    "id": "microbiome",
+    "term": "microbiome",
+    "short": "The community of microbes and their genes living in and on the body, especially in the gut.",
+    "long": "The gut microbiome can affect digestion, energy harvest, gut integrity, appetite-related signaling, and inflammation. It matters for body composition because it can shift calories in, absorption, and possibly some aspects of calories out.",
+    "see_also": ["absorption", "scfa", "bile-acid-derivatives", "glp-1"]
+  },
+  "neat": {
+    "id": "neat",
+    "term": "NEAT",
+    "short": "Non-exercise activity thermogenesis: energy burned through ordinary movement outside formal exercise.",
+    "long": "NEAT includes walking between tasks, standing, posture, fidgeting, household movement, and the countless small motions of daily life. It is one of the most variable parts of energy expenditure and often changes without conscious intent.",
+    "see_also": ["calories-out", "thermogenesis", "calorie-balance", "metabolism"]
+  },
+  "partitioning": {
+    "id": "partitioning",
+    "term": "partitioning",
+    "short": "Where incoming energy and nutrients are directed, such as toward fat storage, muscle tissue, or other uses.",
+    "long": "Partitioning affects the quality of weight change. Protein intake, resistance training, recovery, hormonal context, and energy status all influence whether bodyweight change is biased more toward muscle retention or fat gain and loss.",
+    "see_also": ["calorie-balance", "protein-synthesis", "insulin", "cut", "periodization"]
+  },
+  "paleo": {
+    "id": "paleo",
+    "term": "Paleo",
+    "short": "A dietary pattern built around foods framed as evolutionarily ancestral or less industrially processed.",
+    "long": "Paleo approaches usually emphasize whole foods and often reduce many highly rewarding, easy-to-overeat foods. Their practical body-composition value usually comes from changes in food selection, satiety, and consistency rather than from a special metabolic rule.",
+    "see_also": ["keto", "hyperpalatable", "gluten"]
+  },
+  "pcos": {
+    "id": "pcos",
+    "term": "PCOS",
+    "short": "Polycystic ovary syndrome, a common endocrine condition that can affect hormones, insulin sensitivity, and reproductive health.",
+    "long": "PCOS often interacts with appetite, blood-glucose control, recovery, and symptom burden. It can make body-composition management more difficult, but the relevant mechanism still runs through intake, expenditure, and overall health context.",
+    "see_also": ["endocrine", "insulin-sensitivity", "insulin", "menopause"]
+  },
+  "periodization": {
+    "id": "periodization",
+    "term": "periodization",
+    "short": "Planned variation over time in diet, training, or recovery to match a goal and improve sustainability.",
+    "long": "In nutrition and physique work, periodization often means organizing phases such as fat loss, maintenance, and muscle gain so progress is more sustainable and better matched to training demands.",
+    "see_also": ["cut", "partitioning", "protein-synthesis", "calorie-balance"]
+  },
+  "pre-commitment": {
+    "id": "pre-commitment",
+    "term": "pre-commitment",
+    "short": "Changing the environment or making decisions in advance so the better choice is easier later.",
+    "long": "Pre-commitment can include meal prep, removing trigger foods, deciding portions ahead of time, or setting default routines. It helps because behavior is easier to guide before temptation or stress is high.",
+    "see_also": ["cognitive-reframing", "breathwork", "hyperpalatable"]
+  },
+  "protein-synthesis": {
+    "id": "protein-synthesis",
+    "term": "protein synthesis",
+    "short": "The process of building new proteins, including the proteins that make up muscle tissue.",
+    "long": "Muscle protein synthesis rises in response to training and adequate amino acid intake, especially protein-rich meals. It matters for body composition because it helps determine how well lean mass is built or preserved during different nutrition phases.",
+    "see_also": ["partitioning", "cut", "periodization"]
+  },
+  "pyy": {
+    "id": "pyy",
+    "term": "PYY",
+    "short": "Peptide YY, a gut hormone involved in satiety signaling after meals.",
+    "long": "PYY generally rises after eating and can help reduce appetite. Like GLP-1, it is one of several gut-derived signals that influence how easy or difficult it feels to stop eating.",
+    "see_also": ["glp-1", "ghrelin", "scfa"]
+  },
+  "recovery": {
+    "id": "recovery",
+    "term": "recovery",
+    "short": "The process of restoring readiness after training, stress, and ordinary life demands.",
+    "long": "Recovery includes sleep, food intake, hydration, stress regulation, workload management, and enough low-friction time between demanding efforts. Good recovery supports training quality and consistency; poor recovery quietly degrades both.",
+    "see_also": ["energy-availability", "neat"],
+    "links": [
+      {
+        "label": "Guide: Recovery, Stress, and Consistency",
+        "url": "/resources/guides/recovery-stress-and-consistency/",
+        "newtab": false
+      }
+    ]
+  },
+  "satiety": {
+    "id": "satiety",
+    "term": "satiety",
+    "short": "The sense of fullness and reduced drive to continue eating after or between meals.",
+    "long": "Satiety is influenced by protein intake, fiber, food volume, food structure, energy density, meal timing, sleep, stress, and prior dieting history. Stronger satiety generally makes calorie control easier because it reduces the effort required to maintain intake targets.",
+    "see_also": ["calorie-balance", "hyperpalatable"],
+    "links": [
+      {
+        "label": "Guide: Nutrition Foundations",
+        "url": "/resources/guides/nutrition-foundations/",
+        "newtab": false
+      }
+    ]
+  },
+  "scfa": {
+    "id": "scfa",
+    "term": "SCFA",
+    "short": "Short-chain fatty acid, a small metabolite often produced when gut microbes ferment certain fibers and starches.",
+    "long": "Common SCFAs include acetate, propionate, and butyrate. They can contribute some usable energy and also act as signaling molecules that influence gut health, appetite-related hormones, and metabolic regulation.",
+    "see_also": ["microbiome", "glp-1", "pyy", "bile-acid-derivatives"]
+  },
+  "ssri": {
+    "id": "ssri",
+    "term": "SSRI",
+    "short": "Selective serotonin reuptake inhibitor, a common class of antidepressant medication.",
+    "long": "SSRIs can affect appetite, energy, sleep, gastrointestinal symptoms, and bodyweight in different ways across individuals. In practice, they matter because they can change the difficulty and experience of managing nutrition and activity.",
+    "see_also": ["cortisol", "calorie-balance", "endocrine"]
+  },
+  "thermogenesis": {
+    "id": "thermogenesis",
+    "term": "thermogenesis",
+    "short": "The production of heat by the body, including the energy cost of digestion, movement, and adaptive responses.",
+    "long": "Thermogenesis includes the thermic effect of food, heat generated during activity, and adaptive changes that can raise or lower total energy expenditure. It is one component of calories out, not a separate accounting system.",
+    "see_also": ["calories-out", "metabolism", "neat"]
+  },
+  "ultraprocessed": {
+    "id": "ultraprocessed",
+    "term": "ultraprocessed",
+    "short": "A label often used for industrially formulated foods made from multiple processed ingredients and additives.",
+    "long": "The label can communicate some vague vibes, but is technically imprecise and undefinable in an actionable way, lumping together foods that are both health and unhealthy, and those that support and hinder food intake regulation. In body-composition discussions, the more useful focus is often whether a food is hyperpalatable, energy-dense, low in satiety, and easy to overconsume.",
+    "see_also": ["hyperpalatable", "calories-in", "calorie-balance"]
+  }
+}
