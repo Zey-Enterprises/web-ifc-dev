@@ -25,6 +25,7 @@
 
   const viewportMargin = 12;
   const coarsePointerQuery = window.matchMedia("(pointer: coarse)");
+  const WORD_JOINER = "\u2060";
   let activePinned = null;
   let lastPopoverLinkHandledAt = 0;
   document.documentElement.classList.add("ifc-annotations-enhanced");
@@ -65,10 +66,6 @@
 
   function normalizeGlossarySpacing() {
     annotations.forEach(function (annotation) {
-      if (annotation.dataset.annotationKind !== "glossary") {
-        return;
-      }
-
       let sibling = annotation.nextSibling;
 
       while (sibling && sibling.nodeType === Node.COMMENT_NODE) {
@@ -84,7 +81,90 @@
         return;
       }
 
-      sibling.nodeValue = sibling.nodeValue.replace(/^(\s+)([.,;:!?"'“”‘’)\]—–-])/u, "$2");
+      sibling.nodeValue = sibling.nodeValue.replace(/^(\s+)([(\[{.,;:!?"'“”‘’)\]}\u2014\u2013-])/u, "$2");
+    });
+  }
+
+  function previousSignificantSibling(node) {
+    let sibling = node ? node.previousSibling : null;
+
+    while (sibling && sibling.nodeType === Node.COMMENT_NODE) {
+      sibling = sibling.previousSibling;
+    }
+
+    return sibling;
+  }
+
+  function nextSignificantSibling(node) {
+    let sibling = node ? node.nextSibling : null;
+
+    while (sibling && sibling.nodeType === Node.COMMENT_NODE) {
+      sibling = sibling.nextSibling;
+    }
+
+    return sibling;
+  }
+
+  function appendWordJoinerToTextNode(node) {
+    if (!node || node.nodeType !== Node.TEXT_NODE || !node.nodeValue) {
+      return false;
+    }
+
+    if (/\s$/u.test(node.nodeValue) || node.nodeValue.endsWith(WORD_JOINER)) {
+      return false;
+    }
+
+    node.nodeValue += WORD_JOINER;
+    return true;
+  }
+
+  function prependWordJoinerToNode(node) {
+    if (!node || !node.parentNode) {
+      return false;
+    }
+
+    const previous = previousSignificantSibling(node);
+
+    if (previous && previous.nodeType === Node.TEXT_NODE) {
+      return appendWordJoinerToTextNode(previous);
+    }
+
+    if (previous && previous.nodeType === Node.ELEMENT_NODE) {
+      node.parentNode.insertBefore(document.createTextNode(WORD_JOINER), node);
+      return true;
+    }
+
+    return false;
+  }
+
+  function bindAnnotationLineWrapping() {
+    annotations.forEach(function (annotation) {
+      const previous = previousSignificantSibling(annotation);
+      const next = nextSignificantSibling(annotation);
+
+      if (annotation.dataset.annotationKind === "citation") {
+        prependWordJoinerToNode(annotation);
+      }
+
+      if (next && next.nodeType === Node.TEXT_NODE && next.nodeValue) {
+        const trimmed = next.nodeValue.replace(/^(\s+)([(\[{.,;:!?"'“”‘’)\]}\u2014\u2013-])/u, "$2");
+
+        if (trimmed !== next.nodeValue) {
+          next.nodeValue = trimmed;
+        }
+
+        if (/^[(\[{.,;:!?"'“”‘’)\]}\u2014\u2013-]/u.test(next.nodeValue) && !next.nodeValue.startsWith(WORD_JOINER)) {
+          next.nodeValue = WORD_JOINER + next.nodeValue;
+        }
+      } else if (next && next.nodeType === Node.ELEMENT_NODE && next.matches("[data-annotation]")) {
+        prependWordJoinerToNode(next);
+      }
+
+      if (annotation.dataset.annotationKind === "glossary" && previous && previous.nodeType === Node.TEXT_NODE && previous.nodeValue) {
+        previous.nodeValue = previous.nodeValue.replace(/\s+$/u, function (match) {
+          return /\s/u.test(match) ? match : "";
+        });
+      }
     });
   }
 
@@ -621,6 +701,7 @@
 
   normalizeGlossarySpacing();
   normalizeCitationSeparatorSpacing();
+  bindAnnotationLineWrapping();
 
   annotations.forEach(function (annotation) {
     const { trigger } = getParts(annotation);
