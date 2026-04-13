@@ -81,7 +81,7 @@
         return;
       }
 
-      sibling.nodeValue = sibling.nodeValue.replace(/^(\s+)([(\[{.,;:!?"'“”‘’)\]}\u2014\u2013-])/u, "$2");
+      sibling.nodeValue = sibling.nodeValue.replace(/^(\s+)([.,;:!?"'“”‘’)\]}\u2014\u2013-])/u, "$2");
     });
   }
 
@@ -147,13 +147,13 @@
       }
 
       if (next && next.nodeType === Node.TEXT_NODE && next.nodeValue) {
-        const trimmed = next.nodeValue.replace(/^(\s+)([(\[{.,;:!?"'“”‘’)\]}\u2014\u2013-])/u, "$2");
+        const trimmed = next.nodeValue.replace(/^(\s+)([.,;:!?"'“”‘’)\]}\u2014\u2013-])/u, "$2");
 
         if (trimmed !== next.nodeValue) {
           next.nodeValue = trimmed;
         }
 
-        if (/^[(\[{.,;:!?"'“”‘’)\]}\u2014\u2013-]/u.test(next.nodeValue) && !next.nodeValue.startsWith(WORD_JOINER)) {
+        if (/^[.,;:!?"'“”‘’)\]}\u2014\u2013-]/u.test(next.nodeValue) && !next.nodeValue.startsWith(WORD_JOINER)) {
           next.nodeValue = WORD_JOINER + next.nodeValue;
         }
       } else if (next && next.nodeType === Node.ELEMENT_NODE && next.matches("[data-annotation]")) {
@@ -204,21 +204,52 @@
     const citationTriggers = Array.from(document.querySelectorAll('.ifc-annotation--citation'));
 
     citationTriggers.forEach(function (annotation) {
-      const previous = previousSignificantSibling(annotation);
-      const next = nextSignificantSibling(annotation);
-
-      if (previous && previous.nodeType === Node.TEXT_NODE && previous.nodeValue) {
-        appendWordJoinerToTextNode(previous);
+      if (annotation.closest(".ifc-citation-cluster")) {
+        return;
       }
 
+      const previous = previousSignificantSibling(annotation);
+      const next = nextSignificantSibling(annotation);
+      const chain = [annotation];
+
       if (next && next.nodeType === Node.ELEMENT_NODE && next.classList && next.classList.contains("ifc-citation-marker")) {
-        prependWordJoinerToNode(next);
+        chain.push(next);
 
         const afterSeparator = nextSignificantSibling(next);
 
         if (afterSeparator && afterSeparator.nodeType === Node.ELEMENT_NODE && afterSeparator.matches("[data-annotation][data-annotation-kind=\"citation\"]")) {
-          prependWordJoinerToNode(afterSeparator);
+          chain.push(afterSeparator);
         }
+      }
+
+      if (!previous || previous.nodeType !== Node.TEXT_NODE || !previous.nodeValue || !/\S/u.test(previous.nodeValue)) {
+        return;
+      }
+
+      const tailMatch = previous.nodeValue.match(/(\S+)$/u);
+
+      if (!tailMatch) {
+        return;
+      }
+
+      const tail = tailMatch[1];
+      const prefix = previous.nodeValue.slice(0, previous.nodeValue.length - tail.length);
+      const cluster = document.createElement("span");
+      cluster.className = "ifc-citation-cluster";
+      cluster.appendChild(document.createTextNode(tail));
+
+      chain.forEach(function (node) {
+        if (node.parentNode) {
+          cluster.appendChild(node);
+        }
+      });
+
+      if (prefix) {
+        previous.nodeValue = prefix;
+        previous.parentNode.insertBefore(cluster, previous.nextSibling);
+      } else if (previous.parentNode) {
+        previous.parentNode.insertBefore(cluster, previous);
+        previous.parentNode.removeChild(previous);
       }
     });
   }

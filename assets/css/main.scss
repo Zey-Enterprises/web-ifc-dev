@@ -895,6 +895,11 @@ input[type="submit"] {
   margin-right: 0.04em;
 }
 
+.ifc-citation-cluster {
+  display: inline;
+  white-space: nowrap;
+}
+
 .ifc-annotation--citation .ifc-annotation__trigger {
   color: var(--ifc-accent-deep);
 }
