@@ -39,7 +39,7 @@
     "term": "calories out",
     "short": "The energy the body expends through resting metabolism, digestion, activity, and heat production.",
     "long": "Calories out includes resting metabolic processes, the thermic effect of food, structured exercise, and everyday movement such as NEAT. It changes with body size, diet history, training, sleep, stress, and many medical factors.",
-    "see_also": ["calorie-balance", "metabolism", "thermogenesis", "neat", "calories-in"]
+    "see_also": ["calorie-balance", "metabolism", "thermogenesis", "tef", "neat", "calories-in"]
   },
   "cognitive-reframing": {
     "id": "cognitive-reframing",
@@ -200,7 +200,7 @@
     "term": "metabolism",
     "short": "The sum of the body's chemical processes that use, transform, and store energy.",
     "long": "In everyday nutrition talk, metabolism usually refers to how much energy the body uses and how dynamic that use is. It is real and adjustable, but it still operates within calorie balance rather than replacing it.",
-    "see_also": ["calories-out", "thermogenesis", "insulin-sensitivity"]
+    "see_also": ["calories-out", "thermogenesis", "tef", "insulin-sensitivity"]
   },
   "microbiome": {
     "id": "microbiome",
@@ -307,12 +307,19 @@
     "long": "SSRIs can affect appetite, energy, sleep, gastrointestinal symptoms, and bodyweight in different ways across individuals. In practice, they matter because they can change the difficulty and experience of managing nutrition and activity.",
     "see_also": ["cortisol", "calorie-balance", "endocrine"]
   },
+  "tef": {
+    "id": "tef",
+    "term": "TEF",
+    "short": "Thermic effect of food: the energy the body uses to digest, absorb, transport, and process what you eat.",
+    "long": "TEF is the calorie cost of handling a meal after it is consumed. It is one component of calories out and part of thermogenesis, not a loophole in calorie balance. Different macronutrients have different thermic costs, with protein generally producing a larger TEF than carbohydrate or fat, which is one reason higher-protein diets can slightly raise total energy expenditure while also supporting satiety and body-composition goals.",
+    "see_also": ["calories-out", "thermogenesis", "metabolism", "calories-in", "protein-synthesis"]
+  },
   "thermogenesis": {
     "id": "thermogenesis",
     "term": "thermogenesis",
     "short": "The production of heat by the body, including the energy cost of digestion, movement, and adaptive responses.",
     "long": "Thermogenesis includes the thermic effect of food, heat generated during activity, and adaptive changes that can raise or lower total energy expenditure. It is one component of calories out, not a separate accounting system.",
-    "see_also": ["calories-out", "metabolism", "neat"]
+    "see_also": ["calories-out", "metabolism", "tef", "neat"]
   },
   "ultraprocessed": {
     "id": "ultraprocessed",
