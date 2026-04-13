@@ -200,6 +200,29 @@
     });
   }
 
+  function bindCitationRuns() {
+    const citationTriggers = Array.from(document.querySelectorAll('.ifc-annotation--citation'));
+
+    citationTriggers.forEach(function (annotation) {
+      const previous = previousSignificantSibling(annotation);
+      const next = nextSignificantSibling(annotation);
+
+      if (previous && previous.nodeType === Node.TEXT_NODE && previous.nodeValue) {
+        appendWordJoinerToTextNode(previous);
+      }
+
+      if (next && next.nodeType === Node.ELEMENT_NODE && next.classList && next.classList.contains("ifc-citation-marker")) {
+        prependWordJoinerToNode(next);
+
+        const afterSeparator = nextSignificantSibling(next);
+
+        if (afterSeparator && afterSeparator.nodeType === Node.ELEMENT_NODE && afterSeparator.matches("[data-annotation][data-annotation-kind=\"citation\"]")) {
+          prependWordJoinerToNode(afterSeparator);
+        }
+      }
+    });
+  }
+
   function isOpen(annotation) {
     return annotation.dataset.open === "true";
   }
@@ -702,6 +725,7 @@
   normalizeGlossarySpacing();
   normalizeCitationSeparatorSpacing();
   bindAnnotationLineWrapping();
+  bindCitationRuns();
 
   annotations.forEach(function (annotation) {
     const { trigger } = getParts(annotation);
