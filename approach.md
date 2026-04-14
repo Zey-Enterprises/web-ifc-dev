@@ -1,15 +1,15 @@
 ---
-title: "Approach"
+title: "Placeholder headline for the approach page."
 classes: hide-title
 permalink: /approach/
 description: "How integrated coaching works in practice across physical, emotional, and intellectual development."
-hero_image:
-  image: /assets/images/ifc-approach-hero-banner-1.jpg
+tagline: "Placeholder supporting copy goes here for now. This can summarize how body, mind, and spirit are developed together through clear principles, practical execution, and long-term coaching."
+header:
+  overlay_image: /assets/images/ifc-approach-hero-banner-1.jpg
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
   background_position: center -25px
   mobile_background_position: center 0px
   kicker: A practical approach to integrated coaching
-  headline: Placeholder headline for the approach page.
-  lead: Placeholder supporting copy goes here for now. This can summarize how body, mind, and spirit are developed together through clear principles, practical execution, and long-term coaching.
 ---
 
 Integrated Fitness Coaching is built on a simple claim: the body (your physical being) and your mind (your intellect and your spirit) are not separate silos. Physical capability, intellectual clarity, and emotional steadiness affect each other constantly. Neglect one area, and the others become harder to sustain. Strengthen one area, and the others usually become easier to build.

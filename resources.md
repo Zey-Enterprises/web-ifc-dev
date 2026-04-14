@@ -3,13 +3,11 @@ title: "Resources"
 classes: hide-title
 permalink: /resources/
 description: "Guides, articles, and topic pathways for sustainable fitness."
-hero_image:
-  image: /assets/images/ifc-resources-hero-banner-1.jpg
-  # background_position: center -300px
-  # mobile_background_position: center 0px
+tagline: "The goal of this section is to become a durable library rather than a stream of disposable content. It is organized so guides, articles, and media can grow over time without making the site harder to manage."
+header:
+  overlay_image: /assets/images/ifc-resources-hero-banner-1.jpg
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
   kicker: Placeholder kicker text.
-  headline: Resources
-  lead: The goal of this section is to become a durable library rather than a stream of disposable content. It is organized so guides, articles, and media can grow over time without making the site harder to manage.
 ---
 
 ## Topic pathways

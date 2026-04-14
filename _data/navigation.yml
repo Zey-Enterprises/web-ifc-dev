@@ -1,6 +1,8 @@
 main:
 #  - title: "Home"
 #    url: /
+  - title: "Apply"
+    url: /apply/
   - title: "Approach"
     url: /approach/
   - title: "Resources"
@@ -15,5 +17,3 @@ main:
     url: /faq/
   - title: "Pricing"
     url: /pricing/
-  - title: "Apply"
-    url: /apply/

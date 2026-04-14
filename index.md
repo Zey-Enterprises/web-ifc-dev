@@ -3,46 +3,26 @@ title: ""
 layout: single
 permalink: /
 classes: wide
-hero_carousel:
-  interval: 3000
-  overlay: 0.42
-  slides:
+tagline: "Integrated Fitness Coaching helps you improve training, nutrition, recovery, emotional regulation, cognitive skill, and the habits that keep progress from unraveling. The goal is sustainable, long-term improvement to live your best life."
+header:
+  kicker: Evidence-based coaching for physical capability and vitality, emotional well-being, and intellectual clarity
+  overlay_title: "Build a stronger body, mind, and spirit to 𝑙𝑖𝑣𝑒 𝑤𝑒𝑙𝑙."
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.56), rgba(17, 33, 45, 0.21))
+  overlay_interval: 3000
+  overlay_images:
     - image: /assets/images/ifc-hero-banner-weightlifting-2.jpg
-      alt: Coaching client training with weights
     - image: /assets/images/ifc-hero-banner-nutrition-3.jpg
-      alt: Nutrition coaching meal-prep spread
     - image: /assets/images/ifc-hero-banner-mindfulness-3.jpg
-      alt: Mindfulness coaching meditation
-      mobile_position: 68% center
+      mobile_background_position: 68% center
     - image: /assets/images/ifc-hero-banner-reading-1.jpg
-      alt: Mindfulness coaching meditation
+  actions:
+    - label: Apply for coaching
+      url: /apply/
+      class: btn--primary
+    - label: See how coaching works
+      url: /approach/
+      class: btn--light-outline
 ---
-
-<div
-  class="page__hero--overlay ifc-hero-carousel ifc-homepage-hero"
-  data-carousel-interval="{{ page.hero_carousel.interval | default: 3000 }}"
-  style="--ifc-hero-overlay: {{ page.hero_carousel.overlay | default: 0.4 }};"
->
-  <div class="ifc-hero-carousel__viewport">
-    {% for slide in page.hero_carousel.slides %}
-      <div
-        class="ifc-hero-carousel__slide{% if forloop.first %} is-active{% endif %}"
-        data-carousel-slide
-        style="background-image: url('{{ slide.image | relative_url }}');{% if slide.mobile_position %} --ifc-mobile-bg-position: {{ slide.mobile_position }};{% endif %}"
-        {% unless forloop.first %}aria-hidden="true"{% endunless %}
-      ></div>
-    {% endfor %}
-  </div>
-  <div class="wrapper">
-    <p class="ifc-kicker ifc-kicker--overlay">Evidence-based coaching for physical capability and vitality, emotional well-being, and intellectual clarity</p>
-    <h1 class="page__title">Build a stronger body, mind, and spirit to <i>live well</i>.</h1>
-    <p class="page__lead">Integrated Fitness Coaching helps you improve training, nutrition, recovery, emotional regulation, cognitive skill, and the habits that keep progress from unraveling. The goal is sustainable, long-term improvement to live your best life.</p>
-    <div class="ifc-actions ifc-actions--overlay">
-      <a class="ifc-button" href="/apply/">Apply for coaching</a>
-      <a class="ifc-button ifc-button--secondary ifc-button--overlay" href="/approach/">See how coaching works</a>
-    </div>
-  </div>
-</div>
 
 <section class="ifc-hero">
   <div class="ifc-hero__copy">
@@ -61,8 +41,6 @@ hero_carousel:
     <p><strong>Spirit:</strong> emotional regulation, groundedness, self-command, and the inner stability that keeps action from unraveling</p>
   </div>
 </section>
-
-<script src="{{ '/assets/js/home-hero-carousel.js' | relative_url }}"></script>
 
 <section class="ifc-section">
   <div class="ifc-rail">

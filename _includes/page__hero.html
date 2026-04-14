@@ -1,0 +1,134 @@
+{% comment %}
+  Minimal Mistakes overlay extension for IFC.
+
+  Native fields preserved:
+  - header.overlay_image
+  - header.overlay_filter
+  - header.overlay_color
+  - header.caption
+  - header.actions
+  - page.title
+  - page.tagline (preferred overlay lead override)
+  - page.excerpt (overlay lead fallback)
+  - page__meta.html output (show_date, last_modified_at, read_time, etc.)
+
+  IFC extensions:
+  - header.kicker
+  - header.overlay_title
+  - header.background_position
+  - header.mobile_background_position
+  - header.overlay_images
+    - image
+    - background_position
+    - mobile_background_position
+  - header.overlay_interval (milliseconds)
+
+  background_position and mobile_background_position accept any valid CSS
+  background-position string, for example:
+  - center
+  - center top
+  - center 20%
+  - 65% center
+  - center -10px
+  - right 24px top 10px
+{% endcomment %}
+{%- assign hero = page.header -%}
+{%- assign overlay_images = hero.overlay_images -%}
+{%- assign overlay_image = hero.overlay_image -%}
+{%- assign overlay_position = hero.background_position | default: "center" -%}
+{%- assign mobile_overlay_position = hero.mobile_background_position -%}
+{%- assign overlay_title = hero.overlay_title | default: page.title -%}
+{%- assign has_carousel = false -%}
+
+{%- if overlay_images and overlay_images.size > 1 -%}
+  {%- assign has_carousel = true -%}
+{%- elsif overlay_images and overlay_images.size == 1 and overlay_image == nil -%}
+  {%- assign overlay_image = overlay_images[0].image -%}
+  {%- assign overlay_position = overlay_images[0].background_position | default: overlay_position -%}
+  {%- assign mobile_overlay_position = overlay_images[0].mobile_background_position | default: mobile_overlay_position -%}
+{%- endif -%}
+
+{%- capture overlay_filter_css -%}
+  {%- if hero.overlay_filter -%}
+    {%- assign overlay_filter_string = hero.overlay_filter | strip -%}
+    {%- if overlay_filter_string contains "gradient(" or overlay_filter_string contains "rgb(" or overlay_filter_string contains "rgba(" or overlay_filter_string contains "hsl(" or overlay_filter_string contains "hsla(" or overlay_filter_string contains "#" or overlay_filter_string contains "var(" -%}
+      {{ overlay_filter_string }}
+    {%- else -%}
+      rgba(0, 0, 0, {{ overlay_filter_string }})
+    {%- endif -%}
+  {%- else -%}
+    transparent
+  {%- endif -%}
+{%- endcapture -%}
+
+{%- assign overlay_lead = page.tagline | default: page.excerpt -%}
+
+{%- if hero.overlay_color or overlay_image or has_carousel -%}
+  <div
+    class="page__hero--overlay {% if has_carousel %}ifc-hero-carousel{% else %}ifc-overlay-hero{% endif %}"
+    {% if has_carousel %}data-overlay-carousel data-carousel-interval="{{ hero.overlay_interval | default: 3000 }}"{% endif %}
+    style="--ifc-hero-base-color: {{ hero.overlay_color | default: '#1d2e3f' }}; --ifc-hero-overlay-filter: {{ overlay_filter_css | strip }};{% if overlay_image %} --ifc-hero-image: url('{{ overlay_image | relative_url }}'); --ifc-hero-position: {{ overlay_position }};{% endif %}{% if mobile_overlay_position %} --ifc-hero-mobile-position: {{ mobile_overlay_position }};{% endif %}"
+  >
+    {% if has_carousel %}
+      <div class="ifc-hero-carousel__viewport" aria-hidden="true">
+        {% for slide in overlay_images %}
+          <div
+            class="ifc-hero-carousel__slide{% if forloop.first %} is-active{% endif %}"
+            data-carousel-slide
+            style="background-image: url('{{ slide.image | relative_url }}'); --ifc-bg-position: {{ slide.background_position | default: 'center' }};{% if slide.mobile_background_position %} --ifc-mobile-bg-position: {{ slide.mobile_background_position }};{% endif %}"
+            {% unless forloop.first %}aria-hidden="true"{% endunless %}
+          ></div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <div class="wrapper">
+      {% if hero.kicker %}
+        <p class="ifc-kicker ifc-kicker--overlay">{{ hero.kicker }}</p>
+      {% endif %}
+
+      {% if overlay_title %}
+        <h1 id="page-title" class="page__title p-name" itemprop="headline">
+          {{ overlay_title | markdownify | remove: "<p>" | remove: "</p>" }}
+        </h1>
+      {% endif %}
+
+      {% if overlay_lead %}
+        <p class="page__lead">{{ overlay_lead | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+      {% endif %}
+
+      {% include page__meta.html locale=include.locale %}
+
+      {% if hero.actions %}
+        <div class="page__hero-actions">
+          {% for action in hero.actions %}
+            {%- assign action_url = action.url | default: action.link -%}
+            {%- if action_url -%}
+              {%- if action_url contains "://" -%}
+                {%- assign rendered_action_url = action_url -%}
+              {%- else -%}
+                {%- assign rendered_action_url = action_url | relative_url -%}
+              {%- endif -%}
+              <a href="{{ rendered_action_url }}" class="btn {{ action.class | default: 'btn--light-outline' }}">{{ action.label | default: action.title }}</a>
+            {%- endif -%}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+
+    {% if hero.caption %}
+      <span class="page__hero-caption">{{ hero.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+    {% endif %}
+  </div>
+
+  {% if has_carousel %}
+    <script src="{{ '/assets/js/page-hero-carousel.js' | relative_url }}"></script>
+  {% endif %}
+{% elsif hero.image %}
+  <div class="page__hero">
+    <img src="{{ hero.image | relative_url }}" alt="{% if hero.image_description %}{{ hero.image_description }}{% elsif page.title %}{{ page.title | strip_html | escape }}{% endif %}">
+    {% if hero.caption %}
+      <span class="page__hero-caption">{{ hero.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+    {% endif %}
+  </div>
+{% endif %}

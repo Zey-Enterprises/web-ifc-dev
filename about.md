@@ -1,15 +1,15 @@
 ---
-title: "About"
+title: "Arthur Zey"
 classes: hide-title
 permalink: /about/
 description: "Professional biography and coaching philosophy for Arthur Zey."
-hero_image:
-  image: /assets/images/ifc-about-hero-banner-2.jpg
+tagline: "Placeholder supporting copy goes here for now. This can summarize how body, mind, and spirit are developed together through clear principles, practical execution, and long-term coaching."
+header:
+  overlay_image: /assets/images/ifc-about-hero-banner-2.jpg
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
   background_position: center -10px
   mobile_background_position: center 0px
   kicker: A practical approach to integrated coaching
-  headline: Arthur Zey
-  lead: Placeholder supporting copy goes here for now. This can summarize how body, mind, and spirit are developed together through clear principles, practical execution, and long-term coaching.
 ---
 
 Arthur Zey is the coach behind Integrated Fitness Coaching, a practice built around sustainable improvement in physical capability, nutrition, emotional steadiness, and intellectual self-direction. His work is informed by systems thinking, product discipline, and a strong commitment to treating fitness as part of a broader human life rather than an isolated body project.

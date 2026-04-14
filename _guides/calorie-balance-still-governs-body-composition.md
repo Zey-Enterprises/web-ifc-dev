@@ -2,27 +2,18 @@
 title: "Calorie Balance Still Governs Body Composition"
 classes: hide-title
 author: "Arthur Zey"
-# date: 2026-04-12
-# show_date: true
+date: 2026-04-12
+last_modified_at: 2026-04-13
 excerpt: "Body composition is governed by calorie balance, while diet quality, hormones, sleep, stress, genetics, the microbiome, and environment matter by changing calorie intake, absorption, expenditure, and partitioning."
 tldr: "Most debates in nutrition are not about whether calorie balance matters, but about what influences it. That distinction matters because calorie balance is the main driver, while the other factors are important but secondary modifiers. If you prioritize the main lever first and layer in refinements second, body composition becomes much easier to understand and manage."
 topic: "Body composition"
-hero_image:
-  image: /assets/images/ifc-hero-banner-article-calorie-balance-1.jpg
-  # background_position: center -200px
-  # mobile_background_position: center 0px
-  kicker: 2026-04-12
-  headline: Calorie Balance Still Governs Body Composition
-  lead: Body composition is governed by calorie balance, while diet quality, hormones, sleep, stress, genetics, the microbiome, and environment matter by changing calorie intake, absorption, expenditure, and partitioning.
 header:
-  # overlay_image: /assets/images/ifc-hero-banner-article-calorie-balance-1.jpg
+  overlay_image: /assets/images/ifc-hero-banner-article-calorie-balance-1.jpg
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  background_position: center -75px
+  mobile_background_position: center center
+  # kicker: Body composition
   og_image: /assets/images/ifc-social-share-calorie-balance-1.jpg
-  # caption: "Photo from the series: [**Straying around**](/weekend_stories/2021/2021-03_Stray_around_3/)"
-  # actions:
-  #  - label: "See More"
-  #    url: /weekend_stories/2021/2021-03_Stray_around_3/
-# excerpt: "This post has an overlay header image"
-# tagline: "This is a custom tagline content which overrides the *default* page excerpt."
 citations:
   "1": hall-2012-energy-balance
   "2": spiegel-2005-sleep-loss

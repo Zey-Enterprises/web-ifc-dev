@@ -1,5 +1,5 @@
 (function () {
-  const root = document.querySelector("[data-carousel-interval]");
+  const root = document.querySelector("[data-overlay-carousel]");
 
   if (!root) {
     return;

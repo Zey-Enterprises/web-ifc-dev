@@ -271,37 +271,35 @@ body {
   min-height: 25rem;
 }
 
-.page__hero--overlay.ifc-hero-carousel {
-  position: relative;
-  --ifc-hero-overlay: 0.4;
-  width: 100vw;
-  min-height: clamp(26rem, 58vw, 42rem);
-  margin: 0 0 2.5rem calc(50% - 50vw);
-  overflow: clip;
-  background:
-    linear-gradient(135deg, rgba(17, 33, 45, calc(var(--ifc-hero-overlay) + 0.08)), rgba(17, 33, 45, calc(var(--ifc-hero-overlay) * 0.45))),
-    #1d2e3f;
-}
-
-.page__hero--overlay.ifc-page-hero {
+.page__hero--overlay.ifc-hero-carousel,
+.page__hero--overlay.ifc-overlay-hero {
   position: relative;
   isolation: isolate;
   width: 100vw;
-  min-height: clamp(22rem, 46vw, 34rem);
   margin: 0 0 2.25rem calc(50% - 50vw);
   overflow: clip;
-  background-image: var(--ifc-page-hero-image);
-  background-position: var(--ifc-page-hero-position, center);
+  background-color: var(--ifc-hero-base-color, #1d2e3f);
+}
+
+.page__hero--overlay.ifc-hero-carousel {
+  min-height: clamp(26rem, 58vw, 42rem);
+}
+
+.page__hero--overlay.ifc-overlay-hero {
+  min-height: clamp(22rem, 46vw, 34rem);
+  background-image: var(--ifc-hero-image);
+  background-position: var(--ifc-hero-position, center);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.page__hero--overlay.ifc-page-hero::before {
+.page__hero--overlay.ifc-hero-carousel::before,
+.page__hero--overlay.ifc-overlay-hero::before {
   content: "";
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24));
+  background: var(--ifc-hero-overlay-filter, transparent);
   pointer-events: none;
 }
 
@@ -312,7 +310,7 @@ body {
   padding-inline: 1.25rem;
 }
 
-.ifc-page-hero .wrapper {
+.ifc-overlay-hero .wrapper {
   display: flex;
   min-height: clamp(22rem, 46vw, 34rem);
   flex-direction: column;
@@ -321,7 +319,7 @@ body {
   padding-bottom: 2.75rem;
 }
 
-.ifc-page-hero .page__title {
+.ifc-overlay-hero .page__title {
   max-width: 12ch;
   margin-bottom: 0.9rem;
   color: #ffffff;
@@ -330,7 +328,7 @@ body {
   text-shadow: 0 10px 32px rgba(10, 17, 24, 0.34);
 }
 
-.ifc-page-hero .page__lead {
+.ifc-overlay-hero .page__lead {
   max-width: 44rem;
   margin-bottom: 0;
   color: rgba(244, 248, 251, 0.96);
@@ -345,18 +343,10 @@ body {
   overflow: hidden;
 }
 
-.ifc-hero-carousel__viewport::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(17, 33, 45, calc(var(--ifc-hero-overlay) + 0.14)), rgba(17, 33, 45, calc(var(--ifc-hero-overlay) * 0.5)));
-  pointer-events: none;
-}
-
 .ifc-hero-carousel__slide {
   position: absolute;
   inset: 0;
-  background-position: center;
+  background-position: var(--ifc-bg-position, center);
   background-repeat: no-repeat;
   background-size: cover;
   visibility: hidden;
@@ -406,6 +396,103 @@ body {
   text-shadow: 0 6px 22px rgba(10, 17, 24, 0.24);
 }
 
+.page__hero--overlay .page__title {
+  color: #ffffff;
+}
+
+.page__hero--overlay .page__lead {
+  color: rgba(244, 248, 251, 0.96);
+}
+
+.page__hero--overlay .page__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.65rem;
+  margin-top: 1rem;
+  color: rgba(233, 241, 248, 0.88);
+  font-size: 0.92rem;
+}
+
+.page__hero--overlay .page__meta a,
+.page__hero--overlay .page__meta .sep,
+.page__hero--overlay .page__meta .far,
+.page__hero--overlay .page__meta .fas {
+  color: inherit;
+}
+
+.page__hero--overlay .page__meta-readtime {
+  flex-basis: 100%;
+}
+
+.page__hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.75rem;
+}
+
+.page__hero-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.35rem;
+  padding: 0.85rem 1.55rem;
+  border: 1.5px solid #2b5f87;
+  border-radius: 999px;
+  text-decoration: none !important;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.1;
+  transition:
+    transform 140ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease;
+}
+
+.page__hero-actions .btn:hover,
+.page__hero-actions .btn:focus,
+.page__hero-actions .btn:focus-visible,
+.page__hero-actions .btn:visited,
+.page__hero-actions .btn:active {
+  text-decoration: none !important;
+}
+
+.page__hero-actions .btn--primary {
+  background: linear-gradient(180deg, #5aa4d8, #438bc0);
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(7, 14, 20, 0.18);
+  box-shadow: 0 10px 22px rgba(43, 95, 135, 0.18);
+}
+
+.page__hero-actions .btn--primary:hover,
+.page__hero-actions .btn--primary:focus,
+.page__hero-actions .btn--primary:focus-visible {
+  background: linear-gradient(180deg, #67b0e4, #4d99d0);
+  border-color: #2c6792;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 18px 34px rgba(43, 95, 135, 0.3);
+}
+
+.page__hero-actions .btn--light-outline {
+  background: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0.82);
+  color: #ffffff;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.page__hero-actions .btn--light-outline:hover,
+.page__hero-actions .btn--light-outline:focus,
+.page__hero-actions .btn--light-outline:focus-visible {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #ffffff;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(7, 14, 20, 0.28);
+}
+
 .layout--single .page,
 .layout--splash .page,
 .layout--archive .archive {
@@ -427,8 +514,12 @@ body {
   max-width: 100%;
 }
 
-.layout--single .page__content > .page__hero--overlay.ifc-hero-carousel:first-child {
+.layout--single .page__inner-wrap > .page__hero--overlay:first-child {
   margin-top: 0;
+}
+
+.initial-content > .page__hero--overlay:first-child {
+  margin-top: 0.9rem;
 }
 
 .archive__item,
@@ -1459,10 +1550,10 @@ input[type="submit"] {
     margin-bottom: 2rem;
   }
 
-  .page__hero--overlay.ifc-page-hero {
+  .page__hero--overlay.ifc-overlay-hero {
     min-height: 24rem;
     margin-bottom: 1.75rem;
-    background-position: var(--ifc-page-hero-mobile-position, var(--ifc-page-hero-position, center));
+    background-position: var(--ifc-hero-mobile-position, var(--ifc-hero-position, center));
   }
 
   .ifc-hero-carousel .wrapper {
@@ -1471,7 +1562,7 @@ input[type="submit"] {
     padding-bottom: 3rem;
   }
 
-  .ifc-page-hero .wrapper {
+  .ifc-overlay-hero .wrapper {
     min-height: 24rem;
     padding-top: 1.5rem;
     padding-bottom: 2rem;

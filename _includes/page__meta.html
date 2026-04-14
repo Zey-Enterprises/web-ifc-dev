@@ -1,21 +1,57 @@
-{%- assign date_format = site.date_format | default: "%B %-d, %Y" -%}
-{%- assign reading_time_collections = "posts|guides" | split: "|" -%}
-{%- assign show_read_time = false -%}
+{% assign document = post | default: page %}
+{% assign author_ref = document.author | default: document.authors[0] | default: site.author %}
+{% assign author_data = site.data.authors[author_ref] | default: author_ref %}
+{% assign author_name = author_data.name | default: author_data %}
 
-{%- if page.read_time and reading_time_collections contains page.collection -%}
-  {%- assign show_read_time = true -%}
-{%- endif -%}
+{% assign show_author = document.show_author %}
+{% if show_author == nil %}
+  {% assign show_author = false %}
+{% endif %}
 
-{%- if show_read_time or (page.show_date and page.date) -%}
+{% assign show_date = document.show_date %}
+{% if show_date == nil %}
+  {% assign show_date = false %}
+{% endif %}
+
+{% assign show_modified_date = document.show_modified_date %}
+{% if show_modified_date == nil %}
+  {% assign show_modified_date = false %}
+{% endif %}
+
+{% assign show_read_time = document.show_read_time %}
+{% if show_read_time == nil %}
+  {% assign show_read_time = document.read_time %}
+{% endif %}
+{% if show_read_time == nil %}
+  {% assign show_read_time = false %}
+{% endif %}
+
+{% if show_author or show_date or show_modified_date or show_read_time %}
   <p class="page__meta">
-    {%- if page.show_date and page.date -%}
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: date_format }}</time>
+    {% if show_author and author_name %}
+      <span class="page__meta-author">
+        <i class="fas {% if include.type == 'grid' %}fa-fw {% endif %}fa-user" aria-hidden="true"></i>
+        {{ author_name }}
       </span>
-    {%- endif -%}
+    {% endif %}
 
-    {%- if show_read_time -%}
+    {% if show_date and document.date %}
+      {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+      <span class="page__meta-date" title="Published date">
+        <i class="far {% if include.type == 'grid' %}fa-fw {% endif %}fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="{{ document.date | date_to_xmlschema }}">{{ document.date | date: date_format }}</time>
+      </span>
+    {% endif %}
+
+    {% if show_modified_date and document.last_modified_at %}
+      {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+      <span class="page__meta-modified" title="Last modified date">
+        <i class="fas {% if include.type == 'grid' %}fa-fw {% endif %}fa-history" aria-hidden="true"></i>
+        <time datetime="{{ document.last_modified_at | date_to_xmlschema }}">{{ document.last_modified_at | date: date_format }}</time>
+      </span>
+    {% endif %}
+
+    {% if show_read_time %}
       <span
         class="page__meta-readtime"
         data-reading-time
@@ -23,9 +59,9 @@
         hidden
         aria-hidden="true"
       >
-        <i class="far fa-clock" aria-hidden="true"></i>
+        <i class="far {% if include.type == 'grid' %}fa-fw {% endif %}fa-clock" aria-hidden="true"></i>
         <span data-reading-time-label></span>
       </span>
-    {%- endif -%}
+    {% endif %}
   </p>
-{%- endif -%}
+{% endif %}

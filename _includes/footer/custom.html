@@ -16,7 +16,10 @@
 <script src="{{ '/assets/js/annotations.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/heading-permalinks.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/toc-widget.js' | relative_url }}"></script>
-{% assign reading_time_collections = "posts|guides" | split: "|" %}
-{% if page.read_time and reading_time_collections contains page.collection %}
+{% assign show_read_time = page.show_read_time %}
+{% if show_read_time == nil %}
+  {% assign show_read_time = page.read_time %}
+{% endif %}
+{% if show_read_time %}
   <script src="{{ '/assets/js/reading-time.js' | relative_url }}"></script>
 {% endif %}

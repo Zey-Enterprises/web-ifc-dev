@@ -3,7 +3,7 @@ layout: default
 ---
 {%- assign locale = page.locale | default: layout.locale | default: site.locale -%}
 
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+{% if page.header.overlay_color or page.header.overlay_image or page.header.overlay_images or page.header.image %}
   {% include page__hero.html locale=locale %}
 {% elsif page.header.video.id and page.header.video.provider %}
   {% include page__hero_video.html %}
@@ -29,11 +29,7 @@ layout: default
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
 
     <div class="page__inner-wrap">
-      {% if page.hero_image and page.hero_image.image %}
-        {% include ifc-page-hero.html hero=page.hero_image %}
-      {% endif %}
-
-      {% unless page.header.overlay_color or page.header.overlay_image %}
+      {% unless page.header.overlay_color or page.header.overlay_image or page.header.overlay_images %}
         <header>
           {% if page.title -%}
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
