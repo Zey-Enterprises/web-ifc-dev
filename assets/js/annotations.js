@@ -736,7 +736,7 @@
       syncBackButton(annotation);
     }
 
-    if (coarsePointerQuery.matches && annotation.contains(document.activeElement)) {
+    if (annotation.contains(document.activeElement)) {
       document.activeElement.blur();
     }
 
@@ -759,7 +759,7 @@
   bindCitationRuns();
 
   annotations.forEach(function (annotation) {
-    const { trigger } = getParts(annotation);
+    const { trigger, close } = getParts(annotation);
 
     if (!trigger) {
       return;
@@ -850,6 +850,30 @@
 
       pinTrigger(event);
     });
+
+    function forceCloseAnnotation(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      annotation.dataset.suspendHover = "true";
+      closeAnnotation(annotation);
+      return true;
+    }
+
+    if (close) {
+      close.addEventListener("pointerdown", function (event) {
+        forceCloseAnnotation(event);
+      });
+
+      close.addEventListener("click", function (event) {
+        if (annotation.dataset.open === "false") {
+          event.preventDefault();
+          event.stopPropagation();
+          return;
+        }
+
+        forceCloseAnnotation(event);
+      });
+    }
 
     function handleGlossaryControl(event) {
       if (event.type === "click" && annotation._suppressControlClickOnce) {

@@ -1008,6 +1008,7 @@ input[type="submit"] {
   top: calc(100% + var(--ifc-annotation-gap));
   z-index: 40;
   width: min(28rem, calc(100vw - 1.5rem));
+  white-space: normal;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -1079,6 +1080,7 @@ input[type="submit"] {
 .ifc-annotation__card {
   position: relative;
   display: block;
+  white-space: normal;
   padding: 0.95rem 1rem 1rem;
   border: 1px solid rgba(43, 95, 135, 0.18);
   border-radius: 1rem;
