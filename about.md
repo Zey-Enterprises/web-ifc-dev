@@ -5,10 +5,10 @@ permalink: /about/
 description: "Professional biography and coaching philosophy for Arthur Zey."
 tagline: "Placeholder supporting copy goes here for now. This can summarize how body, mind, and spirit are developed together through clear principles, practical execution, and long-term coaching."
 header:
-  overlay_image: /assets/images/ifc-about-hero-banner-2.jpg
+  overlay_image: /assets/images/ifc-about-hero-banner-3.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
-  background_position: center -10px
-  mobile_background_position: center 0px
+  # background_position: center -10px
+  mobile_background_position: 72% center
   kicker: A practical approach to integrated coaching
 ---
 
