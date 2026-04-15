@@ -53,6 +53,19 @@
     return window.matchMedia && window.matchMedia("(max-width: 767px)").matches;
   }
 
+  function scrollToVisibleTarget(target, extraOffset) {
+    if (!target) return;
+
+    var masthead = document.querySelector(".masthead");
+    var mastheadOffset = masthead ? masthead.getBoundingClientRect().height : 0;
+    var targetTop = target.getBoundingClientRect().top + window.scrollY - mastheadOffset - (extraOffset || 0);
+
+    window.scrollTo({
+      top: Math.max(targetTop, 0),
+      behavior: "smooth"
+    });
+  }
+
   function jumpToGlossaryItem(root, glossaryId) {
     if (!glossaryId) return;
 
@@ -634,6 +647,8 @@
     var mobileBackdrop = root.querySelector("[data-mobile-filter-backdrop]");
     var mobileClose = root.querySelector("[data-mobile-filter-close]");
     var mobileSortNode = root.querySelector("[data-mobile-sort-control]");
+    var resourceTopTarget = root.querySelector("[data-mobile-filter-panel]") || root;
+    var mobileTopTarget = root.querySelector("[data-mobile-filter-toggle]") || root;
     var defaultSort = root.getAttribute("data-default-sort") || "recent-published-desc";
     var openMenu = null;
     var isMobilePanelOpen = false;
@@ -1080,6 +1095,7 @@
     function applyShortcutSearch(search) {
       closeAllMenus();
       applyUiState(parseUiState(search));
+      scrollToVisibleTarget(isMobileViewport() ? mobileTopTarget : resourceTopTarget, 16);
     }
 
     root.addEventListener("change", function (event) {
