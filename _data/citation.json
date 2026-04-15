@@ -21,7 +21,11 @@
     },
     "year": 2012,
     "doi": "10.3945/ajcn.112.036350",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "spiegel-2005-sleep-loss": {
     "id": "spiegel-2005-sleep-loss",
@@ -45,7 +49,12 @@
     },
     "year": 2005,
     "doi": "10.1152/japplphysiol.00660.2005",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "calorie-balance",
+      "strength-training",
+      "sleep"
+    ]
   },
   "hall-2019-ultra-processed-diets": {
     "id": "hall-2019-ultra-processed-diets",
@@ -69,7 +78,13 @@
     },
     "year": 2019,
     "doi": "10.1016/j.cmet.2019.05.008",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "food-quality",
+      "satiety"
+    ]
   },
   "adam-2007-stress-eating": {
     "id": "adam-2007-stress-eating",
@@ -90,7 +105,12 @@
     },
     "year": 2007,
     "doi": "10.1016/j.physbeh.2007.04.011",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "satiety",
+      "recovery",
+      "behavior-change"
+    ]
   },
   "locke-2015-bmi-genetics": {
     "id": "locke-2015-bmi-genetics",
@@ -114,7 +134,11 @@
     },
     "year": 2015,
     "doi": "10.1038/nature14177",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "phillips-2004-protein-strength-sports": {
     "id": "phillips-2004-protein-strength-sports",
@@ -132,7 +156,11 @@
     },
     "year": 2004,
     "doi": "10.1016/j.nut.2004.04.009",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "protein",
+      "strength-training"
+    ]
   },
   "hall-2015-fat-vs-carb-restriction": {
     "id": "hall-2015-fat-vs-carb-restriction",
@@ -156,7 +184,13 @@
     },
     "year": 2015,
     "doi": "10.1016/j.cmet.2015.07.021",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "carbohydrates",
+      "dietary-fat"
+    ]
   },
   "trepanowski-2017-fasting-weight-loss": {
     "id": "trepanowski-2017-fasting-weight-loss",
@@ -180,7 +214,12 @@
     },
     "year": 2017,
     "doi": "10.1001/jamainternmed.2016.8781",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "periodization"
+    ]
   },
   "scheer-2009-circadian-misalignment": {
     "id": "scheer-2009-circadian-misalignment",
@@ -204,7 +243,11 @@
     },
     "year": 2009,
     "doi": "10.1073/pnas.0808180106",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "calorie-balance",
+      "sleep"
+    ]
   },
   "turnbaugh-2006-obesity-gut-microbiome": {
     "id": "turnbaugh-2006-obesity-gut-microbiome",
@@ -228,7 +271,12 @@
     },
     "year": 2006,
     "doi": "10.1038/nature05414",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "food-quality"
+    ]
   },
   "walsh-2023-glyphosate-gut-microbiome": {
     "id": "walsh-2023-glyphosate-gut-microbiome",
@@ -252,7 +300,10 @@
     },
     "year": 2023,
     "doi": "10.1080/19490976.2023.2263935",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "food-quality"
+    ]
   },
   "levine-2004-neat": {
     "id": "levine-2004-neat",
@@ -270,7 +321,11 @@
     },
     "year": 2004,
     "doi": "10.1152/ajpendo.00562.2003",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "calorie-balance",
+      "environment-design"
+    ]
   },
   "rosenbaum-2010-adaptive-thermogenesis": {
     "id": "rosenbaum-2010-adaptive-thermogenesis",
@@ -291,7 +346,10 @@
     },
     "year": 2010,
     "doi": "10.1038/ijo.2010.184",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "calorie-balance"
+    ]
   },
   "sutton-2018-early-time-restricted-feeding": {
     "id": "sutton-2018-early-time-restricted-feeding",
@@ -315,7 +373,13 @@
     },
     "year": 2018,
     "doi": "10.1016/j.cmet.2018.04.010",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "meal-structure",
+      "recovery"
+    ]
   },
   "taheri-2004-sleep-leptin-ghrelin-bmi": {
     "id": "taheri-2004-sleep-leptin-ghrelin-bmi",
@@ -345,7 +409,13 @@
     },
     "year": 2004,
     "doi": "10.1371/journal.pmed.0010062",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety",
+      "sleep"
+    ]
   },
   "weigle-2005-high-protein-appetite": {
     "id": "weigle-2005-high-protein-appetite",
@@ -369,7 +439,13 @@
     },
     "year": 2005,
     "doi": "10.1093/ajcn.82.1.41",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "protein",
+      "satiety"
+    ]
   },
   "burns-2021-outdoor-light-mood-sleep": {
     "id": "burns-2021-outdoor-light-mood-sleep",
@@ -393,7 +469,10 @@
     },
     "year": 2021,
     "doi": "10.1016/j.jad.2021.08.056",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "sleep"
+    ]
   },
   "wardle-2008-fto-satiety": {
     "id": "wardle-2008-fto-satiety",
@@ -417,7 +496,12 @@
     },
     "year": 2008,
     "doi": "10.1210/jc.2008-0472",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety"
+    ]
   },
   "lebwohl-2015-celiac-gluten-sensitivity": {
     "id": "lebwohl-2015-celiac-gluten-sensitivity",
@@ -441,7 +525,10 @@
     },
     "year": 2015,
     "doi": "10.1136/bmj.h4347",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "food-quality"
+    ]
   },
   "romani-perez-2021-microbiota-gut-brain-axis": {
     "id": "romani-perez-2021-microbiota-gut-brain-axis",
@@ -465,7 +552,11 @@
     },
     "year": 2021,
     "doi": "10.3390/ijms22115830",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "calorie-balance",
+      "food-quality"
+    ]
   },
   "oleary-2016-mindfulness-cortisol": {
     "id": "oleary-2016-mindfulness-cortisol",
@@ -489,7 +580,11 @@
     },
     "year": 2016,
     "doi": "10.1177/1359105315569095",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "recovery",
+      "mindfulness"
+    ]
   },
   "grossman-2004-mbsr-meta-analysis": {
     "id": "grossman-2004-mbsr-meta-analysis",
@@ -516,7 +611,11 @@
     },
     "year": 2004,
     "doi": "10.1016/S0022-3999(03)00573-7",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "recovery",
+      "mindfulness"
+    ]
   },
   "riou-2015-energy-compensation-exercise": {
     "id": "riou-2015-energy-compensation-exercise",
@@ -540,7 +639,10 @@
     },
     "year": 2015,
     "doi": "10.3390/nu7053677",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "body-composition"
+    ]
   },
   "beaulieu-2021-exercise-appetite-control": {
     "id": "beaulieu-2021-exercise-appetite-control",
@@ -564,7 +666,12 @@
     },
     "year": 2021,
     "doi": "10.1111/obr.13251",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety"
+    ]
   },
   "de-silva-2012-pyy-glp1-obesity": {
     "id": "de-silva-2012-pyy-glp1-obesity",
@@ -585,7 +692,12 @@
     },
     "year": 2012,
     "doi": "10.5009/gnl.2012.6.1.10",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety"
+    ]
   },
   "burns-2023-light-psychiatric-disorders": {
     "id": "burns-2023-light-psychiatric-disorders",
@@ -609,7 +721,10 @@
     },
     "year": 2023,
     "doi": "10.1038/s44220-023-00135-8",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "sleep"
+    ]
   },
   "wilding-2014-glp1-obesity-treatment": {
     "id": "wilding-2014-glp1-obesity-treatment",
@@ -627,7 +742,12 @@
     },
     "year": 2014,
     "doi": "10.15277/bjdvd.2014.036",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety"
+    ]
   },
   "fountaine-2010-atypical-antipsychotics-energy-balance": {
     "id": "fountaine-2010-atypical-antipsychotics-energy-balance",
@@ -651,7 +771,10 @@
     },
     "year": 2010,
     "doi": "10.4088/JCP.08r04884gry",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "calorie-balance"
+    ]
   },
   "mullur-2014-thyroid-metabolism": {
     "id": "mullur-2014-thyroid-metabolism",
@@ -675,7 +798,11 @@
     },
     "year": 2014,
     "doi": "10.1152/physrev.00030.2013",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "pasquali-2006-obesity-reproductive-disorders": {
     "id": "pasquali-2006-obesity-reproductive-disorders",
@@ -699,7 +826,11 @@
     },
     "year": 2006,
     "doi": "10.1093/humupd/dml001",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "pagliai-2024-food-environment-obesity": {
     "id": "pagliai-2024-food-environment-obesity",
@@ -723,7 +854,12 @@
     },
     "year": 2024,
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11221287/",
-    "url_newtab": true
+    "url_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "environment-design"
+    ]
   },
   "english-2022-portion-size-ingestive-frequency": {
     "id": "english-2022-portion-size-ingestive-frequency",
@@ -747,7 +883,13 @@
     },
     "year": 2022,
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8803498/",
-    "url_newtab": true
+    "url_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "meal-structure",
+      "environment-design"
+    ]
   },
   "mattes-2011-sweetened-beverages-body-weight": {
     "id": "mattes-2011-sweetened-beverages-body-weight",
@@ -771,7 +913,11 @@
     },
     "year": 2011,
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3169649/",
-    "url_newtab": true
+    "url_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "breslow-2020-alcohol-dietary-intake": {
     "id": "breslow-2020-alcohol-dietary-intake",
@@ -795,7 +941,12 @@
     },
     "year": 2020,
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6981020/",
-    "url_newtab": true
+    "url_newtab": true,
+    "tags": [
+      "calorie-balance",
+      "food-quality",
+      "environment-design"
+    ]
   },
   "dennis-2009-beverage-consumption-weight-management": {
     "id": "dennis-2009-beverage-consumption-weight-management",
@@ -819,7 +970,11 @@
     },
     "year": 2009,
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2864136/",
-    "url_newtab": true
+    "url_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "yeomans-2015-alcoholic-sugary-drinks-overweight": {
     "id": "yeomans-2015-alcoholic-sugary-drinks-overweight",
@@ -837,7 +992,12 @@
     },
     "year": 2015,
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4555143/",
-    "url_newtab": true
+    "url_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "environment-design"
+    ]
   },
   "fazzino-2019-hyperpalatable-foods": {
     "id": "fazzino-2019-hyperpalatable-foods",
@@ -861,7 +1021,12 @@
     },
     "year": 2019,
     "doi": "10.1002/oby.22639",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "food-quality",
+      "satiety",
+      "environment-design"
+    ]
   },
   "small-2019-processing-food-reward": {
     "id": "small-2019-processing-food-reward",
@@ -882,7 +1047,12 @@
     },
     "year": 2019,
     "doi": "10.1038/s41583-019-0190-7",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "food-quality",
+      "satiety",
+      "environment-design"
+    ]
   },
   "killgore-2010-sleep-deprivation-cognition": {
     "id": "killgore-2010-sleep-deprivation-cognition",
@@ -900,7 +1070,11 @@
     },
     "year": 2010,
     "doi": "10.1016/S0079-6123(10)85013-0",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "recovery",
+      "sleep"
+    ]
   },
   "field-2016-alcohol-appetite": {
     "id": "field-2016-alcohol-appetite",
@@ -924,7 +1098,11 @@
     },
     "year": 2016,
     "doi": "10.1016/j.neubiorev.2016.05.024",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "satiety",
+      "environment-design"
+    ]
   },
   "schubert-2014-exercise-appetite-hormones": {
     "id": "schubert-2014-exercise-appetite-hormones",
@@ -948,7 +1126,10 @@
     },
     "year": 2014,
     "doi": "10.1007/s40279-014-0240-0",
-    "doi_newtab": true
+    "doi_newtab": true,
+    "tags": [
+      "satiety"
+    ]
   },
   "baker-2006-weight-loss-and-diet-plans": {
     "id": "baker-2006-weight-loss-and-diet-plans",
@@ -969,7 +1150,13 @@
     "container_title": "The American Journal of Nursing",
     "volume": "106",
     "issue": "6",
-    "pages": "52–59"
+    "pages": "52–59",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "food-quality",
+      "environment-design"
+    ]
   },
   "calcagno-2019-the-thermic-effect-of-food": {
     "id": "calcagno-2019-the-thermic-effect-of-food",
@@ -1008,7 +1195,10 @@
     "container_title": "Journal of the American College of Nutrition",
     "volume": "38",
     "issue": "6",
-    "pages": "547–551"
+    "pages": "547–551",
+    "tags": [
+      "calorie-balance"
+    ]
   },
   "davis-2001-a-review-of-current-weight-management": {
     "id": "davis-2001-a-review-of-current-weight-management",
@@ -1032,7 +1222,11 @@
     "container_title": "Journal of the American Academy of Nurse Practitioners",
     "volume": "13",
     "issue": "1",
-    "pages": "15–19"
+    "pages": "15–19",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "drenowatz-2015-reciprocal-compensation-to-changes-in-dietary-intake-and-energy-expenditure-within-the-concept-of-energy-balance": {
     "id": "drenowatz-2015-reciprocal-compensation-to-changes-in-dietary-intake-and-energy-expenditure-within-the-concept-of-energy-balance",
@@ -1053,7 +1247,11 @@
     "container_title": "Advances in Nutrition (Bethesda, Md.)",
     "volume": "6",
     "issue": "5",
-    "pages": "592–599"
+    "pages": "592–599",
+    "tags": [
+      "calorie-balance",
+      "food-quality"
+    ]
   },
   "fleming-2016-macronutrient-content-of-the-diet": {
     "id": "fleming-2016-macronutrient-content-of-the-diet",
@@ -1077,7 +1275,13 @@
     "container_title": "Current Obesity Reports",
     "volume": "5",
     "issue": "2",
-    "pages": "208–213"
+    "pages": "208–213",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "food-quality",
+      "periodization"
+    ]
   },
   "jeukendrup-2018-sport-nutrition": {
     "id": "jeukendrup-2018-sport-nutrition",
@@ -1096,7 +1300,10 @@
       "year": 2018
     },
     "year": 2018,
-    "publisher": "3rd ed. Champaign, IL: Human Kinetics"
+    "publisher": "3rd ed. Champaign, IL: Human Kinetics",
+    "tags": [
+      "food-quality"
+    ]
   },
   "kreider-2010-issn-exercise-and-sport-nutrition-review": {
     "id": "kreider-2010-issn-exercise-and-sport-nutrition-review",
@@ -1173,7 +1380,10 @@
     "doi_newtab": true,
     "container_title": "Journal of the International Society of Sports Nutrition",
     "volume": "7",
-    "pages": "7–7"
+    "pages": "7–7",
+    "tags": [
+      "food-quality"
+    ]
   },
   "langeveld-2015-the-long-term-effect-of-energy-restricted-diets-for-treating-obesity": {
     "id": "langeveld-2015-the-long-term-effect-of-energy-restricted-diets-for-treating-obesity",
@@ -1197,7 +1407,12 @@
     "container_title": "Obesity (Silver Spring, Md.)",
     "volume": "23",
     "issue": "8",
-    "pages": "1529–1538"
+    "pages": "1529–1538",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety"
+    ]
   },
   "longland-2016-higher-compared-with-lower-dietary-protein-during-an-energy-deficit-combined-with-intense-exercise-promotes-greater-lean-mass-gain-and-fat-mass-loss": {
     "id": "longland-2016-higher-compared-with-lower-dietary-protein-during-an-energy-deficit-combined-with-intense-exercise-promotes-greater-lean-mass-gain-and-fat-mass-loss",
@@ -1230,7 +1445,12 @@
     "container_title": "The American Journal of Clinical Nutrition",
     "volume": "103",
     "issue": "3",
-    "pages": "738–746"
+    "pages": "738–746",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "protein"
+    ]
   },
   "manore-2015-weight-management-for-athletes-and-active-individuals": {
     "id": "manore-2015-weight-management-for-athletes-and-active-individuals",
@@ -1251,7 +1471,11 @@
     "container_title": "Sports Medicine (Auckland)",
     "volume": "45",
     "issue": "Suppl 1",
-    "pages": "83–92"
+    "pages": "83–92",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "morton-2015-nutritional-interventions-to-augment-resistance-training-induced-skeletal-muscle-hypertrophy": {
     "id": "morton-2015-nutritional-interventions-to-augment-resistance-training-induced-skeletal-muscle-hypertrophy",
@@ -1277,7 +1501,12 @@
     "doi_newtab": true,
     "container_title": "Frontiers in Physiology",
     "volume": "6",
-    "pages": "245–245"
+    "pages": "245–245",
+    "tags": [
+      "food-quality",
+      "hypertrophy",
+      "strength-training"
+    ]
   },
   "oliveira-2021-a-high-protein-total-diet-replacement-increases-energy-expenditure-and-leads-to-negative-fat-balance-in-healthy-normal-weight-adults": {
     "id": "oliveira-2021-a-high-protein-total-diet-replacement-increases-energy-expenditure-and-leads-to-negative-fat-balance-in-healthy-normal-weight-adults",
@@ -1319,7 +1548,12 @@
     "container_title": "The American Journal of Clinical Nutrition",
     "volume": "113",
     "issue": "2",
-    "pages": "476–487"
+    "pages": "476–487",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "protein"
+    ]
   },
   "park-2020-dietary-factors-and-eating-behaviors-affecting-diet-induced-thermogenesis-in-obese-individuals": {
     "id": "park-2020-dietary-factors-and-eating-behaviors-affecting-diet-induced-thermogenesis-in-obese-individuals",
@@ -1367,7 +1601,14 @@
     "container_title": "Journal of Nutritional Science and Vitaminology",
     "volume": "66",
     "issue": "1",
-    "pages": "1–9"
+    "pages": "1–9",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "food-quality",
+      "satiety",
+      "behavior-change"
+    ]
   },
   "phillips-2011-the-science-of-muscle-hypertrophy": {
     "id": "phillips-2011-the-science-of-muscle-hypertrophy",
@@ -1388,7 +1629,12 @@
     "container_title": "Proceedings of the Nutrition Society",
     "volume": "70",
     "issue": "1",
-    "pages": "100–103"
+    "pages": "100–103",
+    "tags": [
+      "protein",
+      "hypertrophy",
+      "strength-training"
+    ]
   },
   "poehlman-1989-a-review": {
     "id": "poehlman-1989-a-review",
@@ -1409,7 +1655,10 @@
     "container_title": "Medicine and Science in Sports and Exercise",
     "volume": "21",
     "issue": "5",
-    "pages": "515–525"
+    "pages": "515–525",
+    "tags": [
+      "calorie-balance"
+    ]
   },
   "pramukova-2011-current-knowledge-about-sports-nutrition": {
     "id": "pramukova-2011-current-knowledge-about-sports-nutrition",
@@ -1436,7 +1685,10 @@
     "container_title": "Australasian Medical Journal",
     "volume": "4",
     "issue": "3",
-    "pages": "107–110"
+    "pages": "107–110",
+    "tags": [
+      "food-quality"
+    ]
   },
   "schutz-1995-macronutrients-and-energy-balance-in-obesity": {
     "id": "schutz-1995-macronutrients-and-energy-balance-in-obesity",
@@ -1457,7 +1709,11 @@
     "container_title": "Metabolism, Clinical and Experimental",
     "volume": "44",
     "issue": "9",
-    "pages": "7–11"
+    "pages": "7–11",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "tangney-2005-a-review": {
     "id": "tangney-2005-a-review",
@@ -1499,7 +1755,12 @@
     "container_title": "Disease-a-Month",
     "volume": "51",
     "issue": "5",
-    "pages": "284–316"
+    "pages": "284–316",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "food-quality"
+    ]
   },
   "volek-2005-diet-and-exercise-for-weight-loss": {
     "id": "volek-2005-diet-and-exercise-for-weight-loss",
@@ -1526,7 +1787,12 @@
     "container_title": "Sports Medicine (Auckland)",
     "volume": "35",
     "issue": "1",
-    "pages": "1–9"
+    "pages": "1–9",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "food-quality"
+    ]
   },
   "weigle-2007-modified-macronutrient-diets-and-weight-loss-are-food-choice-and-variety-more-important-than-caloric-restriction": {
     "id": "weigle-2007-modified-macronutrient-diets-and-weight-loss-are-food-choice-and-variety-more-important-than-caloric-restriction",
@@ -1547,7 +1813,11 @@
     "container_title": "Nature Clinical Practice. Endocrinology & Metabolism",
     "volume": "3",
     "issue": "11",
-    "pages": "728–729"
+    "pages": "728–729",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "westerterp-2013-physical-activity-and-physical-activity-induced-energy-expenditure-in-humans": {
     "id": "westerterp-2013-physical-activity-and-physical-activity-induced-energy-expenditure-in-humans",
@@ -1567,7 +1837,10 @@
     "doi_newtab": true,
     "container_title": "Frontiers in Physiology",
     "volume": "4",
-    "pages": "90–90"
+    "pages": "90–90",
+    "tags": [
+      "calorie-balance"
+    ]
   },
   "abdulla-2015-role-of-insulin-in-the-regulation-of-human-skeletal-muscle-protein-synthesis-and-breakdown": {
     "id": "abdulla-2015-role-of-insulin-in-the-regulation-of-human-skeletal-muscle-protein-synthesis-and-breakdown",
@@ -1588,7 +1861,13 @@
     "container_title": "Diabetologia",
     "volume": "59",
     "issue": "1",
-    "pages": "44–55"
+    "pages": "44–55",
+    "tags": [
+      "calorie-balance",
+      "protein",
+      "hypertrophy",
+      "strength-training"
+    ]
   },
   "acheson-1987-carbohydrate-metabolism-and-de-novo-lipogenesis-in-human-obesity": {
     "id": "acheson-1987-carbohydrate-metabolism-and-de-novo-lipogenesis-in-human-obesity",
@@ -1621,7 +1900,12 @@
     "container_title": "The American Journal of Clinical Nutrition",
     "volume": "45",
     "issue": "1",
-    "pages": "78–85"
+    "pages": "78–85",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "carbohydrates"
+    ]
   },
   "adeva-andany-2016-glycogen-metabolism-in-humans": {
     "id": "adeva-andany-2016-glycogen-metabolism-in-humans",
@@ -1653,7 +1937,11 @@
     "doi_newtab": true,
     "container_title": "BBA Clinical",
     "volume": "5",
-    "pages": "85–100"
+    "pages": "85–100",
+    "tags": [
+      "calorie-balance",
+      "carbohydrates"
+    ]
   },
   "aranceta-2012-recommended-dietary-reference-intakes-nutritional-goals-and-dietary-guidelines-for-fat-and-fatty-acids": {
     "id": "aranceta-2012-recommended-dietary-reference-intakes-nutritional-goals-and-dietary-guidelines-for-fat-and-fatty-acids",
@@ -1677,7 +1965,12 @@
     "container_title": "British Journal of Nutrition",
     "volume": "107",
     "issue": "S2",
-    "pages": "S8–S22"
+    "pages": "S8–S22",
+    "tags": [
+      "dietary-fat",
+      "food-quality",
+      "behavior-change"
+    ]
   },
   "astrup-2015-the-role-of-higher-protein-diets-in-weight-control-and-obesity-related-comorbidities": {
     "id": "astrup-2015-the-role-of-higher-protein-diets-in-weight-control-and-obesity-related-comorbidities",
@@ -1704,7 +1997,12 @@
     "container_title": "International Journal of Obesity",
     "volume": "39",
     "issue": "5",
-    "pages": "721–726"
+    "pages": "721–726",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "protein"
+    ]
   },
   "baker-2010-interaction-among-skeletal-muscle-metabolic-energy-systems-during-intense-exercise": {
     "id": "baker-2010-interaction-among-skeletal-muscle-metabolic-energy-systems-during-intense-exercise",
@@ -1730,7 +2028,12 @@
     "doi_newtab": true,
     "container_title": "Journal of Nutrition and Metabolism",
     "volume": "2010",
-    "pages": "905612–905613"
+    "pages": "905612–905613",
+    "tags": [
+      "calorie-balance",
+      "hypertrophy",
+      "strength-training"
+    ]
   },
   "beck-2015-role-of-nutrition-in-performance-enhancement-and-postexercise-recovery": {
     "id": "beck-2015-role-of-nutrition-in-performance-enhancement-and-postexercise-recovery",
@@ -1760,7 +2063,11 @@
     "container_title": "Open Access Journal of Sports Medicine",
     "volume": "6",
     "issue": "default",
-    "pages": "259–267"
+    "pages": "259–267",
+    "tags": [
+      "food-quality",
+      "recovery"
+    ]
   },
   "bilsborough-2006-a-review-of-issues-of-dietary-protein-intake-in-humans": {
     "id": "bilsborough-2006-a-review-of-issues-of-dietary-protein-intake-in-humans",
@@ -1784,7 +2091,10 @@
     "container_title": "International Journal of Sport Nutrition and Exercise Metabolism",
     "volume": "16",
     "issue": "2",
-    "pages": "129–152"
+    "pages": "129–152",
+    "tags": [
+      "protein"
+    ]
   },
   "biolo-1999-insulin-action-on-muscle-protein-kinetics-and-amino-acid-transport-during-recovery-after-resistance-exercise": {
     "id": "biolo-1999-insulin-action-on-muscle-protein-kinetics-and-amino-acid-transport-during-recovery-after-resistance-exercise",
@@ -1814,7 +2124,14 @@
     "container_title": "Diabetes (New York, N.Y.)",
     "volume": "48",
     "issue": "5",
-    "pages": "949–957"
+    "pages": "949–957",
+    "tags": [
+      "calorie-balance",
+      "protein",
+      "hypertrophy",
+      "strength-training",
+      "recovery"
+    ]
   },
   "bosse-2012-dietary-protein-to-maximize-resistance-training": {
     "id": "bosse-2012-dietary-protein-to-maximize-resistance-training",
@@ -1838,7 +2155,11 @@
     "container_title": "Journal of the International Society of Sports Nutrition",
     "volume": "9",
     "issue": "1",
-    "pages": "42–42"
+    "pages": "42–42",
+    "tags": [
+      "protein",
+      "strength-training"
+    ]
   },
   "burke-2001-energy-needs-of-athletes": {
     "id": "burke-2001-energy-needs-of-athletes",
@@ -1859,7 +2180,10 @@
     "container_title": "Canadian Journal of Applied Physiology",
     "volume": "26",
     "issue": "S1",
-    "pages": "S202–S219"
+    "pages": "S202–S219",
+    "tags": [
+      "calorie-balance"
+    ]
   },
   "burke-2011-carbohydrates-for-training-and-competition": {
     "id": "burke-2011-carbohydrates-for-training-and-competition",
@@ -1889,7 +2213,11 @@
     "container_title": "Journal of Sports Sciences",
     "volume": "29",
     "issue": "1",
-    "pages": "S17–S27"
+    "pages": "S17–S27",
+    "tags": [
+      "carbohydrates",
+      "endurance"
+    ]
   },
   "burke-2004-carbohydrates-and-fat-for-training-and-recovery": {
     "id": "burke-2004-carbohydrates-and-fat-for-training-and-recovery",
@@ -1916,7 +2244,11 @@
     "container_title": "Journal of Sports Sciences",
     "volume": "22",
     "issue": "1",
-    "pages": "15–30"
+    "pages": "15–30",
+    "tags": [
+      "carbohydrates",
+      "recovery"
+    ]
   },
   "burke-2007-nutrition-for-distance-events": {
     "id": "burke-2007-nutrition-for-distance-events",
@@ -1943,7 +2275,11 @@
     "container_title": "Journal of Sports Sciences",
     "volume": "25",
     "issue": "1",
-    "pages": "S29–S38"
+    "pages": "S29–S38",
+    "tags": [
+      "food-quality",
+      "endurance"
+    ]
   },
   "churchward-venne-2012-nutritional-regulation-of-muscle-protein-synthesis-with-resistance-exercise": {
     "id": "churchward-venne-2012-nutritional-regulation-of-muscle-protein-synthesis-with-resistance-exercise",
@@ -1970,7 +2306,12 @@
     "container_title": "Nutrition & Metabolism",
     "volume": "9",
     "issue": "1",
-    "pages": "40–40"
+    "pages": "40–40",
+    "tags": [
+      "protein",
+      "hypertrophy",
+      "strength-training"
+    ]
   },
   "costill-1991-carbohydrate-for-athletic-training-and-performance": {
     "id": "costill-1991-carbohydrate-for-athletic-training-and-performance",
@@ -1989,7 +2330,10 @@
     "container_title": "Boletin de la Asociacion Medica de Puerto Rico",
     "volume": "83",
     "issue": "8",
-    "pages": "350–353"
+    "pages": "350–353",
+    "tags": [
+      "carbohydrates"
+    ]
   },
   "coyle-2004-fluid-and-fuel-intake-during-exercise": {
     "id": "coyle-2004-fluid-and-fuel-intake-during-exercise",
@@ -2010,7 +2354,10 @@
     "container_title": "Journal of Sports Sciences",
     "volume": "22",
     "issue": "1",
-    "pages": "39–55"
+    "pages": "39–55",
+    "tags": [
+      "body-composition"
+    ]
   },
   "de-feo-1996-hormonal-regulation-of-human-protein-metabolism": {
     "id": "de-feo-1996-hormonal-regulation-of-human-protein-metabolism",
@@ -2031,7 +2378,11 @@
     "container_title": "European Journal of Endocrinology",
     "volume": "135",
     "issue": "1",
-    "pages": "7–18"
+    "pages": "7–18",
+    "tags": [
+      "calorie-balance",
+      "protein"
+    ]
   },
   "dong-2013-effects-of-high-protein-diets-on-body-weight-glycaemic-control-blood-lipids-and-blood-pressure-in-type-2-diabetes": {
     "id": "dong-2013-effects-of-high-protein-diets-on-body-weight-glycaemic-control-blood-lipids-and-blood-pressure-in-type-2-diabetes",
@@ -2061,7 +2412,13 @@
     "container_title": "British Journal of Nutrition",
     "volume": "110",
     "issue": "5",
-    "pages": "781–789"
+    "pages": "781–789",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "protein",
+      "carbohydrates"
+    ]
   },
   "escobar-2016-the-effect-of-a-moderately-low-and-high-carbohydrate-intake-on-crossfit-performance": {
     "id": "escobar-2016-the-effect-of-a-moderately-low-and-high-carbohydrate-intake-on-crossfit-performance",
@@ -2086,7 +2443,11 @@
     "container_title": "International Journal of Exercise Science",
     "volume": "9",
     "issue": "3",
-    "pages": "460–470"
+    "pages": "460–470",
+    "tags": [
+      "carbohydrates",
+      "strength-training"
+    ]
   },
   "fujita-2006-effect-of-insulin-on-human-skeletal-muscle-protein-synthesis-is-modulated-by-insulin-induced-changes-in-muscle-blood-flow-and-amino-acid-availability": {
     "id": "fujita-2006-effect-of-insulin-on-human-skeletal-muscle-protein-synthesis-is-modulated-by-insulin-induced-changes-in-muscle-blood-flow-and-amino-acid-availability",
@@ -2107,7 +2468,13 @@
     "container_title": "American Journal of Physiology - Endocrinology And Metabolism",
     "volume": "291",
     "issue": "4",
-    "pages": "745–754"
+    "pages": "745–754",
+    "tags": [
+      "calorie-balance",
+      "protein",
+      "hypertrophy",
+      "strength-training"
+    ]
   },
   "hargreaves-1991-carbohydrates-and-exercise": {
     "id": "hargreaves-1991-carbohydrates-and-exercise",
@@ -2128,7 +2495,10 @@
     "container_title": "Journal of Sports Sciences",
     "volume": "9",
     "issue": "sup1",
-    "pages": "17–28"
+    "pages": "17–28",
+    "tags": [
+      "carbohydrates"
+    ]
   },
   "helms-2014-a-systematic-review-of-dietary-protein-during-caloric-restriction-in-resistance-trained-lean-athletes": {
     "id": "helms-2014-a-systematic-review-of-dietary-protein-during-caloric-restriction-in-resistance-trained-lean-athletes",
@@ -2158,7 +2528,11 @@
     "container_title": "International Journal of Sport Nutrition and Exercise Metabolism",
     "volume": "24",
     "issue": "2",
-    "pages": "127–138"
+    "pages": "127–138",
+    "tags": [
+      "protein",
+      "strength-training"
+    ]
   },
   "hirsch-1995-role-and-benefits-of-carbohydrate-in-the-diet": {
     "id": "hirsch-1995-role-and-benefits-of-carbohydrate-in-the-diet",
@@ -2179,7 +2553,11 @@
     "container_title": "The American Journal of Clinical Nutrition",
     "volume": "61",
     "issue": "4",
-    "pages": "996S–1000S"
+    "pages": "996S–1000S",
+    "tags": [
+      "carbohydrates",
+      "food-quality"
+    ]
   },
   "jequier-1999-response-to-and-range-of-acceptable-fat-intake-in-adults": {
     "id": "jequier-1999-response-to-and-range-of-acceptable-fat-intake-in-adults",
@@ -2200,7 +2578,10 @@
     "container_title": "European Journal of Clinical Nutrition",
     "volume": "53",
     "issue": "1",
-    "pages": "S84–S93"
+    "pages": "S84–S93",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "jeukendrup-2017-periodized-nutrition-for-athletes": {
     "id": "jeukendrup-2017-periodized-nutrition-for-athletes",
@@ -2221,7 +2602,11 @@
     "container_title": "Sports Medicine (Auckland)",
     "volume": "47",
     "issue": "Suppl 1",
-    "pages": "51–63"
+    "pages": "51–63",
+    "tags": [
+      "food-quality",
+      "periodization"
+    ]
   },
   "maughan-2011-practical-nutritional-recommendations-for-the-athlete": {
     "id": "maughan-2011-practical-nutritional-recommendations-for-the-athlete",
@@ -2244,7 +2629,10 @@
     "doi_newtab": true,
     "container_title": "Nestle Nutrition Institute workshop series",
     "volume": "69",
-    "pages": "131–149"
+    "pages": "131–149",
+    "tags": [
+      "food-quality"
+    ]
   },
   "rtenblad-2013-muscle-glycogen-stores-and-fatigue": {
     "id": "rtenblad-2013-muscle-glycogen-stores-and-fatigue",
@@ -2271,7 +2659,13 @@
     "container_title": "The Journal of Physiology",
     "volume": "591",
     "issue": "18",
-    "pages": "4405–4413"
+    "pages": "4405–4413",
+    "tags": [
+      "carbohydrates",
+      "strength-training",
+      "recovery",
+      "fatigue"
+    ]
   },
   "phillips-2014-a-brief-review-of-higher-dietary-protein-diets-in-weight-loss": {
     "id": "phillips-2014-a-brief-review-of-higher-dietary-protein-diets-in-weight-loss",
@@ -2292,7 +2686,12 @@
     "container_title": "Sports Medicine (Auckland)",
     "volume": "44",
     "issue": "Suppl 2",
-    "pages": "149–153"
+    "pages": "149–153",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "protein"
+    ]
   },
   "phillips-2011-dietary-protein-for-athletes": {
     "id": "phillips-2011-dietary-protein-for-athletes",
@@ -2316,7 +2715,10 @@
     "container_title": "Journal of Sports Sciences",
     "volume": "29",
     "issue": "1",
-    "pages": "S29–S38"
+    "pages": "S29–S38",
+    "tags": [
+      "protein"
+    ]
   },
   "williams-2015-carbohydrate-nutrition-and-team-sport-performance": {
     "id": "williams-2015-carbohydrate-nutrition-and-team-sport-performance",
@@ -2340,7 +2742,11 @@
     "container_title": "Sports Medicine (Auckland)",
     "volume": "45",
     "issue": "Suppl 1",
-    "pages": "13–22"
+    "pages": "13–22",
+    "tags": [
+      "carbohydrates",
+      "endurance"
+    ]
   },
   "wolfe-1998-fat-metabolism-in-exercise": {
     "id": "wolfe-1998-fat-metabolism-in-exercise",
@@ -2360,7 +2766,10 @@
     "doi_newtab": true,
     "container_title": "Advances in experimental medicine and biology",
     "volume": "441",
-    "pages": "147–156"
+    "pages": "147–156",
+    "tags": [
+      "calorie-balance"
+    ]
   },
   "zajac-2015-central-and-peripheral-fatigue-during-resistance-exercise-a-critical-review": {
     "id": "zajac-2015-central-and-peripheral-fatigue-during-resistance-exercise-a-critical-review",
@@ -2393,7 +2802,12 @@
     "container_title": "Journal of Human Kinetics",
     "volume": "49",
     "issue": "1",
-    "pages": "159–169"
+    "pages": "159–169",
+    "tags": [
+      "strength-training",
+      "recovery",
+      "fatigue"
+    ]
   },
   "american-2021-saturated-fat": {
     "id": "american-2021-saturated-fat",
@@ -2411,7 +2825,10 @@
     "year": 2021,
     "url": "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/saturated-fats",
     "url_newtab": true,
-    "organization": "American Heart Association"
+    "organization": "American Heart Association",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "ardisson-korat-2014-diet-lifestyle-and-genetic-risk-factors-for-type-2-diabetes": {
     "id": "ardisson-korat-2014-diet-lifestyle-and-genetic-risk-factors-for-type-2-diabetes",
@@ -2438,7 +2855,10 @@
     "container_title": "Current Nutrition Reports",
     "volume": "3",
     "issue": "4",
-    "pages": "345–354"
+    "pages": "345–354",
+    "tags": [
+      "calorie-balance"
+    ]
   },
   "babio-2009-mediterranean-diet-and-metabolic-syndrome": {
     "id": "babio-2009-mediterranean-diet-and-metabolic-syndrome",
@@ -2465,7 +2885,11 @@
     "container_title": "Public Health Nutrition",
     "volume": "12",
     "issue": "9A",
-    "pages": "1607–1617"
+    "pages": "1607–1617",
+    "tags": [
+      "calorie-balance",
+      "food-quality"
+    ]
   },
   "bridges-2020-facts-about-monounsaturated-fats": {
     "id": "bridges-2020-facts-about-monounsaturated-fats",
@@ -2483,7 +2907,10 @@
     "year": 2020,
     "url": "https://medlineplus.gov/ency/patientinstructions/000785.htm",
     "url_newtab": true,
-    "container_title": "MedlinePlus"
+    "container_title": "MedlinePlus",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "bridges-2021-facts-about-polyunsaturated-fats": {
     "id": "bridges-2021-facts-about-polyunsaturated-fats",
@@ -2501,7 +2928,10 @@
     "year": 2021,
     "url": "https://medlineplus.gov/ency/patientinstructions/000747.htm",
     "url_newtab": true,
-    "container_title": "MedlinePlus"
+    "container_title": "MedlinePlus",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "de-mello-2009-dietary-fibers": {
     "id": "de-mello-2009-dietary-fibers",
@@ -2525,7 +2955,11 @@
     "container_title": "Arquivos Brasileiros de Endocrinologia e Metabologia",
     "volume": "53",
     "issue": "5",
-    "pages": "509–518"
+    "pages": "509–518",
+    "tags": [
+      "calorie-balance",
+      "fiber"
+    ]
   },
   "fung-2016-food-quality-score-and-the-risk-of-coronary-artery-disease": {
     "id": "fung-2016-food-quality-score-and-the-risk-of-coronary-artery-disease",
@@ -2564,7 +2998,11 @@
     "container_title": "The American Journal of Clinical Nutrition",
     "volume": "104",
     "issue": "1",
-    "pages": "65–72"
+    "pages": "65–72",
+    "tags": [
+      "food-quality",
+      "environment-design"
+    ]
   },
   "george-2014-comparing-indices-of-diet-quality-with-chronic-disease-mortality-risk-in-postmenopausal-women-in-the-womens-health-initiative-observational-study": {
     "id": "george-2014-comparing-indices-of-diet-quality-with-chronic-disease-mortality-risk-in-postmenopausal-women-in-the-womens-health-initiative-observational-study",
@@ -2609,7 +3047,11 @@
     "container_title": "American Journal of Epidemiology",
     "volume": "180",
     "issue": "6",
-    "pages": "616–625"
+    "pages": "616–625",
+    "tags": [
+      "body-composition",
+      "food-quality"
+    ]
   },
   "giugliano-2006-the-effects-of-diet-on-inflammation": {
     "id": "giugliano-2006-the-effects-of-diet-on-inflammation",
@@ -2636,7 +3078,11 @@
     "container_title": "Emphasis on the Metabolic Syndrome. Journal of the American College of Cardiology",
     "volume": "48",
     "issue": "4",
-    "pages": "677–685"
+    "pages": "677–685",
+    "tags": [
+      "food-quality",
+      "recovery"
+    ]
   },
   "hariharan-2015-the-western-diet-and-chronic-kidney-disease": {
     "id": "hariharan-2015-the-western-diet-and-chronic-kidney-disease",
@@ -2663,7 +3109,11 @@
     "container_title": "Current Hypertension Reports",
     "volume": "17",
     "issue": "3",
-    "pages": "1–9"
+    "pages": "1–9",
+    "tags": [
+      "food-quality",
+      "environment-design"
+    ]
   },
   "harvard-2019-the-nutrition-source-fats-and-cholesterol": {
     "id": "harvard-2019-the-nutrition-source-fats-and-cholesterol",
@@ -2681,7 +3131,11 @@
     "year": 2019,
     "url": "https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/fats-and-cholesterol/",
     "url_newtab": true,
-    "organization": "Harvard T.H. Chan School of Public Health"
+    "organization": "Harvard T.H. Chan School of Public Health",
+    "tags": [
+      "dietary-fat",
+      "food-quality"
+    ]
   },
   "harvard-2019-the-nutrition-source-types-of-fat": {
     "id": "harvard-2019-the-nutrition-source-types-of-fat",
@@ -2699,7 +3153,11 @@
     "year": 2019,
     "url": "https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/fats-and-cholesterol/types-of-fat/",
     "url_newtab": true,
-    "organization": "Harvard T.H. Chan School of Public Health"
+    "organization": "Harvard T.H. Chan School of Public Health",
+    "tags": [
+      "dietary-fat",
+      "food-quality"
+    ]
   },
   "hauner-2010-the-impact-of-nutrition-on-the-development-and-prognosis-of-breast-cancer": {
     "id": "hauner-2010-the-impact-of-nutrition-on-the-development-and-prognosis-of-breast-cancer",
@@ -2723,7 +3181,10 @@
     "container_title": "Breast Care (Basel, Switzerland)",
     "volume": "5",
     "issue": "6",
-    "pages": "377–381"
+    "pages": "377–381",
+    "tags": [
+      "food-quality"
+    ]
   },
   "hoeft-2012-micronutrients-a-global-perspective-on-intake-health-benefits-and-economics": {
     "id": "hoeft-2012-micronutrients-a-global-perspective-on-intake-health-benefits-and-economics",
@@ -2750,7 +3211,11 @@
     "container_title": "International journal for vitamin and nutrition research. Internationale Zeitschrift fur Vitamin- und Ernahrungsforschung. Journal international de vitaminologie et de nutrition",
     "volume": "82",
     "issue": "5",
-    "pages": "316–320"
+    "pages": "316–320",
+    "tags": [
+      "micronutrients",
+      "food-quality"
+    ]
   },
   "hu-2002-optimal-diets-for-prevention-of-coronary-heart-disease": {
     "id": "hu-2002-optimal-diets-for-prevention-of-coronary-heart-disease",
@@ -2774,7 +3239,10 @@
     "container_title": "JAMA : the Journal of the American Medical Association",
     "volume": "288",
     "issue": "20",
-    "pages": "2569–2578"
+    "pages": "2569–2578",
+    "tags": [
+      "food-quality"
+    ]
   },
   "lambrinoudaki-2012-emas-position-statement": {
     "id": "lambrinoudaki-2012-emas-position-statement",
@@ -2822,7 +3290,11 @@
     "container_title": "Maturitas",
     "volume": "74",
     "issue": "1",
-    "pages": "99–104"
+    "pages": "99–104",
+    "tags": [
+      "body-composition",
+      "food-quality"
+    ]
   },
   "lee-2011-a-simple-food-quality-index-predicts-mortality-in-elderly-taiwanese": {
     "id": "lee-2011-a-simple-food-quality-index-predicts-mortality-in-elderly-taiwanese",
@@ -2855,7 +3327,11 @@
     "container_title": "The Journal of Nutrition, Health & Aging",
     "volume": "15",
     "issue": "10",
-    "pages": "815–821"
+    "pages": "815–821",
+    "tags": [
+      "food-quality",
+      "environment-design"
+    ]
   },
   "ley-2014-prevention-and-management-of-type-2-diabetes": {
     "id": "ley-2014-prevention-and-management-of-type-2-diabetes",
@@ -2885,7 +3361,11 @@
     "container_title": "The Lancet (British Edition)",
     "volume": "383",
     "issue": "9933",
-    "pages": "1999–2007"
+    "pages": "1999–2007",
+    "tags": [
+      "calorie-balance",
+      "food-quality"
+    ]
   },
   "lutsey-2008-dietary-intake-and-the-development-of-the-metabolic-syndrome": {
     "id": "lutsey-2008-dietary-intake-and-the-development-of-the-metabolic-syndrome",
@@ -2912,7 +3392,11 @@
     "container_title": "Circulation (New York, N.Y.)",
     "volume": "117",
     "issue": "6",
-    "pages": "754–761"
+    "pages": "754–761",
+    "tags": [
+      "calorie-balance",
+      "food-quality"
+    ]
   },
   "michels-2002-a-prospective-study-of-variety-of-healthy-foods-and-mortality-in-women": {
     "id": "michels-2002-a-prospective-study-of-variety-of-healthy-foods-and-mortality-in-women",
@@ -2936,7 +3420,10 @@
     "container_title": "International Journal of Epidemiology",
     "volume": "31",
     "issue": "4",
-    "pages": "847–854"
+    "pages": "847–854",
+    "tags": [
+      "environment-design"
+    ]
   },
   "mosby-2012-nutrition-in-adult-and-childhood-cancer": {
     "id": "mosby-2012-nutrition-in-adult-and-childhood-cancer",
@@ -2967,7 +3454,10 @@
     "container_title": "Anticancer Research",
     "volume": "32",
     "issue": "10",
-    "pages": "4171–4192"
+    "pages": "4171–4192",
+    "tags": [
+      "food-quality"
+    ]
   },
   "mursu-2013-diet-quality-indexes-and-mortality-in-postmenopausal-women": {
     "id": "mursu-2013-diet-quality-indexes-and-mortality-in-postmenopausal-women",
@@ -3000,7 +3490,11 @@
     "container_title": "The American Journal of Clinical Nutrition",
     "volume": "98",
     "issue": "2",
-    "pages": "444–453"
+    "pages": "444–453",
+    "tags": [
+      "body-composition",
+      "food-quality"
+    ]
   },
   "olsen-2011-healthy-aspects-of-the-nordic-diet-are-related-to-lower-total-mortality": {
     "id": "olsen-2011-healthy-aspects-of-the-nordic-diet-are-related-to-lower-total-mortality",
@@ -3036,7 +3530,10 @@
     "container_title": "The Journal of Nutrition",
     "volume": "141",
     "issue": "4",
-    "pages": "639–644"
+    "pages": "639–644",
+    "tags": [
+      "food-quality"
+    ]
   },
   "reedy-2014-higher-diet-quality-is-associated-with-decreased-risk-of-all-cause-cardiovascular-disease-and-cancer-mortality-among-older-adults": {
     "id": "reedy-2014-higher-diet-quality-is-associated-with-decreased-risk-of-all-cause-cardiovascular-disease-and-cancer-mortality-among-older-adults",
@@ -3075,7 +3572,10 @@
     "container_title": "The Journal of Nutrition",
     "volume": "144",
     "issue": "6",
-    "pages": "881–889"
+    "pages": "881–889",
+    "tags": [
+      "food-quality"
+    ]
   },
   "sahan-2016-potential-benefits-of-healthy-food-and-lifestyle-policies-for-reducing-coronary-heart-disease-mortality-in-turkish-adults-by-2025": {
     "id": "sahan-2016-potential-benefits-of-healthy-food-and-lifestyle-policies-for-reducing-coronary-heart-disease-mortality-in-turkish-adults-by-2025",
@@ -3108,7 +3608,10 @@
     "container_title": "BMJ Open",
     "volume": "6",
     "issue": "7",
-    "pages": "e011217–e011217"
+    "pages": "e011217–e011217",
+    "tags": [
+      "environment-design"
+    ]
   },
   "schoenaker-2016-the-role-of-energy-nutrients-foods-and-dietary-patterns-in-the-development-of-gestational-diabetes-mellitus": {
     "id": "schoenaker-2016-the-role-of-energy-nutrients-foods-and-dietary-patterns-in-the-development-of-gestational-diabetes-mellitus",
@@ -3138,7 +3641,12 @@
     "container_title": "Diabetes Care",
     "volume": "39",
     "issue": "1",
-    "pages": "16–23"
+    "pages": "16–23",
+    "tags": [
+      "calorie-balance",
+      "food-quality",
+      "environment-design"
+    ]
   },
   "sijtsma-2015-healthy-eating-and-lower-mortality-risk-in-a-large-cohort-of-cardiac-patients-who-received-state-of-the-art-drug-treatment": {
     "id": "sijtsma-2015-healthy-eating-and-lower-mortality-risk-in-a-large-cohort-of-cardiac-patients-who-received-state-of-the-art-drug-treatment",
@@ -3183,7 +3691,11 @@
     "container_title": "The American Journal of Clinical Nutrition",
     "volume": "102",
     "issue": "6",
-    "pages": "1527–1533"
+    "pages": "1527–1533",
+    "tags": [
+      "food-quality",
+      "satiety"
+    ]
   },
   "siri-tarino-2010-saturated-fat-carbohydrate-and-cardiovascular-disease": {
     "id": "siri-tarino-2010-saturated-fat-carbohydrate-and-cardiovascular-disease",
@@ -3213,7 +3725,11 @@
     "container_title": "The American Journal of Clinical Nutrition",
     "volume": "91",
     "issue": "3",
-    "pages": "502–509"
+    "pages": "502–509",
+    "tags": [
+      "carbohydrates",
+      "dietary-fat"
+    ]
   },
   "u-s-2020-dietary-guidelines-for-americans-2020-2025-ninth-edition": {
     "id": "u-s-2020-dietary-guidelines-for-americans-2020-2025-ninth-edition",
@@ -3232,7 +3748,10 @@
     "url": "https://www.dietaryguidelines.gov/sites/default/files/2020-12/Dietary_Guidelines_for_Americans_2020-2025.pdf",
     "url_newtab": true,
     "organization": "U.S. Department of Agriculture and U.S. Department of Health and Human Services",
-    "container_title": "DietaryGuidelines.gov"
+    "container_title": "DietaryGuidelines.gov",
+    "tags": [
+      "food-quality"
+    ]
   },
   "u-s-2018-trans-fat": {
     "id": "u-s-2018-trans-fat",
@@ -3250,7 +3769,10 @@
     "year": 2018,
     "url": "https://www.fda.gov/food/food-additives-petitions/trans-fat",
     "url_newtab": true,
-    "organization": "U.S. Food and Drug Administration Center for Food Safety and Applied Nutrition"
+    "organization": "U.S. Food and Drug Administration Center for Food Safety and Applied Nutrition",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "u-s-2018-final-determination-regarding-partially-hydrogenated-oils-removing-trans-fat": {
     "id": "u-s-2018-final-determination-regarding-partially-hydrogenated-oils-removing-trans-fat",
@@ -3268,7 +3790,10 @@
     "year": 2018,
     "url": "https://www.fda.gov/food/food-additives-petitions/final-determination-regarding-partially-hydrogenated-oils-removing-trans-fat",
     "url_newtab": true,
-    "organization": "U.S. Food and Drug Administration Center for Food Safety and Applied Nutrition"
+    "organization": "U.S. Food and Drug Administration Center for Food Safety and Applied Nutrition",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "willett-2013-current-evidence-on-healthy-eating": {
     "id": "willett-2013-current-evidence-on-healthy-eating",
@@ -3291,7 +3816,11 @@
     "doi_newtab": true,
     "container_title": "Annual review of public health",
     "volume": "34",
-    "pages": "77–95"
+    "pages": "77–95",
+    "tags": [
+      "food-quality",
+      "satiety"
+    ]
   },
   "yusof-2012-dietary-patterns-and-risk-of-colorectal-cancer": {
     "id": "yusof-2012-dietary-patterns-and-risk-of-colorectal-cancer",
@@ -3318,7 +3847,11 @@
     "container_title": "Asian Pacific Journal of Cancer Prevention : APJCP",
     "volume": "13",
     "issue": "9",
-    "pages": "4713–4717"
+    "pages": "4713–4717",
+    "tags": [
+      "food-quality",
+      "environment-design"
+    ]
   },
   "abdull-razis-2013-cruciferous-vegetables": {
     "id": "abdull-razis-2013-cruciferous-vegetables",
@@ -3342,7 +3875,10 @@
     "container_title": "Asian Pacific Journal of Cancer Prevention: APJCP",
     "volume": "14",
     "issue": "3",
-    "pages": "1565–1570"
+    "pages": "1565–1570",
+    "tags": [
+      "food-quality"
+    ]
   },
   "anderson-1994-health-benefits-and-practical-aspects-of-high-fiber-diets": {
     "id": "anderson-1994-health-benefits-and-practical-aspects-of-high-fiber-diets",
@@ -3369,7 +3905,10 @@
     "container_title": "The American Journal of Clinical Nutrition",
     "volume": "59",
     "issue": "5",
-    "pages": "1242S–1247S"
+    "pages": "1242S–1247S",
+    "tags": [
+      "fiber"
+    ]
   },
   "bendich-2001-micronutrients-in-womens-health-and-immune-function": {
     "id": "bendich-2001-micronutrients-in-womens-health-and-immune-function",
@@ -3390,7 +3929,11 @@
     "container_title": "Nutrition",
     "volume": "17",
     "issue": "10",
-    "pages": "858–867"
+    "pages": "858–867",
+    "tags": [
+      "micronutrients",
+      "food-quality"
+    ]
   },
   "bloch-2003-nutrition-for-health-promotion": {
     "id": "bloch-2003-nutrition-for-health-promotion",
@@ -3411,7 +3954,12 @@
     "container_title": "Dental clinics of North America",
     "volume": "47",
     "issue": "2",
-    "pages": "411–ix"
+    "pages": "411–ix",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "food-quality"
+    ]
   },
   "bourre-2006-effects-of-nutrients-in-food-on-the-structure-and-function-of-the-nervous-system": {
     "id": "bourre-2006-effects-of-nutrients-in-food-on-the-structure-and-function-of-the-nervous-system",
@@ -3430,7 +3978,10 @@
     "container_title": "Part 1: Micronutrients. The Journal of Nutrition, Health & Aging",
     "volume": "10",
     "issue": "5",
-    "pages": "377–385"
+    "pages": "377–385",
+    "tags": [
+      "food-quality"
+    ]
   },
   "calton-2010-prevalence-of-micronutrient-deficiency-in-popular-diet-plans": {
     "id": "calton-2010-prevalence-of-micronutrient-deficiency-in-popular-diet-plans",
@@ -3450,7 +4001,11 @@
     "doi_newtab": true,
     "container_title": "Journal of the International Society of Sports Nutrition",
     "volume": "7",
-    "pages": "24–24"
+    "pages": "24–24",
+    "tags": [
+      "micronutrients",
+      "food-quality"
+    ]
   },
   "gardner-2010-micronutrient-quality-of-weight-loss-diets-that-focus-on-macronutrients": {
     "id": "gardner-2010-micronutrient-quality-of-weight-loss-diets-that-focus-on-macronutrients",
@@ -3489,7 +4044,13 @@
     "container_title": "The American Journal of Clinical Nutrition",
     "volume": "92",
     "issue": "2",
-    "pages": "304–312"
+    "pages": "304–312",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "micronutrients",
+      "food-quality"
+    ]
   },
   "gupta-2014-phytonutrients-as-therapeutic-agents": {
     "id": "gupta-2014-phytonutrients-as-therapeutic-agents",
@@ -3513,7 +4074,10 @@
     "container_title": "Journal of Complementary & Integrative Medicine",
     "volume": "11",
     "issue": "3",
-    "pages": "151–169"
+    "pages": "151–169",
+    "tags": [
+      "food-quality"
+    ]
   },
   "higgins-2004-resistant-starch": {
     "id": "higgins-2004-resistant-starch",
@@ -3534,7 +4098,10 @@
     "container_title": "Journal of AOAC International",
     "volume": "87",
     "issue": "3",
-    "pages": "761–768"
+    "pages": "761–768",
+    "tags": [
+      "calorie-balance"
+    ]
   },
   "howes-2014-the-role-of-phytochemicals-as-micronutrients-in-health-and-disease": {
     "id": "howes-2014-the-role-of-phytochemicals-as-micronutrients-in-health-and-disease",
@@ -3558,7 +4125,11 @@
     "container_title": "Current Opinion in Clinical Nutrition and Metabolic Care",
     "volume": "17",
     "issue": "6",
-    "pages": "558–566"
+    "pages": "558–566",
+    "tags": [
+      "micronutrients",
+      "food-quality"
+    ]
   },
   "huskisson-2007-the-role-of-vitamins-and-minerals-in-energy-metabolism-and-well-being": {
     "id": "huskisson-2007-the-role-of-vitamins-and-minerals-in-energy-metabolism-and-well-being",
@@ -3585,7 +4156,10 @@
     "container_title": "The Journal of International Medical Research",
     "volume": "35",
     "issue": "3",
-    "pages": "277–289"
+    "pages": "277–289",
+    "tags": [
+      "calorie-balance"
+    ]
   },
   "krzyzanowska-2010-dietary-phytochemicals-and-human-health": {
     "id": "krzyzanowska-2010-dietary-phytochemicals-and-human-health",
@@ -3611,7 +4185,10 @@
     "doi_newtab": true,
     "container_title": "Advances in experimental medicine and biology",
     "volume": "698",
-    "pages": "74–98"
+    "pages": "74–98",
+    "tags": [
+      "food-quality"
+    ]
   },
   "lattimer-2010-effects-of-dietary-fiber-and-its-components-on-metabolic-health": {
     "id": "lattimer-2010-effects-of-dietary-fiber-and-its-components-on-metabolic-health",
@@ -3635,7 +4212,11 @@
     "container_title": "Nutrients",
     "volume": "2",
     "issue": "12",
-    "pages": "1266–1289"
+    "pages": "1266–1289",
+    "tags": [
+      "calorie-balance",
+      "fiber"
+    ]
   },
   "liu-2004-potential-synergy-of-phytochemicals-in-cancer-prevention": {
     "id": "liu-2004-potential-synergy-of-phytochemicals-in-cancer-prevention",
@@ -3656,7 +4237,10 @@
     "container_title": "The Journal of Nutrition",
     "volume": "134",
     "issue": "12",
-    "pages": "3479S–3485S"
+    "pages": "3479S–3485S",
+    "tags": [
+      "food-quality"
+    ]
   },
   "manach-2009-the-complex-links-between-dietary-phytochemicals-and-human-health-deciphered-by-metabolomics": {
     "id": "manach-2009-the-complex-links-between-dietary-phytochemicals-and-human-health-deciphered-by-metabolomics",
@@ -3686,7 +4270,10 @@
     "container_title": "Molecular Nutrition & Food Research",
     "volume": "53",
     "issue": "10",
-    "pages": "1303–1315"
+    "pages": "1303–1315",
+    "tags": [
+      "food-quality"
+    ]
   },
   "mckeag-2012-the-role-of-micronutrients-in-heart-failure": {
     "id": "mckeag-2012-the-role-of-micronutrients-in-heart-failure",
@@ -3719,7 +4306,11 @@
     "container_title": "Journal of the Academy of Nutrition and Dietetics",
     "volume": "112",
     "issue": "6",
-    "pages": "870–886"
+    "pages": "870–886",
+    "tags": [
+      "micronutrients",
+      "food-quality"
+    ]
   },
   "new-1999-bone-health": {
     "id": "new-1999-bone-health",
@@ -3740,7 +4331,11 @@
     "container_title": "British Medical Bulletin",
     "volume": "55",
     "issue": "3",
-    "pages": "619–633"
+    "pages": "619–633",
+    "tags": [
+      "micronutrients",
+      "food-quality"
+    ]
   },
   "nieves-2005-osteoporosis": {
     "id": "nieves-2005-osteoporosis",
@@ -3761,7 +4356,11 @@
     "container_title": "The American Journal of Clinical Nutrition",
     "volume": "81",
     "issue": "5",
-    "pages": "1232–1239"
+    "pages": "1232–1239",
+    "tags": [
+      "micronutrients",
+      "food-quality"
+    ]
   },
   "okarter-2010-health-benefits-of-whole-grain-phytochemicals": {
     "id": "okarter-2010-health-benefits-of-whole-grain-phytochemicals",
@@ -3785,7 +4384,11 @@
     "container_title": "Critical Reviews in Food Science and Nutrition",
     "volume": "50",
     "issue": "3",
-    "pages": "193–208"
+    "pages": "193–208",
+    "tags": [
+      "fiber",
+      "food-quality"
+    ]
   },
   "otles-2014-health-effects-of-dietary-fiber": {
     "id": "otles-2014-health-effects-of-dietary-fiber",
@@ -3809,7 +4412,10 @@
     "container_title": "Acta Scientiarum Polonorum. Technologia Alimentaria",
     "volume": "13",
     "issue": "2",
-    "pages": "191–202"
+    "pages": "191–202",
+    "tags": [
+      "fiber"
+    ]
   },
   "park-2015-role-of-micronutrients-in-skin-health-and-function": {
     "id": "park-2015-role-of-micronutrients-in-skin-health-and-function",
@@ -3830,7 +4436,11 @@
     "container_title": "Biomolecules & Therapeutics",
     "volume": "23",
     "issue": "3",
-    "pages": "207–217"
+    "pages": "207–217",
+    "tags": [
+      "micronutrients",
+      "food-quality"
+    ]
   },
   "probst-2017-dietary-phytochemical-intake-from-foods-and-health-outcomes": {
     "id": "probst-2017-dietary-phytochemical-intake-from-foods-and-health-outcomes",
@@ -3857,7 +4467,10 @@
     "container_title": "BMJ Open",
     "volume": "7",
     "issue": "2",
-    "pages": "e013337–e013337"
+    "pages": "e013337–e013337",
+    "tags": [
+      "food-quality"
+    ]
   },
   "rochfort-2007-phytochemicals-for-health-the-role-of-pulses": {
     "id": "rochfort-2007-phytochemicals-for-health-the-role-of-pulses",
@@ -3881,7 +4494,10 @@
     "container_title": "Journal of Agricultural and Food Chemistry",
     "volume": "55",
     "issue": "20",
-    "pages": "7981–7994"
+    "pages": "7981–7994",
+    "tags": [
+      "food-quality"
+    ]
   },
   "ruxton-2016-role-of-fatty-acids-and-micronutrients-in-healthy-ageing": {
     "id": "ruxton-2016-role-of-fatty-acids-and-micronutrients-in-healthy-ageing",
@@ -3908,7 +4524,12 @@
     "container_title": "Journal of Human Nutrition and Dietetics",
     "volume": "29",
     "issue": "3",
-    "pages": "308–324"
+    "pages": "308–324",
+    "tags": [
+      "dietary-fat",
+      "micronutrients",
+      "food-quality"
+    ]
   },
   "sanchez-muniz-2012-dietary-fibre-and-cardiovascular-health": {
     "id": "sanchez-muniz-2012-dietary-fibre-and-cardiovascular-health",
@@ -3929,7 +4550,10 @@
     "container_title": "Nutrición Hospitalaria : Organo Oficial de La Sociedad Española de Nutrición Parenteral y Enteral",
     "volume": "27",
     "issue": "1",
-    "pages": "31–45"
+    "pages": "31–45",
+    "tags": [
+      "fiber"
+    ]
   },
   "shenkin-2006-micronutrients-in-health-and-disease": {
     "id": "shenkin-2006-micronutrients-in-health-and-disease",
@@ -3950,7 +4574,11 @@
     "container_title": "Postgraduate Medical Journal",
     "volume": "82",
     "issue": "971",
-    "pages": "559–567"
+    "pages": "559–567",
+    "tags": [
+      "micronutrients",
+      "food-quality"
+    ]
   },
   "steffen-2003-associations-of-whole-grain-refined-grain-and-fruit-and-vegetable-consumption-with-risks-of-all-cause-mortality-and-incident-coronary-artery-disease-and-ischemic-stroke": {
     "id": "steffen-2003-associations-of-whole-grain-refined-grain-and-fruit-and-vegetable-consumption-with-risks-of-all-cause-mortality-and-incident-coronary-artery-disease-and-ischemic-stroke",
@@ -3986,7 +4614,10 @@
     "container_title": "The American Journal of Clinical Nutrition",
     "volume": "78",
     "issue": "3",
-    "pages": "383–390"
+    "pages": "383–390",
+    "tags": [
+      "fiber"
+    ]
   },
   "stevenson-2007-polyphenolic-phytochemicals-just-antioxidants-or-much-more": {
     "id": "stevenson-2007-polyphenolic-phytochemicals-just-antioxidants-or-much-more",
@@ -4010,7 +4641,10 @@
     "container_title": "Cellular and Molecular Life Sciences: CMLS",
     "volume": "64",
     "issue": "22",
-    "pages": "2900–2916"
+    "pages": "2900–2916",
+    "tags": [
+      "food-quality"
+    ]
   },
   "aguilera-2001-protective-effect-of-monounsaturated-and-polyunsaturated-fatty-acids-on-the-development-of-cardiovascular-disease": {
     "id": "aguilera-2001-protective-effect-of-monounsaturated-and-polyunsaturated-fatty-acids-on-the-development-of-cardiovascular-disease",
@@ -4038,7 +4672,10 @@
     "container_title": "Nutrición hospitalaria : organo oficial de la Sociedad Española de Nutrición Parenteral y Enteral",
     "volume": "16",
     "issue": "3",
-    "pages": "78–91"
+    "pages": "78–91",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "ascherio-1997-health-effects-of-trans-fatty-acids": {
     "id": "ascherio-1997-health-effects-of-trans-fatty-acids",
@@ -4062,7 +4699,10 @@
     "container_title": "The American Journal of Clinical Nutrition",
     "volume": "66",
     "issue": "4",
-    "pages": "1006S–1010S"
+    "pages": "1006S–1010S",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "balk-2017-omega-3-fatty-acids-and-cardiovascular-disease": {
     "id": "balk-2017-omega-3-fatty-acids-and-cardiovascular-disease",
@@ -4086,7 +4726,10 @@
     "container_title": "Nutrients",
     "volume": "9",
     "issue": "8",
-    "pages": "865–"
+    "pages": "865–",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "bendsen-2011-consumption-of-industrial-and-ruminant-trans-fatty-acids-and-risk-of-coronary-heart-disease": {
     "id": "bendsen-2011-consumption-of-industrial-and-ruminant-trans-fatty-acids-and-risk-of-coronary-heart-disease",
@@ -4116,7 +4759,10 @@
     "container_title": "European Journal of Clinical Nutrition",
     "volume": "65",
     "issue": "7",
-    "pages": "773–783"
+    "pages": "773–783",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "calder-2009-omega-3-polyunsaturated-fatty-acids-and-human-health-outcomes": {
     "id": "calder-2009-omega-3-polyunsaturated-fatty-acids-and-human-health-outcomes",
@@ -4140,7 +4786,10 @@
     "container_title": "BioFactors (Oxford)",
     "volume": "35",
     "issue": "3",
-    "pages": "266–272"
+    "pages": "266–272",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "clarys-2014-comparison-of-nutritional-quality-of-the-vegan-vegetarian-semi-vegetarian-pesco-vegetarian-and-omnivorous-diet": {
     "id": "clarys-2014-comparison-of-nutritional-quality-of-the-vegan-vegetarian-semi-vegetarian-pesco-vegetarian-and-omnivorous-diet",
@@ -4182,7 +4831,10 @@
     "container_title": "Nutrients",
     "volume": "6",
     "issue": "3",
-    "pages": "1318–1332"
+    "pages": "1318–1332",
+    "tags": [
+      "food-quality"
+    ]
   },
   "clifton-2017-a-systematic-review-of-the-effect-of-dietary-saturated-and-polyunsaturated-fat-on-heart-disease": {
     "id": "clifton-2017-a-systematic-review-of-the-effect-of-dietary-saturated-and-polyunsaturated-fat-on-heart-disease",
@@ -4206,7 +4858,10 @@
     "container_title": "Nutrition, Metabolism, and Cardiovascular Diseases",
     "volume": "27",
     "issue": "12",
-    "pages": "1060–1080"
+    "pages": "1060–1080",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "das-2006-essential-fatty-acids-a-review": {
     "id": "das-2006-essential-fatty-acids-a-review",
@@ -4227,7 +4882,10 @@
     "container_title": "Current pharmaceutical biotechnology",
     "volume": "7",
     "issue": "6",
-    "pages": "467–482"
+    "pages": "467–482",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "de-smet-2016-meat": {
     "id": "de-smet-2016-meat",
@@ -4250,7 +4908,10 @@
     "doi_newtab": true,
     "container_title": "A review. Meat Science",
     "volume": "120",
-    "pages": "145–156"
+    "pages": "145–156",
+    "tags": [
+      "food-quality"
+    ]
   },
   "de-souza-2015-intake-of-saturated-and-trans-unsaturated-fatty-acids-and-risk-of-all-cause-mortality-cardiovascular-disease-and-type-2-diabetes": {
     "id": "de-souza-2015-intake-of-saturated-and-trans-unsaturated-fatty-acids-and-risk-of-all-cause-mortality-cardiovascular-disease-and-type-2-diabetes",
@@ -4300,7 +4961,11 @@
     "doi_newtab": true,
     "container_title": "BMJ : British Medical Journal",
     "volume": "351",
-    "pages": "h3978–h3978"
+    "pages": "h3978–h3978",
+    "tags": [
+      "calorie-balance",
+      "dietary-fat"
+    ]
   },
   "dhaka-2011-trans-fatssources-health-risks-and-alternative-approach-a-review": {
     "id": "dhaka-2011-trans-fatssources-health-risks-and-alternative-approach-a-review",
@@ -4330,7 +4995,10 @@
     "container_title": "Journal of Food Science and Technology",
     "volume": "48",
     "issue": "5",
-    "pages": "534–541"
+    "pages": "534–541",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "donaldson-2010-glycemic-index-and-endurance-performance": {
     "id": "donaldson-2010-glycemic-index-and-endurance-performance",
@@ -4357,7 +5025,11 @@
     "container_title": "International journal of sport nutrition and exercise metabolism",
     "volume": "20",
     "issue": "2",
-    "pages": "154–165"
+    "pages": "154–165",
+    "tags": [
+      "carbohydrates",
+      "endurance"
+    ]
   },
   "dyall-2015-long-chain-omega-3-fatty-acids-and-the-brain": {
     "id": "dyall-2015-long-chain-omega-3-fatty-acids-and-the-brain",
@@ -4377,7 +5049,10 @@
     "doi_newtab": true,
     "container_title": "Frontiers in Aging Neuroscience",
     "volume": "7",
-    "pages": "52–52"
+    "pages": "52–52",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "ganguly-2015-the-toxicity-of-dietary-trans-fats": {
     "id": "ganguly-2015-the-toxicity-of-dietary-trans-fats",
@@ -4400,7 +5075,10 @@
     "doi_newtab": true,
     "container_title": "Food and Chemical Toxicology",
     "volume": "78",
-    "pages": "170–176"
+    "pages": "170–176",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "haag-2003-essential-fatty-acids-and-the-brain": {
     "id": "haag-2003-essential-fatty-acids-and-the-brain",
@@ -4421,7 +5099,10 @@
     "container_title": "Canadian journal of psychiatry. Revue canadienne de psychiatrie",
     "volume": "48",
     "issue": "3",
-    "pages": "195–203"
+    "pages": "195–203",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "hoffman-2004-protein-which-is-best": {
     "id": "hoffman-2004-protein-which-is-best",
@@ -4443,7 +5124,10 @@
     "container_title": "Journal of Sports Science & Medicine",
     "volume": "3",
     "issue": "3",
-    "pages": "118–130"
+    "pages": "118–130",
+    "tags": [
+      "protein"
+    ]
   },
   "huang-2018-review": {
     "id": "huang-2018-review",
@@ -4473,7 +5157,10 @@
     "container_title": "Critical Reviews in Food Science and Nutrition",
     "volume": "58",
     "issue": "15",
-    "pages": "2673–2678"
+    "pages": "2673–2678",
+    "tags": [
+      "protein"
+    ]
   },
   "iqbal-2014-trans-fatty-acids-a-risk-factor-for-cardiovascular-disease": {
     "id": "iqbal-2014-trans-fatty-acids-a-risk-factor-for-cardiovascular-disease",
@@ -4494,7 +5181,10 @@
     "container_title": "Pakistan Journal of Medical Sciences",
     "volume": "30",
     "issue": "1",
-    "pages": "194–197"
+    "pages": "194–197",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "katan-1995-trans-fatty-acids-and-their-effects-on-lipoproteins-in-humans": {
     "id": "katan-1995-trans-fatty-acids-and-their-effects-on-lipoproteins-in-humans",
@@ -4518,7 +5208,11 @@
     "year": 1995,
     "container_title": "Annual Review of Nutrition",
     "volume": "15",
-    "pages": "473–493"
+    "pages": "473–493",
+    "tags": [
+      "protein",
+      "dietary-fat"
+    ]
   },
   "khandelwal-2013-impact-of-omega-6-fatty-acids-on-cardiovascular-outcomes": {
     "id": "khandelwal-2013-impact-of-omega-6-fatty-acids-on-cardiovascular-outcomes",
@@ -4549,7 +5243,10 @@
     "container_title": "Journal of preventive cardiology",
     "volume": "2",
     "issue": "3",
-    "pages": "325–336"
+    "pages": "325–336",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "khodarahmi-2014-the-association-between-different-kinds-of-fat-intake-and-breast-cancer": {
     "id": "khodarahmi-2014-the-association-between-different-kinds-of-fat-intake-and-breast-cancer",
@@ -4571,7 +5268,10 @@
     "container_title": "International Journal of Preventive Medicine",
     "volume": "5",
     "issue": "1",
-    "pages": "6-15"
+    "pages": "6-15",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "kiefer-2012-omega-3-fatty-acids": {
     "id": "kiefer-2012-omega-3-fatty-acids",
@@ -4593,7 +5293,10 @@
     "container_title": "Agro food industry hi-tech",
     "volume": "23",
     "issue": "4",
-    "pages": "10–13"
+    "pages": "10–13",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "kris-etherton-2010-trans-fats-and-coronary-heart-disease": {
     "id": "kris-etherton-2010-trans-fats-and-coronary-heart-disease",
@@ -4614,7 +5317,10 @@
     "container_title": "Critical Reviews in Food Science and Nutrition",
     "volume": "50",
     "issue": "1",
-    "pages": "29–30"
+    "pages": "29–30",
+    "tags": [
+      "food-quality"
+    ]
   },
   "kumar-2012-dietary-roles-of-non-starch-polysaccharides-in-human-nutrition": {
     "id": "kumar-2012-dietary-roles-of-non-starch-polysaccharides-in-human-nutrition",
@@ -4647,7 +5353,10 @@
     "container_title": "Critical Reviews in Food Science and Nutrition",
     "volume": "52",
     "issue": "10",
-    "pages": "899–935"
+    "pages": "899–935",
+    "tags": [
+      "fiber"
+    ]
   },
   "lands-2012-consequences-of-essential-fatty-acids": {
     "id": "lands-2012-consequences-of-essential-fatty-acids",
@@ -4668,7 +5377,10 @@
     "container_title": "Nutrients",
     "volume": "4",
     "issue": "9",
-    "pages": "1338–1357"
+    "pages": "1338–1357",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "menaa-2012-trans-fatty-acids-dangerous-bonds-for-health": {
     "id": "menaa-2012-trans-fatty-acids-dangerous-bonds-for-health",
@@ -4698,7 +5410,10 @@
     "container_title": "A background review paper of their use, consumption, health implications and regulation in France. European Journal of Nutrition",
     "volume": "52",
     "issue": "4",
-    "pages": "1289–1302"
+    "pages": "1289–1302",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "micha-2009-trans-fatty-acids": {
     "id": "micha-2009-trans-fatty-acids",
@@ -4722,7 +5437,11 @@
     "container_title": "Nature reviews. Endocrinology",
     "volume": "5",
     "issue": "6",
-    "pages": "335–344"
+    "pages": "335–344",
+    "tags": [
+      "calorie-balance",
+      "dietary-fat"
+    ]
   },
   "millward-1999-the-nutritional-value-of-plant-based-diets-in-relation-to-human-amino-acid-and-protein-requirements": {
     "id": "millward-1999-the-nutritional-value-of-plant-based-diets-in-relation-to-human-amino-acid-and-protein-requirements",
@@ -4743,7 +5462,10 @@
     "container_title": "Proceedings of the Nutrition Society",
     "volume": "58",
     "issue": "2",
-    "pages": "249–260"
+    "pages": "249–260",
+    "tags": [
+      "protein"
+    ]
   },
   "moughan-2005-dietary-protein-quality-in-humans-an-overview": {
     "id": "moughan-2005-dietary-protein-quality-in-humans-an-overview",
@@ -4764,7 +5486,10 @@
     "container_title": "Journal of AOAC International",
     "volume": "88",
     "issue": "3",
-    "pages": "874–876"
+    "pages": "874–876",
+    "tags": [
+      "protein"
+    ]
   },
   "nettleton-2017-saturated-fat-consumption-and-risk-of-coronary-heart-disease-and-ischemic-stroke": {
     "id": "nettleton-2017-saturated-fat-consumption-and-risk-of-coronary-heart-disease-and-ischemic-stroke",
@@ -4794,7 +5519,10 @@
     "container_title": "Annals of Nutrition and Metabolism",
     "volume": "70",
     "issue": "1",
-    "pages": "26–33"
+    "pages": "26–33",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "oreilly-2010-glycaemic-index-glycaemic-load-and-exercise-performance": {
     "id": "oreilly-2010-glycaemic-index-glycaemic-load-and-exercise-performance",
@@ -4821,7 +5549,10 @@
     "container_title": "Sports Medicine (Auckland)",
     "volume": "40",
     "issue": "1",
-    "pages": "27–39"
+    "pages": "27–39",
+    "tags": [
+      "carbohydrates"
+    ]
   },
   "remig-2010-trans-fats-in-america": {
     "id": "remig-2010-trans-fats-in-america",
@@ -4857,7 +5588,10 @@
     "container_title": "Journal of the American Dietetic Association",
     "volume": "110",
     "issue": "4",
-    "pages": "585–592"
+    "pages": "585–592",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "rogerson-2017-vegan-diets": {
     "id": "rogerson-2017-vegan-diets",
@@ -4878,7 +5612,10 @@
     "container_title": "Journal of the International Society of Sports Nutrition",
     "volume": "14",
     "issue": "1",
-    "pages": "36–36"
+    "pages": "36–36",
+    "tags": [
+      "food-quality"
+    ]
   },
   "ruxton-2004-the-health-benefits-of-omega-3-polyunsaturated-fatty-acids": {
     "id": "ruxton-2004-the-health-benefits-of-omega-3-polyunsaturated-fatty-acids",
@@ -4908,7 +5645,10 @@
     "container_title": "Journal of Human Nutrition and Dietetics",
     "volume": "17",
     "issue": "5",
-    "pages": "449–459"
+    "pages": "449–459",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "sarwar-1987-digestibility-of-protein-and-bioavailability-of-amino-acids-in-foods": {
     "id": "sarwar-1987-digestibility-of-protein-and-bioavailability-of-amino-acids-in-foods",
@@ -4928,7 +5668,11 @@
     "doi_newtab": true,
     "container_title": "Effects on protein quality assessment. World review of nutrition and dietetics",
     "volume": "54",
-    "pages": "26–70"
+    "pages": "26–70",
+    "tags": [
+      "calorie-balance",
+      "protein"
+    ]
   },
   "schwingshackl-2014-monounsaturated-fatty-acids-olive-oil-and-health-status": {
     "id": "schwingshackl-2014-monounsaturated-fatty-acids-olive-oil-and-health-status",
@@ -4952,7 +5696,10 @@
     "container_title": "Lipids in Health and Disease",
     "volume": "13",
     "issue": "1",
-    "pages": "154–154"
+    "pages": "154–154",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "shi-2015-food-habits-lifestyle-factors-and-mortality-among-oldest-old-chinese": {
     "id": "shi-2015-food-habits-lifestyle-factors-and-mortality-among-oldest-old-chinese",
@@ -4988,7 +5735,10 @@
     "container_title": "Nutrients",
     "volume": "7",
     "issue": "9",
-    "pages": "7562–7579"
+    "pages": "7562–7579",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "siri-tarino-2015-saturated-fats-versus-polyunsaturated-fats-versus-carbohydrates-for-cardiovascular-disease-prevention-and-treatment": {
     "id": "siri-tarino-2015-saturated-fats-versus-polyunsaturated-fats-versus-carbohydrates-for-cardiovascular-disease-prevention-and-treatment",
@@ -5017,7 +5767,11 @@
     "doi_newtab": true,
     "container_title": "Annual review of nutrition",
     "volume": "35",
-    "pages": "517–543"
+    "pages": "517–543",
+    "tags": [
+      "carbohydrates",
+      "dietary-fat"
+    ]
   },
   "slavin-2014-carbohydrates": {
     "id": "slavin-2014-carbohydrates",
@@ -5041,7 +5795,10 @@
     "container_title": "Advances in Nutrition (Bethesda, Md.)",
     "volume": "5",
     "issue": "6",
-    "pages": "760–761"
+    "pages": "760–761",
+    "tags": [
+      "carbohydrates"
+    ]
   },
   "svendsen-2017-saturated-fat-a-never-ending-story": {
     "id": "svendsen-2017-saturated-fat-a-never-ending-story",
@@ -5068,7 +5825,10 @@
     "container_title": "Food & Nutrition Research",
     "volume": "61",
     "issue": "1",
-    "pages": "1377572–1377574"
+    "pages": "1377572–1377574",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "swanson-2012-omega-3-fatty-acids-epa-and-dha": {
     "id": "swanson-2012-omega-3-fatty-acids-epa-and-dha",
@@ -5095,7 +5855,10 @@
     "container_title": "Advances in Nutrition (Bethesda, Md.)",
     "volume": "3",
     "issue": "1",
-    "pages": "1–7"
+    "pages": "1–7",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "szostak-wegierek-2013-the-role-of-dietary-fats-for-preventing-cardiovascular-disease": {
     "id": "szostak-wegierek-2013-the-role-of-dietary-fats-for-preventing-cardiovascular-disease",
@@ -5123,7 +5886,10 @@
     "container_title": "A review. Roczniki Panstwowego Zakladu Higieny",
     "volume": "64",
     "issue": "4",
-    "pages": "263–269"
+    "pages": "263–269",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "teegala-2009-consumption-and-health-effects-of-trans-fatty-acids": {
     "id": "teegala-2009-consumption-and-health-effects-of-trans-fatty-acids",
@@ -5150,7 +5916,10 @@
     "container_title": "Journal of AOAC International",
     "volume": "92",
     "issue": "5",
-    "pages": "1250–1257"
+    "pages": "1250–1257",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "thomas-1991-carbohydrate-feeding-before-exercise": {
     "id": "thomas-1991-carbohydrate-feeding-before-exercise",
@@ -5177,7 +5946,12 @@
     "container_title": "International journal of sports medicine",
     "volume": "12",
     "issue": "2",
-    "pages": "180–186"
+    "pages": "180–186",
+    "tags": [
+      "calorie-balance",
+      "carbohydrates",
+      "meal-structure"
+    ]
   },
   "tome-2012-criteria-and-markers-for-protein-quality-assessment-a-review": {
     "id": "tome-2012-criteria-and-markers-for-protein-quality-assessment-a-review",
@@ -5198,7 +5972,10 @@
     "container_title": "British Journal of Nutrition",
     "volume": "108",
     "issue": "S2",
-    "pages": "S222–S229"
+    "pages": "S222–S229",
+    "tags": [
+      "protein"
+    ]
   },
   "van-vliet-2015-the-skeletal-muscle-anabolic-response-to-plant-versus-animal-based-protein-consumption": {
     "id": "van-vliet-2015-the-skeletal-muscle-anabolic-response-to-plant-versus-animal-based-protein-consumption",
@@ -5225,7 +6002,12 @@
     "container_title": "The Journal of Nutrition",
     "volume": "145",
     "issue": "9",
-    "pages": "1981–1991"
+    "pages": "1981–1991",
+    "tags": [
+      "protein",
+      "hypertrophy",
+      "strength-training"
+    ]
   },
   "walton-1997-glycaemic-index-and-optimal-performance": {
     "id": "walton-1997-glycaemic-index-and-optimal-performance",
@@ -5249,7 +6031,10 @@
     "container_title": "Sports Medicine (Auckland)",
     "volume": "23",
     "issue": "3",
-    "pages": "164–172"
+    "pages": "164–172",
+    "tags": [
+      "carbohydrates"
+    ]
   },
   "wanders-2017-trans-fat-intake-and-its-dietary-sources-in-general-populations-worldwide": {
     "id": "wanders-2017-trans-fat-intake-and-its-dietary-sources-in-general-populations-worldwide",
@@ -5276,7 +6061,10 @@
     "container_title": "Nutrients",
     "volume": "9",
     "issue": "8",
-    "pages": "840"
+    "pages": "840",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "yashodhara-2009-omega-3-fatty-acids": {
     "id": "yashodhara-2009-omega-3-fatty-acids",
@@ -5312,7 +6100,10 @@
     "container_title": "Postgraduate Medical Journal",
     "volume": "85",
     "issue": "1000",
-    "pages": "84–90"
+    "pages": "84–90",
+    "tags": [
+      "dietary-fat"
+    ]
   },
   "young-1994-plant-proteins-in-relation-to-human-protein-and-amino-acid-nutrition": {
     "id": "young-1994-plant-proteins-in-relation-to-human-protein-and-amino-acid-nutrition",
@@ -5336,7 +6127,10 @@
     "container_title": "The American journal of clinical nutrition",
     "volume": "59",
     "issue": "5 Suppl",
-    "pages": "1203S–1212S"
+    "pages": "1203S–1212S",
+    "tags": [
+      "protein"
+    ]
   },
   "drewnowski-2014-nutrient-density": {
     "id": "drewnowski-2014-nutrient-density",
@@ -5360,7 +6154,10 @@
     "container_title": "The American Journal of Clinical Nutrition",
     "volume": "99",
     "issue": "5",
-    "pages": "1223S–1228S"
+    "pages": "1223S–1228S",
+    "tags": [
+      "food-quality"
+    ]
   },
   "holt-1995-a-satiety-index-of-common-foods": {
     "id": "holt-1995-a-satiety-index-of-common-foods",
@@ -5388,7 +6185,10 @@
     "container_title": "European journal of clinical nutrition",
     "volume": "49",
     "issue": "9",
-    "pages": "675–690"
+    "pages": "675–690",
+    "tags": [
+      "satiety"
+    ]
   },
   "aragon-2013-nutrient-timing-revisited": {
     "id": "aragon-2013-nutrient-timing-revisited",
@@ -5412,7 +6212,10 @@
     "container_title": "Journal of the International Society of Sports Nutrition",
     "volume": "10",
     "issue": "1",
-    "pages": "5–5"
+    "pages": "5–5",
+    "tags": [
+      "meal-structure"
+    ]
   },
   "baker-2015-acute-effects-of-carbohydrate-supplementation-on-intermittent-sports-performance": {
     "id": "baker-2015-acute-effects-of-carbohydrate-supplementation-on-intermittent-sports-performance",
@@ -5442,7 +6245,10 @@
     "container_title": "Nutrients",
     "volume": "7",
     "issue": "7",
-    "pages": "5733–5763"
+    "pages": "5733–5763",
+    "tags": [
+      "carbohydrates"
+    ]
   },
   "bellisle-2007-meal-frequency-and-energy-balance": {
     "id": "bellisle-2007-meal-frequency-and-energy-balance",
@@ -5469,7 +6275,11 @@
     "container_title": "British Journal of Nutrition",
     "volume": "77",
     "issue": "S1",
-    "pages": "S57–S70"
+    "pages": "S57–S70",
+    "tags": [
+      "calorie-balance",
+      "meal-structure"
+    ]
   },
   "boirie-1997-slow-and-fast-dietary-proteins-differently-modulate-postprandial-protein-accretion": {
     "id": "boirie-1997-slow-and-fast-dietary-proteins-differently-modulate-postprandial-protein-accretion",
@@ -5505,7 +6315,10 @@
     "container_title": "Proceedings of the National Academy of Sciences - PNAS",
     "volume": "94",
     "issue": "26",
-    "pages": "14930–14935"
+    "pages": "14930–14935",
+    "tags": [
+      "protein"
+    ]
   },
   "coyle-1991-timing-and-method-of-increased-carbohydrate-intake-to-cope-with-heavy-training-competition-and-recovery": {
     "id": "coyle-1991-timing-and-method-of-increased-carbohydrate-intake-to-cope-with-heavy-training-competition-and-recovery",
@@ -5525,7 +6338,12 @@
     "doi_newtab": true,
     "container_title": "Journal of sports sciences",
     "volume": "9 Spec No",
-    "pages": "29–52"
+    "pages": "29–52",
+    "tags": [
+      "carbohydrates",
+      "endurance",
+      "recovery"
+    ]
   },
   "foltz-2009-intragastric-layering-of-lipids-delays-lipid-absorption-and-increases-plasma-cck-but-has-minor-effects-on-gastric-emptying-and-appetite": {
     "id": "foltz-2009-intragastric-layering-of-lipids-delays-lipid-absorption-and-increases-plasma-cck-but-has-minor-effects-on-gastric-emptying-and-appetite",
@@ -5570,7 +6388,11 @@
     "container_title": "American Journal of Physiology: Gastrointestinal and Liver Physiology",
     "volume": "296",
     "issue": "5",
-    "pages": "G982–G991"
+    "pages": "G982–G991",
+    "tags": [
+      "calorie-balance",
+      "satiety"
+    ]
   },
   "friedman-1991-regulation-of-glycogen-resynthesis-following-exercise": {
     "id": "friedman-1991-regulation-of-glycogen-resynthesis-following-exercise",
@@ -5597,7 +6419,10 @@
     "container_title": "Sports Medicine (Auckland)",
     "volume": "11",
     "issue": "4",
-    "pages": "232–243"
+    "pages": "232–243",
+    "tags": [
+      "carbohydrates"
+    ]
   },
   "garaulet-2014-timing-of-food-intake-and-obesity": {
     "id": "garaulet-2014-timing-of-food-intake-and-obesity",
@@ -5621,7 +6446,11 @@
     "container_title": "Physiology & Behavior",
     "volume": "134",
     "issue": "C",
-    "pages": "44–50"
+    "pages": "44–50",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "grandner-2013-dietary-nutrients-associated-with-short-and-long-sleep-duration": {
     "id": "grandner-2013-dietary-nutrients-associated-with-short-and-long-sleep-duration",
@@ -5650,7 +6479,11 @@
     "doi_newtab": true,
     "container_title": "Data from a nationally representative sample. Appetite",
     "volume": "64",
-    "pages": "71–80"
+    "pages": "71–80",
+    "tags": [
+      "food-quality",
+      "sleep"
+    ]
   },
   "haff-2003-carbohydrate-supplementation-and-resistance-training": {
     "id": "haff-2003-carbohydrate-supplementation-and-resistance-training",
@@ -5680,7 +6513,11 @@
     "container_title": "Journal of Strength and Conditioning Research",
     "volume": "17",
     "issue": "1",
-    "pages": "187–196"
+    "pages": "187–196",
+    "tags": [
+      "carbohydrates",
+      "strength-training"
+    ]
   },
   "hawley-2007-effect-of-meal-frequency-and-timing-on-physical-performance": {
     "id": "hawley-2007-effect-of-meal-frequency-and-timing-on-physical-performance",
@@ -5704,7 +6541,10 @@
     "container_title": "British Journal of Nutrition",
     "volume": "77",
     "issue": "S1",
-    "pages": "S91–S103"
+    "pages": "S91–S103",
+    "tags": [
+      "meal-structure"
+    ]
   },
   "holmes-1971-carbohydrate-digestion-and-absorption": {
     "id": "holmes-1971-carbohydrate-digestion-and-absorption",
@@ -5722,7 +6562,11 @@
     "year": 1971,
     "container_title": "Journal of Clinical Pathology. Supplement (Royal College of Pathologists).",
     "volume": "5",
-    "pages": "10–13"
+    "pages": "10–13",
+    "tags": [
+      "calorie-balance",
+      "carbohydrates"
+    ]
   },
   "hutchison-2016-metabolic-impacts-of-altering-meal-frequency-and-timing-does-when-we-eat-matter": {
     "id": "hutchison-2016-metabolic-impacts-of-altering-meal-frequency-and-timing-does-when-we-eat-matter",
@@ -5745,7 +6589,11 @@
     "doi_newtab": true,
     "container_title": "Biochimie",
     "volume": "124",
-    "pages": "187–197"
+    "pages": "187–197",
+    "tags": [
+      "calorie-balance",
+      "meal-structure"
+    ]
   },
   "institute-1994-fluid-replacement-and-heat-stress": {
     "id": "institute-1994-fluid-replacement-and-heat-stress",
@@ -5764,7 +6612,10 @@
       "year": 1994
     },
     "year": 1994,
-    "publisher": "National Academies Press (US)"
+    "publisher": "National Academies Press (US)",
+    "tags": [
+      "recovery"
+    ]
   },
   "ivy-2004-regulation-of-muscle-glycogen-repletion-muscle-protein-synthesis-and-repair-following-exercise": {
     "id": "ivy-2004-regulation-of-muscle-glycogen-repletion-muscle-protein-synthesis-and-repair-following-exercise",
@@ -5783,7 +6634,13 @@
     "container_title": "Journal of Sports Science & Medicine",
     "volume": "3",
     "issue": "3",
-    "pages": "131–138"
+    "pages": "131–138",
+    "tags": [
+      "protein",
+      "carbohydrates",
+      "hypertrophy",
+      "strength-training"
+    ]
   },
   "jenkins-1987-starchy-foods-and-fiber": {
     "id": "jenkins-1987-starchy-foods-and-fiber",
@@ -5819,7 +6676,12 @@
     "container_title": "Scandinavian Journal of Gastroenterology",
     "volume": "22",
     "issue": "S129",
-    "pages": "132–141"
+    "pages": "132–141",
+    "tags": [
+      "calorie-balance",
+      "carbohydrates",
+      "fiber"
+    ]
   },
   "jeukendrup-2014-a-step-towards-personalized-sports-nutrition": {
     "id": "jeukendrup-2014-a-step-towards-personalized-sports-nutrition",
@@ -5840,7 +6702,10 @@
     "container_title": "Sports Medicine (Auckland)",
     "volume": "44",
     "issue": "Suppl 1",
-    "pages": "25–33"
+    "pages": "25–33",
+    "tags": [
+      "carbohydrates"
+    ]
   },
   "kerksick-2008-international-society-of-sports-nutrition-position-stand": {
     "id": "kerksick-2008-international-society-of-sports-nutrition-position-stand",
@@ -5894,7 +6759,11 @@
     "container_title": "Journal of the International Society of Sports Nutrition",
     "volume": "5",
     "issue": "1",
-    "pages": "17–17"
+    "pages": "17–17",
+    "tags": [
+      "meal-structure",
+      "food-quality"
+    ]
   },
   "kinsey-2015-the-health-impact-of-nighttime-eating": {
     "id": "kinsey-2015-the-health-impact-of-nighttime-eating",
@@ -5918,7 +6787,12 @@
     "container_title": "Nutrients",
     "volume": "7",
     "issue": "4",
-    "pages": "2648–2662"
+    "pages": "2648–2662",
+    "tags": [
+      "meal-structure",
+      "satiety",
+      "sleep"
+    ]
   },
   "knuiman-2015-glycogen-availability-and-skeletal-muscle-adaptations-with-endurance-and-resistance-exercise": {
     "id": "knuiman-2015-glycogen-availability-and-skeletal-muscle-adaptations-with-endurance-and-resistance-exercise",
@@ -5945,7 +6819,13 @@
     "container_title": "Nutrition & Metabolism",
     "volume": "12",
     "issue": "1",
-    "pages": "59–59"
+    "pages": "59–59",
+    "tags": [
+      "carbohydrates",
+      "hypertrophy",
+      "strength-training",
+      "endurance"
+    ]
   },
   "la-bounty-2011-international-society-of-sports-nutrition-position-stand": {
     "id": "la-bounty-2011-international-society-of-sports-nutrition-position-stand",
@@ -5998,7 +6878,11 @@
     "doi_newtab": true,
     "container_title": "Journal of the International Society of Sports Nutrition",
     "volume": "8",
-    "pages": "4–4"
+    "pages": "4–4",
+    "tags": [
+      "meal-structure",
+      "food-quality"
+    ]
   },
   "mamerow-2014-dietary-protein-distribution-positively-influences-24-h-muscle-protein-synthesis-in-healthy-adults": {
     "id": "mamerow-2014-dietary-protein-distribution-positively-influences-24-h-muscle-protein-synthesis-in-healthy-adults",
@@ -6040,7 +6924,12 @@
     "container_title": "The Journal of Nutrition",
     "volume": "144",
     "issue": "6",
-    "pages": "876–880"
+    "pages": "876–880",
+    "tags": [
+      "protein",
+      "hypertrophy",
+      "strength-training"
+    ]
   },
   "mattson-2005-energy-intake-meal-frequency-and-health": {
     "id": "mattson-2005-energy-intake-meal-frequency-and-health",
@@ -6061,7 +6950,11 @@
     "container_title": "Annual Review of Nutrition",
     "volume": "25",
     "issue": "1",
-    "pages": "237–260"
+    "pages": "237–260",
+    "tags": [
+      "calorie-balance",
+      "meal-structure"
+    ]
   },
   "mccartney-2017-post-exercise-ingestion-of-carbohydrate-protein-and-water": {
     "id": "mccartney-2017-post-exercise-ingestion-of-carbohydrate-protein-and-water",
@@ -6088,7 +6981,11 @@
     "container_title": "Sports Medicine (Auckland)",
     "volume": "48",
     "issue": "2",
-    "pages": "379–408"
+    "pages": "379–408",
+    "tags": [
+      "protein",
+      "carbohydrates"
+    ]
   },
   "mosoni-2003-type-and-timing-of-protein-feeding-to-optimize-anabolism": {
     "id": "mosoni-2003-type-and-timing-of-protein-feeding-to-optimize-anabolism",
@@ -6112,7 +7009,13 @@
     "container_title": "Current Opinion in Clinical Nutrition and Metabolic Care",
     "volume": "6",
     "issue": "3",
-    "pages": "301–306"
+    "pages": "301–306",
+    "tags": [
+      "calorie-balance",
+      "protein",
+      "meal-structure",
+      "hypertrophy"
+    ]
   },
   "ormsbee-2014-pre-exercise-nutrition": {
     "id": "ormsbee-2014-pre-exercise-nutrition",
@@ -6139,7 +7042,12 @@
     "container_title": "Nutrients",
     "volume": "6",
     "issue": "5",
-    "pages": "1782–1808"
+    "pages": "1782–1808",
+    "tags": [
+      "calorie-balance",
+      "food-quality",
+      "endurance"
+    ]
   },
   "poole-2010-the-role-of-post-exercise-nutrient-administration-on-muscle-protein-synthesis-and-glycogen-synthesis": {
     "id": "poole-2010-the-role-of-post-exercise-nutrient-administration-on-muscle-protein-synthesis-and-glycogen-synthesis",
@@ -6167,7 +7075,13 @@
     "container_title": "Journal of Sports Science & Medicine",
     "volume": "9",
     "issue": "3",
-    "pages": "354–363"
+    "pages": "354–363",
+    "tags": [
+      "protein",
+      "carbohydrates",
+      "hypertrophy",
+      "strength-training"
+    ]
   },
   "schoenfeld-2013-the-effect-of-protein-timing-on-muscle-strength-and-hypertrophy": {
     "id": "schoenfeld-2013-the-effect-of-protein-timing-on-muscle-strength-and-hypertrophy",
@@ -6194,7 +7108,12 @@
     "container_title": "Journal of the International Society of Sports Nutrition",
     "volume": "10",
     "issue": "1",
-    "pages": "53–53"
+    "pages": "53–53",
+    "tags": [
+      "protein",
+      "hypertrophy",
+      "strength-training"
+    ]
   },
   "stark-2012-protein-timing-and-its-effects-on-muscular-hypertrophy-and-strength-in-individuals-engaged-in-weight-training": {
     "id": "stark-2012-protein-timing-and-its-effects-on-muscular-hypertrophy-and-strength-in-individuals-engaged-in-weight-training",
@@ -6224,7 +7143,14 @@
     "container_title": "Journal of the International Society of Sports Nutrition",
     "volume": "9",
     "issue": "1",
-    "pages": "54–54"
+    "pages": "54–54",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "protein",
+      "hypertrophy",
+      "strength-training"
+    ]
   },
   "stephens-2008-impact-of-nutrient-intake-timing-on-the-metabolic-response-to-exercise": {
     "id": "stephens-2008-impact-of-nutrient-intake-timing-on-the-metabolic-response-to-exercise",
@@ -6248,7 +7174,10 @@
     "container_title": "Nutrition Reviews",
     "volume": "66",
     "issue": "8",
-    "pages": "473–476"
+    "pages": "473–476",
+    "tags": [
+      "calorie-balance"
+    ]
   },
   "zarrinpar-2015-daily-eating-patterns-and-their-impact-on-health-and-disease": {
     "id": "zarrinpar-2015-daily-eating-patterns-and-their-impact-on-health-and-disease",
@@ -6275,7 +7204,12 @@
     "container_title": "Trends in Endocrinology and Metabolism",
     "volume": "27",
     "issue": "2",
-    "pages": "69–83"
+    "pages": "69–83",
+    "tags": [
+      "meal-structure",
+      "satiety",
+      "environment-design"
+    ]
   },
   "alexander-2013-a-systematic-review-of-multivitamin-multimineral-use-and-cardiovascular-disease-and-cancer-incidence-and-total-mortality": {
     "id": "alexander-2013-a-systematic-review-of-multivitamin-multimineral-use-and-cardiovascular-disease-and-cancer-incidence-and-total-mortality",
@@ -6311,7 +7245,10 @@
     "container_title": "Journal of the American College of Nutrition",
     "volume": "32",
     "issue": "5",
-    "pages": "339–354"
+    "pages": "339–354",
+    "tags": [
+      "micronutrients"
+    ]
   },
   "antonio-2017-casein-protein-supplementation-in-trained-men-and-women": {
     "id": "antonio-2017-casein-protein-supplementation-in-trained-men-and-women",
@@ -6339,7 +7276,10 @@
     "container_title": "International Journal of Exercise Science",
     "volume": "10",
     "issue": "3",
-    "pages": "479–486"
+    "pages": "479–486",
+    "tags": [
+      "protein"
+    ]
   },
   "babault-2014-effects-of-soluble-milk-protein-or-casein-supplementation-on-muscle-fatigue-following-resistance-training-program": {
     "id": "babault-2014-effects-of-soluble-milk-protein-or-casein-supplementation-on-muscle-fatigue-following-resistance-training-program",
@@ -6371,7 +7311,13 @@
     "doi_newtab": true,
     "container_title": "J Int Soc Sports Nutr",
     "volume": "11",
-    "pages": "36"
+    "pages": "36",
+    "tags": [
+      "protein",
+      "strength-training",
+      "recovery",
+      "fatigue"
+    ]
   },
   "bird-2003-creatine-supplementation-and-exercise-performance": {
     "id": "bird-2003-creatine-supplementation-and-exercise-performance",
@@ -6390,7 +7336,10 @@
     "container_title": "Journal of Sports Science & Medicine",
     "volume": "2",
     "issue": "4",
-    "pages": "123–132"
+    "pages": "123–132",
+    "tags": [
+      "body-composition"
+    ]
   },
   "burke-2017-practical-issues-in-evidence-based-use-of-performance-supplements": {
     "id": "burke-2017-practical-issues-in-evidence-based-use-of-performance-supplements",
@@ -6411,7 +7360,10 @@
     "container_title": "Sports Medicine (Auckland)",
     "volume": "47",
     "issue": "Suppl 1",
-    "pages": "79–100"
+    "pages": "79–100",
+    "tags": [
+      "body-composition"
+    ]
   },
   "chia-2017-effects-of-caffeine-supplementation-on-performance-in-ball-games": {
     "id": "chia-2017-effects-of-caffeine-supplementation-on-performance-in-ball-games",
@@ -6441,7 +7393,10 @@
     "container_title": "Sports Medicine (Auckland)",
     "volume": "47",
     "issue": "12",
-    "pages": "2453–2471"
+    "pages": "2453–2471",
+    "tags": [
+      "endurance"
+    ]
   },
   "coyle-1992-carbohydrate-supplementation-during-exercise": {
     "id": "coyle-1992-carbohydrate-supplementation-during-exercise",
@@ -6462,7 +7417,10 @@
     "container_title": "The Journal of Nutrition",
     "volume": "122",
     "issue": "3S",
-    "pages": "788–795"
+    "pages": "788–795",
+    "tags": [
+      "carbohydrates"
+    ]
   },
   "gao-2017-fish-oil-supplementation-and-insulin-sensitivity": {
     "id": "gao-2017-fish-oil-supplementation-and-insulin-sensitivity",
@@ -6492,7 +7450,10 @@
     "container_title": "Lipids in Health and Disease",
     "volume": "16",
     "issue": "1",
-    "pages": "131–131"
+    "pages": "131–131",
+    "tags": [
+      "calorie-balance"
+    ]
   },
   "hayes-2008-effect-of-whey-protein-isolate-on-strength-body-composition-and-muscle-hypertrophy-during-resistance-training": {
     "id": "hayes-2008-effect-of-whey-protein-isolate-on-strength-body-composition-and-muscle-hypertrophy-during-resistance-training",
@@ -6516,7 +7477,14 @@
     "container_title": "Current Opinion in Clinical Nutrition and Metabolic Care",
     "volume": "11",
     "issue": "1",
-    "pages": "40–44"
+    "pages": "40–44",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "protein",
+      "hypertrophy",
+      "strength-training"
+    ]
   },
   "hein-2013-the-impact-of-whey-protein-supplementation-on-muscle-strength-and-body-composition": {
     "id": "hein-2013-the-impact-of-whey-protein-supplementation-on-muscle-strength-and-body-composition",
@@ -6544,7 +7512,13 @@
     "container_title": "Pharmacotherapy",
     "volume": "33",
     "issue": "10",
-    "pages": "E267"
+    "pages": "E267",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "protein",
+      "strength-training"
+    ]
   },
   "jeukendrup-2010-carbohydrate-and-exercise-performance": {
     "id": "jeukendrup-2010-carbohydrate-and-exercise-performance",
@@ -6565,7 +7539,10 @@
     "container_title": "Current Opinion in Clinical Nutrition and Metabolic Care",
     "volume": "13",
     "issue": "4",
-    "pages": "452–457"
+    "pages": "452–457",
+    "tags": [
+      "carbohydrates"
+    ]
   },
   "miller-2014-effects-of-whey-protein-and-resistance-exercise-on-body-composition": {
     "id": "miller-2014-effects-of-whey-protein-and-resistance-exercise-on-body-composition",
@@ -6592,7 +7569,13 @@
     "container_title": "Journal of the American College of Nutrition",
     "volume": "33",
     "issue": "2",
-    "pages": "163–175"
+    "pages": "163–175",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "protein",
+      "strength-training"
+    ]
   },
   "spriet-2014-exercise-and-sport-performance-with-low-doses-of-caffeine": {
     "id": "spriet-2014-exercise-and-sport-performance-with-low-doses-of-caffeine",
@@ -6613,7 +7596,10 @@
     "container_title": "Sports Medicine (Auckland)",
     "volume": "44",
     "issue": "Suppl 2",
-    "pages": "175–184"
+    "pages": "175–184",
+    "tags": [
+      "endurance"
+    ]
   },
   "stellingwerff-2014-systematic-review": {
     "id": "stellingwerff-2014-systematic-review",
@@ -6637,7 +7623,10 @@
     "container_title": "Applied physiology, nutrition, and metabolism = Physiologie appliquee, nutrition et metabolisme",
     "volume": "39",
     "issue": "9",
-    "pages": "998–1011"
+    "pages": "998–1011",
+    "tags": [
+      "carbohydrates"
+    ]
   },
   "temple-2017-the-safety-of-ingested-caffeine": {
     "id": "temple-2017-the-safety-of-ingested-caffeine",
@@ -6672,7 +7661,10 @@
     "doi_newtab": true,
     "container_title": "Frontiers in Psychiatry",
     "volume": "8",
-    "pages": "80–80"
+    "pages": "80–80",
+    "tags": [
+      "endurance"
+    ]
   },
   "ward-2014-addressing-nutritional-gaps-with-multivitamin-and-mineral-supplements": {
     "id": "ward-2014-addressing-nutritional-gaps-with-multivitamin-and-mineral-supplements",
@@ -6693,7 +7685,10 @@
     "container_title": "Nutrition Journal",
     "volume": "13",
     "issue": "1",
-    "pages": "72–72"
+    "pages": "72–72",
+    "tags": [
+      "micronutrients"
+    ]
   },
   "wilborn-2013-the-effects-of-pre-and-post-exercise-whey-vs": {
     "id": "wilborn-2013-the-effects-of-pre-and-post-exercise-whey-vs",
@@ -6736,7 +7731,10 @@
     "container_title": "Casein Protein Consumption on Body Composition and Performance Measures in Collegiate Female Athletes. Journal of Sports Science & Medicine",
     "volume": "12",
     "issue": "1",
-    "pages": "74–79"
+    "pages": "74–79",
+    "tags": [
+      "body-composition"
+    ]
   },
   "ferreira-pego-2015-total-fluid-intake-and-its-determinants": {
     "id": "ferreira-pego-2015-total-fluid-intake-and-its-determinants",
@@ -6790,7 +7788,10 @@
     "container_title": "European Journal of Nutrition",
     "volume": "54",
     "issue": "Suppl 2",
-    "pages": "35–43"
+    "pages": "35–43",
+    "tags": [
+      "recovery"
+    ]
   },
   "gandy-2015-water-intake": {
     "id": "gandy-2015-water-intake",
@@ -6811,7 +7812,10 @@
     "container_title": "European Journal of Nutrition",
     "volume": "54",
     "issue": "Suppl 2",
-    "pages": "11–16"
+    "pages": "11–16",
+    "tags": [
+      "recovery"
+    ]
   },
   "nimrouzi-2016-avicennas-view-on-optimal-daily-water-intake": {
     "id": "nimrouzi-2016-avicennas-view-on-optimal-daily-water-intake",
@@ -6836,7 +7840,10 @@
     "container_title": "Iranian Journal of Medical Sciences",
     "volume": "41",
     "issue": "3 Suppl",
-    "pages": "S23"
+    "pages": "S23",
+    "tags": [
+      "recovery"
+    ]
   },
   "popkin-2010-water-hydration-and-health": {
     "id": "popkin-2010-water-hydration-and-health",
@@ -6863,7 +7870,10 @@
     "container_title": "Nutrition Reviews",
     "volume": "68",
     "issue": "8",
-    "pages": "439–458"
+    "pages": "439–458",
+    "tags": [
+      "recovery"
+    ]
   },
   "riebl-2013-the-hydration-equation": {
     "id": "riebl-2013-the-hydration-equation",
@@ -6887,7 +7897,10 @@
     "container_title": "ACSM’s Health & Fitness Journal",
     "volume": "17",
     "issue": "6",
-    "pages": "21–28"
+    "pages": "21–28",
+    "tags": [
+      "recovery"
+    ]
   },
   "berthoud-2011-food-reward-hyperphagia-and-obesity": {
     "id": "berthoud-2011-food-reward-hyperphagia-and-obesity",
@@ -6914,7 +7927,14 @@
     "container_title": "American Journal of Physiology. Regulatory, Integrative and Comparative Physiology",
     "volume": "300",
     "issue": "6",
-    "pages": "1266–1277"
+    "pages": "1266–1277",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "food-quality",
+      "satiety",
+      "environment-design"
+    ]
   },
   "leung-2017-an-overview-of-factors-associated-with-adherence-to-lifestyle-modification-programs-for-weight-management-in-adults": {
     "id": "leung-2017-an-overview-of-factors-associated-with-adherence-to-lifestyle-modification-programs-for-weight-management-in-adults",
@@ -6944,7 +7964,13 @@
     "container_title": "International Journal of Environmental Research and Public Health",
     "volume": "14",
     "issue": "8",
-    "pages": "922"
+    "pages": "922",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "adherence",
+      "behavior-change"
+    ]
   },
   "ogden-2010-the-psychology-of-eating-from-healthy-to-disordered-behavior-2nd-ed": {
     "id": "ogden-2010-the-psychology-of-eating-from-healthy-to-disordered-behavior-2nd-ed",
@@ -6960,7 +7986,11 @@
       "year": 2010
     },
     "year": 2010,
-    "publisher": "Wiley-Blackwell"
+    "publisher": "Wiley-Blackwell",
+    "tags": [
+      "satiety",
+      "behavior-change"
+    ]
   },
   "rowland-2013-psychology-of-eating": {
     "id": "rowland-2013-psychology-of-eating",
@@ -6979,7 +8009,11 @@
       "year": 2013
     },
     "year": 2013,
-    "publisher": "Pearson College Division"
+    "publisher": "Pearson College Division",
+    "tags": [
+      "satiety",
+      "behavior-change"
+    ]
   },
   "singh-2014-mood-food-and-obesity": {
     "id": "singh-2014-mood-food-and-obesity",
@@ -6999,7 +8033,11 @@
     "doi_newtab": true,
     "container_title": "Frontiers in Psychology",
     "volume": "5",
-    "pages": "1–35"
+    "pages": "1–35",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "abramson-1977-boredom-and-eating-in-obese-and-non-obese-individuals": {
     "id": "abramson-1977-boredom-and-eating-in-obese-and-non-obese-individuals",
@@ -7023,7 +8061,13 @@
     "container_title": "Addictive Behaviors",
     "volume": "2",
     "issue": "4",
-    "pages": "181–185"
+    "pages": "181–185",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety",
+      "behavior-change"
+    ]
   },
   "alonso-alonso-2015-food-reward-system": {
     "id": "alonso-alonso-2015-food-reward-system",
@@ -7068,7 +8112,12 @@
     "container_title": "Nutrition Reviews",
     "volume": "73",
     "issue": "5",
-    "pages": "296–307"
+    "pages": "296–307",
+    "tags": [
+      "food-quality",
+      "satiety",
+      "environment-design"
+    ]
   },
   "amin-2016-hunger-and-satiety-mechanisms-and-their-potential-exploitation-in-the-regulation-of-food-intake": {
     "id": "amin-2016-hunger-and-satiety-mechanisms-and-their-potential-exploitation-in-the-regulation-of-food-intake",
@@ -7092,7 +8141,11 @@
     "container_title": "Current Obesity Reports",
     "volume": "5",
     "issue": "1",
-    "pages": "106–112"
+    "pages": "106–112",
+    "tags": [
+      "calorie-balance",
+      "satiety"
+    ]
   },
   "appelhans-2011-inhibiting-food-reward": {
     "id": "appelhans-2011-inhibiting-food-reward",
@@ -7128,7 +8181,14 @@
     "container_title": "Obesity (Silver Spring, Md.)",
     "volume": "19",
     "issue": "11",
-    "pages": "2175–2182"
+    "pages": "2175–2182",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "food-quality",
+      "satiety",
+      "environment-design"
+    ]
   },
   "bendtsen-2013-effect-of-dairy-proteins-on-appetite-energy-expenditure-body-weight-and-composition": {
     "id": "bendtsen-2013-effect-of-dairy-proteins-on-appetite-energy-expenditure-body-weight-and-composition",
@@ -7161,7 +8221,13 @@
     "container_title": "Advances in Nutrition (Bethesda, Md.)",
     "volume": "4",
     "issue": "4",
-    "pages": "418–438"
+    "pages": "418–438",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "protein",
+      "satiety"
+    ]
   },
   "blundell-1987-satiation-satiety-and-the-action-of-fibre-on-food-intake": {
     "id": "blundell-1987-satiation-satiety-and-the-action-of-fibre-on-food-intake",
@@ -7182,7 +8248,12 @@
     "year": 1987,
     "container_title": "International journal of obesity",
     "volume": "11 Suppl 1",
-    "pages": "9–25"
+    "pages": "9–25",
+    "tags": [
+      "calorie-balance",
+      "fiber",
+      "satiety"
+    ]
   },
   "carreiro-2016-the-macronutrients-appetite-and-energy-intake": {
     "id": "carreiro-2016-the-macronutrients-appetite-and-energy-intake",
@@ -7229,7 +8300,11 @@
     "doi_newtab": true,
     "container_title": "Annual review of nutrition",
     "volume": "36",
-    "pages": "73–103"
+    "pages": "73–103",
+    "tags": [
+      "calorie-balance",
+      "satiety"
+    ]
   },
   "clark-2013-the-effect-of-fiber-on-satiety-and-food-intake": {
     "id": "clark-2013-the-effect-of-fiber-on-satiety-and-food-intake",
@@ -7253,7 +8328,12 @@
     "container_title": "Journal of the American College of Nutrition",
     "volume": "32",
     "issue": "3",
-    "pages": "200–211"
+    "pages": "200–211",
+    "tags": [
+      "calorie-balance",
+      "fiber",
+      "satiety"
+    ]
   },
   "dahl-2015-position-of-the-academy-of-nutrition-and-dietetics": {
     "id": "dahl-2015-position-of-the-academy-of-nutrition-and-dietetics",
@@ -7277,7 +8357,10 @@
     "container_title": "Journal of the Academy of Nutrition and Dietetics",
     "volume": "115",
     "issue": "11",
-    "pages": "1861–1870"
+    "pages": "1861–1870",
+    "tags": [
+      "fiber"
+    ]
   },
   "dallman-2003-chronic-stress-and-obesity": {
     "id": "dallman-2003-chronic-stress-and-obesity",
@@ -7325,7 +8408,12 @@
     "container_title": "Proceedings of the National Academy of Sciences - PNAS",
     "volume": "100",
     "issue": "20",
-    "pages": "11696–11701"
+    "pages": "11696–11701",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "recovery"
+    ]
   },
   "daniels-2010-impact-of-water-intake-on-energy-intake-and-weight-status": {
     "id": "daniels-2010-impact-of-water-intake-on-energy-intake-and-weight-status",
@@ -7349,7 +8437,12 @@
     "container_title": "Nutrition Reviews",
     "volume": "68",
     "issue": "9",
-    "pages": "505–521"
+    "pages": "505–521",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "recovery"
+    ]
   },
   "davy-2008-water-consumption-reduces-energy-intake-at-a-breakfast-meal-in-obese-older-adults": {
     "id": "davy-2008-water-consumption-reduces-energy-intake-at-a-breakfast-meal-in-obese-older-adults",
@@ -7382,7 +8475,12 @@
     "container_title": "Journal of the American Dietetic Association",
     "volume": "108",
     "issue": "7",
-    "pages": "1236–1239"
+    "pages": "1236–1239",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "meal-structure"
+    ]
   },
   "dhillon-2016-the-effects-of-increased-protein-intake-on-fullness": {
     "id": "dhillon-2016-the-effects-of-increased-protein-intake-on-fullness",
@@ -7445,7 +8543,11 @@
     "container_title": "Journal of the Academy of Nutrition and Dietetics",
     "volume": "116",
     "issue": "6",
-    "pages": "968–983"
+    "pages": "968–983",
+    "tags": [
+      "protein",
+      "satiety"
+    ]
   },
   "guyenet-2017-the-hungry-brain-outsmarting-the-instincts-that-make-us-overeat": {
     "id": "guyenet-2017-the-hungry-brain-outsmarting-the-instincts-that-make-us-overeat",
@@ -7461,7 +8563,10 @@
       "year": 2017
     },
     "year": 2017,
-    "publisher": "Macmillan"
+    "publisher": "Macmillan",
+    "tags": [
+      "satiety"
+    ]
   },
   "hardy-1992-psychological-stress-performance-and-injury-in-sport": {
     "id": "hardy-1992-psychological-stress-performance-and-injury-in-sport",
@@ -7482,7 +8587,10 @@
     "container_title": "British Medical Bulletin",
     "volume": "48",
     "issue": "3",
-    "pages": "615–629"
+    "pages": "615–629",
+    "tags": [
+      "recovery"
+    ]
   },
   "harpaz-2017-the-effect-of-caffeine-on-energy-balance": {
     "id": "harpaz-2017-the-effect-of-caffeine-on-energy-balance",
@@ -7512,7 +8620,11 @@
     "container_title": "Journal of Basic and Clinical Physiology and Pharmacology",
     "volume": "28",
     "issue": "1",
-    "pages": "1–10"
+    "pages": "1–10",
+    "tags": [
+      "calorie-balance",
+      "endurance"
+    ]
   },
   "helms-2014-evidence-based-recommendations-for-natural-bodybuilding-contest-preparation": {
     "id": "helms-2014-evidence-based-recommendations-for-natural-bodybuilding-contest-preparation",
@@ -7539,7 +8651,12 @@
     "container_title": "Journal of the International Society of Sports Nutrition",
     "volume": "11",
     "issue": "1",
-    "pages": "20–20"
+    "pages": "20–20",
+    "tags": [
+      "food-quality",
+      "hypertrophy",
+      "strength-training"
+    ]
   },
   "howarth-2001-dietary-fiber-and-weight-regulation": {
     "id": "howarth-2001-dietary-fiber-and-weight-regulation",
@@ -7566,7 +8683,12 @@
     "container_title": "Nutrition Reviews",
     "volume": "59",
     "issue": "5",
-    "pages": "129–139"
+    "pages": "129–139",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "fiber"
+    ]
   },
   "lappalainen-1993-drinking-water-with-a-meal": {
     "id": "lappalainen-1993-drinking-water-with-a-meal",
@@ -7594,7 +8716,10 @@
     "container_title": "European journal of clinical nutrition",
     "volume": "47",
     "issue": "11",
-    "pages": "815–819"
+    "pages": "815–819",
+    "tags": [
+      "satiety"
+    ]
   },
   "lepe-2011-long-term-efficacy-of-high-protein-diets": {
     "id": "lepe-2011-long-term-efficacy-of-high-protein-diets",
@@ -7621,7 +8746,10 @@
     "container_title": "Nutrición Hospitalaria : Organo Oficial de La Sociedad Española de Nutrición Parenteral y Enteral",
     "volume": "26",
     "issue": "6",
-    "pages": "1256–1259"
+    "pages": "1256–1259",
+    "tags": [
+      "protein"
+    ]
   },
   "mollahosseini-2017-effect-of-whey-protein-supplementation-on-long-and-short-term-appetite": {
     "id": "mollahosseini-2017-effect-of-whey-protein-supplementation-on-long-and-short-term-appetite",
@@ -7650,7 +8778,11 @@
     "doi_newtab": true,
     "container_title": "Clinical Nutrition ESPEN",
     "volume": "20",
-    "pages": "34–40"
+    "pages": "34–40",
+    "tags": [
+      "protein",
+      "satiety"
+    ]
   },
   "mudgil-2013-composition-properties-and-health-benefits-of-indigestible-carbohydrate-polymers-as-dietary-fiber": {
     "id": "mudgil-2013-composition-properties-and-health-benefits-of-indigestible-carbohydrate-polymers-as-dietary-fiber",
@@ -7673,7 +8805,11 @@
     "doi_newtab": true,
     "container_title": "International Journal of Biological Macromolecules",
     "volume": "61",
-    "pages": "1–6"
+    "pages": "1–6",
+    "tags": [
+      "carbohydrates",
+      "fiber"
+    ]
   },
   "paddon-jones-2008-protein-weight-management-and-satiety": {
     "id": "paddon-jones-2008-protein-weight-management-and-satiety",
@@ -7709,7 +8845,13 @@
     "container_title": "The American Journal of Clinical Nutrition",
     "volume": "87",
     "issue": "5",
-    "pages": "1558s–1561s"
+    "pages": "1558s–1561s",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "protein",
+      "satiety"
+    ]
   },
   "poutanen-2017-a-review-of-the-characteristics-of-dietary-fibers-relevant-to-appetite-and-energy-intake-outcomes-in-human-intervention-trials": {
     "id": "poutanen-2017-a-review-of-the-characteristics-of-dietary-fibers-relevant-to-appetite-and-energy-intake-outcomes-in-human-intervention-trials",
@@ -7766,7 +8908,12 @@
     "container_title": "The American Journal of Clinical Nutrition",
     "volume": "106",
     "issue": "3",
-    "pages": "747–754"
+    "pages": "747–754",
+    "tags": [
+      "calorie-balance",
+      "fiber",
+      "satiety"
+    ]
   },
   "ravn-2013-thermic-effect-of-a-meal-and-appetite-in-adults": {
     "id": "ravn-2013-thermic-effect-of-a-meal-and-appetite-in-adults",
@@ -7814,7 +8961,11 @@
     "container_title": "Food & Nutrition Research",
     "volume": "57",
     "issue": "1",
-    "pages": "19676–10"
+    "pages": "19676–10",
+    "tags": [
+      "calorie-balance",
+      "satiety"
+    ]
   },
   "rebello-2016-dietary-fiber-and-satiety": {
     "id": "rebello-2016-dietary-fiber-and-satiety",
@@ -7841,7 +8992,11 @@
     "container_title": "Nutrition Reviews",
     "volume": "74",
     "issue": "2",
-    "pages": "131–147"
+    "pages": "131–147",
+    "tags": [
+      "fiber",
+      "satiety"
+    ]
   },
   "schubert-2017-caffeine-coffee-and-appetite-control": {
     "id": "schubert-2017-caffeine-coffee-and-appetite-control",
@@ -7877,7 +9032,12 @@
     "container_title": "International Journal of Food Sciences and Nutrition",
     "volume": "68",
     "issue": "8",
-    "pages": "901–912"
+    "pages": "901–912",
+    "tags": [
+      "calorie-balance",
+      "satiety",
+      "endurance"
+    ]
   },
   "slavin-2005-dietary-fiber-and-body-weight": {
     "id": "slavin-2005-dietary-fiber-and-body-weight",
@@ -7898,7 +9058,12 @@
     "container_title": "Nutrition (Burbank, Los Angeles County, Calif.)",
     "volume": "21",
     "issue": "3",
-    "pages": "411–418"
+    "pages": "411–418",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "fiber"
+    ]
   },
   "stookey-2016-negative-null-and-beneficial-effects-of-drinking-water-on-energy-intake-energy-expenditure-fat-oxidation-and-weight-change-in-randomized-trials": {
     "id": "stookey-2016-negative-null-and-beneficial-effects-of-drinking-water-on-energy-intake-energy-expenditure-fat-oxidation-and-weight-change-in-randomized-trials",
@@ -7919,7 +9084,11 @@
     "container_title": "Nutrients",
     "volume": "8",
     "issue": "1",
-    "pages": "19"
+    "pages": "19",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "thornton-2016-increased-hydration-can-be-associated-with-weight-loss": {
     "id": "thornton-2016-increased-hydration-can-be-associated-with-weight-loss",
@@ -7939,7 +9108,12 @@
     "doi_newtab": true,
     "container_title": "Frontiers in Nutrition (Lausanne)",
     "volume": "3",
-    "pages": "18–18"
+    "pages": "18–18",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "recovery"
+    ]
   },
   "wanders-2011-effects-of-dietary-fibre-on-subjective-appetite-energy-intake-and-body-weight": {
     "id": "wanders-2011-effects-of-dietary-fibre-on-subjective-appetite-energy-intake-and-body-weight",
@@ -7984,7 +9158,13 @@
     "container_title": "Obesity Reviews",
     "volume": "12",
     "issue": "9",
-    "pages": "724–739"
+    "pages": "724–739",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "fiber",
+      "satiety"
+    ]
   },
   "westerterp-plantenga-2003-the-significance-of-protein-in-food-intake-and-body-weight-regulation": {
     "id": "westerterp-plantenga-2003-the-significance-of-protein-in-food-intake-and-body-weight-regulation",
@@ -8005,7 +9185,12 @@
     "container_title": "Current Opinion in Clinical Nutrition and Metabolic Care",
     "volume": "6",
     "issue": "6",
-    "pages": "635–639"
+    "pages": "635–639",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "protein"
+    ]
   },
   "westerterp-plantenga-2009-dietary-protein-weight-loss-and-weight-maintenance": {
     "id": "westerterp-plantenga-2009-dietary-protein-weight-loss-and-weight-maintenance",
@@ -8037,7 +9222,13 @@
     "doi_newtab": true,
     "container_title": "Annual review of nutrition",
     "volume": "29",
-    "pages": "21–41"
+    "pages": "21–41",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "protein",
+      "periodization"
+    ]
   },
   "adams-2011-lifestyle-factors-and-ghrelin": {
     "id": "adams-2011-lifestyle-factors-and-ghrelin",
@@ -8064,7 +9255,13 @@
     "container_title": "Obesity Reviews",
     "volume": "12",
     "issue": "5",
-    "pages": "e211–e218"
+    "pages": "e211–e218",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety",
+      "periodization"
+    ]
   },
   "bose-2009-stress-and-obesity": {
     "id": "bose-2009-stress-and-obesity",
@@ -8091,7 +9288,12 @@
     "container_title": "Current Opinion in Endocrinology, Diabetes, and Obesity",
     "volume": "16",
     "issue": "5",
-    "pages": "340–346"
+    "pages": "340–346",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "recovery"
+    ]
   },
   "nakamura-2016-systematic-review-and-meta-analysis-reveals-acutely-elevated-plasma-cortisol-following-fasting-but-not-less-severe-calorie-restriction": {
     "id": "nakamura-2016-systematic-review-and-meta-analysis-reveals-acutely-elevated-plasma-cortisol-following-fasting-but-not-less-severe-calorie-restriction",
@@ -8118,7 +9320,10 @@
     "container_title": "Stress (Amsterdam, Netherlands)",
     "volume": "19",
     "issue": "2",
-    "pages": "151–157"
+    "pages": "151–157",
+    "tags": [
+      "recovery"
+    ]
   },
   "schwarz-2011-a-review-of-weight-control-strategies-and-their-effects-on-the-regulation-of-hormonal-balance": {
     "id": "schwarz-2011-a-review-of-weight-control-strategies-and-their-effects-on-the-regulation-of-hormonal-balance",
@@ -8150,7 +9355,11 @@
     "doi_newtab": true,
     "container_title": "Journal of Nutrition and Metabolism",
     "volume": "2011",
-    "pages": "237932–15"
+    "pages": "237932–15",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "tomiyama-2010-low-calorie-dieting-increases-cortisol": {
     "id": "tomiyama-2010-low-calorie-dieting-increases-cortisol",
@@ -8186,7 +9395,10 @@
     "container_title": "Psychosomatic medicine",
     "volume": "72",
     "issue": "4",
-    "pages": "357–364"
+    "pages": "357–364",
+    "tags": [
+      "recovery"
+    ]
   },
   "farias-2011-set-point-theory-and-obesity": {
     "id": "farias-2011-set-point-theory-and-obesity",
@@ -8213,7 +9425,11 @@
     "container_title": "Metabolic Syndrome and Related Disorders",
     "volume": "9",
     "issue": "2",
-    "pages": "85–89"
+    "pages": "85–89",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "harris-1990-role-of-set-point-theory-in-regulation-of-body-weight": {
     "id": "harris-1990-role-of-set-point-theory-in-regulation-of-body-weight",
@@ -8234,7 +9450,11 @@
     "container_title": "FASEB journal : official publication of the Federation of American Societies for Experimental Biology",
     "volume": "4",
     "issue": "15",
-    "pages": "3310–3318"
+    "pages": "3310–3318",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "keesey-1997-body-weight-set-points": {
     "id": "keesey-1997-body-weight-set-points",
@@ -8258,7 +9478,11 @@
     "container_title": "The Journal of Nutrition",
     "volume": "127",
     "issue": "9",
-    "pages": "1875S–1883S"
+    "pages": "1875S–1883S",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "keijer-2014-nutrigenomics-of-body-weight-regulation": {
     "id": "keijer-2014-nutrigenomics-of-body-weight-regulation",
@@ -8288,7 +9512,11 @@
     "container_title": "Nutrients",
     "volume": "6",
     "issue": "10",
-    "pages": "4531–4551"
+    "pages": "4531–4551",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "lee-2010-adipose-tissue-remodeling-in-pathophysiology-of-obesity": {
     "id": "lee-2010-adipose-tissue-remodeling-in-pathophysiology-of-obesity",
@@ -8315,7 +9543,11 @@
     "container_title": "Current Opinion in Clinical Nutrition and Metabolic Care",
     "volume": "13",
     "issue": "4",
-    "pages": "371–376"
+    "pages": "371–376",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "muller-2010-is-there-evidence-for-a-set-point-that-regulates-human-body-weight": {
     "id": "muller-2010-is-there-evidence-for-a-set-point-that-regulates-human-body-weight",
@@ -8342,7 +9574,11 @@
     "container_title": "F1000 Medicine Reports",
     "volume": "2",
     "issue": "1",
-    "pages": "59–59"
+    "pages": "59–59",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "speakman-2011-set-points-settling-points-and-some-alternative-models": {
     "id": "speakman-2011-set-points-settling-points-and-some-alternative-models",
@@ -8420,7 +9656,12 @@
     "container_title": "Disease Models & Mechanisms",
     "volume": "4",
     "issue": "6",
-    "pages": "733–745"
+    "pages": "733–745",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "environment-design"
+    ]
   },
   "barrington-2012-perceived-stress-behavior-and-body-mass-index-among-adults-participating-in-a-worksite-obesity-prevention-program-seattle-2005-2007": {
     "id": "barrington-2012-perceived-stress-behavior-and-body-mass-index-among-adults-participating-in-a-worksite-obesity-prevention-program-seattle-2005-2007",
@@ -8453,7 +9694,13 @@
     "container_title": "Preventing Chronic Disease",
     "volume": "9",
     "issue": "10",
-    "pages": "E152–E152"
+    "pages": "E152–E152",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "recovery",
+      "behavior-change"
+    ]
   },
   "bergmann-2014-the-appraisal-of-chronic-stress-and-the-development-of-the-metabolic-syndrome": {
     "id": "bergmann-2014-the-appraisal-of-chronic-stress-and-the-development-of-the-metabolic-syndrome",
@@ -8480,7 +9727,11 @@
     "container_title": "Endocrine Connections",
     "volume": "3",
     "issue": "2",
-    "pages": "R55–R80"
+    "pages": "R55–R80",
+    "tags": [
+      "calorie-balance",
+      "recovery"
+    ]
   },
   "block-2009-psychosocial-stress-and-change-in-weight-among-us-adults": {
     "id": "block-2009-psychosocial-stress-and-change-in-weight-among-us-adults",
@@ -8513,7 +9764,12 @@
     "container_title": "American Journal of Epidemiology",
     "volume": "170",
     "issue": "2",
-    "pages": "181–192"
+    "pages": "181–192",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "recovery"
+    ]
   },
   "ganley-1989-emotion-and-eating-in-obesity": {
     "id": "ganley-1989-emotion-and-eating-in-obesity",
@@ -8534,7 +9790,12 @@
     "container_title": "The International Journal of Eating Disorders",
     "volume": "8",
     "issue": "3",
-    "pages": "343–361"
+    "pages": "343–361",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety"
+    ]
   },
   "geiker-2018-does-stress-influence-sleep-patterns-food-intake-weight-gain-abdominal-obesity-and-weight-loss-interventions-and-vice-versa": {
     "id": "geiker-2018-does-stress-influence-sleep-patterns-food-intake-weight-gain-abdominal-obesity-and-weight-loss-interventions-and-vice-versa",
@@ -8570,7 +9831,13 @@
     "container_title": "Obesity Reviews",
     "volume": "19",
     "issue": "1",
-    "pages": "81–97"
+    "pages": "81–97",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "recovery",
+      "sleep"
+    ]
   },
   "groesz-2012-what-is-eating-you": {
     "id": "groesz-2012-what-is-eating-you",
@@ -8612,7 +9879,11 @@
     "container_title": "Stress and the drive to eat. Appetite",
     "volume": "58",
     "issue": "2",
-    "pages": "717–721"
+    "pages": "717–721",
+    "tags": [
+      "satiety",
+      "behavior-change"
+    ]
   },
   "hill-2018-stress-and-eating-behaviors-in-children-and-adolescents": {
     "id": "hill-2018-stress-and-eating-behaviors-in-children-and-adolescents",
@@ -8644,7 +9915,12 @@
     "doi_newtab": true,
     "container_title": "Appetite",
     "volume": "123",
-    "pages": "14–22"
+    "pages": "14–22",
+    "tags": [
+      "satiety",
+      "recovery",
+      "behavior-change"
+    ]
   },
   "laugero-2011-relationship-between-perceived-stress-and-dietary-and-activity-patterns-in-older-adults-participating-in-the-boston-puerto-rican-health-study": {
     "id": "laugero-2011-relationship-between-perceived-stress-and-dietary-and-activity-patterns-in-older-adults-participating-in-the-boston-puerto-rican-health-study",
@@ -8671,7 +9947,11 @@
     "container_title": "Appetite",
     "volume": "56",
     "issue": "1",
-    "pages": "194–204"
+    "pages": "194–204",
+    "tags": [
+      "food-quality",
+      "recovery"
+    ]
   },
   "moore-2012-social-position-psychological-stress-and-obesity": {
     "id": "moore-2012-social-position-psychological-stress-and-obesity",
@@ -8695,7 +9975,12 @@
     "container_title": "Journal of the Academy of Nutrition and Dietetics",
     "volume": "112",
     "issue": "4",
-    "pages": "518–526"
+    "pages": "518–526",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "recovery"
+    ]
   },
   "mouchacca-2013-associations-between-psychological-stress-eating-physical-activity-sedentary-behaviours-and-body-weight-among-women": {
     "id": "mouchacca-2013-associations-between-psychological-stress-eating-physical-activity-sedentary-behaviours-and-body-weight-among-women",
@@ -8722,7 +10007,14 @@
     "container_title": "BMC Public Health",
     "volume": "13",
     "issue": "1",
-    "pages": "828–828"
+    "pages": "828–828",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety",
+      "recovery",
+      "behavior-change"
+    ]
   },
   "moynihan-2015-eaten-up-by-boredom": {
     "id": "moynihan-2015-eaten-up-by-boredom",
@@ -8757,7 +10049,10 @@
     "doi_newtab": true,
     "container_title": "Frontiers in Psychology",
     "volume": "6",
-    "pages": "369–369"
+    "pages": "369–369",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "nguyen-rodriguez-2008-bmi-as-a-moderator-of-perceived-stress-and-emotional-eating-in-adolescents": {
     "id": "nguyen-rodriguez-2008-bmi-as-a-moderator-of-perceived-stress-and-emotional-eating-in-adolescents",
@@ -8787,7 +10082,13 @@
     "container_title": "Eating Behaviors : an International Journal",
     "volume": "9",
     "issue": "2",
-    "pages": "238–246"
+    "pages": "238–246",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety",
+      "recovery"
+    ]
   },
   "paddon-jones-2006-interplay-of-stress-and-physical-inactivity-on-muscle-loss": {
     "id": "paddon-jones-2006-interplay-of-stress-and-physical-inactivity-on-muscle-loss",
@@ -8808,7 +10109,12 @@
     "container_title": "The Journal of Nutrition",
     "volume": "136",
     "issue": "8",
-    "pages": "2123–2126"
+    "pages": "2123–2126",
+    "tags": [
+      "food-quality",
+      "strength-training",
+      "recovery"
+    ]
   },
   "poornima-2014-study-of-the-effect-of-stress-on-skeletal-muscle-function-in-geriatrics": {
     "id": "poornima-2014-study-of-the-effect-of-stress-on-skeletal-muscle-function-in-geriatrics",
@@ -8835,7 +10141,12 @@
     "container_title": "Journal of Clinical and Diagnostic Research",
     "volume": "8",
     "issue": "1",
-    "pages": "8–9"
+    "pages": "8–9",
+    "tags": [
+      "hypertrophy",
+      "strength-training",
+      "recovery"
+    ]
   },
   "scott-2012-effects-of-chronic-social-stress-on-obesity": {
     "id": "scott-2012-effects-of-chronic-social-stress-on-obesity",
@@ -8862,7 +10173,12 @@
     "container_title": "Current Obesity Reports",
     "volume": "1",
     "issue": "1",
-    "pages": "16–25"
+    "pages": "16–25",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "recovery"
+    ]
   },
   "shimanoe-2015-perceived-stress-and-coping-strategies-in-relation-to-body-mass-index": {
     "id": "shimanoe-2015-perceived-stress-and-coping-strategies-in-relation-to-body-mass-index",
@@ -8919,7 +10235,10 @@
     "container_title": "PloS One",
     "volume": "10",
     "issue": "2",
-    "pages": "e0118105–e0118105"
+    "pages": "e0118105–e0118105",
+    "tags": [
+      "recovery"
+    ]
   },
   "sinha-2013-stress-as-a-common-risk-factor-for-obesity-and-addiction": {
     "id": "sinha-2013-stress-as-a-common-risk-factor-for-obesity-and-addiction",
@@ -8943,7 +10262,12 @@
     "container_title": "Biological Psychiatry (1969)",
     "volume": "73",
     "issue": "9",
-    "pages": "827–835"
+    "pages": "827–835",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "recovery"
+    ]
   },
   "sominsky-2014-eating-behavior-and-stress": {
     "id": "sominsky-2014-eating-behavior-and-stress",
@@ -8967,7 +10291,14 @@
     "container_title": "Frontiers in Psychology",
     "volume": "5",
     "issue": "MAY",
-    "pages": "434–434"
+    "pages": "434–434",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety",
+      "recovery",
+      "behavior-change"
+    ]
   },
   "stults-kolehmainen-2013-the-effects-of-stress-on-physical-activity-and-exercise": {
     "id": "stults-kolehmainen-2013-the-effects-of-stress-on-physical-activity-and-exercise",
@@ -8991,7 +10322,10 @@
     "container_title": "Sports Medicine (Auckland)",
     "volume": "44",
     "issue": "1",
-    "pages": "81–121"
+    "pages": "81–121",
+    "tags": [
+      "recovery"
+    ]
   },
   "tamashiro-2007-dynamic-body-weight-and-body-composition-changes-in-response-to-subordination-stress": {
     "id": "tamashiro-2007-dynamic-body-weight-and-body-composition-changes-in-response-to-subordination-stress",
@@ -9030,7 +10364,12 @@
     "container_title": "Physiology & Behavior",
     "volume": "91",
     "issue": "4",
-    "pages": "440–448"
+    "pages": "440–448",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "recovery"
+    ]
   },
   "yau-2013-stress-and-eating-behaviors": {
     "id": "yau-2013-stress-and-eating-behaviors",
@@ -9051,7 +10390,12 @@
     "year": 2013,
     "container_title": "Minerva Endocrinologica, 38(3), 255–267. Sleep",
     "volume": "Weight Change",
-    "pages": "and Recovery"
+    "pages": "and Recovery",
+    "tags": [
+      "satiety",
+      "recovery",
+      "behavior-change"
+    ]
   },
   "beccuti-2011-sleep-and-obesity": {
     "id": "beccuti-2011-sleep-and-obesity",
@@ -9075,7 +10419,12 @@
     "container_title": "Current Opinion in Clinical Nutrition and Metabolic Care",
     "volume": "14",
     "issue": "4",
-    "pages": "402–412"
+    "pages": "402–412",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "sleep"
+    ]
   },
   "cadegiani-2017-hormonal-aspects-of-overtraining-syndrome": {
     "id": "cadegiani-2017-hormonal-aspects-of-overtraining-syndrome",
@@ -9099,7 +10448,10 @@
     "container_title": "BMC Sports Science, Medicine & Rehabilitation",
     "volume": "9",
     "issue": "1",
-    "pages": "14–14"
+    "pages": "14–14",
+    "tags": [
+      "recovery"
+    ]
   },
   "chaput-2012-adequate-sleep-to-improve-the-treatment-of-obesity": {
     "id": "chaput-2012-adequate-sleep-to-improve-the-treatment-of-obesity",
@@ -9123,7 +10475,12 @@
     "container_title": "Canadian Medical Association Journal (CMAJ)",
     "volume": "184",
     "issue": "18",
-    "pages": "1975–1976"
+    "pages": "1975–1976",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "sleep"
+    ]
   },
   "coughlin-2014-sleep-obesity-and-weight-loss-in-adults": {
     "id": "coughlin-2014-sleep-obesity-and-weight-loss-in-adults",
@@ -9147,7 +10504,12 @@
     "container_title": "International Review of Psychiatry (Abingdon, England)",
     "volume": "26",
     "issue": "2",
-    "pages": "177–188"
+    "pages": "177–188",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "sleep"
+    ]
   },
   "cowan-2012-obstructive-sleep-apnoea-syndrome-and-weight-loss": {
     "id": "cowan-2012-obstructive-sleep-apnoea-syndrome-and-weight-loss",
@@ -9170,7 +10532,12 @@
     "doi_newtab": true,
     "container_title": "Sleep Disorders",
     "volume": "2012",
-    "pages": "163296–11"
+    "pages": "163296–11",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "sleep"
+    ]
   },
   "felso-2017-relationship-between-sleep-duration-and-childhood-obesity": {
     "id": "felso-2017-relationship-between-sleep-duration-and-childhood-obesity",
@@ -9203,7 +10570,12 @@
     "container_title": "Nutrition, Metabolism, and Cardiovascular Diseases",
     "volume": "27",
     "issue": "9",
-    "pages": "751–761"
+    "pages": "751–761",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "sleep"
+    ]
   },
   "greer-2013-the-impact-of-sleep-deprivation-on-food-desire-in-the-human-brain": {
     "id": "greer-2013-the-impact-of-sleep-deprivation-on-food-desire-in-the-human-brain",
@@ -9230,7 +10602,11 @@
     "container_title": "Nature Communications",
     "volume": "4",
     "issue": "1",
-    "pages": "2259–2259"
+    "pages": "2259–2259",
+    "tags": [
+      "recovery",
+      "sleep"
+    ]
   },
   "hargens-2013-association-between-sleep-disorders-obesity-and-exercise": {
     "id": "hargens-2013-association-between-sleep-disorders-obesity-and-exercise",
@@ -9259,7 +10635,12 @@
     "doi_newtab": true,
     "container_title": "Nature and Science of Sleep",
     "volume": "5",
-    "pages": "27–35"
+    "pages": "27–35",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "sleep"
+    ]
   },
   "hart-2011-sleep-and-obesity-in-children-and-adolescents": {
     "id": "hart-2011-sleep-and-obesity-in-children-and-adolescents",
@@ -9286,7 +10667,12 @@
     "container_title": "The Pediatric Clinics of North America",
     "volume": "58",
     "issue": "3",
-    "pages": "715–733"
+    "pages": "715–733",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "sleep"
+    ]
   },
   "mitchell-2014-weight-loss-from-lifestyle-interventions-and-severity-of-sleep-apnoea": {
     "id": "mitchell-2014-weight-loss-from-lifestyle-interventions-and-severity-of-sleep-apnoea",
@@ -9322,7 +10708,12 @@
     "container_title": "Sleep Medicine",
     "volume": "15",
     "issue": "10",
-    "pages": "1173–1183"
+    "pages": "1173–1183",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "sleep"
+    ]
   },
   "patel-2008-short-sleep-duration-and-weight-gain": {
     "id": "patel-2008-short-sleep-duration-and-weight-gain",
@@ -9346,7 +10737,12 @@
     "container_title": "Obesity (Silver Spring, Md.)",
     "volume": "16",
     "issue": "3",
-    "pages": "643–653"
+    "pages": "643–653",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "sleep"
+    ]
   },
   "prinz-2004-sleep-appetite-and-obesity-what-is-the-link": {
     "id": "prinz-2004-sleep-appetite-and-obesity-what-is-the-link",
@@ -9367,7 +10763,13 @@
     "container_title": "PLoS medicine",
     "volume": "1",
     "issue": "3",
-    "pages": "e61"
+    "pages": "e61",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety",
+      "sleep"
+    ]
   },
   "spivey-2010-lose-sleep-gain-weight": {
     "id": "spivey-2010-lose-sleep-gain-weight",
@@ -9388,7 +10790,12 @@
     "container_title": "Environmental Health Perspectives",
     "volume": "118",
     "issue": "1",
-    "pages": "A28–A33"
+    "pages": "A28–A33",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "sleep"
+    ]
   },
   "van-cauter-2008-sleep-and-the-epidemic-of-obesity-in-children-and-adults": {
     "id": "van-cauter-2008-sleep-and-the-epidemic-of-obesity-in-children-and-adults",
@@ -9412,7 +10819,12 @@
     "container_title": "European Journal of Endocrinology",
     "volume": "159",
     "issue": "suppl_1",
-    "pages": "S59–S66"
+    "pages": "S59–S66",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "sleep"
+    ]
   },
   "wu-2015-associations-between-sleep-duration-and-overweight-obesity": {
     "id": "wu-2015-associations-between-sleep-duration-and-overweight-obesity",
@@ -9448,7 +10860,12 @@
     "container_title": "Scientific Reports",
     "volume": "5",
     "issue": "1",
-    "pages": "16686–16686"
+    "pages": "16686–16686",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "sleep"
+    ]
   },
   "barnes-2014-alcohol": {
     "id": "barnes-2014-alcohol",
@@ -9469,7 +10886,11 @@
     "container_title": "Sports Medicine (Auckland)",
     "volume": "44",
     "issue": "7",
-    "pages": "909–919"
+    "pages": "909–919",
+    "tags": [
+      "recovery",
+      "environment-design"
+    ]
   },
   "el-sayed-2005-interaction-between-alcohol-and-exercise": {
     "id": "el-sayed-2005-interaction-between-alcohol-and-exercise",
@@ -9496,7 +10917,10 @@
     "container_title": "Sports Medicine",
     "volume": "35",
     "issue": "3",
-    "pages": "257–269"
+    "pages": "257–269",
+    "tags": [
+      "environment-design"
+    ]
   },
   "gutgesell-1999-alcohol-usage-in-sport-and-exercise": {
     "id": "gutgesell-1999-alcohol-usage-in-sport-and-exercise",
@@ -9520,7 +10944,10 @@
     "container_title": "Addiction Biology",
     "volume": "4",
     "issue": "4",
-    "pages": "373–383"
+    "pages": "373–383",
+    "tags": [
+      "environment-design"
+    ]
   },
   "lemon-1993-alcoholic-hangover-and-performance": {
     "id": "lemon-1993-alcoholic-hangover-and-performance",
@@ -9541,7 +10968,10 @@
     "container_title": "Drug and alcohol review",
     "volume": "12",
     "issue": "3",
-    "pages": "299–314"
+    "pages": "299–314",
+    "tags": [
+      "environment-design"
+    ]
   },
   "obrien-2000-alcohol-and-the-athlete": {
     "id": "obrien-2000-alcohol-and-the-athlete",
@@ -9565,7 +10995,10 @@
     "container_title": "Sports Medicine (Auckland)",
     "volume": "29",
     "issue": "5",
-    "pages": "295–300"
+    "pages": "295–300",
+    "tags": [
+      "environment-design"
+    ]
   },
   "shirreffs-2006-the-effect-of-alcohol-on-athletic-performance": {
     "id": "shirreffs-2006-the-effect-of-alcohol-on-athletic-performance",
@@ -9589,7 +11022,10 @@
     "container_title": "Current Sports Medicine Reports",
     "volume": "5",
     "issue": "4",
-    "pages": "192–196"
+    "pages": "192–196",
+    "tags": [
+      "environment-design"
+    ]
   },
   "suter-2008-the-effect-of-exercise-alcohol-or-both-combined-on-health-and-physical-performance": {
     "id": "suter-2008-the-effect-of-exercise-alcohol-or-both-combined-on-health-and-physical-performance",
@@ -9613,7 +11049,10 @@
     "container_title": "International Journal of Obesity",
     "volume": "32",
     "issue": "S6",
-    "pages": "S48–S52"
+    "pages": "S48–S52",
+    "tags": [
+      "environment-design"
+    ]
   },
   "u-s-2015-dietary-guidelines-for-americans-2015-2020-eight-edition": {
     "id": "u-s-2015-dietary-guidelines-for-americans-2015-2020-eight-edition",
@@ -9632,7 +11071,10 @@
     "url": "https://health.gov/sites/default/files/2019-09/2015-2020_Dietary_Guidelines.pdf",
     "url_newtab": true,
     "organization": "U.S. Department of Agriculture and U.S. Department of Health and Human Services",
-    "container_title": "DietaryGuidelines.gov"
+    "container_title": "DietaryGuidelines.gov",
+    "tags": [
+      "food-quality"
+    ]
   },
   "vella-2010-alcohol-athletic-performance-and-recovery": {
     "id": "vella-2010-alcohol-athletic-performance-and-recovery",
@@ -9656,7 +11098,11 @@
     "container_title": "Nutrients",
     "volume": "2",
     "issue": "8",
-    "pages": "781–789"
+    "pages": "781–789",
+    "tags": [
+      "recovery",
+      "environment-design"
+    ]
   },
   "abd-elfattah-2015-physical-and-cognitive-consequences-of-fatigue": {
     "id": "abd-elfattah-2015-physical-and-cognitive-consequences-of-fatigue",
@@ -9683,7 +11129,11 @@
     "container_title": "Journal of Advanced Research",
     "volume": "6",
     "issue": "3",
-    "pages": "351–358"
+    "pages": "351–358",
+    "tags": [
+      "recovery",
+      "fatigue"
+    ]
   },
   "bouchard-2014-predictors-of-body-composition-and-body-energy-changes-in-response-to-chronic-overfeeding": {
     "id": "bouchard-2014-predictors-of-body-composition-and-body-energy-changes-in-response-to-chronic-overfeeding",
@@ -9710,7 +11160,12 @@
     "container_title": "International journal of obesity (2005)",
     "volume": "38",
     "issue": "2",
-    "pages": "236–242"
+    "pages": "236–242",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "meal-structure"
+    ]
   },
   "forbes-2000-body-fat-content-influences-the-body-composition-response-to-nutrition-and-exercise": {
     "id": "forbes-2000-body-fat-content-influences-the-body-composition-response-to-nutrition-and-exercise",
@@ -9731,7 +11186,12 @@
     "container_title": "Annals of the New York Academy of Sciences",
     "volume": "904",
     "issue": "1",
-    "pages": "359–365"
+    "pages": "359–365",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "food-quality"
+    ]
   },
   "hall-2007-body-fat-and-fat-free-mass-interrelationships": {
     "id": "hall-2007-body-fat-and-fat-free-mass-interrelationships",
@@ -9752,7 +11212,11 @@
     "container_title": "British Journal of Nutrition",
     "volume": "97",
     "issue": "6",
-    "pages": "1059–1063"
+    "pages": "1059–1063",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "heymsfield-2014-weight-loss-composition-is-one-fourth-fat-free-mass": {
     "id": "heymsfield-2014-weight-loss-composition-is-one-fourth-fat-free-mass",
@@ -9785,7 +11249,11 @@
     "container_title": "Obesity Reviews",
     "volume": "15",
     "issue": "4",
-    "pages": "310–321"
+    "pages": "310–321",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "jo-2009-hypertrophy-and-or-hyperplasia": {
     "id": "jo-2009-hypertrophy-and-or-hyperplasia",
@@ -9827,7 +11295,11 @@
     "container_title": "PLoS Computational Biology",
     "volume": "5",
     "issue": "3",
-    "pages": "e1000324–e1000324"
+    "pages": "e1000324–e1000324",
+    "tags": [
+      "hypertrophy",
+      "strength-training"
+    ]
   },
   "lorem-2017-what-is-the-impact-of-underweight-on-self-reported-health-trajectories-and-mortality-rates": {
     "id": "lorem-2017-what-is-the-impact-of-underweight-on-self-reported-health-trajectories-and-mortality-rates",
@@ -9854,7 +11326,11 @@
     "container_title": "Health and Quality of Life Outcomes",
     "volume": "15",
     "issue": "1",
-    "pages": "191–191"
+    "pages": "191–191",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "maclean-2015-the-role-for-adipose-tissue-in-weight-regain-after-weight-loss": {
     "id": "maclean-2015-the-role-for-adipose-tissue-in-weight-regain-after-weight-loss",
@@ -9887,7 +11363,11 @@
     "container_title": "Obesity Reviews",
     "volume": "16",
     "issue": "S1",
-    "pages": "45–54"
+    "pages": "45–54",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "rutkowski-2015-the-cell-biology-of-fat-expansion": {
     "id": "rutkowski-2015-the-cell-biology-of-fat-expansion",
@@ -9914,7 +11394,10 @@
     "container_title": "The Journal of Cell Biology",
     "volume": "208",
     "issue": "5",
-    "pages": "501–512"
+    "pages": "501–512",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "trexler-2014-metabolic-adaptation-to-weight-loss": {
     "id": "trexler-2014-metabolic-adaptation-to-weight-loss",
@@ -9941,7 +11424,11 @@
     "container_title": "Journal of the International Society of Sports Nutrition",
     "volume": "11",
     "issue": "1",
-    "pages": "7–7"
+    "pages": "7–7",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "markland-2005-motivational-interviewing-and-self-determination-theory": {
     "id": "markland-2005-motivational-interviewing-and-self-determination-theory",
@@ -9971,7 +11458,10 @@
     "container_title": "Journal of Social and Clinical Psychology",
     "volume": "24",
     "issue": "6",
-    "pages": "811–831"
+    "pages": "811–831",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "miller-2013-motivational-interviewing-helping-people-change-3rd-ed": {
     "id": "miller-2013-motivational-interviewing-helping-people-change-3rd-ed",
@@ -9990,7 +11480,10 @@
       "year": 2013
     },
     "year": 2013,
-    "publisher": "Guilford Press"
+    "publisher": "Guilford Press",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "wolever-2013-a-systematic-review-of-the-literature-on-health-and-wellness-coaching": {
     "id": "wolever-2013-a-systematic-review-of-the-literature-on-health-and-wellness-coaching",
@@ -10038,7 +11531,11 @@
     "container_title": "Global Advances in Health and Medicine",
     "volume": "2",
     "issue": "4",
-    "pages": "38–57"
+    "pages": "38–57",
+    "tags": [
+      "behavior-change",
+      "mind-body-integration"
+    ]
   },
   "abele-2009-the-longitudinal-impact-of-self-efficacy-and-career-goals-on-objective-and-subjective-career-success": {
     "id": "abele-2009-the-longitudinal-impact-of-self-efficacy-and-career-goals-on-objective-and-subjective-career-success",
@@ -10062,7 +11559,10 @@
     "container_title": "Journal of Vocational Behavior",
     "volume": "74",
     "issue": "1",
-    "pages": "53–62"
+    "pages": "53–62",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "hagger-2020-self-determination-theory-and-autonomy-support-to-change-healthcare-behavior": {
     "id": "hagger-2020-self-determination-theory-and-autonomy-support-to-change-healthcare-behavior",
@@ -10083,7 +11583,10 @@
     "year": 2020,
     "doi": "10.1002/9781119129530.ch7",
     "doi_newtab": true,
-    "container_title": "In The Wiley Handbook of Healthcare Treatment Engagement (pp. 141–158). John Wiley & Sons, Ltd"
+    "container_title": "In The Wiley Handbook of Healthcare Treatment Engagement (pp. 141–158). John Wiley & Sons, Ltd",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "honicke-2016-the-influence-of-academic-self-efficacy-on-academic-performance": {
     "id": "honicke-2016-the-influence-of-academic-self-efficacy-on-academic-performance",
@@ -10106,7 +11609,10 @@
     "doi_newtab": true,
     "container_title": "Educational Research Review",
     "volume": "17",
-    "pages": "63–84"
+    "pages": "63–84",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "pajares-2003-self-efficacy-beliefs-motivation-and-achievement-in-writing": {
     "id": "pajares-2003-self-efficacy-beliefs-motivation-and-achievement-in-writing",
@@ -10127,7 +11633,10 @@
     "container_title": "Reading & Writing Quarterly",
     "volume": "19",
     "issue": "2",
-    "pages": "139–158"
+    "pages": "139–158",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "roth-2009-the-emotional-and-academic-consequences-of-parental-conditional-regard": {
     "id": "roth-2009-the-emotional-and-academic-consequences-of-parental-conditional-regard",
@@ -10160,7 +11669,10 @@
     "container_title": "Developmental Psychology",
     "volume": "45",
     "issue": "4",
-    "pages": "1119–1142"
+    "pages": "1119–1142",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "slemp-2018-leader-autonomy-support-in-the-workplace": {
     "id": "slemp-2018-leader-autonomy-support-in-the-workplace",
@@ -10190,7 +11702,10 @@
     "container_title": "Motivation and Emotion",
     "volume": "42",
     "issue": "5",
-    "pages": "706–724"
+    "pages": "706–724",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "talsma-2018-i-believe-therefore-i-achieve-and-vice-versa": {
     "id": "talsma-2018-i-believe-therefore-i-achieve-and-vice-versa",
@@ -10219,7 +11734,10 @@
     "doi_newtab": true,
     "container_title": "Learning and Individual Differences",
     "volume": "61",
-    "pages": "136–150"
+    "pages": "136–150",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "williams-1998-supporting-autonomy-to-motivate-patients-with-diabetes-for-glucose-control": {
     "id": "williams-1998-supporting-autonomy-to-motivate-patients-with-diabetes-for-glucose-control",
@@ -10246,7 +11764,10 @@
     "container_title": "Diabetes Care",
     "volume": "21",
     "issue": "10",
-    "pages": "1644–1651"
+    "pages": "1644–1651",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "wilson-2016-brief-self-efficacy-scales-for-use-in-weight-loss-trials": {
     "id": "wilson-2016-brief-self-efficacy-scales-for-use-in-weight-loss-trials",
@@ -10285,7 +11806,12 @@
     "container_title": "Psychological Assessment",
     "volume": "28",
     "issue": "10",
-    "pages": "1255–1264"
+    "pages": "1255–1264",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "behavior-change"
+    ]
   },
   "zajacova-2005-self-efficacy-stress-and-academic-success-in-college": {
     "id": "zajacova-2005-self-efficacy-stress-and-academic-success-in-college",
@@ -10312,7 +11838,11 @@
     "container_title": "Research in Higher Education",
     "volume": "46",
     "issue": "6",
-    "pages": "677–706"
+    "pages": "677–706",
+    "tags": [
+      "recovery",
+      "behavior-change"
+    ]
   },
   "faries-2016-why-we-dont-just-do-it": {
     "id": "faries-2016-why-we-dont-just-do-it",
@@ -10333,7 +11863,10 @@
     "container_title": "American Journal of Lifestyle Medicine",
     "volume": "10",
     "issue": "5",
-    "pages": "322–329"
+    "pages": "322–329",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "rhodes-2013-how-big-is-the-physical-activity-intention-behaviour-gap": {
     "id": "rhodes-2013-how-big-is-the-physical-activity-intention-behaviour-gap",
@@ -10357,7 +11890,10 @@
     "container_title": "A meta-analysis using the action control framework. British Journal of Health Psychology",
     "volume": "18",
     "issue": "2",
-    "pages": "296–309"
+    "pages": "296–309",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "rhodes-2012-experimental-evidence-for-the-intention-behavior-relationship-in-the-physical-activity-domain": {
     "id": "rhodes-2012-experimental-evidence-for-the-intention-behavior-relationship-in-the-physical-activity-domain",
@@ -10381,7 +11917,10 @@
     "container_title": "Health Psychology",
     "volume": "31",
     "issue": "6",
-    "pages": "724–727"
+    "pages": "724–727",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "sheeran-2016-the-intention-behavior-gap": {
     "id": "sheeran-2016-the-intention-behavior-gap",
@@ -10405,7 +11944,10 @@
     "container_title": "Social and Personality Psychology Compass",
     "volume": "10",
     "issue": "9",
-    "pages": "503–518"
+    "pages": "503–518",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "britannica-2021-habit": {
     "id": "britannica-2021-habit",
@@ -10423,7 +11965,10 @@
     "year": 2021,
     "url": "https://www.britannica.com/topic/habit-behaviour",
     "url_newtab": true,
-    "container_title": "Encyclopedia Britannica"
+    "container_title": "Encyclopedia Britannica",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "carden-2018-habit-formation-and-change": {
     "id": "carden-2018-habit-formation-and-change",
@@ -10446,7 +11991,10 @@
     "doi_newtab": true,
     "container_title": "Current Opinion in Behavioral Sciences",
     "volume": "20",
-    "pages": "117–122"
+    "pages": "117–122",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "neal-2006-habits": {
     "id": "neal-2006-habits",
@@ -10473,7 +12021,10 @@
     "container_title": "Current Directions in Psychological Science : a Journal of the American Psychological Society",
     "volume": "15",
     "issue": "4",
-    "pages": "198–202"
+    "pages": "198–202",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "neal-2011-the-pull-of-the-past": {
     "id": "neal-2011-the-pull-of-the-past",
@@ -10503,7 +12054,10 @@
     "container_title": "Personality & Social Psychology Bulletin",
     "volume": "37",
     "issue": "11",
-    "pages": "1428–1437"
+    "pages": "1428–1437",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "quinn-2005-habits-across-the-lifespan": {
     "id": "quinn-2005-habits-across-the-lifespan",
@@ -10524,7 +12078,10 @@
     "year": 2005,
     "container_title": "Unpublished manuscript, Duke University",
     "volume": "Durham",
-    "pages": "NC"
+    "pages": "NC",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "robbins-2017-habits": {
     "id": "robbins-2017-habits",
@@ -10548,7 +12105,10 @@
     "container_title": "Current biology : CB",
     "volume": "27",
     "issue": "22",
-    "pages": "R1200–R1206"
+    "pages": "R1200–R1206",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "schwabe-2009-socially-evaluated-cold-pressor-stress-after-instrumental-learning-favors-habits-over-goal-directed-action": {
     "id": "schwabe-2009-socially-evaluated-cold-pressor-stress-after-instrumental-learning-favors-habits-over-goal-directed-action",
@@ -10572,7 +12132,11 @@
     "container_title": "Psychoneuroendocrinology",
     "volume": "35",
     "issue": "7",
-    "pages": "977–986"
+    "pages": "977–986",
+    "tags": [
+      "recovery",
+      "behavior-change"
+    ]
   },
   "tricomi-2009-a-specific-role-for-posterior-dorsolateral-striatum-in-human-habit-learning": {
     "id": "tricomi-2009-a-specific-role-for-posterior-dorsolateral-striatum-in-human-habit-learning",
@@ -10599,7 +12163,10 @@
     "container_title": "The European Journal of Neuroscience",
     "volume": "29",
     "issue": "11",
-    "pages": "2225–2232"
+    "pages": "2225–2232",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "wood-2016-psychology-of-habit": {
     "id": "wood-2016-psychology-of-habit",
@@ -10622,7 +12189,10 @@
     "doi_newtab": true,
     "container_title": "Annual review of psychology",
     "volume": "67",
-    "pages": "289–314"
+    "pages": "289–314",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "wood-2002-habits-in-everyday-life": {
     "id": "wood-2002-habits-in-everyday-life",
@@ -10649,7 +12219,10 @@
     "container_title": "Journal of Personality and Social Psychology",
     "volume": "83",
     "issue": "6",
-    "pages": "1281–1297"
+    "pages": "1281–1297",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "neal-2013-how-do-people-adhere-to-goals-when-willpower-is-low": {
     "id": "neal-2013-how-do-people-adhere-to-goals-when-willpower-is-low",
@@ -10676,7 +12249,11 @@
     "container_title": "The Profits (and Pitfalls) of Strong Habits. Journal of Personality and Social Psychology",
     "volume": "104",
     "issue": "6",
-    "pages": "959–975"
+    "pages": "959–975",
+    "tags": [
+      "strength-training",
+      "behavior-change"
+    ]
   },
   "pekrun-2006-the-control-value-theory-of-achievement-emotions": {
     "id": "pekrun-2006-the-control-value-theory-of-achievement-emotions",
@@ -10697,7 +12274,10 @@
     "container_title": "Educational Psychology Review",
     "volume": "18",
     "issue": "4",
-    "pages": "315–341"
+    "pages": "315–341",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "rebar-2014-habits-predict-physical-activity-on-days-when-intentions-are-weak": {
     "id": "rebar-2014-habits-predict-physical-activity-on-days-when-intentions-are-weak",
@@ -10730,7 +12310,10 @@
     "container_title": "Journal of sport & exercise psychology",
     "volume": "36",
     "issue": "2",
-    "pages": "157–165"
+    "pages": "157–165",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "butryn-2007-consistent-self-monitoring-of-weight": {
     "id": "butryn-2007-consistent-self-monitoring-of-weight",
@@ -10760,7 +12343,13 @@
     "container_title": "Obesity (Silver Spring, Md.)",
     "volume": "15",
     "issue": "12",
-    "pages": "3091–3096"
+    "pages": "3091–3096",
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "periodization",
+      "behavior-change"
+    ]
   },
   "vanwormer-2008-the-impact-of-regular-self-weighing-on-weight-management": {
     "id": "vanwormer-2008-the-impact-of-regular-self-weighing-on-weight-management",
@@ -10790,7 +12379,11 @@
     "container_title": "The International Journal of Behavioral Nutrition and Physical Activity",
     "volume": "5",
     "issue": "1",
-    "pages": "54–54"
+    "pages": "54–54",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "zheng-2015-self-weighing-in-weight-management": {
     "id": "zheng-2015-self-weighing-in-weight-management",
@@ -10826,7 +12419,11 @@
     "container_title": "Obesity (Silver Spring, Md.)",
     "volume": "23",
     "issue": "2",
-    "pages": "256–265"
+    "pages": "256–265",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "espedido-2018-goal-difficulty-and-creative-performance": {
     "id": "espedido-2018-goal-difficulty-and-creative-performance",
@@ -10850,7 +12447,11 @@
     "container_title": "Human Performance",
     "volume": "31",
     "issue": "3",
-    "pages": "179–196"
+    "pages": "179–196",
+    "tags": [
+      "recovery",
+      "behavior-change"
+    ]
   },
   "fonollosa-2015-learning-of-chunking-sequences-in-cognition-and-behavior": {
     "id": "fonollosa-2015-learning-of-chunking-sequences-in-cognition-and-behavior",
@@ -10876,7 +12477,10 @@
     "doi_newtab": true,
     "container_title": "PLoS Computational Biology",
     "volume": "11",
-    "issue": "11"
+    "issue": "11",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "grant-2012-an-integrated-model-of-goal-focused-coaching": {
     "id": "grant-2012-an-integrated-model-of-goal-focused-coaching",
@@ -10895,7 +12499,11 @@
     "container_title": "International Coaching Psychology Review",
     "volume": "7",
     "issue": "2",
-    "pages": "146–165"
+    "pages": "146–165",
+    "tags": [
+      "behavior-change",
+      "mind-body-integration"
+    ]
   },
   "grant-2004-coach-yourself": {
     "id": "grant-2004-coach-yourself",
@@ -10914,7 +12522,10 @@
       "year": 2004
     },
     "year": 2004,
-    "publisher": "Momentum"
+    "publisher": "Momentum",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "karniol-1996-the-motivational-impact-of-temporal-focus": {
     "id": "karniol-1996-the-motivational-impact-of-temporal-focus",
@@ -10938,7 +12549,10 @@
     "container_title": "Annual Review of Psychology",
     "volume": "47",
     "issue": "1",
-    "pages": "593–620"
+    "pages": "593–620",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "latham-1999-the-effects-of-proximal-and-distal-goals-on-performance-on-a-moderately-complex-task": {
     "id": "latham-1999-the-effects-of-proximal-and-distal-goals-on-performance-on-a-moderately-complex-task",
@@ -10962,7 +12576,10 @@
     "container_title": "Journal of Organizational Behavior",
     "volume": "20",
     "issue": "4",
-    "pages": "421–429"
+    "pages": "421–429",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "lewis-2016-small-steps": {
     "id": "lewis-2016-small-steps",
@@ -10997,7 +12614,10 @@
     "doi_newtab": true,
     "container_title": "Maturitas",
     "volume": "85",
-    "pages": "64–70"
+    "pages": "64–70",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "locke-1990-a-theory-of-goal-setting-and-task-performance": {
     "id": "locke-1990-a-theory-of-goal-setting-and-task-performance",
@@ -11016,7 +12636,10 @@
       "year": 1990
     },
     "year": 1990,
-    "publisher": "Englewood Cliffs, NJ: Prentice Hall"
+    "publisher": "Englewood Cliffs, NJ: Prentice Hall",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "o-neill-2005-small-steps-to-health-and-wealth": {
     "id": "o-neill-2005-small-steps-to-health-and-wealth",
@@ -11032,7 +12655,10 @@
       "year": 2005
     },
     "year": 2005,
-    "publisher": "Association for Financial Counseling and Planning Education, 85"
+    "publisher": "Association for Financial Counseling and Planning Education, 85",
+    "tags": [
+      "food-quality"
+    ]
   },
   "pomietto-2009-small-steps-to-health": {
     "id": "pomietto-2009-small-steps-to-health",
@@ -11068,7 +12694,11 @@
     "container_title": "Pediatrics (Evanston)",
     "volume": "123",
     "issue": "Supplement",
-    "pages": "S308–S316"
+    "pages": "S308–S316",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   },
   "stock-1990-proximal-goal-setting-and-self-regulatory-processes": {
     "id": "stock-1990-proximal-goal-setting-and-self-regulatory-processes",
@@ -11092,7 +12722,10 @@
     "container_title": "Cognitive Therapy and Research",
     "volume": "14",
     "issue": "5",
-    "pages": "483–498"
+    "pages": "483–498",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "the-2006-international-coaching-psychology-review": {
     "id": "the-2006-international-coaching-psychology-review",
@@ -11108,7 +12741,10 @@
       "year": 2006
     },
     "year": 2006,
-    "publisher": "Coaching Psychology: Its time has finally come by Palmer S. and Cavanagh, M., 1(1)"
+    "publisher": "Coaching Psychology: Its time has finally come by Palmer S. and Cavanagh, M., 1(1)",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "weldon-2000-the-effects-of-proximal-and-distal-goalson-goal-level-strategy-development-and-group-performance": {
     "id": "weldon-2000-the-effects-of-proximal-and-distal-goalson-goal-level-strategy-development-and-group-performance",
@@ -11132,7 +12768,10 @@
     "container_title": "The Journal of Applied Behavioral Science",
     "volume": "36",
     "issue": "3",
-    "pages": "336–344"
+    "pages": "336–344",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "bartholomew-2009-a-review-of-controlling-motivational-strategies-from-a-self-determination-theory-perspective": {
     "id": "bartholomew-2009-a-review-of-controlling-motivational-strategies-from-a-self-determination-theory-perspective",
@@ -11159,7 +12798,10 @@
     "container_title": "International Review of Sport and Exercise Psychology",
     "volume": "2",
     "issue": "2",
-    "pages": "215–233"
+    "pages": "215–233",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "deci-1993-the-relation-of-mothers-controlling-vocalizations-to-childrens-intrinsic-motivation": {
     "id": "deci-1993-the-relation-of-mothers-controlling-vocalizations-to-childrens-intrinsic-motivation",
@@ -11192,7 +12834,10 @@
     "container_title": "Journal of Experimental Child Psychology",
     "volume": "55",
     "issue": "2",
-    "pages": "151–162"
+    "pages": "151–162",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "elliot-2017-handbook-of-competence-and-motivation": {
     "id": "elliot-2017-handbook-of-competence-and-motivation",
@@ -11214,7 +12859,10 @@
       "year": 2017
     },
     "year": 2017,
-    "publisher": "(2nd ed.). The Guilford Press"
+    "publisher": "(2nd ed.). The Guilford Press",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "locke-2002-building-a-practically-useful-theory-of-goal-setting-and-task-motivation": {
     "id": "locke-2002-building-a-practically-useful-theory-of-goal-setting-and-task-motivation",
@@ -11238,7 +12886,10 @@
     "container_title": "A 35-year odyssey. The American Psychologist",
     "volume": "57",
     "issue": "9",
-    "pages": "705–717"
+    "pages": "705–717",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "reeve-2008-understanding-and-promoting-autonomous-self-regulation": {
     "id": "reeve-2008-understanding-and-promoting-autonomous-self-regulation",
@@ -11263,7 +12914,10 @@
       "year": 2008
     },
     "year": 2008,
-    "container_title": "In D. H. Schunk & B. J. Zimmerman (Eds.), Motivation and self-regulated learning: Theory, research, and applications (pp. 223–244). Lawrence Erlbaum Associates Publishers"
+    "container_title": "In D. H. Schunk & B. J. Zimmerman (Eds.), Motivation and self-regulated learning: Theory, research, and applications (pp. 223–244). Lawrence Erlbaum Associates Publishers",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "ryan-2000-self-determination-theory-and-the-facilitation-of-intrinsic-motivation-social-development-and-well-being": {
     "id": "ryan-2000-self-determination-theory-and-the-facilitation-of-intrinsic-motivation-social-development-and-well-being",
@@ -11287,7 +12941,10 @@
     "container_title": "The American Psychologist",
     "volume": "55",
     "issue": "1",
-    "pages": "68–78"
+    "pages": "68–78",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "ryan-1970-intentional-behavior": {
     "id": "ryan-1970-intentional-behavior",
@@ -11303,7 +12960,10 @@
       "year": 1970
     },
     "year": 1970,
-    "publisher": "Ronald Press"
+    "publisher": "Ronald Press",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "sarrazin-2002-motivation-and-dropout-in-female-handballers": {
     "id": "sarrazin-2002-motivation-and-dropout-in-female-handballers",
@@ -11336,7 +12996,10 @@
     "container_title": "European Journal of Social Psychology",
     "volume": "32",
     "issue": "3",
-    "pages": "395–418"
+    "pages": "395–418",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "abbott-2014-effectiveness-of-mindfulness-based-stress-reduction-and-mindfulness-based-cognitive-therapy-in-vascular-disease": {
     "id": "abbott-2014-effectiveness-of-mindfulness-based-stress-reduction-and-mindfulness-based-cognitive-therapy-in-vascular-disease",
@@ -11378,7 +13041,11 @@
     "container_title": "Journal of psychosomatic research",
     "volume": "76",
     "issue": "5",
-    "pages": "341–351"
+    "pages": "341–351",
+    "tags": [
+      "recovery",
+      "mindfulness"
+    ]
   },
   "allen-2012-cognitive-affective-neural-plasticity-following-active-controlled-mindfulness-intervention": {
     "id": "allen-2012-cognitive-affective-neural-plasticity-following-active-controlled-mindfulness-intervention",
@@ -11420,7 +13087,10 @@
     "container_title": "The Journal of neuroscience: the official journal of the Society for Neuroscience",
     "volume": "32",
     "issue": "44",
-    "pages": "15601–15610"
+    "pages": "15601–15610",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "andersen-2020-toward-an-operational-definition-of-an-informal-mindfulness-practice": {
     "id": "andersen-2020-toward-an-operational-definition-of-an-informal-mindfulness-practice",
@@ -11435,7 +13105,10 @@
     "issued": {
       "year": 2020
     },
-    "year": 2020
+    "year": 2020,
+    "tags": [
+      "mindfulness"
+    ]
   },
   "bishop-2004-mindfulness": {
     "id": "bishop-2004-mindfulness",
@@ -11486,7 +13159,10 @@
     "container_title": "Clinical Psychology (New York, N.Y.)",
     "volume": "11",
     "issue": "3",
-    "pages": "230–241"
+    "pages": "230–241",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "bowden-2011-a-comparative-randomised-controlled-trial-of-the-effects-of-brain-wave-vibration-training-iyengar-yoga-and-mindfulness-on-mood-well-being-and-salivary-cortisol": {
     "id": "bowden-2011-a-comparative-randomised-controlled-trial-of-the-effects-of-brain-wave-vibration-training-iyengar-yoga-and-mindfulness-on-mood-well-being-and-salivary-cortisol",
@@ -11515,7 +13191,11 @@
     "doi_newtab": true,
     "container_title": "Evidence-Based Complementary and Alternative Medicine",
     "volume": "2012",
-    "pages": "234713–13"
+    "pages": "234713–13",
+    "tags": [
+      "recovery",
+      "mindfulness"
+    ]
   },
   "brown-2003-the-benefits-of-being-present": {
     "id": "brown-2003-the-benefits-of-being-present",
@@ -11539,7 +13219,10 @@
     "container_title": "Journal of Personality and Social Psychology",
     "volume": "84",
     "issue": "4",
-    "pages": "822–848"
+    "pages": "822–848",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "campos-2016-meditation-and-happiness": {
     "id": "campos-2016-meditation-and-happiness",
@@ -11583,7 +13266,10 @@
     "doi_newtab": true,
     "container_title": "Personality and Individual Differences",
     "volume": "93",
-    "pages": "80–85"
+    "pages": "80–85",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "castaldi-2020-neuroplasticity-in-adult-human-visual-cortex": {
     "id": "castaldi-2020-neuroplasticity-in-adult-human-visual-cortex",
@@ -11609,7 +13295,10 @@
     "doi_newtab": true,
     "container_title": "Neuroscience and Biobehavioral Reviews",
     "volume": "112",
-    "pages": "542–552"
+    "pages": "542–552",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "coo-2017-mindfulness-can-make-you-happy-and-productive": {
     "id": "coo-2017-mindfulness-can-make-you-happy-and-productive",
@@ -11633,7 +13322,10 @@
     "container_title": "Journal of Happiness Studies",
     "volume": "19",
     "issue": "6",
-    "pages": "1691–1711"
+    "pages": "1691–1711",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "creswell-2017-mindfulness-interventions": {
     "id": "creswell-2017-mindfulness-interventions",
@@ -11653,7 +13345,10 @@
     "doi_newtab": true,
     "container_title": "Annual review of psychology",
     "volume": "68",
-    "pages": "491–516"
+    "pages": "491–516",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "davis-2011-what-are-the-benefits-of-mindfulness": {
     "id": "davis-2011-what-are-the-benefits-of-mindfulness",
@@ -11677,7 +13372,10 @@
     "container_title": "A Practice Review of Psychotherapy-Related Research. Psychotherapy (Chicago, Ill.)",
     "volume": "48",
     "issue": "2",
-    "pages": "198–208"
+    "pages": "198–208",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "ding-2015-short-term-meditation-modulates-brain-activity-of-insight-evoked-with-solution-cue": {
     "id": "ding-2015-short-term-meditation-modulates-brain-activity-of-insight-evoked-with-solution-cue",
@@ -11716,7 +13414,10 @@
     "container_title": "Social Cognitive and Affective Neuroscience",
     "volume": "10",
     "issue": "1",
-    "pages": "43–49"
+    "pages": "43–49",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "ebner-2005-neural-plasticity-in-adult-somatic-sensory-motor-systems-1st-ed": {
     "id": "ebner-2005-neural-plasticity-in-adult-somatic-sensory-motor-systems-1st-ed",
@@ -11734,7 +13435,10 @@
     "year": 2005,
     "doi": "10.1201/9780203508039",
     "doi_newtab": true,
-    "publisher": "CRC Press"
+    "publisher": "CRC Press",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "germer-2005-mindfulness-and-psychotherapy": {
     "id": "germer-2005-mindfulness-and-psychotherapy",
@@ -11756,7 +13460,10 @@
       "year": 2005
     },
     "year": 2005,
-    "publisher": "Guilford Press"
+    "publisher": "Guilford Press",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "gotink-2016-8-week-mindfulness-based-stress-reduction-induces-brain-changes-similar-to-traditional-long-term-meditation-practice-a-systematic-review": {
     "id": "gotink-2016-8-week-mindfulness-based-stress-reduction-induces-brain-changes-similar-to-traditional-long-term-meditation-practice-a-systematic-review",
@@ -11788,7 +13495,11 @@
     "doi_newtab": true,
     "container_title": "Brain and Cognition",
     "volume": "108",
-    "pages": "32–41"
+    "pages": "32–41",
+    "tags": [
+      "recovery",
+      "mindfulness"
+    ]
   },
   "hofmann-2010-the-effect-of-mindfulness-based-therapy-on-anxiety-and-depression": {
     "id": "hofmann-2010-the-effect-of-mindfulness-based-therapy-on-anxiety-and-depression",
@@ -11818,7 +13529,10 @@
     "container_title": "Journal of Consulting and Clinical Psychology",
     "volume": "78",
     "issue": "2",
-    "pages": "169–183"
+    "pages": "169–183",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "holzel-2011-how-does-mindfulness-meditation-work": {
     "id": "holzel-2011-how-does-mindfulness-meditation-work",
@@ -11854,7 +13568,10 @@
     "container_title": "Proposing Mechanisms of Action From a Conceptual and Neural Perspective. Perspectives on Psychological Science",
     "volume": "6",
     "issue": "6",
-    "pages": "537–559"
+    "pages": "537–559",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "jazaieri-2017-mindfulness-and-well-being": {
     "id": "jazaieri-2017-mindfulness-and-well-being",
@@ -11875,7 +13592,10 @@
     "year": 2017,
     "doi": "10.1007/978-3-319-58763-9_3",
     "doi_newtab": true,
-    "container_title": "In M. D. Robinson & M. Eid (Eds.), The happy mind: Cognitive contributions to well-being (pp. 41–58). Springer International Publishing/Springer Nature"
+    "container_title": "In M. D. Robinson & M. Eid (Eds.), The happy mind: Cognitive contributions to well-being (pp. 41–58). Springer International Publishing/Springer Nature",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "knowles-2016-a-systematic-review-of-efficacy-of-the-attention-training-technique-in-clinical-and-nonclinical-samples": {
     "id": "knowles-2016-a-systematic-review-of-efficacy-of-the-attention-training-technique-in-clinical-and-nonclinical-samples",
@@ -11905,7 +13625,10 @@
     "container_title": "Journal of Clinical Psychology",
     "volume": "72",
     "issue": "10",
-    "pages": "999–1025"
+    "pages": "999–1025",
+    "tags": [
+      "body-composition"
+    ]
   },
   "kristeller-2013-mindfulness-based-eating-awareness-training-mb-eat-for-binge-eating": {
     "id": "kristeller-2013-mindfulness-based-eating-awareness-training-mb-eat-for-binge-eating",
@@ -11932,7 +13655,11 @@
     "container_title": "Mindfulness",
     "volume": "5",
     "issue": "3",
-    "pages": "282–297"
+    "pages": "282–297",
+    "tags": [
+      "satiety",
+      "mindfulness"
+    ]
   },
   "lamothe-2015-outcomes-of-mbsr-or-mbsr-based-interventions-in-health-care-providers": {
     "id": "lamothe-2015-outcomes-of-mbsr-or-mbsr-based-interventions-in-health-care-providers",
@@ -11964,7 +13691,10 @@
     "doi_newtab": true,
     "container_title": "Complementary Therapies in Medicine",
     "volume": "24",
-    "pages": "19–28"
+    "pages": "19–28",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "lara-2014-association-of-behaviour-change-techniques-with-effectiveness-of-dietary-interventions-among-adults-of-retirement-age": {
     "id": "lara-2014-association-of-behaviour-change-techniques-with-effectiveness-of-dietary-interventions-among-adults-of-retirement-age",
@@ -12012,7 +13742,11 @@
     "container_title": "BMC Medicine",
     "volume": "12",
     "issue": "1",
-    "pages": "177–177"
+    "pages": "177–177",
+    "tags": [
+      "food-quality",
+      "behavior-change"
+    ]
   },
   "lee-2021-the-influence-of-mindfulness-and-gratitude-on-the-happiness-of-high-school-students": {
     "id": "lee-2021-the-influence-of-mindfulness-and-gratitude-on-the-happiness-of-high-school-students",
@@ -12033,7 +13767,10 @@
     "container_title": "Perspektivy nauki i obrazovania – Perspectives of Science and Education",
     "volume": "52",
     "issue": "4",
-    "pages": "358-369"
+    "pages": "358-369",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "li-2019-mindfulness-and-athlete-burnout": {
     "id": "li-2019-mindfulness-and-athlete-burnout",
@@ -12066,7 +13803,10 @@
     "container_title": "International Journal of Environmental Research and Public Health",
     "volume": "16",
     "issue": "3",
-    "pages": "449–"
+    "pages": "449–",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "mann-2007-attention-self-control-and-health-behaviors": {
     "id": "mann-2007-attention-self-control-and-health-behaviors",
@@ -12090,7 +13830,10 @@
     "container_title": "Current Directions in Psychological Science: a Journal of the American Psychological Society",
     "volume": "16",
     "issue": "5",
-    "pages": "280–283"
+    "pages": "280–283",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "manuello-2018-attention-salience-and-self-awareness": {
     "id": "manuello-2018-attention-salience-and-self-awareness",
@@ -12114,7 +13857,10 @@
     "year": 2018,
     "doi": "10.1007/978-3-319-75468-0_25",
     "doi_newtab": true,
-    "container_title": "In Island of Reil (Insula) in the Human Brain (pp. 213–221). Springer International Publishing"
+    "container_title": "In Island of Reil (Insula) in the Human Brain (pp. 213–221). Springer International Publishing",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "masicampo-2007-relating-mindfulness-and-self-regulatory-processes": {
     "id": "masicampo-2007-relating-mindfulness-and-self-regulatory-processes",
@@ -12138,7 +13884,10 @@
     "container_title": "Psychological Inquiry",
     "volume": "18",
     "issue": "4",
-    "pages": "255–258"
+    "pages": "255–258",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "mausbach-2010-the-relationship-between-homework-compliance-and-therapy-outcomes": {
     "id": "mausbach-2010-the-relationship-between-homework-compliance-and-therapy-outcomes",
@@ -12171,7 +13920,11 @@
     "container_title": "Cognitive Therapy and Research",
     "volume": "34",
     "issue": "5",
-    "pages": "429–438"
+    "pages": "429–438",
+    "tags": [
+      "adherence",
+      "behavior-change"
+    ]
   },
   "mcclintock-2019-brief-mindfulness-based-interventions-for-acute-and-chronic-pain": {
     "id": "mcclintock-2019-brief-mindfulness-based-interventions-for-acute-and-chronic-pain",
@@ -12204,7 +13957,10 @@
     "container_title": "The Journal of Alternative and Complementary Medicine (New York, N.Y.)",
     "volume": "25",
     "issue": "3",
-    "pages": "265–278"
+    "pages": "265–278",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "michalak-2008-mindfulness-predicts-relapse-recurrence-in-major-depressive-disorder-after-mindfulness-based-cognitive-therapy": {
     "id": "michalak-2008-mindfulness-predicts-relapse-recurrence-in-major-depressive-disorder-after-mindfulness-based-cognitive-therapy",
@@ -12234,7 +13990,10 @@
     "container_title": "The Journal of Nervous and Mental Disease",
     "volume": "196",
     "issue": "8",
-    "pages": "630–633"
+    "pages": "630–633",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "morgan-2005-cultivating-attention-and-empathy": {
     "id": "morgan-2005-cultivating-attention-and-empathy",
@@ -12253,7 +14012,10 @@
       "year": 2005
     },
     "year": 2005,
-    "container_title": "In C. K. Germer, R. D. Siegel, & P. R. Fulton (Eds.), Mindfulness and psychotherapy (pp. 73–90). Guilford Press"
+    "container_title": "In C. K. Germer, R. D. Siegel, & P. R. Fulton (Eds.), Mindfulness and psychotherapy (pp. 73–90). Guilford Press",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "ngamkham-2019-a-systematic-review": {
     "id": "ngamkham-2019-a-systematic-review",
@@ -12280,7 +14042,10 @@
     "container_title": "Asia-Pacific journal of oncology nursing",
     "volume": "6",
     "issue": "2",
-    "pages": "161–169"
+    "pages": "161–169",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "parsons-2017-home-practice-in-mindfulness-based-cognitive-therapy-and-mindfulness-based-stress-reduction": {
     "id": "parsons-2017-home-practice-in-mindfulness-based-cognitive-therapy-and-mindfulness-based-stress-reduction",
@@ -12312,7 +14077,11 @@
     "doi_newtab": true,
     "container_title": "Behaviour research and therapy",
     "volume": "95",
-    "pages": "29–41"
+    "pages": "29–41",
+    "tags": [
+      "recovery",
+      "mindfulness"
+    ]
   },
   "piet-2011-the-effect-of-mindfulness-based-cognitive-therapy-for-prevention-of-relapse-in-recurrent-major-depressive-disorder": {
     "id": "piet-2011-the-effect-of-mindfulness-based-cognitive-therapy-for-prevention-of-relapse-in-recurrent-major-depressive-disorder",
@@ -12336,7 +14105,10 @@
     "container_title": "Clinical psychology review",
     "volume": "31",
     "issue": "6",
-    "pages": "1032–1040"
+    "pages": "1032–1040",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "quaglia-2015-from-conceptualization-to-operationalization-of-mindfulness": {
     "id": "quaglia-2015-from-conceptualization-to-operationalization-of-mindfulness",
@@ -12364,7 +14136,10 @@
       "year": 2015
     },
     "year": 2015,
-    "container_title": "In K. W. Brown, J. D. Creswell, & R. M. Ryan (Eds.), Handbook of mindfulness: Theory, research, and practice (pp. 151– 170). The Guilford Press"
+    "container_title": "In K. W. Brown, J. D. Creswell, & R. M. Ryan (Eds.), Handbook of mindfulness: Theory, research, and practice (pp. 151– 170). The Guilford Press",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "rodriguez-vega-2014-impact-of-mindfulness-training-on-attentional-control-and-anger-regulation-processes-for-psychotherapists-in-training": {
     "id": "rodriguez-vega-2014-impact-of-mindfulness-training-on-attentional-control-and-anger-regulation-processes-for-psychotherapists-in-training",
@@ -12403,7 +14178,10 @@
     "container_title": "Psychotherapy Research",
     "volume": "24",
     "issue": "2",
-    "pages": "202–213"
+    "pages": "202–213",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "sahdra-2011-enhanced-response-inhibition-during-intensive-meditation-training-predicts-improvements-in-self-reported-adaptive-socioemotional-functioning": {
     "id": "sahdra-2011-enhanced-response-inhibition-during-intensive-meditation-training-predicts-improvements-in-self-reported-adaptive-socioemotional-functioning",
@@ -12463,7 +14241,10 @@
     "container_title": "Emotion (Washington, D.C.)",
     "volume": "11",
     "issue": "2",
-    "pages": "299–312"
+    "pages": "299–312",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "scheepers-2020-the-impact-of-mindfulness-based-interventions-on-doctors-well-being-and-performance": {
     "id": "scheepers-2020-the-impact-of-mindfulness-based-interventions-on-doctors-well-being-and-performance",
@@ -12493,7 +14274,10 @@
     "container_title": "Medical Education",
     "volume": "54",
     "issue": "2",
-    "pages": "138–149"
+    "pages": "138–149",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "segal-2013-mindfulness-based-cognitive-therapy-for-depression-2nd-ed": {
     "id": "segal-2013-mindfulness-based-cognitive-therapy-for-depression-2nd-ed",
@@ -12515,7 +14299,10 @@
       "year": 2013
     },
     "year": 2013,
-    "publisher": "Guilford Press"
+    "publisher": "Guilford Press",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "shapiro-2017-the-art-and-science-of-mindfulness": {
     "id": "shapiro-2017-the-art-and-science-of-mindfulness",
@@ -12536,7 +14323,10 @@
     "year": 2017,
     "doi": "10.1037/0000022-000",
     "doi_newtab": true,
-    "publisher": "(2nd ed.). American Psychological Association"
+    "publisher": "(2nd ed.). American Psychological Association",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "shapiro-2006-mechanisms-of-mindfulness": {
     "id": "shapiro-2006-mechanisms-of-mindfulness",
@@ -12566,7 +14356,10 @@
     "container_title": "Journal of clinical psychology",
     "volume": "62",
     "issue": "3",
-    "pages": "373–386"
+    "pages": "373–386",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "tang-2015-the-neuroscience-of-mindfulness-meditation": {
     "id": "tang-2015-the-neuroscience-of-mindfulness-meditation",
@@ -12593,7 +14386,10 @@
     "container_title": "Nature Reviews. Neuroscience",
     "volume": "16",
     "issue": "4",
-    "pages": "213–225"
+    "pages": "213–225",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "tang-2007-short-term-meditation-training-improves-attention-and-self-regulation": {
     "id": "tang-2007-short-term-meditation-training-improves-attention-and-self-regulation",
@@ -12644,7 +14440,11 @@
     "container_title": "Proceedings of the National Academy of Sciences - PNAS",
     "volume": "104",
     "issue": "43",
-    "pages": "17152–17156"
+    "pages": "17152–17156",
+    "tags": [
+      "behavior-change",
+      "mindfulness"
+    ]
   },
   "tang-2012-neural-correlates-of-establishing-maintaining-and-switching-brain-states": {
     "id": "tang-2012-neural-correlates-of-establishing-maintaining-and-switching-brain-states",
@@ -12671,7 +14471,10 @@
     "container_title": "Trends in Cognitive Sciences",
     "volume": "16",
     "issue": "6",
-    "pages": "330–337"
+    "pages": "330–337",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "hanh-2010-five-steps-to-mindfulness": {
     "id": "hanh-2010-five-steps-to-mindfulness",
@@ -12691,7 +14494,10 @@
     "url_newtab": true,
     "container_title": "Mindful: Healthy Mind",
     "volume": "Healthy Life. Retrieved 2022",
-    "pages": "from"
+    "pages": "from",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "tomlinson-2018-dispositional-mindfulness-and-psychological-health": {
     "id": "tomlinson-2018-dispositional-mindfulness-and-psychological-health",
@@ -12721,7 +14527,10 @@
     "container_title": "Mindfulness",
     "volume": "9",
     "issue": "1",
-    "pages": "23–43"
+    "pages": "23–43",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "van-dam-2018-mind-the-hype": {
     "id": "van-dam-2018-mind-the-hype",
@@ -12784,7 +14593,10 @@
     "container_title": "Perspectives on Psychological Science",
     "volume": "13",
     "issue": "1",
-    "pages": "36–61"
+    "pages": "36–61",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "young-2018-the-impact-of-mindfulness-based-interventions-on-brain-activity": {
     "id": "young-2018-the-impact-of-mindfulness-based-interventions-on-brain-activity",
@@ -12822,7 +14634,10 @@
     "doi_newtab": true,
     "container_title": "Neuroscience and Biobehavioral Reviews",
     "volume": "84",
-    "pages": "424–433"
+    "pages": "424–433",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "zarifsanaiey-2020-the-effects-of-mindfulness-training-on-the-level-of-happiness-and-blood-sugar-in-diabetes-patients": {
     "id": "zarifsanaiey-2020-the-effects-of-mindfulness-training-on-the-level-of-happiness-and-blood-sugar-in-diabetes-patients",
@@ -12855,7 +14670,10 @@
     "container_title": "Journal of Diabetes and Metabolic Disorders",
     "volume": "19",
     "issue": "1",
-    "pages": "311–317"
+    "pages": "311–317",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "zeidan-2010-mindfulness-meditation-improves-cognition": {
     "id": "zeidan-2010-mindfulness-meditation-improves-cognition",
@@ -12888,7 +14706,10 @@
     "container_title": "Consciousness and Cognition",
     "volume": "19",
     "issue": "2",
-    "pages": "597–605"
+    "pages": "597–605",
+    "tags": [
+      "mindfulness"
+    ]
   },
   "compernolle-2019-effectiveness-of-interventions-using-self-monitoring-to-reduce-sedentary-behavior-in-adults": {
     "id": "compernolle-2019-effectiveness-of-interventions-using-self-monitoring-to-reduce-sedentary-behavior-in-adults",
@@ -12930,7 +14751,10 @@
     "container_title": "The International Journal of Behavioral Nutrition and Physical Activity",
     "volume": "16",
     "issue": "1",
-    "pages": "63–63"
+    "pages": "63–63",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "harkin-2016-does-monitoring-goal-progress-promote-goal-attainment": {
     "id": "harkin-2016-does-monitoring-goal-progress-promote-goal-attainment",
@@ -12972,7 +14796,10 @@
     "container_title": "A Meta- Analysis of the Experimental Evidence. Psychological Bulletin",
     "volume": "142",
     "issue": "2",
-    "pages": "198–229"
+    "pages": "198–229",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "kanejima-2018-self-monitoring-to-increase-physical-activity-in-patients-with-cardiovascular-disease": {
     "id": "kanejima-2018-self-monitoring-to-increase-physical-activity-in-patients-with-cardiovascular-disease",
@@ -12999,7 +14826,10 @@
     "container_title": "Aging Clinical and Experimental Research",
     "volume": "31",
     "issue": "2",
-    "pages": "163–173"
+    "pages": "163–173",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "quinn-2010-cant-control-yourself": {
     "id": "quinn-2010-cant-control-yourself",
@@ -13029,7 +14859,10 @@
     "container_title": "Monitor Those Bad Habits. Personality & Social Psychology Bulletin",
     "volume": "36",
     "issue": "4",
-    "pages": "499–511"
+    "pages": "499–511",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "rachlin-2000-the-science-of-self-control": {
     "id": "rachlin-2000-the-science-of-self-control",
@@ -13045,7 +14878,10 @@
       "year": 2000
     },
     "year": 2000,
-    "publisher": "Harvard University Press"
+    "publisher": "Harvard University Press",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "rawson-2011-accurate-monitoring-leads-to-effective-control-and-greater-learning-of-patient-education-materials": {
     "id": "rawson-2011-accurate-monitoring-leads-to-effective-control-and-greater-learning-of-patient-education-materials",
@@ -13072,7 +14908,10 @@
     "container_title": "Journal of Experimental Psychology. Applied",
     "volume": "17",
     "issue": "3",
-    "pages": "288–302"
+    "pages": "288–302",
+    "tags": [
+      "behavior-change"
+    ]
   },
   "wang-2015-wearable-sensor-device-fitbit-one-and-sms-text-messaging-prompts-to-increase-physical-activity-in-overweight-and-obese-adults": {
     "id": "wang-2015-wearable-sensor-device-fitbit-one-and-sms-text-messaging-prompts-to-increase-physical-activity-in-overweight-and-obese-adults",
@@ -13114,6 +14953,10 @@
     "container_title": "Telemedicine Journal and e-Health",
     "volume": "21",
     "issue": "10",
-    "pages": "782–792"
+    "pages": "782–792",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   }
 }

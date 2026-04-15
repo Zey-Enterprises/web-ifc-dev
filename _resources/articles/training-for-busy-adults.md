@@ -1,7 +1,23 @@
 ---
-title: "Training for Busy Adults"
+title: "SAMPLE: Training for Busy Adults"
+format: written
+date: 2026-02-10
 excerpt: "A realistic approach to getting stronger and fitter when time and recovery are constrained."
-topic: "Training"
+domains:
+  - physical-exercise
+  - psychology
+concerns:
+  - busy-life
+  - beginners
+  - recovery
+  - performance
+  - adherence
+  - energy
+tags:
+  - strength-training
+  - recovery
+  - adherence
+  - fatigue
 ---
 
 Busy adults often make the mistake of borrowing training expectations from people whose lives are structured around fitness. That mismatch produces guilt, overreaching, and poor adherence. The better approach is to build a training plan around the schedule and recovery budget you actually have.

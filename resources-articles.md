@@ -1,17 +1,10 @@
 ---
 title: "Articles"
 permalink: /resources/articles/
-description: "Archive page for blog posts and ongoing articles."
+layout: redirect
+redirect_to: "/resources/?format=article"
+description: "Compatibility redirect for the former written resources archive."
+sitemap: false
 ---
 
-Posts are for ongoing ideas, observations, and updates that do not need to be structured as full guides.
-
-<div class="ifc-grid">
-  {% for post in site.posts %}
-    <a class="ifc-card-link" href="{{ post.url }}">
-      <strong>{{ post.title }}</strong>
-      <p>{{ post.date | date: "%B %-d, %Y" }}</p>
-      <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
-    </a>
-  {% endfor %}
-</div>
+This archive moved to the unified resources browser.

@@ -1,0 +1,50 @@
+calorie-balance:
+  label: "Calorie Balance"
+body-composition:
+  label: "Body Composition"
+
+protein:
+  label: "Protein"
+carbohydrates:
+  label: "Carbohydrates"
+dietary-fat:
+  label: "Dietary Fat"
+fiber:
+  label: "Fiber"
+micronutrients:
+  label: "Micronutrients"
+meal-structure:
+  label: "Meal Structure"
+food-quality:
+  label: "Food Quality"
+
+satiety:
+  label: "Satiety"
+
+hypertrophy:
+  label: "Hypertrophy"
+strength-training:
+  label: "Strength Training"
+endurance:
+  label: "Endurance"
+periodization:
+  label: "Periodization"
+
+recovery:
+  label: "Recovery"
+fatigue:
+  label: "Fatigue"
+sleep:
+  label: "Sleep"
+
+adherence:
+  label: "Adherence"
+behavior-change:
+  label: "Behavior Change"
+environment-design:
+  label: "Environment Design"
+mindfulness:
+  label: "Mindfulness"
+
+mind-body-integration:
+  label: "Mind-Body Integration"

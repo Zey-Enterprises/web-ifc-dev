@@ -1,7 +1,22 @@
 ---
-title: "Diet Periodization and Maintenance"
+title: "SAMPLE: Diet Periodization and Maintenance"
+format: written
+date: 2026-03-10
 excerpt: "Why successful nutrition coaching uses phases instead of pretending that a calorie deficit should last forever."
-topic: "Nutrition"
+domains:
+  - diet
+  - psychology
+concerns:
+  - fat-loss
+  - maintenance
+  - muscle-gain
+  - adherence
+  - busy-life
+tags:
+  - periodization
+  - calorie-balance
+  - body-composition
+  - adherence
 ---
 
 One of the biggest reasons people yo-yo is that they use a fat-loss approach as if it were a permanent lifestyle. It is better to think in phases.

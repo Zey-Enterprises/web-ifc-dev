@@ -1,0 +1,52 @@
+{% assign document = include.document | default: page %}
+{% assign listing_path = include.target_path %}
+{% if listing_path == nil or listing_path == "" %}
+  {% assign listing_path = "/resources/" | relative_url %}
+{% endif %}
+
+{% assign has_taxonomy = false %}
+{% if document.domains and document.domains.size > 0 %}
+  {% assign has_taxonomy = true %}
+{% endif %}
+{% if document.concerns and document.concerns.size > 0 %}
+  {% assign has_taxonomy = true %}
+{% endif %}
+{% if document.tags and document.tags.size > 0 %}
+  {% assign has_taxonomy = true %}
+{% endif %}
+
+{% if has_taxonomy %}
+  <div class="ifc-resource-taxonomy">
+    {% if document.domains and document.domains.size > 0 %}
+      <div class="ifc-resource-taxonomy__group">
+        <span class="ifc-resource-taxonomy__label">Domains</span>
+        <div class="ifc-taxonomy-pills">
+          {% for domain in document.domains %}
+            <a class="ifc-taxonomy-pill" href="{{ listing_path }}?domain={{ domain }}">{{ domain | replace: "-", " " }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+    {% if document.concerns and document.concerns.size > 0 %}
+      <div class="ifc-resource-taxonomy__group">
+        <span class="ifc-resource-taxonomy__label">Concerns</span>
+        <div class="ifc-taxonomy-pills">
+          {% for concern in document.concerns %}
+            <a class="ifc-taxonomy-pill ifc-taxonomy-pill--soft" href="{{ listing_path }}?concern={{ concern }}">{{ concern | replace: "-", " " }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+    {% if document.tags and document.tags.size > 0 %}
+      <div class="ifc-resource-taxonomy__group">
+        <span class="ifc-resource-taxonomy__label">Tags</span>
+        <div class="ifc-taxonomy-pills">
+          {% for tag in document.tags %}
+            {% assign tag_data = site.data.tags[tag] %}
+            <a class="ifc-taxonomy-pill ifc-taxonomy-pill--light" href="{{ listing_path }}?tag={{ tag }}">{{ tag_data.label | default: tag }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

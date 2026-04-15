@@ -1,7 +1,26 @@
 ---
-title: "Fat Loss Without Burnout"
+title: "SAMPLE: Fat Loss Without Burnout"
+format: written
+date: 2026-02-17
 excerpt: "How to reduce body fat without recreating the same restrictive cycle that failed before."
-topic: "Body composition"
+domains:
+  - diet
+  - psychology
+  - physical-exercise
+concerns:
+  - fat-loss
+  - body-composition
+  - adherence
+  - sleep
+  - stress
+  - busy-life
+  - maintenance
+tags:
+  - calorie-balance
+  - body-composition
+  - satiety
+  - recovery
+  - adherence
 ---
 
 Effective fat loss is not just about creating a deficit. It is about creating a deficit that can be sustained without making your life so constrained that you rebound the moment discipline slips.

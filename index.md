@@ -112,19 +112,15 @@ header:
 <section class="ifc-section">
   <h2>Start with a resource, not a sales pitch</h2>
   <div class="ifc-grid">
-    {% assign recent_guides = site.guides | sort: "title" %}
-    {% for item in recent_guides limit:3 %}
+    {% assign recent_written_resources = site.resources | where: "format", "written" | sort: "date" | reverse %}
+    {% for item in recent_written_resources limit:6 %}
       <a class="ifc-card-link" href="{{ item.url }}">
+        <p class="ifc-resource-card__eyebrow">Article</p>
         <strong>{{ item.title }}</strong>
+        {% if item.date %}
+          <p class="ifc-resource-card__meta">{{ item.date | date: site.date_format }}</p>
+        {% endif %}
         <p>{{ item.excerpt | strip_html | truncate: 130 }}</p>
-      </a>
-    {% endfor %}
-  </div>
-  <div class="ifc-grid">
-    {% for post in site.posts limit:3 %}
-      <a class="ifc-card-link" href="{{ post.url }}">
-        <strong>{{ post.title }}</strong>
-        <p>{{ post.excerpt | strip_html | truncate: 130 }}</p>
       </a>
     {% endfor %}
   </div>

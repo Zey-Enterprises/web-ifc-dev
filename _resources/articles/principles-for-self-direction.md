@@ -1,7 +1,22 @@
 ---
-title: "Principles for Self-Direction"
+title: "SAMPLE: Principles for Self-Direction"
+format: written
+date: 2026-03-17
 excerpt: "How values, epistemology, and reflective judgment support more durable fitness and life outcomes."
-topic: "Philosophy"
+domains:
+  - philosophy
+  - psychology
+concerns:
+  - mindset
+  - self-direction
+  - behavior-change
+  - adherence
+  - maintenance
+tags:
+  - behavior-change
+  - adherence
+  - mindfulness
+  - mind-body-integration
 ---
 
 Fitness is easier to sustain when it is supported by sound ideas. People often fail not because they lack data, but because they have unclear values, poor standards of evidence, and unstable methods of self-evaluation.

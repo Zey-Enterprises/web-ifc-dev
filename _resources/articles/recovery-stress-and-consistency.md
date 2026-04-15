@@ -1,7 +1,25 @@
 ---
-title: "Recovery, Stress, and Consistency"
+title: "SAMPLE: Recovery, Stress, and Consistency"
+format: written
+date: 2026-03-03
 excerpt: "Why recovery is not a luxury variable and how stress shapes adherence, hunger, and performance."
-topic: "Recovery"
+domains:
+  - psychology
+  - physical-exercise
+concerns:
+  - sleep
+  - stress
+  - recovery
+  - adherence
+  - energy
+  - busy-life
+  - performance
+tags:
+  - recovery
+  - sleep
+  - fatigue
+  - behavior-change
+  - adherence
 ---
 
 Recovery is not merely what happens after the real work. It is one of the conditions that determines whether the real work can continue productively.

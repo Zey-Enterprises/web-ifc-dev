@@ -1,8 +1,20 @@
 ---
-title: "Body Composition Is Not a Separate Life Project"
+title: "SAMPLE: Body Composition Is Not a Separate Life Project"
+format: written
+date: 2026-03-30
 excerpt: "You can care seriously about physique goals without isolating them from the rest of a meaningful life."
-categories:
-  - articles
+domains:
+  - philosophy
+  - psychology
+concerns:
+  - body-composition
+  - mindset
+  - self-direction
+  - maintenance
+tags:
+  - body-composition
+  - mind-body-integration
+  - behavior-change
 ---
 
 Body composition matters to many people, and there is nothing trivial about wanting to improve it. Problems usually begin when physique work becomes psychologically detached from wider values, responsibilities, and standards for living well.

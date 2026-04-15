@@ -1,0 +1,263 @@
+[
+  {
+    "id": "calorie-balance-still-applies",
+    "title": "Calorie Balance Still Applies",
+    "description": "A short video clarifying why calorie balance governs change even when sleep, hormones, and stress change the difficulty.",
+    "format": "video",
+    "sub-format": "short-video",
+    "domains": [
+      "diet",
+      "psychology"
+    ],
+    "concerns": [
+      "fat-loss",
+      "body-composition",
+      "adherence"
+    ],
+    "tags": [
+      "calorie-balance",
+      "body-composition",
+      "satiety",
+      "sleep"
+    ],
+    "published_at": "2026-04-10",
+    "local_url": "calorie-balance-still-applies",
+    "platforms": [
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/reel/ifc-calorie-balance-still-applies/"
+      },
+      {
+        "platform": "YouTube Shorts",
+        "url": "https://www.youtube.com/shorts/ifc-calorie-balance-still-applies"
+      }
+    ],
+    "thumbnail": "/assets/images/ifc-social-share-calorie-balance-1.jpg",
+    "featured": true,
+    "related_resources": [
+      "calorie-balance-still-governs-body-composition",
+      "nutrition-foundations"
+    ],
+    "related_media": [
+      "meal-structure-for-fat-loss",
+      "protein-distribution-clip"
+    ]
+  },
+  {
+    "id": "integrated-coaching-explainer",
+    "title": "What Integrated Coaching Actually Means",
+    "description": "A longer-form explainer on how training, nutrition, recovery, and self-direction fit together in one coaching system.",
+    "format": "video",
+    "sub-format": "long-video",
+    "domains": [
+      "physical-exercise",
+      "diet",
+      "psychology",
+      "philosophy"
+    ],
+    "concerns": [
+      "body-composition",
+      "self-direction",
+      "maintenance",
+      "beginners"
+    ],
+    "tags": [
+      "body-composition",
+      "mind-body-integration",
+      "behavior-change"
+    ],
+    "published_at": "2026-04-08",
+    "local_url": "integrated-coaching-explainer",
+    "platforms": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=ifc-integrated-coaching-explainer"
+      },
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/watch/?v=ifc-integrated-coaching-explainer"
+      }
+    ],
+    "thumbnail": "/assets/images/ifc-hero-banner-weightlifting-2.jpg",
+    "featured": true,
+    "related_resources": [
+      "body-composition-is-not-a-separate-life-project",
+      "principles-for-self-direction"
+    ],
+    "related_media": [
+      "busy-professional-training-framework"
+    ]
+  },
+  {
+    "id": "protein-distribution-clip",
+    "title": "A Better Way To Think About Protein Distribution",
+    "description": "A short clip on why protein distribution, satiety, and meal structure matter more than nutrition theatrics.",
+    "format": "video",
+    "sub-format": "short-video",
+    "domains": [
+      "diet",
+      "physical-exercise"
+    ],
+    "concerns": [
+      "muscle-gain",
+      "fat-loss",
+      "body-composition"
+    ],
+    "tags": [
+      "protein",
+      "meal-structure",
+      "satiety",
+      "body-composition"
+    ],
+    "published_at": "2026-04-05",
+    "local_url": "protein-distribution-clip",
+    "platforms": [
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/reel/ifc-protein-distribution/"
+      },
+      {
+        "platform": "TikTok",
+        "url": "https://www.tiktok.com/@ifc/video/protein-distribution"
+      }
+    ],
+    "thumbnail": "/assets/images/ifc-hero-banner-nutrition-3.jpg",
+    "featured": true,
+    "related_resources": [
+      "nutrition-foundations",
+      "building-muscle-realistically"
+    ],
+    "related_media": [
+      "meal-structure-for-fat-loss",
+      "calorie-balance-still-applies"
+    ]
+  },
+  {
+    "id": "consistency-under-stress-carousel",
+    "title": "Consistency During High-Stress Weeks",
+    "description": "A carousel-style visual on scaling the plan instead of abandoning it when work, family, or travel spike stress.",
+    "format": "image",
+    "domains": [
+      "psychology",
+      "physical-exercise",
+      "diet"
+    ],
+    "concerns": [
+      "stress",
+      "adherence",
+      "busy-life",
+      "recovery"
+    ],
+    "tags": [
+      "adherence",
+      "behavior-change",
+      "environment-design",
+      "recovery"
+    ],
+    "published_at": "2026-04-01",
+    "local_url": "consistency-under-stress-carousel",
+    "platforms": [
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/ifc/posts/consistency-under-stress"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/p/ifc-consistency-under-stress/"
+      }
+    ],
+    "thumbnail": "/assets/images/ifc-hero-banner-mindfulness-3.jpg",
+    "featured": false,
+    "related_resources": [
+      "the-best-plan-is-the-one-you-can-run-under-stress",
+      "recovery-stress-and-consistency"
+    ],
+    "related_media": [
+      "busy-professional-training-framework"
+    ]
+  },
+  {
+    "id": "busy-professional-training-framework",
+    "title": "A Training Framework For Busy Professionals",
+    "description": "A long-form training walkthrough for adults who need progress without pretending their lives revolve around the gym.",
+    "format": "video",
+    "sub-format": "long-video",
+    "domains": [
+      "physical-exercise",
+      "psychology"
+    ],
+    "concerns": [
+      "busy-life",
+      "performance",
+      "beginners",
+      "recovery"
+    ],
+    "tags": [
+      "strength-training",
+      "recovery",
+      "adherence",
+      "fatigue"
+    ],
+    "published_at": "2026-03-27",
+    "local_url": "busy-professional-training-framework",
+    "platforms": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=ifc-busy-professional-training-framework"
+      }
+    ],
+    "thumbnail": "/assets/images/ifc-hero-banner-weightlifting-1.jpg",
+    "featured": false,
+    "related_resources": [
+      "training-for-busy-adults",
+      "recovery-stress-and-consistency"
+    ],
+    "related_media": [
+      "integrated-coaching-explainer",
+      "consistency-under-stress-carousel"
+    ]
+  },
+  {
+    "id": "meal-structure-for-fat-loss",
+    "title": "Meal Structure For Fat Loss",
+    "description": "A static visual on simple meal architecture that improves satiety and reduces impulsive drift during a deficit.",
+    "format": "image",
+    "domains": [
+      "diet",
+      "psychology"
+    ],
+    "concerns": [
+      "fat-loss",
+      "adherence",
+      "busy-life"
+    ],
+    "tags": [
+      "meal-structure",
+      "satiety",
+      "protein",
+      "adherence"
+    ],
+    "published_at": "2026-03-22",
+    "local_url": "meal-structure-for-fat-loss",
+    "platforms": [
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/p/ifc-meal-structure-fat-loss/"
+      },
+      {
+        "platform": "Pinterest",
+        "url": "https://www.pinterest.com/pin/ifc-meal-structure-fat-loss/"
+      }
+    ],
+    "thumbnail": "/assets/images/ifc-hero-banner-nutrition-2.jpg",
+    "featured": false,
+    "related_resources": [
+      "nutrition-foundations",
+      "fat-loss-without-burnout"
+    ],
+    "related_media": [
+      "protein-distribution-clip",
+      "calorie-balance-still-applies"
+    ]
+  }
+]

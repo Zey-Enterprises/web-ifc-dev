@@ -30,18 +30,15 @@ include:
   - _pages
 
 collections:
-  guides:
+  resources:
     output: true
-    permalink: /resources/guides/:slug/
+    permalink: /resources/:path/
   testimonials:
     output: true
     permalink: /results/testimonials/:slug/
   case_studies:
     output: true
     permalink: /results/case-studies/:slug/
-  media:
-    output: true
-    permalink: /media/library/:slug/
   faqs:
     output: true
     permalink: /faq/library/:slug/
@@ -61,11 +58,10 @@ defaults:
       toc_widget:
         enabled: false
   - scope:
-      path: ""
-      type: posts
+      path: "_resources/articles"
+      type: resources
     values:
       layout: single
-      permalink: /resources/articles/:slug/
       classes: wide
       show_author: true
       show_date: true
@@ -77,20 +73,18 @@ defaults:
         min_level: 2
         max_level: 4
   - scope:
-      path: ""
-      type: guides
+      path: "_resources/visual-media"
+      type: resources
     values:
       layout: single
       classes: wide
-      show_author: true
+      show_author: false
       show_date: true
-      show_modified_date: true
-      show_read_time: true
+      show_modified_date: false
+      show_read_time: false
       share: false
       toc_widget:
-        enabled: true
-        min_level: 2
-        max_level: 4
+        enabled: false
   - scope:
       path: ""
       type: testimonials
@@ -101,13 +95,6 @@ defaults:
   - scope:
       path: ""
       type: case_studies
-    values:
-      layout: single
-      classes: wide
-      share: false
-  - scope:
-      path: ""
-      type: media
     values:
       layout: single
       classes: wide

@@ -1,0 +1,86 @@
+{% assign media_item = site.data.visual-media | where: "id", page.slug | first %}
+
+{% if media_item %}
+  <div class="ifc-detail-stack">
+    <p class="ifc-resource-card__eyebrow">Visual media</p>
+    <h1>{{ media_item.title }}</h1>
+    <p class="ifc-lead">{{ media_item.description }}</p>
+
+    <div class="ifc-grid">
+      <div class="ifc-panel">
+        <h2>Watch Or View</h2>
+        <div class="ifc-platform-list">
+          {% for platform in media_item.platforms %}
+            <a class="ifc-card-link" href="{{ platform.url }}" target="_blank" rel="noopener">
+              <strong>{{ platform.platform }}</strong>
+              <p>{{ media_item.title }}</p>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="ifc-panel ifc-panel--soft">
+        <h2>Media Details</h2>
+        <dl class="ifc-definition-list">
+          <div>
+            <dt>Format</dt>
+            <dd>{{ media_item.format | capitalize }}{% if media_item["sub-format"] %} · {{ media_item["sub-format"] | replace: "-", " " }}{% endif %}</dd>
+          </div>
+          <div>
+            <dt>Published</dt>
+            <dd>{{ media_item.published_at | date: "%B %-d, %Y" }}</dd>
+          </div>
+          <div>
+            <dt>Local slug</dt>
+            <dd><code>{{ media_item.local_url }}</code></dd>
+          </div>
+          {% if media_item.thumbnail %}
+            <div>
+              <dt>Thumbnail</dt>
+              <dd><code>{{ media_item.thumbnail }}</code></dd>
+            </div>
+          {% endif %}
+        </dl>
+      </div>
+    </div>
+
+    {% include resource_taxonomy.html document=page %}
+
+    {% if media_item.related_resources and media_item.related_resources.size > 0 %}
+      <section class="ifc-section ifc-section--tight">
+        <h2>Related Written Resources</h2>
+        <div class="ifc-grid">
+          {% for resource_slug in media_item.related_resources %}
+            {% assign related_resource = site.resources | where: "slug", resource_slug | first %}
+            {% if related_resource %}
+              <a class="ifc-card-link" href="{{ related_resource.url }}">
+                <strong>{{ related_resource.title }}</strong>
+                <p>{{ related_resource.excerpt | strip_html | truncate: 140 }}</p>
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if media_item.related_media and media_item.related_media.size > 0 %}
+      <section class="ifc-section ifc-section--tight">
+        <h2>Related Visual Media</h2>
+        <div class="ifc-grid">
+          {% for related_media_id in media_item.related_media %}
+            {% assign related_media = site.data.visual-media | where: "id", related_media_id | first %}
+            {% if related_media %}
+              <a class="ifc-card-link" href="/resources/visual-media/{{ related_media.id }}/">
+                <strong>{{ related_media.title }}</strong>
+                <p>{{ related_media.description | truncate: 140 }}</p>
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+  </div>
+{% else %}
+  <div class="notice--warning">
+    Development warning: no visual media entry matched the slug <code>{{ page.slug }}</code> in <code>_data/visual-media.json</code>.
+  </div>
+{% endif %}

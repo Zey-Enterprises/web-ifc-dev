@@ -1,7 +1,21 @@
 ---
-title: "Building Muscle Realistically"
+title: "SAMPLE: Building Muscle Realistically"
+format: written
+date: 2026-02-24
 excerpt: "A grounded guide to training, nutrition, patience, and expectation setting for muscular development."
-topic: "Body composition"
+domains:
+  - physical-exercise
+  - diet
+concerns:
+  - muscle-gain
+  - body-composition
+  - performance
+  - recovery
+tags:
+  - hypertrophy
+  - protein
+  - strength-training
+  - recovery
 ---
 
 Muscle gain is slower than internet culture likes to imply. That is not discouraging; it is clarifying. Once expectations are realistic, the work becomes simpler and more rational.

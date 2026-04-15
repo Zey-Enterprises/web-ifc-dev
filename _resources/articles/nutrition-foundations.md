@@ -1,7 +1,25 @@
 ---
-title: "Nutrition Foundations"
+title: "SAMPLE: Nutrition Foundations"
+format: written
+date: 2026-02-03
 excerpt: "A practical starting framework for protein, calories, meal structure, and consistency."
-topic: "Nutrition"
+domains:
+  - diet
+  - psychology
+concerns:
+  - fat-loss
+  - muscle-gain
+  - body-composition
+  - adherence
+  - beginners
+  - energy
+  - busy-life
+tags:
+  - calorie-balance
+  - protein
+  - meal-structure
+  - satiety
+  - adherence
 ---
 
 Nutrition coaching starts by reducing confusion, not by adding complexity. Most people do better when they understand a small number of principles well enough to apply them consistently across ordinary days, social meals, stressful weeks, and imperfect conditions.
