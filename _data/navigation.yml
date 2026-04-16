@@ -15,3 +15,5 @@ main:
     url: /faq/
   - title: "Pricing"
     url: /pricing/
+  - title: "Terms of Service"
+    url: /terms/

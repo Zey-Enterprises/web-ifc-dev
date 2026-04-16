@@ -36,7 +36,7 @@
     {% endif %}
 
     {% if show_date and document.date %}
-      {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+      {% assign date_format = site.date_format | default: "%Y-%m-%d" %}
       <span class="page__meta-date" title="Published date">
         <i class="far {% if include.type == 'grid' %}fa-fw {% endif %}fa-calendar-alt" aria-hidden="true"></i>
         <time datetime="{{ document.date | date_to_xmlschema }}">{{ document.date | date: date_format }}</time>
@@ -44,7 +44,7 @@
     {% endif %}
 
     {% if show_modified_date and document.last_modified_at %}
-      {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+      {% assign date_format = site.date_format | default: "%Y-%m-%d" %}
       <span class="page__meta-modified" title="Last modified date">
         <i class="fas {% if include.type == 'grid' %}fa-fw {% endif %}fa-history" aria-hidden="true"></i>
         <time datetime="{{ document.last_modified_at | date_to_xmlschema }}">{{ document.last_modified_at | date: date_format }}</time>
