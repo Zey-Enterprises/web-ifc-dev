@@ -1,6 +1,23 @@
 ---
-title: "Why do I need a human coach if I can just get guidance from AI?"
+title: "Why do I need a human coach if I can just get guidance from &quot;AI&quot;?"
 sort_order: 11
 ---
 
-AI can be useful for ideas, templates, and surface-level information. A human coach is valuable when judgment, pattern recognition, context, accountability, and calibration matter. The real work is not merely generating advice. It is determining which advice fits you, when to adjust it, and how to apply it under actual conditions.
+Tools like LLMs can be useful.
+
+They can help you think through ideas, generate options and templates, and clarify concepts.
+
+But coaching is not just about responding to prompts.
+
+A coach does not simply answer your questions. A coach asks questions you are not asking. A coach notices patterns you may not see. A coach brings attention to things you are avoiding, rationalizing, or overlooking.
+
+A coach is also engaged in an ongoing way:
+- thinking about your situation between conversations  
+- adapting based on your actual behavior over time  
+- helping you stay accountable to your own standards  
+
+Most people's challenges are not solved by better answers alone.
+
+They are solved through better engagement, better feedback, and better follow-through in the context of a real life.
+
+That is where coaching adds value.

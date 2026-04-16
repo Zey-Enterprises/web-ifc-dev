@@ -102,6 +102,19 @@
     }, 1800);
   }
 
+  function pruneEmptyGlossaryRelatedLists(root) {
+    if (!root) return;
+
+    Array.prototype.forEach.call(root.querySelectorAll(".ifc-related-list"), function (section) {
+      var list = section.querySelector(".ifc-list");
+      var hasLinks = list && list.querySelector("a[href]");
+
+      if (!hasLinks) {
+        section.remove();
+      }
+    });
+  }
+
   function setupBrowser(root) {
     var list = root.querySelector("[data-filter-list]");
     if (!list) return;
@@ -232,6 +245,8 @@
   function setupGlossaryBrowser(root) {
     var list = root.querySelector("[data-glossary-list]");
     if (!list) return;
+
+    pruneEmptyGlossaryRelatedLists(root);
 
     var items = Array.prototype.slice.call(list.querySelectorAll("[data-filter-item]"));
     var summary = root.querySelector("[data-filter-summary]");

@@ -19,6 +19,8 @@
   const citationData = (window.IFC_ANNOTATIONS && window.IFC_ANNOTATIONS.citation) || {};
   const pageCitations = (window.IFC_ANNOTATIONS && window.IFC_ANNOTATIONS.pageCitations) || {};
 
+  decorateExternalLinks(document);
+
   if (!annotations.length) {
     return;
   }
@@ -285,6 +287,26 @@
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#39;");
+  }
+
+  function decorateExternalLinks(root) {
+    const scope = root || document;
+    const links = scope.querySelectorAll('a[target="_blank"]:not([data-no-external-icon])');
+
+    links.forEach(function (link) {
+      if (
+        link.querySelector(".ifc-link-icon") ||
+        link.closest(".ifc-mini-action") ||
+        link.querySelector(".ifc-mini-action__aside")
+      ) {
+        return;
+      }
+
+      const icon = document.createElement("i");
+      icon.className = "fas fa-external-link-alt ifc-link-icon";
+      icon.setAttribute("aria-hidden", "true");
+      link.appendChild(icon);
+    });
   }
 
   function renderGlossaryBody(entry) {

@@ -19,8 +19,10 @@ If you are looking for thoughtful coaching rather than generic accountability, t
 - Any training, nutrition, recovery, or schedule constraints that matter
 - Whether your current priority is primarily physical, emotional, intellectual, or some combination of the three
 
-<div class="ifc-panel">
-  <h2>Start the intake</h2>
-  <p>Replace the placeholder link below with your real scheduling or intake form once it is ready.</p>
-  <p><a class="ifc-button" href="https://example.com/apply">Open the intake form</a></p>
+<div class="ifc-panel" markdown="1">
+## Start the intake
+
+Replace the placeholder link below with your real scheduling or intake form once it is ready.
+
+[Open the intake form](https://example.com/apply){:.ifc-button}
 </div>

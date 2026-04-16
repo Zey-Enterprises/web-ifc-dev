@@ -16,8 +16,10 @@ One recurring theme below is sustainability. This practice is explicitly not bui
 
 {% endfor %}
 
-<div class="ifc-panel">
-  <h2>Still unsure?</h2>
-  <p>If your situation is unusual, the application is still the right starting point. It gives enough context to say honestly whether coaching is a good fit.</p>
-  <p><a class="ifc-button" href="/apply/">Apply for coaching</a></p>
+<div class="ifc-panel" markdown="1">
+## Still unsure?
+
+If your situation is unusual, the application is still the right starting point. It gives enough context to say honestly whether coaching is a good fit.
+
+[Apply for coaching](/apply/){:.ifc-button}
 </div>

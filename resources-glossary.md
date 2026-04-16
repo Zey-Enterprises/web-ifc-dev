@@ -13,13 +13,11 @@ header:
 ---
 
 {% assign glossary_path = '/resources/glossary/' | relative_url %}
-{% assign resources_path = '/resources/' | relative_url %}
 {% assign glossary_tags = "" | split: "" %}
 {% for glossary_pair in site.data.glossary %}
   {% assign glossary_tags = glossary_tags | concat: glossary_pair[1].tags %}
 {% endfor %}
 {% assign glossary_tags = glossary_tags | uniq | sort_natural %}
-{% assign related_resources = site.resources | sort: "date" | reverse %}
 
 <div id="glossary-top" class="ifc-resource-browser ifc-resource-browser--glossary" data-glossary-browser data-glossary-path="{{ glossary_path }}">
   <div class="ifc-resource-browser__backdrop" data-mobile-filter-backdrop hidden></div>
@@ -131,30 +129,16 @@ header:
           </div>
         {% endif %}
 
-        {% assign related_count = 0 %}
-        <div class="ifc-related-list">
-          <p class="ifc-glossary-entry__label">Related resources</p>
-          <ul class="ifc-list">
-            {% for resource in related_resources %}
-              {% assign matched = false %}
-              {% if resource.tags and resource.format %}
-                {% for tag_slug in entry.tags %}
-                  {% if resource.tags contains tag_slug %}
-                    {% assign matched = true %}
-                    {% break %}
-                  {% endif %}
-                {% endfor %}
-              {% endif %}
-              {% if matched %}
-                <li><a href="{{ resource.url }}">{{ resource.title }}</a></li>
-                {% assign related_count = related_count | plus: 1 %}
-              {% endif %}
-              {% if related_count >= 3 %}
-                {% break %}
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
+        {% if entry.links and entry.links.size > 0 %}
+          <div class="ifc-related-list">
+            <p class="ifc-glossary-entry__label">Related resources</p>
+            <ul class="ifc-list">
+              {% for link in entry.links %}
+                <li>{% include _link.html href=link.url label=link.label newtab=link.newtab default_newtab=false %}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
 
         <a class="ifc-glossary-entry__to-top" href="#glossary-top" data-glossary-top-link aria-label="Back to top" title="Back to top">
           <span aria-hidden="true">↑</span>

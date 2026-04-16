@@ -48,3 +48,10 @@ mindfulness:
 
 mind-body-integration:
   label: "Mind-Body Integration"
+
+ethics:
+  label: "Ethics"
+epistemology:
+  label: "Epistemology"
+reason:
+  label: "Reason"

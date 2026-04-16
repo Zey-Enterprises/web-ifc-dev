@@ -678,5 +678,218 @@
       "calories-in",
       "calorie-balance"
     ]
+  },
+  "objectivism": {
+    "id": "objectivism",
+    "term": "Objectivism",
+    "short": "Ayn Rand's philosophy, centered on objective reality, reason, individual rights, and rational self-interest.",
+    "long": "Objectivism is the philosophical system originated by Ayn Rand. It holds that reality exists independent of consciousness, that reason is the primary means of knowledge, that each person ought to live by the judgment of their own rational mind, and that a social system should protect individual rights and voluntary exchange. In this context, it functions as a foundational framework for thinking about reality, knowledge, ethics, and human flourishing.",
+    "tags": [
+      "ethics",
+      "epistemology",
+      "reason"
+    ],
+    "see_also": [
+      "epistemology",
+      "egoism"
+    ]
+  },
+  "epistemology": {
+    "id": "epistemology",
+    "term": "epistemology",
+    "short": "The branch of philosophy concerned with how knowledge is acquired, justified, and evaluated.",
+    "long": "Epistemology examines what knowledge is, how it is formed, and how beliefs are justified. It addresses questions about evidence, certainty, perception, and reasoning. In practice, it shapes how individuals distinguish observation from inference, evaluate claims, and update beliefs based on new information.",
+    "tags": [
+      "epistemology",
+      "reason"
+    ],
+    "see_also": [
+      "objectivism"
+    ]
+  },
+  "egoism":{
+    "id": "egoism",
+    "term": "egoism",
+    "short": "The ethical view that each person ought to act in accordance with their own rational self-interest.",
+    "long": "Egoism is the ethical principle that an individual should act to promote their own life and well-being, using reason as the standard for determining what truly serves those ends. It does not mean acting on impulse, sacrificing long-term values for short-term gain, or disregarding others arbitrarily. Instead, it involves identifying and pursuing the values necessary for one's sustained flourishing, including productive work, meaningful relationships, and integrity. In this view, benefiting oneself and engaging with others through voluntary, mutually beneficial relationships are not in conflict but are aligned expressions of rational living.",
+    "tags": [
+      "ethics"
+    ],
+    "see_also": [
+      "objectivism"
+    ]
+  },
+  "attachment-theory": {
+    "id": "attachment-theory",
+    "term": "Attachment Theory",
+    "short": "A framework describing how early relationships shape emotional regulation and adult relational patterns.",
+    "long": "Attachment Theory originated with John Bowlby and describes how early caregiver relationships influence patterns of safety, trust, and connection. These patterns often persist into adulthood, shaping how individuals approach intimacy, conflict, and emotional regulation. Modern applications use attachment styles as a lens for self-awareness and behavior change rather than fixed identity.",
+    "tags": ["behavior-change", "mind-body-integration"],
+    "see_also": [],
+    "links": [
+      {
+        "label": "The Personal Development School by Thais Gibson",
+        "url": "https://university.personaldevelopmentschool.com",
+        "newtab": true
+      },
+      {
+        "label": "The Personal Development School: YouTube Channel",
+        "url": "https://www.youtube.com/@ThePersonalDevelopmentSchool",
+        "newtab": true
+      }
+    ]
+  },
+  "positive-discipline": {
+    "id": "positive-discipline",
+    "term": "Positive Discipline",
+    "short": "A parenting approach that combines kindness and firmness to teach long-term behavioral and social skills.",
+    "long": "Positive Discipline is an approach to parenting and teaching that emphasizes mutual respect, encouragement, and skill-building over punishment. Rooted in Adlerian psychology, it aims to help children develop responsibility, emotional regulation, and social competence through consistent structure and connection rather than control or permissiveness.",
+    "tags": ["behavior-change"],
+    "see_also": []
+  },
+  "manager-tools": {
+    "id": "manager-tools",
+    "term": "Manager Tools",
+    "short": "A practical management system focused on structured behaviors like one-on-ones, feedback, and delegation.",
+    "long": "Manager Tools is a behaviorally grounded management framework developed by Mark Horstman and Mike Auzenne. It emphasizes specific, repeatable practices such as regular one-on-ones, timely feedback, structured coaching, and effective delegation. The system is designed to improve performance, build trust, and create predictable organizational outcomes.",
+    "tags": ["behavior-change", "environment-design", "adherence"],
+    "see_also": [],
+    "links": [
+      {
+        "label": "Manager Tools",
+        "url": "https://www.manager-tools.com",
+        "newtab": true
+      }
+    ]
+  },
+  "authentic-relating": {
+    "id": "authentic-relating",
+    "term": "Authentic Relating",
+    "short": "Practices that increase honesty, emotional awareness, and real-time interpersonal connection.",
+    "long": "Authentic Relating is a set of interpersonal practices designed to increase presence, honesty, and connection. Participants are encouraged to notice and express their real-time experience, listen deeply, and engage with others beyond social performance. The goal is greater clarity, emotional awareness, and genuine human contact.",
+    "tags": ["mindfulness", "mind-body-integration"],
+    "see_also": [
+      "circling",
+      "cocounseling"
+    ]
+  },
+  "circling": {
+    "id": "circling",
+    "term": "Circling",
+    "short": "A structured relational practice focused on present-moment awareness and interpersonal feedback.",
+    "long": "Circling is a facilitated Authentic Relating practice in which participants focus on what is happening in the present moment between them. It combines attention, emotional awareness, and verbal reflection to deepen understanding of self and others through live interaction.",
+    "tags": ["mindfulness", "mind-body-integration"],
+    "see_also": [
+      "authentic-relating",
+      "cocounseling"
+    ]
+  },
+  "mindfulness": {
+    "id": "mindfulness",
+    "term": "mindfulness",
+    "short": "Nonjudgmental awareness of present-moment experience.",
+    "long": "Mindfulness is the practice of paying attention to present-moment experience without judgment. It includes awareness of thoughts, emotions, and bodily sensations, and is widely used to improve emotional regulation, reduce stress, and increase clarity of action.",
+    "tags": ["mindfulness", "mind-body-integration", "recovery"],
+    "see_also": []
+  },
+  "nonviolent-communication": {
+    "id": "nonviolent-communication",
+    "term": "Nonviolent Communication",
+    "short": "A communication framework that emphasizes clarity, empathy, and needs-based expression.",
+    "long": "Nonviolent Communication (NVC), developed by Marshall Rosenberg, is a structured approach to communication that distinguishes observations from judgments, identifies feelings and needs, and encourages clear, actionable requests. It is designed to reduce conflict and foster mutual understanding.",
+    "tags": ["behavior-change", "mind-body-integration"],
+    "see_also": []
+  },
+  "vulnerability": {
+    "id": "vulnerability",
+    "term": "vulnerability",
+    "short": "Emotional openness in the presence of uncertainty, risk, or potential rejection.",
+    "long": "Vulnerability, as described by Brené Brown, involves exposing oneself emotionally without guaranteed outcomes. It is closely tied to courage, connection, and authenticity, and is necessary for meaningful relationships and personal growth.",
+    "tags": ["behavior-change", "mind-body-integration"],
+    "see_also": [
+      "authenticity",
+      "shame"
+    ]
+  },
+  "shame": {
+    "id": "shame",
+    "term": "shame",
+    "short": "A painful belief that one is fundamentally flawed or unworthy.",
+    "long": "Shame is an emotional experience characterized by a sense of personal deficiency or unworthiness. Unlike guilt, which relates to actions, shame targets identity. It can strongly influence avoidance, defensiveness, and disconnection unless recognized and addressed.",
+    "tags": ["behavior-change", "mind-body-integration"],
+    "see_also": [
+      "vulnerability",
+      "authenticity"
+    ]
+  },
+  "mindset": {
+    "id": "mindset",
+    "term": "mindset",
+    "short": "Beliefs about whether abilities are fixed or can be developed.",
+    "long": "Mindset, in Carol Dweck's framework, refers to underlying beliefs about personal ability and growth. A growth mindset supports learning, persistence, and adaptation, while a fixed mindset tends to limit effort and resilience. These beliefs significantly influence behavior and outcomes.",
+    "tags": ["behavior-change", "adherence"],
+    "see_also": []
+  },
+  "authenticity": {
+    "id": "authenticity",
+    "term": "authenticity",
+    "short": "Alignment between internal experience and external expression.",
+    "long": "Authenticity involves expressing oneself in a way that reflects one's true thoughts, emotions, and values. In Susan Campbell's work, it includes telling the truth more fully and appropriately in relationships, integrating honesty with awareness and responsibility.",
+    "tags": ["mindfulness"],
+    "see_also": [
+      "vulnerability",
+      "shame"
+    ]
+  },
+  "polyvagal-theory": {
+    "id": "polyvagal-theory",
+    "term": "Polyvagal Theory",
+    "short": "A model of how the nervous system regulates states of safety, threat, and shutdown.",
+    "long": "Polyvagal Theory, developed by Stephen Porges, describes how the autonomic nervous system shifts between states associated with connection, mobilization, and shutdown. It is widely used to understand emotional regulation, stress responses, and the physiological basis of safety and connection.",
+    "tags": ["mind-body-integration"],
+    "see_also": []
+  },
+  "cocounseling": {
+    "id": "cocounseling",
+    "term": "cocounseling",
+    "short": "A structured peer practice of mutual listening and emotional support.",
+    "long": "Cocounseling is a relational practice in which two individuals alternate roles as speaker and listener, providing structured attention and emotional support. It is designed to facilitate processing, insight, and emotional release without a hierarchical therapist-client relationship.",
+    "tags": ["behavior-change"],
+    "see_also": [
+      "authentic-relating",
+      "circling"
+    ]
+  },
+  "superslow": {
+    "id": "superslow",
+    "term": "SuperSlow",
+    "short": "A resistance training method using very slow repetition tempos.",
+    "long": "SuperSlow is a high-intensity resistance training (HIT) method that emphasizes slow lifting and lowering phases to increase muscular tension and reduce momentum. It is one of many approaches to resistance training rather than a universally optimal method.",
+    "tags": ["strength-training"],
+    "see_also": ["hypertrophy"]
+  },
+  "hypertrophy": {
+    "id": "hypertrophy",
+    "term": "hypertrophy",
+    "short": "An increase in muscle size resulting from resistance training and appropriate nutrition.",
+    "long": "Hypertrophy refers to the enlargement of muscle fibers, typically as an adaptation to resistance training. This process occurs when training creates sufficient mechanical tension, metabolic stress, and muscle disruption, followed by adequate recovery and nutrition to support repair and growth. Over time, repeated cycles of stimulus and recovery lead to increases in muscle cross-sectional area. In practice, hypertrophy is influenced by training variables such as volume, intensity, and frequency, as well as factors like protein intake, energy balance, sleep, and fatigue management.",
+    "tags": ["hypertrophy", "strength-training"],
+    "see_also": ["periodization"]
+  },
+  "macronutrients": {
+    "id": "macronutrients",
+    "term": "macronutrients",
+    "short": "The primary energy-providing nutrients: protein, carbohydrates, and fat.",
+    "long": "Macronutrients are nutrients required in large amounts that provide energy and support physiological function. They include protein, carbohydrates, and fat, and their balance influences body composition, performance, and satiety.",
+    "tags": ["body-composition", "protein", "carbohydrates", "dietary-fat", "fiber"],
+    "see_also": ["micronutrients"]
+  },
+  "micronutrients": {
+    "id": "micronutrients",
+    "term": "micronutrients",
+    "short": "Vitamins and minerals required for normal physiological function.",
+    "long": "Micronutrients include vitamins and minerals needed in small amounts to support metabolism, immune function, and overall health. They do not provide calories, but are essential for proper biological function.",
+    "tags": ["micronutrients", "food-quality"],
+    "see_also": ["macronutrients"]
   }
 }

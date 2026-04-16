@@ -83,8 +83,10 @@ The pricing is intentionally positioned between lower-cost remote fitness subscr
 
 If you are not sure, apply and describe your situation. I can recommend the most appropriate starting tier.
 
-<div class="ifc-panel">
-  <h2>Next step</h2>
-  <p>If the structure looks right, the next move is to read the [FAQ](/faq/) if you still have questions, or [apply](/apply/) if you are ready to start.</p>
-  <p><a class="ifc-button" href="/apply/">Apply for coaching</a></p>
+<div class="ifc-panel" markdown="1">
+## Next step
+
+If the structure looks right, the next move is to read the [FAQ](/faq/) if you still have questions, or [apply](/apply/) if you are ready to start.
+
+[Apply for coaching](/apply/){:.ifc-button}
 </div>
