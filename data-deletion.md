@@ -1,10 +1,7 @@
 ---
 title: "Data Deletion Instructions"
-classes: hide-title
 permalink: /data-deletion/
 ---
-
-## Data Deletion Instructions
 
 Integrated Fitness Coaching does not store personal user data through this application.
 

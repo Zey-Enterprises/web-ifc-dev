@@ -1,10 +1,7 @@
 ---
 title: "Privacy Policy"
-classes: hide-title
 permalink: /privacy/
 ---
-
-## Privacy Policy
 
 Integrated Fitness Coaching does not collect, store, or process personal data through this website beyond what is voluntarily provided by users (eg, contact forms or email communication).
 
