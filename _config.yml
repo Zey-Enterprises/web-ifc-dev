@@ -26,6 +26,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-remote-theme
 
+facebook:
+  app_id: 983167900906148
+
 include:
   - _pages
 
