@@ -28,6 +28,7 @@ plugins:
 
 facebook:
   app_id: 983167900906148
+google_analytics: G-CX08MNNEXZ
 
 include:
   - _pages
