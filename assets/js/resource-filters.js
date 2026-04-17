@@ -533,6 +533,26 @@
       }
     }
 
+    function toggleTagValue(value, checked) {
+      var nextValues;
+
+      options.forEach(function (input) {
+        if (input.value === value) {
+          input.checked = checked;
+        }
+      });
+
+      if (checked) {
+        nextValues = uiState.tag.concat([value]);
+      } else {
+        nextValues = uiState.tag.filter(function (selectedValue) {
+          return selectedValue !== value;
+        });
+      }
+
+      updateTagSelection(nextValues);
+    }
+
     root.IFCGlossaryBrowser = {
       clearFilters: function () {
         applyUiState({ tag: [] });
@@ -543,15 +563,7 @@
       var option = event.target.closest(".ifc-resource-filter__option input[type='checkbox']");
       if (!option) return;
 
-      var nextValues = options
-        .filter(function (input) {
-          return input.checked;
-        })
-        .map(function (input) {
-          return input.value;
-        });
-
-      updateTagSelection(nextValues);
+      toggleTagValue(option.value, option.checked);
     });
 
     root.addEventListener("click", function (event) {

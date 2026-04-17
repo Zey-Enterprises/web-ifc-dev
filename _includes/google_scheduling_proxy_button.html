@@ -1,0 +1,80 @@
+{% assign scheduling_id = include.id | default: "" | strip %}
+{% assign scheduling_url = include.url | default: "" | strip %}
+{% assign scheduling_label = include.label | default: "Book an appointment" %}
+{% assign scheduling_class = include.class | default: "ifc-button" | strip %}
+{% assign scheduling_color = include.color | default: "#039BE5" | strip %}
+
+{% if scheduling_id != "" and scheduling_url != "" %}
+  <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+  <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+
+  <div id="{{ scheduling_id }}" class="ifc-scheduling-proxy">
+    <a
+      href="{{ scheduling_url }}"
+      class="{{ scheduling_class }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-no-external-icon="true"
+    >{{ scheduling_label }}</a>
+    <div class="ifc-scheduling-native" aria-hidden="true"></div>
+  </div>
+
+  <script>
+    (function() {
+      var root = document.getElementById('{{ scheduling_id }}');
+      if (!root) return;
+
+      function findNativeButton() {
+        return root.querySelector('.ifc-scheduling-native button') ||
+          root.querySelector('.ifc-scheduling-native + button');
+      }
+
+      function wireTrigger() {
+        var trigger = root.querySelector('.ifc-button');
+        if (!trigger || trigger.dataset.schedulingBound === 'true') return;
+
+        trigger.dataset.schedulingBound = 'true';
+        trigger.addEventListener('click', function(event) {
+          var nativeButton = findNativeButton();
+          if (!nativeButton) return;
+          event.preventDefault();
+          nativeButton.click();
+        });
+      }
+
+      function loadSchedulingButton() {
+        if (root.dataset.schedulingLoaded === 'true') {
+          wireTrigger();
+          return;
+        }
+
+        if (!window.calendar || !window.calendar.schedulingButton) {
+          window.setTimeout(loadSchedulingButton, 150);
+          return;
+        }
+
+        root.dataset.schedulingLoaded = 'true';
+        window.calendar.schedulingButton.load({
+          url: '{{ scheduling_url }}',
+          color: '{{ scheduling_color }}',
+          label: '{{ scheduling_label | escape }}',
+          target: root.querySelector('.ifc-scheduling-native'),
+        });
+
+        wireTrigger();
+
+        var observer = new MutationObserver(function() {
+          wireTrigger();
+        });
+
+        observer.observe(root, { childList: true, subtree: true });
+      }
+
+      if (document.readyState === 'complete') {
+        loadSchedulingButton();
+      } else {
+        window.addEventListener('load', loadSchedulingButton, { once: true });
+      }
+    })();
+  </script>
+{% endif %}

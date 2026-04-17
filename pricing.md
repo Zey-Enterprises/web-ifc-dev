@@ -2,6 +2,9 @@
 title: "Pricing"
 permalink: /pricing/
 description: "Integrated coaching packages, add-ons, and delivery options."
+header:
+  overlay_image: /assets/images/ifc-pricing-hero-banner-1.jpg
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
 ---
 
 The pricing structure is built around one integrated coaching relationship rather than separate line items for nutrition, training, mindfulness, or intellectual coaching. In practice, that works better than fragmenting the work into disconnected silos.
@@ -71,22 +74,15 @@ The basic structure is a monthly retainer with clearly defined scope, plus optio
 
 The cost of external apps, tools, services, subscriptions, gym memberships, labs, devices, meal services, or books is not included in coaching fees. If I recommend something like RP Hypertrophy, RP Diet Coach, Headspace, or a reading list, those costs remain separate.
 
-## Why these tiers make sense
-
-The pricing is intentionally positioned between lower-cost remote fitness subscriptions and higher-touch coaching or tutoring arrangements. As of April 6, 2026, public pricing examples include [Future at $199/month](https://www.future.co/squaredance50p), while Wyzant publicly shows many tutors averaging around [$35 to $60 per hour](https://www.wyzant.com/Florida_tutors.aspx), and Noomii notes that life coaches commonly use [monthly packages rather than only per-session billing](https://www.noomii.com/life-coaching). That combination supports a structure like this one: monthly retainers for continuity and accountability, with hourly-style add-ons when extra time is needed.
-
 ## Which tier to choose
 
-- Choose `Foundation` if you have one main goal and want a lean, disciplined structure.
-- Choose `Integrated` if you want the best balance of depth, accountability, and flexibility.
-- Choose `Intensive` if you want close support, faster iteration, or help through a more demanding season.
-
-If you are not sure, apply and describe your situation. I can recommend the most appropriate starting tier.
+- Choose **Foundation** if you have one main goal and want a lean, disciplined structure.
+- Choose **Integrated** if you want the best balance of depth, accountability, and flexibility.
+- Choose **Intensive** if you want close support, faster iteration, or help through a more demanding season.
 
 <div class="ifc-panel" markdown="1">
-## Next step
+## Next steps
 
-If the structure looks right, the next move is to read the [FAQ](/faq/) if you still have questions, or [apply](/apply/) if you are ready to start.
-
+[Review coaching agreement](/TEMP/){:target="&lowbar;blank"}{:.ifc-button .ifc-button--secondary}
 [Apply for coaching](/apply/){:.ifc-button}
 </div>

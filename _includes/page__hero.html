@@ -7,6 +7,9 @@
   - header.overlay_color
   - header.caption
   - header.actions
+    - url
+    - newtab
+    - class
   - page.title
   - page.tagline (preferred overlay lead override)
   - page.excerpt (overlay lead fallback)
@@ -104,12 +107,32 @@
           {% for action in hero.actions %}
             {%- assign action_url = action.url | default: action.link -%}
             {%- if action_url -%}
+              {%- assign action_newtab = action.newtab | default: false -%}
+              {%- assign action_label = action.label | default: action.title | default: action_url -%}
+              {%- assign action_class = action.class | default: 'btn--light-outline' | strip -%}
               {%- if action_url contains "://" -%}
                 {%- assign rendered_action_url = action_url -%}
               {%- else -%}
                 {%- assign rendered_action_url = action_url | relative_url -%}
               {%- endif -%}
-              <a href="{{ rendered_action_url }}" class="btn {{ action.class | default: 'btn--light-outline' }}">{{ action.label | default: action.title }}</a>
+              {%- assign extra_action_class = action_class -%}
+              {%- assign action_button_class = '' -%}
+              {%- if action_class contains 'btn--light-outline' -%}
+                {%- assign action_button_class = 'ifc-button ifc-button--secondary ifc-button--overlay' -%}
+                {%- assign extra_action_class = extra_action_class | replace: 'btn--light-outline', '' | strip -%}
+              {%- elsif action_class contains 'btn--primary' -%}
+                {%- assign action_button_class = 'ifc-button' -%}
+                {%- assign extra_action_class = extra_action_class | replace: 'btn--primary', '' | strip -%}
+              {%- elsif action_class contains 'ifc-button' -%}
+                {%- assign action_button_class = action_class -%}
+                {%- assign extra_action_class = '' -%}
+              {%- else -%}
+                {%- assign action_button_class = 'ifc-button' -%}
+              {%- endif -%}
+              {%- if extra_action_class != '' -%}
+                {%- assign action_button_class = action_button_class | append: ' ' | append: extra_action_class -%}
+              {%- endif -%}
+              {% include _link.html href=rendered_action_url label=action_label class=action_button_class newtab=action_newtab default_newtab=false %}
             {%- endif -%}
           {% endfor %}
         </div>

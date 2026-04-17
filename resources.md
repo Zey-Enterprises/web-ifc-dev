@@ -12,6 +12,9 @@ header:
   - label: Go to Glossary
     url: /resources/glossary/
     class: btn--light-outline
+  - label: Go to References
+    url: /resources/references/
+    class: btn--light-outline
 ---
 
 {% assign resources_path = '/resources/' | relative_url %}
