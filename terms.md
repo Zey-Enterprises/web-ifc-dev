@@ -3,6 +3,19 @@ title: "Terms of Service"
 permalink: /terms/
 date: 2026-04-16
 last_modified_at: 2026-04-16
+header:
+  overlay_image: /assets/images/ifc-legal-hero-banner-1.jpg
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  actions:
+    - label: Privacy Policy
+      url: /privacy/
+      class: btn--light-outline
+    - label: Cookie Policy
+      url: /cookie-policy/
+      class: btn--light-outline
+    - label: Data Deletion
+      url: /data-deletion/
+      class: btn--light-outline
 ---
 
 {% assign date_format = site.date_format | default: "%Y-%m-%d" %}

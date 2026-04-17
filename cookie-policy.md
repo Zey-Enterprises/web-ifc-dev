@@ -1,6 +1,19 @@
 ---
 title: "Cookie Policy"
 permalink: /cookie-policy/
+header:
+  overlay_image: /assets/images/ifc-legal-hero-banner-1.jpg
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  actions:
+    - label: Terms of Service
+      url: /terms/
+      class: btn--light-outline
+    - label: Privacy Policy
+      url: /privacy/
+      class: btn--light-outline
+    - label: Data Deletion
+      url: /data-deletion/
+      class: btn--light-outline
 ---
 
 This website uses cookies in a limited and straightforward way.

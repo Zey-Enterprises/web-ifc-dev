@@ -1,6 +1,19 @@
 ---
 title: "Privacy Policy"
 permalink: /privacy/
+header:
+  overlay_image: /assets/images/ifc-legal-hero-banner-1.jpg
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  actions:
+    - label: Terms of Service
+      url: /terms/
+      class: btn--light-outline
+    - label: Cookie Policy
+      url: /cookie-policy/
+      class: btn--light-outline
+    - label: Data Deletion
+      url: /data-deletion/
+      class: btn--light-outline
 ---
 
 Integrated Fitness Coaching does not collect, store, or process personal data through this website beyond what is voluntarily provided by users (eg, contact forms or email communication).
