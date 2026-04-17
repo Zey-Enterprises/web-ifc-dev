@@ -1,6 +1,8 @@
 ---
 title: "Data Deletion Instructions"
 permalink: /data-deletion/
+last_modified_at: 2026-04-16
+show_modified_date: true
 header:
   overlay_image: /assets/images/ifc-legal-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
