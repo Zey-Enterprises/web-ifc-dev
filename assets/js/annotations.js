@@ -570,7 +570,7 @@
     const defaultNewtab = !!(options && options.defaultNewtab);
     const openNewtab = normalizeNewtabValue(options && options.newtab, defaultNewtab);
     const icon = "<i class=\"fas fa-external-link-alt ifc-link-icon\" aria-hidden=\"true\"></i>";
-    const targetAttrs = openNewtab ? " target=\"_blank\" rel=\"noopener noreferrer\"" : "";
+    const targetAttrs = openNewtab ? " target=\"_blank\" rel=\"noopener\"" : "";
 
     return "<a href=\"" + escapeHtml(href) + "\"" + targetAttrs + ">" + escapeHtml(label) + (openNewtab ? icon : "") + "</a>";
   }
@@ -905,7 +905,7 @@
     }
 
     if (link.target === "_blank") {
-      const opened = window.open(link.href, "_blank", "noopener,noreferrer");
+      const opened = window.open(link.href, "_blank", "noopener");
 
       if (opened) {
         opened.opener = null;

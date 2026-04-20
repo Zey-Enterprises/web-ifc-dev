@@ -11,7 +11,7 @@
           <li>
             <a
               href="{{ link.url }}"
-              {% if footer_link_newtab %}target="_blank" rel="nofollow noopener noreferrer"{% else %}rel="nofollow"{% endif %}
+              {% if footer_link_newtab %}target="_blank" rel="noopener"{% endif %}
             ><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a>
           </li>
         {% endif %}
@@ -24,4 +24,4 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} <a href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title }}</a><br />Website developed by <a href="https://www.altustechservices.com" target="_blank">Altus Tech Services</a>.<br />{{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" target="_blank" rel="nofollow">Jekyll</a> &amp; the <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" target="_blank" rel="nofollow">Minimal Mistakes</a> theme.<br />Hosted on <a href="https://docs.github.com/en/pages" target="_blank" rel="nofollow">GitHub Pages</a>.</div>
+<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} <a href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title }}</a><br />Website developed by <a href="https://www.altustechservices.com" target="_blank" rel="noopener">Altus Tech Services</a>.<br />{{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> &amp; the <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" target="_blank" rel="noopener">Minimal Mistakes</a> theme.<br />Hosted on <a href="https://docs.github.com/en/pages" target="_blank" rel="noopener">GitHub Pages</a>.</div>

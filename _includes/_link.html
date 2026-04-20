@@ -15,7 +15,7 @@ Parameters:
 - `class`: optional link class additions.
 
 Notes:
-- New-tab links get `target="_blank"`, `rel="noopener noreferrer"`, and an appended
+- New-tab links get `target="_blank"`, `rel="noopener"`, and an appended
   outbound icon that remains part of the clickable anchor.
 - Accepts boolean-like values such as `true`, `false`, `"true"`, and `"false"`.
 {% endcomment %}
@@ -39,5 +39,5 @@ Notes:
 {%- endif -%}
 
 {%- if href != "" -%}
-<a href="{{ href }}"{% if class_name != "" %} class="{{ class_name }}"{% endif %}{% if open_newtab %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ label }}{% if open_newtab %}<i class="fas fa-external-link-alt ifc-link-icon" aria-hidden="true"></i>{% endif %}</a>
+<a href="{{ href }}"{% if class_name != "" %} class="{{ class_name }}"{% endif %}{% if open_newtab %} target="_blank" rel="noopener"{% endif %}>{{ label }}{% if open_newtab %}<i class="fas fa-external-link-alt ifc-link-icon" aria-hidden="true"></i>{% endif %}</a>
 {%- endif -%}
