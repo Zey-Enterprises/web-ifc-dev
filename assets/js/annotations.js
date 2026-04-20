@@ -286,6 +286,70 @@
     });
   }
 
+  function getAnnotationCopyText(annotation) {
+    if (!annotation) {
+      return "";
+    }
+
+    if (annotation.dataset.annotationKind === "citation") {
+      const label = annotation.dataset.citationLabel || "";
+      return label ? "[" + label + "]" : "";
+    }
+
+    const triggerText = annotation.querySelector(".ifc-annotation__trigger-text");
+
+    if (triggerText) {
+      return triggerText.textContent || "";
+    }
+
+    const trigger = annotation.querySelector("[data-annotation-trigger]");
+
+    return trigger ? (trigger.textContent || "") : "";
+  }
+
+  function normalizeCopiedText(text) {
+    return String(text || "")
+      .replace(/\u2060/g, "")
+      .replace(/[ \t]+\n/g, "\n")
+      .replace(/\n[ \t]+/g, "\n")
+      .replace(/\n{3,}/g, "\n\n")
+      .trim();
+  }
+
+  function serializeCopiedSelection(fragment) {
+    if (!fragment) {
+      return "";
+    }
+
+    fragment.querySelectorAll("[data-annotation-popover], [data-annotation-close], [data-annotation-back], .screen-reader-text, .ifc-link-icon").forEach(function (node) {
+      node.remove();
+    });
+
+    fragment.querySelectorAll(".ifc-citation-marker--sep").forEach(function (node) {
+      node.remove();
+    });
+
+    fragment.querySelectorAll("[data-annotation]").forEach(function (annotation) {
+      const text = getAnnotationCopyText(annotation);
+      annotation.replaceWith(document.createTextNode(text));
+    });
+
+    const container = document.createElement("div");
+    container.style.position = "fixed";
+    container.style.left = "-99999px";
+    container.style.top = "0";
+    container.style.width = "99999px";
+    container.style.opacity = "0";
+    container.style.pointerEvents = "none";
+    container.style.whiteSpace = "normal";
+    container.appendChild(fragment);
+    document.body.appendChild(container);
+
+    const text = normalizeCopiedText(container.innerText || container.textContent || "");
+    container.remove();
+    return text;
+  }
+
   function isOpen(annotation) {
     return annotation.dataset.open === "true";
   }
@@ -1053,6 +1117,42 @@
     if (trigger) {
       trigger.focus();
     }
+  });
+
+  document.addEventListener("copy", function (event) {
+    if (!event.clipboardData) {
+      return;
+    }
+
+    const selection = window.getSelection();
+
+    if (!selection || selection.isCollapsed || !selection.rangeCount) {
+      return;
+    }
+
+    const anchorElement = selection.anchorNode && selection.anchorNode.nodeType === Node.ELEMENT_NODE
+      ? selection.anchorNode
+      : selection.anchorNode && selection.anchorNode.parentElement;
+    const focusElement = selection.focusNode && selection.focusNode.nodeType === Node.ELEMENT_NODE
+      ? selection.focusNode
+      : selection.focusNode && selection.focusNode.parentElement;
+
+    if (
+      (anchorElement && anchorElement.closest("[data-annotation-popover]")) ||
+      (focusElement && focusElement.closest("[data-annotation-popover]"))
+    ) {
+      return;
+    }
+
+    const fragment = selection.getRangeAt(0).cloneContents();
+    const text = serializeCopiedSelection(fragment);
+
+    if (!text) {
+      return;
+    }
+
+    event.preventDefault();
+    event.clipboardData.setData("text/plain", text);
   });
 
   window.addEventListener("resize", function () {
