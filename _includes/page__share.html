@@ -9,8 +9,14 @@
 
   {% assign share_providers = share_config.providers %}
   {% if share_providers == nil or share_providers.size == 0 %}
-    {% assign share_providers = "link,x,facebook,instagram" | split: "," %}
+    {% assign share_providers = "x,facebook,os-share,link" | split: "," %}
   {% endif %}
+  {% assign has_link_provider = false %}
+  {% for provider in share_providers %}
+    {% if provider == "link" %}
+      {% assign has_link_provider = true %}
+    {% endif %}
+  {% endfor %}
 
   {% capture rendered_share_links %}
     {% for provider in share_providers %}
@@ -46,6 +52,8 @@
       {% if provider_key == "link" %}
         {% assign provider_name = "Copy link" %}
         {% assign provider_icon = "fas fa-link" %}
+      {% elsif provider_key == "os-share" %}
+        {% assign provider_name = "Share this page" %}
       {% elsif provider_key == "x" %}
         {% assign provider_name = "X" %}
         {% if provider_icon == nil %}{% assign provider_icon = "fab fa-twitter" %}{% endif %}
@@ -69,7 +77,20 @@
       {% assign provider_message = share_message_template | replace: "{account}", provider_account %}
       {% assign provider_copy_text = provider_message | append: " " | append: share_url %}
 
-      {% if provider_key == "link" %}
+      {% if provider_key == "os-share" %}
+        {% include share-button.html
+          label="Share"
+          aria_label=provider_name
+          button_title=provider_name
+          class="ifc-page-share__button"
+          compact=true
+          label_hidden=true
+          title=share_title
+          url=share_url
+          hide_when_no_native=has_link_provider
+          toast=false
+        %}
+      {% elsif provider_key == "link" %}
         <a
           class="ifc-page-share__link"
           href="{{ share_url }}"

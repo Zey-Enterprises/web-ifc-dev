@@ -149,6 +149,7 @@ social_share:
   providers:
     - x
     - facebook
+    - os-share
     - link
   message: "Check this out from {account}!"
 

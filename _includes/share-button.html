@@ -1,0 +1,44 @@
+{% comment %}
+  Reusable client-side share button.
+
+  Common usage:
+  {% include share-button.html %}
+  {% include share-button.html label="Share this article" text=page.excerpt class="my-actions__share" %}
+  {% include share-button.html label="Share" label_hidden=true compact=true url=page.url %}
+{% endcomment %}
+{% assign share_label = include.label | default: "Share" %}
+{% assign share_button_title = include.button_title | default: share_label %}
+{% assign share_button_class = "ifc-share-button" %}
+{% if include.compact %}
+  {% assign share_button_class = share_button_class | append: " ifc-share-button--compact" %}
+{% endif %}
+{% if include.class %}
+  {% assign share_button_class = share_button_class | append: " " | append: include.class %}
+{% endif %}
+{% assign share_aria_label = include.aria_label | default: share_label %}
+{% assign share_fallback_label = include.fallback_label | default: "Copy link" %}
+
+<button
+  type="button"
+  class="{{ share_button_class | strip }}"
+  title="{{ share_button_title | escape_once }}"
+  {% if include.label_hidden %}aria-label="{{ share_aria_label | escape_once }}"{% endif %}
+  data-share-button
+  data-share-fallback="{{ include.fallback | default: 'copy' }}"
+  data-share-fallback-label="{{ share_fallback_label | escape_once }}"
+  data-share-default-icon="fas fa-share-nodes"
+  data-share-apple-icon="fas fa-arrow-up-from-bracket"
+  data-share-link-icon="fas fa-link"
+  {% if include.hide_when_no_native %}data-share-hide-when-no-native="true"{% endif %}
+  {% if include.title %}data-share-title="{{ include.title | escape_once }}"{% endif %}
+  {% if include.text %}data-share-text="{{ include.text | escape_once }}"{% endif %}
+  {% if include.url %}data-share-url="{{ include.url | escape_once }}"{% endif %}
+>
+  <span class="ifc-share-button__inner">
+    <i class="fas fa-share-nodes ifc-share-button__icon" data-share-button-icon aria-hidden="true"></i>
+    <span class="ifc-share-button__label{% if include.label_hidden %} ifc-share-button__label--sr-only{% endif %}" data-share-button-label>{{ share_label }}</span>
+  </span>
+  {% if include.toast != false %}
+    <span class="ifc-permalink-toast ifc-share-button__toast" data-share-feedback hidden aria-live="polite">Copied to clipboard</span>
+  {% endif %}
+</button>
