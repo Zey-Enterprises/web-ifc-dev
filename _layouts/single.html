@@ -41,6 +41,7 @@ layout: default
           </h1>
           {%- endif %}
           {% include page__meta.html locale=locale %}
+          {% include page__share.html locale=locale %}
         </header>
       {% endunless %}
 
@@ -75,8 +76,6 @@ layout: default
           {% include page__date.html locale=locale %}
         {% endif %}
       </footer>
-
-      {% if page.share %}{% include social-share.html locale=locale %}{% endif %}
 
       {% unless is_resource_page %}
         {% include post_pagination.html locale=locale %}

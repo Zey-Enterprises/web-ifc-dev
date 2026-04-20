@@ -214,6 +214,8 @@ Before adding or changing tags:
 3. Run `bundle exec jekyll serve`.
 4. Open `http://127.0.0.1:4000/`.
 
+To test social-share links against the development domain instead of localhost, run `JEKYLL_ENV=production bundle exec jekyll serve --config _config.yml,_config_dev.yml`.
+
 ## Editing Notes
 
 - Global site settings live in [`_config.yml`](/Users/arthur/Zey Insurance Group Dropbox/Arthur Zey/Backups/GitHub/zey-enterprises/web-ifc/_config.yml).

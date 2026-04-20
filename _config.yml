@@ -144,6 +144,14 @@ footer:
       icon: "fab fa-youtube"
       url: "https://www.youtube.com/@IntegratedFitnessCoaching"
 
+social_share:
+  label: "Share:"
+  providers:
+    - x
+    - facebook
+    - link
+  message: "Check this out from {account}!"
+
 atom_feed:
   hide: true
 

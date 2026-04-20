@@ -1,0 +1,154 @@
+{% assign document = post | default: page %}
+{% if document.share %}
+  {% assign share_config = site.social_share %}
+  {% assign share_label = share_config.label | default: "Share:" %}
+  {% assign share_message_template = share_config.message | default: "Check this out from {account}!" %}
+  {% assign share_path = document.url | relative_url %}
+  {% assign share_url = site.url | append: share_path %}
+  {% assign share_title = document.share_title | default: document.title | default: site.title %}
+
+  {% assign share_providers = share_config.providers %}
+  {% if share_providers == nil or share_providers.size == 0 %}
+    {% assign share_providers = "link,x,facebook,instagram" | split: "," %}
+  {% endif %}
+
+  {% capture rendered_share_links %}
+    {% for provider in share_providers %}
+      {% assign provider_key = provider | downcase | strip %}
+      {% assign provider_link = nil %}
+
+      {% for footer_link in site.footer.links %}
+        {% assign footer_label = footer_link.label | default: "" | downcase %}
+        {% assign footer_url = footer_link.url | default: "" | downcase %}
+
+        {% if provider_key == "x" %}
+          {% if footer_label contains "twitter" or footer_label == "x" or footer_url contains "x.com/" or footer_url contains "twitter.com/" %}
+            {% assign provider_link = footer_link %}
+            {% break %}
+          {% endif %}
+        {% elsif provider_key == "facebook" %}
+          {% if footer_label contains "facebook" or footer_url contains "facebook.com/" %}
+            {% assign provider_link = footer_link %}
+            {% break %}
+          {% endif %}
+        {% elsif provider_key == "instagram" %}
+          {% if footer_label contains "instagram" or footer_url contains "instagram.com/" %}
+            {% assign provider_link = footer_link %}
+            {% break %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign provider_icon = provider_link.icon %}
+      {% assign provider_profile_url = provider_link.url | default: "" %}
+      {% assign provider_account = provider_profile_url | split: "?" | first | split: "#" | first | split: "/" | last %}
+
+      {% if provider_key == "link" %}
+        {% assign provider_name = "Copy link" %}
+        {% assign provider_icon = "fas fa-link" %}
+      {% elsif provider_key == "x" %}
+        {% assign provider_name = "X" %}
+        {% if provider_icon == nil %}{% assign provider_icon = "fab fa-twitter" %}{% endif %}
+      {% elsif provider_key == "facebook" %}
+        {% assign provider_name = "Facebook" %}
+        {% if provider_icon == nil %}{% assign provider_icon = "fab fa-facebook" %}{% endif %}
+      {% elsif provider_key == "instagram" %}
+        {% assign provider_name = "Instagram" %}
+        {% if provider_icon == nil %}{% assign provider_icon = "fab fa-instagram" %}{% endif %}
+      {% else %}
+        {% assign provider_name = provider | capitalize %}
+      {% endif %}
+
+      {% if provider_account == "" %}
+        {% assign provider_account = site.title %}
+      {% endif %}
+      {% unless provider_account contains "@" %}
+        {% assign provider_account = "@" | append: provider_account %}
+      {% endunless %}
+
+      {% assign provider_message = share_message_template | replace: "{account}", provider_account %}
+      {% assign provider_copy_text = provider_message | append: " " | append: share_url %}
+
+      {% if provider_key == "link" %}
+        <a
+          class="ifc-page-share__link"
+          href="{{ share_url }}"
+          aria-label="{{ provider_name }}"
+          title="{{ provider_name }}"
+          data-share-link
+          data-share-provider="{{ provider_key }}"
+          data-share-copy="true"
+          data-share-copy-text="{{ share_url | escape_once }}"
+          data-share-copy-toast="true"
+        >
+          <i class="{{ provider_icon }}" aria-hidden="true"></i>
+        </a>
+      {% elsif provider_key == "x" %}
+        {% capture provider_href %}https://twitter.com/intent/tweet?text={{ provider_message | uri_escape }}&url={{ share_url | uri_escape }}{% endcapture %}
+        <a
+          class="ifc-page-share__link"
+          href="{{ provider_href | strip }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Share on {{ provider_name }}"
+          title="Share on {{ provider_name }}"
+          data-share-link
+          data-share-provider="{{ provider_key }}"
+          data-share-popup="true"
+        >
+          <i class="{{ provider_icon }}" aria-hidden="true"></i>
+        </a>
+      {% elsif provider_key == "facebook" %}
+        {% capture provider_href %}https://www.facebook.com/sharer/sharer.php?u={{ share_url | uri_escape }}{% endcapture %}
+        <a
+          class="ifc-page-share__link"
+          href="{{ provider_href | strip }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Share on {{ provider_name }}"
+          title="Share on {{ provider_name }}"
+          data-share-link
+          data-share-provider="{{ provider_key }}"
+          data-share-popup="true"
+        >
+          <i class="{{ provider_icon }}" aria-hidden="true"></i>
+        </a>
+      {% elsif provider_key == "instagram" %}
+        <a
+          class="ifc-page-share__link"
+          href="{{ share_url }}"
+          aria-label="Share on {{ provider_name }}"
+          title="Share on {{ provider_name }}"
+          data-share-link
+          data-share-provider="{{ provider_key }}"
+          data-share-copy="true"
+          data-share-copy-text="{{ share_url | escape_once }}"
+          data-share-copy-toast="true"
+          data-share-copy-only="true"
+          data-share-native="true"
+          data-share-native-title="{{ share_title | escape_once }}"
+          data-share-native-text="{{ provider_message | escape_once }}"
+          data-share-native-url="{{ share_url | escape_once }}"
+        >
+          <i class="{{ provider_icon }}" aria-hidden="true"></i>
+        </a>
+      {% endif %}
+    {% endfor %}
+  {% endcapture %}
+
+  {% assign rendered_share_links = rendered_share_links | strip %}
+  {% if rendered_share_links != "" %}
+    <div
+      class="ifc-page-share"
+      data-social-share
+      data-share-popup-width="620"
+      data-share-popup-height="540"
+    >
+      <span class="ifc-page-share__label">{{ share_label }}</span>
+      <span class="ifc-page-share__links">
+        {{ rendered_share_links }}
+        <span class="ifc-permalink-toast ifc-page-share__toast" data-share-feedback hidden aria-live="polite">Copied to clipboard</span>
+      </span>
+    </div>
+  {% endif %}
+{% endif %}
