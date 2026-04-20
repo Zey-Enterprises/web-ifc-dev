@@ -128,24 +128,31 @@ footer:
     - label: "Apply"
       icon: "fas fa-arrow-right"
       url: "/apply/"
+      newtab: false
     - label: "Terms of Service"
       icon: "fas fa-scale-balanced"
       url: "/terms/"
+      newtab: false
     - label: "Instagram"
       icon: "fab fa-instagram"
       url: "https://www.instagram.com/IntegratedFitnessCoaching"
+      newtab: true
     - label: "Facebook"
       icon: "fab fa-facebook"
       url: "https://www.facebook.com/IntegratedFitnessCoaching"
+      newtab: true
     - label: "Twitter"
       icon: "fab fa-twitter"
       url: "https://x.com/IntFitCoaching"
+      newtab: true
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/company/integrated-fitness-coaching/"
+      newtab: true
     - label: "YouTube"
       icon: "fab fa-youtube"
       url: "https://www.youtube.com/@IntegratedFitnessCoaching"
+      newtab: true
 
 social_share:
   label: "Share:"
