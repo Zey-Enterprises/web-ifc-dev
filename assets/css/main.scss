@@ -250,6 +250,60 @@ body {
   color: var(--ifc-accent-deep);
 }
 
+.greedy-nav__toggle {
+  font-size: 0;
+  line-height: 0;
+}
+
+.greedy-nav__toggle .navicon,
+.greedy-nav__toggle .navicon::before,
+.greedy-nav__toggle .navicon::after {
+  display: block;
+  width: 1.5rem;
+  height: 0.18rem;
+  background: var(--ifc-accent-deep);
+  border-radius: 999px;
+  position: relative;
+}
+
+.greedy-nav__toggle .navicon::before,
+.greedy-nav__toggle .navicon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.greedy-nav__toggle .navicon::before {
+  top: -0.42rem;
+}
+
+.greedy-nav__toggle .navicon::after {
+  top: 0.42rem;
+}
+
+.greedy-nav__toggle.close .navicon {
+  width: 1.35rem;
+  height: 0.18rem;
+  background: transparent !important;
+}
+
+.greedy-nav__toggle.close .navicon::before,
+.greedy-nav__toggle.close .navicon::after {
+  top: 0;
+  left: 0;
+  width: 1.35rem;
+  height: 0.18rem;
+  transform-origin: center;
+}
+
+.greedy-nav__toggle.close .navicon::before {
+  transform: rotate(45deg);
+}
+
+.greedy-nav__toggle.close .navicon::after {
+  transform: rotate(-45deg);
+}
+
 @media (min-width: 769px) and (max-width: 1120px) {
   .site-title__stack {
     min-height: 3rem;
@@ -3152,46 +3206,6 @@ input[type="submit"] {
   .greedy-nav__toggle .navicon::before,
   .greedy-nav__toggle .navicon::after {
     display: block !important;
-    width: 1.5rem;
-    height: 0.18rem;
-    background: var(--ifc-accent-deep);
-    border-radius: 999px;
-    position: relative;
-  }
-
-  .greedy-nav__toggle .navicon::before,
-  .greedy-nav__toggle .navicon::after {
-    content: "";
-    position: absolute;
-    left: 0;
-  }
-
-  .greedy-nav__toggle .navicon::before {
-    top: -0.42rem;
-  }
-
-  .greedy-nav__toggle .navicon::after {
-    top: 0.42rem;
-  }
-
-  .greedy-nav__toggle.close .navicon {
-    background: transparent !important;
-  }
-
-  .greedy-nav__toggle.close .navicon::before,
-  .greedy-nav__toggle.close .navicon::after {
-    top: 0;
-    left: 0;
-    width: 1.35rem;
-    transform-origin: center;
-  }
-
-  .greedy-nav__toggle.close .navicon::before {
-    transform: rotate(45deg);
-  }
-
-  .greedy-nav__toggle.close .navicon::after {
-    transform: rotate(-45deg);
   }
 
   .page__hero--overlay.ifc-hero-carousel {
