@@ -42,6 +42,11 @@
             {% assign provider_link = footer_link %}
             {% break %}
           {% endif %}
+        {% elsif provider_key == "linkedin" %}
+          {% if footer_label contains "linkedin" or footer_url contains "linkedin.com/" %}
+            {% assign provider_link = footer_link %}
+            {% break %}
+          {% endif %}
         {% endif %}
       {% endfor %}
 
@@ -63,6 +68,9 @@
       {% elsif provider_key == "instagram" %}
         {% assign provider_name = "Instagram" %}
         {% if provider_icon == nil %}{% assign provider_icon = "fab fa-instagram" %}{% endif %}
+      {% elsif provider_key == "linkedin" %}
+        {% assign provider_name = "LinkedIn" %}
+        {% if provider_icon == nil %}{% assign provider_icon = "fab fa-linkedin" %}{% endif %}
       {% else %}
         {% assign provider_name = provider | capitalize %}
       {% endif %}
@@ -150,6 +158,21 @@
           data-share-native-title="{{ share_title | escape_once }}"
           data-share-native-text="{{ provider_message | escape_once }}"
           data-share-native-url="{{ share_url | escape_once }}"
+        >
+          <i class="{{ provider_icon }}" aria-hidden="true"></i>
+        </a>
+      {% elsif provider_key == "linkedin" %}
+        {% capture provider_href %}https://www.linkedin.com/sharing/share-offsite/?url={{ share_url | uri_escape }}{% endcapture %}
+        <a
+          class="ifc-page-share__link"
+          href="{{ provider_href | strip }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Share on {{ provider_name }}"
+          title="Share on {{ provider_name }}"
+          data-share-link
+          data-share-provider="{{ provider_key }}"
+          data-share-popup="true"
         >
           <i class="{{ provider_icon }}" aria-hidden="true"></i>
         </a>

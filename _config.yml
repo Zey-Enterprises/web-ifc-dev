@@ -140,6 +140,9 @@ footer:
     - label: "Twitter"
       icon: "fab fa-twitter"
       url: "https://x.com/IntFitCoaching"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/company/integrated-fitness-coaching/"
     - label: "YouTube"
       icon: "fab fa-youtube"
       url: "https://www.youtube.com/@IntegratedFitnessCoaching"
@@ -149,6 +152,7 @@ social_share:
   providers:
     - x
     - facebook
+    - linkedin
     - os-share
     - link
   message: "Check this out from {account}!"
