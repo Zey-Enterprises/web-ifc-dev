@@ -36,6 +36,11 @@
     return hasTouchPoints || coarsePointer || noHover || narrowViewport;
   }
 
+  function isSafariFamily() {
+    var userAgent = navigator.userAgent || "";
+    return /Safari\//.test(userAgent) && !/Chrome|Chromium|CriOS|Edg|OPR|Firefox|FxiOS/.test(userAgent);
+  }
+
   function isApplePlatform() {
     var userAgentDataPlatform = navigator.userAgentData && navigator.userAgentData.platform;
     if (typeof userAgentDataPlatform === "string") {
@@ -157,7 +162,7 @@
       return false;
     }
 
-    if (!isLikelyTouchShareSurface()) {
+    if (!isLikelyTouchShareSurface() && !(isApplePlatform() && isSafariFamily())) {
       return false;
     }
 
