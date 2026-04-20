@@ -386,7 +386,7 @@ A real mechanism is observed.
 
 Then it is promoted as replacing {% include glossary.html id="calorie-balance" %} instead of feeding into it.
 
-But many people will say, "Of course calories matter—I never said they didn't!". What's actually happening is subtler: they are overweighting secondary factors—seed oils, sunshine, gut health, toxins—because those feel like cleaner, lower-friction fixes. It's psychologically appealing to believe that changing a single ingredient, supplement, or exposure will unlock progress without having to directly manage intake.
+But many people will say, "Of course calories matter—I never said they didn't!". What's actually happening is subtler: They are overweighting secondary factors—seed oils, sunshine, gut health, toxins—because those feel like cleaner, lower-friction fixes. It's psychologically appealing to believe that changing a single ingredient, supplement, or exposure will unlock progress without having to directly manage intake.
 
 But this often turns into a kind of nutritional whack-a-mole: swapping foods, chasing mechanisms, increasing cognitive load, and dealing with a growing list of rules—while the primary lever (effective {% include glossary.html id="calorie-balance" %}) remains unaddressed. The result is a lot of complexity for relatively small effects.
 
