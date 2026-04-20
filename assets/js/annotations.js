@@ -90,7 +90,13 @@
   function previousSignificantSibling(node) {
     let sibling = node ? node.previousSibling : null;
 
-    while (sibling && sibling.nodeType === Node.COMMENT_NODE) {
+    while (
+      sibling &&
+      (
+        sibling.nodeType === Node.COMMENT_NODE ||
+        (sibling.nodeType === Node.TEXT_NODE && !sibling.nodeValue.replace(/\u2060/g, "").trim())
+      )
+    ) {
       sibling = sibling.previousSibling;
     }
 
@@ -100,7 +106,13 @@
   function nextSignificantSibling(node) {
     let sibling = node ? node.nextSibling : null;
 
-    while (sibling && sibling.nodeType === Node.COMMENT_NODE) {
+    while (
+      sibling &&
+      (
+        sibling.nodeType === Node.COMMENT_NODE ||
+        (sibling.nodeType === Node.TEXT_NODE && !sibling.nodeValue.replace(/\u2060/g, "").trim())
+      )
+    ) {
       sibling = sibling.nextSibling;
     }
 
@@ -211,17 +223,24 @@
       }
 
       const previous = previousSignificantSibling(annotation);
-      const next = nextSignificantSibling(annotation);
       const chain = [annotation];
+      let cursor = annotation;
 
-      if (next && next.nodeType === Node.ELEMENT_NODE && next.classList && next.classList.contains("ifc-citation-marker")) {
-        chain.push(next);
+      while (true) {
+        const separator = nextSignificantSibling(cursor);
 
-        const afterSeparator = nextSignificantSibling(next);
-
-        if (afterSeparator && afterSeparator.nodeType === Node.ELEMENT_NODE && afterSeparator.matches("[data-annotation][data-annotation-kind=\"citation\"]")) {
-          chain.push(afterSeparator);
+        if (!separator || separator.nodeType !== Node.ELEMENT_NODE || !separator.classList || !separator.classList.contains("ifc-citation-marker")) {
+          break;
         }
+
+        const followingCitation = nextSignificantSibling(separator);
+
+        if (!followingCitation || followingCitation.nodeType !== Node.ELEMENT_NODE || !followingCitation.matches("[data-annotation][data-annotation-kind=\"citation\"]")) {
+          break;
+        }
+
+        chain.push(separator, followingCitation);
+        cursor = followingCitation;
       }
 
       if (!previous || previous.nodeType !== Node.TEXT_NODE || !previous.nodeValue || !/\S/u.test(previous.nodeValue)) {
@@ -245,6 +264,17 @@
           cluster.appendChild(node);
         }
       });
+
+      const afterRun = nextSignificantSibling(cursor);
+
+      if (afterRun && afterRun.nodeType === Node.TEXT_NODE && afterRun.nodeValue) {
+        const punctuationMatch = afterRun.nodeValue.match(/^([.,;:!?"'“”‘’)\]}\u2014\u2013-]+)/u);
+
+        if (punctuationMatch) {
+          cluster.appendChild(document.createTextNode(punctuationMatch[1]));
+          afterRun.nodeValue = afterRun.nodeValue.slice(punctuationMatch[1].length);
+        }
+      }
 
       if (prefix) {
         previous.nodeValue = prefix;
