@@ -213,7 +213,7 @@
       "year": 2017
     },
     "year": 2017,
-    "doi": "10.1001/jamainternmed.2016.8781",
+    "doi": "10.1001/jamainternmed.2017.0936",
     "doi_newtab": true,
     "tags": [
       "body-composition",
@@ -726,56 +726,6 @@
       "sleep"
     ]
   },
-  "wilding-2014-glp1-obesity-treatment": {
-    "id": "wilding-2014-glp1-obesity-treatment",
-    "type": "journal-article",
-    "title": "The Role of GLP-1 in the Treatment of Obesity",
-    "short_title": "The Role of GLP-1 in Obesity",
-    "authors": [
-      {
-        "literal": "John P. H. Wilding"
-      }
-    ],
-    "container_title": "British Journal of Diabetes & Vascular Disease",
-    "issued": {
-      "year": 2014
-    },
-    "year": 2014,
-    "doi": "10.15277/bjdvd.2014.036",
-    "doi_newtab": true,
-    "tags": [
-      "body-composition",
-      "calorie-balance",
-      "satiety"
-    ]
-  },
-  "fountaine-2010-atypical-antipsychotics-energy-balance": {
-    "id": "fountaine-2010-atypical-antipsychotics-energy-balance",
-    "type": "journal-article",
-    "title": "Effects of Atypical Antipsychotics on Energy Balance",
-    "short_title": "Atypical Antipsychotics on Energy Balance",
-    "authors": [
-      {
-        "literal": "R. J. Fountaine"
-      },
-      {
-        "literal": "H. R. Taylor"
-      },
-      {
-        "literal": "D. Mancuso"
-      }
-    ],
-    "container_title": "Journal of Clinical Psychiatry",
-    "issued": {
-      "year": 2010
-    },
-    "year": 2010,
-    "doi": "10.4088/JCP.08r04884gry",
-    "doi_newtab": true,
-    "tags": [
-      "calorie-balance"
-    ]
-  },
   "mullur-2014-thyroid-metabolism": {
     "id": "mullur-2014-thyroid-metabolism",
     "type": "journal-article",
@@ -825,7 +775,7 @@
       "year": 2006
     },
     "year": 2006,
-    "doi": "10.1093/humupd/dml001",
+    "doi": "10.1093/humupd/dmg024",
     "doi_newtab": true,
     "tags": [
       "body-composition",
@@ -1028,32 +978,6 @@
       "environment-design"
     ]
   },
-  "small-2019-processing-food-reward": {
-    "id": "small-2019-processing-food-reward",
-    "type": "journal-article",
-    "title": "Process Influences on Food Reward and Intake",
-    "short_title": "Process Influences on Food Reward and Intake",
-    "authors": [
-      {
-        "literal": "Dana M. Small"
-      },
-      {
-        "literal": "Alex G. DiFeliceantonio"
-      }
-    ],
-    "container_title": "Nature Reviews Neuroscience",
-    "issued": {
-      "year": 2019
-    },
-    "year": 2019,
-    "doi": "10.1038/s41583-019-0190-7",
-    "doi_newtab": true,
-    "tags": [
-      "food-quality",
-      "satiety",
-      "environment-design"
-    ]
-  },
   "killgore-2010-sleep-deprivation-cognition": {
     "id": "killgore-2010-sleep-deprivation-cognition",
     "type": "journal-article",
@@ -1069,39 +993,11 @@
       "year": 2010
     },
     "year": 2010,
-    "doi": "10.1016/S0079-6123(10)85013-0",
+    "doi": "10.1016/b978-0-444-53702-7.00007-5",
     "doi_newtab": true,
     "tags": [
       "recovery",
       "sleep"
-    ]
-  },
-  "field-2016-alcohol-appetite": {
-    "id": "field-2016-alcohol-appetite",
-    "type": "journal-article",
-    "title": "Alcohol and Appetite: A Systematic Review and Meta-Analysis",
-    "short_title": "Alcohol and Appetite",
-    "authors": [
-      {
-        "literal": "Matt Field"
-      },
-      {
-        "literal": "Richard W. Mogg"
-      },
-      {
-        "literal": "Jessica L. Bradley"
-      }
-    ],
-    "container_title": "Neuroscience & Biobehavioral Reviews",
-    "issued": {
-      "year": 2016
-    },
-    "year": 2016,
-    "doi": "10.1016/j.neubiorev.2016.05.024",
-    "doi_newtab": true,
-    "tags": [
-      "satiety",
-      "environment-design"
     ]
   },
   "schubert-2014-exercise-appetite-hormones": {
@@ -1125,7 +1021,7 @@
       "year": 2014
     },
     "year": 2014,
-    "doi": "10.1007/s40279-014-0240-0",
+    "doi": "10.1007/s40279-013-0120-3",
     "doi_newtab": true,
     "tags": [
       "satiety"
@@ -2447,7 +2343,9 @@
     "tags": [
       "carbohydrates",
       "strength-training"
-    ]
+    ],
+    "doi": "10.70252/izlo1608",
+    "doi_newtab": true
   },
   "fujita-2006-effect-of-insulin-on-human-skeletal-muscle-protein-synthesis-is-modulated-by-insulin-induced-changes-in-muscle-blood-flow-and-amino-acid-availability": {
     "id": "fujita-2006-effect-of-insulin-on-human-skeletal-muscle-protein-synthesis-is-modulated-by-insulin-induced-changes-in-muscle-blood-flow-and-amino-acid-availability",
@@ -5212,7 +5110,9 @@
     "tags": [
       "protein",
       "dietary-fat"
-    ]
+    ],
+    "doi": "10.1146/annurev.nu.15.070195.002353",
+    "doi_newtab": true
   },
   "khandelwal-2013-impact-of-omega-6-fatty-acids-on-cardiovascular-outcomes": {
     "id": "khandelwal-2013-impact-of-omega-6-fatty-acids-on-cardiovascular-outcomes",
@@ -6122,7 +6022,7 @@
       "year": 1994
     },
     "year": 1994,
-    "doi": "10.1093/ajcn/59.5.1203SSatiety,FoodVolume,andCalorieDensity",
+    "doi": "10.1093/ajcn/59.5.1203s",
     "doi_newtab": true,
     "container_title": "The American journal of clinical nutrition",
     "volume": "59",
@@ -6508,7 +6408,7 @@
       "year": 2003
     },
     "year": 2003,
-    "doi": "10.1519/1533-4287(2003)0172.0.CO;2",
+    "doi": "10.1519/00124278-200302000-00029",
     "doi_newtab": true,
     "container_title": "Journal of Strength and Conditioning Research",
     "volume": "17",
@@ -6566,7 +6466,9 @@
     "tags": [
       "calorie-balance",
       "carbohydrates"
-    ]
+    ],
+    "doi": "10.1136/jcp.s3-5.1.10",
+    "doi_newtab": true
   },
   "hutchison-2016-metabolic-impacts-of-altering-meal-frequency-and-timing-does-when-we-eat-matter": {
     "id": "hutchison-2016-metabolic-impacts-of-altering-meal-frequency-and-timing-does-when-we-eat-matter",
@@ -7004,7 +6906,7 @@
       "year": 2003
     },
     "year": 2003,
-    "doi": "10.1097/00075197-200305000-00006",
+    "doi": "10.1097/01.mco.0000068961.34812.77",
     "doi_newtab": true,
     "container_title": "Current Opinion in Clinical Nutrition and Metabolic Care",
     "volume": "6",
@@ -7279,7 +7181,9 @@
     "pages": "479–486",
     "tags": [
       "protein"
-    ]
+    ],
+    "doi": "10.70252/qwha8703",
+    "doi_newtab": true
   },
   "babault-2014-effects-of-soluble-milk-protein-or-casein-supplementation-on-muscle-fatigue-following-resistance-training-program": {
     "id": "babault-2014-effects-of-soluble-milk-protein-or-casein-supplementation-on-muscle-fatigue-following-resistance-training-program",
@@ -8013,7 +7917,9 @@
     "tags": [
       "satiety",
       "behavior-change"
-    ]
+    ],
+    "doi": "10.4324/9780367814854",
+    "doi_newtab": true
   },
   "singh-2014-mood-food-and-obesity": {
     "id": "singh-2014-mood-food-and-obesity",
@@ -9785,7 +9691,7 @@
       "year": 1989
     },
     "year": 1989,
-    "doi": "10.1002/1098-108X(198905)8:33.0.CO;2-C",
+    "doi": "10.1002/1098-108x(198905)8:3<343::aid-eat2260080310>3.0.co;2-c",
     "doi_newtab": true,
     "container_title": "The International Journal of Eating Disorders",
     "volume": "8",
@@ -11526,7 +11432,7 @@
       "year": 2013
     },
     "year": 2013,
-    "doi": "10.7453/gahmj.2013.042RelationshipBetweenSelf-Efficacy,Autonomy,andSuccess",
+    "doi": "10.7453/gahmj.2013.042",
     "doi_newtab": true,
     "container_title": "Global Advances in Health and Medicine",
     "volume": "2",
@@ -12503,7 +12409,9 @@
     "tags": [
       "behavior-change",
       "mind-body-integration"
-    ]
+    ],
+    "doi": "10.53841/bpsicpr.2012.7.2.146",
+    "doi_newtab": true
   },
   "grant-2004-coach-yourself": {
     "id": "grant-2004-coach-yourself",
@@ -12571,7 +12479,7 @@
       "year": 1999
     },
     "year": 1999,
-    "doi": "10.1002/(sici)1099-1379(199907)20:43.0.co;2-%23",
+    "doi": "10.1002/(sici)1099-1379(199907)20:4<421::aid-job896>3.0.co;2-#",
     "doi_newtab": true,
     "container_title": "Journal of Organizational Behavior",
     "volume": "20",
@@ -12639,7 +12547,9 @@
     "publisher": "Englewood Cliffs, NJ: Prentice Hall",
     "tags": [
       "behavior-change"
-    ]
+    ],
+    "doi": "10.2307/258875",
+    "doi_newtab": true
   },
   "o-neill-2005-small-steps-to-health-and-wealth": {
     "id": "o-neill-2005-small-steps-to-health-and-wealth",
@@ -12963,7 +12873,9 @@
     "publisher": "Ronald Press",
     "tags": [
       "behavior-change"
-    ]
+    ],
+    "doi": "10.2307/1421862",
+    "doi_newtab": true
   },
   "sarrazin-2002-motivation-and-dropout-in-female-handballers": {
     "id": "sarrazin-2002-motivation-and-dropout-in-female-handballers",
@@ -13746,30 +13658,6 @@
     "tags": [
       "food-quality",
       "behavior-change"
-    ]
-  },
-  "lee-2021-the-influence-of-mindfulness-and-gratitude-on-the-happiness-of-high-school-students": {
-    "id": "lee-2021-the-influence-of-mindfulness-and-gratitude-on-the-happiness-of-high-school-students",
-    "type": "journal-article",
-    "title": "The influence of mindfulness and gratitude on the happiness of high school students: grit's moderated mediation model",
-    "short_title": "The influence of mindfulness and gratitude on the happiness of high school students",
-    "authors": [
-      {
-        "literal": "Lee, C. S"
-      }
-    ],
-    "issued": {
-      "year": 2021
-    },
-    "year": 2021,
-    "doi": "10.32744/pse.2021.4.23",
-    "doi_newtab": true,
-    "container_title": "Perspektivy nauki i obrazovania – Perspectives of Science and Education",
-    "volume": "52",
-    "issue": "4",
-    "pages": "358-369",
-    "tags": [
-      "mindfulness"
     ]
   },
   "li-2019-mindfulness-and-athlete-burnout": {
@@ -14881,7 +14769,9 @@
     "publisher": "Harvard University Press",
     "tags": [
       "behavior-change"
-    ]
+    ],
+    "doi": "10.2307/j.ctv1kwxfs2",
+    "doi_newtab": true
   },
   "rawson-2011-accurate-monitoring-leads-to-effective-control-and-greater-learning-of-patient-education-materials": {
     "id": "rawson-2011-accurate-monitoring-leads-to-effective-control-and-greater-learning-of-patient-education-materials",
@@ -14954,6 +14844,408 @@
     "volume": "21",
     "issue": "10",
     "pages": "782–792",
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
+  },
+  "moiz-2025-glp1-receptor-agonist-induced-weight-loss": {
+    "id": "moiz-2025-glp1-receptor-agonist-induced-weight-loss",
+    "type": "journal-article",
+    "title": "Mechanisms of GLP-1 receptor agonist-induced weight loss: a review of central and peripheral pathways in appetite and energy regulation",
+    "short_title": "Mechanisms of GLP-1 receptor agonist-induced weight loss",
+    "authors": [
+      { "literal": "Areesha Moiz" },
+      { "literal": "Kristian B. Filion" },
+      { "literal": "Michael A. Tsoukas" },
+      { "literal": "Oriana H. Y. Yu" },
+      { "literal": "Tricia M. Peters" },
+      { "literal": "Mark J. Eisenberg" }
+    ],
+    "container_title": "The American Journal of Medicine",
+    "issued": {
+      "year": 2025
+    },
+    "year": 2025,
+    "volume": "138",
+    "issue": "6",
+    "pages": "934-940",
+    "doi": "10.1016/j.amjmed.2025.01.021",
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety"
+    ]
+  },
+  "kanoski-2016-glp1-and-weight-loss": {
+    "id": "kanoski-2016-glp1-and-weight-loss",
+    "type": "journal-article",
+    "title": "GLP-1 and weight loss: unraveling the diverse neural circuitry",
+    "short_title": "GLP-1 and weight loss",
+    "authors": [
+      { "literal": "Scott E. Kanoski" },
+      { "literal": "Matthew R. Hayes" },
+      { "literal": "Karolina P. Skibicka" }
+    ],
+    "container_title": "American Journal of Physiology-Regulatory, Integrative and Comparative Physiology",
+    "issued": {
+      "year": 2016
+    },
+    "year": 2016,
+    "volume": "310",
+    "issue": "10",
+    "pages": "R885-R895",
+    "doi": "10.1152/ajpregu.00520.2015",
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety"
+    ]
+  },
+  "badulescu-2024-glucagon-like-peptide-1-agonist-and-effects-on-reward-behaviour": {
+    "id": "badulescu-2024-glucagon-like-peptide-1-agonist-and-effects-on-reward-behaviour",
+    "type": "journal-article",
+    "title": "Glucagon-like peptide 1 agonist and effects on reward behaviour: a systematic review",
+    "short_title": "GLP-1 agonist and effects on reward behaviour",
+    "authors": [
+      { "literal": "Sebastian Badulescu" },
+      { "literal": "Aniqa Tabassum" },
+      { "literal": "Gia Han Le" },
+      { "literal": "Sabrina Wong" },
+      { "literal": "Lee Phan" },
+      { "literal": "Hartej Gill" },
+      { "literal": "Cristian-Daniel Llach" },
+      { "literal": "Roger S. McIntyre" },
+      { "literal": "Joshua Rosenblat" },
+      { "literal": "Rodrigo Mansur" }
+    ],
+    "container_title": "Physiology & Behavior",
+    "issued": {
+      "year": 2024
+    },
+    "year": 2024,
+    "volume": "283",
+    "pages": "114622",
+    "doi": "10.1016/j.physbeh.2024.114622",
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety"
+    ]
+  },
+  "flint-1998-glucagon-like-peptide-1-promotes-satiety-and-suppresses-energy-intake-in-humans": {
+    "id": "flint-1998-glucagon-like-peptide-1-promotes-satiety-and-suppresses-energy-intake-in-humans",
+    "type": "journal-article",
+    "title": "Glucagon-like peptide 1 promotes satiety and suppresses energy intake in humans",
+    "short_title": "GLP-1 promotes satiety and suppresses energy intake in humans",
+    "authors": [
+      { "literal": "Anne Flint" },
+      { "literal": "Anne Raben" },
+      { "literal": "Arne Astrup" },
+      { "literal": "Jens J. Holst" }
+    ],
+    "container_title": "The Journal of Clinical Investigation",
+    "issued": {
+      "year": 1998
+    },
+    "year": 1998,
+    "volume": "101",
+    "issue": "3",
+    "pages": "515-520",
+    "doi": "10.1172/JCI990",
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety"
+    ]
+  },
+  "kuckuck-2023-glucocorticoids-stress-and-eating": {
+    "id": "kuckuck-2023-glucocorticoids-stress-and-eating",
+    "type": "journal-article",
+    "title": "Glucocorticoids, stress and eating: The mediating role of appetite-regulating hormones",
+    "short_title": "Glucocorticoids, stress and eating",
+    "authors": [
+      {
+        "literal": "Susanne Kuckuck"
+      },
+      {
+        "literal": "Eline S. van der Valk"
+      },
+      {
+        "literal": "Anton J. W. Scheurink"
+      },
+      {
+        "literal": "Bibian van der Voorn"
+      },
+      {
+        "literal": "Anand M. Iyer"
+      },
+      {
+        "literal": "Jenny A. Visser"
+      },
+      {
+        "literal": "Patric J. D. Delhanty"
+      },
+      {
+        "literal": "Sjoerd A. A. van den Berg"
+      },
+      {
+        "literal": "Elisabeth F. C. van Rossum"
+      }
+    ],
+    "container_title": "Obesity Reviews",
+    "issued": {
+      "year": 2023
+    },
+    "year": 2023,
+    "volume": "24",
+    "issue": "3",
+    "pages": "e13539",
+    "doi": "10.1111/obr.13539",
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety"
+    ]
+  },
+  "kim-2008-thyroid-hormone-as-a-determinant-of-energy-expenditure-and-the-basal-metabolic-rate": {
+    "id": "kim-2008-thyroid-hormone-as-a-determinant-of-energy-expenditure-and-the-basal-metabolic-rate",
+    "type": "journal-article",
+    "title": "Thyroid hormone as a determinant of energy expenditure and the basal metabolic rate",
+    "short_title": "Thyroid hormone as a determinant of energy expenditure",
+    "authors": [
+      {
+        "literal": "Brian Kim"
+      }
+    ],
+    "container_title": "Thyroid",
+    "issued": {
+      "year": 2008
+    },
+    "year": 2008,
+    "volume": "18",
+    "issue": "2",
+    "pages": "141-144",
+    "doi": "10.1089/thy.2007.0266",
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
+  },
+  "izkhakov-2019-body-composition-resting-energy-expenditure-and-metabolic-changes-in-women-diagnosed-with-differentiated-thyroid-carcinoma": {
+    "id": "izkhakov-2019-body-composition-resting-energy-expenditure-and-metabolic-changes-in-women-diagnosed-with-differentiated-thyroid-carcinoma",
+    "type": "journal-article",
+    "title": "Body composition, resting energy expenditure, and metabolic changes in women diagnosed with differentiated thyroid carcinoma",
+    "short_title": "Body composition, resting energy expenditure, and metabolic changes in women diagnosed with differentiated thyroid carcinoma",
+    "authors": [
+      {
+        "literal": "Elena Izkhakov"
+      },
+      {
+        "literal": "Nachum Vaisman"
+      },
+      {
+        "literal": "Sophie Barnes"
+      },
+      {
+        "literal": "Micha Barchana"
+      },
+      {
+        "literal": "Naftali Stern"
+      },
+      {
+        "literal": "Lital Keinan-Boker"
+      }
+    ],
+    "container_title": "Thyroid",
+    "issued": {
+      "year": 2019
+    },
+    "year": 2019,
+    "volume": "29",
+    "issue": "8",
+    "pages": "1044-1051",
+    "doi": "10.1089/thy.2018.0483",
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
+  },
+  "himmerich-2015-weight-gain-and-metabolic-changes-during-treatment-with-antipsychotics-and-antidepressants": {
+    "id": "himmerich-2015-weight-gain-and-metabolic-changes-during-treatment-with-antipsychotics-and-antidepressants",
+    "type": "journal-article",
+    "title": "Weight gain and metabolic changes during treatment with antipsychotics and antidepressants",
+    "short_title": "Weight gain and metabolic changes during treatment with antipsychotics and antidepressants",
+    "authors": [
+      {
+        "literal": "Hubertus Himmerich"
+      },
+      {
+        "literal": "Juliane Minkwitz"
+      },
+      {
+        "literal": "Kenneth C. Kirkby"
+      }
+    ],
+    "container_title": "Endocrine, Metabolic & Immune Disorders-Drug Targets",
+    "issued": {
+      "year": 2015
+    },
+    "year": 2015,
+    "volume": "15",
+    "issue": "4",
+    "pages": "252-260",
+    "doi": "10.2174/1871530315666150623092031",
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety"
+    ]
+  },
+  "alonso-pedrero-2019-effects-of-antidepressant-and-antipsychotic-use-on-weight-gain": {
+    "id": "alonso-pedrero-2019-effects-of-antidepressant-and-antipsychotic-use-on-weight-gain",
+    "type": "journal-article",
+    "title": "Effects of antidepressant and antipsychotic use on weight gain: a systematic review",
+    "short_title": "Effects of antidepressant and antipsychotic use on weight gain",
+    "authors": [
+      {
+        "literal": "Lucia Alonso-Pedrero"
+      },
+      {
+        "literal": "Maira Bes-Rastrollo"
+      },
+      {
+        "literal": "Amelia Marti"
+      }
+    ],
+    "container_title": "Obesity Reviews",
+    "issued": {
+      "year": 2019
+    },
+    "year": 2019,
+    "volume": "20",
+    "issue": "12",
+    "pages": "1680-1690",
+    "doi": "10.1111/obr.12934",
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety"
+    ]
+  },
+  "mukherjee-2022-understanding-the-effects-of-antipsychotics-on-appetite-control": {
+    "id": "mukherjee-2022-understanding-the-effects-of-antipsychotics-on-appetite-control",
+    "type": "journal-article",
+    "title": "Understanding the Effects of Antipsychotics on Appetite Control",
+    "short_title": "Understanding the Effects of Antipsychotics on Appetite Control",
+    "authors": [
+      {
+        "literal": "Sayani Mukherjee"
+      },
+      {
+        "literal": "Silje Skrede"
+      },
+      {
+        "literal": "Edward Milbank"
+      },
+      {
+        "literal": "Ramaroson Andriantsitohaina"
+      },
+      {
+        "literal": "Miguel López"
+      },
+      {
+        "literal": "Johan Fernø"
+      }
+    ],
+    "container_title": "Frontiers in Nutrition",
+    "issued": {
+      "year": 2022
+    },
+    "year": 2022,
+    "volume": "8",
+    "pages": "815456",
+    "doi": "10.3389/fnut.2021.815456",
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety"
+    ]
+  },
+  "deng-2013-effects-of-antipsychotic-medications-on-appetite-weight-and-insulin-resistance": {
+    "id": "deng-2013-effects-of-antipsychotic-medications-on-appetite-weight-and-insulin-resistance",
+    "type": "journal-article",
+    "title": "Effects of antipsychotic medications on appetite, weight, and insulin resistance",
+    "short_title": "Effects of antipsychotic medications on appetite, weight, and insulin resistance",
+    "authors": [
+      {
+        "literal": "Chao Deng"
+      }
+    ],
+    "container_title": "Endocrinology and Metabolism Clinics of North America",
+    "issued": {
+      "year": 2013
+    },
+    "year": 2013,
+    "volume": "42",
+    "issue": "3",
+    "pages": "545-563",
+    "doi": "10.1016/j.ecl.2013.05.006",
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "satiety"
+    ]
+  },
+  "davis-2012-understanding-weight-gain-at-menopause": {
+    "id": "davis-2012-understanding-weight-gain-at-menopause",
+    "type": "journal-article",
+    "title": "Understanding weight gain at menopause",
+    "short_title": "Understanding weight gain at menopause",
+    "authors": [
+      {
+        "literal": "S. R. Davis"
+      },
+      {
+        "literal": "C. Castelo-Branco"
+      },
+      {
+        "literal": "P. Chedraui"
+      },
+      {
+        "literal": "M. A. Lumsden"
+      },
+      {
+        "literal": "R. E. Nappi"
+      },
+      {
+        "literal": "D. Shah"
+      },
+      {
+        "literal": "P. Villaseca"
+      }
+    ],
+    "container_title": "Climacteric",
+    "issued": {
+      "year": 2012
+    },
+    "year": 2012,
+    "volume": "15",
+    "issue": "5",
+    "pages": "419-429",
+    "doi": "10.3109/13697137.2012.707385",
+    "doi_newtab": true,
     "tags": [
       "body-composition",
       "calorie-balance"

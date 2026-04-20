@@ -4,7 +4,7 @@ format: written
 classes: hide-title
 author: "Arthur Zey"
 date: 2026-04-12
-last_modified_at: 2026-04-13
+last_modified_at: 2026-04-19
 excerpt: "Body composition is governed by calorie balance, while diet quality, hormones, sleep, stress, genetics, the microbiome, and environment matter by changing calorie intake, absorption, expenditure, and partitioning."
 tldr: "Most debates in nutrition are not about whether calorie balance matters, but about what influences it. That distinction matters because calorie balance is the main driver, while the other factors are important but secondary modifiers. If you prioritize the main lever first and layer in refinements second, body composition becomes much easier to understand and manage."
 domains:
@@ -29,7 +29,7 @@ tags:
 header:
   overlay_image: /assets/images/ifc-hero-banner-article-calorie-balance-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
-  background_position: center -75px
+  # background_position: center -70px
   mobile_background_position: center center
   # kicker: Body composition
   og_image: /assets/images/ifc-social-share-calorie-balance-1.jpg
@@ -60,21 +60,30 @@ citations:
   "24": beaulieu-2021-exercise-appetite-control
   "25": de-silva-2012-pyy-glp1-obesity
   "26": burns-2023-light-psychiatric-disorders
-  "27": wilding-2014-glp1-obesity-treatment
-  "28": fountaine-2010-atypical-antipsychotics-energy-balance
-  "29": mullur-2014-thyroid-metabolism
-  "30": pasquali-2006-obesity-reproductive-disorders
-  "31": pagliai-2024-food-environment-obesity
-  "32": english-2022-portion-size-ingestive-frequency
-  "33": mattes-2011-sweetened-beverages-body-weight
-  "34": breslow-2020-alcohol-dietary-intake
-  "35": dennis-2009-beverage-consumption-weight-management
-  "36": yeomans-2015-alcoholic-sugary-drinks-overweight
-  "37": fazzino-2019-hyperpalatable-foods
-  "38": small-2019-processing-food-reward
-  "39": killgore-2010-sleep-deprivation-cognition
-  "40": field-2016-alcohol-appetite
-  "41": schubert-2014-exercise-appetite-hormones
+  "27": mullur-2014-thyroid-metabolism
+  "28": pasquali-2006-obesity-reproductive-disorders
+  "29": pagliai-2024-food-environment-obesity
+  "30": english-2022-portion-size-ingestive-frequency
+  "31": mattes-2011-sweetened-beverages-body-weight
+  "32": breslow-2020-alcohol-dietary-intake
+  "33": dennis-2009-beverage-consumption-weight-management
+  "34": yeomans-2015-alcoholic-sugary-drinks-overweight
+  "35": fazzino-2019-hyperpalatable-foods
+  "36": killgore-2010-sleep-deprivation-cognition
+  "37": schubert-2014-exercise-appetite-hormones
+  "38": moiz-2025-glp1-receptor-agonist-induced-weight-loss
+  "39": kanoski-2016-glp1-and-weight-loss
+  "40": badulescu-2024-glucagon-like-peptide-1-agonist-and-effects-on-reward-behaviour
+  "41": flint-1998-glucagon-like-peptide-1-promotes-satiety-and-suppresses-energy-intake-in-humans
+  "42": kuckuck-2023-glucocorticoids-stress-and-eating
+  "43": kim-2008-thyroid-hormone-as-a-determinant-of-energy-expenditure-and-the-basal-metabolic-rate
+  "44": izkhakov-2019-body-composition-resting-energy-expenditure-and-metabolic-changes-in-women-diagnosed-with-differentiated-thyroid-carcinoma
+  "45": himmerich-2015-weight-gain-and-metabolic-changes-during-treatment-with-antipsychotics-and-antidepressants
+  "46": alonso-pedrero-2019-effects-of-antidepressant-and-antipsychotic-use-on-weight-gain
+  "47": mukherjee-2022-understanding-the-effects-of-antipsychotics-on-appetite-control
+  "48": deng-2013-effects-of-antipsychotic-medications-on-appetite-weight-and-insulin-resistance
+  "49": lambrinoudaki-2012-emas-position-statement
+  "50": davis-2012-understanding-weight-gain-at-menopause
 ---
 
 Everyone wants the clever, easy answer. And especially in the last decade or two, there has been no dearth of respectable-sounding, sophisticated arguments about what "really" drives body composition changes and how "this one weird trick 'they' don't want you to know about" can fix your bodyweight woes.
@@ -139,15 +148,15 @@ There is also a useful overlap here: Foods that tend to improve satiety—higher
 
 ### Hyperpalatability is the real driver
 
-While the phrase "{% include glossary.html id="ultraprocessed" %}" conveys some potentially useful vibes, the issue is not "processing" as a vague category. The relevant mechanism is _hyperpalatability_.
+While the phrase "{% include glossary.html id="ultraprocessed" %}" conveys some potentially useful vibes, the issue is not "processing" as a vague category. The relevant mechanism is _hyperpalatability_.{% include citation.html label="35" %}
 
-Foods engineered or selected to be extremely rewarding—combinations of fat, refined carbs, salt—are easier to overconsume.{% include citation.html label="3" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="37" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="38" %}
+Foods engineered or selected to be extremely rewarding—combinations of fat, refined carbs, salt—are easier to overconsume.{% include citation.html label="3" %}
 
 In a tightly controlled inpatient study often described as "ultra-processed vs unprocessed" (a label that is itself rather imprecise), participants ate ~500 calories/day more on the more {% include glossary.html id="hyperpalatable" %} diet and gained weight.{% include citation.html label="3" %}
 
 The key mechanism is not the label or how the foods were processed.
 
-It is that those foods increase eating rate, reduce satiety per calorie, and increase reward value.{% include citation.html label="3" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="37" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="38" %}
+It is that those foods increase eating rate, reduce satiety per calorie, and increase reward value.{% include citation.html label="3" %}
 
 That makes calorie surplus easier.
 
@@ -233,7 +242,7 @@ Where people go wrong is treating timing as a primary lever. It isn't. It refine
 
 ### Social environment, convenience, and liquid calories
 
-Social environment, convenience, and liquid calories deserve attention because they quietly shape intake in ways people often underestimate. Portion size, food availability, restaurant and convenience-food defaults, and social eating norms can all increase energy intake without a person's consciously trying to eat more—or even realizing they are. Larger portions and more frequent eating opportunities reliably raise intake, and such food environments are associated with higher obesity risk at the population level.{% include citation.html label="31" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="32" %} Liquid calories are especially important here because they tend to produce weaker satiety and poorer caloric compensation than solid foods, making it easier to consume excess energy without a commensurate reduction in later intake.{% include citation.html label="33" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="35" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="36" %} Alcohol adds another layer: It is energy-dense, often weakly satiating, can acutely increase food intake, and lowers inhibition in ways that make {% include glossary.html id="hyperpalatable" %} food even more difficult to regulate.{% include citation.html label="34" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="36" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="40" %} None of this replaces {% include glossary.html id="calorie-balance" %}. It explains why {% include glossary.html id="calorie-balance" %} is so easy to lose control of in modern environments—and why controlling intake often means changing not just what one eats, but also the settings, defaults, and forms in which calories are consumed.{% include citation.html label="31" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="32" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="33" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="34" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="35" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="36" %}
+Social environment, convenience, and liquid calories deserve attention because they quietly shape intake in ways people often underestimate. Portion size, food availability, restaurant and convenience-food defaults, and social eating norms can all increase energy intake without a person's consciously trying to eat more—or even realizing they are. Larger portions and more frequent eating opportunities reliably raise intake, and such food environments are associated with higher obesity risk at the population level.{% include citation.html label="29" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="30" %} Liquid calories are especially important here because they tend to produce weaker satiety and poorer caloric compensation than solid foods, making it easier to consume excess energy without a commensurate reduction in later intake.{% include citation.html label="31" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="33" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="34" %} Alcohol adds another layer: It is energy-dense, often weakly satiating, can acutely increase food intake, and lowers inhibition in ways that make {% include glossary.html id="hyperpalatable" %} food even more difficult to regulate.{% include citation.html label="32" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="34" %} None of this replaces {% include glossary.html id="calorie-balance" %}. It explains why {% include glossary.html id="calorie-balance" %} is so easy to lose control of in modern environments—and why controlling intake often means changing not just what one eats, but also the settings, defaults, and forms in which calories are consumed.{% include citation.html label="29" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="30" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="31" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="32" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="33" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="34" %}
 
 ## The microbiome: potentially very important
 
@@ -255,7 +264,7 @@ Sleep is one of the least controversial factors in health—_everyone_ knows it 
 
 Sleep restriction reliably increases hunger and calorie intake.{% include citation.html label="2" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="15" %} Mechanistically, it disrupts key appetite-regulating hormones (eg, increasing {% include glossary.html id="ghrelin" %} and reducing {% include glossary.html id="leptin" %}), which makes you feel hungrier and less satisfied by the same amount of food.{% include citation.html label="15" %} At the same time, it biases food preference toward more energy-dense, highly rewarding options—especially those that are easy to overconsume.
 
-Sleep also impairs decision making and increases reward sensitivity, which makes it more challenging to resist those foods in the moment.{% include citation.html label="15" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="39" %} This is not simply a matter of "willpower"—it is a predictable shift in how the brain evaluates effort, reward, and impulse control under fatigue.
+Sleep also impairs decision making and increases reward sensitivity, which makes it more challenging to resist those foods in the moment.{% include citation.html label="15" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="36" %} This is not simply a matter of "willpower"—it is a predictable shift in how the brain evaluates effort, reward, and impulse control under fatigue.
 
 On the expenditure side, poor sleep can reduce spontaneous activity ({% include glossary.html id="neat" %}), lower training output, and increase perceived effort during exercise. You move less, train less effectively, and recover more poorly.
 
@@ -311,7 +320,7 @@ Examples include
 * {% include glossary.html id="endocrine" %} conditions such as {% include glossary.html id="hypothyroidism" %}, {% include glossary.html id="hyperthyroidism" %}, and polycystic ovary syndrome ({% include glossary.html id="pcos" %})
 * life-stage hormonal shifts such as {% include glossary.html id="menopause" %}
 
-These factors can have substantial effects on appetite, satiety, fluid balance, metabolic rate, {% include glossary.html id="insulin-sensitivity" %}, and activity levels.{% include citation.html label="27" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="28" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="29" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="30" %} For instance, {% include glossary.html id="glp-1-agonists" %} reduce appetite and caloric intake, while {% include glossary.html id="corticosteroids" %} can increase hunger and promote fat storage through hormonal pathways. Thyroid disorders can alter resting metabolic rate, and certain psychiatric medications are associated with increased food intake and weight gain.
+These factors can have substantial effects on appetite, satiety, fluid balance, metabolic rate, {% include glossary.html id="insulin-sensitivity" %}, and activity levels. For instance, {% include glossary.html id="glp-1-agonists" %} reduce appetite and caloric intake{% include citation.html label="38" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="39" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="40" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="41" %}, while {% include glossary.html id="corticosteroids" %} can increase hunger and impair eating control through hormonal pathways{% include citation.html label="42" %}. Thyroid disorders can alter resting metabolic rate{% include citation.html label="27" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="43" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="44" %}, and certain psychiatric medications, especially antipsychotics and some antidepressants, are associated with increased food intake and weight gain{% include citation.html label="45" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="46" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="47" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="48" %}. Endocrine and reproductive conditions can also create more specific challenges. {% include glossary.html id="pcos" %} is often associated with insulin resistance and body-composition difficulties.{% include citation.html label="28" %} Menopause can also shift body composition in a less favorable direction, with greater total and central fat accumulation becoming more common across the menopausal transition{% include citation.html label="49" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="50" %}.
 
 These are not trivial effects. In many cases, they can significantly change how difficult it is to maintain a given {% include glossary.html id="calorie-balance" %} or how the body responds to a surplus or deficit.
 
@@ -329,7 +338,7 @@ Exercise increases energy expenditure, improves cardiovascular health, enhances 
 
 A common expression in fitness circles is that "you can't out-train a bad diet". This contains a useful truth, but also an equivocation. The truth is about health and practicality: Poor food quality (eg, {% include glossary.html id="hyperpalatable" %}, nutrient-poor diets) can harm health and make appetite more difficult to regulate, and it's usually impractical to rely on exercise alone to offset large surpluses.
 
-What it does _not_ mean is that {% include glossary.html id="calorie-balance" %} stops applying. In principle, you _can_ out-train excess calories by increasing expenditure enough to create a deficit. In practice, that's inefficient: Exercise often increases hunger and compensation, and it takes substantial volume to offset even modest overeating.{% include citation.html label="23" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="24" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="41" %}
+What it does _not_ mean is that {% include glossary.html id="calorie-balance" %} stops applying. In principle, you _can_ out-train excess calories by increasing expenditure enough to create a deficit. In practice, that's inefficient: Exercise often increases hunger and compensation, and it takes substantial volume to offset even modest overeating.{% include citation.html label="23" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="24" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="37" %}
 
 The better interpretation is this: _Don't try to fight intake with output._ Use food choices and habits to make "{% include glossary.html id="calories-in" %}" easier to manage (eg, higher protein, higher fiber, lower energy density), and use training to _support_ "{% include glossary.html id="calories-out" %}" and improve {% include glossary.html id="partitioning" %} (retain/build muscle).
 
