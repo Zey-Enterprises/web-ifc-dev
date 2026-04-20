@@ -307,6 +307,91 @@
     return trigger ? (trigger.textContent || "") : "";
   }
 
+  function getCopiedCitationEntries(fragment) {
+    const entries = [];
+    const seen = {};
+
+    if (!fragment) {
+      return entries;
+    }
+
+    fragment.querySelectorAll('[data-annotation][data-annotation-kind="citation"]').forEach(function (annotation) {
+      const label = annotation.dataset.citationLabel || "";
+      const sourceId = resolveCitationSourceId(annotation);
+
+      if (!label || !sourceId || seen[label]) {
+        return;
+      }
+
+      seen[label] = true;
+      entries.push({
+        label: label,
+        source: citationData[sourceId] || null
+      });
+    });
+
+    return entries;
+  }
+
+  function formatCitationReferencePlain(source) {
+    if (!source) {
+      return "";
+    }
+
+    const authors = formatCitationAuthors(source);
+    const title = source.title || "";
+    const subtitle = source.subtitle ? ": " + source.subtitle : "";
+    const containerTitle = source.container_title || source.publication || source.journal || "";
+    const issued = formatCitationIssued(source);
+    const parts = [];
+
+    if (authors) {
+      parts.push(authors + ".");
+    }
+
+    if (title) {
+      parts.push(title + subtitle + ".");
+    }
+
+    if (source.type === "journal-article") {
+      let journalLine = containerTitle;
+
+      if (source.volume) {
+        journalLine += (journalLine ? " " : "") + source.volume;
+      }
+
+      if (source.issue) {
+        journalLine += (journalLine ? ", " : "") + "no. " + source.issue;
+      }
+
+      if (issued) {
+        journalLine += (journalLine ? " " : "") + "(" + issued + ")";
+      }
+
+      if (source.pages) {
+        journalLine += (journalLine ? ": " : "") + source.pages;
+      }
+
+      if (journalLine) {
+        parts.push(journalLine + ".");
+      }
+    } else {
+      if (containerTitle) {
+        parts.push(containerTitle + ".");
+      } else if (issued) {
+        parts.push(issued + ".");
+      }
+    }
+
+    if (source.doi) {
+      parts.push("DOI: https://doi.org/" + String(source.doi).replace(/^https:\/\/doi\.org\//, ""));
+    } else if (source.url) {
+      parts.push("URL: " + source.url);
+    }
+
+    return parts.join(" ").replace(/\s+/g, " ").trim();
+  }
+
   function normalizeCopiedText(text) {
     return String(text || "")
       .replace(/\u2060/g, "")
@@ -320,6 +405,8 @@
     if (!fragment) {
       return "";
     }
+
+    const copiedCitations = getCopiedCitationEntries(fragment);
 
     fragment.querySelectorAll("[data-annotation-popover], [data-annotation-close], [data-annotation-back], .screen-reader-text, .ifc-link-icon").forEach(function (node) {
       node.remove();
@@ -347,7 +434,23 @@
 
     const text = normalizeCopiedText(container.innerText || container.textContent || "");
     container.remove();
-    return text;
+
+    if (!copiedCitations.length) {
+      return text;
+    }
+
+    const references = copiedCitations
+      .map(function (entry) {
+        const reference = formatCitationReferencePlain(entry.source);
+        return reference ? ("[" + entry.label + "] " + reference) : "";
+      })
+      .filter(Boolean);
+
+    if (!references.length) {
+      return text;
+    }
+
+    return text + "\n\n" + references.join("\n");
   }
 
   function isOpen(annotation) {
