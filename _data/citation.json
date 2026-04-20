@@ -15250,5 +15250,192 @@
       "body-composition",
       "calorie-balance"
     ]
+  },
+  "gielen-2014-heritability-and-genetic-etiology-of-habitual-physical-activity": {
+    "id": "gielen-2014-heritability-and-genetic-etiology-of-habitual-physical-activity",
+    "type": "journal-article",
+    "title": "Heritability and genetic etiology of habitual physical activity: a twin study with objective measures",
+    "short_title": "Heritability and genetic etiology of habitual physical activity",
+    "authors": [
+      {
+        "literal": "M. Gielen"
+      },
+      {
+        "literal": "M. S. Westerterp-Plantenga"
+      },
+      {
+        "literal": "F. G. Bouwman"
+      },
+      {
+        "literal": "A. M. C. P. Joosen"
+      },
+      {
+        "literal": "R. Vlietinck"
+      },
+      {
+        "literal": "C. Derom"
+      },
+      {
+        "literal": "M. P. Zeegers"
+      },
+      {
+        "literal": "E. C. M. Mariman"
+      },
+      {
+        "literal": "K. R. Westerterp"
+      }
+    ],
+    "container_title": "Genes & Nutrition",
+    "issued": {
+      "year": 2014
+    },
+    "year": 2014,
+    "volume": "9",
+    "pages": "415",
+    "doi": "10.1007/s12263-014-0415-5",
+    "doi_newtab": true,
+    "tags": [
+      "calorie-balance",
+      "environment-design"
+    ]
+  },
+  "fazzino-2022-reinforcing-natures-of-hyper-palatable-foods": {
+    "id": "fazzino-2022-reinforcing-natures-of-hyper-palatable-foods",
+    "type": "journal-article",
+    "title": "The Reinforcing Natures of Hyper-Palatable Foods: Behavioral Evidence for Their Reinforcing Properties and the Role of the US Food Industry in Promoting Their Availability",
+    "short_title": "The Reinforcing Natures of Hyper-Palatable Foods",
+    "authors": [
+      {
+        "literal": "Tera L. Fazzino"
+      }
+    ],
+    "container_title": "Current Addiction Reports",
+    "issued": {
+      "year": 2022
+    },
+    "year": 2022,
+    "volume": "9",
+    "issue": "3",
+    "pages": "298-306",
+    "doi": "10.1007/s40429-022-00417-8",
+    "doi_newtab": true,
+    "tags": [
+      "food-quality",
+      "satiety",
+      "environment-design"
+    ]
+  },
+  "fazzino-2023-ad-libitum-meal-energy-intake-hyper-palatable-food": {
+    "id": "fazzino-2023-ad-libitum-meal-energy-intake-hyper-palatable-food",
+    "type": "journal-article",
+    "title": "Ad libitum meal energy intake is positively influenced by energy density, eating rate and hyper-palatable food across four dietary patterns",
+    "short_title": "Ad libitum meal energy intake and hyper-palatable food",
+    "authors": [
+      {
+        "literal": "Tera L. Fazzino"
+      },
+      {
+        "literal": "Amber B. Courville"
+      },
+      {
+        "literal": "Juen Guo"
+      },
+      {
+        "literal": "Kevin D. Hall"
+      }
+    ],
+    "container_title": "Nature Food",
+    "issued": {
+      "year": 2023
+    },
+    "year": 2023,
+    "volume": "4",
+    "issue": "2",
+    "pages": "144-147",
+    "doi": "10.1038/s43016-022-00688-4",
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "food-quality",
+      "satiety"
+    ]
+  },
+  "drewnowski-1998-energy-density-palatability-and-satiety": {
+    "id": "drewnowski-1998-energy-density-palatability-and-satiety",
+    "type": "journal-article",
+    "title": "Energy Density, Palatability, and Satiety: Implications for Weight Control",
+    "short_title": "Energy Density, Palatability, and Satiety",
+    "authors": [
+      {
+        "literal": "Adam Drewnowski"
+      }
+    ],
+    "container_title": "Nutrition Reviews",
+    "issued": {
+      "year": 1998
+    },
+    "year": 1998,
+    "volume": "56",
+    "issue": "12",
+    "pages": "347-353",
+    "doi": "10.1111/j.1753-4887.1998.tb01677.x",
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance",
+      "food-quality",
+      "satiety"
+    ]
+  },
+  "moghetti-2016-insulin-resistance-and-pcos": {
+    "id": "moghetti-2016-insulin-resistance-and-pcos",
+    "type": "journal-article",
+    "title": "Insulin Resistance and Polycystic Ovary Syndrome",
+    "short_title": "Insulin Resistance and Polycystic Ovary Syndrome",
+    "authors": [
+      {
+        "literal": "Paolo Moghetti"
+      }
+    ],
+    "container_title": "Current Pharmaceutical Design",
+    "issued": {
+      "year": 2016
+    },
+    "year": 2016,
+    "volume": "22",
+    "issue": "36",
+    "pages": "5526-5534",
+    "doi": "10.2174/1381612822666160720155855",
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
+  },
+  "dunaif-1997-insulin-resistance-and-pcos-mechanism": {
+    "id": "dunaif-1997-insulin-resistance-and-pcos-mechanism",
+    "type": "journal-article",
+    "title": "Insulin resistance and the polycystic ovary syndrome: mechanism and implications for pathogenesis",
+    "short_title": "Insulin resistance and the polycystic ovary syndrome",
+    "authors": [
+      {
+        "literal": "Andrea Dunaif"
+      }
+    ],
+    "container_title": "Endocrine Reviews",
+    "issued": {
+      "year": 1997
+    },
+    "year": 1997,
+    "volume": "18",
+    "issue": "6",
+    "pages": "774-800",
+    "doi": "10.1210/edrv.18.6.0318",
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "calorie-balance"
+    ]
   }
 }

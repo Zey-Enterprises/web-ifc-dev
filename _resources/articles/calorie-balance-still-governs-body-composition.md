@@ -6,7 +6,7 @@ author: "Arthur Zey"
 date: 2026-04-12
 last_modified_at: 2026-04-19
 excerpt: "Body composition is governed by calorie balance, while diet quality, hormones, sleep, stress, genetics, the microbiome, and environment matter by changing calorie intake, absorption, expenditure, and partitioning."
-tldr: "Most debates in nutrition are not about whether calorie balance matters, but about what influences it. That distinction matters because calorie balance is the main driver, while the other factors are important but secondary modifiers. If you prioritize the main lever first and layer in refinements second, body composition becomes much easier to understand and manage."
+tldr: "Most nutrition debates go wrong by treating factors like hormones, diet quality, sleep, stress, genetics, and the microbiome as alternatives to calorie balance. They aren't. They matter, but they operate through energy balance, not instead of it. Body composition is governed by calorie balance, and progress becomes far clearer when you treat it as the central constraint and everything else as inputs into that system."
 domains:
   - diet
   - physical-exercise
@@ -84,6 +84,12 @@ citations:
   "48": deng-2013-effects-of-antipsychotic-medications-on-appetite-weight-and-insulin-resistance
   "49": lambrinoudaki-2012-emas-position-statement
   "50": davis-2012-understanding-weight-gain-at-menopause
+  "51": gielen-2014-heritability-and-genetic-etiology-of-habitual-physical-activity
+  "52": fazzino-2022-reinforcing-natures-of-hyper-palatable-foods
+  "53": fazzino-2023-ad-libitum-meal-energy-intake-hyper-palatable-food
+  "54": drewnowski-1998-energy-density-palatability-and-satiety
+  "55": moghetti-2016-insulin-resistance-and-pcos
+  "56": dunaif-1997-insulin-resistance-and-pcos-mechanism
 ---
 
 Everyone wants the clever, easy answer. And especially in the last decade or two, there has been no dearth of respectable-sounding, sophisticated arguments about what "really" drives body composition changes and how "this one weird trick 'they' don't want you to know about" can fix your bodyweight woes.
@@ -156,7 +162,7 @@ In a tightly controlled inpatient study often described as "ultra-processed vs u
 
 The key mechanism is not the label or how the foods were processed.
 
-It is that those foods increase eating rate, reduce satiety per calorie, and increase reward value.{% include citation.html label="3" %}
+It is that those foods are easier to eat quickly and tend to promote higher energy intake{% include citation.html label="53" %}, can reduce satiety per calorie{% include citation.html label="54" %}, and often have stronger reinforcing or reward properties{% include citation.html label="52" %}.
 
 That makes calorie surplus easier.
 
@@ -302,7 +308,7 @@ These effects show up across both sides of {% include glossary.html id="calorie-
 
 On the "{% include glossary.html id="calories-in" %}" side, genetic variation can affect hunger and satiety signaling (eg, {% include glossary.html id="leptin" %} and {% include glossary.html id="ghrelin" %} pathways), reward sensitivity to food ({% include glossary.html id="dopaminergic" %} response), and psychological traits like impulsivity or food preoccupation. Some individuals experience stronger cravings, weaker satiety signals, or a higher drive to seek out energy-dense foods, making sustained calorie control more difficult in practice.{% include citation.html label="5" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="18" %}
 
-On the "{% include glossary.html id="calories-out" %}" side, genetics can influence resting metabolic rate, but more importantly, they can affect spontaneous activity levels ({% include glossary.html id="neat" %}).{% include citation.html label="12" %} Some individuals unconsciously burn significantly more energy through movement than others, even at similar body sizes and activity levels.
+On the "{% include glossary.html id="calories-out" %}" side, genetics can influence resting metabolic rate, but more importantly, they can affect spontaneous activity levels ({% include glossary.html id="neat" %}).{% include citation.html label="51" %} Some individuals unconsciously burn significantly more energy through movement than others, even at similar body sizes and activity levels.
 
 Genetic differences can also shape hormonal and regulatory responses: how the body adapts to overfeeding or dieting, affecting hunger increases, metabolic slowdown, and the strength of compensatory responses over time. These are not trivial effects; they can meaningfully change how difficult it is to maintain a deficit or surplus.
 
@@ -314,17 +320,11 @@ So when two people eat what looks like "the same" diet and see different results
 
 No discussion of body composition would be complete without acknowledging medications, {% include glossary.html id="endocrine" %} conditions, and broader clinical factors. These are among the most commonly cited "exceptions" to {% include glossary.html id="calorie-balance" %}—and they are often real, meaningful influences.
 
-Examples include
+These influences can meaningfully affect body composition without displacing the underlying role of {% include glossary.html id="calorie-balance" %}. Medications, {% include glossary.html id="endocrine" %} conditions, and life-stage hormonal shifts can all alter appetite, satiety, fluid balance, metabolic rate, {% include glossary.html id="insulin-sensitivity" %}, and activity levels. For example, {% include glossary.html id="glp-1-agonists" %} reduce appetite and caloric intake{% include citation.html label="38" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="39" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="40" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="41" %}, while {% include glossary.html id="corticosteroids" %} can increase hunger and impair eating control through hormonal pathways{% include citation.html label="42" %}. Thyroid disorders, including {% include glossary.html id="hypothyroidism" %} and {% include glossary.html id="hyperthyroidism" %}, can alter resting metabolic rate{% include citation.html label="27" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="43" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="44" %}.
 
-* medications such as {% include glossary.html id="glp-1-agonists" text="GLP-1 receptor agonists" %}, {% include glossary.html id="corticosteroids" %}, antipsychotics, and some antidepressants (including {% include glossary.html id="ssri" text="SSRIs" %})
-* {% include glossary.html id="endocrine" %} conditions such as {% include glossary.html id="hypothyroidism" %}, {% include glossary.html id="hyperthyroidism" %}, and polycystic ovary syndrome ({% include glossary.html id="pcos" %})
-* life-stage hormonal shifts such as {% include glossary.html id="menopause" %}
+Certain psychiatric medications also matter here. In particular, antipsychotics and some antidepressants, including {% include glossary.html id="ssri" text="SSRIs" %}, are associated with increased food intake and weight gain{% include citation.html label="45" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="46" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="47" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="48" %}. {% include glossary.html id="endocrine" text="Endocrine" %} and reproductive conditions can create more specific challenges as well. {% include glossary.html id="pcos" %} is often associated with insulin resistance{% include citation.html label="55" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="56" %} and body-composition difficulties{% include citation.html label="28" %}, while {% include glossary.html id="menopause" %} can shift body composition in a less favorable direction, with greater total and central fat accumulation becoming more common across the menopausal transition{% include citation.html label="49" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="50" %}.
 
-These factors can have substantial effects on appetite, satiety, fluid balance, metabolic rate, {% include glossary.html id="insulin-sensitivity" %}, and activity levels. For instance, {% include glossary.html id="glp-1-agonists" %} reduce appetite and caloric intake{% include citation.html label="38" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="39" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="40" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="41" %}, while {% include glossary.html id="corticosteroids" %} can increase hunger and impair eating control through hormonal pathways{% include citation.html label="42" %}. Thyroid disorders can alter resting metabolic rate{% include citation.html label="27" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="43" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="44" %}, and certain psychiatric medications, especially antipsychotics and some antidepressants, are associated with increased food intake and weight gain{% include citation.html label="45" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="46" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="47" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="48" %}. Endocrine and reproductive conditions can also create more specific challenges. {% include glossary.html id="pcos" %} is often associated with insulin resistance and body-composition difficulties.{% include citation.html label="28" %} Menopause can also shift body composition in a less favorable direction, with greater total and central fat accumulation becoming more common across the menopausal transition{% include citation.html label="49" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html label="50" %}.
-
-These are not trivial effects. In many cases, they can significantly change how difficult it is to maintain a given {% include glossary.html id="calorie-balance" %} or how the body responds to a surplus or deficit.
-
-But even here, the underlying mechanism remains the same. These factors influence body composition by shifting {% include glossary.html id="calories-in" %}, {% include glossary.html id="calories-out" %}, {% include glossary.html id="absorption" %}, and {% include glossary.html id="partitioning" %}, not by replacing the system altogether.
+These are not trivial effects. In many cases, they can significantly change how difficult it is to maintain a given {% include glossary.html id="calorie-balance" %} or how the body responds to a surplus or deficit. But even here, the underlying mechanism remains the same: these factors influence body composition by shifting {% include glossary.html id="calories-in" %}, {% include glossary.html id="calories-out" %}, {% include glossary.html id="absorption" %}, and {% include glossary.html id="partitioning" %}, not by replacing the system altogether.
 
 This is also where it becomes important to distinguish between body composition goals and clinical health management. Individuals dealing with medical conditions should always prioritize guidance from qualified healthcare professionals. The goal in those contexts is not just fat loss or muscle gain, but overall health and risk management.
 
