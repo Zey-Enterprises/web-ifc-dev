@@ -81,8 +81,23 @@ The cost of external apps, tools, services, subscriptions, gym memberships, labs
 - Choose **Intensive** if you want close support, faster iteration, or help through a more demanding season.
 
 <div class="ifc-panel" markdown="1">
+
 ## Next steps
 
-[Review coaching agreement](/TEMP/){:target="&lowbar;blank"}{:.ifc-button .ifc-button--secondary}
+[Understand the approach](/approach/){:.ifc-button .ifc-button--secondary}
+[Review coaching agreement](/agreement/){:target="&lowbar;blank"}{:.ifc-button .ifc-button--secondary}
 [Apply for coaching](/apply/){:.ifc-button}
+
+If you are unsure whether coaching is the right fit, or you want to talk things through before completing the intake, you can book a free 15-minute consultation.
+
+This is a brief conversation to clarify what you are looking for, whether coaching makes sense, and what the next step should be.
+
+{% include google_scheduling_proxy_button.html
+  id="apply-consultation-scheduler"
+  url="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2tFT1hAw7raJYeKLT9fHtAHbhWkhgCn78WIcANGUt-f-fOxlHb5gJBFuzF5g9zwHsVT524pONP?gv=true"
+  label="Book a consultation"
+  class="ifc-button ifc-button--secondary"
+  color="#039BE5"
+%}
+
 </div>

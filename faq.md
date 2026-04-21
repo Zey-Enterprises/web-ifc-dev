@@ -20,9 +20,9 @@ One recurring theme below is sustainability. This practice is explicitly not bui
 {% endfor %}
 
 <div class="ifc-panel" markdown="1">
-## Still unsure?
+## Ready for next steps?
 
-If your situation is unusual, the application is still the right starting point. It gives enough context to say honestly whether coaching is a good fit.
-
+[Understand the approach](/approach/){:.ifc-button .ifc-button--secondary}
+[Review pricing](/pricing/){:.ifc-button .ifc-button--secondary}
 [Apply for coaching](/apply/){:.ifc-button}
 </div>
