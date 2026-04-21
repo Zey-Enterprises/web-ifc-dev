@@ -3,7 +3,7 @@ title: "Frequently Asked Questions"
 permalink: /faq/
 description: "Frequently asked questions about coaching, scope, results, and fit."
 header:
-  overlay_image: /assets/images/ifc-faq-hero-banner-1.jpg
+  # overlay_image: /assets/images/ifc-faq-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
 ---
 
