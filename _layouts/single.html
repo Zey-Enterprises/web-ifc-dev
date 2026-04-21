@@ -2,8 +2,14 @@
 layout: default
 ---
 {%- assign locale = page.locale | default: layout.locale | default: site.locale -%}
+{%- capture auto_overlay_image -%}{% include resolve_page_image.html page=page bucket="overlay" %}{%- endcapture -%}
+{%- assign auto_overlay_image = auto_overlay_image | strip -%}
+{%- assign has_overlay_hero = false -%}
+{%- if page.header.overlay_color or page.header.overlay_image or page.header.overlay_images or auto_overlay_image != "" -%}
+  {%- assign has_overlay_hero = true -%}
+{%- endif -%}
 
-{% if page.header.overlay_color or page.header.overlay_image or page.header.overlay_images or page.header.image %}
+{% if has_overlay_hero or page.header.image %}
   {% include page__hero.html locale=locale %}
 {% elsif page.header.video.id and page.header.video.provider %}
   {% include page__hero_video.html %}
@@ -37,7 +43,7 @@ layout: default
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
 
     <div class="page__inner-wrap">
-      {% unless page.header.overlay_color or page.header.overlay_image or page.header.overlay_images %}
+      {% unless has_overlay_hero %}
         <header>
           {% if page.title -%}
           <h1 id="page-title" class="page__title p-name" itemprop="headline">

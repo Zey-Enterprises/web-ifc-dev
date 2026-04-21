@@ -1,0 +1,57 @@
+{% comment %}
+Resolve a convention-based page image path if a matching static file exists.
+
+Parameters:
+- page: optional page/document object. Defaults to the current page.
+- bucket: required logical bucket under /assets/images/ (for example: overlay or og)
+
+Filename convention:
+- root page `faq.md` -> /assets/images/<bucket>/faq.{webp,jpg,png}
+- collection doc `_resources/articles/example.md`
+  -> /assets/images/<bucket>/resources_articles_example.{webp,jpg,png}
+
+Priority of callers should be:
+1. explicit front matter value
+2. resolved auto image from this include
+
+This include outputs the resolved relative path or nothing.
+{% endcomment %}
+
+{%- assign image_page = include.page | default: page -%}
+{%- assign image_bucket = include.bucket | default: "" | strip -%}
+{%- assign image_page_path = image_page.path | default: "" | strip -%}
+
+{%- if image_bucket != "" and image_page_path != "" -%}
+  {%- assign image_extensions = "webp,jpg,png" | split: "," -%}
+  {%- assign image_path_parts = image_page_path | split: "/" -%}
+
+  {%- capture image_stem -%}
+    {%- assign image_stem_started = false -%}
+    {%- for raw_part in image_path_parts -%}
+      {%- assign normalized_part = raw_part
+        | replace: ".markdown", ""
+        | replace: ".md", ""
+        | replace: ".html", ""
+        | replace: ".htm", ""
+        | remove_first: "_"
+        | strip
+      -%}
+      {%- if normalized_part != "" -%}
+        {%- if image_stem_started -%}_{%- endif -%}{{ normalized_part }}{%- assign image_stem_started = true -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+
+  {%- assign image_stem = image_stem | strip -%}
+
+  {%- if image_stem != "" -%}
+    {%- for image_extension in image_extensions -%}
+      {%- assign candidate_path = "/assets/images/" | append: image_bucket | append: "/" | append: image_stem | append: "." | append: image_extension -%}
+      {%- assign matching_files = site.static_files | where_exp: "file", "file.path == candidate_path" -%}
+      {%- if matching_files and matching_files.size > 0 -%}
+        {{ candidate_path }}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endif -%}

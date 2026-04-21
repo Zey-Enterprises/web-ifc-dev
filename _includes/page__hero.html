@@ -20,11 +20,24 @@
   - header.overlay_title
   - header.background_position
   - header.mobile_background_position
+  - automatic overlay image fallback via /assets/images/overlay/<derived-page-key>.{webp,jpg,png}
   - header.overlay_images
     - image
     - background_position
     - mobile_background_position
   - header.overlay_interval (milliseconds)
+
+  <derived-page-key> is determined from page.path by:
+  1. removing the file extension
+  2. splitting the remaining path on "/"
+  3. removing a single leading "_" from each path segment
+  4. joining the normalized segments with "_"
+
+  Examples:
+  - faq.md -> faq
+  - about.md -> about
+  - _resources/articles/calorie-balance-still-governs-body-composition.md
+    -> resources_articles_calorie-balance-still-governs-body-composition
 
   background_position and mobile_background_position accept any valid CSS
   background-position string, for example:
@@ -37,6 +50,8 @@
 {% endcomment %}
 {%- assign hero = page.header -%}
 {%- assign overlay_images = hero.overlay_images -%}
+{%- capture auto_overlay_image -%}{% include resolve_page_image.html page=page bucket="overlay" %}{%- endcapture -%}
+{%- assign auto_overlay_image = auto_overlay_image | strip -%}
 {%- assign overlay_image = hero.overlay_image -%}
 {%- assign overlay_position = hero.background_position | default: "center" -%}
 {%- assign mobile_overlay_position = hero.mobile_background_position -%}
@@ -49,6 +64,8 @@
   {%- assign overlay_image = overlay_images[0].image -%}
   {%- assign overlay_position = overlay_images[0].background_position | default: overlay_position -%}
   {%- assign mobile_overlay_position = overlay_images[0].mobile_background_position | default: mobile_overlay_position -%}
+{%- elsif overlay_image == nil -%}
+  {%- assign overlay_image = auto_overlay_image -%}
 {%- endif -%}
 
 {%- capture overlay_filter_css -%}
