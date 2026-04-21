@@ -1,7 +1,7 @@
 {% assign document = post | default: page %}
 {% if document.share %}
   {% assign share_config = site.social_share %}
-  {% assign share_label = share_config.label | default: "Share:" %}
+  {% assign share_label = share_config.label | default: "" %}
   {% assign share_message_template = share_config.message | default: "Check this out from {account}!" %}
   {% assign share_path = document.url | relative_url %}
   {% assign share_url = site.url | append: share_path %}
@@ -188,7 +188,9 @@
       data-share-popup-width="620"
       data-share-popup-height="540"
     >
-      <span class="ifc-page-share__label">{{ share_label }}</span>
+      {% if share_label != "" %}
+        <span class="ifc-page-share__label">{{ share_label }}</span>
+      {% endif %}
       <span class="ifc-page-share__links">
         {{ rendered_share_links }}
         <span class="ifc-permalink-toast ifc-page-share__toast" data-share-feedback hidden aria-live="polite">Copied to clipboard</span>

@@ -155,7 +155,7 @@ footer:
       newtab: true
 
 social_share:
-  label: "Share:"
+  # label: "Share:"
   providers:
     - x
     - facebook
