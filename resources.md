@@ -332,8 +332,26 @@ header:
         {% assign result_type_label = "Article" %}
         {% assign result_published = item.date %}
         {% assign result_updated = item.last_modified_at | default: item.date %}
+        {% assign result_author_name = nil %}
         {% assign result_summary = item.excerpt | default: item.description | strip_html | truncate: 180 %}
         {% assign include_result = true %}
+
+        {% if item.author %}
+          {% if site.data.authors and site.data.authors[item.author] %}
+            {% assign result_author_name = site.data.authors[item.author].name | default: site.data.authors[item.author] %}
+          {% else %}
+            {% assign result_author_name = item.author %}
+          {% endif %}
+        {% elsif item.authors and item.authors.size > 0 %}
+          {% assign primary_author = item.authors[0] %}
+          {% if site.data.authors and site.data.authors[primary_author] %}
+            {% assign result_author_name = site.data.authors[primary_author].name | default: site.data.authors[primary_author] %}
+          {% else %}
+            {% assign result_author_name = primary_author %}
+          {% endif %}
+        {% elsif site.author %}
+          {% assign result_author_name = site.author.name | default: site.author %}
+        {% endif %}
 
         {% if item.format == "visual-media" %}
           {% assign media_item = site.data.visual-media | where: "id", item.slug | first %}
@@ -374,8 +392,34 @@ header:
           >
             <div class="ifc-resource-result__meta">
               <p class="ifc-resource-card__eyebrow">{{ result_type_label }}</p>
-              {% if result_published %}
-                <p class="ifc-resource-result__date">{{ result_published | date: site.date_format }}</p>
+              {% if result_format_value == "article" %}
+                <ul class="ifc-resource-result__meta-list" role="list">
+                  {% if result_author_name %}
+                    <li class="ifc-resource-result__meta-item">
+                      <i class="fas fa-user" aria-hidden="true"></i>
+                      <span>{{ result_author_name }}</span>
+                    </li>
+                  {% endif %}
+                  {% if result_published %}
+                    <li class="ifc-resource-result__meta-item" title="Published date">
+                      <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                      <time datetime="{{ result_published | date_to_xmlschema }}">{{ result_published | date: site.date_format }}</time>
+                    </li>
+                  {% endif %}
+                  {% if item.last_modified_at %}
+                    <li class="ifc-resource-result__meta-item" title="Last modified date">
+                      <i class="fas fa-history" aria-hidden="true"></i>
+                      <time datetime="{{ item.last_modified_at | date_to_xmlschema }}">{{ item.last_modified_at | date: site.date_format }}</time>
+                    </li>
+                  {% endif %}
+                </ul>
+              {% elsif result_published %}
+                <ul class="ifc-resource-result__meta-list" role="list">
+                  <li class="ifc-resource-result__meta-item" title="Published date">
+                    <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                    <time datetime="{{ result_published | date_to_xmlschema }}">{{ result_published | date: site.date_format }}</time>
+                  </li>
+                </ul>
               {% endif %}
             </div>
             <div class="ifc-resource-result__body">
