@@ -1027,7 +1027,61 @@ body {
   box-shadow: 0 16px 30px rgba(7, 14, 20, 0.28);
 }
 
+.ifc-pagination {
+  margin-top: 2rem;
+}
+
+.ifc-pagination__actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.ifc-pagination__button {
+  width: 100%;
+  margin: 0;
+}
+
+.ifc-pagination__button--prev {
+  justify-self: start;
+  justify-content: center;
+}
+
+.ifc-pagination__button--archive {
+  justify-self: center;
+  width: auto;
+}
+
+.ifc-pagination__button--next {
+  justify-self: end;
+  justify-content: center;
+}
+
+.ifc-pagination__button--placeholder {
+  visibility: hidden;
+  pointer-events: none;
+}
+
 @media (max-width: 767px) {
+  .ifc-pagination__actions {
+    grid-template-columns: 1fr;
+  }
+
+  .ifc-pagination__button,
+  .ifc-pagination__button--archive,
+  .ifc-pagination__button--prev,
+  .ifc-pagination__button--next {
+    justify-self: stretch;
+    width: 100%;
+  }
+
+  .ifc-pagination__button--placeholder {
+    display: none;
+  }
+
   .page__content p > .ifc-button:first-child:nth-last-child(n + 2),
   .page__content p > .ifc-button:first-child:nth-last-child(n + 2) ~ .ifc-button {
     display: flex;
@@ -1039,6 +1093,7 @@ body {
   .page__content p > .ifc-button:first-child:nth-last-child(n + 2) ~ .ifc-button:last-child {
     margin-bottom: 0;
   }
+
 }
 
 .ifc-grid {

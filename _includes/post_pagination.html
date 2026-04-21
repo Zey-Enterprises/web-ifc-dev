@@ -1,0 +1,48 @@
+{% assign previous = page.previous %}
+{% assign next = page.next %}
+{% assign archive_url = nil %}
+{% assign archive_label = nil %}
+{% assign testimonial_count = site.testimonials | size %}
+{% assign case_study_count = site.case_studies | size %}
+
+{% case page.collection %}
+  {% when "testimonials" %}
+    {% if case_study_count > 0 %}
+      {% assign archive_url = "/results/testimonials/" | relative_url %}
+    {% else %}
+      {% assign archive_url = "/results/" | relative_url %}
+    {% endif %}
+    {% assign archive_label = "All Testimonials" %}
+  {% when "case_studies" %}
+    {% if testimonial_count > 0 %}
+      {% assign archive_url = "/results/case-studies/" | relative_url %}
+    {% else %}
+      {% assign archive_url = "/results/" | relative_url %}
+    {% endif %}
+    {% assign archive_label = "All Case Studies" %}
+  {% when "posts" %}
+    {% assign archive_url = "/resources/articles/" | relative_url %}
+    {% assign archive_label = "All Articles" %}
+{% endcase %}
+
+{% if previous or next or archive_url %}
+  <nav class="ifc-pagination" aria-label="Page navigation">
+    <div class="ifc-pagination__actions">
+      {% if previous %}
+        <a href="{{ previous.url | relative_url }}" class="ifc-button ifc-button--secondary ifc-pagination__button ifc-pagination__button--prev" rel="prev">← Previous</a>
+      {% else %}
+        <span class="ifc-button ifc-button--secondary ifc-pagination__button ifc-pagination__button--prev ifc-pagination__button--placeholder" aria-hidden="true"></span>
+      {% endif %}
+
+      {% if archive_url %}
+        <a href="{{ archive_url }}" class="ifc-button ifc-button--secondary ifc-pagination__button ifc-pagination__button--archive">{{ archive_label }}</a>
+      {% endif %}
+
+      {% if next %}
+        <a href="{{ next.url | relative_url }}" class="ifc-button ifc-button--secondary ifc-pagination__button ifc-pagination__button--next" rel="next">Next →</a>
+      {% else %}
+        <span class="ifc-button ifc-button--secondary ifc-pagination__button ifc-pagination__button--next ifc-pagination__button--placeholder" aria-hidden="true"></span>
+      {% endif %}
+    </div>
+  </nav>
+{% endif %}

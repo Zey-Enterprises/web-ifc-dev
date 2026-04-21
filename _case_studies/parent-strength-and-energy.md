@@ -1,6 +1,7 @@
 ---
-title: "Case Study: Strength and Energy for a Parent with Limited Time"
+title: "SAMPLE: Case Study: Strength and Energy for a Parent with Limited Time"
 sort_order: 2
+published: false
 ---
 
 ## Starting point

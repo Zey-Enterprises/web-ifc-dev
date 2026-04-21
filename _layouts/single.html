@@ -25,6 +25,10 @@ layout: default
   {% if page.collection == "resources" %}
     {% assign is_resource_page = true %}
   {% endif %}
+  {% assign is_results_entry = false %}
+  {% if page.collection == "testimonials" or page.collection == "case_studies" %}
+    {% assign is_results_entry = true %}
+  {% endif %}
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | replace: '|', '&#124;' | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
@@ -65,17 +69,19 @@ layout: default
         {% endif %}
       </section>
 
-      <footer class="page__meta">
-        {% if site.data.ui-text[locale].meta_label %}
-          <h4 class="page__meta-title">{{ site.data.ui-text[locale].meta_label }}</h4>
-        {% endif %}
-        {% if is_resource_page %}
-          {% include resource_taxonomy.html document=page %}
-        {% else %}
-          {% include page__taxonomy.html locale=locale %}
-          {% include page__date.html locale=locale %}
-        {% endif %}
-      </footer>
+      {% unless is_results_entry %}
+        <footer class="page__meta">
+          {% if site.data.ui-text[locale].meta_label %}
+            <h4 class="page__meta-title">{{ site.data.ui-text[locale].meta_label }}</h4>
+          {% endif %}
+          {% if is_resource_page %}
+            {% include resource_taxonomy.html document=page %}
+          {% else %}
+            {% include page__taxonomy.html locale=locale %}
+            {% include page__date.html locale=locale %}
+          {% endif %}
+        </footer>
+      {% endunless %}
 
       {% unless is_resource_page %}
         {% include post_pagination.html locale=locale %}

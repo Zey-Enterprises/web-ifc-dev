@@ -1,6 +1,7 @@
 ---
-title: "Case Study: Fat Loss for a Busy Executive"
+title: "SAMPLE: Case Study: Fat Loss for a Busy Executive"
 sort_order: 1
+published: false
 ---
 
 ## Starting point
