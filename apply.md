@@ -3,7 +3,7 @@ title: "Apply for Coaching"
 permalink: /apply/
 excerpt: "Choose the right next step: apply directly, review the details, or schedule a brief consultation."
 header:
-  overlay_image: /assets/images/ifc-apply-hero-banner-1.jpg
+  # overlay_image: /assets/images/ifc-apply-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
   actions:
     - label: Open intake form

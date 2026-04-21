@@ -1,11 +1,11 @@
 ---
 title: "Resources"
-classes: hide-title
+# classes: hide-title
 permalink: /resources/
 description: "A unified resource library for articles, visual media, and glossary-based learning."
 tagline: "This library is organized around durable ideas, practical problems, and reusable concepts so written pieces and visual media reinforce each other instead of living in separate silos."
 header:
-  overlay_image: /assets/images/ifc-resources-hero-banner-1.jpg
+  # overlay_image: /assets/images/ifc-resources-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
   kicker: Resource library
   actions:

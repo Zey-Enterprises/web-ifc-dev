@@ -4,7 +4,7 @@ permalink: /resources/references/
 description: "Single-page reference library for the citations used across the resource library."
 header:
   # kicker: References
-  overlay_image: /assets/images/ifc-references-hero-banner-1.jpg
+  # overlay_image: /assets/images/ifc-references-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.7), rgba(17, 33, 45, 0.22))
   actions:
   - label: ← Back to All Resources

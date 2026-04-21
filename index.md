@@ -10,11 +10,11 @@ header:
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.56), rgba(17, 33, 45, 0.21))
   overlay_interval: 3000
   overlay_images:
-    - image: /assets/images/ifc-hero-banner-weightlifting-2.jpg
-    - image: /assets/images/ifc-hero-banner-nutrition-3.jpg
-    - image: /assets/images/ifc-hero-banner-mindfulness-3.jpg
+    - image: /assets/images/overlay/index-weightlifting.webp
+    - image: /assets/images/overlay/index-nutrition.webp
+    - image: /assets/images/overlay/index-mindfulness.webp
       mobile_background_position: 68% center
-    - image: /assets/images/ifc-hero-banner-reading-1.jpg
+    - image: /assets/images/overlay/index-reading.webp
   actions:
     - label: Apply for coaching
       url: /apply/

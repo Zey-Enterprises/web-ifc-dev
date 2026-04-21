@@ -4,7 +4,7 @@ permalink: /resources/glossary/
 description: "Single-page glossary for recurring concepts across the resource library."
 header:
   # kicker: Glossary
-  overlay_image: /assets/images/ifc-glossary-hero-banner-1.jpg
+  # overlay_image: /assets/images/ifc-glossary-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.7), rgba(17, 33, 45, 0.22))
   actions:
   - label: ← Back to All Resources

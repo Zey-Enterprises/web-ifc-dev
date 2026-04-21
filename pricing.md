@@ -3,7 +3,7 @@ title: "Pricing"
 permalink: /pricing/
 description: "Integrated coaching packages, add-ons, and delivery options."
 header:
-  overlay_image: /assets/images/ifc-pricing-hero-banner-1.jpg
+  # overlay_image: /assets/images/ifc-pricing-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
 ---
 

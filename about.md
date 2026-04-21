@@ -7,12 +7,12 @@ excerpt: "A systems-oriented coach with a background in technology, philosophy, 
 toc_widget: true
 header:
   overlay_title: Arthur Zey
-  overlay_image: /assets/images/ifc-about-hero-banner-3.jpg
+  # overlay_image: /assets/images/ifc-about-hero-banner-3.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
   # background_position: center -10px
   mobile_background_position: 72% center
   kicker: "Integrated Fitness Coach"
-  og_image: /assets/images/ifc-about-social-share-3-1200-630.jpg
+  # og_image: /assets/images/ifc-about-social-share-3-1200-630.jpg
 ---
 
 ## A Systems Thinker Working in a Human Domain

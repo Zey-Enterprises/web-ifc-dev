@@ -3,7 +3,7 @@ title: "Results"
 permalink: /results/
 excerpt: "Realistic, sustainable coaching outcomes."
 header:
-  overlay_image: /assets/images/ifc-results-hero-banner-1.jpg
+  # overlay_image: /assets/images/ifc-results-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
 ---
 

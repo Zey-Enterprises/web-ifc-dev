@@ -27,12 +27,12 @@ tags:
   - sleep
   - recovery
 header:
-  overlay_image: /assets/images/ifc-hero-banner-article-calorie-balance-1.jpg
+  # overlay_image: /assets/images/ifc-hero-banner-article-calorie-balance-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
   # background_position: center -70px
   mobile_background_position: center center
   # kicker: Body composition
-  og_image: /assets/images/ifc-social-share-calorie-balance-1.jpg
+  # og_image: /assets/images/ifc-social-share-calorie-balance-1.jpg
 citations:
   "1": hall-2012-energy-balance
   "2": spiegel-2005-sleep-loss
