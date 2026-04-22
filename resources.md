@@ -393,7 +393,7 @@ header:
             <div class="ifc-resource-result__meta">
               <p class="ifc-resource-card__eyebrow">{{ result_type_label }}</p>
               {% if result_format_value == "article" %}
-                <ul class="ifc-resource-result__meta-list" role="list">
+                <ul class="ifc-resource-result__meta-list ifc-resource-result__meta-list--article" role="list">
                   {% if result_author_name %}
                     <li class="ifc-resource-result__meta-item">
                       <i class="fas fa-user" aria-hidden="true"></i>
