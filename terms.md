@@ -2,10 +2,9 @@
 title: "Terms of Service"
 permalink: /terms/
 date: 2026-04-16
-last_modified_at: 2026-04-16
+last_modified_at: 2026-04-22
 show_modified_date: true
 header:
-  # overlay_image: /assets/images/ifc-legal-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
   actions:
     - label: Privacy Policy
@@ -17,255 +16,210 @@ header:
     - label: Data Deletion
       url: /data-deletion/
       class: btn--light-outline
+    - label: Coaching Agreement
+      url: /coaching-agreement/
+      class: btn--light-outline
+    - label: Liability Waiver and Release of Claims
+      url: /liability-waiver/
+      class: btn--light-outline
 ---
 
 {% assign date_format = site.date_format | default: "%Y-%m-%d" %}
 _Last Updated: {{ page.last_modified_at | date: date_format }}_
 
-Welcome to Integrated Fitness Coaching. These Terms of Service ("Terms") govern your use of this website and any information, content, products, services, or coaching made available through it.
+Welcome to Integrated Fitness Coaching. These Terms of Service ("Terms") govern your access to and use of this website and any related information, content, products, and services made available through it.
 
-By accessing or using this website, you agree to these Terms. If you do not agree, please do not use the site.
+By accessing or using this website, you agree to these Terms. If you do not agree, do not use the site.
 
 ## 1. Who we are
 
-Integrated Fitness Coaching is a brand operated by **Zey Enterprises, LLC**.
+Integrated Fitness Coaching is a brand operated by **Zey Enterprises, LLC**, a Colorado limited liability company.
 
-Throughout these Terms, "Integrated Fitness Coaching," "we," "us," and "our" refer to Zey Enterprises, LLC and its related website and coaching offerings.
+Throughout these Terms, "Integrated Fitness Coaching", "we", "us", and "our" refer to Zey Enterprises, LLC.
 
-## 2. What this website is for
+## 2. Nature of website use
 
-This website is intended to provide information about Integrated Fitness Coaching, including coaching services, educational resources, articles, media, and related content.
+This website provides information, educational content, and access to coaching services.
 
-Use of the website does not by itself create a coaching relationship, client relationship, or any other ongoing professional relationship unless and until you separately enter into a coaching agreement with us.
+Use of this website does not create a coaching relationship, client relationship, or any ongoing professional relationship unless and until you execute a separate written coaching agreement with us.
 
 ## 3. Eligibility
 
-You must be at least 18 years old to use this website or engage coaching services through it, unless a parent or legal guardian is directly involved and any required permissions are in place.
+You must be at least 18 years old to use this website or engage coaching services, unless a parent or legal guardian is directly involved and appropriate permissions are in place.
 
 By using this website, you represent that you have the legal capacity to agree to these Terms.
 
-## 4. Educational content only; no medical, mental health, or legal advice
+## 4. Educational content only; no professional services
 
-The content on this website is provided for general informational and educational purposes only.
+All content on this website is provided for informational and educational purposes only.
 
-Nothing on this website is intended to be, and should not be understood as
+Nothing on this website is intended to constitute:
 
-- medical advice
-- diagnosis or treatment
-- mental health therapy
-- psychiatric care
-- legal advice
-- financial advice
+- medical advice, diagnosis, or treatment  
+- mental health therapy or psychiatric care  
+- medical nutrition therapy  
+- legal advice or legal representation  
+- financial advice  
 
-Integrated Fitness Coaching provides coaching and educational support, not medical care or psychotherapy.
+We provide coaching and educational services only.
 
-You are responsible for consulting an appropriate licensed professional for medical, mental health, legal, financial, or other specialized advice as needed.
+You are solely responsible for seeking advice from appropriately licensed professionals for any medical, psychological, legal, or other specialized matters.
 
 ### Not for emergencies
 
-This website and any coaching services offered through it are not intended for emergencies or crisis support.
+This website and any services offered are not intended for emergency or crisis response.
 
-If you are experiencing a medical emergency, mental health crisis, or any urgent situation requiring immediate assistance, call 911 or contact the appropriate emergency or crisis services in your area.
+If you experience a medical emergency, psychiatric emergency, or urgent situation, contact emergency services or an appropriate licensed professional immediately.
 
 ## 5. Health, fitness, and results disclaimer
 
-Fitness, nutrition, behavior change, emotional regulation, and personal development involve variables that differ from person to person.
+Fitness, nutrition, behavioral change, emotional regulation, and personal development outcomes vary significantly across individuals.
 
-Because of that
+Accordingly:
 
-- results vary
-- no specific outcome is guaranteed
-- your progress depends on many factors, including your health status, consistency, environment, stress load, history, and execution
+- results are not guaranteed  
+- outcomes depend on factors beyond our control  
+- your results depend on your own decisions, actions, health status, environment, and consistency  
 
-Any examples, testimonials, case studies, or descriptions of outcomes are illustrative only and should not be understood as promises, guarantees, or typical results.
+Any examples, testimonials, or descriptions of outcomes are illustrative only and do not constitute promises or guarantees.
 
-You are responsible for using your own judgment and for deciding whether any recommendation, practice, or strategy is appropriate for you.
+## 6. Client responsibility
 
-## 6. Coaching is collaborative, not passive
+You are solely responsible for:
 
-Coaching works best as a collaborative process.
+- your decisions and actions  
+- your health choices  
+- determining whether you are physically and mentally capable of implementing any recommendation  
+- monitoring your own condition and discontinuing any activity you believe to be unsafe  
 
-That means you remain responsible for
+You retain full autonomy over whether and how to implement any recommendation.
 
-- your decisions
-- your actions
-- your health choices
-- your use or non-use of any information provided
-- determining whether you are medically and practically able to implement any recommendation
+## 7. Coaching services and separate agreements
 
-We may offer guidance, structure, feedback, questions, and accountability, but you remain the decision-maker in your own life.
+If you purchase or engage coaching services, those services are governed by:
 
-## 7. No guarantee of availability or continued service
+- a Coaching Agreement  
+- a Liability Waiver and Release of Claims  
+- any applicable addenda, invoices, or written terms  
 
-We may change, suspend, or discontinue any part of the website, any content, or any service offering at any time, with or without notice.
+Those documents are incorporated by reference where applicable.
 
-We are not liable if any portion of the website or service becomes unavailable, is changed, or is withdrawn.
+To the extent there is any conflict, the separately executed Coaching Agreement and Liability Waiver control with respect to coaching services.
 
-## 8. Coaching services may require separate agreement
+## 8. Payments, cancellations, and refunds
 
-If you apply for or purchase coaching services, those services may also be governed by a separate coaching agreement, intake agreement, invoice terms, refund terms, or other written policies.
+If you purchase services, you agree to the pricing, billing, cancellation, refund, and scheduling terms provided at the time of purchase or in the applicable agreement.
 
-If there is any conflict between these Terms and a separately signed coaching agreement, the separately signed coaching agreement will control with respect to the coaching relationship.
+Unless otherwise stated in writing:
 
-## 9. Payment, cancellations, refunds, and rescheduling
+- fees must be paid as specified  
+- missed sessions may be forfeited  
+- refunds are limited and governed by the applicable agreement  
 
-If you purchase any paid service, program, session, or package, you agree to the pricing, billing, scheduling, cancellation, refund, and rescheduling terms presented at the time of purchase or in any separate agreement.
+Failure to make timely payment may result in suspension or termination of services.
 
-Unless otherwise stated in writing,
+## 9. Acceptable use
 
-- fees are due as specified at checkout or in the applicable agreement
-- missed sessions may be forfeited if not cancelled or rescheduled in accordance with the applicable policy
-- refunds are granted only according to the terms specifically stated for the relevant offering
+You agree not to use this website:
 
-## 10. Acceptable use
+- in violation of any law  
+- to interfere with site functionality or security  
+- to attempt unauthorized access  
+- to reproduce or misuse content in violation of these Terms  
+- to transmit malicious code or harmful material  
+- to impersonate others or misrepresent identity  
+- to harass, threaten, or abuse any person  
 
-You agree not to use this website
+We may restrict or terminate access for misuse.
 
-- in violation of any law or regulation
-- to interfere with or disrupt the site or its security
-- to attempt unauthorized access to the site, server, or related systems
-- to scrape, copy, reproduce, or republish site content in a way that violates these Terms
-- to upload malicious code, spam, or harmful content
-- to impersonate another person or misrepresent your identity
-- to harass, threaten, abuse, or defame us or others through the site or related communications
+## 10. Intellectual property
 
-We may restrict, suspend, or terminate access if we believe you are misusing the site.
+All content on this website is owned by or licensed to Zey Enterprises, LLC.
 
-## 11. Intellectual property
+You are granted a limited, non-transferable, non-commercial license to use content for personal purposes only.
 
-Unless otherwise stated, all content on this website is owned by or licensed to Integrated Fitness Coaching / Zey Enterprises, LLC, including
+You may not reproduce, distribute, modify, or commercially exploit any content without prior written permission.
 
-- text
-- graphics
-- branding
-- logos
-- page design
-- custom visuals
-- downloadable materials
-- audio or video content
-- other original site content
+## 11. User submissions
 
-You may view, download, and print limited portions for personal, non-commercial use only.
+If you submit information, feedback, or materials:
 
-You may not, without prior written permission,
+- you represent that you have the right to provide them  
+- you grant us the right to use feedback without obligation  
+- testimonials may be used in accordance with applicable law  
 
-- reproduce
-- republish
-- distribute
-- modify
-- create derivative works from
-- publicly display
-- commercially exploit
+## 12. Third-party services
 
-any site content except as allowed by law.
+This website may link to third-party services.
 
-Sharing links to site content, including sharing any content republished by Integrated Fitness Coaching on social media platforms, is permitted.
+We do not control and are not responsible for third-party content, policies, or practices.
 
-## 12. User submissions and communications
+Your use of third-party services is at your own risk.
 
-If you send us messages, inquiries, application materials, feedback, testimonials, comments, or other submissions, you represent that
+## 13. Privacy
 
-- the information is accurate to the best of your knowledge
-- you have the right to provide it
-- it does not violate the rights of others
+Your use of this website is subject to:
 
-If you provide feedback or suggestions, we may use them without obligation to compensate you.
+- [Privacy Policy](/privacy/)  
+- [Cookie Policy](/cookie-policy/)  
+- [Data Deletion Instructions](/data-deletion/)  
 
-If you submit a testimonial, review, or endorsement, you agree that we may use it in accordance with applicable law and our policies, unless we agree otherwise in writing.
+## 14. No warranties
 
-## 13. Testimonials, endorsements, and social proof
+This website is provided "as is" and "as available".
 
-Any testimonial, endorsement, or review featured on this website reflects the individual experience and opinion of the person giving it.
+To the fullest extent permitted by law, we disclaim all warranties, express or implied, including:
 
-Those experiences are not guarantees of any particular result for any other person.
+- merchantability  
+- fitness for a particular purpose  
+- non-infringement  
+- accuracy or completeness  
+- uninterrupted or error-free operation  
 
-If any testimonial or endorsement involves a material connection that should be disclosed, we may disclose that relationship as appropriate.
+## 15. Limitation of liability
 
-We reserve the right to edit testimonials for length, clarity, grammar, or formatting, provided the meaning is not materially altered.
+To the maximum extent permitted by law, Zey Enterprises, LLC and its members, managers, owners, employees, contractors, agents, representatives, affiliates, successors, and assigns shall not be liable for any claims, damages, losses, or expenses arising out of or relating to:
 
-## 14. Third-party websites, tools, and services
+- use of the website  
+- reliance on content  
+- inability to access the site  
+- third-party services  
+- any information or recommendation provided  
 
-This website may link to third-party websites, apps, tools, platforms, articles, or services, including social platforms, scheduling tools, analytics tools, or other external resources.
+In no event shall we be liable for any indirect, incidental, special, exemplary, or consequential damages.
 
-We do not control those third parties and are not responsible for
+If liability is established notwithstanding the foregoing, total liability shall not exceed the amount paid by you, if any, for the specific service giving rise to the claim.
 
-- their content
-- their security
-- their privacy practices
-- their availability
-- their terms or policies
+Nothing in these Terms limits liability that cannot be limited under applicable law.
 
-Your use of any third-party service is at your own risk and subject to that third party's own terms.
+## 16. Indemnification
 
-## 15. Privacy
+You agree to indemnify, defend, and hold harmless Zey Enterprises, LLC and its members, managers, owners, employees, contractors, agents, representatives, affiliates, successors, and assigns from and against any and all claims, liabilities, damages, losses, costs, and expenses, including reasonable attorneys' fees and costs of defense, arising out of or relating to:
 
-Your use of this website is also subject to our
+- your use of the website  
+- your violation of these Terms  
+- your violation of any law or third-party right  
+- your submissions or communications  
 
-- [Privacy Policy](/privacy/)
-- [Cookie Policy](/cookie-policy/)
-- [Data Deletion Instructions](/data-deletion/)
+## 17. Changes to services
 
-Please review those pages to understand how we handle website-related information.
+We may modify, suspend, or discontinue any part of the website or services at any time without liability.
 
-## 16. No warranties
+## 18. Governing law and dispute resolution
 
-This website and its content are provided on an "as is" and "as available" basis.
+These Terms shall be governed by and construed in accordance with the laws of the State of Colorado.
 
-To the fullest extent permitted by law, we disclaim all warranties, express or implied, including without limitation:
+Any dispute arising out of or relating to these Terms or the website shall be resolved in accordance with the dispute-resolution provisions set forth in any applicable Coaching Agreement, where such agreement exists.
 
-- merchantability
-- fitness for a particular purpose
-- non-infringement
-- accuracy
-- availability
-- uninterrupted access
-- error-free operation
+If no such agreement applies, disputes shall be resolved in the state or federal courts located in Colorado.
 
-We do not warrant that the website will always be available, secure, complete, or free of errors.
+## 19. Changes to these Terms
 
-## 17. Limitation of liability
+We may update these Terms at any time.
 
-To the fullest extent permitted by law, Integrated Fitness Coaching, Zey Enterprises, LLC, and their owners, officers, contractors, affiliates, and representatives will not be liable for any indirect, incidental, consequential, special, exemplary, or punitive damages arising out of or relating to
+Your continued use of the website constitutes acceptance of any updated Terms.
 
-- your use of the website
-- your inability to use the website
-- reliance on website content
-- any coaching-related recommendation or information
-- any third-party links, tools, or services
-- any interruption, error, or security event
-
-To the fullest extent permitted by law, our total liability for any claim arising out of or relating to the website or services will not exceed the amount you paid us, if any, for the specific service giving rise to the claim during the 3 months before the event giving rise to liability.
-
-Nothing in these Terms excludes liability that cannot legally be excluded.
-
-## 18. Indemnification
-
-You agree to defend, indemnify, and hold harmless Integrated Fitness Coaching, Zey Enterprises, LLC, and their owners, officers, contractors, affiliates, and representatives from and against any claims, liabilities, damages, losses, costs, and expenses, including reasonable attorneys' fees, arising out of or relating to
-
-- your misuse of the website
-- your violation of these Terms
-- your violation of any law or third-party right
-- your submissions, communications, or content
-
-## 19. Governing law
-
-These Terms are governed by the laws of the State of Colorado, without regard to conflict-of-law principles.
-
-## 20. Disputes
-
-Any dispute arising out of or relating to these Terms, the website, or related services will first be addressed through good-faith informal efforts to resolve the matter.
-
-If informal resolution is unsuccessful, the dispute will be resolved in the state or federal courts located in Park County, Colorado, and both parties consent to that venue and jurisdiction.
-
-## 21. Changes to these Terms
-
-We may update these Terms from time to time.
-
-When we do, we will update the "Last updated" date above. Your continued use of the website after changes are posted constitutes your acceptance of the updated Terms.
-
-## 22. Contact
-
-If you have questions about these Terms, contact:
+## 20. Contact
 
 Integrated Fitness Coaching  
 Zey Enterprises, LLC  

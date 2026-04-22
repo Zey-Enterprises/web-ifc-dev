@@ -16,6 +16,12 @@ header:
     - label: Data Deletion
       url: /data-deletion/
       class: btn--light-outline
+    - label: Coaching Agreement
+      url: /coaching-agreement/
+      class: btn--light-outline
+    - label: Liability Waiver and Release of Claims
+      url: /liability-waiver/
+      class: btn--light-outline
 ---
 
 Integrated Fitness Coaching does not collect, store, or process personal data through this website beyond what is voluntarily provided by users (eg, contact forms or email communication).

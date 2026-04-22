@@ -1,7 +1,7 @@
 ---
 title: "Data Deletion Instructions"
 permalink: /data-deletion/
-last_modified_at: 2026-04-16
+last_modified_at: 2026-04-22
 show_modified_date: true
 header:
   # overlay_image: /assets/images/ifc-legal-hero-banner-1.jpg
@@ -16,12 +16,56 @@ header:
     - label: Cookie Policy
       url: /cookie-policy/
       class: btn--light-outline
+    - label: Coaching Agreement
+      url: /coaching-agreement/
+      class: btn--light-outline
+    - label: Liability Waiver and Release of Claims
+      url: /liability-waiver/
+      class: btn--light-outline
 ---
 
-Integrated Fitness Coaching does not store personal user data through this application.
+## Data Deletion Requests
 
-If you have interacted with us and would like any associated data removed, you may request deletion by contacting:
+Integrated Fitness Coaching, operated by Zey Enterprises, LLC, does not maintain user accounts or collect personal data through this website beyond information voluntarily submitted through contact forms, email, or in connection with coaching services.
 
-arthur@integratedfitnesscoaching.com
+If you have interacted with us and would like to request deletion of personal information associated with you, you may submit a request by contacting arthur@integratedfitnesscoaching.com.
 
-We will process all requests promptly.
+## Scope of Deletion
+
+We will review and process data deletion requests in accordance with applicable law. This may include deletion of certain personal information where required.
+
+However, we may retain information where permitted or required, including, but not limited to
+
+- records necessary for accounting, tax, or financial reporting  
+- records required for legal, regulatory, or compliance purposes  
+- records necessary to enforce agreements or resolve disputes  
+- coaching-related records reasonably required for continuity, documentation, or professional practice  
+- communications and materials that form part of our business records  
+
+## Limitations
+
+Data deletion is not absolute. Certain information may be retained:
+
+- to comply with legal obligations  
+- to protect our legal rights  
+- to maintain accurate business and historical records  
+
+In some cases, information may be anonymized rather than deleted.
+
+## Processing Requests
+
+We will make reasonable efforts to respond to and process valid requests within a reasonable timeframe, taking into account the nature of the request, applicable legal requirements, and operational constraints.
+
+We may request additional information to verify your identity before processing a request.
+
+## Relationship to Other Agreements
+
+If you are a coaching client, your data may also be governed by your Coaching Agreement and any related documents. In the event of any conflict, those agreements will control with respect to coaching-related records.
+
+## Contact
+
+If you have questions about this policy or would like to submit a request, contact:
+
+Integrated Fitness Coaching  
+Zey Enterprises, LLC  
+arthur@integratedfitnesscoaching.com  

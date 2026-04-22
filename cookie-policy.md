@@ -16,6 +16,12 @@ header:
     - label: Data Deletion
       url: /data-deletion/
       class: btn--light-outline
+    - label: Coaching Agreement
+      url: /coaching-agreement/
+      class: btn--light-outline
+    - label: Liability Waiver and Release of Claims
+      url: /liability-waiver/
+      class: btn--light-outline
 ---
 
 This website uses cookies in a limited and straightforward way.
