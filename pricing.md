@@ -85,7 +85,7 @@ The cost of external apps, tools, services, subscriptions, gym memberships, labs
 ## Next steps
 
 [Understand the approach](/approach/){:.ifc-button .ifc-button--secondary}
-[Review coaching agreement](/agreement/){:target="&lowbar;blank"}{:.ifc-button .ifc-button--secondary}
+[Review coaching agreement](/coaching-agreement/){:.ifc-button .ifc-button--secondary}
 [Apply for coaching](/apply/){:.ifc-button}
 
 If you are unsure whether coaching is the right fit, or you want to talk things through before completing the intake, you can book a free 15-minute consultation.

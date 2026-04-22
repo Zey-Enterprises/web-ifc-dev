@@ -42,7 +42,7 @@ If you have not already done so, you may want to review the following before app
 
 [Pricing and structure](/pricing/){:.ifc-button .ifc-button--secondary}
 
-[Coaching agreement](/agreement/){:target="&lowbar;blank"}{:.ifc-button .ifc-button--secondary}
+[Coaching agreement](/coaching-agreement/){:.ifc-button .ifc-button--secondary}
 
 [Frequently asked questions](/faq/){:.ifc-button .ifc-button--secondary}
 
