@@ -4,6 +4,7 @@ permalink: /terms/
 date: 2026-04-16
 last_modified_at: 2026-04-22
 show_modified_date: true
+toc_widget: true
 header:
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
   actions:

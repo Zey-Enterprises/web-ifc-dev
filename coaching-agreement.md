@@ -4,7 +4,8 @@ permalink: /coaching-agreement/
 date: 2026-04-21
 last_modified_at: 2026-04-21
 show_modified_date: true
-excerpt: This Coaching Agreement is a sample. Your Coaching Agreement may differ.
+toc_widget: true
+excerpt: This Coaching Agreement is the latest draft. Your Coaching Agreement may differ.
 header:
   kicker: Sample
   # overlay_image: /assets/images/ifc-legal-hero-banner-1.jpg
@@ -29,7 +30,7 @@ header:
 
 This fitness coaching agreement ("Agreement") is entered into by and between Zey Enterprises, LLC (DBA Integrated Fitness Coaching), a Colorado limited liability company ("Coach") and \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ("Client"). Arthur Zey shall serve as the designated coach under this Agreement. Coaching will begin on \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ("Agreement Date") and will consist of the services detailed below (the "Services", as described in this Agreement and any applicable Coaching Package Addendum).
 
-# Purpose and Nature of the Relationship
+## Purpose and Nature of the Relationship
 
 The purpose of this Agreement is to define the terms and conditions under which the Coach provides Services to the Client. Fitness coaching is an ongoing relationship and structure that facilitates the process of personal development between the Coach and the Client. The Client and Coach agree to design the coaching relationship together.
 
@@ -48,7 +49,7 @@ The Client acknowledges that the relationship is educational and advisory, and t
 
 In a supportive atmosphere, the Coach helps the Client attain the fitness goals and personal growth he or she is striving for. The effectiveness of coaching depends substantially on the Client's effort, consistency, and judgment.
 
-# Communication
+## Communication
 
 Outside of synchronous meetings that are part of Services, asynchronous communication between Coach and Client (eg, via email, text messaging) is complementary if pertaining to logistics, scheduling, and general checkins. Coaching that discusses, addresses, or pertains substantively to any areas of Fitness Development is subject to the inclusions, limitations, and quotas defined in the Services that Client contracts. If such coaching occurs through asynchronous communication and would exceed the scope of included support, Coach will advise Client in advance of such billable engagement.
 
@@ -56,7 +57,7 @@ The Coach will make every reasonable effort to create audio and video recordings
 
 The Client may also make recordings of meetings, sessions, and other interactions with the Coach, retaining ownership of the Client's own recordings. However, whether made by the Coach or by the Client, any such recordings may be used by the Client solely for personal purposes, including documentation and review, and may not be published, distributed, disclosed to third parties, or otherwise made available publicly without the Coach's advance written consent. At the Coach's request, the Client shall provide the Coach with a copy of any recordings made by the Client relating to the coaching relationship.
 
-# Services
+## Services
 
 The Coach agrees to provide services tailored to the Client's goals, constraints, and preferences. Services may include, but are not limited to:
 
@@ -75,7 +76,7 @@ Unless otherwise agreed in writing or provided for in the Coaching Package Adden
 
 In advance of selecting among Services and signing this Agreement, Client may have received a 15-minute complimentary consultation via voice or video call. If Coach does not advise Client that the complimentary time has been exhausted and that continuing the call beyond 15 minutes has become billable, any extra time spent on the same call will also be free of charge. If Coach *has* advised Client that additional time became billable, Client agrees to deduct from the selected package from among Services in the Coaching Package Addendum that provides for a call allowance or be invoiced at the "Pay-as-You-Go" rate ($\_\_\_\_\_ / hr), billed in 15-minute increments, rounded up. Client agrees that he or she has incurred and will pay $\_\_\_\_\_ in such fees, beyond the selected Services in the Coaching Package Addendum.
 
-# Payment Terms
+## Payment Terms
 
 All fixed-price and monthly Services must be paid in full prior to delivery of any Services. At the discretion of Coach, Pay-as-You-Go Services are billed when the outstanding balance has reached $100, 30 days has elapsed since the last invoice, or at the conclusion of Services. Payment must be received within 5 business days of invoice, unless otherwise agreed in writing. Payments are non-refundable, and failure to pay may result in immediate suspension or termination of Services, including forfeiture of any future contracted-for Services under this Agreement.
 
@@ -87,7 +88,7 @@ Unless otherwise agreed in writing, payment must be made by one of the following
 
 The Client agrees that any failure to make timely payment constitutes a material breach of this Agreement.
 
-# Duration of Engagement and Termination of Agreement
+## Duration of Engagement and Termination of Agreement
 
 All Services purchased under this Agreement with a monthly fee shall renew on a monthly basis on the same day of the month as the start date in the Coaching Package Addendum. If that day is the 29th, 30th, or 31st of a month, those remaining days of the calendar month containing the Coaching Package Addendum's start date will be rolled into the following month, with the first renewal on the 1st of the next month. (For example, if the Coaching Package Addendum includes monthly services with a start date of July 29, the first month's fee will cover services between July 29 and August 31, with the first renewal on September 1.)
 
@@ -109,7 +110,7 @@ The Coach may terminate Services immediately if
 
 Under the immediately foregoing conditions, refunds will be issued entirely at the discretion of the Coach.
 
-# Scheduling and Cancellations
+## Scheduling and Cancellations
 
 As part of contracted Services under the Coaching Package Addendum, the Coach and Client will schedule some number of synchronous sessions. The Coach and Client mutually agree to make reasonable efforts to schedule sessions within the timeframes specified for the contracted Services to best facilitate achievement of identified Fitness Development goals, but in the event that mutually convenient scheduling is not possible within those timeframes, the Coach and Client will make reasonable accommodations to carry over sessions into subsequent months to align as closely as possible with preexisting commitments. Any such accommodation shall be discretionary, case-specific, and shall not create an ongoing entitlement, waiver, or modification of the general service period unless expressly agreed in writing.
 
@@ -120,29 +121,29 @@ The Client may reschedule or cancel a scheduled session without penalty by provi
 
 If the Coach must reschedule a session, reasonable effort will be made to offer alternative times that accommodate the Client's schedule. If the Coach cancels or reschedules a session with less than 24 hours' notice to Client, Client shall be entitled to an additional 30-minute complimentary session, the use of which is subject to the same limitations in the "Duration of Engagement and Termination of Agreement" section.
 
-# Refunds
+## Refunds
 
 No refunds will be issued once Services have commenced. If a refund is requested before any Services have been delivered and no scheduled time has been used, the Coach may, at their sole discretion, approve a partial refund, less any time spent in complimentary consultation or administrative processing.
 
 Refunds will not be granted for unused time after the expiration of the engagement period, as outlined in the "Duration of Engagement and Termination of Agreement" section.
 
-# Disclaimers
+## Disclaimers
 
-## No Guarantee of Results
+### No Guarantee of Results
 
 While the Coach is committed to providing high-quality guidance, feedback, and support, Client acknowledges that outcomes--including, but not limited to, fat loss, muscle gain, health outcomes, behavioral changes, interpersonal functioning, and intellectual development--cannot be guaranteed. Success may be impacted by numerous factors outside the Coach's control, including individual effort, unforeseen biological factors, medical conditions, third party interference, and changes in life circumstances.
 
 Accordingly, Client understands and agrees that the Coach makes no representations, warranties, or guarantees regarding any specific outcome or result from the Services provided, and that any examples or prior results are illustrative only and do not constitute promises or guarantees.
 
-## Assumption of Risk
+### Assumption of Risk
 
 Participation in coaching, including the implementation of any recommendations related to exercise, diet, nutrition, recovery, lifestyle, behavior, and other aspects of Fitness Development, is voluntary and undertaken at the Client's own risk. The Client understands that such participation may involve inherent risks, including, but not limited to, illness, injury, aggravation of pre-existing conditions, adverse physiological or psychological responses, and other foreseeable or unforeseeable consequences. The Client accepts full responsibility for monitoring his or her own physical and mental condition and for exercising independent judgment in deciding whether and how to implement any recommendation, including whether to continue, modify, or discontinue any activity at any time.
 
-## Separate Liability Waiver
+### Separate Liability Waiver
 
 The Client acknowledges that, in connection with this Agreement, the Client has executed a separate [Liability Waiver and Release of Claims](/liability-waiver/) (the "Waiver"). The Client agrees that the Waiver and this Agreement are intended to operate together and shall be given cumulative effect to the fullest extent permitted by law.
 
-## Limitation of Liability
+### Limitation of Liability
 
 To the maximum extent permitted by law, the Coach shall not be liable for any claims, damages, losses, or expenses arising out of or relating to this Agreement or the Services, except to the extent caused by the Coach's gross negligence or willful misconduct where such limitation is prohibited by law.
 
@@ -150,11 +151,11 @@ In no event shall the Coach be liable for any indirect, incidental, special, exe
 
 If, notwithstanding the foregoing, the Coach is found liable for any claim arising out of or relating to this Agreement or the Services, the Client agrees that the total liability of the Coach shall be limited to the total amount actually paid by the Client for the specific Services giving rise to the claim.
 
-## Indemnification
+### Indemnification
 
 The Client agrees to indemnify, defend, and hold harmless the Coach, Zey Enterprises, LLC, and its members, managers, owners, employees, contractors, agents, representatives, affiliates, successors, and assigns from and against any and all claims, liabilities, damages, losses, costs, and expenses, including reasonable attorneys' fees and costs of defense, arising out of or relating to the Client's actions or omissions, the Client's participation in coaching, the Client's implementation or misuse of recommendations, the Client's use or misuse of materials or Services provided by the Coach under this Agreement, or any third-party claims arising from the Client's conduct.
 
-## Not Psychological or Medical Service
+### Not Psychological or Medical Service
 
 Fitness coaching is not formal counseling or therapy, though psychological inquiry and Coach's experience and expertise in that area may be brought to bear in the context of the coaching relationship. Moreover, coaching may include intellectual development via Socratic dialogue or philosophical discussion. These Services are educational in nature and are not a substitute for psychotherapy or mental health services.
 
@@ -166,33 +167,33 @@ Client must disclose to Coach any relevant conditions, injuries, and limitations
 
 The Client further understands that the Coach does not provide emergency, crisis, or on-demand medical, psychiatric, or psychological support. The Coach is not responsible for monitoring the Client's condition in real time or for responding to urgent health or mental health situations. If the Client experiences a medical emergency, acute psychiatric distress, suicidal ideation, or any other urgent condition, the Client must immediately contact an appropriate licensed professional, emergency services, or a crisis resource rather than relying on the Coach.
 
-## Not Legal Advice
+### Not Legal Advice
 
 The Services provided under this Agreement do not include legal advice or legal representation. Although the Coach may, from time to time, offer general observations that touch on legal concepts or legal dimensions of a situation, no attorney-client relationship is created by this Agreement or by any communication between Coach and Client in connection with the Services. The Client is solely responsible for obtaining advice from a qualified attorney licensed in the relevant jurisdiction before taking any action with legal consequences. The Client agrees not to rely on the Coach as legal counsel, and the Coach shall not be liable for any legal claims, losses, or consequences arising from the Client's reliance on any such observations.
 
-# Confidentiality
+## Confidentiality
 
 Both parties agree to maintain the confidentiality of all proprietary or personal information disclosed in the course of the coaching relationship, unless required by law, reasonably necessary to enforce this Agreement, or with the express written consent of the other party. The relationship is not protected by legal privilege (eg, attorney-client, doctor-patient, or therapist-client privilege).
 
-# Intellectual Property
+## Intellectual Property
 
 All materials provided by the Coach, including, but not limited to, programs, documents, frameworks, systems, recordings, and written and voice/video communication, remain the sole intellectual property of Zey Enterprises, LLC.
 
 The Client is granted a limited, non-transferable, non-commercial license to use such materials for personal purposes only. The Client may not reproduce, distribute, or sell materials, use materials for commercial purposes, or share materials with third parties without the Coach's explicit written permission.
 
-# Force Majeure
+## Force Majeure
 
 Neither party shall be liable for failure or delay in performing obligations under this Agreement if such failure or delay is due to circumstances beyond their reasonable control, including but not limited to natural disasters, acts of war, terrorism, labor disputes, epidemics, power outages, or internet service interruptions.
 
-# Entire Agreement
+## Entire Agreement
 
 This Agreement, together with any incorporated addenda, constitutes the entire agreement between Client and Coach with respect to the subject matter hereof and supersedes all prior or contemporaneous understandings, agreements, negotiations, representations, or communications, whether written or oral. No modification or amendment to this Agreement shall be effective unless made in writing and signed by both parties, except where this Agreement expressly permits specific modifications to be made by written communication clearly identified as such.
 
-# Severability
+## Severability
 
 If any provision of this Agreement is held to be invalid, illegal, or unenforceable for any reason, the remaining provisions shall remain in full force and effect. Any such invalid, illegal, or unenforceable provision shall be modified to the minimum extent necessary to render it valid and enforceable while preserving, to the greatest extent possible, the intent of the original provision.
 
-# Governing Law and Dispute Resolution
+## Governing Law and Dispute Resolution
 
 This Agreement shall be governed by and construed in accordance with the laws of the State of Colorado, without regard to its conflict-of-law principles. If a dispute arises out of or relates to this Agreement and cannot be resolved through informal discussion, the parties agree to first attempt to resolve the matter through mediation with a mutually agreed-upon neutral third party.
 
@@ -200,6 +201,6 @@ If mediation is unsuccessful, the parties agree to resolve the dispute through b
 
 The parties agree to waive the right to trial by jury. Each party shall bear its own costs and legal fees unless otherwise required by law or determined by the arbitrator. Any court proceeding permitted under this section, including any action to compel arbitration, enforce an arbitration award, or obtain other relief expressly available notwithstanding the agreement to arbitrate, shall be brought exclusively in the state or federal courts serving Jefferson or Park County, Colorado.
 
-# Acknowledgement
+## Acknowledgement
 
 By signing below, the Client acknowledges that this Agreement has been read and understood, that the Client has had the opportunity to ask questions, and that the Client voluntarily agrees to all terms.
