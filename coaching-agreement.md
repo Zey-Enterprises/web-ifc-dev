@@ -4,6 +4,7 @@ permalink: /coaching-agreement/
 date: 2026-04-21
 last_modified_at: 2026-04-21
 show_modified_date: true
+show_read_time: true
 toc_widget: true
 excerpt: This Coaching Agreement is the latest draft. Your Coaching Agreement may differ.
 header:
