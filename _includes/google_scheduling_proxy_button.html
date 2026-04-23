@@ -1,21 +1,17 @@
 {% assign scheduling_id = include.id | default: "" | strip %}
 {% assign scheduling_url = include.url | default: "" | strip %}
+{% assign scheduling_fallback_url = include.fallback_url | default: scheduling_url | split: "?" | first | strip %}
 {% assign scheduling_label = include.label | default: "Book an appointment" %}
 {% assign scheduling_class = include.class | default: "ifc-button" | strip %}
 {% assign scheduling_color = include.color | default: "#039BE5" | strip %}
+{% assign scheduling_mobile_breakpoint = include.mobile_breakpoint | default: 767 %}
 
 {% if scheduling_id != "" and scheduling_url != "" %}
   <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
   <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
 
   <div id="{{ scheduling_id }}" class="ifc-scheduling-proxy">
-    <a
-      href="{{ scheduling_url }}"
-      class="{{ scheduling_class }}"
-      target="_blank"
-      rel="noopener"
-      data-no-external-icon="true"
-    >{{ scheduling_label }}</a>
+    {% include _link.html href=scheduling_fallback_url label=scheduling_label class=scheduling_class newtab=true default_newtab=false %}
     <div class="ifc-scheduling-native" aria-hidden="true"></div>
   </div>
 
@@ -23,20 +19,32 @@
     (function() {
       var root = document.getElementById('{{ scheduling_id }}');
       if (!root) return;
+      var trigger = root.querySelector('a');
+      var mobileQuery = window.matchMedia('(max-width: {{ scheduling_mobile_breakpoint }}px)');
+      var observer;
 
       function findNativeButton() {
         return root.querySelector('.ifc-scheduling-native button') ||
           root.querySelector('.ifc-scheduling-native + button');
       }
 
+      function setMode() {
+        var useFallbackLink = mobileQuery.matches;
+        root.classList.toggle('is-fallback-link', useFallbackLink);
+        root.classList.toggle('is-popover-enabled', !useFallbackLink && !!findNativeButton());
+      }
+
       function wireTrigger() {
-        var trigger = root.querySelector('.ifc-button');
         if (!trigger || trigger.dataset.schedulingBound === 'true') return;
 
         trigger.dataset.schedulingBound = 'true';
         trigger.addEventListener('click', function(event) {
+          if (mobileQuery.matches) return;
           var nativeButton = findNativeButton();
-          if (!nativeButton) return;
+          if (!nativeButton) {
+            root.classList.remove('is-popover-enabled');
+            return;
+          }
           event.preventDefault();
           nativeButton.click();
         });
@@ -62,18 +70,35 @@
         });
 
         wireTrigger();
+        setMode();
 
-        var observer = new MutationObserver(function() {
-          wireTrigger();
-        });
+        if (!observer) {
+          observer = new MutationObserver(function() {
+            wireTrigger();
+            setMode();
+          });
 
-        observer.observe(root, { childList: true, subtree: true });
+          observer.observe(root, { childList: true, subtree: true });
+        }
+      }
+
+      function syncBehavior() {
+        setMode();
+        if (!mobileQuery.matches) {
+          loadSchedulingButton();
+        }
+      }
+
+      if (typeof mobileQuery.addEventListener === 'function') {
+        mobileQuery.addEventListener('change', syncBehavior);
+      } else if (typeof mobileQuery.addListener === 'function') {
+        mobileQuery.addListener(syncBehavior);
       }
 
       if (document.readyState === 'complete') {
-        loadSchedulingButton();
+        syncBehavior();
       } else {
-        window.addEventListener('load', loadSchedulingButton, { once: true });
+        window.addEventListener('load', syncBehavior, { once: true });
       }
     })();
   </script>

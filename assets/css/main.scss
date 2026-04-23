@@ -3085,6 +3085,10 @@ input[type="submit"] {
   display: inline-flex;
 }
 
+.ifc-scheduling-proxy.is-popover-enabled .ifc-link-icon {
+  display: none;
+}
+
 .ifc-scheduling-native {
   position: absolute;
   inset: 0 auto auto 0;
