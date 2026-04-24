@@ -2,6 +2,10 @@
 title: "Glossary"
 permalink: /resources/glossary/
 excerpt: "Learn about recurring concepts across the resource library."
+toc_widget: 
+  enabled: true
+  min_level: 2
+  max_level: 4
 header:
   kicker: "Resource Library"
   # overlay_image: /assets/images/ifc-glossary-hero-banner-1.jpg
