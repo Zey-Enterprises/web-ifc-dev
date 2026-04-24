@@ -2,6 +2,10 @@
 title: "Frequently Asked Questions"
 permalink: /resources/faq/
 excerpt: "FAQ library for substantive fitness questions."
+toc_widget: 
+  enabled: true
+  min_level: 2
+  max_level: 4
 header:
   kicker: "Resource Library"
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.7), rgba(17, 33, 45, 0.22))

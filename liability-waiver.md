@@ -5,7 +5,10 @@ date: 2026-04-21
 last_modified_at: 2026-04-21
 show_modified_date: true
 show_read_time: true
-toc_widget: true
+toc_widget: 
+  enabled: true
+  min_level: 2
+  max_level: 4
 excerpt: This Liability Waiver is the latest draft. Your Waiver may differ.
 header:
   kicker: Sample

@@ -4,7 +4,10 @@ classes: hide-title
 permalink: /approach/
 description: "How Integrated Fitness Coaching approaches development across body, intellect, and spirit through clear principles, practical execution, and long-term integration."
 excerpt: "Fitness is not just about physique, performance, or physical health. It is about developing body, intellect, and spirit in a way that is coherent, sustainable, and mutually reinforcing."
-toc_widget: true
+toc_widget: 
+  enabled: true
+  min_level: 2
+  max_level: 4
 header:
   # overlay_image: /assets/images/ifc-approach-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
