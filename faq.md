@@ -5,9 +5,13 @@ excerpt: "Frequently asked questions about coaching, scope, results, and fit."
 header:
   # overlay_image: /assets/images/ifc-faq-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  actions:
+    - label: Go to Fitness FAQ Library →
+      url: /resources/faq/
+      class: btn--light-outline
 ---
 
-Below is the public-facing FAQ. Each answer is also stored as a collection document so the section can expand into a richer knowledge base over time.
+Below is the list of frequently asked questions about coaching.
 
 One recurring theme below is sustainability. This practice is explicitly not built around crash diets, permanent restriction, or short-term theatrics.
 
