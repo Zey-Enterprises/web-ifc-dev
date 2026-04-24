@@ -35,9 +35,37 @@
 {%- endif -%}
 {%- assign resolved_overlay_image = page.header.overlay_image | default: carousel_overlay_image | default: auto_overlay_image -%}
 {%- assign resolved_og_image = page.header.og_image | default: auto_og_image -%}
-{%- assign page_large_image = resolved_og_image | default: resolved_overlay_image | default: page.header.image | absolute_url | escape -%}
-{%- assign page_teaser_image = page.header.teaser | default: site.og_image | absolute_url | escape -%}
-{%- assign site_og_image = site.og_image | absolute_url | escape -%}
+{%- assign page_large_image_path = resolved_og_image | default: resolved_overlay_image | default: page.header.image -%}
+{%- assign page_large_image_raw = "" -%}
+{%- if page_large_image_path and page_large_image_path != "" -%}
+  {%- assign page_large_image_raw = page_large_image_path | absolute_url -%}
+{%- endif -%}
+{%- assign page_large_image = page_large_image_raw | escape -%}
+{%- assign page_teaser_image_path = page.header.teaser | default: site.og_image -%}
+{%- assign page_teaser_image_raw = "" -%}
+{%- if page_teaser_image_path and page_teaser_image_path != "" -%}
+  {%- assign page_teaser_image_raw = page_teaser_image_path | absolute_url -%}
+{%- endif -%}
+{%- assign page_teaser_image = page_teaser_image_raw | escape -%}
+{%- assign site_og_image_path = site.og_image | default: "" -%}
+{%- assign site_og_image_raw = "" -%}
+{%- if site_og_image_path != "" -%}
+  {%- assign site_og_image_raw = site_og_image_path | absolute_url -%}
+{%- endif -%}
+{%- assign site_og_image = site_og_image_raw | escape -%}
+{%- assign schema_type = page.schema_type | strip -%}
+{%- if schema_type == "" -%}
+  {%- if page.date -%}
+    {%- assign schema_type = "Article" -%}
+  {%- else -%}
+    {%- assign schema_type = "CreativeWork" -%}
+  {%- endif -%}
+{%- endif -%}
+{%- assign is_article_schema = false -%}
+{%- if schema_type == "Article" or schema_type == "BlogPosting" or schema_type == "https://schema.org/Article" or schema_type == "https://schema.org/BlogPosting" -%}
+  {%- assign is_article_schema = true -%}
+{%- endif -%}
+{%- assign author_name = author.name | default: author -%}
 
 {%- if page.date -%}
   {%- assign og_type = "article" -%}
@@ -121,6 +149,35 @@
 
 {% if page.url == '/' %}
   {% include schema.html %}
+{% endif %}
+
+{% if is_article_schema %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": {{ schema_type | replace: "https://schema.org/", "" | jsonify }},
+      "mainEntityOfPage": {{ canonical_url | jsonify }},
+      "headline": {{ page_title | jsonify }},
+      "url": {{ canonical_url | jsonify }}{% if seo_description %},
+      "description": {{ seo_description | jsonify }}{% endif %}{% if site.locale %},
+      "inLanguage": {{ site.locale | jsonify }}{% endif %}{% if page.date %},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }}{% endif %}{% if page.last_modified_at %},
+      "dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }}{% endif %}{% if author_name %},
+      "author": {
+        "@type": "Person",
+        "name": {{ author_name | jsonify }}
+      }{% endif %}{% if page_large_image_raw != "" %},
+      "image": [{{ page_large_image_raw | jsonify }}]{% endif %},
+      "publisher": {
+        "@type": "Organization",
+        "name": {{ site.title | jsonify }}{% if site.logo %},
+        "logo": {
+          "@type": "ImageObject",
+          "url": {{ site.logo | absolute_url | jsonify }}
+        }{% endif %}
+      }
+    }
+  </script>
 {% endif %}
 
 {% if site.google_site_verification %}
