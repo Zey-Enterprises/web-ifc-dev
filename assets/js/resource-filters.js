@@ -677,6 +677,8 @@
     var resourceTopTarget = root.querySelector("[data-mobile-filter-panel]") || root;
     var mobileTopTarget = root.querySelector("[data-mobile-filter-toggle]") || root;
     var defaultSort = root.getAttribute("data-default-sort") || "recent-published-desc";
+    var resultLabelSingular = root.getAttribute("data-result-label-singular") || "resource";
+    var resultLabelPlural = root.getAttribute("data-result-label-plural") || "resources";
     var openMenu = null;
     var isMobilePanelOpen = false;
 
@@ -743,6 +745,7 @@
     };
 
     function normalizeMultiValues(selectedValues, group) {
+      if (!group) return [];
       var allowedLookup = group.values.reduce(function (memo, value) {
         memo[value] = true;
         return memo;
@@ -942,7 +945,7 @@
           chip.type = "button";
           chip.className = "ifc-active-filters__pill ifc-active-filters__pill--" + key;
           chip.setAttribute("data-clear-filter-value", key + ":" + value);
-          chip.textContent = (groups[key].labels[value] || value) + " ×";
+          chip.textContent = ((groups[key] && groups[key].labels[value]) || value) + " ×";
           fragment.appendChild(chip);
         });
       });
@@ -1091,7 +1094,7 @@
       if (summary) {
         if (resultsMode) {
           summary.hidden = false;
-          summary.textContent = visibleCount === 1 ? "1 resource" : visibleCount + " resources";
+          summary.textContent = visibleCount === 1 ? "1 " + resultLabelSingular : visibleCount + " " + resultLabelPlural;
         } else {
           summary.hidden = true;
           summary.textContent = "";

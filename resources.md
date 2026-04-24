@@ -12,6 +12,9 @@ header:
   - label: Go to Glossary
     url: /resources/glossary/
     class: btn--light-outline
+  - label: Go to FAQ
+    url: /resources/faq/
+    class: btn--light-outline
   - label: Go to References
     url: /resources/references/
     class: btn--light-outline
@@ -19,7 +22,10 @@ header:
 
 {% assign resources_path = '/resources/' | relative_url %}
 {% assign glossary_path = '/resources/glossary/' | relative_url %}
-{% assign recent_resources = site.resources | sort: "date" | reverse %}
+{% assign faq_path = '/resources/faq/' | relative_url %}
+{% assign references_path = '/resources/references/' | relative_url %}
+{% assign content_resources = site.resources | where_exp: "item", "item.resource_type != 'faq'" %}
+{% assign recent_resources = content_resources | sort: "date" | reverse %}
 {% assign concern_values = "fat-loss,muscle-gain,body-composition,adherence,sleep,stress,energy,recovery,behavior-change,mindset,self-direction,busy-life,beginners,maintenance,performance" | split: "," %}
 {% assign domain_values = "diet,physical-exercise,psychology,philosophy" | split: "," %}
 
@@ -315,11 +321,19 @@ header:
   </section>
 
   <section class="ifc-section ifc-section--tight" data-resource-landing-section>
-    <h2>Glossary</h2>
+    <h2>Learning tools</h2>
     <div class="ifc-grid">
       <a class="ifc-card-link" href="{{ glossary_path }}">
         <strong>Glossary</strong>
         <p>Canonical definitions for recurring concepts, with related resources surfaced through shared tags.</p>
+      </a>
+      <a class="ifc-card-link" href="{{ faq_path }}">
+        <strong>FAQ</strong>
+        <p>Practical answers to common diet and body-composition questions, organized by domain, concern, and tag.</p>
+      </a>
+      <a class="ifc-card-link" href="{{ references_path }}">
+        <strong>References</strong>
+        <p>The citation library behind the resource annotations, collected into a single browsable page.</p>
       </a>
     </div>
   </section>
@@ -327,7 +341,7 @@ header:
   <section class="ifc-section ifc-section--tight" data-resource-results>
     <h2 data-resource-results-heading>All resources</h2>
     <div class="ifc-resource-results" data-resource-results-list>
-      {% for item in site.resources %}
+      {% for item in content_resources %}
         {% assign result_format_value = "article" %}
         {% assign result_type_label = "Article" %}
         {% assign result_published = item.date %}

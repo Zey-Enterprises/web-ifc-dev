@@ -891,5 +891,133 @@
     "long": "Micronutrients include vitamins and minerals needed in small amounts to support metabolism, immune function, and overall health. They do not provide calories, but are essential for proper biological function.",
     "tags": ["micronutrients", "food-quality"],
     "see_also": ["macronutrients"]
+  },
+  "alcohol": {
+    "id": "alcohol",
+    "term": "alcohol",
+    "short": "Ethanol consumed in beverages, which provides calories and can affect sleep, recovery, appetite, and decision-making.",
+    "long": "Alcohol is not a macronutrient, but it provides energy and is metabolized preferentially because the body has limited ability to store it. Its practical effects are dose-dependent: small amounts may fit some diets, while heavier use can make fat loss, muscle gain, hydration, sleep, and adherence harder to manage.",
+    "tags": ["calorie-balance", "recovery", "adherence"],
+    "see_also": ["calorie-balance", "recovery", "satiety"]
+  },
+  "caffeine": {
+    "id": "caffeine",
+    "term": "caffeine",
+    "short": "A stimulant found in coffee, tea, energy drinks, and some supplements.",
+    "long": "Caffeine can increase alertness, reduce perceived effort, and support exercise performance for many people. It can also worsen anxiety, gastrointestinal symptoms, or sleep when the dose is too high or taken too late in the day, so the useful dose depends on timing, tolerance, and individual response.",
+    "tags": ["dietary-supplements", "recovery", "adherence"],
+    "see_also": ["circadian-rhythm", "recovery"]
+  },
+  "creatine": {
+    "id": "creatine",
+    "term": "creatine",
+    "short": "A compound stored in muscle that helps rapidly regenerate ATP during short, intense efforts.",
+    "long": "Creatine supplementation, most commonly creatine monohydrate, can improve strength, power, repeated sprint ability, and lean-mass gain when paired with training. It may increase scale weight early because muscle stores more water along with creatine, which is not the same as fat gain.",
+    "tags": ["dietary-supplements", "strength-training", "hypertrophy"],
+    "see_also": ["hypertrophy", "recovery"]
+  },
+  "dietary-fiber": {
+    "id": "dietary-fiber",
+    "term": "dietary fiber",
+    "short": "Indigestible carbohydrate from plant foods that affects digestion, satiety, bowel function, and metabolic health.",
+    "long": "Dietary fiber includes soluble and insoluble forms. It contributes little usable energy compared with digestible carbohydrate, but it can slow gastric emptying, support gut function, improve stool quality, and make lower-calorie diets more filling when increased gradually.",
+    "tags": ["fiber", "satiety", "food-quality"],
+    "see_also": ["satiety", "microbiome", "scfa"]
+  },
+  "electrolytes": {
+    "id": "electrolytes",
+    "term": "electrolytes",
+    "short": "Charged minerals such as sodium, potassium, magnesium, and chloride that help regulate fluid balance and nerve and muscle function.",
+    "long": "Electrolyte needs rise with heavy sweating, hot environments, long endurance sessions, illness, and some medications. For most ordinary training, normal meals and fluids are enough, but hard or prolonged sweating may call for deliberate sodium and fluid replacement.",
+    "tags": ["recovery", "endurance", "food-quality"],
+    "see_also": ["hydration", "recovery"]
+  },
+  "glycemic-index": {
+    "id": "glycemic-index",
+    "term": "glycemic index",
+    "short": "A ranking of carbohydrate-containing foods by how quickly they raise blood glucose when eaten alone.",
+    "long": "Glycemic index can be useful context, but it is not a complete measure of food quality or fat-loss value. Mixed meals, portion size, fiber, protein, fat, training status, and total calorie intake all change the practical effect of a carbohydrate source.",
+    "tags": ["carbohydrates", "food-quality"],
+    "see_also": ["insulin", "dietary-fiber"]
+  },
+  "glycogen": {
+    "id": "glycogen",
+    "term": "glycogen",
+    "short": "Stored carbohydrate kept mainly in muscle and liver.",
+    "long": "Glycogen supports training performance and helps maintain blood glucose. Changes in carbohydrate intake can quickly change scale weight because glycogen is stored with water, so short-term weight jumps after higher-carb eating are often fluid and stored carbohydrate rather than fat gain.",
+    "tags": ["carbohydrates", "endurance", "body-composition"],
+    "see_also": ["calorie-balance", "energy-availability"]
+  },
+  "hydration": {
+    "id": "hydration",
+    "term": "hydration",
+    "short": "The body's fluid status relative to current physiological needs.",
+    "long": "Hydration is affected by fluid intake, food water, sweat losses, sodium intake, temperature, altitude, illness, and exercise. In everyday settings, thirst and urine color are useful checks; in heavy training or heat, body-weight change across sessions can help estimate fluid loss.",
+    "tags": ["recovery", "endurance", "food-quality"],
+    "see_also": ["electrolytes", "recovery"]
+  },
+  "nonnutritive-sweeteners": {
+    "id": "nonnutritive-sweeteners",
+    "term": "nonnutritive sweeteners",
+    "short": "Sweeteners that provide little or no usable energy at typical intake levels.",
+    "long": "Nonnutritive sweeteners include ingredients such as aspartame, sucralose, acesulfame potassium, saccharin, steviol glycosides, and monk fruit extract. They can help some people reduce added sugar and calorie intake, but their value depends on the overall eating pattern and individual tolerance.",
+    "tags": ["calorie-balance", "adherence", "food-quality"],
+    "see_also": ["calorie-balance", "sugar-alcohols"]
+  },
+  "saturated-fat": {
+    "id": "saturated-fat",
+    "term": "saturated fat",
+    "short": "A class of dietary fat found in foods such as fatty meats, butter, cheese, coconut oil, and many baked goods.",
+    "long": "Saturated fat is not automatically forbidden, but high intakes can make it harder to keep blood lipids and overall diet quality in a favorable range. In practice, most people do better when saturated fat is moderated and more fat intake comes from unsaturated sources.",
+    "tags": ["dietary-fat", "food-quality"],
+    "see_also": ["trans-fat", "macronutrients"]
+  },
+  "sugar-alcohols": {
+    "id": "sugar-alcohols",
+    "term": "sugar alcohols",
+    "short": "Reduced-calorie sweeteners such as erythritol, xylitol, sorbitol, mannitol, and maltitol.",
+    "long": "Sugar alcohols are carbohydrates, but they are absorbed and metabolized differently from sugar. They usually provide fewer calories and a smaller blood-glucose rise, but larger amounts can cause gas, bloating, cramping, or diarrhea, especially when intake increases suddenly.",
+    "tags": ["carbohydrates", "food-quality", "adherence"],
+    "see_also": ["nonnutritive-sweeteners", "dietary-fiber"]
+  },
+  "trans-fat": {
+    "id": "trans-fat",
+    "term": "trans fat",
+    "short": "A type of unsaturated fat, especially from partially hydrogenated oils, associated with adverse cardiovascular risk.",
+    "long": "Industrial trans fats are best minimized rather than treated as a useful diet tool. In the United States, partially hydrogenated oils are no longer generally recognized as safe for food use, but small amounts can still appear from some ingredients or naturally in ruminant foods.",
+    "tags": ["dietary-fat", "food-quality"],
+    "see_also": ["saturated-fat"]
+  },
+  "whey-protein": {
+    "id": "whey-protein",
+    "term": "whey protein",
+    "short": "A dairy-derived protein that digests relatively quickly and is rich in essential amino acids.",
+    "long": "Whey protein is commonly used as a convenient way to hit protein targets when whole-food meals are impractical. It is not required for muscle gain or fat loss, but it can be useful because it is high-quality, portable, and easy to dose.",
+    "tags": ["protein", "dietary-supplements", "hypertrophy"],
+    "see_also": ["casein-protein", "protein-synthesis"]
+  },
+  "casein-protein": {
+    "id": "casein-protein",
+    "term": "casein protein",
+    "short": "A dairy-derived protein that digests more slowly than whey.",
+    "long": "Casein protein forms a slower-digesting curd in the stomach, which can make it useful when a longer gap before the next meal is expected. Like whey, it is a convenient protein option rather than a mandatory supplement.",
+    "tags": ["protein", "dietary-supplements", "hypertrophy"],
+    "see_also": ["whey-protein", "protein-synthesis"]
+  },
+  "food-allergy": {
+    "id": "food-allergy",
+    "term": "food allergy",
+    "short": "An immune-mediated adverse reaction to a food.",
+    "long": "Food allergy can cause symptoms ranging from hives and gastrointestinal distress to anaphylaxis. Suspected allergies deserve medical evaluation because the stakes, testing approach, and avoidance strategy are different from ordinary food intolerance or preference.",
+    "tags": ["food-quality", "adherence"],
+    "see_also": ["food-intolerance"]
+  },
+  "food-intolerance": {
+    "id": "food-intolerance",
+    "term": "food intolerance",
+    "short": "A non-allergic adverse reaction to a food or food component.",
+    "long": "Food intolerance often involves digestion or dose tolerance rather than an immune allergy. Lactose intolerance is a common example. The practical response is usually portion control, substitution, or targeted elimination rather than treating the food as dangerous for everyone.",
+    "tags": ["food-quality", "adherence"],
+    "see_also": ["food-allergy"]
   }
 }

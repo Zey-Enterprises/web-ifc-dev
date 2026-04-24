@@ -17,6 +17,8 @@ meal-structure:
   label: "Meal Structure"
 food-quality:
   label: "Food Quality"
+dietary-supplements:
+  label: "Dietary Supplements"
 
 satiety:
   label: "Satiety"

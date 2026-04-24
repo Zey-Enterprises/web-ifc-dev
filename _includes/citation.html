@@ -112,12 +112,12 @@ Notes:
   {%- endif -%}
 
   {%- if source -%}
-    {%- capture reference_html -%}{%- include _citation_reference.html source=source style=style_name context="popover" -%}{%- endcapture -%}
-    {%- capture body_html -%}
-      <span class="ifc-annotation__para ifc-annotation__lede ifc-annotation__lede--citation">{{ reference_html | strip }}</span>
-      {%- if source.quote -%}<span class="ifc-annotation__quote">{{ source.quote }}</span>{%- elsif source.excerpt -%}<span class="ifc-annotation__quote">{{ source.excerpt }}</span>{%- endif -%}
-      {%- if source.notes -%}<span class="ifc-annotation__para ifc-annotation__meta">{{ source.notes }}</span>{%- endif -%}
-    {%- endcapture -%}
+    {%- comment -%}
+    Citation popover content is hydrated client-side from `_data/citation.json`.
+    Keeping the build-time shell empty avoids multi-line citation reference HTML being
+    reinterpreted as Markdown when resource documents are embedded in aggregate pages.
+    {%- endcomment -%}
+    {%- capture body_html -%}<span class="ifc-annotation__para ifc-annotation__lede ifc-annotation__lede--citation"></span>{%- endcapture -%}
     {%- capture aria_label -%}Show citation{% if citation_label %} {{ citation_label }}{% endif %} for {{ source.short_title | default: source.title }}{%- endcapture -%}
   {%- else -%}
     {%- capture body_html -%}<span class="ifc-annotation__para ifc-annotation__lede ifc-annotation__lede--citation"></span>{%- endcapture -%}

@@ -286,6 +286,54 @@
     });
   }
 
+  function setCitationLabel(annotation, label) {
+    if (!annotation || annotation.dataset.annotationKind !== "citation") {
+      return;
+    }
+
+    const normalizedLabel = String(label || "");
+    annotation.dataset.citationLabel = normalizedLabel;
+
+    const { trigger } = getParts(annotation);
+
+    if (!trigger) {
+      return;
+    }
+
+    let marker = trigger.querySelector(".ifc-citation-marker");
+    let screenReaderText = trigger.querySelector(".screen-reader-text");
+
+    if (!marker) {
+      marker = document.createElement("span");
+      marker.className = "ifc-citation-marker";
+      marker.setAttribute("aria-hidden", "true");
+      trigger.textContent = "";
+      trigger.appendChild(marker);
+    }
+
+    marker.textContent = normalizedLabel;
+
+    if (!screenReaderText) {
+      screenReaderText = document.createElement("span");
+      screenReaderText.className = "screen-reader-text";
+      trigger.appendChild(screenReaderText);
+    }
+
+    screenReaderText.textContent = "Citation " + normalizedLabel;
+  }
+
+  function applyScopedCitationNumbering() {
+    const scopes = Array.from(document.querySelectorAll("[data-citation-numbering='global']"));
+
+    scopes.forEach(function (scope) {
+      const scopedCitations = Array.from(scope.querySelectorAll("[data-annotation][data-annotation-kind='citation']"));
+
+      scopedCitations.forEach(function (annotation, index) {
+        setCitationLabel(annotation, index + 1);
+      });
+    });
+  }
+
   function getAnnotationCopyText(annotation) {
     if (!annotation) {
       return "";
@@ -972,6 +1020,7 @@
     annotations.forEach(closeAnnotation);
   }
 
+  applyScopedCitationNumbering();
   normalizeGlossarySpacing();
   normalizeCitationSeparatorSpacing();
   bindAnnotationLineWrapping();

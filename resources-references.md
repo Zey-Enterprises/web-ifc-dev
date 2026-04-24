@@ -1,9 +1,9 @@
 ---
 title: "References"
 permalink: /resources/references/
-description: "Single-page reference library for the citations used across the resource library."
+description: "Citations used across the resource library"
 header:
-  # kicker: References
+  kicker: "Resource Library"
   # overlay_image: /assets/images/ifc-references-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.7), rgba(17, 33, 45, 0.22))
   actions:
@@ -12,6 +12,9 @@ header:
     class: btn--light-outline
   - label: Go to Glossary
     url: /resources/glossary/
+    class: btn--light-outline
+  - label: Go to FAQ
+    url: /resources/faq/
     class: btn--light-outline
 ---
 

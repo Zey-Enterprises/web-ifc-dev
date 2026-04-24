@@ -15437,5 +15437,312 @@
       "body-composition",
       "calorie-balance"
     ]
+  },
+  "fda-2025-aspartame-and-other-sweeteners-food": {
+    "id": "fda-2025-aspartame-and-other-sweeteners-food",
+    "type": "webpage",
+    "title": "Aspartame and Other Sweeteners in Food",
+    "short_title": "Aspartame and Other Sweeteners in Food",
+    "authors": [
+      {
+        "literal": "U.S. Food and Drug Administration Center for Food Safety and Applied Nutrition"
+      }
+    ],
+    "organization": "U.S. Food and Drug Administration Center for Food Safety and Applied Nutrition",
+    "container_title": "FDA",
+    "issued": {
+      "year": 2025,
+      "month": 2,
+      "day": 27
+    },
+    "year": 2025,
+    "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food",
+    "url_newtab": true,
+    "tags": [
+      "food-quality",
+      "calorie-balance",
+      "adherence"
+    ]
+  },
+  "miller-2014-low-calorie-sweeteners-body-weight-composition": {
+    "id": "miller-2014-low-calorie-sweeteners-body-weight-composition",
+    "type": "journal-article",
+    "title": "Low-Calorie Sweeteners and Body Weight and Composition: A Meta-Analysis of Randomized Controlled Trials and Prospective Cohort Studies",
+    "short_title": "Low-Calorie Sweeteners and Body Weight and Composition",
+    "authors": [
+      {
+        "literal": "Paige E. Miller"
+      },
+      {
+        "literal": "Vanessa Perez"
+      }
+    ],
+    "container_title": "The American Journal of Clinical Nutrition",
+    "issued": {
+      "year": 2014,
+      "month": 9
+    },
+    "year": 2014,
+    "volume": "100",
+    "issue": "3",
+    "pages": "765-777",
+    "doi": "10.3945/ajcn.113.082826",
+    "doi_newtab": true,
+    "tags": [
+      "calorie-balance",
+      "body-composition",
+      "adherence"
+    ]
+  },
+  "magnuson-2016-biological-fate-low-calorie-sweeteners": {
+    "id": "magnuson-2016-biological-fate-low-calorie-sweeteners",
+    "type": "journal-article",
+    "title": "Biological Fate of Low-Calorie Sweeteners",
+    "short_title": "Biological Fate of Low-Calorie Sweeteners",
+    "authors": [
+      {
+        "literal": "Bernadene A. Magnuson"
+      },
+      {
+        "literal": "Michael C. Carakostas"
+      },
+      {
+        "literal": "Nadia H. Moore"
+      },
+      {
+        "literal": "Sylvia P. Poulos"
+      },
+      {
+        "literal": "Andrew G. Renwick"
+      }
+    ],
+    "container_title": "Nutrition Reviews",
+    "issued": {
+      "year": 2016,
+      "month": 11
+    },
+    "year": 2016,
+    "volume": "74",
+    "issue": "11",
+    "pages": "670-689",
+    "doi": "10.1093/nutrit/nuw032",
+    "doi_newtab": true,
+    "tags": [
+      "food-quality",
+      "calorie-balance",
+      "adherence"
+    ]
+  },
+  "smith-spangler-2012-organic-foods-safer-healthier": {
+    "id": "smith-spangler-2012-organic-foods-safer-healthier",
+    "type": "journal-article",
+    "title": "Are Organic Foods Safer or Healthier Than Conventional Alternatives?: A Systematic Review",
+    "short_title": "Are Organic Foods Safer or Healthier Than Conventional Alternatives?",
+    "authors": [
+      {
+        "literal": "Crystal Smith-Spangler"
+      },
+      {
+        "literal": "Margaret L. Brandeau"
+      },
+      {
+        "literal": "Grace E. Hunter"
+      },
+      {
+        "literal": "J. Clay Bavinger"
+      },
+      {
+        "literal": "Maren Pearson"
+      },
+      {
+        "literal": "Paul J. Eschbach"
+      },
+      {
+        "literal": "Vandana Sundaram"
+      },
+      {
+        "literal": "Hau Liu"
+      },
+      {
+        "literal": "Patricia Schirmer"
+      },
+      {
+        "literal": "Christopher Stave"
+      },
+      {
+        "literal": "Ingram Olkin"
+      },
+      {
+        "literal": "Dena M. Bravata"
+      }
+    ],
+    "container_title": "Annals of Internal Medicine",
+    "issued": {
+      "year": 2012,
+      "month": 9,
+      "day": 4
+    },
+    "year": 2012,
+    "volume": "157",
+    "issue": "5",
+    "pages": "348-366",
+    "doi": "10.7326/0003-4819-157-5-201209040-00007",
+    "doi_newtab": true,
+    "tags": [
+      "food-quality",
+      "micronutrients"
+    ]
+  },
+  "national-academies-2016-genetically-engineered-crops": {
+    "id": "national-academies-2016-genetically-engineered-crops",
+    "type": "book",
+    "title": "Genetically Engineered Crops: Experiences and Prospects",
+    "short_title": "Genetically Engineered Crops",
+    "authors": [
+      {
+        "literal": "National Academies of Sciences, Engineering, and Medicine"
+      }
+    ],
+    "organization": "National Academies of Sciences, Engineering, and Medicine",
+    "issued": {
+      "year": 2016
+    },
+    "year": 2016,
+    "publisher": "The National Academies Press",
+    "place": "Washington, DC",
+    "isbn": "0-309-43739-3",
+    "doi": "10.17226/23395",
+    "doi_newtab": true,
+    "url": "https://www.nationalacademies.org/publications/23395",
+    "url_newtab": true,
+    "tags": [
+      "food-quality",
+      "micronutrients"
+    ]
+  },
+  "fda-epa-2024-advice-about-eating-fish": {
+    "id": "fda-epa-2024-advice-about-eating-fish",
+    "type": "webpage",
+    "title": "Advice about Eating Fish",
+    "short_title": "Advice about Eating Fish",
+    "authors": [
+      {
+        "literal": "U.S. Food and Drug Administration"
+      },
+      {
+        "literal": "U.S. Environmental Protection Agency"
+      }
+    ],
+    "organization": "U.S. Food and Drug Administration and U.S. Environmental Protection Agency",
+    "container_title": "FDA",
+    "issued": {
+      "year": 2024,
+      "month": 3,
+      "day": 5
+    },
+    "year": 2024,
+    "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+    "url_newtab": true,
+    "tags": [
+      "protein",
+      "dietary-fat",
+      "micronutrients",
+      "food-quality"
+    ]
+  },
+  "niaid-2010-food-allergy-guidelines": {
+    "id": "niaid-2010-food-allergy-guidelines",
+    "type": "journal-article",
+    "title": "Guidelines for the Diagnosis and Management of Food Allergy in the United States: Report of the NIAID-Sponsored Expert Panel",
+    "short_title": "Guidelines for the Diagnosis and Management of Food Allergy in the United States",
+    "authors": [
+      {
+        "literal": "NIAID-Sponsored Expert Panel"
+      },
+      {
+        "literal": "Joshua A. Boyce"
+      },
+      {
+        "literal": "Amal Assa'ad"
+      },
+      {
+        "literal": "A. Wesley Burks"
+      },
+      {
+        "literal": "Stacie M. Jones"
+      },
+      {
+        "literal": "Hugh A. Sampson"
+      }
+    ],
+    "container_title": "Journal of Allergy and Clinical Immunology",
+    "issued": {
+      "year": 2010,
+      "month": 12
+    },
+    "year": 2010,
+    "volume": "126",
+    "issue": "6 Suppl",
+    "pages": "S1-S58",
+    "doi": "10.1016/j.jaci.2010.10.007",
+    "doi_newtab": true,
+    "tags": [
+      "food-quality",
+      "adherence"
+    ]
+  },
+  "kreider-2017-issn-creatine-position-stand": {
+    "id": "kreider-2017-issn-creatine-position-stand",
+    "type": "journal-article",
+    "title": "International Society of Sports Nutrition Position Stand: Safety and Efficacy of Creatine Supplementation in Exercise, Sport, and Medicine",
+    "short_title": "ISSN Position Stand: Creatine Supplementation",
+    "authors": [
+      {
+        "literal": "Richard B. Kreider"
+      },
+      {
+        "literal": "Douglas S. Kalman"
+      },
+      {
+        "literal": "Jose Antonio"
+      },
+      {
+        "literal": "Tim N. Ziegenfuss"
+      },
+      {
+        "literal": "Robert Wildman"
+      },
+      {
+        "literal": "Rick Collins"
+      },
+      {
+        "literal": "Darren G. Candow"
+      },
+      {
+        "literal": "Susan M. Kleiner"
+      },
+      {
+        "literal": "Anthony L. Almada"
+      },
+      {
+        "literal": "Hector L. Lopez"
+      }
+    ],
+    "container_title": "Journal of the International Society of Sports Nutrition",
+    "issued": {
+      "year": 2017,
+      "month": 6,
+      "day": 13
+    },
+    "year": 2017,
+    "volume": "14",
+    "pages": "18",
+    "doi": "10.1186/s12970-017-0173-z",
+    "doi_newtab": true,
+    "tags": [
+      "dietary-supplements",
+      "strength-training",
+      "hypertrophy"
+    ]
   }
 }

@@ -1213,6 +1213,10 @@ body {
   align-items: start;
 }
 
+.ifc-resource-browser--faq .ifc-resource-browser__controls {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.1fr) auto;
+}
+
 .ifc-resource-browser__controls--glossary {
   --ifc-glossary-control-height: 3rem;
   grid-template-columns: max-content minmax(18rem, 28rem);
@@ -1848,6 +1852,10 @@ body.ifc-resource-browser--panel-open {
     max-height: min(70vh, calc(100vh - 7rem));
     overflow-y: auto;
     padding: 1rem;
+  }
+
+  .ifc-resource-browser--faq .ifc-resource-browser__controls {
+    grid-template-columns: 1fr;
   }
 
   .ifc-resource-browser__controls--glossary {
@@ -2570,6 +2578,62 @@ body.ifc-resource-browser--panel-open {
 
 .ifc-reference-entry__notes {
   margin-top: 1rem;
+}
+
+.ifc-faq-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.15rem;
+}
+
+.ifc-faq-entry {
+  scroll-margin-top: 7.5rem;
+}
+
+.ifc-faq-entry[hidden] {
+  display: none !important;
+}
+
+.ifc-faq-entry__title {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+  color: var(--ifc-ink);
+  font-size: clamp(1.25rem, 2.3vw, 1.6rem);
+  line-height: 1.2;
+}
+
+.ifc-faq-entry__content {
+  color: var(--ifc-text);
+  line-height: 1.72;
+}
+
+.ifc-faq-entry__content > :first-child {
+  margin-top: 0;
+}
+
+.ifc-faq-entry__content > :last-child {
+  margin-bottom: 0;
+}
+
+.ifc-faq-entry__meta {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(22, 33, 43, 0.08);
+}
+
+.ifc-faq-entry__label {
+  margin: 0 0 0.45rem;
+  color: var(--ifc-muted);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.ifc-faq-entry__meta .ifc-taxonomy-pills {
+  margin-top: 0;
 }
 
 .ifc-glossary-entry__to-top {

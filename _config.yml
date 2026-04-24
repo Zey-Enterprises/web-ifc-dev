@@ -90,6 +90,20 @@ defaults:
       toc_widget:
         enabled: false
   - scope:
+      path: "_resources/faq"
+      type: resources
+    values:
+      layout: redirect
+      classes: wide
+      show_author: false
+      show_date: false
+      show_modified_date: false
+      show_read_time: false
+      share: false
+      sitemap: false
+      toc_widget:
+        enabled: false
+  - scope:
       path: ""
       type: testimonials
     values:
