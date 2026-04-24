@@ -99,5 +99,5 @@ Behavior:
 {%- endif -%}
 
 {%- if href != "" and label != "" -%}
-<div class="{{ wrapper_class_name | strip }}" markdown="0"{% if style_attr | strip != "" %} style="{{ style_attr | strip }}"{% endif %}><a href="{{ href }}" class="{{ class_name | strip }}"{% if open_newtab %} target="_blank" rel="noopener"{% endif %}>{%- if left_icon != "" -%}<span class="double-icon-button__lead" aria-hidden="true"><i class="{{ left_icon }}"></i></span>{%- endif -%}<span class="double-icon-button__label"><span>{{ label }}</span></span>{%- if right_icon != "" -%}<span class="double-icon-button__aside" aria-hidden="true"><i class="{{ right_icon }}"></i></span>{%- endif -%}</a></div>
+<div class="{{ wrapper_class_name | strip }}" markdown="0"{% if style_attr | strip != "" %} style="{{ style_attr | strip }}"{% endif %}><a href="{{ href }}" class="{{ class_name | strip }}"{% if open_newtab %} target="_blank" rel="noopener" data-no-external-icon="true"{% endif %}>{%- if left_icon != "" -%}<span class="double-icon-button__lead" aria-hidden="true"><i class="{{ left_icon }}"></i></span>{%- endif -%}<span class="double-icon-button__label"><span>{{ label }}</span></span>{%- if right_icon != "" -%}<span class="double-icon-button__aside" aria-hidden="true"><i class="{{ right_icon }}"></i></span>{%- endif -%}</a></div>
 {%- endif -%}
