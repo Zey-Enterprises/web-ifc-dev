@@ -78,6 +78,26 @@
     return (clone.textContent || "").replace(/\s+/g, " ").trim();
   }
 
+  function isHiddenHeading(heading) {
+    if (!heading) {
+      return true;
+    }
+
+    if (
+      heading.matches(".screen-reader-text, .sr-only, .visually-hidden") ||
+      heading.hasAttribute("data-resource-results-heading") ||
+      heading.closest(".screen-reader-text, .sr-only, .visually-hidden, [data-resource-results-heading]")
+    ) {
+      return true;
+    }
+
+    if (heading.hidden || heading.closest("[hidden]")) {
+      return true;
+    }
+
+    return heading.getClientRects().length === 0;
+  }
+
   function initWidget(widget) {
     const toggle = widget.querySelector("[data-toc-widget-toggle]");
     const panel = widget.querySelector("[data-toc-widget-panel]");
@@ -171,6 +191,10 @@
         const label = getHeadingLabel(heading);
 
         if (!label) {
+          return false;
+        }
+
+        if (isHiddenHeading(heading)) {
           return false;
         }
 
@@ -354,6 +378,12 @@
     }, { passive: true });
 
     window.addEventListener("load", function () {
+      render();
+      syncFooterClearance();
+      updateActiveItem();
+    });
+
+    document.addEventListener("ifc:toc-update", function () {
       render();
       syncFooterClearance();
       updateActiveItem();

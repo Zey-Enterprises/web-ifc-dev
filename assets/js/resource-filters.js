@@ -115,6 +115,16 @@
     });
   }
 
+  function notifyTocUpdate(root) {
+    if (!root) return;
+
+    root.dispatchEvent(
+      new CustomEvent("ifc:toc-update", {
+        bubbles: true
+      })
+    );
+  }
+
   function setupBrowser(root) {
     var list = root.querySelector("[data-filter-list]");
     if (!list) return;
@@ -447,6 +457,7 @@
       renderActiveFilters(canonicalState);
       syncMobileStatus(canonicalState);
       updateHistory(canonicalState);
+      notifyTocUpdate(root);
     }
 
     function closeMenu() {
@@ -1107,6 +1118,7 @@
       }
 
       updateHistory(canonicalState);
+      notifyTocUpdate(root);
     }
 
     function updateMultiSelection(key, selectedValues) {
