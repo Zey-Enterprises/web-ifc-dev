@@ -277,7 +277,9 @@
         : "";
       const glossaryPrefix = punctuationTailMatch ? previousSignificantSibling(previous) : null;
 
-      if (punctuationTailMatch && isGlossaryAnnotationNode(glossaryPrefix) && glossaryPrefix.parentNode) {
+      const punctuationPrefixHasContent = punctuationPrefix.replace(/\u2060/g, "").trim().length > 0;
+
+      if (punctuationTailMatch && !punctuationPrefixHasContent && isGlossaryAnnotationNode(glossaryPrefix) && glossaryPrefix.parentNode) {
         const cluster = document.createElement("span");
         cluster.className = "ifc-citation-cluster";
         glossaryPrefix.parentNode.insertBefore(cluster, glossaryPrefix);
