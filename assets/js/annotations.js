@@ -132,6 +132,15 @@
     return true;
   }
 
+  function isGlossaryAnnotationNode(node) {
+    return !!(
+      node &&
+      node.nodeType === Node.ELEMENT_NODE &&
+      node.matches &&
+      node.matches("[data-annotation][data-annotation-kind='glossary']")
+    );
+  }
+
   function prependWordJoinerToNode(node) {
     if (!node || !node.parentNode) {
       return false;
@@ -244,6 +253,49 @@
       }
 
       if (!previous || previous.nodeType !== Node.TEXT_NODE || !previous.nodeValue || !/\S/u.test(previous.nodeValue)) {
+        if (!isGlossaryAnnotationNode(previous) || !previous.parentNode) {
+          return;
+        }
+
+        const cluster = document.createElement("span");
+        cluster.className = "ifc-citation-cluster";
+        previous.parentNode.insertBefore(cluster, previous);
+        cluster.appendChild(previous);
+
+        chain.forEach(function (node) {
+          if (node.parentNode) {
+            cluster.appendChild(node);
+          }
+        });
+
+        return;
+      }
+
+      const punctuationTailMatch = previous.nodeValue.match(/((?:\u2060)*[.,;:!?"'“”‘’)\]}\u2014\u2013-]+(?:\u2060)*)$/u);
+      const punctuationPrefix = punctuationTailMatch
+        ? previous.nodeValue.slice(0, previous.nodeValue.length - punctuationTailMatch[1].length)
+        : "";
+      const glossaryPrefix = punctuationTailMatch ? previousSignificantSibling(previous) : null;
+
+      if (punctuationTailMatch && isGlossaryAnnotationNode(glossaryPrefix) && glossaryPrefix.parentNode) {
+        const cluster = document.createElement("span");
+        cluster.className = "ifc-citation-cluster";
+        glossaryPrefix.parentNode.insertBefore(cluster, glossaryPrefix);
+        cluster.appendChild(glossaryPrefix);
+        cluster.appendChild(document.createTextNode(punctuationTailMatch[1]));
+
+        chain.forEach(function (node) {
+          if (node.parentNode) {
+            cluster.appendChild(node);
+          }
+        });
+
+        if (punctuationPrefix) {
+          previous.nodeValue = punctuationPrefix;
+        } else if (previous.parentNode) {
+          previous.parentNode.removeChild(previous);
+        }
+
         return;
       }
 

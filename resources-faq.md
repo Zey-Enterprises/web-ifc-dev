@@ -37,7 +37,7 @@ header:
 {% assign faq_concerns = faq_concerns | uniq %}
 {% assign faq_tags = faq_tags | uniq | sort_natural %}
 
-<div class="ifc-resource-browser ifc-resource-browser--faq" data-resource-browser data-resource-path="{{ faq_path }}" data-default-sort="lexicographical" data-result-label-singular="FAQ" data-result-label-plural="FAQs" data-citation-numbering="global">
+<div id="faq-top" class="ifc-resource-browser ifc-resource-browser--faq" data-resource-browser data-resource-path="{{ faq_path }}" data-default-sort="lexicographical" data-result-label-singular="FAQ" data-result-label-plural="FAQs" data-citation-numbering="global">
   <div class="ifc-resource-browser__toolbar">
     <button
       class="ifc-resource-browser__mobile-toggle"
@@ -263,6 +263,10 @@ header:
               </div>
             {% endif %}
           </div>
+
+          <a class="ifc-glossary-entry__to-top" href="#faq-top" data-resource-top-link aria-label="Back to top" title="Back to top">
+            <span aria-hidden="true">↑</span>
+          </a>
         </article>
       {% endfor %}
     </div>

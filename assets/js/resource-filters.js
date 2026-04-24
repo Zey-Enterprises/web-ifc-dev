@@ -675,6 +675,7 @@
     var mobileClose = root.querySelector("[data-mobile-filter-close]");
     var mobileSortNode = root.querySelector("[data-mobile-sort-control]");
     var resourceTopTarget = root.querySelector("[data-mobile-filter-panel]") || root;
+    var pageTopTarget = root.querySelector("[data-resource-top-target]") || root;
     var mobileTopTarget = root.querySelector("[data-mobile-filter-toggle]") || root;
     var defaultSort = root.getAttribute("data-default-sort") || "recent-published-desc";
     var resultLabelSingular = root.getAttribute("data-result-label-singular") || "resource";
@@ -1128,6 +1129,14 @@
       scrollToVisibleTarget(isMobileViewport() ? mobileTopTarget : resourceTopTarget, 16);
     }
 
+    function scrollToResourceTopTarget() {
+      scrollToVisibleTarget(pageTopTarget, 16);
+
+      if (window.history && window.history.replaceState) {
+        window.history.replaceState({}, "", window.location.pathname + window.location.search);
+      }
+    }
+
     root.addEventListener("change", function (event) {
       var option = event.target.closest(".ifc-resource-filter__option input[type='checkbox']");
       if (!option) return;
@@ -1247,6 +1256,13 @@
           sortExplicit: true
         });
         closeAllMenus();
+        return;
+      }
+
+      var topLink = event.target.closest("[data-resource-top-link]");
+      if (topLink) {
+        event.preventDefault();
+        scrollToResourceTopTarget();
         return;
       }
 
