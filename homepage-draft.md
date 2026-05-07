@@ -12,11 +12,11 @@ header:
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.56), rgba(17, 33, 45, 0.21))
   overlay_interval: 3000
   overlay_images:
-    - image: /assets/images/ifc-hero-banner-weightlifting-2.jpg
-    - image: /assets/images/ifc-hero-banner-nutrition-3.jpg
-    - image: /assets/images/ifc-hero-banner-mindfulness-3.jpg
+    - image: /assets/images/overlay/index-weightlifting.webp
+    - image: /assets/images/overlay/index-nutrition.webp
+    - image: /assets/images/overlay/index-mindfulness.webp
       mobile_background_position: 68% center
-    - image: /assets/images/ifc-hero-banner-reading-1.jpg
+    - image: /assets/images/overlay/index-reading.webp
   actions:
     - label: Apply for coaching
       url: /apply/
@@ -30,12 +30,12 @@ header:
   <div markdown="1">
 ## People do not always come in through the same door
 
-Some people come looking for help with physique, nutrition, training, or physical performance. Some come because stress, emotional regulation, or recurring relational patterns are making life harder than it needs to be. Others are trying to think more clearly about values, standards, judgment, and how to live.
+Some people come looking for help with physique, nutrition, training, or physical performance. Some come because stress, emotional regulation, or recurring relational patterns are making life more difficult than it needs to be. Others are trying to think more clearly about values, standards, judgment, and how to live.
 {: .ifc-lead}
 
 The starting point can differ. The reason for an integrated approach does not.
 
-This coaching is built on a simple observation: body, intellect, and spirit are distinct, but not separate. Lasting progress usually depends on working with the whole person rather than treating one visible problem as though it exists in isolation.
+This coaching is built on a simple observation: body, intellect, and spirit are distinct, but not separate. Lasting progress usually depends on working with the whole person, rather than treating one visible problem as though it exists in isolation.
 
 [Apply for coaching](/apply/){:.ifc-button}
 [See how coaching works](/approach/){:.ifc-button .ifc-button--secondary}
@@ -66,11 +66,13 @@ We can begin anywhere. The point is to work in a way that strengthens the whole 
     </div>
     <div class="ifc-panel">
       <h3>Intellect affects the whole system</h3>
-      <p>Confused standards, weak judgment, or unclear values can make every other domain harder to organize well and harder to sustain.</p>
+      <p>Confused standards, weak judgment, or unclear values can make every other domain more difficult to organize well and sustain.</p>
     </div>
   </div>
   <p>This is why the coaching is not just physique work with a little mindset added on top. It is an attempt to help you improve in a way that respects the full structure of a human life.</p>
-  <p class="ifc-link-action"><a class="ifc-mini-action" href="/approach/"><span class="ifc-mini-action__label">Read the full approach</span></a></p>
+  <div class="ifc-link-action">
+    {% include double_icon_button.html href="/approach/" label="Read the full approach" alignment="center" %}
+  </div>
 </div>
 
 <div class="ifc-section">
@@ -106,7 +108,9 @@ We can begin anywhere. The point is to work in a way that strengthens the whole 
       <p>Longstanding study of philosophy, psychology, relational dynamics, communication, and self-development informs how I think about emotional regulation, self-command, values, and living well.</p>
     </div>
   </div>
-  <p class="ifc-link-action"><a class="ifc-mini-action" href="/about/"><span class="ifc-mini-action__label">Read more about Arthur</span></a></p>
+  <div class="ifc-link-action">
+    {% include double_icon_button.html href="/about/" label="Read more about Arthur" alignment="center" %}
+  </div>
 </div>
 
 <div class="ifc-section ifc-section--tight">
@@ -118,11 +122,11 @@ We can begin anywhere. The point is to work in a way that strengthens the whole 
     </div>
     <div class="ifc-panel">
       <h3>Better follow-through</h3>
-      <p>The plan fits your life better, and the real points of friction are addressed instead of ignored.</p>
+      <p>The plan fits your life better, and the real points of friction are addressed, instead of ignored.</p>
     </div>
     <div class="ifc-panel">
       <h3>More durable progress</h3>
-      <p>Physical, intellectual, and emotional gains begin to reinforce each other rather than competing for attention.</p>
+      <p>Physical, intellectual, and emotional gains begin to reinforce one another, rather than competing for attention.</p>
     </div>
   </div>
 </div>
@@ -133,15 +137,16 @@ We can begin anywhere. The point is to work in a way that strengthens the whole 
   <div class="ifc-grid">
     {% assign featured_testimonials = site.testimonials | where: "featured", true | sort: "sort_order" %}
     {% for item in featured_testimonials limit:3 %}
-      <div class="ifc-panel">
-        <h3>{{ item.client_name }}</h3>
-        <p><strong>{{ item.result_summary }}</strong></p>
-        <p class="ifc-quote">{{ item.excerpt | strip_html }}</p>
-        <p class="ifc-link-action"><a class="ifc-mini-action" href="{{ item.url }}"><span class="ifc-mini-action__label">Read more</span></a></p>
-      </div>
+      <a class="ifc-card-link" href="{{ item.url }}">
+        <p class="ifc-resource-card__eyebrow">Testimonial</p>
+        <strong>{{ item.client_name }}</strong>
+        <p>{{ item.result_summary }}</p>
+      </a>
     {% endfor %}
   </div>
-  <p class="ifc-link-action"><a class="ifc-mini-action" href="/results/"><span class="ifc-mini-action__label">See testimonials and case studies</span></a></p>
+  <div class="ifc-link-action">
+    {% include double_icon_button.html href="/results/" label="See testimonials and case studies" alignment="center" %}
+  </div>
 </div>
 
 <div class="ifc-section">
@@ -160,7 +165,10 @@ We can begin anywhere. The point is to work in a way that strengthens the whole 
       </a>
     {% endfor %}
   </div>
-  <p class="ifc-link-action"><a class="ifc-mini-action" href="/resources/"><span class="ifc-mini-action__label">Browse the full resource library</span></a></p>
+  {% include faq_carousel.html speed=209 excerpt_length=210 %}
+  <div class="ifc-link-action">
+    {% include double_icon_button.html href="/resources/" label="Browse the full resource library" alignment="center" %}
+  </div>
 </div>
 
 <div class="ifc-section">
@@ -170,6 +178,6 @@ We can begin anywhere. The point is to work in a way that strengthens the whole 
 This is coaching for people who want more than a generic plan, more than short-lived intensity, and more than compartmentalized self-improvement. The aim is durable progress in the broad sense: a stronger body, a steadier spirit, a clearer intellect, and a life that holds together more coherently.
 
 [Apply for coaching](/apply/){:.ifc-button}
-[Read the FAQ](/faq/){:.ifc-button .ifc-button--secondary}
+[Read the Coaching FAQ](/faq/){:.ifc-button .ifc-button--secondary}
   </div>
 </div>
