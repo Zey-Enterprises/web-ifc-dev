@@ -14,6 +14,7 @@ concerns:
   - energy
   - busy-life
   - performance
+  - physical-health
 tags:
   - recovery
   - sleep

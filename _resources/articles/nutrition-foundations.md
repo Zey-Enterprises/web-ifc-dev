@@ -14,6 +14,7 @@ concerns:
   - beginners
   - energy
   - busy-life
+  - physical-health
 tags:
   - calorie-balance
   - protein
