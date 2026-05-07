@@ -2789,7 +2789,7 @@ body.ifc-resource-browser--panel-open {
 
 .ifc-faq-entry {
   position: relative;
-  padding-bottom: 3.6rem;
+  padding-bottom: 1.25rem;
   scroll-margin-top: 7.5rem;
 }
 
@@ -2821,9 +2821,27 @@ body.ifc-resource-browser--panel-open {
 .ifc-faq-entry__meta {
   display: grid;
   gap: 0.9rem;
-  margin-top: 1.25rem;
+  margin-top: 0;
   padding-top: 1rem;
   border-top: 1px solid rgba(22, 33, 43, 0.08);
+}
+
+.ifc-faq-entry__footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.ifc-faq-entry__footer .ifc-faq-entry__meta {
+  flex: 1 1 auto;
+}
+
+.ifc-faq-entry__footer .ifc-glossary-entry__to-top {
+  position: static;
+  flex: 0 0 auto;
+  margin-left: auto;
 }
 
 .ifc-faq-entry__label {

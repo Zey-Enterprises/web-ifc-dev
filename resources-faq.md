@@ -232,45 +232,47 @@ header:
             {{ item.content }}
           </div>
 
-          <div class="ifc-faq-entry__meta">
-            {% if item.domains and item.domains.size > 0 %}
-              <div class="ifc-faq-entry__meta-group">
-                <p class="ifc-faq-entry__label">Domain</p>
-                <p class="ifc-taxonomy-pills">
-                  {% for domain in item.domains %}
-                    <span class="ifc-taxonomy-pill">{{ domain | replace: "-", " " | capitalize }}</span>
-                  {% endfor %}
-                </p>
-              </div>
-            {% endif %}
+          <div class="ifc-faq-entry__footer">
+            <div class="ifc-faq-entry__meta">
+              {% if item.domains and item.domains.size > 0 %}
+                <div class="ifc-faq-entry__meta-group">
+                  <p class="ifc-faq-entry__label">Domain</p>
+                  <p class="ifc-taxonomy-pills">
+                    {% for domain in item.domains %}
+                      <span class="ifc-taxonomy-pill">{{ domain | replace: "-", " " | capitalize }}</span>
+                    {% endfor %}
+                  </p>
+                </div>
+              {% endif %}
 
-            {% if item.concerns and item.concerns.size > 0 %}
-              <div class="ifc-faq-entry__meta-group">
-                <p class="ifc-faq-entry__label">Concerns</p>
-                <p class="ifc-taxonomy-pills">
-                  {% for concern in item.concerns %}
-                    <span class="ifc-taxonomy-pill ifc-taxonomy-pill--soft">{{ concern | replace: "-", " " | capitalize }}</span>
-                  {% endfor %}
-                </p>
-              </div>
-            {% endif %}
+              {% if item.concerns and item.concerns.size > 0 %}
+                <div class="ifc-faq-entry__meta-group">
+                  <p class="ifc-faq-entry__label">Concerns</p>
+                  <p class="ifc-taxonomy-pills">
+                    {% for concern in item.concerns %}
+                      <span class="ifc-taxonomy-pill ifc-taxonomy-pill--soft">{{ concern | replace: "-", " " | capitalize }}</span>
+                    {% endfor %}
+                  </p>
+                </div>
+              {% endif %}
 
-            {% if item.tags and item.tags.size > 0 %}
-              <div class="ifc-faq-entry__meta-group">
-                <p class="ifc-faq-entry__label">Tags</p>
-                <p class="ifc-taxonomy-pills">
-                  {% for tag_slug in item.tags %}
-                    {% assign tag_data = site.data.tags[tag_slug] %}
-                    <span class="ifc-taxonomy-pill ifc-taxonomy-pill--light">{{ tag_data.label | default: tag_slug }}</span>
-                  {% endfor %}
-                </p>
-              </div>
-            {% endif %}
+              {% if item.tags and item.tags.size > 0 %}
+                <div class="ifc-faq-entry__meta-group">
+                  <p class="ifc-faq-entry__label">Tags</p>
+                  <p class="ifc-taxonomy-pills">
+                    {% for tag_slug in item.tags %}
+                      {% assign tag_data = site.data.tags[tag_slug] %}
+                      <span class="ifc-taxonomy-pill ifc-taxonomy-pill--light">{{ tag_data.label | default: tag_slug }}</span>
+                    {% endfor %}
+                  </p>
+                </div>
+              {% endif %}
+            </div>
+
+            <a class="ifc-glossary-entry__to-top" href="#faq-top" data-resource-top-link aria-label="Back to top" title="Back to top">
+              <span aria-hidden="true">↑</span>
+            </a>
           </div>
-
-          <a class="ifc-glossary-entry__to-top" href="#faq-top" data-resource-top-link aria-label="Back to top" title="Back to top">
-            <span aria-hidden="true">↑</span>
-          </a>
         </article>
       {% endfor %}
     </div>
