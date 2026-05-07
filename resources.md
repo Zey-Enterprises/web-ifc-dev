@@ -26,7 +26,6 @@ header:
 {% assign references_path = '/resources/references/' | relative_url %}
 {% assign content_resources = site.resources | where_exp: "item", "item.resource_type != 'faq'" %}
 {% assign recent_resources = content_resources | sort: "date" | reverse %}
-{% assign concern_values = "fat-loss,muscle-gain,body-composition,adherence,sleep,stress,energy,recovery,behavior-change,mindset,self-direction,busy-life,beginners,maintenance,performance" | split: "," %}
 {% assign domain_values = "diet,physical-exercise,psychology,philosophy" | split: "," %}
 
 <div class="ifc-resource-browser" data-resource-browser data-resource-path="{{ resources_path }}" data-default-sort="recent-published-desc">
@@ -163,10 +162,12 @@ header:
             <button type="button" data-filter-action="clear-all">Clear all</button>
           </div>
           <div class="ifc-resource-filter__options">
-            {% for concern in concern_values %}
+            {% for concern_pair in site.data.concerns %}
+              {% assign concern = concern_pair[0] %}
+              {% assign concern_data = concern_pair[1] %}
               <label class="ifc-resource-filter__option">
-                <input type="checkbox" value="{{ concern }}" data-option-label="{{ concern | replace: '-', ' ' | capitalize }}">
-                <span>{{ concern | replace: "-", " " | capitalize }}</span>
+                <input type="checkbox" value="{{ concern }}" data-option-label="{{ concern_data.label | default: concern }}">
+                <span>{{ concern_data.label | default: concern }}</span>
               </label>
             {% endfor %}
           </div>
@@ -274,8 +275,10 @@ header:
   <section class="ifc-section ifc-section--tight" data-resource-landing-section>
     <h2>Browse by concern</h2>
     <div class="ifc-topic-grid">
-      {% for concern in concern_values %}
-        <a class="ifc-topic" href="{{ resources_path }}?concern={{ concern }}" data-resource-shortcut>{{ concern | replace: "-", " " | capitalize }}</a>
+      {% for concern_pair in site.data.concerns %}
+        {% assign concern = concern_pair[0] %}
+        {% assign concern_data = concern_pair[1] %}
+        <a class="ifc-topic" href="{{ resources_path }}?concern={{ concern }}" data-resource-shortcut>{{ concern_data.label | default: concern }}</a>
       {% endfor %}
     </div>
   </section>

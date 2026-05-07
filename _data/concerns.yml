@@ -1,0 +1,40 @@
+fat-loss:
+  label: "Fat Loss"
+muscle-gain:
+  label: "Muscle Gain"
+body-composition:
+  label: "Body Composition"
+adherence:
+  label: "Adherence"
+sleep:
+  label: "Sleep"
+stress:
+  label: "Stress"
+energy:
+  label: "Energy"
+recovery:
+  label: "Recovery"
+physical-health:
+  label: "Physical Health"
+behavior-change:
+  label: "Behavior Change"
+mindset:
+  label: "Mindset"
+self-direction:
+  label: "Self-Direction"
+busy-life:
+  label: "Busy Life"
+beginners:
+  label: "Beginners"
+maintenance:
+  label: "Maintenance"
+performance:
+  label: "Performance"
+injury-risk-management:
+  label: "Injury Risk Management"
+emotional-regulation:
+  label: "Emotional Regulation"
+relationships:
+  label: "Relationships"
+boundaries:
+  label: "Boundaries"

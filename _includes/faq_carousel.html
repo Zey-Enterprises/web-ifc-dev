@@ -1,0 +1,190 @@
+{% assign carousel_id = include.id | default: "ifc-faq-carousel" %}
+{% assign faq_path = include.path | default: "/resources/faq/" | relative_url %}
+{% assign duration = include.speed | default: include.duration | default: "90s" %}
+{% assign limit = include.limit | default: 0 | plus: 0 %}
+{% assign excerpt_length = include.excerpt_length | default: 210 | plus: 0 %}
+{% assign tag_filter = include.tags | default: "" | split: "," %}
+{% assign domain_filter = include.domains | default: "" | split: "," %}
+{% assign concern_filter = include.concerns | default: "" | split: "," %}
+{% assign faq_entries = site.resources | where: "resource_type", "faq" | sort_natural: "title" %}
+{% assign rendered_count = 0 %}
+
+<div
+  class="ifc-faq-carousel"
+  id="{{ carousel_id }}"
+  style="--ifc-faq-carousel-duration: {{ duration }};"
+  data-faq-carousel
+>
+  <div class="ifc-faq-carousel__viewport" aria-label="{{ include.aria_label | default: 'Featured FAQ entries' }}">
+    <div class="ifc-faq-carousel__track" data-faq-carousel-track>
+      {% for item in faq_entries %}
+        {% assign include_item = true %}
+
+        {% if include.tags %}
+          {% assign include_item = false %}
+          {% for tag in tag_filter %}
+            {% assign tag_slug = tag | strip %}
+            {% if item.tags contains tag_slug %}
+              {% assign include_item = true %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% if include.domains %}
+          {% assign domain_match = false %}
+          {% for domain in domain_filter %}
+            {% assign domain_slug = domain | strip %}
+            {% if item.domains contains domain_slug %}
+              {% assign domain_match = true %}
+            {% endif %}
+          {% endfor %}
+          {% unless domain_match %}
+            {% assign include_item = false %}
+          {% endunless %}
+        {% endif %}
+
+        {% if include.concerns %}
+          {% assign concern_match = false %}
+          {% for concern in concern_filter %}
+            {% assign concern_slug = concern | strip %}
+            {% if item.concerns contains concern_slug %}
+              {% assign concern_match = true %}
+            {% endif %}
+          {% endfor %}
+          {% unless concern_match %}
+            {% assign include_item = false %}
+          {% endunless %}
+        {% endif %}
+
+        {% if include_item and limit > 0 and rendered_count >= limit %}
+          {% assign include_item = false %}
+        {% endif %}
+
+        {% if include_item %}
+          {% assign rendered_count = rendered_count | plus: 1 %}
+          <a class="ifc-faq-carousel-card" href="{{ faq_path }}#{{ item.slug }}">
+            <span class="ifc-resource-card__eyebrow">FAQ</span>
+            <strong class="ifc-faq-carousel-card__title">{{ item.title }}</strong>
+            <span class="ifc-faq-carousel-card__excerpt" data-faq-carousel-excerpt data-excerpt-length="{{ excerpt_length }}"></span>
+            <template data-faq-carousel-content>{{ item.content }}</template>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var carousel = document.getElementById({{ carousel_id | jsonify }});
+
+    if (!carousel) {
+      return;
+    }
+
+    var track = carousel.querySelector("[data-faq-carousel-track]");
+    var cards = Array.prototype.slice.call(track ? track.children : []);
+
+    function normalizeWhitespace(text) {
+      return (text || "")
+        .replace(/\s+/g, " ")
+        .replace(/\s+([.,;:!?])/g, "$1")
+        .trim();
+    }
+
+    function truncateText(text, maxLength) {
+      if (!maxLength || text.length <= maxLength) {
+        return text;
+      }
+
+      var ellipsis = "...";
+      var availableLength = Math.max(0, maxLength - ellipsis.length);
+      var truncated = text.slice(0, availableLength).trimEnd();
+      var lastSpace = truncated.search(/\s+\S*$/);
+
+      if (lastSpace > 0) {
+        truncated = truncated.slice(0, lastSpace).trimEnd();
+      }
+
+      return truncated + ellipsis;
+    }
+
+    function getAnnotationTriggerText(annotation) {
+      var trigger = annotation.querySelector(".ifc-annotation__trigger");
+
+      if (!trigger) {
+        return "";
+      }
+
+      var clone = trigger.cloneNode(true);
+
+      Array.prototype.slice.call(clone.querySelectorAll(".screen-reader-text, .ifc-citation-marker")).forEach(function (node) {
+        node.remove();
+      });
+
+      return normalizeWhitespace(clone.textContent);
+    }
+
+    function cleanExcerptSource(fragment) {
+      Array.prototype.slice.call(fragment.querySelectorAll(".ifc-annotation")).forEach(function (annotation) {
+        var replacementText = "";
+
+        if (annotation.dataset.annotationKind !== "citation") {
+          replacementText = getAnnotationTriggerText(annotation);
+        }
+
+        annotation.replaceWith(document.createTextNode(replacementText));
+      });
+
+      Array.prototype.slice.call(fragment.querySelectorAll(".ifc-citation-marker, .screen-reader-text")).forEach(function (node) {
+        node.remove();
+      });
+    }
+
+    function hydrateExcerpt(card) {
+      var excerpt = card.querySelector("[data-faq-carousel-excerpt]");
+      var template = card.querySelector("[data-faq-carousel-content]");
+
+      if (!excerpt || !template) {
+        return;
+      }
+
+      var maxLength = Number.parseInt(excerpt.dataset.excerptLength, 10) || 210;
+      var fragment = template.content.cloneNode(true);
+
+      cleanExcerptSource(fragment);
+      excerpt.textContent = truncateText(normalizeWhitespace(fragment.textContent), maxLength);
+      template.remove();
+    }
+
+    if (!track || cards.length < 2) {
+      cards.forEach(hydrateExcerpt);
+      carousel.classList.add("ifc-faq-carousel--static");
+      return;
+    }
+
+    cards.forEach(hydrateExcerpt);
+
+    for (var i = cards.length - 1; i > 0; i -= 1) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var swap = cards[i];
+      cards[i] = cards[j];
+      cards[j] = swap;
+    }
+
+    track.textContent = "";
+
+    cards.forEach(function (card) {
+      track.appendChild(card);
+    });
+
+    cards.forEach(function (card) {
+      var clone = card.cloneNode(true);
+      clone.setAttribute("aria-hidden", "true");
+      clone.tabIndex = -1;
+      track.appendChild(clone);
+    });
+
+    carousel.classList.add("ifc-faq-carousel--ready");
+  })();
+</script>

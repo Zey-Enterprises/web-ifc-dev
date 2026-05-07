@@ -47,9 +47,25 @@ environment-design:
   label: "Environment Design"
 mindfulness:
   label: "Mindfulness"
+emotional-regulation:
+  label: "Emotional Regulation"
+relationships:
+  label: "Relationships"
+boundaries:
+  label: "Boundaries"
+communication:
+  label: "Communication"
+attachment:
+  label: "Attachment"
+self-esteem:
+  label: "Self-Esteem"
+values:
+  label: "Values"
 
 mind-body-integration:
   label: "Mind-Body Integration"
+body-image:
+  label: "Body Image"
 
 ethics:
   label: "Ethics"
@@ -57,3 +73,7 @@ epistemology:
   label: "Epistemology"
 reason:
   label: "Reason"
+training-volume:
+  label: "Training Volume"
+hydration:
+  label: "Hydration"

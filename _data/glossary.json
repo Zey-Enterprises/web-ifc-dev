@@ -29,7 +29,7 @@
     "id": "breathwork",
     "term": "breathwork",
     "short": "Deliberate breathing practices used to regulate arousal, attention, and stress.",
-    "long": "In coaching contexts, breathwork is usually a practical self-regulation tool rather than a mystical shortcut. Slowing and structuring breathing can reduce perceived stress, improve state control, and make it easier to follow through on nutrition and training plans.",
+    "long": "In practical self-regulation contexts, breathwork is usually a tool rather than a mystical shortcut. Slowing and structuring breathing can reduce perceived stress, improve state control, and make it easier to follow through on nutrition and training plans.",
     "tags": [
       "mindfulness",
       "behavior-change"
@@ -52,6 +52,83 @@
       "calories-in",
       "calories-out",
       "partitioning"
+    ]
+  },
+  "protein": {
+    "id": "protein",
+    "term": "protein",
+    "short": "A macronutrient that supplies amino acids used to build and repair body tissues.",
+    "long": "Protein matters for muscle gain, lean-mass retention during fat loss, satiety, and normal tissue repair. In nutrition planning, protein targets are usually set by body size, goal, training status, calorie intake, and medical context.",
+    "tags": [
+      "body-composition",
+      "protein",
+      "satiety"
+    ],
+    "see_also": [
+      "macronutrients",
+      "satiety",
+      "hypertrophy"
+    ]
+  },
+  "carbohydrates": {
+    "id": "carbohydrates",
+    "term": "carbohydrates",
+    "short": "A macronutrient that supplies energy through sugars, starches, and fiber-containing foods.",
+    "long": "Carbohydrates are not required for fat loss, but they are often useful for training performance, food variety, fiber intake, and dietary adherence. Their effect on body composition depends mainly on total calorie balance, food choices, and the rest of the diet.",
+    "tags": [
+      "carbohydrates",
+      "calorie-balance",
+      "endurance"
+    ],
+    "see_also": [
+      "macronutrients",
+      "calorie-balance",
+      "fiber"
+    ]
+  },
+  "dietary-fat": {
+    "id": "dietary-fat",
+    "term": "dietary fat",
+    "short": "A macronutrient that supports energy intake, hormone production, cell membranes, and absorption of fat-soluble nutrients.",
+    "long": "Dietary fat is calorie-dense and often easy to overeat, but it is not optional. Productive diet plans usually keep enough fat for health, satisfaction, and food enjoyment while managing total calories and emphasizing mostly unsaturated fat sources.",
+    "tags": [
+      "dietary-fat",
+      "calorie-balance",
+      "food-quality"
+    ],
+    "see_also": [
+      "macronutrients",
+      "calorie-balance"
+    ]
+  },
+  "fiber": {
+    "id": "fiber",
+    "term": "fiber",
+    "short": "Non-digestible carbohydrate found in plant foods that supports digestion, satiety, and metabolic health.",
+    "long": "Fiber can make dieting easier by adding food volume and slowing digestion, but increasing it too quickly can cause gas, bloating, or constipation. Useful sources include vegetables, fruit, beans, lentils, whole grains, nuts, and seeds.",
+    "tags": [
+      "fiber",
+      "satiety",
+      "food-quality"
+    ],
+    "see_also": [
+      "carbohydrates",
+      "satiety"
+    ]
+  },
+  "food-quality": {
+    "id": "food-quality",
+    "term": "food quality",
+    "short": "The overall nutrient density, processing level, digestibility, and practical usefulness of food choices.",
+    "long": "Food quality matters because foods differ in protein, fiber, micronutrients, calories, palatability, digestion, and how easy they are to overeat. It does not replace calorie balance, but it often determines how easy calorie balance is to achieve.",
+    "tags": [
+      "food-quality",
+      "adherence",
+      "calorie-balance"
+    ],
+    "see_also": [
+      "calorie-balance",
+      "satiety"
     ]
   },
   "calories-in": {
@@ -292,7 +369,7 @@
     "id": "hyperpalatable",
     "term": "hyperpalatable",
     "short": "Describes foods formulated or combined to be unusually rewarding and easy to overeat.",
-    "long": "Hyperpalatable foods often combine refined carbohydrate, fat, salt, texture, and convenience in ways that raise reward value while lowering how hard it feels to keep eating. The main issue is usually passive overconsumption, not a special exemption from calorie balance.",
+    "long": "Hyperpalatable foods often combine refined carbohydrate, fat, salt, texture, and convenience in ways that raise reward value while lowering how difficult it feels to keep eating. The main issue is usually passive overconsumption, not a special exemption from calorie balance.",
     "tags": [
       "satiety",
       "food-quality"
@@ -322,7 +399,7 @@
     "id": "hypothyroidism",
     "term": "hypothyroidism",
     "short": "A condition in which thyroid hormone levels are too low.",
-    "long": "Hypothyroidism can reduce metabolic rate, energy, and exercise tolerance while increasing fatigue and symptom burden. Those changes can make body-composition management harder without invalidating calorie balance.",
+    "long": "Hypothyroidism can reduce metabolic rate, energy, and exercise tolerance while increasing fatigue and symptom burden. Those changes can make body-composition management more difficult without invalidating calorie balance.",
     "tags": [
       "body-composition",
       "fatigue"
@@ -383,7 +460,7 @@
     "id": "leptin",
     "term": "leptin",
     "short": "A hormone involved in energy sufficiency signaling and appetite regulation.",
-    "long": "Leptin is produced largely by fat tissue and helps communicate longer-term energy status to the brain. During dieting, falling leptin can make hunger and food focus increase, which is one reason deficits get harder to sustain over time.",
+    "long": "Leptin is produced largely by fat tissue and helps communicate longer-term energy status to the brain. During dieting, falling leptin can make hunger and food focus increase, which is one reason deficits get more difficult to sustain over time.",
     "tags": [
       "satiety"
     ],
@@ -509,7 +586,8 @@
     "long": "In nutrition and physique work, periodization often means organizing phases such as fat loss, maintenance, and muscle gain so progress is more sustainable and better matched to training demands.",
     "tags": [
       "periodization",
-      "body-composition"
+      "body-composition",
+      "training-volume"
     ],
     "see_also": [
       "cut",
@@ -569,7 +647,8 @@
     "short": "The process of restoring readiness after training, stress, and ordinary life demands.",
     "long": "Recovery includes sleep, food intake, hydration, stress regulation, workload management, and enough low-friction time between demanding efforts. Good recovery supports training quality and consistency; poor recovery quietly degrades both.",
     "tags": [
-      "recovery"
+      "recovery",
+      "hydration"
     ],
     "see_also": [
       "energy-availability",
@@ -685,6 +764,7 @@
     "short": "Ayn Rand's philosophy, centered on objective reality, reason, individual rights, and rational self-interest.",
     "long": "Objectivism is the philosophical system originated by Ayn Rand. It holds that reality exists independent of consciousness, that reason is the primary means of knowledge, that each person ought to live by the judgment of their own rational mind, and that a social system should protect individual rights and voluntary exchange. In this context, it functions as a foundational framework for thinking about reality, knowledge, ethics, and human flourishing.",
     "tags": [
+      "values",
       "ethics",
       "epistemology",
       "reason"
@@ -707,13 +787,15 @@
       "objectivism"
     ]
   },
-  "egoism":{
+  "egoism": {
     "id": "egoism",
     "term": "egoism",
     "short": "The ethical view that each person ought to act in accordance with their own rational self-interest.",
     "long": "Egoism is the ethical principle that an individual should act to promote their own life and well-being, using reason as the standard for determining what truly serves those ends. It does not mean acting on impulse, sacrificing long-term values for short-term gain, or disregarding others arbitrarily. Instead, it involves identifying and pursuing the values necessary for one's sustained flourishing, including productive work, meaningful relationships, and integrity. In this view, benefiting oneself and engaging with others through voluntary, mutually beneficial relationships are not in conflict but are aligned expressions of rational living.",
     "tags": [
-      "ethics"
+      "ethics",
+      "values",
+      "relationships"
     ],
     "see_also": [
       "objectivism"
@@ -724,7 +806,13 @@
     "term": "Attachment Theory",
     "short": "A framework describing how early relationships shape emotional regulation and adult relational patterns.",
     "long": "Attachment Theory originated with John Bowlby and describes how early caregiver relationships influence patterns of safety, trust, and connection. These patterns often persist into adulthood, shaping how individuals approach intimacy, conflict, and emotional regulation. Modern applications use attachment styles as a lens for self-awareness and behavior change rather than fixed identity.",
-    "tags": ["behavior-change", "mind-body-integration"],
+    "tags": [
+      "behavior-change",
+      "emotional-regulation",
+      "relationships",
+      "attachment",
+      "mind-body-integration"
+    ],
     "see_also": [],
     "links": [
       {
@@ -744,15 +832,24 @@
     "term": "Positive Discipline",
     "short": "A parenting approach that combines kindness and firmness to teach long-term behavioral and social skills.",
     "long": "Positive Discipline is an approach to parenting and teaching that emphasizes mutual respect, encouragement, and skill-building over punishment. Rooted in Adlerian psychology, it aims to help children develop responsibility, emotional regulation, and social competence through consistent structure and connection rather than control or permissiveness.",
-    "tags": ["behavior-change"],
+    "tags": [
+      "behavior-change",
+      "relationships",
+      "emotional-regulation"
+    ],
     "see_also": []
   },
   "manager-tools": {
     "id": "manager-tools",
     "term": "Manager Tools",
     "short": "A practical management system focused on structured behaviors like one-on-ones, feedback, and delegation.",
-    "long": "Manager Tools is a behaviorally grounded management framework developed by Mark Horstman and Mike Auzenne. It emphasizes specific, repeatable practices such as regular one-on-ones, timely feedback, structured coaching, and effective delegation. The system is designed to improve performance, build trust, and create predictable organizational outcomes.",
-    "tags": ["behavior-change", "environment-design", "adherence"],
+    "long": "Manager Tools is a behaviorally grounded management framework developed by Mark Horstman and Mike Auzenne. It emphasizes specific, repeatable practices such as regular one-on-ones, timely feedback, structured employee development, and effective delegation. The system is designed to improve performance, build trust, and create predictable organizational outcomes.",
+    "tags": [
+      "adherence",
+      "behavior-change",
+      "environment-design",
+      "communication"
+    ],
     "see_also": [],
     "links": [
       {
@@ -767,7 +864,13 @@
     "term": "Authentic Relating",
     "short": "Practices that increase honesty, emotional awareness, and real-time interpersonal connection.",
     "long": "Authentic Relating is a set of interpersonal practices designed to increase presence, honesty, and connection. Participants are encouraged to notice and express their real-time experience, listen deeply, and engage with others beyond social performance. The goal is greater clarity, emotional awareness, and genuine human contact.",
-    "tags": ["mindfulness", "mind-body-integration"],
+    "tags": [
+      "mindfulness",
+      "mind-body-integration",
+      "relationships",
+      "emotional-regulation",
+      "values"
+    ],
     "see_also": [
       "circling",
       "cocounseling"
@@ -778,7 +881,13 @@
     "term": "Circling",
     "short": "A structured relational practice focused on present-moment awareness and interpersonal feedback.",
     "long": "Circling is a facilitated Authentic Relating practice in which participants focus on what is happening in the present moment between them. It combines attention, emotional awareness, and verbal reflection to deepen understanding of self and others through live interaction.",
-    "tags": ["mindfulness", "mind-body-integration"],
+    "tags": [
+      "mindfulness",
+      "emotional-regulation",
+      "relationships",
+      "communication",
+      "mind-body-integration"
+    ],
     "see_also": [
       "authentic-relating",
       "cocounseling"
@@ -789,7 +898,12 @@
     "term": "mindfulness",
     "short": "Nonjudgmental awareness of present-moment experience.",
     "long": "Mindfulness is the practice of paying attention to present-moment experience without judgment. It includes awareness of thoughts, emotions, and bodily sensations, and is widely used to improve emotional regulation, reduce stress, and increase clarity of action.",
-    "tags": ["mindfulness", "mind-body-integration", "recovery"],
+    "tags": [
+      "mindfulness",
+      "mind-body-integration",
+      "recovery",
+      "emotional-regulation"
+    ],
     "see_also": []
   },
   "nonviolent-communication": {
@@ -797,7 +911,11 @@
     "term": "Nonviolent Communication",
     "short": "A communication framework that emphasizes clarity, empathy, and needs-based expression.",
     "long": "Nonviolent Communication (NVC), developed by Marshall Rosenberg, is a structured approach to communication that distinguishes observations from judgments, identifies feelings and needs, and encourages clear, actionable requests. It is designed to reduce conflict and foster mutual understanding.",
-    "tags": ["behavior-change", "mind-body-integration"],
+    "tags": [
+      "behavior-change",
+      "communication",
+      "mind-body-integration"
+    ],
     "see_also": []
   },
   "vulnerability": {
@@ -805,7 +923,14 @@
     "term": "vulnerability",
     "short": "Emotional openness in the presence of uncertainty, risk, or potential rejection.",
     "long": "Vulnerability, as described by Brené Brown, involves exposing oneself emotionally without guaranteed outcomes. It is closely tied to courage, connection, and authenticity, and is necessary for meaningful relationships and personal growth.",
-    "tags": ["behavior-change", "mind-body-integration"],
+    "tags": [
+      "behavior-change",
+      "emotional-regulation",
+      "relationships",
+      "attachment",
+      "values",
+      "mind-body-integration"
+    ],
     "see_also": [
       "authenticity",
       "shame"
@@ -816,7 +941,12 @@
     "term": "shame",
     "short": "A painful belief that one is fundamentally flawed or unworthy.",
     "long": "Shame is an emotional experience characterized by a sense of personal deficiency or unworthiness. Unlike guilt, which relates to actions, shame targets identity. It can strongly influence avoidance, defensiveness, and disconnection unless recognized and addressed.",
-    "tags": ["behavior-change", "mind-body-integration"],
+    "tags": [
+      "behavior-change",
+      "emotional-regulation",
+      "self-esteem",
+      "mind-body-integration"
+    ],
     "see_also": [
       "vulnerability",
       "authenticity"
@@ -827,7 +957,10 @@
     "term": "mindset",
     "short": "Beliefs about whether abilities are fixed or can be developed.",
     "long": "Mindset, in Carol Dweck's framework, refers to underlying beliefs about personal ability and growth. A growth mindset supports learning, persistence, and adaptation, while a fixed mindset tends to limit effort and resilience. These beliefs significantly influence behavior and outcomes.",
-    "tags": ["behavior-change", "adherence"],
+    "tags": [
+      "behavior-change",
+      "adherence"
+    ],
     "see_also": []
   },
   "authenticity": {
@@ -835,7 +968,11 @@
     "term": "authenticity",
     "short": "Alignment between internal experience and external expression.",
     "long": "Authenticity involves expressing oneself in a way that reflects one's true thoughts, emotions, and values. In Susan Campbell's work, it includes telling the truth more fully and appropriately in relationships, integrating honesty with awareness and responsibility.",
-    "tags": ["mindfulness"],
+    "tags": [
+      "mindfulness",
+      "relationships",
+      "values"
+    ],
     "see_also": [
       "vulnerability",
       "shame"
@@ -846,7 +983,10 @@
     "term": "Polyvagal Theory",
     "short": "A model of how the nervous system regulates states of safety, threat, and shutdown.",
     "long": "Polyvagal Theory, developed by Stephen Porges, describes how the autonomic nervous system shifts between states associated with connection, mobilization, and shutdown. It is widely used to understand emotional regulation, stress responses, and the physiological basis of safety and connection.",
-    "tags": ["mind-body-integration"],
+    "tags": [
+      "mind-body-integration",
+      "emotional-regulation"
+    ],
     "see_also": []
   },
   "cocounseling": {
@@ -854,7 +994,11 @@
     "term": "cocounseling",
     "short": "A structured peer practice of mutual listening and emotional support.",
     "long": "Cocounseling is a relational practice in which two individuals alternate roles as speaker and listener, providing structured attention and emotional support. It is designed to facilitate processing, insight, and emotional release without a hierarchical therapist-client relationship.",
-    "tags": ["behavior-change"],
+    "tags": [
+      "behavior-change",
+      "relationships",
+      "emotional-regulation"
+    ],
     "see_also": [
       "authentic-relating",
       "circling"
@@ -865,159 +1009,1647 @@
     "term": "SuperSlow",
     "short": "A resistance training method using very slow repetition tempos.",
     "long": "SuperSlow is a high-intensity resistance training (HIT) method that emphasizes slow lifting and lowering phases to increase muscular tension and reduce momentum. It is one of many approaches to resistance training rather than a universally optimal method.",
-    "tags": ["strength-training"],
-    "see_also": ["hypertrophy"]
+    "tags": [
+      "strength-training"
+    ],
+    "see_also": [
+      "hypertrophy"
+    ]
   },
   "hypertrophy": {
     "id": "hypertrophy",
     "term": "hypertrophy",
     "short": "An increase in muscle size resulting from resistance training and appropriate nutrition.",
     "long": "Hypertrophy refers to the enlargement of muscle fibers, typically as an adaptation to resistance training. This process occurs when training creates sufficient mechanical tension, metabolic stress, and muscle disruption, followed by adequate recovery and nutrition to support repair and growth. Over time, repeated cycles of stimulus and recovery lead to increases in muscle cross-sectional area. In practice, hypertrophy is influenced by training variables such as volume, intensity, and frequency, as well as factors like protein intake, energy balance, sleep, and fatigue management.",
-    "tags": ["hypertrophy", "strength-training"],
-    "see_also": ["periodization"]
+    "tags": [
+      "hypertrophy",
+      "strength-training",
+      "training-volume"
+    ],
+    "see_also": [
+      "periodization"
+    ]
   },
   "macronutrients": {
     "id": "macronutrients",
     "term": "macronutrients",
     "short": "The primary energy-providing nutrients: protein, carbohydrates, and fat.",
     "long": "Macronutrients are nutrients required in large amounts that provide energy and support physiological function. They include protein, carbohydrates, and fat, and their balance influences body composition, performance, and satiety.",
-    "tags": ["body-composition", "protein", "carbohydrates", "dietary-fat", "fiber"],
-    "see_also": ["micronutrients"]
+    "tags": [
+      "body-composition",
+      "protein",
+      "carbohydrates",
+      "dietary-fat",
+      "fiber"
+    ],
+    "see_also": [
+      "micronutrients"
+    ]
   },
   "micronutrients": {
     "id": "micronutrients",
     "term": "micronutrients",
     "short": "Vitamins and minerals required for normal physiological function.",
     "long": "Micronutrients include vitamins and minerals needed in small amounts to support metabolism, immune function, and overall health. They do not provide calories, but are essential for proper biological function.",
-    "tags": ["micronutrients", "food-quality"],
-    "see_also": ["macronutrients"]
+    "tags": [
+      "micronutrients",
+      "food-quality"
+    ],
+    "see_also": [
+      "macronutrients"
+    ]
   },
   "alcohol": {
     "id": "alcohol",
     "term": "alcohol",
     "short": "Ethanol consumed in beverages, which provides calories and can affect sleep, recovery, appetite, and decision-making.",
-    "long": "Alcohol is not a macronutrient, but it provides energy and is metabolized preferentially because the body has limited ability to store it. Its practical effects are dose-dependent: small amounts may fit some diets, while heavier use can make fat loss, muscle gain, hydration, sleep, and adherence harder to manage.",
-    "tags": ["calorie-balance", "recovery", "adherence"],
-    "see_also": ["calorie-balance", "recovery", "satiety"]
+    "long": "Alcohol is not a macronutrient, but it provides energy and is metabolized preferentially because the body has limited ability to store it. Its practical effects are dose-dependent: small amounts may fit some diets, while heavier use can make fat loss, muscle gain, hydration, sleep, and adherence more difficult to manage.",
+    "tags": [
+      "calorie-balance",
+      "recovery",
+      "adherence",
+      "hydration"
+    ],
+    "see_also": [
+      "calorie-balance",
+      "recovery",
+      "satiety"
+    ]
   },
   "caffeine": {
     "id": "caffeine",
     "term": "caffeine",
     "short": "A stimulant found in coffee, tea, energy drinks, and some supplements.",
     "long": "Caffeine can increase alertness, reduce perceived effort, and support exercise performance for many people. It can also worsen anxiety, gastrointestinal symptoms, or sleep when the dose is too high or taken too late in the day, so the useful dose depends on timing, tolerance, and individual response.",
-    "tags": ["dietary-supplements", "recovery", "adherence"],
-    "see_also": ["circadian-rhythm", "recovery"]
+    "tags": [
+      "dietary-supplements",
+      "recovery",
+      "adherence",
+      "hydration"
+    ],
+    "see_also": [
+      "circadian-rhythm",
+      "recovery"
+    ]
   },
   "creatine": {
     "id": "creatine",
     "term": "creatine",
     "short": "A compound stored in muscle that helps rapidly regenerate ATP during short, intense efforts.",
     "long": "Creatine supplementation, most commonly creatine monohydrate, can improve strength, power, repeated sprint ability, and lean-mass gain when paired with training. It may increase scale weight early because muscle stores more water along with creatine, which is not the same as fat gain.",
-    "tags": ["dietary-supplements", "strength-training", "hypertrophy"],
-    "see_also": ["hypertrophy", "recovery"]
+    "tags": [
+      "dietary-supplements",
+      "strength-training",
+      "hypertrophy"
+    ],
+    "see_also": [
+      "hypertrophy",
+      "recovery"
+    ]
   },
   "dietary-fiber": {
     "id": "dietary-fiber",
     "term": "dietary fiber",
     "short": "Indigestible carbohydrate from plant foods that affects digestion, satiety, bowel function, and metabolic health.",
     "long": "Dietary fiber includes soluble and insoluble forms. It contributes little usable energy compared with digestible carbohydrate, but it can slow gastric emptying, support gut function, improve stool quality, and make lower-calorie diets more filling when increased gradually.",
-    "tags": ["fiber", "satiety", "food-quality"],
-    "see_also": ["satiety", "microbiome", "scfa"]
+    "tags": [
+      "fiber",
+      "satiety",
+      "food-quality"
+    ],
+    "see_also": [
+      "satiety",
+      "microbiome",
+      "scfa"
+    ]
   },
   "electrolytes": {
     "id": "electrolytes",
     "term": "electrolytes",
     "short": "Charged minerals such as sodium, potassium, magnesium, and chloride that help regulate fluid balance and nerve and muscle function.",
-    "long": "Electrolyte needs rise with heavy sweating, hot environments, long endurance sessions, illness, and some medications. For most ordinary training, normal meals and fluids are enough, but hard or prolonged sweating may call for deliberate sodium and fluid replacement.",
-    "tags": ["recovery", "endurance", "food-quality"],
-    "see_also": ["hydration", "recovery"]
+    "long": "Electrolyte needs rise with heavy sweating, hot environments, long endurance sessions, illness, and some medications. For most ordinary training, normal meals and fluids are enough, but profuse or prolonged sweating may call for deliberate sodium and fluid replacement.",
+    "tags": [
+      "hydration",
+      "micronutrients",
+      "dietary-supplements"
+    ],
+    "see_also": [
+      "hydration",
+      "recovery"
+    ]
   },
   "glycemic-index": {
     "id": "glycemic-index",
     "term": "glycemic index",
     "short": "A ranking of carbohydrate-containing foods by how quickly they raise blood glucose when eaten alone.",
     "long": "Glycemic index can be useful context, but it is not a complete measure of food quality or fat-loss value. Mixed meals, portion size, fiber, protein, fat, training status, and total calorie intake all change the practical effect of a carbohydrate source.",
-    "tags": ["carbohydrates", "food-quality"],
-    "see_also": ["insulin", "dietary-fiber"]
+    "tags": [
+      "carbohydrates",
+      "food-quality"
+    ],
+    "see_also": [
+      "insulin",
+      "dietary-fiber"
+    ]
   },
   "glycogen": {
     "id": "glycogen",
     "term": "glycogen",
     "short": "Stored carbohydrate kept mainly in muscle and liver.",
     "long": "Glycogen supports training performance and helps maintain blood glucose. Changes in carbohydrate intake can quickly change scale weight because glycogen is stored with water, so short-term weight jumps after higher-carb eating are often fluid and stored carbohydrate rather than fat gain.",
-    "tags": ["carbohydrates", "endurance", "body-composition"],
-    "see_also": ["calorie-balance", "energy-availability"]
+    "tags": [
+      "carbohydrates",
+      "endurance",
+      "hydration"
+    ],
+    "see_also": [
+      "calorie-balance",
+      "energy-availability"
+    ]
   },
   "hydration": {
     "id": "hydration",
     "term": "hydration",
     "short": "The body's fluid status relative to current physiological needs.",
-    "long": "Hydration is affected by fluid intake, food water, sweat losses, sodium intake, temperature, altitude, illness, and exercise. In everyday settings, thirst and urine color are useful checks; in heavy training or heat, body-weight change across sessions can help estimate fluid loss.",
-    "tags": ["recovery", "endurance", "food-quality"],
-    "see_also": ["electrolytes", "recovery"]
+    "long": "Hydration is affected by fluid intake, food water, sweat losses, sodium intake, temperature, elevation, illness, and exercise. In everyday settings, thirst and urine color are useful checks; in heavy training or heat, body-weight change across sessions can help estimate fluid loss.",
+    "tags": [
+      "hydration",
+      "recovery"
+    ],
+    "see_also": [
+      "electrolytes",
+      "recovery"
+    ]
   },
   "nonnutritive-sweeteners": {
     "id": "nonnutritive-sweeteners",
     "term": "nonnutritive sweeteners",
     "short": "Sweeteners that provide little or no usable energy at typical intake levels.",
     "long": "Nonnutritive sweeteners include ingredients such as aspartame, sucralose, acesulfame potassium, saccharin, steviol glycosides, and monk fruit extract. They can help some people reduce added sugar and calorie intake, but their value depends on the overall eating pattern and individual tolerance.",
-    "tags": ["calorie-balance", "adherence", "food-quality"],
-    "see_also": ["calorie-balance", "sugar-alcohols"]
+    "tags": [
+      "calorie-balance",
+      "adherence",
+      "food-quality"
+    ],
+    "see_also": [
+      "calorie-balance",
+      "sugar-alcohols"
+    ]
   },
   "saturated-fat": {
     "id": "saturated-fat",
     "term": "saturated fat",
     "short": "A class of dietary fat found in foods such as fatty meats, butter, cheese, coconut oil, and many baked goods.",
-    "long": "Saturated fat is not automatically forbidden, but high intakes can make it harder to keep blood lipids and overall diet quality in a favorable range. In practice, most people do better when saturated fat is moderated and more fat intake comes from unsaturated sources.",
-    "tags": ["dietary-fat", "food-quality"],
-    "see_also": ["trans-fat", "macronutrients"]
+    "long": "Saturated fat is not automatically forbidden, but high intakes can make it more difficult to keep blood lipids and overall diet quality in a favorable range. In practice, most people do better when saturated fat is moderated and more fat intake comes from unsaturated sources.",
+    "tags": [
+      "dietary-fat",
+      "food-quality"
+    ],
+    "see_also": [
+      "trans-fat",
+      "macronutrients"
+    ]
   },
   "sugar-alcohols": {
     "id": "sugar-alcohols",
     "term": "sugar alcohols",
     "short": "Reduced-calorie sweeteners such as erythritol, xylitol, sorbitol, mannitol, and maltitol.",
     "long": "Sugar alcohols are carbohydrates, but they are absorbed and metabolized differently from sugar. They usually provide fewer calories and a smaller blood-glucose rise, but larger amounts can cause gas, bloating, cramping, or diarrhea, especially when intake increases suddenly.",
-    "tags": ["carbohydrates", "food-quality", "adherence"],
-    "see_also": ["nonnutritive-sweeteners", "dietary-fiber"]
+    "tags": [
+      "carbohydrates",
+      "food-quality",
+      "adherence"
+    ],
+    "see_also": [
+      "nonnutritive-sweeteners",
+      "dietary-fiber"
+    ]
   },
   "trans-fat": {
     "id": "trans-fat",
     "term": "trans fat",
     "short": "A type of unsaturated fat, especially from partially hydrogenated oils, associated with adverse cardiovascular risk.",
     "long": "Industrial trans fats are best minimized rather than treated as a useful diet tool. In the United States, partially hydrogenated oils are no longer generally recognized as safe for food use, but small amounts can still appear from some ingredients or naturally in ruminant foods.",
-    "tags": ["dietary-fat", "food-quality"],
-    "see_also": ["saturated-fat"]
+    "tags": [
+      "dietary-fat",
+      "food-quality"
+    ],
+    "see_also": [
+      "saturated-fat"
+    ]
   },
   "whey-protein": {
     "id": "whey-protein",
     "term": "whey protein",
     "short": "A dairy-derived protein that digests relatively quickly and is rich in essential amino acids.",
     "long": "Whey protein is commonly used as a convenient way to hit protein targets when whole-food meals are impractical. It is not required for muscle gain or fat loss, but it can be useful because it is high-quality, portable, and easy to dose.",
-    "tags": ["protein", "dietary-supplements", "hypertrophy"],
-    "see_also": ["casein-protein", "protein-synthesis"]
+    "tags": [
+      "protein",
+      "dietary-supplements",
+      "hypertrophy"
+    ],
+    "see_also": [
+      "casein-protein",
+      "protein-synthesis"
+    ]
   },
   "casein-protein": {
     "id": "casein-protein",
     "term": "casein protein",
     "short": "A dairy-derived protein that digests more slowly than whey.",
     "long": "Casein protein forms a slower-digesting curd in the stomach, which can make it useful when a longer gap before the next meal is expected. Like whey, it is a convenient protein option rather than a mandatory supplement.",
-    "tags": ["protein", "dietary-supplements", "hypertrophy"],
-    "see_also": ["whey-protein", "protein-synthesis"]
+    "tags": [
+      "protein",
+      "dietary-supplements",
+      "hypertrophy"
+    ],
+    "see_also": [
+      "whey-protein",
+      "protein-synthesis"
+    ]
   },
   "food-allergy": {
     "id": "food-allergy",
     "term": "food allergy",
     "short": "An immune-mediated adverse reaction to a food.",
     "long": "Food allergy can cause symptoms ranging from hives and gastrointestinal distress to anaphylaxis. Suspected allergies deserve medical evaluation because the stakes, testing approach, and avoidance strategy are different from ordinary food intolerance or preference.",
-    "tags": ["food-quality", "adherence"],
-    "see_also": ["food-intolerance"]
+    "tags": [
+      "food-quality",
+      "adherence"
+    ],
+    "see_also": [
+      "food-intolerance"
+    ]
   },
   "food-intolerance": {
     "id": "food-intolerance",
     "term": "food intolerance",
     "short": "A non-allergic adverse reaction to a food or food component.",
     "long": "Food intolerance often involves digestion or dose tolerance rather than an immune allergy. Lactose intolerance is a common example. The practical response is usually portion control, substitution, or targeted elimination rather than treating the food as dangerous for everyone.",
-    "tags": ["food-quality", "adherence"],
-    "see_also": ["food-allergy"]
+    "tags": [
+      "food-quality",
+      "adherence"
+    ],
+    "see_also": [
+      "food-allergy"
+    ]
+  },
+  "specificity": {
+    "id": "specificity",
+    "term": "specificity",
+    "short": "The principle that training adaptations are specific to the demands imposed.",
+    "long": "Specificity means the body gets better at the tasks, tissues, ranges of motion, energy systems, and force outputs that training repeatedly challenges. A plan for muscle gain, maximal strength, endurance, or mobility should therefore include work that directly matches the target adaptation.",
+    "tags": [
+      "strength-training",
+      "hypertrophy",
+      "periodization"
+    ],
+    "see_also": [
+      "progressive-overload",
+      "stimulus-recovery-adaptation"
+    ]
+  },
+  "progressive-overload": {
+    "id": "progressive-overload",
+    "term": "progressive overload",
+    "short": "Gradually increasing training demands as the body adapts.",
+    "long": "Progressive overload can come from more load, more reps, more sets, better technique, greater range of motion, shorter rest, or a more challenging variation. The point is not to add difficulty at all costs, but to keep training challenging enough to produce adaptation while recovery remains possible.",
+    "tags": [
+      "strength-training",
+      "periodization",
+      "training-volume"
+    ],
+    "see_also": [
+      "specificity",
+      "stimulus-recovery-adaptation"
+    ]
+  },
+  "stimulus-recovery-adaptation": {
+    "id": "stimulus-recovery-adaptation",
+    "term": "stimulus-recovery-adaptation",
+    "short": "The training cycle in which stress creates a signal, recovery restores capacity, and adaptation improves future performance.",
+    "long": "Training works when the stimulus is large enough to matter, recovery is sufficient to absorb it, and the next exposure arrives at the right time. Too little stimulus produces little change. Too much stimulus without recovery produces accumulating fatigue.",
+    "tags": [
+      "recovery",
+      "fatigue",
+      "periodization",
+      "training-volume"
+    ],
+    "see_also": [
+      "progressive-overload",
+      "deload"
+    ]
+  },
+  "rir": {
+    "id": "rir",
+    "term": "reps in reserve",
+    "short": "An estimate of how many more good reps could have been completed at the end of a set.",
+    "long": "RIR is a practical effort scale for resistance training. A set at 2 RIR means the lifter probably could have completed about two additional technically acceptable reps. It helps regulate effort without requiring every set to reach failure.",
+    "tags": [
+      "strength-training",
+      "hypertrophy",
+      "fatigue"
+    ],
+    "see_also": [
+      "rpe"
+    ]
+  },
+  "rpe": {
+    "id": "rpe",
+    "term": "rating of perceived exertion",
+    "short": "An experiential, personal rating of how challenging a set, session, or bout of exercise feels.",
+    "long": "RPE is often used to autoregulate training when readiness varies. In lifting, it is commonly tied to reps in reserve. In conditioning, it can describe whole-session intensity. It is useful when treated as feedback, not as a contest to prove toughness.",
+    "tags": [
+      "strength-training",
+      "endurance",
+      "fatigue"
+    ],
+    "see_also": [
+      "rir"
+    ]
+  },
+  "deload": {
+    "id": "deload",
+    "term": "deload",
+    "short": "A planned reduction in training stress to dissipate fatigue and restore performance.",
+    "long": "A deload usually lowers volume, load, effort, or some combination of the three for a short period. It is a fatigue-management tool, not a failure. Deloads are most useful when fatigue is high enough that normal productive training is no longer being recovered from well.",
+    "tags": [
+      "recovery",
+      "fatigue",
+      "periodization",
+      "training-volume"
+    ],
+    "see_also": [
+      "stimulus-recovery-adaptation",
+      "volume-landmarks"
+    ]
+  },
+  "volume-landmarks": {
+    "id": "volume-landmarks",
+    "term": "volume landmarks",
+    "short": "Reference points for matching training volume to adaptation and recovery.",
+    "long": "Volume landmarks are practical estimates rather than fixed laws. They help organize how much work is needed to maintain, start progressing, make strong progress, or exceed recovery. Useful landmarks include maintenance volume, minimum effective volume, maximum adaptive volume, and maximum recoverable volume.",
+    "tags": [
+      "strength-training",
+      "hypertrophy",
+      "periodization",
+      "training-volume"
+    ],
+    "see_also": [
+      "maintenance-volume",
+      "minimum-effective-volume",
+      "maximum-adaptive-volume",
+      "maximum-recoverable-volume"
+    ]
+  },
+  "maintenance-volume": {
+    "id": "maintenance-volume",
+    "term": "maintenance volume",
+    "short": "The approximate amount of training needed to maintain a current adaptation.",
+    "long": "Maintenance volume is usually lower than the volume needed to build new muscle, strength, or endurance. It is useful during busy periods, fat-loss phases, travel, or recovery blocks when the goal is to preserve progress with the least effective work.",
+    "tags": [
+      "strength-training",
+      "hypertrophy",
+      "periodization",
+      "training-volume"
+    ],
+    "see_also": [
+      "volume-landmarks",
+      "minimum-effective-volume"
+    ]
+  },
+  "minimum-effective-volume": {
+    "id": "minimum-effective-volume",
+    "term": "minimum effective volume",
+    "short": "The approximate amount of training needed to begin making progress.",
+    "long": "Minimum effective volume, often abbreviated MEV, is the lower edge of productive training for a specific person, muscle, goal, and context. It can rise as someone becomes more trained and can fall when fatigue, stress, or recovery constraints are high.",
+    "tags": [
+      "strength-training",
+      "hypertrophy",
+      "periodization",
+      "training-volume"
+    ],
+    "see_also": [
+      "volume-landmarks",
+      "maximum-adaptive-volume"
+    ]
+  },
+  "maximum-adaptive-volume": {
+    "id": "maximum-adaptive-volume",
+    "term": "maximum adaptive volume",
+    "short": "The approximate range of training volume that produces the best adaptive return before recovery costs dominate.",
+    "long": "Maximum adaptive volume, often abbreviated MAV, is not a single number. It is a practical range where volume is high enough to drive robust progress but not so high that fatigue erases the benefit. It changes with exercise selection, sleep, nutrition, stress, and training age.",
+    "tags": [
+      "strength-training",
+      "hypertrophy",
+      "periodization",
+      "training-volume"
+    ],
+    "see_also": [
+      "volume-landmarks",
+      "maximum-recoverable-volume"
+    ]
+  },
+  "maximum-recoverable-volume": {
+    "id": "maximum-recoverable-volume",
+    "term": "maximum recoverable volume",
+    "short": "The approximate upper limit of training volume that can be recovered from in the current context.",
+    "long": "Maximum recoverable volume, often abbreviated MRV, marks the point where adding more work tends to reduce performance, increase fatigue, and raise injury risk rather than improve adaptation. It is context-dependent and should be inferred from performance, soreness, motivation, sleep, and joint feedback.",
+    "tags": [
+      "strength-training",
+      "hypertrophy",
+      "periodization",
+      "recovery",
+      "fatigue",
+      "training-volume"
+    ],
+    "see_also": [
+      "volume-landmarks",
+      "deload"
+    ]
+  },
+  "implementation-intention": {
+    "id": "implementation-intention",
+    "term": "implementation intention",
+    "short": "An if-then plan that links a specific cue to a specific behavior.",
+    "long": "Implementation intentions help close the gap between wanting and doing by deciding in advance what action will happen when a predictable situation appears. For example: if the workday runs late, then I will do the 20-minute version of the workout.",
+    "tags": [
+      "behavior-change",
+      "adherence",
+      "environment-design"
+    ],
+    "see_also": [
+      "pre-commitment",
+      "self-monitoring"
+    ]
+  },
+  "self-monitoring": {
+    "id": "self-monitoring",
+    "term": "self-monitoring",
+    "short": "Deliberately tracking behavior or outcomes so feedback can guide adjustment.",
+    "long": "Self-monitoring can include food logs, bodyweight trends, training notes, sleep records, habit checklists, or mood observations. It works best when used to improve decisions, not to create punishment or identity judgments.",
+    "tags": [
+      "adherence",
+      "behavior-change",
+      "mindfulness"
+    ],
+    "see_also": [
+      "implementation-intention",
+      "mindfulness"
+    ]
+  },
+  "self-compassion": {
+    "id": "self-compassion",
+    "term": "self-compassion",
+    "short": "Responding to difficulty or failure with honesty, kindness, and perspective.",
+    "long": "Self-compassion is not self-excusing. It means recognizing reality without turning a mistake into a global condemnation of the self. In behavior change, it is useful because shame tends to drive avoidance, while clear self-respect makes correction easier.",
+    "tags": [
+      "behavior-change",
+      "mindfulness",
+      "emotional-regulation",
+      "self-esteem"
+    ],
+    "see_also": [
+      "shame",
+      "self-monitoring"
+    ]
+  },
+  "emotional-regulation": {
+    "id": "emotional-regulation",
+    "term": "emotional regulation",
+    "short": "The ability to notice, tolerate, and influence emotional states without being controlled by them.",
+    "long": "Emotional regulation includes skills such as naming feelings accurately, slowing physiological arousal, changing the environment, asking for support, and choosing behavior that fits values rather than impulse. It is relevant to self-development, but severe or persistent distress belongs in qualified mental health care.",
+    "tags": [
+      "mindfulness",
+      "behavior-change",
+      "recovery",
+      "emotional-regulation",
+      "values"
+    ],
+    "see_also": [
+      "mindfulness",
+      "breathwork",
+      "cognitive-reframing"
+    ]
+  },
+  "need": {
+    "id": "need",
+    "term": "need",
+    "short": "A requirement for achieving or sustaining a real goal, function, or condition.",
+    "long": "A need is a statement of fact: X needs Y for goal Z. Human beings need food, water, sleep, and some level of safety to live and function. A need is not merely a strong want; it is a requirement relative to life, health, development, performance, or another real objective.",
+    "tags": [
+      "values",
+      "reason",
+      "behavior-change"
+    ],
+    "see_also": [
+      "want",
+      "values",
+      "value-hierarchy",
+      "rational-self-interest"
+    ]
+  },
+  "want": {
+    "id": "want",
+    "term": "want",
+    "short": "A desire or preference experienced by a person.",
+    "long": "A want is a fact about a person's mental state. Wants can point toward real values, passing impulses, unmet needs, emotional patterns, or avoidance. They matter psychologically, but they do not automatically prove that the object wanted is good, necessary, or worth acting on.",
+    "tags": [
+      "values",
+      "emotional-regulation",
+      "reason"
+    ],
+    "see_also": [
+      "desire",
+      "need",
+      "values",
+      "objectivity",
+      "rational-self-interest"
+    ]
+  },
+  "values": {
+    "id": "values",
+    "term": "values",
+    "short": "The things a person judges, professes, or acts to gain, keep, build, or protect.",
+    "long": "Value can be used in several related senses. It can refer to something life actually requires, such as health, reason, sleep, or nutrition. It can refer to something a person professes to care about or desire. It can also refer to what a person actually acts to gain or keep, revealing operative priorities. Self-direction requires bringing stated values and revealed values into alignment with reality.",
+    "tags": [
+      "ethics",
+      "reason",
+      "behavior-change",
+      "values"
+    ],
+    "see_also": [
+      "need",
+      "want",
+      "value-hierarchy",
+      "integrity",
+      "rational-self-interest"
+    ]
+  },
+  "rational-self-interest": {
+    "id": "rational-self-interest",
+    "term": "rational self-interest",
+    "short": "Long-range concern for one's life and well-being guided by reason.",
+    "long": "Rational self-interest is not impulse-chasing. It asks what actually supports a person's life, competence, relationships, health, and long-term values. In fitness, it often means choosing the plan that serves life best, not the plan that looks most extreme.",
+    "tags": [
+      "ethics",
+      "reason",
+      "behavior-change",
+      "values",
+      "relationships"
+    ],
+    "see_also": [
+      "egoism",
+      "values",
+      "objectivism"
+    ]
+  },
+  "integrity": {
+    "id": "integrity",
+    "term": "integrity",
+    "short": "Consistency between a person's rational judgment, values, and actions.",
+    "long": "Integrity does not mean never making a mistake. It means refusing to knowingly split what one judges to be true and valuable from how one acts. In self-directed fitness, integrity shows up as honest feedback, realistic planning, and correcting drift instead of rationalizing it.",
+    "tags": [
+      "ethics",
+      "reason",
+      "behavior-change",
+      "values"
+    ],
+    "see_also": [
+      "values",
+      "rational-self-interest"
+    ]
+  },
+  "mind-body-integration": {
+    "id": "mind-body-integration",
+    "term": "mind-body integration",
+    "short": "The practical alignment of physical condition, emotional regulation, judgment, and action.",
+    "long": "Mind-body integration treats the person as one organism rather than a detached mind managing a disposable body. In practice, it means that sleep, training, nutrition, stress, values, attention, and action influence one another without being collapsed into the same thing.",
+    "tags": [
+      "mind-body-integration",
+      "behavior-change",
+      "reason",
+      "values",
+      "emotional-regulation"
+    ],
+    "see_also": [
+      "values",
+      "integrity",
+      "emotional-regulation"
+    ]
+  },
+  "protein-quality": {
+    "term": "protein quality",
+    "short": "How well a protein source supplies digestible indispensable amino acids relative to human needs.",
+    "long": "Protein quality is not the same as total grams of protein. It depends on amino acid composition, digestibility, processing, and the needs of the person eating it. For body-composition planning, it helps explain why protein source, dose, and meal structure can matter after total daily protein is set.",
+    "tags": [
+      "protein",
+      "food-quality",
+      "body-composition"
+    ],
+    "see_also": [
+      "protein",
+      "indispensable-amino-acids",
+      "diaas",
+      "pdcaas"
+    ],
+    "id": "protein-quality"
+  },
+  "indispensable-amino-acids": {
+    "term": "indispensable amino acids",
+    "short": "Amino acids the body cannot make in sufficient amounts and therefore must obtain from food.",
+    "long": "Indispensable amino acids are required for body protein synthesis and many normal physiological functions. Protein-quality methods focus heavily on them because a protein can be high in total grams but limited by one indispensable amino acid.",
+    "tags": [
+      "protein",
+      "food-quality"
+    ],
+    "see_also": [
+      "protein",
+      "protein-quality",
+      "leucine"
+    ],
+    "id": "indispensable-amino-acids"
+  },
+  "diaas": {
+    "term": "DIAAS",
+    "short": "Digestible Indispensable Amino Acid Score, a protein-quality method based on digestible indispensable amino acids.",
+    "long": "DIAAS estimates how well a protein source supplies digestible indispensable amino acids relative to a reference pattern. It uses amino acid digestibility measured at the end of the small intestine and can report values above 100, which is one reason it is more informative than PDCAAS for high-quality proteins.",
+    "tags": [
+      "protein",
+      "food-quality"
+    ],
+    "see_also": [
+      "protein-quality",
+      "pdcaas",
+      "indispensable-amino-acids"
+    ],
+    "id": "diaas"
+  },
+  "pdcaas": {
+    "term": "PDCAAS",
+    "short": "Protein Digestibility Corrected Amino Acid Score, an older protein-quality scoring method.",
+    "long": "PDCAAS estimates protein quality using amino acid score corrected by fecal crude protein digestibility. It has been widely used, but it truncates scores at 100 and does not measure each indispensable amino acid at the ileal level, which can obscure differences among high-quality proteins.",
+    "tags": [
+      "protein",
+      "food-quality"
+    ],
+    "see_also": [
+      "protein-quality",
+      "diaas",
+      "indispensable-amino-acids"
+    ],
+    "id": "pdcaas"
+  },
+  "leucine": {
+    "term": "leucine",
+    "short": "An indispensable branched-chain amino acid involved in signaling muscle protein synthesis.",
+    "long": "Leucine is both a building block for protein and a signal involved in turning on muscle protein synthesis after a meal. It matters most in the context of a complete protein dose that supplies all indispensable amino acids, especially for older adults or smaller protein meals.",
+    "tags": [
+      "protein",
+      "hypertrophy",
+      "meal-structure"
+    ],
+    "see_also": [
+      "indispensable-amino-acids",
+      "muscle-protein-synthesis",
+      "protein-quality"
+    ],
+    "id": "leucine"
+  },
+  "muscle-protein-synthesis": {
+    "term": "muscle protein synthesis",
+    "short": "The process of building new muscle proteins.",
+    "long": "Muscle protein synthesis rises after resistance training and protein feeding. Over time, muscle gain depends on the balance between muscle protein synthesis, muscle protein breakdown, training stimulus, total protein, calories, recovery, and consistency.",
+    "tags": [
+      "protein",
+      "hypertrophy",
+      "strength-training"
+    ],
+    "see_also": [
+      "leucine",
+      "hypertrophy",
+      "recovery"
+    ],
+    "id": "muscle-protein-synthesis"
+  },
+  "gluconeogenesis": {
+    "term": "gluconeogenesis",
+    "short": "The metabolic process of making glucose from non-carbohydrate sources.",
+    "long": "Gluconeogenesis helps maintain blood glucose when carbohydrate availability is low, during fasting, and in other specific conditions. It can use amino acid carbon skeletons, but ordinary protein meals do not simply turn into large amounts of sugar in healthy people.",
+    "tags": [
+      "protein",
+      "carbohydrates",
+      "calorie-balance"
+    ],
+    "see_also": [
+      "protein",
+      "carbohydrates",
+      "calorie-balance"
+    ],
+    "id": "gluconeogenesis"
+  },
+  "urea-cycle": {
+    "term": "urea cycle",
+    "short": "The liver pathway that converts ammonia from amino acid metabolism into urea for excretion.",
+    "long": "The urea cycle is one reason healthy people can handle normal and moderately high protein intakes without ammonia accumulating. Liver disease, urea-cycle disorders, and some serious medical conditions can change that context and require medical nutrition guidance.",
+    "tags": [
+      "protein",
+      "recovery"
+    ],
+    "see_also": [
+      "protein",
+      "gluconeogenesis"
+    ],
+    "id": "urea-cycle"
+  },
+  "agency": {
+    "id": "agency",
+    "term": "agency",
+    "short": "The capacity to understand, choose, and act within the facts of a situation.",
+    "long": "Agency does not mean controlling everything. It means identifying what is in your power, acting on your best judgment, and taking responsibility for correction when feedback shows that an adjustment is needed.",
+    "tags": [
+      "values",
+      "reason",
+      "behavior-change"
+    ],
+    "see_also": [
+      "volition",
+      "self-responsibility",
+      "integrity"
+    ]
+  },
+  "anger": {
+    "id": "anger",
+    "term": "anger",
+    "short": "An emotional response to a perceived threat, violation, injustice, or blocked value.",
+    "long": "Anger can carry useful information, but it is not self-validating. It should be interpreted in context and translated into proportionate action rather than treated as automatic permission to attack.",
+    "tags": [
+      "emotional-regulation",
+      "relationships"
+    ],
+    "see_also": [
+      "resentment",
+      "boundary",
+      "cognitive-reframing"
+    ]
+  },
+  "anxious-attachment": {
+    "id": "anxious-attachment",
+    "term": "anxious attachment",
+    "short": "An attachment pattern marked by heightened sensitivity to disconnection, rejection, or inconsistent availability.",
+    "long": "Anxious attachment can show up as reassurance seeking, urgency, protest, or difficulty tolerating ambiguity. It is a pattern to understand and work with, not an identity or a moral verdict.",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "attachment"
+    ],
+    "see_also": [
+      "attachment-theory",
+      "secure-attachment",
+      "avoidant-attachment"
+    ]
+  },
+  "apology": {
+    "id": "apology",
+    "term": "apology",
+    "short": "A direct acknowledgment of a wrong or injury, paired with responsibility and repair where possible.",
+    "long": "A useful apology does not center excuses or demand instant forgiveness. It names the behavior, recognizes impact, and clarifies what will change.",
+    "tags": [
+      "relationships",
+      "communication",
+      "ethics"
+    ],
+    "see_also": [
+      "repair",
+      "accountability",
+      "integrity"
+    ]
+  },
+  "avoidant-attachment": {
+    "id": "avoidant-attachment",
+    "term": "avoidant attachment",
+    "short": "An attachment pattern marked by distancing from closeness, need, or dependency when connection feels threatening.",
+    "long": "Avoidant strategies can protect short-term autonomy while limiting intimacy and support. The practical task is not to force closeness, but to distinguish genuine independence from protective withdrawal.",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "attachment"
+    ],
+    "see_also": [
+      "attachment-theory",
+      "secure-attachment",
+      "anxious-attachment"
+    ]
+  },
+  "benevolence": {
+    "id": "benevolence",
+    "term": "benevolence",
+    "short": "A positive orientation toward other people that remains consistent with judgment and self-respect.",
+    "long": "Benevolence is not appeasement or self-sacrifice. It is a life-serving stance toward others when context, values, and evidence support goodwill.",
+    "tags": [
+      "ethics",
+      "relationships",
+      "values"
+    ],
+    "see_also": [
+      "justice",
+      "rational-self-interest"
+    ]
+  },
+  "boundary": {
+    "id": "boundary",
+    "term": "boundary",
+    "short": "A clear limit around your time, body, attention, property, or participation.",
+    "long": "A boundary states what you will do or not do. It is different from trying to control another person's thoughts, feelings, or choices.",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "boundaries",
+      "values"
+    ],
+    "see_also": [
+      "agency",
+      "self-responsibility"
+    ]
+  },
+  "central-purpose": {
+    "id": "central-purpose",
+    "term": "central purpose",
+    "short": "A major productive aim that gives long-range structure and direction to a life.",
+    "long": "In Objectivist usage, a central purpose is the productive work or major creative responsibility that integrates and orders a person's hierarchy of values. It is not workaholism or the erasure of love, health, rest, friendship, or enjoyment. It is the central organizing direction that helps a person decide what they are building and how their other values fit into a life.",
+    "tags": [
+      "values",
+      "ethics"
+    ],
+    "see_also": [
+      "values",
+      "value-hierarchy",
+      "productiveness",
+      "happiness"
+    ]
+  },
+  "certainty": {
+    "id": "certainty",
+    "term": "certainty",
+    "short": "A level of confidence appropriate to the full context of available evidence.",
+    "long": "Certainty is not stubbornness or refusal to learn. It is a contextual judgment that a conclusion is supported strongly enough for action, while remaining open to relevant new evidence.",
+    "tags": [
+      "epistemology",
+      "reason"
+    ],
+    "see_also": [
+      "objectivity",
+      "context",
+      "premise"
+    ]
+  },
+  "cognitive-distortion": {
+    "id": "cognitive-distortion",
+    "term": "cognitive distortion",
+    "short": "A patterned error in interpretation, such as catastrophizing, mind reading, or all-or-nothing thinking.",
+    "long": "Cognitive distortions are not proof that emotions are fake. They are clues that an interpretation may need to be checked against the facts.",
+    "tags": [
+      "emotional-regulation",
+      "mindfulness",
+      "reason"
+    ],
+    "see_also": [
+      "cognitive-reframing",
+      "objectivity"
+    ]
+  },
+  "compromise": {
+    "id": "compromise",
+    "term": "compromise",
+    "short": "An agreement in which each party adjusts lower-priority preferences while preserving essential values.",
+    "long": "A real compromise is different from surrendering a principle or pretending a major value does not matter. It requires clarity about what is optional and what is not.",
+    "tags": [
+      "ethics",
+      "relationships",
+      "values"
+    ],
+    "see_also": [
+      "values",
+      "justice",
+      "rational-self-interest"
+    ]
+  },
+  "concept": {
+    "id": "concept",
+    "term": "concept",
+    "short": "A mental integration that groups things by essential similarities and lets you think beyond isolated concretes.",
+    "long": "Concepts make knowledge usable. Loose concepts create loose thinking, because they blur important differences and make action less precise.",
+    "tags": [
+      "epistemology",
+      "reason"
+    ],
+    "see_also": [
+      "definition",
+      "context"
+    ]
+  },
+  "context": {
+    "id": "context",
+    "term": "context",
+    "short": "The relevant facts that give a claim, feeling, choice, or principle its proper meaning.",
+    "long": "Context protects thinking from false shortcuts. Dropping context can make a true statement misleading or turn a useful principle into a rigid rule.",
+    "tags": [
+      "epistemology",
+      "reason"
+    ],
+    "see_also": [
+      "objectivity",
+      "premise"
+    ]
+  },
+  "defensiveness": {
+    "id": "defensiveness",
+    "term": "defensiveness",
+    "short": "A protective response that shifts attention away from possible responsibility, often through excuses, counterattack, or minimization.",
+    "long": "Defensiveness is understandable when criticism feels threatening, but it blocks learning and repair when it replaces honest contact with the facts.",
+    "tags": [
+      "emotional-regulation",
+      "relationships"
+    ],
+    "see_also": [
+      "shame",
+      "repair",
+      "accountability"
+    ]
+  },
+  "definition": {
+    "id": "definition",
+    "term": "definition",
+    "short": "A statement that identifies what a concept means by naming its essential distinguishing characteristics.",
+    "long": "Definitions matter because they keep thought tied to reality. When a key term is vague, decisions and disagreements become easier to confuse.",
+    "tags": [
+      "epistemology",
+      "reason"
+    ],
+    "see_also": [
+      "concept",
+      "context"
+    ]
+  },
+  "desire": {
+    "id": "desire",
+    "term": "desire",
+    "short": "A felt wanting or attraction toward an object, action, state, or outcome.",
+    "long": "Desire is psychologically important, but it does not automatically establish value. A desire should be understood, evaluated, and integrated with facts and long-range values.",
+    "tags": [
+      "values",
+      "emotional-regulation",
+      "reason"
+    ],
+    "see_also": [
+      "values",
+      "rational-self-interest"
+    ]
+  },
+  "differentiation": {
+    "id": "differentiation",
+    "term": "differentiation",
+    "short": "The ability to stay connected to others while remaining anchored in your own judgment and responsibility.",
+    "long": "Differentiation helps relationships because closeness no longer requires fusion and independence no longer requires withdrawal.",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "boundaries",
+      "attachment",
+      "values"
+    ],
+    "see_also": [
+      "boundary",
+      "agency",
+      "attachment-theory"
+    ]
+  },
+  "emotional-flooding": {
+    "id": "emotional-flooding",
+    "term": "emotional flooding",
+    "short": "A state of high emotional and physiological activation that makes calm thinking and conversation more difficult.",
+    "long": "When flooding is present, the first useful step is usually regulation and time, not more argument. The issue can be revisited once attention and self-control return.",
+    "tags": [
+      "behavior-change",
+      "emotional-regulation",
+      "relationships",
+      "communication"
+    ],
+    "see_also": [
+      "trigger",
+      "stonewalling",
+      "breathwork"
+    ]
+  },
+  "evasion": {
+    "id": "evasion",
+    "term": "evasion",
+    "short": "The act of avoiding, refusing, or blurring a fact that one has reason to recognize.",
+    "long": "Evasion is not ordinary uncertainty. It is a breakdown in honesty with reality, often used to escape a conclusion, responsibility, or value conflict.",
+    "tags": [
+      "epistemology",
+      "ethics",
+      "reason"
+    ],
+    "see_also": [
+      "rationalization",
+      "integrity",
+      "objectivity"
+    ]
+  },
+  "false-alternative": {
+    "id": "false-alternative",
+    "term": "false alternative",
+    "short": "A framing that treats two options as exhaustive when other real options exist.",
+    "long": "False alternatives distort decisions by hiding context. Many fitness and life problems improve when the question shifts from either-or to what combination, sequence, or priority fits the facts.",
+    "tags": [
+      "epistemology",
+      "reason"
+    ],
+    "see_also": [
+      "context",
+      "objectivity"
+    ]
+  },
+  "forgiveness": {
+    "id": "forgiveness",
+    "term": "forgiveness",
+    "short": "A chosen change in one's relationship to a wrong, usually involving reduced resentment without denying what happened.",
+    "long": "Forgiveness is often used ambiguously. It can mean releasing revenge, reducing resentment, accepting an apology, reconciling, restoring trust, or pretending the harm no longer matters. These should be distinguished. Rational forgiveness does not erase facts, justice, boundaries, or consequences.",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "communication",
+      "ethics"
+    ],
+    "see_also": [
+      "justice",
+      "boundary",
+      "repair",
+      "apology",
+      "resentment"
+    ]
+  },
+  "guilt": {
+    "id": "guilt",
+    "term": "guilt",
+    "short": "A moral emotion focused on a specific action, omission, or violation of a standard.",
+    "long": "Guilt can be useful when it leads to repair, recommitment, or changed behavior. It becomes unproductive when it turns into global self-condemnation or endless rumination.",
+    "tags": [
+      "emotional-regulation",
+      "self-esteem",
+      "ethics"
+    ],
+    "see_also": [
+      "shame",
+      "repair",
+      "integrity"
+    ]
+  },
+  "happiness": {
+    "id": "happiness",
+    "term": "happiness",
+    "short": "A positive state of life appraisal that comes from pursuing and achieving real values.",
+    "long": "Happiness is more than a passing pleasant mood. In a life-guidance context, it depends on chosen values, action, self-respect, and contact with reality.",
+    "tags": [
+      "values",
+      "ethics"
+    ],
+    "see_also": [
+      "values",
+      "central-purpose",
+      "productiveness"
+    ]
+  },
+  "intellectual-fitness": {
+    "id": "intellectual-fitness",
+    "term": "intellectual fitness",
+    "short": "The practiced capacity to think clearly, define terms, check evidence, and update conclusions.",
+    "long": "Intellectual fitness supports self-direction because unclear thinking produces unclear action. It is trained through attention, honesty, conceptual precision, and willingness to correct errors.",
+    "tags": [
+      "epistemology",
+      "reason",
+      "values"
+    ],
+    "see_also": [
+      "objectivity",
+      "concept",
+      "premise"
+    ]
+  },
+  "justice": {
+    "id": "justice",
+    "term": "justice",
+    "short": "The virtue of judging and responding to people according to the facts of their character and actions.",
+    "long": "Justice is not cynicism or hostility. It means granting the earned, withholding the unearned, and keeping benevolence tied to evidence.",
+    "tags": [
+      "ethics",
+      "relationships",
+      "values"
+    ],
+    "see_also": [
+      "benevolence",
+      "forgiveness",
+      "sanction"
+    ]
+  },
+  "moralism": {
+    "id": "moralism",
+    "term": "moralism",
+    "short": "A performative or punitive use of moral language that substitutes condemnation for understanding and action.",
+    "long": "Moralism can look serious, but it often blocks real correction. Moral seriousness asks what is true, what matters, and what should be done.",
+    "tags": [
+      "ethics",
+      "reason"
+    ],
+    "see_also": [
+      "justice",
+      "integrity",
+      "self-compassion"
+    ]
+  },
+  "objectivity": {
+    "id": "objectivity",
+    "term": "objectivity",
+    "short": "The commitment to form judgments by reference to reality, evidence, and context rather than wishes or pressure.",
+    "long": "Objectivity does not mean having no emotions or perspective. It means keeping feelings, interpretations, and preferences answerable to facts.",
+    "tags": [
+      "epistemology",
+      "reason"
+    ],
+    "see_also": [
+      "context",
+      "evasion",
+      "cognitive-reframing"
+    ]
+  },
+  "premise": {
+    "id": "premise",
+    "term": "premise",
+    "short": "A belief or assumption that supports a conclusion, judgment, or action.",
+    "long": "Checking premises means identifying what a conclusion depends on and asking whether those supports are true, complete, and relevant.",
+    "tags": [
+      "epistemology",
+      "reason"
+    ],
+    "see_also": [
+      "context",
+      "objectivity"
+    ]
+  },
+  "pride": {
+    "id": "pride",
+    "term": "pride",
+    "short": "The earned experience of moral self-esteem based on values, effort, and achievement.",
+    "long": "Healthy pride is not arrogance. It is the recognition that one's choices and character can be worthy of respect.",
+    "tags": [
+      "self-esteem",
+      "values",
+      "ethics"
+    ],
+    "see_also": [
+      "self-esteem",
+      "integrity",
+      "productiveness"
+    ]
+  },
+  "productiveness": {
+    "id": "productiveness",
+    "term": "productiveness",
+    "short": "The virtue of creating, building, maintaining, or improving values through purposeful effort.",
+    "long": "Productiveness is broader than career output. It includes the work of sustaining health, relationships, knowledge, home, craft, and the conditions of a human life.",
+    "tags": [
+      "ethics",
+      "values",
+      "behavior-change"
+    ],
+    "see_also": [
+      "central-purpose",
+      "happiness"
+    ]
+  },
+  "rationalization": {
+    "id": "rationalization",
+    "term": "rationalization",
+    "short": "A false or partial explanation used to protect a preferred conclusion from honest scrutiny.",
+    "long": "Rationalization often sounds intelligent because it borrows the language of reasons. The test is whether it remains open to evidence and correction.",
+    "tags": [
+      "epistemology",
+      "reason",
+      "behavior-change"
+    ],
+    "see_also": [
+      "evasion",
+      "objectivity",
+      "cognitive-reframing"
+    ]
+  },
+  "repair": {
+    "id": "repair",
+    "term": "repair",
+    "short": "Action taken to address harm, restore trust where possible, and change the pattern that caused the problem.",
+    "long": "Repair is more than apology. It includes understanding impact, accepting consequences, and making future behavior more reliable.",
+    "tags": [
+      "behavior-change",
+      "relationships",
+      "communication",
+      "ethics"
+    ],
+    "see_also": [
+      "apology",
+      "integrity",
+      "accountability"
+    ]
+  },
+  "resentment": {
+    "id": "resentment",
+    "term": "resentment",
+    "short": "Stored anger or bitterness about a perceived wrong, unfairness, or unspoken cost.",
+    "long": "Resentment often points to a boundary, expectation, or justice issue that has not been addressed. It should be investigated rather than indulged or buried.",
+    "tags": [
+      "emotional-regulation",
+      "relationships"
+    ],
+    "see_also": [
+      "anger",
+      "boundary",
+      "forgiveness"
+    ]
+  },
+  "rumination": {
+    "id": "rumination",
+    "term": "rumination",
+    "short": "Repetitive negative thinking that circles a problem without producing useful understanding or action.",
+    "long": "Rumination can masquerade as reflection. The difference is whether thinking clarifies reality and next steps, or simply replays distress.",
+    "tags": [
+      "mindfulness",
+      "emotional-regulation"
+    ],
+    "see_also": [
+      "self-monitoring",
+      "cognitive-reframing"
+    ]
+  },
+  "sacrifice": {
+    "id": "sacrifice",
+    "term": "sacrifice",
+    "short": "The surrender of a higher value for a lower value or nonvalue.",
+    "long": "In Objectivist usage, sacrifice is not the same as tradeoff, investment, generosity, or choosing one real value over another by hierarchy.",
+    "tags": [
+      "ethics",
+      "values"
+    ],
+    "see_also": [
+      "rational-self-interest",
+      "value-hierarchy",
+      "compromise"
+    ]
+  },
+  "sanction": {
+    "id": "sanction",
+    "term": "sanction",
+    "short": "Moral approval, endorsement, or legitimizing support given to an action, person, or pattern.",
+    "long": "To sanction something is not merely to tolerate its existence. It is to grant it some form of approval, cooperation, or unearned moral standing.",
+    "tags": [
+      "relationships",
+      "ethics"
+    ],
+    "see_also": [
+      "justice",
+      "integrity"
+    ]
+  },
+  "secure-attachment": {
+    "id": "secure-attachment",
+    "term": "secure attachment",
+    "short": "An attachment pattern marked by relative comfort with closeness, autonomy, repair, and emotional availability.",
+    "long": "Secure attachment is not perfect calm or constant agreement. It is a flexible pattern of connection, self-responsibility, and repair.",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "communication",
+      "attachment"
+    ],
+    "see_also": [
+      "attachment-theory",
+      "anxious-attachment",
+      "avoidant-attachment"
+    ]
+  },
+  "second-handedness": {
+    "id": "second-handedness",
+    "term": "second-handedness",
+    "short": "Orienting one's judgment and self-worth primarily around other people's approval, status, or reaction.",
+    "long": "Second-handedness weakens self-direction because the standard shifts from reality and values to social reflection. It is the opposite of independence.",
+    "tags": [
+      "ethics",
+      "values",
+      "relationships"
+    ],
+    "see_also": [
+      "integrity",
+      "objectivity",
+      "agency"
+    ]
+  },
+  "self-esteem": {
+    "id": "self-esteem",
+    "term": "self-esteem",
+    "short": "Confidence in one's worth and efficacy as a person who can think, choose, and act.",
+    "long": "Self-esteem is not mere positive self-talk. It is supported by reality contact, integrity, competence, and the experience of taking one's life seriously.",
+    "tags": [
+      "behavior-change",
+      "self-esteem",
+      "values",
+      "ethics"
+    ],
+    "see_also": [
+      "pride",
+      "integrity",
+      "agency"
+    ]
+  },
+  "self-responsibility": {
+    "id": "self-responsibility",
+    "term": "self-responsibility",
+    "short": "Owning your choices, actions, and corrections without pretending you control everything.",
+    "long": "Self-responsibility rejects both blame-shifting and omnipotence. It asks what is yours to understand, choose, repair, or change.",
+    "tags": [
+      "behavior-change",
+      "boundaries",
+      "values",
+      "ethics"
+    ],
+    "see_also": [
+      "agency",
+      "integrity",
+      "boundary"
+    ]
+  },
+  "self-trust": {
+    "id": "self-trust",
+    "term": "self-trust",
+    "short": "Confidence that you will tell yourself the truth and act with reasonable consistency.",
+    "long": "Self-trust is rebuilt through kept commitments, honest repair, and proportionate standards. It is damaged by repeated promises made for relief rather than reality.",
+    "tags": [
+      "behavior-change",
+      "self-esteem",
+      "values",
+      "ethics"
+    ],
+    "see_also": [
+      "integrity",
+      "agency",
+      "self-monitoring"
+    ]
+  },
+  "stonewalling": {
+    "id": "stonewalling",
+    "term": "stonewalling",
+    "short": "Withdrawing from communication by shutting down, refusing engagement, or cutting off the exchange.",
+    "long": "Stonewalling may reflect overwhelm, avoidance, contempt, or poor conflict skills. It is best handled by adding structure, breaks, and clear return points rather than escalating pursuit.",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "communication",
+      "attachment"
+    ],
+    "see_also": [
+      "emotional-flooding",
+      "boundary",
+      "repair"
+    ]
+  },
+  "trigger": {
+    "id": "trigger",
+    "term": "trigger",
+    "short": "A cue that activates a strong emotional, physiological, or behavioral response.",
+    "long": "A trigger is a starting point for inquiry, not proof that the current situation is dangerous or that an interpretation is true.",
+    "tags": [
+      "emotional-regulation",
+      "mindfulness"
+    ],
+    "see_also": [
+      "emotional-regulation",
+      "cognitive-reframing",
+      "emotional-flooding"
+    ]
+  },
+  "value-hierarchy": {
+    "id": "value-hierarchy",
+    "term": "value hierarchy",
+    "short": "An ordered understanding of which values matter more in a given context and over a life.",
+    "long": "A value hierarchy makes tradeoffs possible without pretending every good thing has equal priority. It helps distinguish sacrifice from rational choice.",
+    "tags": [
+      "values",
+      "ethics",
+      "reason"
+    ],
+    "see_also": [
+      "values",
+      "sacrifice",
+      "central-purpose"
+    ]
+  },
+  "virtue": {
+    "id": "virtue",
+    "term": "virtue",
+    "short": "A chosen character policy or practice that helps a person gain and keep real values.",
+    "long": "Virtue is not rule-following for its own sake. It is principled action in service of life, reality, and values.",
+    "tags": [
+      "ethics",
+      "values"
+    ],
+    "see_also": [
+      "integrity",
+      "justice",
+      "productiveness"
+    ]
+  },
+  "volition": {
+    "id": "volition",
+    "term": "volition",
+    "short": "The capacity to direct awareness, think, choose, and initiate action.",
+    "long": "Volition does not mean feelings are optional or circumstances are irrelevant. It means human action includes a chosen relationship to awareness and effort.",
+    "tags": [
+      "reason",
+      "values",
+      "behavior-change"
+    ],
+    "see_also": [
+      "agency",
+      "self-responsibility"
+    ]
+  },
+  "accountability": {
+    "id": "accountability",
+    "term": "accountability",
+    "short": "The practice of naming responsibility clearly and following through on correction or consequences.",
+    "long": "Accountability is not shame or control. It connects actions to effects, keeps standards visible, and supports repair or adjustment when behavior does not match values.",
+    "tags": [
+      "behavior-change",
+      "ethics",
+      "relationships"
+    ],
+    "see_also": [
+      "self-responsibility",
+      "integrity",
+      "repair"
+    ]
+  },
+  "reason": {
+    "id": "reason",
+    "term": "reason",
+    "short": "The faculty of identifying and integrating facts by perception, concept, logic, and evidence.",
+    "long": "Reason is the means of keeping beliefs and actions connected to reality. In practical self-direction, it helps you evaluate emotions, choose values, set priorities, and correct course when feedback changes the context.",
+    "tags": [
+      "reason",
+      "epistemology",
+      "values"
+    ],
+    "see_also": [
+      "objectivity",
+      "concept",
+      "epistemology"
+    ]
+  },
+  "collagen": {
+    "id": "collagen",
+    "term": "collagen",
+    "short": "A structural protein found in connective tissues such as tendons, ligaments, cartilage, skin, fascia, and bone.",
+    "long": "Dietary collagen comes from animal connective tissue and is usually consumed as gelatin, collagen peptides, bone broth, or collagen-rich cuts of meat. It is rich in glycine, proline, and hydroxyproline, but it is not a complete replacement for high-quality protein because it is low in several indispensable amino acids.",
+    "tags": [
+      "protein",
+      "recovery",
+      "physical-health"
+    ],
+    "see_also": [
+      "protein",
+      "protein-quality",
+      "indispensable-amino-acids",
+      "muscle-protein-synthesis"
+    ]
+  },
+  "empathy": {
+    "id": "empathy",
+    "term": "empathy",
+    "short": "The effort to understand and emotionally recognize another person's experience from their perspective.",
+    "long": "Empathy involves perspective-taking, staying out of judgment, recognizing another person's emotion, and communicating that recognition back. It does not mean agreement, approval, or taking responsibility for another person's feelings. Empathy supports connection because it says, in effect, \"I am willing to understand what this is like for you, and you are not alone.\".",
+    "tags": [
+      "relationships",
+      "emotional-regulation",
+      "communication",
+      "mindfulness"
+    ],
+    "see_also": [
+      "sympathy",
+      "compassion",
+      "connection",
+      "perspective-taking",
+      "boundary",
+      "accountability"
+    ]
+  },
+  "sympathy": {
+    "id": "sympathy",
+    "term": "sympathy",
+    "short": "Feeling concern or sorrow for another person, often from a more detached position.",
+    "long": "Sympathy can be sincere, but it often remains outside the other person's experience rather than joining them in it. When sympathy becomes distancing, minimizing, silver-lining, or premature advice-giving, it can create disconnection even when the intention is kind.",
+    "tags": [
+      "relationships",
+      "communication",
+      "emotional-regulation"
+    ],
+    "see_also": [
+      "empathy",
+      "compassion",
+      "connection"
+    ]
+  },
+  "compassion": {
+    "id": "compassion",
+    "term": "compassion",
+    "short": "Concern for another person's suffering, paired with a wish or willingness to respond constructively.",
+    "long": "Compassion takes another person's pain seriously without requiring self-erasure, appeasement, or agreement. In healthy relationships, compassion can coexist with boundaries, justice, and accountability.",
+    "tags": [
+      "relationships",
+      "emotional-regulation",
+      "ethics",
+      "communication"
+    ],
+    "see_also": [
+      "empathy",
+      "benevolence",
+      "boundary",
+      "justice",
+      "accountability"
+    ]
+  },
+  "connection": {
+    "id": "connection",
+    "term": "connection",
+    "short": "A felt and enacted sense of contact, understanding, and relatedness between people.",
+    "long": "Connection is built through attention, honesty, empathy, responsiveness, and shared reality. It does not require agreement, fusion, or the absence of boundaries. Real connection allows people to be in contact while remaining distinct.",
+    "tags": [
+      "relationships",
+      "communication",
+      "emotional-regulation",
+      "attachment"
+    ],
+    "see_also": [
+      "empathy",
+      "authenticity",
+      "differentiation",
+      "boundary",
+      "secure-attachment"
+    ]
+  },
+  "perspective-taking": {
+    "id": "perspective-taking",
+    "term": "perspective-taking",
+    "short": "The effort to understand how a situation appears from another person's point of view.",
+    "long": "Perspective-taking means recognizing another person's perspective as their own experience, not automatically as the full truth. It is a skill for empathy and communication: it helps you understand what someone is feeling and why, while still allowing you to check facts, keep boundaries, and use your own judgment.",
+    "tags": [
+      "relationships",
+      "communication",
+      "emotional-regulation",
+      "mindfulness"
+    ],
+    "see_also": [
+      "empathy",
+      "objectivity",
+      "context",
+      "boundary"
+    ]
+  },
+  "emotion": {
+    "id": "emotion",
+    "term": "emotion",
+    "short": "A felt psycho-physiological response arising from an appraisal of something in relation to one's values, beliefs, needs, or expectations.",
+    "long": "Emotions and feelings are mostly synonymous in ordinary language. \"Feeling\" is slightly broader because it can also refer to bodily sensations such as hunger, warmth, nausea, fatigue, or tension, whereas \"emotion\" more specifically refers to states such as fear, anger, sadness, joy, shame, guilt, love, or relief. Emotions often involve four interacting elements: a sensory, remembered, or imagined stimulus; rapid automatic identification of what the stimulus is; appraisal according to subconsciously integrated value judgments, beliefs, needs, expectations, and associations; and the lived experience itself, including feeling tone, bodily changes, attention shifts, impulses, and motivation to act. Because emotions arise from appraisals, they can contain real information without being infallible. They are best treated as data to examine, not commands to obey or enemies to suppress. It is also useful to distinguish bona fide emotions from faux feelings: thoughts, judgments, accusations, or interpretations phrased as feelings. Statements such as \"I feel betrayed.\", \"I feel manipulated.\", \"I feel ignored.\", or \"I feel disrespected.\" usually describe conclusions about another person's behavior, not the underlying emotion itself. The actual emotions might be hurt, angry, scared, lonely, embarrassed, disappointed, or confused.",
+    "tags": [
+      "emotional-regulation",
+      "mindfulness",
+      "values",
+      "reason",
+      "communication"
+    ],
+    "see_also": [
+      "emotional-regulation",
+      "mindfulness",
+      "values",
+      "reason",
+      "desire",
+      "want",
+      "need",
+      "anger",
+      "shame",
+      "guilt",
+      "rumination",
+      "trigger",
+      "cognitive-distortion",
+      "cognitive-reframing",
+      "objectivity"
+    ]
   }
 }

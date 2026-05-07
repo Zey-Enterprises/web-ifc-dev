@@ -48,12 +48,21 @@
     return Math.round(element.getBoundingClientRect().top + window.scrollY);
   }
 
+  function getScrollTarget(element) {
+    if (element && element.matches(".ifc-faq-entry__title")) {
+      return element.closest(".ifc-faq-entry") || element;
+    }
+
+    return element;
+  }
+
   function isMobileViewport() {
     return mobileQuery.matches;
   }
 
   function scrollToTarget(target) {
-    const top = Math.max(0, getAbsoluteTop(target) - getScrollOffset());
+    const scrollTarget = getScrollTarget(target);
+    const top = Math.max(0, getAbsoluteTop(scrollTarget) - getScrollOffset());
 
     window.scrollTo({
       top: top,
@@ -259,6 +268,11 @@
       toggle.setAttribute("aria-expanded", "true");
       panel.hidden = false;
       syncBodyLock();
+      updateActiveItem(true);
+
+      window.requestAnimationFrame(function () {
+        updateActiveItem(true);
+      });
     }
 
     function closePanel() {
@@ -278,7 +292,75 @@
       openPanel();
     }
 
-    function updateActiveItem() {
+    function getTocScrollContainer(button) {
+      const candidates = [
+        button.closest(".ifc-toc-widget__list"),
+        button.closest(".ifc-toc-widget__nav"),
+        button.closest(".ifc-toc-widget__panel")
+      ];
+
+      return candidates.find(function (candidate) {
+        return candidate && candidate.scrollHeight > candidate.clientHeight;
+      });
+    }
+
+    function scrollTocButtonIntoView(button) {
+      const scrollContainer = getTocScrollContainer(button);
+
+      if (!scrollContainer) {
+        button.scrollIntoView({ block: "nearest", inline: "nearest" });
+        return;
+      }
+
+      const buttonRect = button.getBoundingClientRect();
+      const containerRect = scrollContainer.getBoundingClientRect();
+      const gap = 8;
+
+      if (buttonRect.top < containerRect.top + gap) {
+        scrollContainer.scrollTop += buttonRect.top - containerRect.top - gap;
+      } else if (buttonRect.bottom > containerRect.bottom - gap) {
+        scrollContainer.scrollTop += buttonRect.bottom - containerRect.bottom + gap;
+      }
+    }
+
+    function getHashActiveId() {
+      if (!window.location.hash) {
+        return "";
+      }
+
+      let hashId = "";
+
+      try {
+        hashId = decodeURIComponent(window.location.hash.slice(1));
+      } catch (error) {
+        hashId = window.location.hash.slice(1);
+      }
+
+      if (!hashId) {
+        return "";
+      }
+
+      const hashItem = items.find(function (item) {
+        return item.id === hashId;
+      });
+
+      if (!hashItem) {
+        return "";
+      }
+
+      const targetRect = getScrollTarget(hashItem.target).getBoundingClientRect();
+      const offset = getScrollOffset();
+      const activationTop = offset - 24;
+      const activationBottom = Math.min(window.innerHeight, offset + 220);
+
+      if (targetRect.top <= activationBottom && targetRect.bottom > activationTop) {
+        return hashItem.id;
+      }
+
+      return "";
+    }
+
+    function updateActiveItem(forceActiveIntoView) {
       if (!items.length) {
         return;
       }
@@ -289,16 +371,18 @@
       let nextActiveId = "top";
 
       items.forEach(function (item) {
-        if (getAbsoluteTop(item.target) <= marker) {
+        if (getAbsoluteTop(getScrollTarget(item.target)) <= marker) {
           nextActiveId = item.id;
         }
       });
+
+      nextActiveId = getHashActiveId() || nextActiveId;
 
       if (documentBottom >= pageBottom - 4) {
         nextActiveId = items[items.length - 1].id;
       }
 
-      if (activeId === nextActiveId) {
+      if (activeId === nextActiveId && !forceActiveIntoView) {
         return;
       }
 
@@ -311,8 +395,8 @@
         if (isActive) {
           button.setAttribute("aria-current", "true");
 
-          if (isOpen) {
-            button.scrollIntoView({ block: "nearest", inline: "nearest" });
+          if (isOpen && (forceActiveIntoView || activeId === nextActiveId)) {
+            scrollTocButtonIntoView(button);
           }
         } else {
           button.removeAttribute("aria-current");

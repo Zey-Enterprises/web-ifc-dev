@@ -19,11 +19,13 @@ header:
   - label: Go to References
     url: /resources/references/
     class: btn--light-outline
+  - label: Go to Coaching FAQ →
+    url: /faq/
+    class: btn--light-outline
 ---
 
 {% assign faq_path = '/resources/faq/' | relative_url %}
 {% assign faq_entries = site.resources | where: "resource_type", "faq" | sort_natural: "title" %}
-{% assign concern_values = "fat-loss,muscle-gain,body-composition,adherence,sleep,stress,energy,recovery,behavior-change,mindset,self-direction,busy-life,beginners,maintenance,performance" | split: "," %}
 {% assign domain_values = "diet,physical-exercise,psychology,philosophy" | split: "," %}
 {% assign faq_domains = "" | split: "" %}
 {% assign faq_concerns = "" | split: "" %}
@@ -132,11 +134,13 @@ header:
             <button type="button" data-filter-action="clear-all">Clear all</button>
           </div>
           <div class="ifc-resource-filter__options">
-            {% for concern in concern_values %}
+            {% for concern_pair in site.data.concerns %}
+              {% assign concern = concern_pair[0] %}
+              {% assign concern_data = concern_pair[1] %}
               {% if faq_concerns contains concern %}
                 <label class="ifc-resource-filter__option">
-                  <input type="checkbox" value="{{ concern }}" data-option-label="{{ concern | replace: '-', ' ' | capitalize }}">
-                  <span>{{ concern | replace: "-", " " | capitalize }}</span>
+                  <input type="checkbox" value="{{ concern }}" data-option-label="{{ concern_data.label | default: concern }}">
+                  <span>{{ concern_data.label | default: concern }}</span>
                 </label>
               {% endif %}
             {% endfor %}
@@ -212,7 +216,7 @@ header:
       {% for item in faq_entries %}
         <article
           class="ifc-panel ifc-faq-entry"
-          id="{{ item.slug }}"
+          id="faq-{{ item.slug }}"
           data-result-item
           data-title="{{ item.title | escape }}"
           data-domain="{{ item.domains | join: '|' }}"

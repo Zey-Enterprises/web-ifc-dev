@@ -691,6 +691,7 @@
     var defaultSort = root.getAttribute("data-default-sort") || "recent-published-desc";
     var resultLabelSingular = root.getAttribute("data-result-label-singular") || "resource";
     var resultLabelPlural = root.getAttribute("data-result-label-plural") || "resources";
+    var summaryMode = root.getAttribute("data-summary-mode") || "";
     var openMenu = null;
     var isMobilePanelOpen = false;
 
@@ -717,11 +718,15 @@
         }, {})
       };
     });
+    var filterKeys = Object.keys(groups);
 
     var sortNode = root.querySelector("[data-filter-kind='single'][data-filter-group='sort']");
     var sortButtons = sortNode ? Array.prototype.slice.call(sortNode.querySelectorAll("[data-sort-option]")) : [];
     var sortLabels = {
       lexicographical: "Lexicographical",
+      "title-asc": "Lexicographical by Title",
+      "author-asc": "Lexicographical by Author",
+      "publication-asc": "Lexicographical by Publication",
       "recent-published-desc": "Most Recently Published First",
       "published-asc": "Oldest Published First",
       "recent-updated-desc": "Most Recently Updated First",
@@ -746,15 +751,22 @@
         }
       : null;
     var sortControls = [sortControl, mobileSortControl].filter(Boolean);
+    sortControls.forEach(function (control) {
+      control.buttons.forEach(function (button) {
+        var optionValue = button.getAttribute("data-sort-option") || button.getAttribute("data-mobile-sort-option");
+        if (optionValue && button.textContent.trim()) {
+          sortLabels[optionValue] = button.textContent.trim();
+        }
+      });
+    });
 
     var uiState = {
-      format: [],
-      domain: [],
-      concern: [],
-      tag: [],
       sort: defaultSort,
       sortExplicit: false
     };
+    filterKeys.forEach(function (key) {
+      uiState[key] = [];
+    });
 
     function normalizeMultiValues(selectedValues, group) {
       if (!group) return [];
@@ -775,28 +787,30 @@
     }
 
     function getCanonicalState() {
-      return {
-        format: normalizeMultiValues(uiState.format, groups.format),
-        domain: normalizeMultiValues(uiState.domain, groups.domain),
-        concern: normalizeMultiValues(uiState.concern, groups.concern),
-        tag: normalizeMultiValues(uiState.tag, groups.tag),
+      var canonicalState = {
         sort: uiState.sort,
         sortExplicit: uiState.sortExplicit
       };
+
+      filterKeys.forEach(function (key) {
+        canonicalState[key] = normalizeMultiValues(uiState[key], groups[key]);
+      });
+
+      return canonicalState;
     }
 
     function getActiveValueCount(canonicalState) {
-      var count =
-        canonicalState.format.length +
-        canonicalState.domain.length +
-        canonicalState.concern.length +
-        canonicalState.tag.length;
+      var count = filterKeys.reduce(function (memo, key) {
+        return memo + canonicalState[key].length;
+      }, 0);
       if (canonicalState.sortExplicit) count += 1;
       return count;
     }
 
     function getActiveFilterCount(canonicalState) {
-      return canonicalState.format.length + canonicalState.domain.length + canonicalState.concern.length + canonicalState.tag.length;
+      return filterKeys.reduce(function (memo, key) {
+        return memo + canonicalState[key].length;
+      }, 0);
     }
 
     function hasActiveState(canonicalState) {
@@ -806,15 +820,14 @@
     function parseUiState(search) {
       var params = new URLSearchParams(search || "");
       var nextState = {
-        format: [],
-        domain: [],
-        concern: [],
-        tag: [],
         sort: defaultSort,
         sortExplicit: false
       };
+      filterKeys.forEach(function (key) {
+        nextState[key] = [];
+      });
 
-      ["format", "domain", "concern", "tag"].forEach(function (key) {
+      filterKeys.forEach(function (key) {
         var group = groups[key];
         if (!group) return;
         var allowedLookup = group.values.reduce(function (memo, value) {
@@ -885,11 +898,11 @@
     function buildUrl(canonicalState) {
       var nextParams = new URLSearchParams(window.location.search);
 
-      ["format", "domain", "concern", "tag", "sort"].forEach(function (key) {
+      filterKeys.concat(["sort"]).forEach(function (key) {
         nextParams.delete(key);
       });
 
-      ["format", "domain", "concern", "tag"].forEach(function (key) {
+      filterKeys.forEach(function (key) {
         canonicalState[key].forEach(function (value) {
           nextParams.append(key, value);
         });
@@ -921,6 +934,21 @@
           return compareText(leftTitle, rightTitle);
         }
 
+        if (sortValue === "title-asc") {
+          return compareText(leftTitle, rightTitle);
+        }
+
+        if (sortValue === "author-asc") {
+          return compareText(left.getAttribute("data-author") || "", right.getAttribute("data-author") || "") || compareText(leftTitle, rightTitle);
+        }
+
+        if (sortValue === "publication-asc") {
+          return (
+            compareText(left.getAttribute("data-publication") || leftTitle, right.getAttribute("data-publication") || rightTitle) ||
+            compareText(leftTitle, rightTitle)
+          );
+        }
+
         if (sortValue === "published-asc") {
           return compareDates(left.getAttribute("data-published"), right.getAttribute("data-published"), false) || compareText(leftTitle, rightTitle);
         }
@@ -938,10 +966,13 @@
     }
 
     function matchesItem(item, canonicalState) {
-      if (!matchesSelection(splitValues(item.getAttribute("data-format")), canonicalState.format)) return false;
-      if (!matchesSelection(splitValues(item.getAttribute("data-domain")), canonicalState.domain)) return false;
-      if (!matchesSelection(splitValues(item.getAttribute("data-concern")), canonicalState.concern)) return false;
-      if (!matchesSelection(splitValues(item.getAttribute("data-tags")), canonicalState.tag)) return false;
+      var matches = true;
+      filterKeys.forEach(function (key) {
+        if (!matches) return;
+        var attributeName = key === "tag" ? "data-tags" : "data-" + key;
+        matches = matchesSelection(splitValues(item.getAttribute(attributeName)), canonicalState[key]);
+      });
+      if (!matches) return false;
       return true;
     }
 
@@ -951,7 +982,7 @@
       activeFilters.innerHTML = "";
       var fragment = document.createDocumentFragment();
 
-      ["format", "domain", "concern", "tag"].forEach(function (key) {
+      filterKeys.forEach(function (key) {
         canonicalState[key].forEach(function (value) {
           var chip = document.createElement("button");
           chip.type = "button";
@@ -1085,13 +1116,12 @@
 
     function applyUiState(nextState) {
       uiState = {
-        format: uniqueValues(nextState.format || []),
-        domain: uniqueValues(nextState.domain || []),
-        concern: uniqueValues(nextState.concern || []),
-        tag: uniqueValues(nextState.tag || []),
         sort: nextState.sort || defaultSort,
         sortExplicit: !!nextState.sortExplicit
       };
+      filterKeys.forEach(function (key) {
+        uiState[key] = uniqueValues(nextState[key] || []);
+      });
 
       updateControls();
 
@@ -1104,7 +1134,7 @@
       syncMobileStatus(canonicalState);
 
       if (summary) {
-        if (resultsMode) {
+        if (resultsMode || summaryMode === "always") {
           summary.hidden = false;
           summary.textContent = visibleCount === 1 ? "1 " + resultLabelSingular : visibleCount + " " + resultLabelPlural;
         } else {
@@ -1123,16 +1153,26 @@
 
     function updateMultiSelection(key, selectedValues) {
       var nextState = {
-        format: uiState.format.slice(),
-        domain: uiState.domain.slice(),
-        concern: uiState.concern.slice(),
-        tag: uiState.tag.slice(),
         sort: uiState.sort,
         sortExplicit: uiState.sortExplicit
       };
+      filterKeys.forEach(function (filterKey) {
+        nextState[filterKey] = uiState[filterKey].slice();
+      });
 
       nextState[key] = uniqueValues(selectedValues);
       applyUiState(nextState);
+    }
+
+    function buildNextStateWithSort(sortValue) {
+      var nextState = {
+        sort: sortValue,
+        sortExplicit: true
+      };
+      filterKeys.forEach(function (key) {
+        nextState[key] = uiState[key].slice();
+      });
+      return nextState;
     }
 
     function applyShortcutSearch(search) {
@@ -1188,14 +1228,7 @@
       if (sortOption) {
         event.preventDefault();
         var selectedSort = sortOption.getAttribute("data-sort-option");
-        applyUiState({
-          format: uiState.format,
-          domain: uiState.domain,
-          concern: uiState.concern,
-          tag: uiState.tag,
-          sort: selectedSort,
-          sortExplicit: true
-        });
+        applyUiState(buildNextStateWithSort(selectedSort));
         closeAllMenus();
         return;
       }
@@ -1218,14 +1251,14 @@
       var clearAll = event.target.closest("[data-clear-all-filters]");
       if (clearAll) {
         event.preventDefault();
-        applyUiState({
-          format: [],
-          domain: [],
-          concern: [],
-          tag: [],
+        var emptyState = {
           sort: defaultSort,
           sortExplicit: false
+        };
+        filterKeys.forEach(function (key) {
+          emptyState[key] = [];
         });
+        applyUiState(emptyState);
         closeMobilePanel();
         return;
       }
@@ -1259,14 +1292,7 @@
       if (mobileSortOption) {
         event.preventDefault();
         var selectedMobileSort = mobileSortOption.getAttribute("data-mobile-sort-option");
-        applyUiState({
-          format: uiState.format,
-          domain: uiState.domain,
-          concern: uiState.concern,
-          tag: uiState.tag,
-          sort: selectedMobileSort,
-          sortExplicit: true
-        });
+        applyUiState(buildNextStateWithSort(selectedMobileSort));
         closeAllMenus();
         return;
       }

@@ -31,6 +31,14 @@
     return document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
   }
 
+  function getScrollTarget(target) {
+    if (target && target.matches(".ifc-faq-entry__title")) {
+      return target.closest(".ifc-faq-entry") || target;
+    }
+
+    return target;
+  }
+
   function scrollHashTargetIntoPlace() {
     const target = getHashTarget();
 
@@ -38,8 +46,9 @@
       return;
     }
 
+    const scrollTarget = getScrollTarget(target);
     const mastheadOffset = setMastheadOffset() + 12;
-    const top = Math.max(0, Math.round(target.getBoundingClientRect().top + window.scrollY - mastheadOffset));
+    const top = Math.max(0, Math.round(scrollTarget.getBoundingClientRect().top + window.scrollY - mastheadOffset));
 
     window.scrollTo({
       top: top,

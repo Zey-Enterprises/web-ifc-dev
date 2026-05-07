@@ -23,8 +23,8 @@
     "doi": "10.3945/ajcn.112.036350",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "spiegel-2005-sleep-loss": {
@@ -53,6 +53,7 @@
     "tags": [
       "calorie-balance",
       "strength-training",
+      "fatigue",
       "sleep"
     ]
   },
@@ -80,8 +81,8 @@
     "doi": "10.1016/j.cmet.2019.05.008",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "food-quality",
       "satiety"
     ]
@@ -109,7 +110,8 @@
     "tags": [
       "satiety",
       "recovery",
-      "behavior-change"
+      "behavior-change",
+      "emotional-regulation"
     ]
   },
   "locke-2015-bmi-genetics": {
@@ -136,8 +138,8 @@
     "doi": "10.1038/nature14177",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "phillips-2004-protein-strength-sports": {
@@ -159,6 +161,7 @@
     "doi_newtab": true,
     "tags": [
       "protein",
+      "dietary-supplements",
       "strength-training"
     ]
   },
@@ -186,8 +189,8 @@
     "doi": "10.1016/j.cmet.2015.07.021",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "carbohydrates",
       "dietary-fat"
     ]
@@ -216,9 +219,12 @@
     "doi": "10.1001/jamainternmed.2017.0936",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "periodization"
+      "body-composition",
+      "meal-structure",
+      "periodization",
+      "adherence",
+      "behavior-change"
     ]
   },
   "scheer-2009-circadian-misalignment": {
@@ -273,8 +279,8 @@
     "doi": "10.1038/nature05414",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "food-quality"
     ]
   },
@@ -348,7 +354,8 @@
     "doi": "10.1038/ijo.2010.184",
     "doi_newtab": true,
     "tags": [
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "sutton-2018-early-time-restricted-feeding": {
@@ -375,10 +382,12 @@
     "doi": "10.1016/j.cmet.2018.04.010",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "meal-structure",
-      "recovery"
+      "periodization",
+      "recovery",
+      "emotional-regulation"
     ]
   },
   "taheri-2004-sleep-leptin-ghrelin-bmi": {
@@ -411,8 +420,8 @@
     "doi": "10.1371/journal.pmed.0010062",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "satiety",
       "sleep"
     ]
@@ -441,10 +450,11 @@
     "doi": "10.1093/ajcn.82.1.41",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "protein",
-      "satiety"
+      "satiety",
+      "adherence"
     ]
   },
   "burns-2021-outdoor-light-mood-sleep": {
@@ -471,7 +481,8 @@
     "doi": "10.1016/j.jad.2021.08.056",
     "doi_newtab": true,
     "tags": [
-      "sleep"
+      "sleep",
+      "emotional-regulation"
     ]
   },
   "wardle-2008-fto-satiety": {
@@ -498,8 +509,8 @@
     "doi": "10.1210/jc.2008-0472",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "satiety"
     ]
   },
@@ -555,7 +566,8 @@
     "doi_newtab": true,
     "tags": [
       "calorie-balance",
-      "food-quality"
+      "food-quality",
+      "satiety"
     ]
   },
   "oleary-2016-mindfulness-cortisol": {
@@ -583,7 +595,8 @@
     "doi_newtab": true,
     "tags": [
       "recovery",
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "grossman-2004-mbsr-meta-analysis": {
@@ -614,7 +627,8 @@
     "doi_newtab": true,
     "tags": [
       "recovery",
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "riou-2015-energy-compensation-exercise": {
@@ -668,8 +682,8 @@
     "doi": "10.1111/obr.13251",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "satiety"
     ]
   },
@@ -694,8 +708,8 @@
     "doi": "10.5009/gnl.2012.6.1.10",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "satiety"
     ]
   },
@@ -723,7 +737,9 @@
     "doi": "10.1038/s44220-023-00135-8",
     "doi_newtab": true,
     "tags": [
-      "sleep"
+      "sleep",
+      "emotional-regulation",
+      "reason"
     ]
   },
   "mullur-2014-thyroid-metabolism": {
@@ -750,8 +766,8 @@
     "doi": "10.1152/physrev.00030.2013",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "pasquali-2006-obesity-reproductive-disorders": {
@@ -778,8 +794,8 @@
     "doi": "10.1093/humupd/dmg024",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "pagliai-2024-food-environment-obesity": {
@@ -806,8 +822,9 @@
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11221287/",
     "url_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
+      "food-quality",
       "environment-design"
     ]
   },
@@ -835,8 +852,8 @@
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8803498/",
     "url_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "meal-structure",
       "environment-design"
     ]
@@ -865,8 +882,9 @@
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3169649/",
     "url_newtab": true,
     "tags": [
+      "calorie-balance",
       "body-composition",
-      "calorie-balance"
+      "food-quality"
     ]
   },
   "breslow-2020-alcohol-dietary-intake": {
@@ -894,6 +912,7 @@
     "url_newtab": true,
     "tags": [
       "calorie-balance",
+      "body-composition",
       "food-quality",
       "environment-design"
     ]
@@ -922,8 +941,10 @@
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2864136/",
     "url_newtab": true,
     "tags": [
+      "calorie-balance",
       "body-composition",
-      "calorie-balance"
+      "food-quality",
+      "behavior-change"
     ]
   },
   "yeomans-2015-alcoholic-sugary-drinks-overweight": {
@@ -944,8 +965,10 @@
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4555143/",
     "url_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
+      "carbohydrates",
+      "food-quality",
       "environment-design"
     ]
   },
@@ -973,6 +996,8 @@
     "doi": "10.1002/oby.22639",
     "doi_newtab": true,
     "tags": [
+      "calorie-balance",
+      "body-composition",
       "food-quality",
       "satiety",
       "environment-design"
@@ -997,6 +1022,7 @@
     "doi_newtab": true,
     "tags": [
       "recovery",
+      "fatigue",
       "sleep"
     ]
   },
@@ -1048,8 +1074,9 @@
     "issue": "6",
     "pages": "52–59",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
+      "meal-structure",
       "food-quality",
       "environment-design"
     ]
@@ -1120,8 +1147,9 @@
     "issue": "1",
     "pages": "15–19",
     "tags": [
+      "calorie-balance",
       "body-composition",
-      "calorie-balance"
+      "behavior-change"
     ]
   },
   "drenowatz-2015-reciprocal-compensation-to-changes-in-dietary-intake-and-energy-expenditure-within-the-concept-of-energy-balance": {
@@ -1146,7 +1174,8 @@
     "pages": "592–599",
     "tags": [
       "calorie-balance",
-      "food-quality"
+      "food-quality",
+      "epistemology"
     ]
   },
   "fleming-2016-macronutrient-content-of-the-diet": {
@@ -1173,10 +1202,12 @@
     "issue": "2",
     "pages": "208–213",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "food-quality",
-      "periodization"
+      "periodization",
+      "adherence",
+      "behavior-change"
     ]
   },
   "jeukendrup-2018-sport-nutrition": {
@@ -1305,9 +1336,10 @@
     "issue": "8",
     "pages": "1529–1538",
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "satiety"
+      "body-composition",
+      "satiety",
+      "adherence"
     ]
   },
   "longland-2016-higher-compared-with-lower-dietary-protein-during-an-energy-deficit-combined-with-intense-exercise-promotes-greater-lean-mass-gain-and-fat-mass-loss": {
@@ -1343,9 +1375,10 @@
     "issue": "3",
     "pages": "738–746",
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "protein"
+      "body-composition",
+      "protein",
+      "hypertrophy"
     ]
   },
   "manore-2015-weight-management-for-athletes-and-active-individuals": {
@@ -1369,8 +1402,9 @@
     "issue": "Suppl 1",
     "pages": "83–92",
     "tags": [
+      "calorie-balance",
       "body-composition",
-      "calorie-balance"
+      "behavior-change"
     ]
   },
   "morton-2015-nutritional-interventions-to-augment-resistance-training-induced-skeletal-muscle-hypertrophy": {
@@ -1399,6 +1433,7 @@
     "volume": "6",
     "pages": "245–245",
     "tags": [
+      "body-composition",
       "food-quality",
       "hypertrophy",
       "strength-training"
@@ -1446,9 +1481,10 @@
     "issue": "2",
     "pages": "476–487",
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "protein"
+      "body-composition",
+      "protein",
+      "dietary-fat"
     ]
   },
   "park-2020-dietary-factors-and-eating-behaviors-affecting-diet-induced-thermogenesis-in-obese-individuals": {
@@ -1499,8 +1535,8 @@
     "issue": "1",
     "pages": "1–9",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "food-quality",
       "satiety",
       "behavior-change"
@@ -1583,7 +1619,8 @@
     "issue": "3",
     "pages": "107–110",
     "tags": [
-      "food-quality"
+      "food-quality",
+      "epistemology"
     ]
   },
   "schutz-1995-macronutrients-and-energy-balance-in-obesity": {
@@ -1607,8 +1644,8 @@
     "issue": "9",
     "pages": "7–11",
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "tangney-2005-a-review": {
@@ -1653,9 +1690,12 @@
     "issue": "5",
     "pages": "284–316",
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "food-quality"
+      "body-composition",
+      "meal-structure",
+      "food-quality",
+      "adherence",
+      "behavior-change"
     ]
   },
   "volek-2005-diet-and-exercise-for-weight-loss": {
@@ -1685,8 +1725,8 @@
     "issue": "1",
     "pages": "1–9",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "food-quality"
     ]
   },
@@ -1711,8 +1751,9 @@
     "issue": "11",
     "pages": "728–729",
     "tags": [
+      "calorie-balance",
       "body-composition",
-      "calorie-balance"
+      "food-quality"
     ]
   },
   "westerterp-2013-physical-activity-and-physical-activity-induced-energy-expenditure-in-humans": {
@@ -1760,6 +1801,7 @@
     "pages": "44–55",
     "tags": [
       "calorie-balance",
+      "body-composition",
       "protein",
       "hypertrophy",
       "strength-training"
@@ -1798,8 +1840,8 @@
     "issue": "1",
     "pages": "78–85",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "carbohydrates"
     ]
   },
@@ -1895,8 +1937,8 @@
     "issue": "5",
     "pages": "721–726",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "protein"
     ]
   },
@@ -1927,6 +1969,7 @@
     "pages": "905612–905613",
     "tags": [
       "calorie-balance",
+      "body-composition",
       "hypertrophy",
       "strength-training"
     ]
@@ -2252,7 +2295,8 @@
     "issue": "1",
     "pages": "39–55",
     "tags": [
-      "body-composition"
+      "body-composition",
+      "hydration"
     ]
   },
   "de-feo-1996-hormonal-regulation-of-human-protein-metabolism": {
@@ -2310,10 +2354,11 @@
     "issue": "5",
     "pages": "781–789",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "protein",
-      "carbohydrates"
+      "carbohydrates",
+      "dietary-fat"
     ]
   },
   "escobar-2016-the-effect-of-a-moderately-low-and-high-carbohydrate-intake-on-crossfit-performance": {
@@ -2369,9 +2414,11 @@
     "pages": "745–754",
     "tags": [
       "calorie-balance",
+      "body-composition",
       "protein",
       "hypertrophy",
-      "strength-training"
+      "strength-training",
+      "environment-design"
     ]
   },
   "hargreaves-1991-carbohydrates-and-exercise": {
@@ -2428,6 +2475,7 @@
     "issue": "2",
     "pages": "127–138",
     "tags": [
+      "calorie-balance",
       "protein",
       "strength-training"
     ]
@@ -2586,8 +2634,8 @@
     "issue": "Suppl 2",
     "pages": "149–153",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "protein"
     ]
   },
@@ -2731,7 +2779,7 @@
   "ardisson-korat-2014-diet-lifestyle-and-genetic-risk-factors-for-type-2-diabetes": {
     "id": "ardisson-korat-2014-diet-lifestyle-and-genetic-risk-factors-for-type-2-diabetes",
     "type": "journal-article",
-    "title": "Diet, Lifestyle, and Genetic Risk Factors for Type 2 Diabetes: A Review from the Nurses’ Health Study, Nurses’ Health Study 2, and Health Professionals’ Follow-Up Study",
+    "title": "Diet, Lifestyle, and Genetic Risk Factors for Type 2 Diabetes: A Review from the Nurses' Health Study, Nurses' Health Study 2, and Health Professionals' Follow-Up Study",
     "short_title": "Diet, Lifestyle, and Genetic Risk Factors for Type 2 Diabetes",
     "authors": [
       {
@@ -2755,7 +2803,8 @@
     "issue": "4",
     "pages": "345–354",
     "tags": [
-      "calorie-balance"
+      "calorie-balance",
+      "behavior-change"
     ]
   },
   "babio-2009-mediterranean-diet-and-metabolic-syndrome": {
@@ -2905,8 +2954,8 @@
   "george-2014-comparing-indices-of-diet-quality-with-chronic-disease-mortality-risk-in-postmenopausal-women-in-the-womens-health-initiative-observational-study": {
     "id": "george-2014-comparing-indices-of-diet-quality-with-chronic-disease-mortality-risk-in-postmenopausal-women-in-the-womens-health-initiative-observational-study",
     "type": "journal-article",
-    "title": "Comparing indices of diet quality with chronic disease mortality risk in postmenopausal women in the women’s health initiative observational study: Evidence to inform national dietary guidance",
-    "short_title": "Comparing indices of diet quality with chronic disease mortality risk in postmenopausal women in the women’s health initiative observational study",
+    "title": "Comparing indices of diet quality with chronic disease mortality risk in postmenopausal women in the women's health initiative observational study: Evidence to inform national dietary guidance",
+    "short_title": "Comparing indices of diet quality with chronic disease mortality risk in postmenopausal women in the women's health initiative observational study",
     "authors": [
       {
         "literal": "George, S. M."
@@ -3360,7 +3409,7 @@
   "mursu-2013-diet-quality-indexes-and-mortality-in-postmenopausal-women": {
     "id": "mursu-2013-diet-quality-indexes-and-mortality-in-postmenopausal-women",
     "type": "journal-article",
-    "title": "Diet quality indexes and mortality in postmenopausal women: The Iowa Women’s Health Study",
+    "title": "Diet quality indexes and mortality in postmenopausal women: The Iowa Women's Health Study",
     "short_title": "Diet quality indexes and mortality in postmenopausal women",
     "authors": [
       {
@@ -3491,7 +3540,7 @@
         "literal": "Unal, B."
       },
       {
-        "literal": "O’Flaherty, M."
+        "literal": "O'Flaherty, M."
       },
       {
         "literal": "Critchley, J"
@@ -3508,6 +3557,7 @@
     "issue": "7",
     "pages": "e011217–e011217",
     "tags": [
+      "behavior-change",
       "environment-design"
     ]
   },
@@ -3811,8 +3861,8 @@
   "bendich-2001-micronutrients-in-womens-health-and-immune-function": {
     "id": "bendich-2001-micronutrients-in-womens-health-and-immune-function",
     "type": "journal-article",
-    "title": "Micronutrients in women’s health and immune function",
-    "short_title": "Micronutrients in women’s health and immune function",
+    "title": "Micronutrients in women's health and immune function",
+    "short_title": "Micronutrients in women's health and immune function",
     "authors": [
       {
         "literal": "Bendich, A"
@@ -3854,8 +3904,8 @@
     "issue": "2",
     "pages": "411–ix",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "food-quality"
     ]
   },
@@ -3944,8 +3994,8 @@
     "issue": "2",
     "pages": "304–312",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "micronutrients",
       "food-quality"
     ]
@@ -4056,7 +4106,8 @@
     "issue": "3",
     "pages": "277–289",
     "tags": [
-      "calorie-balance"
+      "calorie-balance",
+      "micronutrients"
     ]
   },
   "krzyzanowska-2010-dietary-phytochemicals-and-human-health": {
@@ -4514,7 +4565,8 @@
     "issue": "3",
     "pages": "383–390",
     "tags": [
-      "fiber"
+      "fiber",
+      "food-quality"
     ]
   },
   "stevenson-2007-polyphenolic-phytochemicals-just-antioxidants-or-much-more": {
@@ -4626,7 +4678,8 @@
     "issue": "8",
     "pages": "865–",
     "tags": [
-      "dietary-fat"
+      "dietary-fat",
+      "dietary-supplements"
     ]
   },
   "bendsen-2011-consumption-of-industrial-and-ruminant-trans-fatty-acids-and-risk-of-coronary-heart-disease": {
@@ -4686,7 +4739,8 @@
     "issue": "3",
     "pages": "266–272",
     "tags": [
-      "dietary-fat"
+      "dietary-fat",
+      "dietary-supplements"
     ]
   },
   "clarys-2014-comparison-of-nutritional-quality-of-the-vegan-vegetarian-semi-vegetarian-pesco-vegetarian-and-omnivorous-diet": {
@@ -4949,7 +5003,8 @@
     "volume": "7",
     "pages": "52–52",
     "tags": [
-      "dietary-fat"
+      "dietary-fat",
+      "dietary-supplements"
     ]
   },
   "ganguly-2015-the-toxicity-of-dietary-trans-fats": {
@@ -5195,7 +5250,8 @@
     "issue": "4",
     "pages": "10–13",
     "tags": [
-      "dietary-fat"
+      "dietary-fat",
+      "dietary-supplements"
     ]
   },
   "kris-etherton-2010-trans-fats-and-coronary-heart-disease": {
@@ -5364,7 +5420,8 @@
     "issue": "2",
     "pages": "249–260",
     "tags": [
-      "protein"
+      "protein",
+      "values"
     ]
   },
   "moughan-2005-dietary-protein-quality-in-humans-an-overview": {
@@ -5431,7 +5488,7 @@
     "short_title": "Glycaemic Index, Glycaemic Load and Exercise Performance",
     "authors": [
       {
-        "literal": "O’Reilly, J."
+        "literal": "O'Reilly, J."
       },
       {
         "literal": "Wong, S. H. ."
@@ -5547,7 +5604,8 @@
     "issue": "5",
     "pages": "449–459",
     "tags": [
-      "dietary-fat"
+      "dietary-fat",
+      "dietary-supplements"
     ]
   },
   "sarwar-1987-digestibility-of-protein-and-bioavailability-of-amino-acids-in-foods": {
@@ -5757,7 +5815,8 @@
     "issue": "1",
     "pages": "1–7",
     "tags": [
-      "dietary-fat"
+      "dietary-fat",
+      "dietary-supplements"
     ]
   },
   "szostak-wegierek-2013-the-role-of-dietary-fats-for-preventing-cardiovascular-disease": {
@@ -5904,6 +5963,7 @@
     "issue": "9",
     "pages": "1981–1991",
     "tags": [
+      "body-composition",
       "protein",
       "hypertrophy",
       "strength-training"
@@ -6002,7 +6062,8 @@
     "issue": "1000",
     "pages": "84–90",
     "tags": [
-      "dietary-fat"
+      "dietary-fat",
+      "dietary-supplements"
     ]
   },
   "young-1994-plant-proteins-in-relation-to-human-protein-and-amino-acid-nutrition": {
@@ -6114,7 +6175,9 @@
     "issue": "1",
     "pages": "5–5",
     "tags": [
-      "meal-structure"
+      "meal-structure",
+      "hypertrophy",
+      "recovery"
     ]
   },
   "baker-2015-acute-effects-of-carbohydrate-supplementation-on-intermittent-sports-performance": {
@@ -6147,7 +6210,8 @@
     "issue": "7",
     "pages": "5733–5763",
     "tags": [
-      "carbohydrates"
+      "carbohydrates",
+      "dietary-supplements"
     ]
   },
   "bellisle-2007-meal-frequency-and-energy-balance": {
@@ -6291,6 +6355,7 @@
     "pages": "G982–G991",
     "tags": [
       "calorie-balance",
+      "dietary-fat",
       "satiety"
     ]
   },
@@ -6348,8 +6413,10 @@
     "issue": "C",
     "pages": "44–50",
     "tags": [
+      "calorie-balance",
       "body-composition",
-      "calorie-balance"
+      "satiety",
+      "behavior-change"
     ]
   },
   "grandner-2013-dietary-nutrients-associated-with-short-and-long-sleep-duration": {
@@ -6382,6 +6449,7 @@
     "pages": "71–80",
     "tags": [
       "food-quality",
+      "satiety",
       "sleep"
     ]
   },
@@ -6416,6 +6484,7 @@
     "pages": "187–196",
     "tags": [
       "carbohydrates",
+      "dietary-supplements",
       "strength-training"
     ]
   },
@@ -6465,7 +6534,8 @@
     "pages": "10–13",
     "tags": [
       "calorie-balance",
-      "carbohydrates"
+      "carbohydrates",
+      "dietary-supplements"
     ],
     "doi": "10.1136/jcp.s3-5.1.10",
     "doi_newtab": true
@@ -6516,7 +6586,9 @@
     "year": 1994,
     "publisher": "National Academies Press (US)",
     "tags": [
-      "recovery"
+      "recovery",
+      "emotional-regulation",
+      "hydration"
     ]
   },
   "ivy-2004-regulation-of-muscle-glycogen-repletion-muscle-protein-synthesis-and-repair-following-exercise": {
@@ -6723,10 +6795,12 @@
     "issue": "1",
     "pages": "59–59",
     "tags": [
+      "body-composition",
       "carbohydrates",
       "hypertrophy",
       "strength-training",
-      "endurance"
+      "endurance",
+      "environment-design"
     ]
   },
   "la-bounty-2011-international-society-of-sports-nutrition-position-stand": {
@@ -6886,7 +6960,9 @@
     "pages": "379–408",
     "tags": [
       "protein",
-      "carbohydrates"
+      "carbohydrates",
+      "recovery",
+      "hydration"
     ]
   },
   "mosoni-2003-type-and-timing-of-protein-feeding-to-optimize-anabolism": {
@@ -6982,7 +7058,8 @@
       "protein",
       "carbohydrates",
       "hypertrophy",
-      "strength-training"
+      "strength-training",
+      "recovery"
     ]
   },
   "schoenfeld-2013-the-effect-of-protein-timing-on-muscle-strength-and-hypertrophy": {
@@ -7047,8 +7124,8 @@
     "issue": "1",
     "pages": "54–54",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "protein",
       "hypertrophy",
       "strength-training"
@@ -7180,7 +7257,8 @@
     "issue": "3",
     "pages": "479–486",
     "tags": [
-      "protein"
+      "protein",
+      "dietary-supplements"
     ],
     "doi": "10.70252/qwha8703",
     "doi_newtab": true
@@ -7218,6 +7296,7 @@
     "pages": "36",
     "tags": [
       "protein",
+      "dietary-supplements",
       "strength-training",
       "recovery",
       "fatigue"
@@ -7242,7 +7321,8 @@
     "issue": "4",
     "pages": "123–132",
     "tags": [
-      "body-composition"
+      "body-composition",
+      "dietary-supplements"
     ]
   },
   "burke-2017-practical-issues-in-evidence-based-use-of-performance-supplements": {
@@ -7266,7 +7346,8 @@
     "issue": "Suppl 1",
     "pages": "79–100",
     "tags": [
-      "body-composition"
+      "body-composition",
+      "dietary-supplements"
     ]
   },
   "chia-2017-effects-of-caffeine-supplementation-on-performance-in-ball-games": {
@@ -7299,6 +7380,7 @@
     "issue": "12",
     "pages": "2453–2471",
     "tags": [
+      "dietary-supplements",
       "endurance"
     ]
   },
@@ -7323,7 +7405,8 @@
     "issue": "3S",
     "pages": "788–795",
     "tags": [
-      "carbohydrates"
+      "carbohydrates",
+      "dietary-supplements"
     ]
   },
   "gao-2017-fish-oil-supplementation-and-insulin-sensitivity": {
@@ -7356,7 +7439,9 @@
     "issue": "1",
     "pages": "131–131",
     "tags": [
-      "calorie-balance"
+      "calorie-balance",
+      "dietary-fat",
+      "dietary-supplements"
     ]
   },
   "hayes-2008-effect-of-whey-protein-isolate-on-strength-body-composition-and-muscle-hypertrophy-during-resistance-training": {
@@ -7383,8 +7468,8 @@
     "issue": "1",
     "pages": "40–44",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "protein",
       "hypertrophy",
       "strength-training"
@@ -7418,9 +7503,10 @@
     "issue": "10",
     "pages": "E267",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "protein",
+      "dietary-supplements",
       "strength-training"
     ]
   },
@@ -7475,8 +7561,8 @@
     "issue": "2",
     "pages": "163–175",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "protein",
       "strength-training"
     ]
@@ -7502,6 +7588,7 @@
     "issue": "Suppl 2",
     "pages": "175–184",
     "tags": [
+      "dietary-supplements",
       "endurance"
     ]
   },
@@ -7529,7 +7616,8 @@
     "issue": "9",
     "pages": "998–1011",
     "tags": [
-      "carbohydrates"
+      "carbohydrates",
+      "dietary-supplements"
     ]
   },
   "temple-2017-the-safety-of-ingested-caffeine": {
@@ -7567,6 +7655,7 @@
     "volume": "8",
     "pages": "80–80",
     "tags": [
+      "dietary-supplements",
       "endurance"
     ]
   },
@@ -7637,7 +7726,9 @@
     "issue": "1",
     "pages": "74–79",
     "tags": [
-      "body-composition"
+      "body-composition",
+      "protein",
+      "recovery"
     ]
   },
   "ferreira-pego-2015-total-fluid-intake-and-its-determinants": {
@@ -7694,7 +7785,8 @@
     "issue": "Suppl 2",
     "pages": "35–43",
     "tags": [
-      "recovery"
+      "recovery",
+      "hydration"
     ]
   },
   "gandy-2015-water-intake": {
@@ -7718,14 +7810,15 @@
     "issue": "Suppl 2",
     "pages": "11–16",
     "tags": [
-      "recovery"
+      "recovery",
+      "hydration"
     ]
   },
   "nimrouzi-2016-avicennas-view-on-optimal-daily-water-intake": {
     "id": "nimrouzi-2016-avicennas-view-on-optimal-daily-water-intake",
     "type": "journal-article",
-    "title": "Avicenna’s View on Optimal Daily Water Intake",
-    "short_title": "Avicenna’s View on Optimal Daily Water Intake",
+    "title": "Avicenna's View on Optimal Daily Water Intake",
+    "short_title": "Avicenna's View on Optimal Daily Water Intake",
     "authors": [
       {
         "literal": "Nimrouzi, M."
@@ -7746,7 +7839,8 @@
     "issue": "3 Suppl",
     "pages": "S23",
     "tags": [
-      "recovery"
+      "recovery",
+      "hydration"
     ]
   },
   "popkin-2010-water-hydration-and-health": {
@@ -7759,7 +7853,7 @@
         "literal": "Popkin, B. M."
       },
       {
-        "literal": "D’Anci, K. E."
+        "literal": "D'Anci, K. E."
       },
       {
         "literal": "Rosenberg, I. H"
@@ -7776,7 +7870,8 @@
     "issue": "8",
     "pages": "439–458",
     "tags": [
-      "recovery"
+      "recovery",
+      "hydration"
     ]
   },
   "riebl-2013-the-hydration-equation": {
@@ -7798,12 +7893,14 @@
     "year": 2013,
     "doi": "10.1249/FIT.0b013e3182a9570f",
     "doi_newtab": true,
-    "container_title": "ACSM’s Health & Fitness Journal",
+    "container_title": "ACSM's Health & Fitness Journal",
     "volume": "17",
     "issue": "6",
     "pages": "21–28",
     "tags": [
-      "recovery"
+      "recovery",
+      "behavior-change",
+      "hydration"
     ]
   },
   "berthoud-2011-food-reward-hyperphagia-and-obesity": {
@@ -7833,8 +7930,8 @@
     "issue": "6",
     "pages": "1266–1277",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "food-quality",
       "satiety",
       "environment-design"
@@ -7870,8 +7967,8 @@
     "issue": "8",
     "pages": "922",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "adherence",
       "behavior-change"
     ]
@@ -7941,8 +8038,9 @@
     "volume": "5",
     "pages": "1–35",
     "tags": [
+      "calorie-balance",
       "body-composition",
-      "calorie-balance"
+      "emotional-regulation"
     ]
   },
   "abramson-1977-boredom-and-eating-in-obese-and-non-obese-individuals": {
@@ -7969,8 +8067,8 @@
     "issue": "4",
     "pages": "181–185",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "satiety",
       "behavior-change"
     ]
@@ -8022,7 +8120,8 @@
     "tags": [
       "food-quality",
       "satiety",
-      "environment-design"
+      "environment-design",
+      "emotional-regulation"
     ]
   },
   "amin-2016-hunger-and-satiety-mechanisms-and-their-potential-exploitation-in-the-regulation-of-food-intake": {
@@ -8050,6 +8149,7 @@
     "pages": "106–112",
     "tags": [
       "calorie-balance",
+      "body-composition",
       "satiety"
     ]
   },
@@ -8089,8 +8189,8 @@
     "issue": "11",
     "pages": "2175–2182",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "food-quality",
       "satiety",
       "environment-design"
@@ -8129,8 +8229,8 @@
     "issue": "4",
     "pages": "418–438",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "protein",
       "satiety"
     ]
@@ -8157,6 +8257,7 @@
     "pages": "9–25",
     "tags": [
       "calorie-balance",
+      "body-composition",
       "fiber",
       "satiety"
     ]
@@ -8271,7 +8372,7 @@
   "dallman-2003-chronic-stress-and-obesity": {
     "id": "dallman-2003-chronic-stress-and-obesity",
     "type": "journal-article",
-    "title": "Chronic Stress and Obesity: A New View of “Comfort Food.”",
+    "title": "Chronic Stress and Obesity: A New View of \"Comfort Food\"",
     "short_title": "Chronic Stress and Obesity",
     "authors": [
       {
@@ -8316,9 +8417,10 @@
     "issue": "20",
     "pages": "11696–11701",
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "recovery"
+      "body-composition",
+      "recovery",
+      "emotional-regulation"
     ]
   },
   "daniels-2010-impact-of-water-intake-on-energy-intake-and-weight-status": {
@@ -8345,9 +8447,10 @@
     "issue": "9",
     "pages": "505–521",
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "recovery"
+      "body-composition",
+      "recovery",
+      "hydration"
     ]
   },
   "davy-2008-water-consumption-reduces-energy-intake-at-a-breakfast-meal-in-obese-older-adults": {
@@ -8383,9 +8486,10 @@
     "issue": "7",
     "pages": "1236–1239",
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "meal-structure"
+      "body-composition",
+      "meal-structure",
+      "hydration"
     ]
   },
   "dhillon-2016-the-effects-of-increased-protein-intake-on-fullness": {
@@ -8495,7 +8599,8 @@
     "issue": "3",
     "pages": "615–629",
     "tags": [
-      "recovery"
+      "recovery",
+      "emotional-regulation"
     ]
   },
   "harpaz-2017-the-effect-of-caffeine-on-energy-balance": {
@@ -8529,6 +8634,7 @@
     "pages": "1–10",
     "tags": [
       "calorie-balance",
+      "dietary-supplements",
       "endurance"
     ]
   },
@@ -8560,6 +8666,7 @@
     "pages": "20–20",
     "tags": [
       "food-quality",
+      "dietary-supplements",
       "hypertrophy",
       "strength-training"
     ]
@@ -8591,8 +8698,8 @@
     "issue": "5",
     "pages": "129–139",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "fiber"
     ]
   },
@@ -8624,7 +8731,9 @@
     "issue": "11",
     "pages": "815–819",
     "tags": [
-      "satiety"
+      "meal-structure",
+      "satiety",
+      "hydration"
     ]
   },
   "lepe-2011-long-term-efficacy-of-high-protein-diets": {
@@ -8654,7 +8763,8 @@
     "issue": "6",
     "pages": "1256–1259",
     "tags": [
-      "protein"
+      "protein",
+      "adherence"
     ]
   },
   "mollahosseini-2017-effect-of-whey-protein-supplementation-on-long-and-short-term-appetite": {
@@ -8687,6 +8797,7 @@
     "pages": "34–40",
     "tags": [
       "protein",
+      "dietary-supplements",
       "satiety"
     ]
   },
@@ -8753,10 +8864,11 @@
     "issue": "5",
     "pages": "1558s–1561s",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "protein",
-      "satiety"
+      "satiety",
+      "behavior-change"
     ]
   },
   "poutanen-2017-a-review-of-the-characteristics-of-dietary-fibers-relevant-to-appetite-and-energy-intake-outcomes-in-human-intervention-trials": {
@@ -8818,7 +8930,8 @@
     "tags": [
       "calorie-balance",
       "fiber",
-      "satiety"
+      "satiety",
+      "behavior-change"
     ]
   },
   "ravn-2013-thermic-effect-of-a-meal-and-appetite-in-adults": {
@@ -8870,6 +8983,7 @@
     "pages": "19676–10",
     "tags": [
       "calorie-balance",
+      "meal-structure",
       "satiety"
     ]
   },
@@ -8883,7 +8997,7 @@
         "literal": "Rebello, C. J."
       },
       {
-        "literal": "O’Neil, C. E."
+        "literal": "O'Neil, C. E."
       },
       {
         "literal": "Greenway, F. L"
@@ -8941,6 +9055,7 @@
     "pages": "901–912",
     "tags": [
       "calorie-balance",
+      "dietary-supplements",
       "satiety",
       "endurance"
     ]
@@ -8966,8 +9081,8 @@
     "issue": "3",
     "pages": "411–418",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "fiber"
     ]
   },
@@ -8992,8 +9107,9 @@
     "issue": "1",
     "pages": "19",
     "tags": [
+      "calorie-balance",
       "body-composition",
-      "calorie-balance"
+      "hydration"
     ]
   },
   "thornton-2016-increased-hydration-can-be-associated-with-weight-loss": {
@@ -9016,9 +9132,10 @@
     "volume": "3",
     "pages": "18–18",
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "recovery"
+      "body-composition",
+      "recovery",
+      "hydration"
     ]
   },
   "wanders-2011-effects-of-dietary-fibre-on-subjective-appetite-energy-intake-and-body-weight": {
@@ -9066,8 +9183,8 @@
     "issue": "9",
     "pages": "724–739",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "fiber",
       "satiety"
     ]
@@ -9093,9 +9210,10 @@
     "issue": "6",
     "pages": "635–639",
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "protein"
+      "body-composition",
+      "protein",
+      "satiety"
     ]
   },
   "westerterp-plantenga-2009-dietary-protein-weight-loss-and-weight-maintenance": {
@@ -9130,10 +9248,12 @@
     "volume": "29",
     "pages": "21–41",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "protein",
-      "periodization"
+      "periodization",
+      "adherence",
+      "behavior-change"
     ]
   },
   "adams-2011-lifestyle-factors-and-ghrelin": {
@@ -9163,10 +9283,12 @@
     "issue": "5",
     "pages": "e211–e218",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "satiety",
-      "periodization"
+      "periodization",
+      "adherence",
+      "behavior-change"
     ]
   },
   "bose-2009-stress-and-obesity": {
@@ -9196,9 +9318,10 @@
     "issue": "5",
     "pages": "340–346",
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "recovery"
+      "body-composition",
+      "recovery",
+      "emotional-regulation"
     ]
   },
   "nakamura-2016-systematic-review-and-meta-analysis-reveals-acutely-elevated-plasma-cortisol-following-fasting-but-not-less-severe-calorie-restriction": {
@@ -9228,7 +9351,10 @@
     "issue": "2",
     "pages": "151–157",
     "tags": [
-      "recovery"
+      "calorie-balance",
+      "meal-structure",
+      "recovery",
+      "emotional-regulation"
     ]
   },
   "schwarz-2011-a-review-of-weight-control-strategies-and-their-effects-on-the-regulation-of-hormonal-balance": {
@@ -9263,8 +9389,8 @@
     "volume": "2011",
     "pages": "237932–15",
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "tomiyama-2010-low-calorie-dieting-increases-cortisol": {
@@ -9303,7 +9429,9 @@
     "issue": "4",
     "pages": "357–364",
     "tags": [
-      "recovery"
+      "calorie-balance",
+      "recovery",
+      "emotional-regulation"
     ]
   },
   "farias-2011-set-point-theory-and-obesity": {
@@ -9333,8 +9461,8 @@
     "issue": "2",
     "pages": "85–89",
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "harris-1990-role-of-set-point-theory-in-regulation-of-body-weight": {
@@ -9358,8 +9486,8 @@
     "issue": "15",
     "pages": "3310–3318",
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "keesey-1997-body-weight-set-points": {
@@ -9386,8 +9514,8 @@
     "issue": "9",
     "pages": "1875S–1883S",
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "keijer-2014-nutrigenomics-of-body-weight-regulation": {
@@ -9420,8 +9548,8 @@
     "issue": "10",
     "pages": "4531–4551",
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "lee-2010-adipose-tissue-remodeling-in-pathophysiology-of-obesity": {
@@ -9451,8 +9579,8 @@
     "issue": "4",
     "pages": "371–376",
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "muller-2010-is-there-evidence-for-a-set-point-that-regulates-human-body-weight": {
@@ -9482,8 +9610,8 @@
     "issue": "1",
     "pages": "59–59",
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "speakman-2011-set-points-settling-points-and-some-alternative-models": {
@@ -9547,7 +9675,7 @@
         "literal": "Ahmed Ali, U."
       },
       {
-        "literal": "O’Rahilly, S."
+        "literal": "O'Rahilly, S."
       },
       {
         "literal": "Westerterp-Plantenga, M. S"
@@ -9564,8 +9692,8 @@
     "issue": "6",
     "pages": "733–745",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "environment-design"
     ]
   },
@@ -9602,10 +9730,11 @@
     "issue": "10",
     "pages": "E152–E152",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "recovery",
-      "behavior-change"
+      "behavior-change",
+      "emotional-regulation"
     ]
   },
   "bergmann-2014-the-appraisal-of-chronic-stress-and-the-development-of-the-metabolic-syndrome": {
@@ -9636,7 +9765,8 @@
     "pages": "R55–R80",
     "tags": [
       "calorie-balance",
-      "recovery"
+      "recovery",
+      "emotional-regulation"
     ]
   },
   "block-2009-psychosocial-stress-and-change-in-weight-among-us-adults": {
@@ -9672,9 +9802,10 @@
     "issue": "2",
     "pages": "181–192",
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "recovery"
+      "body-composition",
+      "recovery",
+      "emotional-regulation"
     ]
   },
   "ganley-1989-emotion-and-eating-in-obesity": {
@@ -9698,9 +9829,10 @@
     "issue": "3",
     "pages": "343–361",
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "satiety"
+      "body-composition",
+      "satiety",
+      "emotional-regulation"
     ]
   },
   "geiker-2018-does-stress-influence-sleep-patterns-food-intake-weight-gain-abdominal-obesity-and-weight-loss-interventions-and-vice-versa": {
@@ -9739,10 +9871,12 @@
     "issue": "1",
     "pages": "81–97",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
+      "satiety",
       "recovery",
-      "sleep"
+      "sleep",
+      "emotional-regulation"
     ]
   },
   "groesz-2012-what-is-eating-you": {
@@ -9788,7 +9922,8 @@
     "pages": "717–721",
     "tags": [
       "satiety",
-      "behavior-change"
+      "behavior-change",
+      "emotional-regulation"
     ]
   },
   "hill-2018-stress-and-eating-behaviors-in-children-and-adolescents": {
@@ -9810,7 +9945,7 @@
         "literal": "Conner, M."
       },
       {
-        "literal": "O’Connor, D. B"
+        "literal": "O'Connor, D. B"
       }
     ],
     "issued": {
@@ -9825,7 +9960,8 @@
     "tags": [
       "satiety",
       "recovery",
-      "behavior-change"
+      "behavior-change",
+      "emotional-regulation"
     ]
   },
   "laugero-2011-relationship-between-perceived-stress-and-dietary-and-activity-patterns-in-older-adults-participating-in-the-boston-puerto-rican-health-study": {
@@ -9856,7 +9992,10 @@
     "pages": "194–204",
     "tags": [
       "food-quality",
-      "recovery"
+      "satiety",
+      "recovery",
+      "emotional-regulation",
+      "relationships"
     ]
   },
   "moore-2012-social-position-psychological-stress-and-obesity": {
@@ -9883,9 +10022,10 @@
     "issue": "4",
     "pages": "518–526",
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "recovery"
+      "body-composition",
+      "recovery",
+      "emotional-regulation"
     ]
   },
   "mouchacca-2013-associations-between-psychological-stress-eating-physical-activity-sedentary-behaviours-and-body-weight-among-women": {
@@ -9915,11 +10055,12 @@
     "issue": "1",
     "pages": "828–828",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "satiety",
       "recovery",
-      "behavior-change"
+      "behavior-change",
+      "emotional-regulation"
     ]
   },
   "moynihan-2015-eaten-up-by-boredom": {
@@ -9990,10 +10131,11 @@
     "issue": "2",
     "pages": "238–246",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "satiety",
-      "recovery"
+      "recovery",
+      "emotional-regulation"
     ]
   },
   "paddon-jones-2006-interplay-of-stress-and-physical-inactivity-on-muscle-loss": {
@@ -10019,7 +10161,8 @@
     "tags": [
       "food-quality",
       "strength-training",
-      "recovery"
+      "recovery",
+      "emotional-regulation"
     ]
   },
   "poornima-2014-study-of-the-effect-of-stress-on-skeletal-muscle-function-in-geriatrics": {
@@ -10049,9 +10192,11 @@
     "issue": "1",
     "pages": "8–9",
     "tags": [
+      "body-composition",
       "hypertrophy",
       "strength-training",
-      "recovery"
+      "recovery",
+      "emotional-regulation"
     ]
   },
   "scott-2012-effects-of-chronic-social-stress-on-obesity": {
@@ -10081,9 +10226,10 @@
     "issue": "1",
     "pages": "16–25",
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "recovery"
+      "body-composition",
+      "recovery",
+      "emotional-regulation"
     ]
   },
   "shimanoe-2015-perceived-stress-and-coping-strategies-in-relation-to-body-mass-index": {
@@ -10143,7 +10289,10 @@
     "issue": "2",
     "pages": "e0118105–e0118105",
     "tags": [
-      "recovery"
+      "calorie-balance",
+      "body-composition",
+      "recovery",
+      "emotional-regulation"
     ]
   },
   "sinha-2013-stress-as-a-common-risk-factor-for-obesity-and-addiction": {
@@ -10170,9 +10319,10 @@
     "issue": "9",
     "pages": "827–835",
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "recovery"
+      "body-composition",
+      "recovery",
+      "emotional-regulation"
     ]
   },
   "sominsky-2014-eating-behavior-and-stress": {
@@ -10199,11 +10349,12 @@
     "issue": "MAY",
     "pages": "434–434",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "satiety",
       "recovery",
-      "behavior-change"
+      "behavior-change",
+      "emotional-regulation"
     ]
   },
   "stults-kolehmainen-2013-the-effects-of-stress-on-physical-activity-and-exercise": {
@@ -10230,7 +10381,8 @@
     "issue": "1",
     "pages": "81–121",
     "tags": [
-      "recovery"
+      "recovery",
+      "emotional-regulation"
     ]
   },
   "tamashiro-2007-dynamic-body-weight-and-body-composition-changes-in-response-to-subordination-stress": {
@@ -10272,9 +10424,11 @@
     "issue": "4",
     "pages": "440–448",
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "recovery"
+      "body-composition",
+      "recovery",
+      "behavior-change",
+      "emotional-regulation"
     ]
   },
   "yau-2013-stress-and-eating-behaviors": {
@@ -10300,7 +10454,9 @@
     "tags": [
       "satiety",
       "recovery",
-      "behavior-change"
+      "sleep",
+      "behavior-change",
+      "emotional-regulation"
     ]
   },
   "beccuti-2011-sleep-and-obesity": {
@@ -10327,8 +10483,8 @@
     "issue": "4",
     "pages": "402–412",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "sleep"
     ]
   },
@@ -10383,8 +10539,8 @@
     "issue": "18",
     "pages": "1975–1976",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "sleep"
     ]
   },
@@ -10412,8 +10568,8 @@
     "issue": "2",
     "pages": "177–188",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "sleep"
     ]
   },
@@ -10440,8 +10596,8 @@
     "volume": "2012",
     "pages": "163296–11",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "sleep"
     ]
   },
@@ -10478,9 +10634,10 @@
     "issue": "9",
     "pages": "751–761",
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "sleep"
+      "body-composition",
+      "sleep",
+      "relationships"
     ]
   },
   "greer-2013-the-impact-of-sleep-deprivation-on-food-desire-in-the-human-brain": {
@@ -10511,6 +10668,7 @@
     "pages": "2259–2259",
     "tags": [
       "recovery",
+      "fatigue",
       "sleep"
     ]
   },
@@ -10543,8 +10701,8 @@
     "volume": "5",
     "pages": "27–35",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "sleep"
     ]
   },
@@ -10575,8 +10733,8 @@
     "issue": "3",
     "pages": "715–733",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "sleep"
     ]
   },
@@ -10596,7 +10754,7 @@
         "literal": "Bonham, M."
       },
       {
-        "literal": "O’Driscoll, D. M."
+        "literal": "O'Driscoll, D. M."
       },
       {
         "literal": "Hamilton, G. S."
@@ -10616,9 +10774,10 @@
     "issue": "10",
     "pages": "1173–1183",
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "sleep"
+      "body-composition",
+      "sleep",
+      "behavior-change"
     ]
   },
   "patel-2008-short-sleep-duration-and-weight-gain": {
@@ -10645,8 +10804,8 @@
     "issue": "3",
     "pages": "643–653",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "sleep"
     ]
   },
@@ -10671,8 +10830,8 @@
     "issue": "3",
     "pages": "e61",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "satiety",
       "sleep"
     ]
@@ -10698,8 +10857,8 @@
     "issue": "1",
     "pages": "A28–A33",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "sleep"
     ]
   },
@@ -10727,8 +10886,8 @@
     "issue": "suppl_1",
     "pages": "S59–S66",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "sleep"
     ]
   },
@@ -10768,8 +10927,8 @@
     "issue": "1",
     "pages": "16686–16686",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "sleep"
     ]
   },
@@ -10794,6 +10953,7 @@
     "issue": "7",
     "pages": "909–919",
     "tags": [
+      "food-quality",
       "recovery",
       "environment-design"
     ]
@@ -10825,6 +10985,7 @@
     "issue": "3",
     "pages": "257–269",
     "tags": [
+      "food-quality",
       "environment-design"
     ]
   },
@@ -10852,6 +11013,7 @@
     "issue": "4",
     "pages": "373–383",
     "tags": [
+      "food-quality",
       "environment-design"
     ]
   },
@@ -10876,6 +11038,7 @@
     "issue": "3",
     "pages": "299–314",
     "tags": [
+      "food-quality",
       "environment-design"
     ]
   },
@@ -10886,7 +11049,7 @@
     "short_title": "Alcohol and the Athlete",
     "authors": [
       {
-        "literal": "O’Brien, C. P."
+        "literal": "O'Brien, C. P."
       },
       {
         "literal": "Lyons, F"
@@ -10903,6 +11066,7 @@
     "issue": "5",
     "pages": "295–300",
     "tags": [
+      "food-quality",
       "environment-design"
     ]
   },
@@ -10930,6 +11094,7 @@
     "issue": "4",
     "pages": "192–196",
     "tags": [
+      "food-quality",
       "environment-design"
     ]
   },
@@ -10957,6 +11122,9 @@
     "issue": "S6",
     "pages": "S48–S52",
     "tags": [
+      "calorie-balance",
+      "body-composition",
+      "food-quality",
       "environment-design"
     ]
   },
@@ -11006,6 +11174,7 @@
     "issue": "8",
     "pages": "781–789",
     "tags": [
+      "food-quality",
       "recovery",
       "environment-design"
     ]
@@ -11038,7 +11207,8 @@
     "pages": "351–358",
     "tags": [
       "recovery",
-      "fatigue"
+      "fatigue",
+      "behavior-change"
     ]
   },
   "bouchard-2014-predictors-of-body-composition-and-body-energy-changes-in-response-to-chronic-overfeeding": {
@@ -11068,8 +11238,8 @@
     "issue": "2",
     "pages": "236–242",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "meal-structure"
     ]
   },
@@ -11094,15 +11264,15 @@
     "issue": "1",
     "pages": "359–365",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "food-quality"
     ]
   },
   "hall-2007-body-fat-and-fat-free-mass-interrelationships": {
     "id": "hall-2007-body-fat-and-fat-free-mass-interrelationships",
     "type": "journal-article",
-    "title": "Body Fat and Fat-Free Mass Interrelationships: Forbes’s Theory Revisited",
+    "title": "Body Fat and Fat-Free Mass Interrelationships: Forbes's Theory Revisited",
     "short_title": "Body Fat and Fat-Free Mass Interrelationships",
     "authors": [
       {
@@ -11120,8 +11290,8 @@
     "issue": "6",
     "pages": "1059–1063",
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "heymsfield-2014-weight-loss-composition-is-one-fourth-fat-free-mass": {
@@ -11157,8 +11327,8 @@
     "issue": "4",
     "pages": "310–321",
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "jo-2009-hypertrophy-and-or-hyperplasia": {
@@ -11234,8 +11404,8 @@
     "issue": "1",
     "pages": "191–191",
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "maclean-2015-the-role-for-adipose-tissue-in-weight-regain-after-weight-loss": {
@@ -11271,8 +11441,8 @@
     "issue": "S1",
     "pages": "45–54",
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "rutkowski-2015-the-cell-biology-of-fat-expansion": {
@@ -11332,8 +11502,8 @@
     "issue": "1",
     "pages": "7–7",
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "markland-2005-motivational-interviewing-and-self-determination-theory": {
@@ -11366,7 +11536,8 @@
     "issue": "6",
     "pages": "811–831",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "values"
     ]
   },
   "miller-2013-motivational-interviewing-helping-people-change-3rd-ed": {
@@ -11388,7 +11559,8 @@
     "year": 2013,
     "publisher": "Guilford Press",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "values"
     ]
   },
   "wolever-2013-a-systematic-review-of-the-literature-on-health-and-wellness-coaching": {
@@ -11467,7 +11639,8 @@
     "issue": "1",
     "pages": "53–62",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "reason"
     ]
   },
   "hagger-2020-self-determination-theory-and-autonomy-support-to-change-healthcare-behavior": {
@@ -11491,7 +11664,8 @@
     "doi_newtab": true,
     "container_title": "In The Wiley Handbook of Healthcare Treatment Engagement (pp. 141–158). John Wiley & Sons, Ltd",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "values"
     ]
   },
   "honicke-2016-the-influence-of-academic-self-efficacy-on-academic-performance": {
@@ -11541,7 +11715,8 @@
     "issue": "2",
     "pages": "139–158",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "values"
     ]
   },
   "roth-2009-the-emotional-and-academic-consequences-of-parental-conditional-regard": {
@@ -11577,7 +11752,11 @@
     "issue": "4",
     "pages": "1119–1142",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "emotional-regulation",
+      "relationships",
+      "attachment",
+      "self-esteem"
     ]
   },
   "slemp-2018-leader-autonomy-support-in-the-workplace": {
@@ -11610,7 +11789,9 @@
     "issue": "5",
     "pages": "706–724",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "emotional-regulation",
+      "values"
     ]
   },
   "talsma-2018-i-believe-therefore-i-achieve-and-vice-versa": {
@@ -11672,6 +11853,7 @@
     "issue": "10",
     "pages": "1644–1651",
     "tags": [
+      "carbohydrates",
       "behavior-change"
     ]
   },
@@ -11714,8 +11896,8 @@
     "issue": "10",
     "pages": "1255–1264",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "behavior-change"
     ]
   },
@@ -11747,14 +11929,15 @@
     "pages": "677–706",
     "tags": [
       "recovery",
-      "behavior-change"
+      "behavior-change",
+      "emotional-regulation"
     ]
   },
   "faries-2016-why-we-dont-just-do-it": {
     "id": "faries-2016-why-we-dont-just-do-it",
     "type": "journal-article",
-    "title": "Why We Don’t “Just Do It”: Understanding the Intention-Behavior Gap in Lifestyle Medicine",
-    "short_title": "Why We Don’t “Just Do It”",
+    "title": "Why We Don't \"Just Do It\": Understanding the Intention-Behavior Gap in Lifestyle Medicine",
+    "short_title": "Why We Don't \"Just Do It\"",
     "authors": [
       {
         "literal": "Faries, M. D"
@@ -11825,7 +12008,8 @@
     "issue": "6",
     "pages": "724–727",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "relationships"
     ]
   },
   "sheeran-2016-the-intention-behavior-gap": {
@@ -12041,7 +12225,8 @@
     "pages": "977–986",
     "tags": [
       "recovery",
-      "behavior-change"
+      "behavior-change",
+      "emotional-regulation"
     ]
   },
   "tricomi-2009-a-specific-role-for-posterior-dorsolateral-striatum-in-human-habit-learning": {
@@ -12057,7 +12242,7 @@
         "literal": "Balleine, B. W."
       },
       {
-        "literal": "O’Doherty, J. P"
+        "literal": "O'Doherty, J. P"
       }
     ],
     "issued": {
@@ -12127,7 +12312,8 @@
     "issue": "6",
     "pages": "1281–1297",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "emotional-regulation"
     ]
   },
   "neal-2013-how-do-people-adhere-to-goals-when-willpower-is-low": {
@@ -12182,7 +12368,9 @@
     "issue": "4",
     "pages": "315–341",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "emotional-regulation",
+      "values"
     ]
   },
   "rebar-2014-habits-predict-physical-activity-on-days-when-intentions-are-weak": {
@@ -12251,9 +12439,10 @@
     "issue": "12",
     "pages": "3091–3096",
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "periodization",
+      "adherence",
       "behavior-change"
     ]
   },
@@ -12287,8 +12476,9 @@
     "issue": "1",
     "pages": "54–54",
     "tags": [
+      "calorie-balance",
       "body-composition",
-      "calorie-balance"
+      "behavior-change"
     ]
   },
   "zheng-2015-self-weighing-in-weight-management": {
@@ -12327,8 +12517,9 @@
     "issue": "2",
     "pages": "256–265",
     "tags": [
+      "calorie-balance",
       "body-composition",
-      "calorie-balance"
+      "behavior-change"
     ]
   },
   "espedido-2018-goal-difficulty-and-creative-performance": {
@@ -12356,7 +12547,8 @@
     "pages": "179–196",
     "tags": [
       "recovery",
-      "behavior-change"
+      "behavior-change",
+      "emotional-regulation"
     ]
   },
   "fonollosa-2015-learning-of-chunking-sequences-in-cognition-and-behavior": {
@@ -12459,7 +12651,8 @@
     "issue": "1",
     "pages": "593–620",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "reason"
     ]
   },
   "latham-1999-the-effects-of-proximal-and-distal-goals-on-performance-on-a-moderately-complex-task": {
@@ -12546,7 +12739,8 @@
     "year": 1990,
     "publisher": "Englewood Cliffs, NJ: Prentice Hall",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "values"
     ],
     "doi": "10.2307/258875",
     "doi_newtab": true
@@ -12606,8 +12800,8 @@
     "issue": "Supplement",
     "pages": "S308–S316",
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "stock-1990-proximal-goal-setting-and-self-regulatory-processes": {
@@ -12746,7 +12940,8 @@
     "issue": "2",
     "pages": "151–162",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "values"
     ]
   },
   "elliot-2017-handbook-of-competence-and-motivation": {
@@ -12771,7 +12966,8 @@
     "year": 2017,
     "publisher": "(2nd ed.). The Guilford Press",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "values"
     ]
   },
   "locke-2002-building-a-practically-useful-theory-of-goal-setting-and-task-motivation": {
@@ -12798,7 +12994,8 @@
     "issue": "9",
     "pages": "705–717",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "values"
     ]
   },
   "reeve-2008-understanding-and-promoting-autonomous-self-regulation": {
@@ -12826,7 +13023,8 @@
     "year": 2008,
     "container_title": "In D. H. Schunk & B. J. Zimmerman (Eds.), Motivation and self-regulated learning: Theory, research, and applications (pp. 223–244). Lawrence Erlbaum Associates Publishers",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "values"
     ]
   },
   "ryan-2000-self-determination-theory-and-the-facilitation-of-intrinsic-motivation-social-development-and-well-being": {
@@ -12853,7 +13051,9 @@
     "issue": "1",
     "pages": "68–78",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "relationships",
+      "values"
     ]
   },
   "ryan-1970-intentional-behavior": {
@@ -12872,7 +13072,8 @@
     "year": 1970,
     "publisher": "Ronald Press",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "values"
     ],
     "doi": "10.2307/1421862",
     "doi_newtab": true
@@ -12910,7 +13111,8 @@
     "issue": "3",
     "pages": "395–418",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "values"
     ]
   },
   "abbott-2014-effectiveness-of-mindfulness-based-stress-reduction-and-mindfulness-based-cognitive-therapy-in-vascular-disease": {
@@ -12956,7 +13158,9 @@
     "pages": "341–351",
     "tags": [
       "recovery",
-      "mindfulness"
+      "behavior-change",
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "allen-2012-cognitive-affective-neural-plasticity-following-active-controlled-mindfulness-intervention": {
@@ -13001,7 +13205,9 @@
     "issue": "44",
     "pages": "15601–15610",
     "tags": [
-      "mindfulness"
+      "behavior-change",
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "andersen-2020-toward-an-operational-definition-of-an-informal-mindfulness-practice": {
@@ -13019,7 +13225,8 @@
     },
     "year": 2020,
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "bishop-2004-mindfulness": {
@@ -13073,7 +13280,8 @@
     "issue": "3",
     "pages": "230–241",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "bowden-2011-a-comparative-randomised-controlled-trial-of-the-effects-of-brain-wave-vibration-training-iyengar-yoga-and-mindfulness-on-mood-well-being-and-salivary-cortisol": {
@@ -13106,7 +13314,8 @@
     "pages": "234713–13",
     "tags": [
       "recovery",
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "brown-2003-the-benefits-of-being-present": {
@@ -13133,7 +13342,8 @@
     "issue": "4",
     "pages": "822–848",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "campos-2016-meditation-and-happiness": {
@@ -13180,7 +13390,9 @@
     "volume": "93",
     "pages": "80–85",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation",
+      "relationships"
     ]
   },
   "castaldi-2020-neuroplasticity-in-adult-human-visual-cortex": {
@@ -13236,7 +13448,8 @@
     "issue": "6",
     "pages": "1691–1711",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "creswell-2017-mindfulness-interventions": {
@@ -13259,7 +13472,8 @@
     "volume": "68",
     "pages": "491–516",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "davis-2011-what-are-the-benefits-of-mindfulness": {
@@ -13286,7 +13500,8 @@
     "issue": "2",
     "pages": "198–208",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "ding-2015-short-term-meditation-modulates-brain-activity-of-insight-evoked-with-solution-cue": {
@@ -13328,6 +13543,8 @@
     "issue": "1",
     "pages": "43–49",
     "tags": [
+      "behavior-change",
+      "environment-design",
       "mindfulness"
     ]
   },
@@ -13349,7 +13566,8 @@
     "doi_newtab": true,
     "publisher": "CRC Press",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "mind-body-integration"
     ]
   },
   "germer-2005-mindfulness-and-psychotherapy": {
@@ -13374,7 +13592,8 @@
     "year": 2005,
     "publisher": "Guilford Press",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "gotink-2016-8-week-mindfulness-based-stress-reduction-induces-brain-changes-similar-to-traditional-long-term-meditation-practice-a-systematic-review": {
@@ -13410,7 +13629,9 @@
     "pages": "32–41",
     "tags": [
       "recovery",
-      "mindfulness"
+      "adherence",
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "hofmann-2010-the-effect-of-mindfulness-based-therapy-on-anxiety-and-depression": {
@@ -13443,7 +13664,8 @@
     "issue": "2",
     "pages": "169–183",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "holzel-2011-how-does-mindfulness-meditation-work": {
@@ -13482,7 +13704,8 @@
     "issue": "6",
     "pages": "537–559",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "jazaieri-2017-mindfulness-and-well-being": {
@@ -13506,7 +13729,9 @@
     "doi_newtab": true,
     "container_title": "In M. D. Robinson & M. Eid (Eds.), The happy mind: Cognitive contributions to well-being (pp. 41–58). Springer International Publishing/Springer Nature",
     "tags": [
-      "mindfulness"
+      "behavior-change",
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "knowles-2016-a-systematic-review-of-efficacy-of-the-attention-training-technique-in-clinical-and-nonclinical-samples": {
@@ -13570,7 +13795,8 @@
     "pages": "282–297",
     "tags": [
       "satiety",
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "lamothe-2015-outcomes-of-mbsr-or-mbsr-based-interventions-in-health-care-providers": {
@@ -13605,7 +13831,9 @@
     "volume": "24",
     "pages": "19–28",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation",
+      "relationships"
     ]
   },
   "lara-2014-association-of-behaviour-change-techniques-with-effectiveness-of-dietary-interventions-among-adults-of-retirement-age": {
@@ -13621,7 +13849,7 @@
         "literal": "Evans, E. H."
       },
       {
-        "literal": "O’Brien, N."
+        "literal": "O'Brien, N."
       },
       {
         "literal": "Moynihan, P. J."
@@ -13693,7 +13921,8 @@
     "issue": "3",
     "pages": "449–",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "mann-2007-attention-self-control-and-health-behaviors": {
@@ -13774,7 +14003,8 @@
     "issue": "4",
     "pages": "255–258",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "mausbach-2010-the-relationship-between-homework-compliance-and-therapy-outcomes": {
@@ -13811,7 +14041,8 @@
     "pages": "429–438",
     "tags": [
       "adherence",
-      "behavior-change"
+      "behavior-change",
+      "relationships"
     ]
   },
   "mcclintock-2019-brief-mindfulness-based-interventions-for-acute-and-chronic-pain": {
@@ -13847,7 +14078,8 @@
     "issue": "3",
     "pages": "265–278",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "michalak-2008-mindfulness-predicts-relapse-recurrence-in-major-depressive-disorder-after-mindfulness-based-cognitive-therapy": {
@@ -13880,7 +14112,9 @@
     "issue": "8",
     "pages": "630–633",
     "tags": [
-      "mindfulness"
+      "behavior-change",
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "morgan-2005-cultivating-attention-and-empathy": {
@@ -13902,7 +14136,10 @@
     "year": 2005,
     "container_title": "In C. K. Germer, R. D. Siegel, & P. R. Fulton (Eds.), Mindfulness and psychotherapy (pp. 73–90). Guilford Press",
     "tags": [
-      "behavior-change"
+      "behavior-change",
+      "mindfulness",
+      "relationships",
+      "communication"
     ]
   },
   "ngamkham-2019-a-systematic-review": {
@@ -13932,7 +14169,9 @@
     "issue": "2",
     "pages": "161–169",
     "tags": [
-      "mindfulness"
+      "behavior-change",
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "parsons-2017-home-practice-in-mindfulness-based-cognitive-therapy-and-mindfulness-based-stress-reduction": {
@@ -13968,7 +14207,9 @@
     "pages": "29–41",
     "tags": [
       "recovery",
-      "mindfulness"
+      "behavior-change",
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "piet-2011-the-effect-of-mindfulness-based-cognitive-therapy-for-prevention-of-relapse-in-recurrent-major-depressive-disorder": {
@@ -13995,7 +14236,9 @@
     "issue": "6",
     "pages": "1032–1040",
     "tags": [
-      "mindfulness"
+      "behavior-change",
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "quaglia-2015-from-conceptualization-to-operationalization-of-mindfulness": {
@@ -14026,7 +14269,8 @@
     "year": 2015,
     "container_title": "In K. W. Brown, J. D. Creswell, & R. M. Ryan (Eds.), Handbook of mindfulness: Theory, research, and practice (pp. 151– 170). The Guilford Press",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "rodriguez-vega-2014-impact-of-mindfulness-training-on-attentional-control-and-anger-regulation-processes-for-psychotherapists-in-training": {
@@ -14068,7 +14312,8 @@
     "issue": "2",
     "pages": "202–213",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "sahdra-2011-enhanced-response-inhibition-during-intensive-meditation-training-predicts-improvements-in-self-reported-adaptive-socioemotional-functioning": {
@@ -14131,14 +14376,15 @@
     "issue": "2",
     "pages": "299–312",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "scheepers-2020-the-impact-of-mindfulness-based-interventions-on-doctors-well-being-and-performance": {
     "id": "scheepers-2020-the-impact-of-mindfulness-based-interventions-on-doctors-well-being-and-performance",
     "type": "journal-article",
-    "title": "The impact of mindfulness-based interventions on doctors’ well-being and performance: A systematic review",
-    "short_title": "The impact of mindfulness-based interventions on doctors’ well-being and performance",
+    "title": "The impact of mindfulness-based interventions on doctors' well-being and performance: A systematic review",
+    "short_title": "The impact of mindfulness-based interventions on doctors' well-being and performance",
     "authors": [
       {
         "literal": "Scheepers, R. A."
@@ -14164,7 +14410,8 @@
     "issue": "2",
     "pages": "138–149",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "segal-2013-mindfulness-based-cognitive-therapy-for-depression-2nd-ed": {
@@ -14189,7 +14436,9 @@
     "year": 2013,
     "publisher": "Guilford Press",
     "tags": [
-      "mindfulness"
+      "behavior-change",
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "shapiro-2017-the-art-and-science-of-mindfulness": {
@@ -14213,7 +14462,8 @@
     "doi_newtab": true,
     "publisher": "(2nd ed.). American Psychological Association",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "shapiro-2006-mechanisms-of-mindfulness": {
@@ -14246,7 +14496,8 @@
     "issue": "3",
     "pages": "373–386",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "tang-2015-the-neuroscience-of-mindfulness-meditation": {
@@ -14276,7 +14527,8 @@
     "issue": "4",
     "pages": "213–225",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "tang-2007-short-term-meditation-training-improves-attention-and-self-regulation": {
@@ -14384,7 +14636,8 @@
     "volume": "Healthy Life. Retrieved 2022",
     "pages": "from",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "tomlinson-2018-dispositional-mindfulness-and-psychological-health": {
@@ -14417,7 +14670,8 @@
     "issue": "1",
     "pages": "23–43",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "van-dam-2018-mind-the-hype": {
@@ -14483,7 +14737,8 @@
     "issue": "1",
     "pages": "36–61",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "young-2018-the-impact-of-mindfulness-based-interventions-on-brain-activity": {
@@ -14524,7 +14779,8 @@
     "volume": "84",
     "pages": "424–433",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "zarifsanaiey-2020-the-effects-of-mindfulness-training-on-the-level-of-happiness-and-blood-sugar-in-diabetes-patients": {
@@ -14560,7 +14816,9 @@
     "issue": "1",
     "pages": "311–317",
     "tags": [
-      "mindfulness"
+      "carbohydrates",
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "zeidan-2010-mindfulness-meditation-improves-cognition": {
@@ -14596,7 +14854,8 @@
     "issue": "2",
     "pages": "597–605",
     "tags": [
-      "mindfulness"
+      "mindfulness",
+      "emotional-regulation"
     ]
   },
   "compernolle-2019-effectiveness-of-interventions-using-self-monitoring-to-reduce-sedentary-behavior-in-adults": {
@@ -14722,8 +14981,8 @@
   "quinn-2010-cant-control-yourself": {
     "id": "quinn-2010-cant-control-yourself",
     "type": "journal-article",
-    "title": "Can’t Control Yourself?",
-    "short_title": "Can’t Control Yourself?",
+    "title": "Can't Control Yourself?",
+    "short_title": "Can't Control Yourself?",
     "authors": [
       {
         "literal": "Quinn, J. M."
@@ -14783,7 +15042,7 @@
         "literal": "Rawson, K. A."
       },
       {
-        "literal": "O’Neil, R."
+        "literal": "O'Neil, R."
       },
       {
         "literal": "Dunlosky, J"
@@ -14845,8 +15104,8 @@
     "issue": "10",
     "pages": "782–792",
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "moiz-2025-glp1-receptor-agonist-induced-weight-loss": {
@@ -14855,12 +15114,24 @@
     "title": "Mechanisms of GLP-1 receptor agonist-induced weight loss: a review of central and peripheral pathways in appetite and energy regulation",
     "short_title": "Mechanisms of GLP-1 receptor agonist-induced weight loss",
     "authors": [
-      { "literal": "Areesha Moiz" },
-      { "literal": "Kristian B. Filion" },
-      { "literal": "Michael A. Tsoukas" },
-      { "literal": "Oriana H. Y. Yu" },
-      { "literal": "Tricia M. Peters" },
-      { "literal": "Mark J. Eisenberg" }
+      {
+        "literal": "Areesha Moiz"
+      },
+      {
+        "literal": "Kristian B. Filion"
+      },
+      {
+        "literal": "Michael A. Tsoukas"
+      },
+      {
+        "literal": "Oriana H. Y. Yu"
+      },
+      {
+        "literal": "Tricia M. Peters"
+      },
+      {
+        "literal": "Mark J. Eisenberg"
+      }
     ],
     "container_title": "The American Journal of Medicine",
     "issued": {
@@ -14873,8 +15144,8 @@
     "doi": "10.1016/j.amjmed.2025.01.021",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "satiety"
     ]
   },
@@ -14884,9 +15155,15 @@
     "title": "GLP-1 and weight loss: unraveling the diverse neural circuitry",
     "short_title": "GLP-1 and weight loss",
     "authors": [
-      { "literal": "Scott E. Kanoski" },
-      { "literal": "Matthew R. Hayes" },
-      { "literal": "Karolina P. Skibicka" }
+      {
+        "literal": "Scott E. Kanoski"
+      },
+      {
+        "literal": "Matthew R. Hayes"
+      },
+      {
+        "literal": "Karolina P. Skibicka"
+      }
     ],
     "container_title": "American Journal of Physiology-Regulatory, Integrative and Comparative Physiology",
     "issued": {
@@ -14899,8 +15176,8 @@
     "doi": "10.1152/ajpregu.00520.2015",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "satiety"
     ]
   },
@@ -14910,16 +15187,36 @@
     "title": "Glucagon-like peptide 1 agonist and effects on reward behaviour: a systematic review",
     "short_title": "GLP-1 agonist and effects on reward behaviour",
     "authors": [
-      { "literal": "Sebastian Badulescu" },
-      { "literal": "Aniqa Tabassum" },
-      { "literal": "Gia Han Le" },
-      { "literal": "Sabrina Wong" },
-      { "literal": "Lee Phan" },
-      { "literal": "Hartej Gill" },
-      { "literal": "Cristian-Daniel Llach" },
-      { "literal": "Roger S. McIntyre" },
-      { "literal": "Joshua Rosenblat" },
-      { "literal": "Rodrigo Mansur" }
+      {
+        "literal": "Sebastian Badulescu"
+      },
+      {
+        "literal": "Aniqa Tabassum"
+      },
+      {
+        "literal": "Gia Han Le"
+      },
+      {
+        "literal": "Sabrina Wong"
+      },
+      {
+        "literal": "Lee Phan"
+      },
+      {
+        "literal": "Hartej Gill"
+      },
+      {
+        "literal": "Cristian-Daniel Llach"
+      },
+      {
+        "literal": "Roger S. McIntyre"
+      },
+      {
+        "literal": "Joshua Rosenblat"
+      },
+      {
+        "literal": "Rodrigo Mansur"
+      }
     ],
     "container_title": "Physiology & Behavior",
     "issued": {
@@ -14931,9 +15228,10 @@
     "doi": "10.1016/j.physbeh.2024.114622",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "satiety"
+      "body-composition",
+      "satiety",
+      "behavior-change"
     ]
   },
   "flint-1998-glucagon-like-peptide-1-promotes-satiety-and-suppresses-energy-intake-in-humans": {
@@ -14942,10 +15240,18 @@
     "title": "Glucagon-like peptide 1 promotes satiety and suppresses energy intake in humans",
     "short_title": "GLP-1 promotes satiety and suppresses energy intake in humans",
     "authors": [
-      { "literal": "Anne Flint" },
-      { "literal": "Anne Raben" },
-      { "literal": "Arne Astrup" },
-      { "literal": "Jens J. Holst" }
+      {
+        "literal": "Anne Flint"
+      },
+      {
+        "literal": "Anne Raben"
+      },
+      {
+        "literal": "Arne Astrup"
+      },
+      {
+        "literal": "Jens J. Holst"
+      }
     ],
     "container_title": "The Journal of Clinical Investigation",
     "issued": {
@@ -14958,8 +15264,8 @@
     "doi": "10.1172/JCI990",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "satiety"
     ]
   },
@@ -15008,9 +15314,10 @@
     "doi": "10.1111/obr.13539",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
-      "satiety"
+      "body-composition",
+      "satiety",
+      "emotional-regulation"
     ]
   },
   "kim-2008-thyroid-hormone-as-a-determinant-of-energy-expenditure-and-the-basal-metabolic-rate": {
@@ -15034,8 +15341,8 @@
     "doi": "10.1089/thy.2007.0266",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "izkhakov-2019-body-composition-resting-energy-expenditure-and-metabolic-changes-in-women-diagnosed-with-differentiated-thyroid-carcinoma": {
@@ -15074,8 +15381,8 @@
     "doi": "10.1089/thy.2018.0483",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "himmerich-2015-weight-gain-and-metabolic-changes-during-treatment-with-antipsychotics-and-antidepressants": {
@@ -15105,8 +15412,8 @@
     "doi": "10.2174/1871530315666150623092031",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "satiety"
     ]
   },
@@ -15137,8 +15444,8 @@
     "doi": "10.1111/obr.12934",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "satiety"
     ]
   },
@@ -15177,8 +15484,8 @@
     "doi": "10.3389/fnut.2021.815456",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "satiety"
     ]
   },
@@ -15203,8 +15510,8 @@
     "doi": "10.1016/j.ecl.2013.05.006",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "satiety"
     ]
   },
@@ -15247,8 +15554,8 @@
     "doi": "10.3109/13697137.2012.707385",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "gielen-2014-heritability-and-genetic-etiology-of-habitual-physical-activity": {
@@ -15296,7 +15603,8 @@
     "doi_newtab": true,
     "tags": [
       "calorie-balance",
-      "environment-design"
+      "environment-design",
+      "reason"
     ]
   },
   "fazzino-2022-reinforcing-natures-of-hyper-palatable-foods": {
@@ -15355,8 +15663,9 @@
     "doi": "10.1038/s43016-022-00688-4",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
+      "meal-structure",
       "food-quality",
       "satiety"
     ]
@@ -15382,8 +15691,8 @@
     "doi": "10.1111/j.1753-4887.1998.tb01677.x",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
       "calorie-balance",
+      "body-composition",
       "food-quality",
       "satiety"
     ]
@@ -15409,8 +15718,8 @@
     "doi": "10.2174/1381612822666160720155855",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "dunaif-1997-insulin-resistance-and-pcos-mechanism": {
@@ -15434,8 +15743,8 @@
     "doi": "10.1210/edrv.18.6.0318",
     "doi_newtab": true,
     "tags": [
-      "body-composition",
-      "calorie-balance"
+      "calorie-balance",
+      "body-composition"
     ]
   },
   "fda-2025-aspartame-and-other-sweeteners-food": {
@@ -15459,8 +15768,8 @@
     "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food",
     "url_newtab": true,
     "tags": [
-      "food-quality",
       "calorie-balance",
+      "food-quality",
       "adherence"
     ]
   },
@@ -15528,8 +15837,8 @@
     "doi": "10.1093/nutrit/nuw032",
     "doi_newtab": true,
     "tags": [
-      "food-quality",
       "calorie-balance",
+      "food-quality",
       "adherence"
     ]
   },
@@ -15589,8 +15898,8 @@
     "doi": "10.7326/0003-4819-157-5-201209040-00007",
     "doi_newtab": true,
     "tags": [
-      "food-quality",
-      "micronutrients"
+      "micronutrients",
+      "food-quality"
     ]
   },
   "national-academies-2016-genetically-engineered-crops": {
@@ -15616,8 +15925,8 @@
     "url": "https://www.nationalacademies.org/publications/23395",
     "url_newtab": true,
     "tags": [
-      "food-quality",
-      "micronutrients"
+      "micronutrients",
+      "food-quality"
     ]
   },
   "fda-epa-2024-advice-about-eating-fish": {
@@ -15741,8 +16050,2898 @@
     "doi_newtab": true,
     "tags": [
       "dietary-supplements",
+      "hypertrophy",
+      "strength-training"
+    ]
+  },
+  "bull-2020-who-physical-activity-guidelines": {
+    "id": "bull-2020-who-physical-activity-guidelines",
+    "type": "journal-article",
+    "title": "World Health Organization 2020 Guidelines on Physical Activity and Sedentary Behaviour",
+    "short_title": "WHO 2020 Physical Activity Guidelines",
+    "authors": [
+      {
+        "literal": "Fiona C. Bull"
+      },
+      {
+        "literal": "Salih S. Al-Ansari"
+      },
+      {
+        "literal": "Stuart Biddle"
+      },
+      {
+        "literal": "Katja Borodulin"
+      },
+      {
+        "literal": "Matthew P. Buman"
+      }
+    ],
+    "container_title": "British Journal of Sports Medicine",
+    "issued": {
+      "year": 2020,
+      "month": 12
+    },
+    "year": 2020,
+    "volume": "54",
+    "issue": "24",
+    "pages": "1451-1462",
+    "doi": "10.1136/bjsports-2020-102955",
+    "doi_newtab": true,
+    "tags": [
       "strength-training",
+      "endurance",
+      "recovery",
+      "behavior-change"
+    ]
+  },
+  "garber-2011-acsm-exercise-prescription": {
+    "id": "garber-2011-acsm-exercise-prescription",
+    "type": "journal-article",
+    "title": "Quantity and Quality of Exercise for Developing and Maintaining Cardiorespiratory, Musculoskeletal, and Neuromotor Fitness in Apparently Healthy Adults: Guidance for Prescribing Exercise",
+    "short_title": "ACSM Exercise Prescription Position Stand",
+    "authors": [
+      {
+        "literal": "Carol Ewing Garber"
+      },
+      {
+        "literal": "Bryan Blissmer"
+      },
+      {
+        "literal": "Michael R. Deschenes"
+      },
+      {
+        "literal": "Barry A. Franklin"
+      },
+      {
+        "literal": "Michael J. Lamonte"
+      },
+      {
+        "literal": "American College of Sports Medicine"
+      }
+    ],
+    "container_title": "Medicine & Science in Sports & Exercise",
+    "issued": {
+      "year": 2011,
+      "month": 7
+    },
+    "year": 2011,
+    "volume": "43",
+    "issue": "7",
+    "pages": "1334-1359",
+    "doi": "10.1249/MSS.0b013e318213fefb",
+    "doi_newtab": true,
+    "tags": [
+      "strength-training",
+      "endurance",
+      "recovery"
+    ]
+  },
+  "ratamess-2009-acsm-progression-resistance-training": {
+    "id": "ratamess-2009-acsm-progression-resistance-training",
+    "type": "journal-article",
+    "title": "Progression Models in Resistance Training for Healthy Adults",
+    "short_title": "Progression Models in Resistance Training",
+    "authors": [
+      {
+        "literal": "Nicholas A. Ratamess"
+      },
+      {
+        "literal": "Brent A. Alvar"
+      },
+      {
+        "literal": "Tammy K. Evetoch"
+      },
+      {
+        "literal": "Terry J. Housh"
+      },
+      {
+        "literal": "American College of Sports Medicine"
+      }
+    ],
+    "container_title": "Medicine & Science in Sports & Exercise",
+    "issued": {
+      "year": 2009,
+      "month": 3
+    },
+    "year": 2009,
+    "volume": "41",
+    "issue": "3",
+    "pages": "687-708",
+    "doi": "10.1249/MSS.0b013e3181915670",
+    "doi_newtab": true,
+    "tags": [
+      "hypertrophy",
+      "strength-training",
+      "periodization",
+      "training-volume"
+    ]
+  },
+  "schoenfeld-2016-training-frequency-hypertrophy": {
+    "id": "schoenfeld-2016-training-frequency-hypertrophy",
+    "type": "journal-article",
+    "title": "Effects of Resistance Training Frequency on Measures of Muscle Hypertrophy: A Systematic Review and Meta-Analysis",
+    "short_title": "Resistance Training Frequency and Hypertrophy",
+    "authors": [
+      {
+        "literal": "Brad J. Schoenfeld"
+      },
+      {
+        "literal": "Dan Ogborn"
+      },
+      {
+        "literal": "James W. Krieger"
+      }
+    ],
+    "container_title": "Sports Medicine",
+    "issued": {
+      "year": 2016,
+      "month": 11
+    },
+    "year": 2016,
+    "volume": "46",
+    "issue": "11",
+    "pages": "1689-1697",
+    "doi": "10.1007/s40279-016-0543-8",
+    "doi_newtab": true,
+    "tags": [
+      "hypertrophy",
+      "strength-training",
+      "periodization",
+      "training-volume"
+    ]
+  },
+  "schoenfeld-2017-weekly-training-volume-hypertrophy": {
+    "id": "schoenfeld-2017-weekly-training-volume-hypertrophy",
+    "type": "journal-article",
+    "title": "Dose-Response Relationship Between Weekly Resistance Training Volume and Increases in Muscle Mass: A Systematic Review and Meta-Analysis",
+    "short_title": "Weekly Training Volume and Muscle Mass",
+    "authors": [
+      {
+        "literal": "Brad J. Schoenfeld"
+      },
+      {
+        "literal": "Dan Ogborn"
+      },
+      {
+        "literal": "James W. Krieger"
+      }
+    ],
+    "container_title": "Journal of Sports Sciences",
+    "issued": {
+      "year": 2017,
+      "month": 6
+    },
+    "year": 2017,
+    "volume": "35",
+    "issue": "11",
+    "pages": "1073-1082",
+    "doi": "10.1080/02640414.2016.1210197",
+    "doi_newtab": true,
+    "tags": [
+      "hypertrophy",
+      "strength-training",
+      "periodization",
+      "relationships",
+      "training-volume"
+    ]
+  },
+  "grgic-2022-failure-nonfailure-strength-hypertrophy": {
+    "id": "grgic-2022-failure-nonfailure-strength-hypertrophy",
+    "type": "journal-article",
+    "title": "Effects of Resistance Training Performed to Repetition Failure or Non-Failure on Muscular Strength and Hypertrophy: A Systematic Review and Meta-Analysis",
+    "short_title": "Training to Failure or Non-Failure",
+    "authors": [
+      {
+        "literal": "Jozo Grgic"
+      },
+      {
+        "literal": "Brad J. Schoenfeld"
+      },
+      {
+        "literal": "John Orazem"
+      },
+      {
+        "literal": "Filip Sabol"
+      }
+    ],
+    "container_title": "Journal of Sport and Health Science",
+    "issued": {
+      "year": 2022,
+      "month": 3
+    },
+    "year": 2022,
+    "volume": "11",
+    "issue": "2",
+    "pages": "202-211",
+    "doi": "10.1016/j.jshs.2021.01.007",
+    "doi_newtab": true,
+    "tags": [
+      "hypertrophy",
+      "strength-training",
+      "fatigue"
+    ]
+  },
+  "gollwitzer-2006-implementation-intentions-meta-analysis": {
+    "id": "gollwitzer-2006-implementation-intentions-meta-analysis",
+    "type": "book-chapter",
+    "title": "Implementation Intentions and Goal Achievement: A Meta-Analysis of Effects and Processes",
+    "short_title": "Implementation Intentions and Goal Achievement",
+    "authors": [
+      {
+        "literal": "Peter M. Gollwitzer"
+      },
+      {
+        "literal": "Paschal Sheeran"
+      }
+    ],
+    "container_title": "Advances in Experimental Social Psychology",
+    "issued": {
+      "year": 2006
+    },
+    "year": 2006,
+    "volume": "38",
+    "pages": "69-119",
+    "doi": "10.1016/S0065-2601(06)38002-1",
+    "doi_newtab": true,
+    "tags": [
+      "adherence",
+      "behavior-change",
+      "environment-design"
+    ]
+  },
+  "neff-2003-self-compassion-scale": {
+    "id": "neff-2003-self-compassion-scale",
+    "type": "journal-article",
+    "title": "The Development and Validation of a Scale to Measure Self-Compassion",
+    "short_title": "Self-Compassion Scale",
+    "authors": [
+      {
+        "literal": "Kristin D. Neff"
+      }
+    ],
+    "container_title": "Self and Identity",
+    "issued": {
+      "year": 2003
+    },
+    "year": 2003,
+    "volume": "2",
+    "issue": "3",
+    "pages": "223-250",
+    "doi": "10.1080/15298860309027",
+    "doi_newtab": true,
+    "tags": [
+      "behavior-change",
+      "mindfulness",
+      "emotional-regulation",
+      "self-esteem"
+    ]
+  },
+  "smith-2006-ayn-rands-normative-ethics": {
+    "id": "smith-2006-ayn-rands-normative-ethics",
+    "type": "book",
+    "title": "Ayn Rand's Normative Ethics: The Virtuous Egoist",
+    "short_title": "Ayn Rand's Normative Ethics",
+    "authors": [
+      {
+        "literal": "Tara Smith"
+      }
+    ],
+    "publisher": "Cambridge University Press",
+    "issued": {
+      "year": 2006
+    },
+    "year": 2006,
+    "doi": "10.1017/CBO9781139167352",
+    "doi_newtab": true,
+    "tags": [
+      "self-esteem",
+      "values",
+      "ethics",
+      "reason"
+    ]
+  },
+  "peikoff-1991-objectivism-philosophy-of-ayn-rand": {
+    "id": "peikoff-1991-objectivism-philosophy-of-ayn-rand",
+    "type": "book",
+    "title": "Objectivism: The Philosophy of Ayn Rand",
+    "short_title": "Objectivism",
+    "authors": [
+      {
+        "literal": "Leonard Peikoff"
+      }
+    ],
+    "publisher": "Dutton",
+    "issued": {
+      "year": 1991
+    },
+    "year": 1991,
+    "tags": [
+      "values",
+      "ethics",
+      "epistemology",
+      "reason"
+    ]
+  },
+  "guarner-2023-wgo-probiotics-prebiotics": {
+    "id": "guarner-2023-wgo-probiotics-prebiotics",
+    "type": "webpage",
+    "title": "Probiotics and Prebiotics",
+    "short_title": "Probiotics and Prebiotics",
+    "authors": [
+      {
+        "literal": "Francisco Guarner"
+      },
+      {
+        "literal": "Mary Ellen Sanders"
+      },
+      {
+        "literal": "Hania Szajewska"
+      },
+      {
+        "literal": "Henry Cohen"
+      },
+      {
+        "literal": "Rami Eliakim"
+      },
+      {
+        "literal": "Claudia Herrera"
+      },
+      {
+        "literal": "Tarkan Karakan"
+      },
+      {
+        "literal": "Dan Merenstein"
+      },
+      {
+        "literal": "Alejandro Piscoya"
+      },
+      {
+        "literal": "Balakrishna Ramakrishna"
+      },
+      {
+        "literal": "Seppo Salminen"
+      }
+    ],
+    "organization": "World Gastroenterology Organisation",
+    "container_title": "World Gastroenterology Organisation Global Guidelines",
+    "issued": {
+      "year": 2023,
+      "month": 2
+    },
+    "year": 2023,
+    "url": "https://www.worldgastroenterology.org/guidelines/probiotics-and-prebiotics",
+    "url_newtab": true,
+    "tags": [
+      "food-quality",
+      "dietary-supplements"
+    ]
+  },
+  "fao-2013-dietary-protein-quality-evaluation-human-nutrition": {
+    "type": "report",
+    "title": "Dietary Protein Quality Evaluation in Human Nutrition: Report of an FAO Expert Consultation",
+    "short_title": "Dietary Protein Quality Evaluation in Human Nutrition",
+    "authors": [
+      {
+        "literal": "Food and Agriculture Organization of the United Nations"
+      }
+    ],
+    "organization": "Food and Agriculture Organization of the United Nations",
+    "publisher": "Food and Agriculture Organization of the United Nations",
+    "place": "Rome",
+    "issued": {
+      "year": 2013
+    },
+    "year": 2013,
+    "isbn": "978-92-5-107417-6",
+    "url": "https://www.fao.org/ag/humannutrition/35978-02317b979a686a57aa4593304ffc17f06.pdf",
+    "url_newtab": true,
+    "tags": [
+      "protein",
+      "food-quality"
+    ],
+    "id": "fao-2013-dietary-protein-quality-evaluation-human-nutrition"
+  },
+  "moughan-2024-diaas-10-years-on": {
+    "type": "journal-article",
+    "title": "Digestible Indispensable Amino Acid Score (DIAAS): 10 Years On",
+    "short_title": "DIAAS: 10 Years On",
+    "authors": [
+      {
+        "literal": "Paul J. Moughan"
+      },
+      {
+        "literal": "Wen Xin Janice Lim"
+      }
+    ],
+    "container_title": "Frontiers in Nutrition",
+    "issued": {
+      "year": 2024,
+      "month": 7,
+      "day": 3
+    },
+    "year": 2024,
+    "volume": "11",
+    "pages": "1389719",
+    "doi": "10.3389/fnut.2024.1389719",
+    "doi_newtab": true,
+    "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1389719/full",
+    "url_newtab": true,
+    "tags": [
+      "protein",
+      "food-quality"
+    ],
+    "id": "moughan-2024-diaas-10-years-on"
+  },
+  "herreman-2020-comprehensive-overview-protein-quality-diaas": {
+    "type": "journal-article",
+    "title": "Comprehensive Overview of the Quality of Plant- and Animal-Sourced Proteins Based on the Digestible Indispensable Amino Acid Score",
+    "short_title": "Quality of Plant- and Animal-Sourced Proteins Based on DIAAS",
+    "authors": [
+      {
+        "literal": "Liesbeth Herreman"
+      },
+      {
+        "literal": "Pauline Nommensen"
+      },
+      {
+        "literal": "Bart Pennings"
+      },
+      {
+        "literal": "Monique C. Laus"
+      }
+    ],
+    "container_title": "Food Science & Nutrition",
+    "issued": {
+      "year": 2020,
+      "month": 10
+    },
+    "year": 2020,
+    "volume": "8",
+    "issue": "10",
+    "pages": "5379-5391",
+    "doi": "10.1002/fsn3.1809",
+    "doi_newtab": true,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7590266/",
+    "url_newtab": true,
+    "tags": [
+      "protein",
+      "food-quality"
+    ],
+    "id": "herreman-2020-comprehensive-overview-protein-quality-diaas"
+  },
+  "bailey-2020-most-meat-products-diaas-greater-than-100": {
+    "type": "journal-article",
+    "title": "Most Meat Products Have Digestible Indispensable Amino Acid Scores That Are Greater Than 100, but Processing May Increase or Reduce Protein Quality",
+    "short_title": "Most Meat Products Have DIAAS Greater Than 100",
+    "authors": [
+      {
+        "literal": "Hannah M. Bailey"
+      },
+      {
+        "literal": "John K. Mathai"
+      },
+      {
+        "literal": "Eric P. Berg"
+      },
+      {
+        "literal": "Hans H. Stein"
+      }
+    ],
+    "container_title": "British Journal of Nutrition",
+    "issued": {
+      "year": 2020,
+      "month": 7
+    },
+    "year": 2020,
+    "volume": "124",
+    "issue": "1",
+    "pages": "14-22",
+    "doi": "10.1017/S0007114520000641",
+    "doi_newtab": true,
+    "tags": [
+      "protein",
+      "food-quality"
+    ],
+    "id": "bailey-2020-most-meat-products-diaas-greater-than-100"
+  },
+  "zaromskyte-2021-leucine-trigger-hypothesis-mps": {
+    "type": "journal-article",
+    "title": "Evaluating the Leucine Trigger Hypothesis to Explain the Post-prandial Regulation of Muscle Protein Synthesis in Young and Older Adults: A Systematic Review",
+    "short_title": "Evaluating the Leucine Trigger Hypothesis",
+    "authors": [
+      {
+        "literal": "Gabriele Zaromskyte"
+      },
+      {
+        "literal": "Konstantinos Prokopidis"
+      },
+      {
+        "literal": "Theofilos Ioannidis"
+      },
+      {
+        "literal": "Kevin D. Tipton"
+      },
+      {
+        "literal": "Oliver C. Witard"
+      }
+    ],
+    "container_title": "Frontiers in Nutrition",
+    "issued": {
+      "year": 2021,
+      "month": 7,
+      "day": 8
+    },
+    "year": 2021,
+    "volume": "8",
+    "pages": "685165",
+    "doi": "10.3389/fnut.2021.685165",
+    "doi_newtab": true,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8295465/",
+    "url_newtab": true,
+    "tags": [
+      "protein",
+      "meal-structure",
       "hypertrophy"
+    ],
+    "id": "zaromskyte-2021-leucine-trigger-hypothesis-mps"
+  },
+  "fromentin-2013-dietary-proteins-glucose-production": {
+    "type": "journal-article",
+    "title": "Dietary Proteins Contribute Little to Glucose Production, Even Under Optimal Gluconeogenic Conditions in Healthy Humans",
+    "short_title": "Dietary Proteins Contribute Little to Glucose Production",
+    "authors": [
+      {
+        "literal": "Claire Fromentin"
+      },
+      {
+        "literal": "Daniel Tome"
+      },
+      {
+        "literal": "Francoise Nau"
+      },
+      {
+        "literal": "Laurent Flet"
+      },
+      {
+        "literal": "Catherine Luengo"
+      },
+      {
+        "literal": "Dalila Azzout-Marniche"
+      },
+      {
+        "literal": "Pascal Sanders"
+      },
+      {
+        "literal": "Gilles Fromentin"
+      },
+      {
+        "literal": "Claire Gaudichon"
+      }
+    ],
+    "container_title": "Diabetes",
+    "issued": {
+      "year": 2013,
+      "month": 5
+    },
+    "year": 2013,
+    "volume": "62",
+    "issue": "5",
+    "pages": "1435-1442",
+    "doi": "10.2337/db12-1208",
+    "doi_newtab": true,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3636601/",
+    "url_newtab": true,
+    "tags": [
+      "calorie-balance",
+      "protein",
+      "carbohydrates"
+    ],
+    "id": "fromentin-2013-dietary-proteins-glucose-production"
+  },
+  "griffin-2019-high-protein-diet-liver-disease-ammonia-metabolism": {
+    "type": "journal-article",
+    "title": "Effects of a High Protein Diet and Liver Disease in an In Silico Model of Human Ammonia Metabolism",
+    "short_title": "High Protein Diet, Liver Disease, and Ammonia Metabolism",
+    "authors": [
+      {
+        "literal": "Jeddidiah W. D. Griffin"
+      },
+      {
+        "literal": "Patrick C. Bradshaw"
+      }
+    ],
+    "container_title": "Theoretical Biology and Medical Modelling",
+    "issued": {
+      "year": 2019,
+      "month": 7,
+      "day": 31
+    },
+    "year": 2019,
+    "volume": "16",
+    "issue": "1",
+    "pages": "11",
+    "doi": "10.1186/s12976-019-0109-1",
+    "doi_newtab": true,
+    "url": "https://tbiomed.biomedcentral.com/articles/10.1186/s12976-019-0109-1",
+    "url_newtab": true,
+    "tags": [
+      "protein",
+      "recovery"
+    ],
+    "id": "griffin-2019-high-protein-diet-liver-disease-ammonia-metabolism"
+  },
+  "jager-2017-issn-position-stand-protein-and-exercise": {
+    "id": "jager-2017-issn-position-stand-protein-and-exercise",
+    "type": "journal-article",
+    "title": "International Society of Sports Nutrition Position Stand: Protein and Exercise",
+    "short_title": "ISSN Position Stand: Protein and Exercise",
+    "authors": [
+      {
+        "literal": "Ralf Jager"
+      },
+      {
+        "literal": "Chad M. Kerksick"
+      },
+      {
+        "literal": "Bill I. Campbell"
+      },
+      {
+        "literal": "Paul J. Cribb"
+      },
+      {
+        "literal": "Shawn D. Wells"
+      },
+      {
+        "literal": "Tim M. Skwiat"
+      },
+      {
+        "literal": "Martin Purpura"
+      },
+      {
+        "literal": "Tim N. Ziegenfuss"
+      },
+      {
+        "literal": "Arny A. Ferrando"
+      },
+      {
+        "literal": "Shawn M. Arent"
+      },
+      {
+        "literal": "Abbie E. Smith-Ryan"
+      },
+      {
+        "literal": "Jeffrey R. Stout"
+      },
+      {
+        "literal": "Paul J. Arciero"
+      },
+      {
+        "literal": "Michael J. Ormsbee"
+      },
+      {
+        "literal": "Lem W. Taylor"
+      },
+      {
+        "literal": "Colin D. Wilborn"
+      },
+      {
+        "literal": "Doug S. Kalman"
+      },
+      {
+        "literal": "Richard B. Kreider"
+      },
+      {
+        "literal": "Darryn S. Willoughby"
+      },
+      {
+        "literal": "Jay R. Hoffman"
+      },
+      {
+        "literal": "Jamie L. Krzykowski"
+      },
+      {
+        "literal": "Jose Antonio"
+      }
+    ],
+    "container_title": "Journal of the International Society of Sports Nutrition",
+    "issued": {
+      "year": 2017,
+      "month": 6,
+      "day": 20
+    },
+    "year": 2017,
+    "volume": "14",
+    "pages": "20",
+    "doi": "10.1186/s12970-017-0177-8",
+    "doi_newtab": true,
+    "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0177-8",
+    "url_newtab": true,
+    "tags": [
+      "protein",
+      "hypertrophy",
+      "strength-training"
+    ]
+  },
+  "gross-2015-emotion-regulation-current-status-and-future-prospects": {
+    "id": "gross-2015-emotion-regulation-current-status-and-future-prospects",
+    "type": "journal-article",
+    "title": "Emotion Regulation: Current Status and Future Prospects",
+    "short_title": "Emotion Regulation",
+    "authors": [
+      {
+        "literal": "James J. Gross"
+      }
+    ],
+    "container_title": "Psychological Inquiry",
+    "issued": {
+      "year": 2015
+    },
+    "year": 2015,
+    "volume": "26",
+    "issue": "1",
+    "pages": "1-26",
+    "doi": "10.1080/1047840X.2014.940781",
+    "doi_newtab": true,
+    "tags": [
+      "behavior-change",
+      "mindfulness",
+      "emotional-regulation"
+    ]
+  },
+  "fraley-2000-adult-romantic-attachment": {
+    "id": "fraley-2000-adult-romantic-attachment",
+    "type": "journal-article",
+    "title": "Adult Romantic Attachment: Theoretical Developments, Emerging Controversies, and Unanswered Questions",
+    "short_title": "Adult Romantic Attachment",
+    "authors": [
+      {
+        "literal": "R. Chris Fraley"
+      },
+      {
+        "literal": "Phillip R. Shaver"
+      }
+    ],
+    "container_title": "Review of General Psychology",
+    "issued": {
+      "year": 2000
+    },
+    "year": 2000,
+    "volume": "4",
+    "issue": "2",
+    "pages": "132-154",
+    "doi": "10.1037/1089-2680.4.2.132",
+    "doi_newtab": true,
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "attachment"
+    ]
+  },
+  "nolen-hoeksema-2008-rethinking-rumination": {
+    "id": "nolen-hoeksema-2008-rethinking-rumination",
+    "type": "journal-article",
+    "title": "Rethinking Rumination",
+    "short_title": "Rethinking Rumination",
+    "authors": [
+      {
+        "literal": "Susan Nolen-Hoeksema"
+      },
+      {
+        "literal": "Blair E. Wisco"
+      },
+      {
+        "literal": "Sonja Lyubomirsky"
+      }
+    ],
+    "container_title": "Perspectives on Psychological Science",
+    "issued": {
+      "year": 2008
+    },
+    "year": 2008,
+    "volume": "3",
+    "issue": "5",
+    "pages": "400-424",
+    "doi": "10.1111/j.1745-6924.2008.00088.x",
+    "doi_newtab": true,
+    "tags": [
+      "behavior-change",
+      "mindfulness",
+      "emotional-regulation"
+    ]
+  },
+  "tangney-2007-moral-emotions-and-moral-behavior": {
+    "id": "tangney-2007-moral-emotions-and-moral-behavior",
+    "type": "journal-article",
+    "title": "Moral Emotions and Moral Behavior",
+    "short_title": "Moral Emotions and Moral Behavior",
+    "authors": [
+      {
+        "literal": "June Price Tangney"
+      },
+      {
+        "literal": "Jeff Stuewig"
+      },
+      {
+        "literal": "Debra J. Mashek"
+      }
+    ],
+    "container_title": "Annual Review of Psychology",
+    "issued": {
+      "year": 2007
+    },
+    "year": 2007,
+    "volume": "58",
+    "pages": "345-372",
+    "doi": "10.1146/annurev.psych.56.091103.070145",
+    "doi_newtab": true,
+    "tags": [
+      "behavior-change",
+      "emotional-regulation",
+      "relationships",
+      "self-esteem",
+      "ethics"
+    ]
+  },
+  "wade-2014-forgiveness-interventions-meta-analysis": {
+    "id": "wade-2014-forgiveness-interventions-meta-analysis",
+    "type": "journal-article",
+    "title": "Efficacy of Psychotherapeutic Interventions to Promote Forgiveness: A Meta-Analysis",
+    "short_title": "Forgiveness Interventions Meta-Analysis",
+    "authors": [
+      {
+        "literal": "Nathaniel G. Wade"
+      },
+      {
+        "literal": "William T. Hoyt"
+      },
+      {
+        "literal": "Julia E. M. Kidwell"
+      },
+      {
+        "literal": "Everett L. Worthington"
+      }
+    ],
+    "container_title": "Journal of Consulting and Clinical Psychology",
+    "issued": {
+      "year": 2014
+    },
+    "year": 2014,
+    "volume": "82",
+    "issue": "1",
+    "pages": "154-170",
+    "doi": "10.1037/a0035268",
+    "doi_newtab": true,
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "communication"
+    ]
+  },
+  "ng-2012-self-determination-theory-health-contexts": {
+    "id": "ng-2012-self-determination-theory-health-contexts",
+    "type": "journal-article",
+    "title": "Self-Determination Theory Applied to Health Contexts: A Meta-Analysis",
+    "short_title": "Self-Determination Theory Applied to Health Contexts",
+    "authors": [
+      {
+        "literal": "Johan Y. Y. Ng"
+      },
+      {
+        "literal": "Nikos Ntoumanis"
+      },
+      {
+        "literal": "Cecilie Thøgersen-Ntoumani"
+      },
+      {
+        "literal": "Edward L. Deci"
+      },
+      {
+        "literal": "Richard M. Ryan"
+      },
+      {
+        "literal": "Joan L. Duda"
+      },
+      {
+        "literal": "Geoffrey C. Williams"
+      }
+    ],
+    "container_title": "Perspectives on Psychological Science",
+    "issued": {
+      "year": 2012
+    },
+    "year": 2012,
+    "volume": "7",
+    "issue": "4",
+    "pages": "325-340",
+    "doi": "10.1177/1745691612447309",
+    "doi_newtab": true,
+    "tags": [
+      "adherence",
+      "behavior-change",
+      "relationships"
+    ]
+  },
+  "gottman-1999-marriage-clinic": {
+    "id": "gottman-1999-marriage-clinic",
+    "type": "book",
+    "title": "The Marriage Clinic: A Scientifically Based Marital Therapy",
+    "short_title": "The Marriage Clinic",
+    "authors": [
+      {
+        "literal": "John M. Gottman"
+      }
+    ],
+    "publisher": "W. W. Norton",
+    "issued": {
+      "year": 1999
+    },
+    "year": 1999,
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "boundaries",
+      "communication"
+    ]
+  },
+  "linehan-2015-dbt-skills-training-manual": {
+    "id": "linehan-2015-dbt-skills-training-manual",
+    "type": "book",
+    "title": "DBT Skills Training Manual",
+    "short_title": "DBT Skills Training Manual",
+    "authors": [
+      {
+        "literal": "Marsha M. Linehan"
+      }
+    ],
+    "edition": "2nd ed.",
+    "publisher": "Guilford Press",
+    "issued": {
+      "year": 2015
+    },
+    "year": 2015,
+    "tags": [
+      "behavior-change",
+      "mindfulness",
+      "emotional-regulation"
+    ]
+  },
+  "nimh-2026-psychotherapies": {
+    "id": "nimh-2026-psychotherapies",
+    "type": "webpage",
+    "title": "Psychotherapies",
+    "short_title": "Psychotherapies",
+    "authors": [
+      {
+        "literal": "National Institute of Mental Health"
+      }
+    ],
+    "organization": "National Institute of Mental Health",
+    "container_title": "NIMH",
+    "issued": {
+      "year": 2026
+    },
+    "year": 2026,
+    "url": "https://www.nimh.nih.gov/health/topics/psychotherapies",
+    "url_newtab": true,
+    "tags": [
+      "emotional-regulation",
+      "relationships"
+    ]
+  },
+  "nimh-2025-warning-signs-suicide": {
+    "id": "nimh-2025-warning-signs-suicide",
+    "type": "webpage",
+    "title": "Warning Signs of Suicide",
+    "short_title": "Warning Signs of Suicide",
+    "authors": [
+      {
+        "literal": "National Institute of Mental Health"
+      }
+    ],
+    "organization": "National Institute of Mental Health",
+    "container_title": "NIMH",
+    "issued": {
+      "year": 2025
+    },
+    "year": 2025,
+    "url": "https://www.nimh.nih.gov/health/publications/warning-signs-of-suicide",
+    "url_newtab": true,
+    "tags": [
+      "emotional-regulation",
+      "relationships"
+    ]
+  },
+  "sep-2024-practical-reason": {
+    "id": "sep-2024-practical-reason",
+    "type": "webpage",
+    "title": "Practical Reason",
+    "short_title": "Practical Reason",
+    "authors": [
+      {
+        "literal": "Elijah Millgram"
+      },
+      {
+        "literal": "Sarah Paul"
+      }
+    ],
+    "container_title": "Stanford Encyclopedia of Philosophy",
+    "issued": {
+      "year": 2024,
+      "month": 7,
+      "day": 31
+    },
+    "year": 2024,
+    "url": "https://plato.stanford.edu/entries/practical-reason/",
+    "url_newtab": true,
+    "tags": [
+      "ethics",
+      "epistemology",
+      "reason"
+    ]
+  },
+  "rand-1964-virtue-of-selfishness": {
+    "id": "rand-1964-virtue-of-selfishness",
+    "type": "book",
+    "title": "The Virtue of Selfishness: A New Concept of Egoism",
+    "short_title": "The Virtue of Selfishness",
+    "authors": [
+      {
+        "literal": "Ayn Rand"
+      }
+    ],
+    "publisher": "New American Library",
+    "issued": {
+      "year": 1964
+    },
+    "year": 1964,
+    "tags": [
+      "self-esteem",
+      "values",
+      "ethics",
+      "epistemology",
+      "reason"
+    ]
+  },
+  "rand-1982-philosophy-who-needs-it": {
+    "id": "rand-1982-philosophy-who-needs-it",
+    "type": "book",
+    "title": "Philosophy: Who Needs It",
+    "short_title": "Philosophy: Who Needs It",
+    "authors": [
+      {
+        "literal": "Ayn Rand"
+      }
+    ],
+    "publisher": "Bobbs-Merrill",
+    "issued": {
+      "year": 1982
+    },
+    "year": 1982,
+    "tags": [
+      "values",
+      "ethics",
+      "epistemology",
+      "reason"
+    ]
+  },
+  "rand-1990-introduction-to-objectivist-epistemology": {
+    "id": "rand-1990-introduction-to-objectivist-epistemology",
+    "type": "book",
+    "title": "Introduction to Objectivist Epistemology",
+    "short_title": "Introduction to Objectivist Epistemology",
+    "authors": [
+      {
+        "literal": "Ayn Rand"
+      }
+    ],
+    "editors": [
+      {
+        "literal": "Harry Binswanger"
+      },
+      {
+        "literal": "Leonard Peikoff"
+      }
+    ],
+    "edition": "Expanded 2nd ed.",
+    "publisher": "New American Library",
+    "issued": {
+      "year": 1990
+    },
+    "year": 1990,
+    "tags": [
+      "epistemology",
+      "reason"
+    ]
+  },
+  "rand-1961-for-the-new-intellectual": {
+    "id": "rand-1961-for-the-new-intellectual",
+    "type": "book",
+    "title": "For the New Intellectual: The Philosophy of Ayn Rand",
+    "short_title": "For the New Intellectual",
+    "authors": [
+      {
+        "literal": "Ayn Rand"
+      }
+    ],
+    "publisher": "Random House",
+    "issued": {
+      "year": 1961
+    },
+    "year": 1961,
+    "tags": [
+      "values",
+      "ethics",
+      "epistemology",
+      "reason"
+    ]
+  },
+  "rand-1969-romantic-manifesto": {
+    "id": "rand-1969-romantic-manifesto",
+    "type": "book",
+    "title": "The Romantic Manifesto: A Philosophy of Literature",
+    "short_title": "The Romantic Manifesto",
+    "authors": [
+      {
+        "literal": "Ayn Rand"
+      }
+    ],
+    "publisher": "World Publishing",
+    "issued": {
+      "year": 1969
+    },
+    "year": 1969,
+    "tags": [
+      "values",
+      "ethics"
+    ]
+  },
+  "rand-1943-the-fountainhead": {
+    "id": "rand-1943-the-fountainhead",
+    "type": "book",
+    "title": "The Fountainhead",
+    "short_title": "The Fountainhead",
+    "authors": [
+      {
+        "literal": "Ayn Rand"
+      }
+    ],
+    "publisher": "Bobbs-Merrill",
+    "issued": {
+      "year": 1943
+    },
+    "year": 1943,
+    "tags": [
+      "values",
+      "ethics",
+      "reason"
+    ]
+  },
+  "witkowski-2023-erythritol-cardiovascular-event-risk": {
+    "id": "witkowski-2023-erythritol-cardiovascular-event-risk",
+    "type": "journal-article",
+    "title": "The Artificial Sweetener Erythritol and Cardiovascular Event Risk",
+    "short_title": "Erythritol and Cardiovascular Event Risk",
+    "authors": [
+      {
+        "literal": "Marco Witkowski"
+      },
+      {
+        "literal": "Ina Nemet"
+      },
+      {
+        "literal": "Hassan Alamri"
+      }
+    ],
+    "container_title": "Nature Medicine",
+    "issued": {
+      "year": 2023
+    },
+    "year": 2023,
+    "doi": "10.1038/s41591-023-02223-9",
+    "doi_newtab": true,
+    "volume": "29",
+    "issue": "3",
+    "pages": "710-718",
+    "tags": [
+      "calorie-balance",
+      "body-composition",
+      "food-quality"
+    ]
+  },
+  "nih-2023-erythritol-cardiovascular-events": {
+    "id": "nih-2023-erythritol-cardiovascular-events",
+    "type": "webpage",
+    "title": "Erythritol and Cardiovascular Events",
+    "short_title": "Erythritol and Cardiovascular Events",
+    "authors": [
+      {
+        "literal": "National Institutes of Health"
+      }
+    ],
+    "container_title": "NIH Research Matters",
+    "organization": "National Institutes of Health",
+    "issued": {
+      "year": 2023
+    },
+    "year": 2023,
+    "url": "https://www.nih.gov/news-events/nih-research-matters/erythritol-cardiovascular-events",
+    "url_newtab": true,
+    "tags": [
+      "calorie-balance",
+      "body-composition",
+      "food-quality"
+    ]
+  },
+  "barbaro-2020-gluten-free-diet-gut-microbiota": {
+    "id": "barbaro-2020-gluten-free-diet-gut-microbiota",
+    "type": "journal-article",
+    "title": "Effect of Gluten-Free Diet on Gut Microbiota Composition in Patients with Celiac Disease and Non-Celiac Gluten/Wheat Sensitivity",
+    "short_title": "Gluten-Free Diet and Gut Microbiota",
+    "authors": [
+      {
+        "literal": "Maria Rosa Barbaro"
+      },
+      {
+        "literal": "Carolina Cremon"
+      },
+      {
+        "literal": "Giovanni Stanghellini"
+      },
+      {
+        "literal": "Vincenzo Barbara"
+      }
+    ],
+    "container_title": "Nutrients",
+    "issued": {
+      "year": 2020
+    },
+    "year": 2020,
+    "doi": "10.3390/nu12061832",
+    "doi_newtab": true,
+    "volume": "12",
+    "issue": "6",
+    "pages": "1832",
+    "tags": [
+      "food-quality",
+      "satiety"
+    ]
+  },
+  "barbaro-2016-microbiota-celiac-ncgs": {
+    "id": "barbaro-2016-microbiota-celiac-ncgs",
+    "type": "journal-article",
+    "title": "The Microbiota as a Component of the Celiac Disease and Non-Celiac Gluten Sensitivity",
+    "short_title": "Microbiota, Celiac Disease, and NCGS",
+    "authors": [
+      {
+        "literal": "Maria Rosa Barbaro"
+      },
+      {
+        "literal": "Giovanni Cremon"
+      },
+      {
+        "literal": "Vincenzo Barbara"
+      },
+      {
+        "literal": "Giovanni Stanghellini"
+      }
+    ],
+    "container_title": "Clinical Nutrition Experimental",
+    "issued": {
+      "year": 2016
+    },
+    "year": 2016,
+    "doi": "10.1016/j.yclnex.2016.01.002",
+    "doi_newtab": true,
+    "volume": "6",
+    "pages": "7-11",
+    "tags": [
+      "food-quality",
+      "satiety"
+    ]
+  },
+  "national-kidney-foundation-2021-ckd-epi-creatinine-cystatin-equation": {
+    "id": "national-kidney-foundation-2021-ckd-epi-creatinine-cystatin-equation",
+    "type": "webpage",
+    "title": "CKD-EPI Creatinine-Cystatin Equation (2021)",
+    "short_title": "CKD-EPI Creatinine-Cystatin Equation",
+    "authors": [
+      {
+        "literal": "National Kidney Foundation"
+      }
+    ],
+    "organization": "National Kidney Foundation",
+    "issued": {
+      "year": 2021
+    },
+    "year": 2021,
+    "url": "https://www.kidney.org/professionals/ckd-epi-creatinine-cystatin-equation-2021",
+    "url_newtab": true,
+    "tags": [
+      "dietary-supplements",
+      "strength-training",
+      "recovery"
+    ]
+  },
+  "brown-2008-i-thought-it-was-just-me": {
+    "id": "brown-2008-i-thought-it-was-just-me",
+    "type": "book",
+    "title": "I Thought It Was Just Me (but it Isn't): Making the Journey from \"What Will People Think?\" to \"I Am Enough\"",
+    "short_title": "I Thought It Was Just Me",
+    "authors": [
+      {
+        "literal": "Brené Brown"
+      }
+    ],
+    "edition": "illustrated, reprint",
+    "publisher": "Penguin Publishing Group",
+    "issued": {
+      "year": 2008
+    },
+    "year": 2008,
+    "isbn": "9781592403356",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "communication",
+      "self-esteem",
+      "values"
+    ]
+  },
+  "brown-2010-gifts-of-imperfection": {
+    "id": "brown-2010-gifts-of-imperfection",
+    "type": "book",
+    "title": "The Gifts of Imperfection: Let Go of Who You Think You're Supposed to Be and Embrace Who You Are",
+    "short_title": "The Gifts of Imperfection",
+    "authors": [
+      {
+        "literal": "Brené Brown"
+      }
+    ],
+    "edition": "illustrated",
+    "publisher": "Hazelden Publishing",
+    "issued": {
+      "year": 2010
+    },
+    "year": 2010,
+    "isbn": "9781592858491",
+    "tags": [
+      "mindfulness",
+      "emotional-regulation",
+      "relationships",
+      "self-esteem",
+      "values"
+    ]
+  },
+  "brown-2012-daring-greatly": {
+    "id": "brown-2012-daring-greatly",
+    "type": "book",
+    "title": "Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead",
+    "short_title": "Daring Greatly",
+    "authors": [
+      {
+        "literal": "Brené Brown"
+      }
+    ],
+    "publisher": "Avery",
+    "issued": {
+      "year": 2012
+    },
+    "year": 2012,
+    "isbn": "9781592407330",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "boundaries",
+      "communication",
+      "self-esteem",
+      "values"
+    ]
+  },
+  "brown-2015-rising-strong": {
+    "id": "brown-2015-rising-strong",
+    "type": "book",
+    "title": "Rising Strong: The Reckoning. The Rumble. The Revolution.",
+    "short_title": "Rising Strong",
+    "authors": [
+      {
+        "literal": "Brené Brown"
+      }
+    ],
+    "publisher": "Random House",
+    "issued": {
+      "year": 2015
+    },
+    "year": 2015,
+    "isbn": "9780812999334",
+    "tags": [
+      "behavior-change",
+      "emotional-regulation",
+      "relationships",
+      "communication",
+      "values"
+    ]
+  },
+  "brown-2017-braving-the-wilderness": {
+    "id": "brown-2017-braving-the-wilderness",
+    "type": "book",
+    "title": "Braving the Wilderness: The Quest for True Belonging and the Courage to Stand Alone",
+    "short_title": "Braving the Wilderness",
+    "authors": [
+      {
+        "literal": "Brené Brown"
+      }
+    ],
+    "publisher": "Random House",
+    "issued": {
+      "year": 2017
+    },
+    "year": 2017,
+    "isbn": "9780812995848",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "communication",
+      "self-esteem",
+      "values"
+    ]
+  },
+  "brown-2018-dare-to-lead": {
+    "id": "brown-2018-dare-to-lead",
+    "type": "book",
+    "title": "Dare to Lead: Brave Work. Tough Conversations. Whole Hearts.",
+    "short_title": "Dare to Lead",
+    "authors": [
+      {
+        "literal": "Brené Brown"
+      }
+    ],
+    "publisher": "Random House Publishing Group",
+    "issued": {
+      "year": 2018
+    },
+    "year": 2018,
+    "isbn": "9780399592522",
+    "tags": [
+      "behavior-change",
+      "relationships",
+      "boundaries",
+      "communication",
+      "values"
+    ]
+  },
+  "brown-2021-atlas-of-the-heart": {
+    "id": "brown-2021-atlas-of-the-heart",
+    "type": "book",
+    "title": "Atlas of the Heart: Mapping Meaningful Connection and the Language of Human Experience",
+    "short_title": "Atlas of the Heart",
+    "authors": [
+      {
+        "literal": "Brené Brown"
+      }
+    ],
+    "edition": "illustrated",
+    "publisher": "Random House",
+    "issued": {
+      "year": 2021,
+      "month": 11,
+      "day": 30
+    },
+    "year": 2021,
+    "isbn": "9780399592553",
+    "tags": [
+      "mindfulness",
+      "emotional-regulation",
+      "relationships",
+      "boundaries",
+      "communication"
+    ]
+  },
+  "brown-2025-strong-ground": {
+    "id": "brown-2025-strong-ground",
+    "type": "book",
+    "title": "Strong Ground: The Lessons of Daring Leadership, the Tenacity of Paradox, and the Wisdom of the Human Spirit",
+    "short_title": "Strong Ground",
+    "authors": [
+      {
+        "literal": "Brené Brown"
+      }
+    ],
+    "edition": "illustrated",
+    "publisher": "Random House",
+    "issued": {
+      "year": 2025,
+      "month": 9,
+      "day": 23
+    },
+    "year": 2025,
+    "isbn": "9781984855749",
+    "tags": [
+      "behavior-change",
+      "relationships",
+      "boundaries",
+      "communication",
+      "values"
+    ]
+  },
+  "levine-heller-2010-attached": {
+    "id": "levine-heller-2010-attached",
+    "type": "book",
+    "title": "Attached: The New Science of Adult Attachment and How It Can Help You Find—and Keep—Love",
+    "short_title": "Attached",
+    "authors": [
+      {
+        "literal": "Amir Levine"
+      },
+      {
+        "literal": "Rachel Heller"
+      }
+    ],
+    "publisher": "Jeremy P. Tarcher/Penguin",
+    "issued": {
+      "year": 2010
+    },
+    "year": 2010,
+    "isbn": "9781585428489",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "boundaries",
+      "communication",
+      "attachment"
+    ]
+  },
+  "lerner-1985-dance-of-anger": {
+    "id": "lerner-1985-dance-of-anger",
+    "type": "book",
+    "title": "The Dance of Anger: A Woman's Guide to Changing the Patterns of Intimate Relationships",
+    "short_title": "The Dance of Anger",
+    "authors": [
+      {
+        "literal": "Harriet Lerner"
+      }
+    ],
+    "publisher": "Harper & Row",
+    "issued": {
+      "year": 1985
+    },
+    "year": 1985,
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "boundaries",
+      "communication",
+      "self-esteem"
+    ]
+  },
+  "lerner-1990-dance-of-intimacy": {
+    "id": "lerner-1990-dance-of-intimacy",
+    "type": "book",
+    "title": "The Dance of Intimacy: A Woman's Guide to Courageous Acts of Change in Key Relationships",
+    "short_title": "The Dance of Intimacy",
+    "authors": [
+      {
+        "literal": "Harriet Lerner"
+      }
+    ],
+    "edition": "illustrated, reprint",
+    "publisher": "HarperCollins",
+    "issued": {
+      "year": 1990
+    },
+    "year": 1990,
+    "isbn": "9780060916466",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "boundaries",
+      "communication",
+      "self-esteem"
+    ]
+  },
+  "lerner-1993-dance-of-deception": {
+    "id": "lerner-1993-dance-of-deception",
+    "type": "book",
+    "title": "The Dance of Deception: Pretending and Truth-Telling in Women's Lives",
+    "short_title": "The Dance of Deception",
+    "authors": [
+      {
+        "literal": "Harriet Lerner"
+      }
+    ],
+    "publisher": "HarperCollins",
+    "issued": {
+      "year": 1993
+    },
+    "year": 1993,
+    "isbn": "9780060168162",
+    "tags": [
+      "relationships",
+      "boundaries",
+      "communication",
+      "self-esteem",
+      "values"
+    ]
+  },
+  "lerner-2001-dance-of-connection": {
+    "id": "lerner-2001-dance-of-connection",
+    "type": "book",
+    "title": "The Dance of Connection: How to Talk to Someone When You're Mad, Hurt, Scared, Frustrated, Insulted, Betrayed, or Desperate",
+    "short_title": "The Dance of Connection",
+    "authors": [
+      {
+        "literal": "Harriet Lerner"
+      }
+    ],
+    "edition": "reprint",
+    "publisher": "HarperCollins",
+    "issued": {
+      "year": 2001
+    },
+    "year": 2001,
+    "isbn": "9780060196387",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "boundaries",
+      "communication",
+      "values"
+    ]
+  },
+  "lerner-2004-fear-and-other-uninvited-guests": {
+    "id": "lerner-2004-fear-and-other-uninvited-guests",
+    "type": "book",
+    "title": "Fear and Other Uninvited Guests: Tackling the Anxiety, Fear, and Shame That Keep Us from Optimal Living and Loving",
+    "short_title": "Fear and Other Uninvited Guests",
+    "authors": [
+      {
+        "literal": "Harriet Lerner"
+      }
+    ],
+    "publisher": "HarperCollins",
+    "issued": {
+      "year": 2004
+    },
+    "year": 2004,
+    "isbn": "9780060081577",
+    "tags": [
+      "behavior-change",
+      "mindfulness",
+      "emotional-regulation",
+      "relationships",
+      "self-esteem"
+    ]
+  },
+  "lerner-2005-dance-of-fear": {
+    "id": "lerner-2005-dance-of-fear",
+    "type": "book",
+    "title": "The Dance of Fear: Rising Above Anxiety, Fear, and Shame to Be Your Best and Bravest Self",
+    "short_title": "The Dance of Fear",
+    "authors": [
+      {
+        "literal": "Harriet Lerner"
+      }
+    ],
+    "edition": "reprint",
+    "publisher": "HarperCollins",
+    "issued": {
+      "year": 2005
+    },
+    "year": 2005,
+    "isbn": "9780060081584",
+    "tags": [
+      "behavior-change",
+      "mindfulness",
+      "emotional-regulation",
+      "relationships",
+      "self-esteem"
+    ]
+  },
+  "lerner-2009-mother-dance": {
+    "id": "lerner-2009-mother-dance",
+    "type": "book",
+    "title": "The Mother Dance: How Children Change Your Life",
+    "short_title": "The Mother Dance",
+    "authors": [
+      {
+        "literal": "Harriet Lerner"
+      }
+    ],
+    "publisher": "HarperCollins",
+    "issued": {
+      "year": 2009
+    },
+    "year": 2009,
+    "isbn": "9780061847097",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "boundaries",
+      "attachment",
+      "values"
+    ]
+  },
+  "lerner-2012-marriage-rules": {
+    "id": "lerner-2012-marriage-rules",
+    "type": "book",
+    "title": "Marriage Rules: A Manual for the Married and the Coupled Up",
+    "short_title": "Marriage Rules",
+    "authors": [
+      {
+        "literal": "Harriet Lerner"
+      }
+    ],
+    "publisher": "Penguin Publishing Group",
+    "issued": {
+      "year": 2012
+    },
+    "year": 2012,
+    "isbn": "9781592407453",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "boundaries",
+      "communication"
+    ]
+  },
+  "lerner-2017-why-wont-you-apologize": {
+    "id": "lerner-2017-why-wont-you-apologize",
+    "type": "book",
+    "title": "Why Won't You Apologize?: Healing Big Betrayals and Everyday Hurts",
+    "short_title": "Why Won't You Apologize?",
+    "authors": [
+      {
+        "literal": "Harriet Lerner"
+      }
+    ],
+    "publisher": "Touchstone",
+    "issued": {
+      "year": 2017
+    },
+    "year": 2017,
+    "isbn": "9781501129599",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "boundaries",
+      "communication",
+      "ethics"
+    ]
+  },
+  "campbell-2001-getting-real": {
+    "id": "campbell-2001-getting-real",
+    "type": "book",
+    "title": "Getting Real: 21 Truth Skills You Need to Live an Authentic Life",
+    "short_title": "Getting Real",
+    "authors": [
+      {
+        "literal": "Susan Campbell"
+      }
+    ],
+    "publisher": "H J Kramer/Starseed",
+    "issued": {
+      "year": 2001
+    },
+    "year": 2001,
+    "isbn": "9780915811922",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "boundaries",
+      "communication",
+      "values"
+    ]
+  },
+  "campbell-2005-saying-whats-real": {
+    "id": "campbell-2005-saying-whats-real",
+    "type": "book",
+    "title": "Saying What's Real: 7 Keys to Authentic Communication and Relationship Success",
+    "short_title": "Saying What's Real",
+    "authors": [
+      {
+        "literal": "Susan Campbell"
+      }
+    ],
+    "publisher": "H J Kramer",
+    "issued": {
+      "year": 2005
+    },
+    "year": 2005,
+    "isbn": "9781932073126",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "boundaries",
+      "communication",
+      "values"
+    ]
+  },
+  "campbell-grey-2015-five-minute-relationship-repair": {
+    "id": "campbell-grey-2015-five-minute-relationship-repair",
+    "type": "book",
+    "title": "Five-Minute Relationship Repair: Quickly Heal Upsets, Deepen Intimacy, and Use Differences to Strengthen Love",
+    "short_title": "Five-Minute Relationship Repair",
+    "authors": [
+      {
+        "literal": "Susan Campbell"
+      },
+      {
+        "literal": "John Grey"
+      }
+    ],
+    "publisher": "H J Kramer",
+    "issued": {
+      "year": 2015,
+      "month": 2,
+      "day": 17
+    },
+    "year": 2015,
+    "isbn": "9781932073713",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "boundaries",
+      "communication"
+    ]
+  },
+  "campbell-2021-from-triggered-to-tranquil": {
+    "id": "campbell-2021-from-triggered-to-tranquil",
+    "type": "book",
+    "title": "From Triggered to Tranquil: How Self-Compassion and Mindful Presence Can Transform Relationship Conflicts and Heal Childhood Wounds",
+    "short_title": "From Triggered to Tranquil",
+    "authors": [
+      {
+        "literal": "Susan Campbell"
+      }
+    ],
+    "publisher": "New World Library",
+    "issued": {
+      "year": 2021,
+      "month": 8,
+      "day": 31
+    },
+    "year": 2021,
+    "isbn": "9781608687404",
+    "tags": [
+      "mindfulness",
+      "emotional-regulation",
+      "relationships",
+      "communication",
+      "mind-body-integration"
+    ]
+  },
+  "johnson-2008-hold-me-tight": {
+    "id": "johnson-2008-hold-me-tight",
+    "type": "book",
+    "title": "Hold Me Tight: Seven Conversations for a Lifetime of Love",
+    "short_title": "Hold Me Tight",
+    "authors": [
+      {
+        "literal": "Sue Johnson"
+      }
+    ],
+    "publisher": "Little, Brown and Company",
+    "issued": {
+      "year": 2008
+    },
+    "year": 2008,
+    "isbn": "9780316113007",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "communication",
+      "attachment"
+    ]
+  },
+  "perel-2006-mating-in-captivity": {
+    "id": "perel-2006-mating-in-captivity",
+    "type": "book",
+    "title": "Mating in Captivity: Reconciling the Erotic and the Domestic",
+    "short_title": "Mating in Captivity",
+    "authors": [
+      {
+        "literal": "Esther Perel"
+      }
+    ],
+    "publisher": "HarperCollins",
+    "issued": {
+      "year": 2006
+    },
+    "year": 2006,
+    "isbn": "9780060753634",
+    "tags": [
+      "relationships",
+      "boundaries",
+      "communication",
+      "attachment",
+      "values"
+    ]
+  },
+  "perel-2017-state-of-affairs": {
+    "id": "perel-2017-state-of-affairs",
+    "type": "book",
+    "title": "The State of Affairs: Rethinking Infidelity",
+    "short_title": "The State of Affairs",
+    "authors": [
+      {
+        "literal": "Esther Perel"
+      }
+    ],
+    "publisher": "HarperCollins",
+    "issued": {
+      "year": 2017
+    },
+    "year": 2017,
+    "isbn": "9780062322609",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "boundaries",
+      "communication",
+      "values"
+    ]
+  },
+  "rosenberg-2003-nonviolent-communication": {
+    "id": "rosenberg-2003-nonviolent-communication",
+    "type": "book",
+    "title": "Nonviolent Communication: A Language of Life",
+    "short_title": "Nonviolent Communication",
+    "authors": [
+      {
+        "literal": "Marshall B. Rosenberg"
+      }
+    ],
+    "edition": "2nd ed.",
+    "publisher": "PuddleDancer Press",
+    "issued": {
+      "year": 2003
+    },
+    "year": 2003,
+    "isbn": "9781892005038",
+    "tags": [
+      "emotional-regulation",
+      "relationships",
+      "boundaries",
+      "communication",
+      "values"
+    ]
+  },
+  "van-der-kolk-2014-body-keeps-the-score": {
+    "id": "van-der-kolk-2014-body-keeps-the-score",
+    "type": "book",
+    "title": "The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma",
+    "short_title": "The Body Keeps the Score",
+    "authors": [
+      {
+        "literal": "Bessel van der Kolk"
+      }
+    ],
+    "edition": "illustrated",
+    "publisher": "Penguin",
+    "issued": {
+      "year": 2014
+    },
+    "year": 2014,
+    "isbn": "9780670785933",
+    "tags": [
+      "recovery",
+      "mindfulness",
+      "emotional-regulation",
+      "mind-body-integration"
+    ]
+  },
+  "dana-2018-polyvagal-theory-in-therapy": {
+    "id": "dana-2018-polyvagal-theory-in-therapy",
+    "type": "book",
+    "title": "The Polyvagal Theory in Therapy: Engaging the Rhythm of Regulation",
+    "short_title": "The Polyvagal Theory in Therapy",
+    "authors": [
+      {
+        "literal": "Deb Dana"
+      }
+    ],
+    "publisher": "W. W. Norton",
+    "issued": {
+      "year": 2018
+    },
+    "year": 2018,
+    "isbn": "9780393712377",
+    "tags": [
+      "recovery",
+      "mindfulness",
+      "emotional-regulation",
+      "relationships",
+      "mind-body-integration"
+    ]
+  },
+  "scott-2017-radical-candor": {
+    "id": "scott-2017-radical-candor",
+    "type": "book",
+    "title": "Radical Candor: Be a Kick-Ass Boss Without Losing Your Humanity",
+    "short_title": "Radical Candor",
+    "authors": [
+      {
+        "literal": "Kim Scott"
+      }
+    ],
+    "publisher": "St. Martin's Press",
+    "issued": {
+      "year": 2017
+    },
+    "year": 2017,
+    "isbn": "9781250103505",
+    "tags": [
+      "behavior-change",
+      "relationships",
+      "boundaries",
+      "communication",
+      "values"
+    ]
+  },
+  "erickson-2011-exercise-hippocampus-memory": {
+    "id": "erickson-2011-exercise-hippocampus-memory",
+    "type": "journal-article",
+    "title": "Exercise Training Increases Size of Hippocampus and Improves Memory",
+    "short_title": "Exercise Training Increases Hippocampal Size",
+    "authors": [
+      {
+        "literal": "Kirk I. Erickson"
+      },
+      {
+        "literal": "Michelle W. Voss"
+      },
+      {
+        "literal": "Ruchika Shaurya Prakash"
+      }
+    ],
+    "container_title": "Proceedings of the National Academy of Sciences",
+    "issued": {
+      "year": 2011
+    },
+    "year": 2011,
+    "doi": "10.1073/pnas.1015950108",
+    "doi_newtab": true,
+    "tags": [
+      "endurance",
+      "recovery",
+      "mind-body-integration",
+      "reason"
+    ]
+  },
+  "singh-2023-physical-activity-depression-anxiety-distress": {
+    "id": "singh-2023-physical-activity-depression-anxiety-distress",
+    "type": "journal-article",
+    "title": "Effectiveness of Physical Activity Interventions for Improving Depression, Anxiety and Distress: An Overview of Systematic Reviews",
+    "short_title": "Physical Activity for Depression, Anxiety, and Distress",
+    "authors": [
+      {
+        "literal": "Ben Singh"
+      },
+      {
+        "literal": "Tim Olds"
+      },
+      {
+        "literal": "Rachel Curtis"
+      }
+    ],
+    "container_title": "British Journal of Sports Medicine",
+    "issued": {
+      "year": 2023
+    },
+    "year": 2023,
+    "doi": "10.1136/bjsports-2022-106195",
+    "doi_newtab": true,
+    "tags": [
+      "strength-training",
+      "endurance",
+      "recovery",
+      "mindfulness",
+      "emotional-regulation"
+    ]
+  },
+  "noetel-2024-exercise-depression": {
+    "id": "noetel-2024-exercise-depression",
+    "type": "journal-article",
+    "title": "Effect of Exercise for Depression: Systematic Review and Network Meta-Analysis of Randomised Controlled Trials",
+    "short_title": "Exercise for Depression",
+    "authors": [
+      {
+        "literal": "Michael Noetel"
+      },
+      {
+        "literal": "Taren Sanders"
+      },
+      {
+        "literal": "Brendon Stubbs"
+      }
+    ],
+    "container_title": "BMJ",
+    "issued": {
+      "year": 2024
+    },
+    "year": 2024,
+    "doi": "10.1136/bmj-2023-075847",
+    "doi_newtab": true,
+    "tags": [
+      "strength-training",
+      "endurance",
+      "recovery",
+      "mindfulness",
+      "emotional-regulation"
+    ]
+  },
+  "lang-2024-cardiorespiratory-fitness-morbidity-mortality": {
+    "id": "lang-2024-cardiorespiratory-fitness-morbidity-mortality",
+    "type": "journal-article",
+    "title": "Cardiorespiratory Fitness Is a Strong and Consistent Predictor of Morbidity and Mortality Among Adults: An Overview of Meta-Analyses Representing Over 20.9 Million Observations From 199 Unique Cohort Studies",
+    "short_title": "Cardiorespiratory Fitness, Morbidity, and Mortality",
+    "authors": [
+      {
+        "literal": "Justin J. Lang"
+      },
+      {
+        "literal": "Ross Arena"
+      },
+      {
+        "literal": "Jonathan Myers"
+      }
+    ],
+    "container_title": "British Journal of Sports Medicine",
+    "issued": {
+      "year": 2024
+    },
+    "year": 2024,
+    "doi": "10.1136/bjsports-2023-107849",
+    "doi_newtab": true,
+    "tags": [
+      "strength-training",
+      "endurance",
+      "recovery"
+    ]
+  },
+  "nummenmaa-2014-bodily-maps-emotions": {
+    "id": "nummenmaa-2014-bodily-maps-emotions",
+    "type": "journal-article",
+    "title": "Bodily Maps of Emotions",
+    "short_title": "Bodily Maps of Emotions",
+    "authors": [
+      {
+        "literal": "Lauri Nummenmaa"
+      },
+      {
+        "literal": "Enrico Glerean"
+      },
+      {
+        "literal": "Riitta Hari"
+      },
+      {
+        "literal": "Jari K. Hietanen"
+      }
+    ],
+    "container_title": "Proceedings of the National Academy of Sciences",
+    "issued": {
+      "year": 2014
+    },
+    "year": 2014,
+    "doi": "10.1073/pnas.1321664111",
+    "doi_newtab": true,
+    "tags": [
+      "behavior-change",
+      "emotional-regulation",
+      "mind-body-integration"
+    ]
+  },
+  "morton-2018-protein-supplementation-resistance-training": {
+    "id": "morton-2018-protein-supplementation-resistance-training",
+    "type": "journal-article",
+    "title": "A Systematic Review, Meta-Analysis and Meta-Regression of the Effect of Protein Supplementation on Resistance Training-Induced Gains in Muscle Mass and Strength in Healthy Adults",
+    "short_title": "Protein Supplementation and Resistance Training",
+    "authors": [
+      {
+        "literal": "Robert W. Morton"
+      },
+      {
+        "literal": "Kevin T. Murphy"
+      },
+      {
+        "literal": "Sean R. McKellar"
+      },
+      {
+        "literal": "Brad J. Schoenfeld"
+      },
+      {
+        "literal": "Menno Henselmans"
+      },
+      {
+        "literal": "Eric Helms"
+      },
+      {
+        "literal": "Alan A. Aragon"
+      },
+      {
+        "literal": "Michaela C. Devries"
+      },
+      {
+        "literal": "Laura Banfield"
+      },
+      {
+        "literal": "James W. Krieger"
+      },
+      {
+        "literal": "Stuart M. Phillips"
+      }
+    ],
+    "container_title": "British Journal of Sports Medicine",
+    "issued": {
+      "year": 2018
+    },
+    "year": 2018,
+    "doi": "10.1136/bjsports-2017-097608",
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "protein",
+      "dietary-supplements",
+      "hypertrophy",
+      "strength-training"
+    ]
+  },
+  "nunes-2022-protein-intake-meta-analysis": {
+    "id": "nunes-2022-protein-intake-meta-analysis",
+    "type": "journal-article",
+    "title": "Systematic Review and Meta-Analysis of Protein Intake to Support Muscle Mass and Function in Healthy Adults",
+    "short_title": "Protein Intake, Muscle Mass, and Function",
+    "authors": [
+      {
+        "literal": "Eduardo A. Nunes"
+      },
+      {
+        "literal": "Ian A. Berg"
+      },
+      {
+        "literal": "R. D. McKendry"
+      }
+    ],
+    "container_title": "Journal of Cachexia, Sarcopenia and Muscle",
+    "issued": {
+      "year": 2022
+    },
+    "year": 2022,
+    "doi": "10.1002/jcsm.12922",
+    "doi_newtab": true,
+    "tags": [
+      "body-composition",
+      "protein",
+      "hypertrophy",
+      "strength-training"
+    ]
+  },
+  "cdc-2023-adult-physical-activity-guidelines": {
+    "id": "cdc-2023-adult-physical-activity-guidelines",
+    "type": "webpage",
+    "title": "Adult Activity: An Overview",
+    "short_title": "Adult Physical Activity Guidelines",
+    "authors": [
+      {
+        "literal": "Centers for Disease Control and Prevention"
+      }
+    ],
+    "container_title": "Physical Activity Basics",
+    "issued": {
+      "year": 2023
+    },
+    "year": 2023,
+    "url": "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html",
+    "url_newtab": true,
+    "tags": [
+      "strength-training",
+      "endurance",
+      "recovery"
+    ]
+  },
+  "acsm-physical-activity-guidelines": {
+    "id": "acsm-physical-activity-guidelines",
+    "type": "webpage",
+    "title": "Physical Activity Guidelines",
+    "short_title": "ACSM Physical Activity Guidelines",
+    "authors": [
+      {
+        "literal": "American College of Sports Medicine"
+      }
+    ],
+    "container_title": "ACSM",
+    "url": "https://acsm.org/education-resources/trending-topics-resources/physical-activity-guidelines/",
+    "url_newtab": true,
+    "tags": [
+      "strength-training",
+      "endurance",
+      "recovery"
+    ]
+  },
+  "bandura-1997-self-efficacy": {
+    "id": "bandura-1997-self-efficacy",
+    "type": "book",
+    "title": "Self-Efficacy: The Exercise of Control",
+    "short_title": "Self-Efficacy",
+    "authors": [
+      {
+        "literal": "Albert Bandura"
+      }
+    ],
+    "publisher": "W. H. Freeman",
+    "issued": {
+      "year": 1997
+    },
+    "year": 1997,
+    "tags": [
+      "adherence",
+      "behavior-change"
+    ]
+  },
+  "duckworth-2016-grit": {
+    "id": "duckworth-2016-grit",
+    "type": "book",
+    "title": "Grit: The Power of Passion and Perseverance",
+    "short_title": "Grit",
+    "authors": [
+      {
+        "literal": "Angela Duckworth"
+      }
+    ],
+    "publisher": "Scribner",
+    "issued": {
+      "year": 2016
+    },
+    "year": 2016,
+    "tags": [
+      "behavior-change",
+      "values"
+    ]
+  },
+  "clear-2018-atomic-habits": {
+    "id": "clear-2018-atomic-habits",
+    "type": "book",
+    "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+    "short_title": "Atomic Habits",
+    "authors": [
+      {
+        "literal": "James Clear"
+      }
+    ],
+    "publisher": "Avery",
+    "issued": {
+      "year": 2018
+    },
+    "year": 2018,
+    "tags": [
+      "adherence",
+      "behavior-change",
+      "environment-design"
+    ]
+  },
+  "ryan-2000-self-determination-theory": {
+    "id": "ryan-2000-self-determination-theory",
+    "type": "journal-article",
+    "title": "Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being",
+    "short_title": "Self-Determination Theory",
+    "authors": [
+      {
+        "literal": "Richard M. Ryan"
+      },
+      {
+        "literal": "Edward L. Deci"
+      }
+    ],
+    "container_title": "American Psychologist",
+    "volume": "55",
+    "issue": "1",
+    "page": "68-78",
+    "issued": {
+      "year": 2000
+    },
+    "year": 2000,
+    "doi": "10.1037/0003-066X.55.1.68",
+    "doi_newtab": true,
+    "tags": [
+      "adherence",
+      "behavior-change",
+      "values"
+    ]
+  },
+  "gbd-2017-health-effects-overweight-obesity": {
+    "id": "gbd-2017-health-effects-overweight-obesity",
+    "type": "journal-article",
+    "title": "Health Effects of Overweight and Obesity in 195 Countries over 25 Years",
+    "short_title": "Health Effects of Overweight and Obesity",
+    "authors": [
+      {
+        "literal": "GBD 2015 Obesity Collaborators"
+      }
+    ],
+    "container_title": "New England Journal of Medicine",
+    "volume": "377",
+    "issue": "1",
+    "page": "13-27",
+    "issued": {
+      "year": 2017
+    },
+    "year": 2017,
+    "doi": "10.1056/NEJMoa1614362",
+    "doi_newtab": true,
+    "tags": [
+      "calorie-balance",
+      "body-composition",
+      "endurance",
+      "recovery"
+    ]
+  },
+  "cioffi-2018-intermittent-continuous-energy-restriction": {
+    "id": "cioffi-2018-intermittent-continuous-energy-restriction",
+    "type": "journal-article",
+    "title": "Intermittent versus Continuous Energy Restriction on Weight Loss and Cardiometabolic Outcomes: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+    "short_title": "Intermittent versus Continuous Energy Restriction",
+    "authors": [
+      {
+        "literal": "Iolanda Cioffi"
+      },
+      {
+        "literal": "Andrea Evangelista"
+      },
+      {
+        "literal": "Valentina Ponzo"
+      },
+      {
+        "literal": "Giovannino Ciccone"
+      },
+      {
+        "literal": "Laura Soldati"
+      },
+      {
+        "literal": "Lidia Santarpia"
+      },
+      {
+        "literal": "Franco Contaldo"
+      },
+      {
+        "literal": "Fabrizio Pasanisi"
+      },
+      {
+        "literal": "Ezio Ghigo"
+      },
+      {
+        "literal": "Simona Bo"
+      }
+    ],
+    "container_title": "Journal of Translational Medicine",
+    "volume": "16",
+    "issue": "1",
+    "page": "371",
+    "issued": {
+      "year": 2018
+    },
+    "year": 2018,
+    "doi": "10.1186/s12967-018-1748-4",
+    "doi_newtab": true,
+    "tags": [
+      "calorie-balance",
+      "body-composition",
+      "food-quality"
+    ]
+  },
+  "lopez-2022-resistance-training-overweight-obesity": {
+    "id": "lopez-2022-resistance-training-overweight-obesity",
+    "type": "journal-article",
+    "title": "Resistance Training Effectiveness on Body Composition and Body Weight Outcomes in Individuals with Overweight and Obesity across the Lifespan: A Systematic Review and Meta-Analysis",
+    "short_title": "Resistance Training in Overweight and Obesity",
+    "authors": [
+      {
+        "literal": "Pedro Lopez"
+      },
+      {
+        "literal": "Dennis R. Taaffe"
+      },
+      {
+        "literal": "Daniel A. Galvão"
+      },
+      {
+        "literal": "Robert U. Newton"
+      },
+      {
+        "literal": "Elisa R. Nonemacher"
+      },
+      {
+        "literal": "Victória M. Wendt"
+      },
+      {
+        "literal": "Renata N. Bassanesi"
+      },
+      {
+        "literal": "Douglas J. P. Turella"
+      },
+      {
+        "literal": "Anderson Rech"
+      }
+    ],
+    "container_title": "Obesity Reviews",
+    "volume": "23",
+    "issue": "5",
+    "page": "e13428",
+    "issued": {
+      "year": 2022
+    },
+    "year": 2022,
+    "doi": "10.1111/obr.13428",
+    "doi_newtab": true,
+    "tags": [
+      "calorie-balance",
+      "body-composition",
+      "hypertrophy",
+      "strength-training",
+      "endurance",
+      "recovery"
+    ]
+  },
+  "willems-2021-macronutrient-intake-obesity-metabolic-syndrome": {
+    "id": "willems-2021-macronutrient-intake-obesity-metabolic-syndrome",
+    "type": "journal-article",
+    "title": "Effects of Macronutrient Intake in Obesity: A Meta-Analysis of Low-Carbohydrate and Low-Fat Diets on Markers of the Metabolic Syndrome",
+    "short_title": "Macronutrient Intake in Obesity",
+    "authors": [
+      {
+        "literal": "Anouk E. M. Willems"
+      },
+      {
+        "literal": "Martina Sura–de Jong"
+      },
+      {
+        "literal": "André P. van Beek"
+      },
+      {
+        "literal": "Esther Nederhof"
+      },
+      {
+        "literal": "Gertjan van Dijk"
+      }
+    ],
+    "container_title": "Nutrition Reviews",
+    "volume": "79",
+    "issue": "4",
+    "page": "429-444",
+    "issued": {
+      "year": 2021
+    },
+    "year": 2021,
+    "doi": "10.1093/nutrit/nuaa044",
+    "doi_newtab": true,
+    "tags": [
+      "calorie-balance",
+      "body-composition",
+      "protein",
+      "carbohydrates",
+      "dietary-fat",
+      "food-quality"
+    ]
+  },
+  "brackett-2019-permission-to-feel": {
+    "id": "brackett-2019-permission-to-feel",
+    "type": "book",
+    "title": "Permission to Feel: Unlocking the Power of Emotions to Help Our Kids, Ourselves, and Our Society Thrive",
+    "short_title": "Permission to Feel",
+    "authors": [
+      {
+        "literal": "Marc Brackett"
+      }
+    ],
+    "publisher": "Celadon Books",
+    "publisher_place": "New York",
+    "issued": {
+      "year": 2019
+    },
+    "year": 2019,
+    "isbn": "978-1-250-21284-9",
+    "tags": [
+      "behavior-change",
+      "emotional-regulation",
+      "mind-body-integration"
+    ]
+  },
+  "salovey-1990-emotional-intelligence": {
+    "id": "salovey-1990-emotional-intelligence",
+    "type": "journal-article",
+    "title": "Emotional Intelligence",
+    "short_title": "Emotional Intelligence",
+    "authors": [
+      {
+        "literal": "Peter Salovey"
+      },
+      {
+        "literal": "John D. Mayer"
+      }
+    ],
+    "container_title": "Imagination, Cognition and Personality",
+    "volume": "9",
+    "issue": "3",
+    "page": "185-211",
+    "issued": {
+      "year": 1990
+    },
+    "year": 1990,
+    "doi": "10.2190/DUGG-P24E-52WK-6CDG",
+    "doi_newtab": true,
+    "tags": [
+      "behavior-change",
+      "emotional-regulation",
+      "values",
+      "reason"
+    ]
+  },
+  "mayer-2008-emotional-intelligence": {
+    "id": "mayer-2008-emotional-intelligence",
+    "type": "journal-article",
+    "title": "Emotional Intelligence: New Ability or Eclectic Traits?",
+    "short_title": "Emotional Intelligence",
+    "authors": [
+      {
+        "literal": "John D. Mayer"
+      },
+      {
+        "literal": "Peter Salovey"
+      },
+      {
+        "literal": "David R. Caruso"
+      }
+    ],
+    "container_title": "American Psychologist",
+    "volume": "63",
+    "issue": "6",
+    "page": "503-517",
+    "issued": {
+      "year": 2008
+    },
+    "year": 2008,
+    "doi": "10.1037/0003-066X.63.6.503",
+    "doi_newtab": true,
+    "tags": [
+      "behavior-change",
+      "emotional-regulation",
+      "reason"
+    ]
+  },
+  "kahneman-2011-thinking-fast-and-slow": {
+    "id": "kahneman-2011-thinking-fast-and-slow",
+    "type": "book",
+    "title": "Thinking, Fast and Slow",
+    "short_title": "Thinking, Fast and Slow",
+    "authors": [
+      {
+        "literal": "Daniel Kahneman"
+      }
+    ],
+    "publisher": "Farrar, Straus and Giroux",
+    "publisher_place": "New York",
+    "issued": {
+      "year": 2011
+    },
+    "year": 2011,
+    "isbn": "978-0374275631",
+    "tags": [
+      "behavior-change",
+      "reason"
+    ]
+  },
+  "isen-1987-positive-affect-creative-problem-solving": {
+    "id": "isen-1987-positive-affect-creative-problem-solving",
+    "type": "journal-article",
+    "title": "Positive Affect Facilitates Creative Problem Solving",
+    "short_title": "Positive Affect and Creative Problem Solving",
+    "authors": [
+      {
+        "literal": "Alice M. Isen"
+      },
+      {
+        "literal": "Kimberly A. Daubman"
+      },
+      {
+        "literal": "Gary P. Nowicki"
+      }
+    ],
+    "container_title": "Journal of Personality and Social Psychology",
+    "volume": "52",
+    "issue": "6",
+    "page": "1122-1131",
+    "issued": {
+      "year": 1987
+    },
+    "year": 1987,
+    "doi": "10.1037/0022-3514.52.6.1122",
+    "doi_newtab": true,
+    "tags": [
+      "behavior-change",
+      "emotional-regulation",
+      "reason"
+    ]
+  },
+  "bolte-2003-emotion-intuition": {
+    "id": "bolte-2003-emotion-intuition",
+    "type": "journal-article",
+    "title": "Emotion and Intuition: Effects of Positive and Negative Mood on Implicit Judgments of Semantic Coherence",
+    "short_title": "Emotion and Intuition",
+    "authors": [
+      {
+        "literal": "Annette Bolte"
+      },
+      {
+        "literal": "Thomas Goschke"
+      },
+      {
+        "literal": "Julius Kuhl"
+      }
+    ],
+    "container_title": "Psychological Science",
+    "volume": "14",
+    "issue": "5",
+    "page": "416-421",
+    "issued": {
+      "year": 2003
+    },
+    "year": 2003,
+    "doi": "10.1111/1467-9280.01456",
+    "doi_newtab": true,
+    "tags": [
+      "behavior-change",
+      "emotional-regulation",
+      "reason"
+    ]
+  },
+  "crum-2013-rethinking-stress": {
+    "id": "crum-2013-rethinking-stress",
+    "type": "journal-article",
+    "title": "Rethinking Stress: The Role of Mindsets in Determining the Stress Response",
+    "short_title": "Rethinking Stress",
+    "authors": [
+      {
+        "literal": "Alia J. Crum"
+      },
+      {
+        "literal": "Peter Salovey"
+      },
+      {
+        "literal": "Shawn Achor"
+      }
+    ],
+    "container_title": "Journal of Personality and Social Psychology",
+    "volume": "104",
+    "issue": "4",
+    "page": "716-733",
+    "issued": {
+      "year": 2013
+    },
+    "year": 2013,
+    "doi": "10.1037/a0031201",
+    "doi_newtab": true,
+    "tags": [
+      "recovery",
+      "behavior-change",
+      "emotional-regulation",
+      "mind-body-integration"
+    ]
+  },
+  "benedetti-2005-placebo-mechanisms": {
+    "id": "benedetti-2005-placebo-mechanisms",
+    "type": "journal-article",
+    "title": "Neurobiological Mechanisms of the Placebo Effect",
+    "short_title": "Placebo Mechanisms",
+    "authors": [
+      {
+        "literal": "Fabrizio Benedetti"
+      },
+      {
+        "literal": "Helen S. Mayberg"
+      },
+      {
+        "literal": "Tor D. Wager"
+      },
+      {
+        "literal": "Christian S. Stohler"
+      },
+      {
+        "literal": "Jon-Kar Zubieta"
+      }
+    ],
+    "container_title": "Journal of Neuroscience",
+    "volume": "25",
+    "issue": "45",
+    "page": "10390-10402",
+    "issued": {
+      "year": 2005
+    },
+    "year": 2005,
+    "doi": "10.1523/JNEUROSCI.3458-05.2005",
+    "doi_newtab": true,
+    "tags": [
+      "recovery",
+      "behavior-change",
+      "mind-body-integration"
+    ]
+  },
+  "cohen-2006-positive-emotional-style": {
+    "id": "cohen-2006-positive-emotional-style",
+    "type": "journal-article",
+    "title": "Positive Emotional Style Predicts Resistance to Illness After Experimental Exposure to Rhinovirus or Influenza A Virus",
+    "short_title": "Positive Emotional Style and Illness Resistance",
+    "authors": [
+      {
+        "literal": "Sheldon Cohen"
+      },
+      {
+        "literal": "Cuneyt M. Alper"
+      },
+      {
+        "literal": "William J. Doyle"
+      },
+      {
+        "literal": "John J. Treanor"
+      },
+      {
+        "literal": "Ronald B. Turner"
+      }
+    ],
+    "container_title": "Psychosomatic Medicine",
+    "volume": "68",
+    "issue": "6",
+    "page": "809-815",
+    "issued": {
+      "year": 2006
+    },
+    "year": 2006,
+    "doi": "10.1097/01.psy.0000245867.92364.3c",
+    "doi_newtab": true,
+    "tags": [
+      "recovery",
+      "emotional-regulation",
+      "mind-body-integration"
+    ]
+  },
+  "peikoff-1997-objectivism-through-induction": {
+    "id": "peikoff-1997-objectivism-through-induction",
+    "type": "course",
+    "title": "Objectivism Through Induction",
+    "short_title": "Objectivism Through Induction",
+    "authors": [
+      {
+        "literal": "Leonard Peikoff"
+      }
+    ],
+    "container_title": "ARI Campus",
+    "issued": {
+      "year": 1997
+    },
+    "year": 1997,
+    "url": "https://courses.aynrand.org/campus-courses/objectivism-through-induction/",
+    "url_newtab": true,
+    "tags": [
+      "ethics",
+      "epistemology",
+      "reason"
     ]
   }
 }

@@ -1,0 +1,14 @@
+book:
+  label: "Book"
+book-chapter:
+  label: "Book Chapter"
+book-section:
+  label: "Book Section"
+course:
+  label: "Course"
+journal-article:
+  label: "Journal Article"
+report:
+  label: "Report"
+webpage:
+  label: "Webpage"
