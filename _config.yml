@@ -32,6 +32,7 @@ google_analytics: G-CX08MNNEXZ
 
 include:
   - _pages
+  - .well-known
 
 collections:
   resources:
@@ -196,6 +197,7 @@ markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
+  smart_quotes: ["apos", "apos", "quot", "quot"]
   syntax_highlighter_opts:
     block:
       line_numbers: false
