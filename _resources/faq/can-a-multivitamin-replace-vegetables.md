@@ -12,11 +12,12 @@ concerns:
   - body-composition
   - beginners
   - adherence
+  - physical-health
 tags:
-  - dietary-supplements
-  - micronutrients
-  - fiber
   - food-quality
+  - dietary-supplements
+  - fiber
+  - micronutrients
 ---
 
 No. A multivitamin can help cover some vitamin and mineral gaps, but it does not provide the same food volume, {% include glossary.html id="dietary-fiber" text="fiber" %}, water, phytochemical mix, chewing, or meal structure that produce provides.

@@ -12,10 +12,10 @@ concerns:
   - busy-life
   - body-composition
 tags:
-  - meal-structure
   - calorie-balance
   - food-quality
   - adherence
+  - meal-structure
 ---
 
 Usually, yes. Food lists are teaching tools, not sacred texts. A food can fit if it supports the target: enough protein, appropriate calories, useful carbs or fats, adequate fiber and micronutrients across the day, and good adherence.

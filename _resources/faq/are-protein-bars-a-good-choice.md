@@ -13,10 +13,10 @@ concerns:
   - fat-loss
   - body-composition
 tags:
-  - protein
-  - dietary-supplements
-  - adherence
   - calorie-balance
+  - protein
+  - adherence
+  - dietary-supplements
 ---
 
 Protein bars can be useful, especially for travel, work, and emergency meals. They are not automatically better than regular food. Some are basically candy bars with more protein; others are genuinely helpful because they provide a portable protein serving with reasonable calories.

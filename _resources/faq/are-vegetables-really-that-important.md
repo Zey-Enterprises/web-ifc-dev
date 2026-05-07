@@ -12,10 +12,11 @@ concerns:
   - body-composition
   - adherence
   - beginners
+  - physical-health
 tags:
+  - food-quality
   - fiber
   - micronutrients
-  - food-quality
   - satiety
 ---
 

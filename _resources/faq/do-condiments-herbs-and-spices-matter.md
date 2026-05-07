@@ -12,9 +12,9 @@ concerns:
   - adherence
   - busy-life
 tags:
-  - adherence
   - calorie-balance
   - food-quality
+  - adherence
   - meal-structure
 ---
 
