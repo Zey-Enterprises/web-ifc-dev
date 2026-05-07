@@ -325,13 +325,14 @@ header:
 
   <section class="ifc-section ifc-section--tight" data-resource-landing-section>
     <h2>Learning tools</h2>
+    {% include faq_carousel.html speed="1500s" excerpt_length=210 %}
     <div class="ifc-grid">
       <a class="ifc-card-link" href="{{ glossary_path }}">
         <strong>Glossary</strong>
         <p>Canonical definitions for recurring concepts, with related resources surfaced through shared tags.</p>
       </a>
       <a class="ifc-card-link" href="{{ faq_path }}">
-        <strong>FAQ</strong>
+        <strong>Frequently Asked Questions</strong>
         <p>Practical answers to common diet and body-composition questions, organized by domain, concern, and tag.</p>
       </a>
       <a class="ifc-card-link" href="{{ references_path }}">
