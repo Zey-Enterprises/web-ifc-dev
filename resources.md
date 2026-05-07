@@ -325,7 +325,7 @@ header:
 
   <section class="ifc-section ifc-section--tight" data-resource-landing-section>
     <h2>Learning tools</h2>
-    {% include faq_carousel.html speed="1500s" excerpt_length=210 %}
+    {% include faq_carousel.html speed=209 excerpt_length=210 %}
     <div class="ifc-grid">
       <a class="ifc-card-link" href="{{ glossary_path }}">
         <strong>Glossary</strong>

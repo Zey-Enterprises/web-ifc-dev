@@ -1,6 +1,28 @@
+{% comment %}
+FAQ carousel include.
+
+Parameters:
+- `speed`: absolute scroll speed in CSS pixels per second. Unit suffixes are optional,
+  so `speed=210`, `speed="210"`, and `speed="210px"` all mean 210px/s. The carousel
+  measures the rendered card track in the browser and calculates animation duration
+  from this speed, so adding or removing FAQ entries does not change the visible
+  scroll rate.
+- `duration`: legacy fallback loop duration, used only when `speed` is omitted.
+- `tags`: optional comma-separated tag slugs. Omit to include all FAQ tags.
+- `domains`: optional comma-separated domain slugs.
+- `concerns`: optional comma-separated concern slugs.
+- `limit`: optional maximum number of matching cards.
+- `excerpt_length`: maximum excerpt characters, including the trailing ellipsis.
+- `path`: optional FAQ page path. Defaults to `/resources/faq/`.
+- `id`: optional carousel element ID. Use when rendering more than one carousel on
+  the same page.
+- `aria_label`: optional accessible label for the carousel viewport.
+{% endcomment %}
+
 {% assign carousel_id = include.id | default: "ifc-faq-carousel" %}
 {% assign faq_path = include.path | default: "/resources/faq/" | relative_url %}
-{% assign duration = include.speed | default: include.duration | default: "90s" %}
+{% assign speed = include.speed | default: "" %}
+{% assign duration = include.duration | default: "90s" %}
 {% assign limit = include.limit | default: 0 | plus: 0 %}
 {% assign excerpt_length = include.excerpt_length | default: 210 | plus: 0 %}
 {% assign tag_filter = include.tags | default: "" | split: "," %}
@@ -13,6 +35,7 @@
   class="ifc-faq-carousel"
   id="{{ carousel_id }}"
   style="--ifc-faq-carousel-duration: {{ duration }};"
+  {% if speed != "" %}data-faq-carousel-speed="{{ speed }}"{% endif %}
   data-faq-carousel
 >
   <div class="ifc-faq-carousel__viewport" aria-label="{{ include.aria_label | default: 'Featured FAQ entries' }}">
@@ -109,6 +132,16 @@
       return truncated + ellipsis;
     }
 
+    function parsePositiveNumber(value) {
+      var number = Number.parseFloat(value);
+
+      if (Number.isNaN(number) || number <= 0) {
+        return 0;
+      }
+
+      return number;
+    }
+
     function getAnnotationTriggerText(annotation) {
       var trigger = annotation.querySelector(".ifc-annotation__trigger");
 
@@ -157,6 +190,28 @@
       template.remove();
     }
 
+    function getTrackGap() {
+      var styles = window.getComputedStyle(track);
+      return parsePositiveNumber(styles.columnGap) || parsePositiveNumber(styles.gap);
+    }
+
+    function applyMeasuredDuration() {
+      var speed = parsePositiveNumber(carousel.dataset.faqCarouselSpeed);
+
+      if (!speed) {
+        return;
+      }
+
+      var gap = getTrackGap();
+      var distance = cards.reduce(function (total, card) {
+        return total + card.getBoundingClientRect().width + gap;
+      }, 0);
+
+      if (distance > 0) {
+        carousel.style.setProperty("--ifc-faq-carousel-duration", (distance / speed) + "s");
+      }
+    }
+
     if (!track || cards.length < 2) {
       cards.forEach(hydrateExcerpt);
       carousel.classList.add("ifc-faq-carousel--static");
@@ -164,6 +219,7 @@
     }
 
     cards.forEach(hydrateExcerpt);
+    applyMeasuredDuration();
 
     for (var i = cards.length - 1; i > 0; i -= 1) {
       var j = Math.floor(Math.random() * (i + 1));
