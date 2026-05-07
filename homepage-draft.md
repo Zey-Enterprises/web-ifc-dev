@@ -165,7 +165,7 @@ We can begin anywhere. The point is to work in a way that strengthens the whole 
       </a>
     {% endfor %}
   </div>
-  {% include faq_carousel.html speed=209 excerpt_length=210 %}
+  {% include faq_carousel.html %}
   <div class="ifc-link-action">
     {% include double_icon_button.html href="/resources/" label="Browse the full resource library" alignment="center" %}
   </div>

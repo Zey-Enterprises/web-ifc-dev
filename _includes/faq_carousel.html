@@ -6,7 +6,7 @@ Parameters:
   so `speed=210`, `speed="210"`, and `speed="210px"` all mean 210px/s. The carousel
   measures the rendered card track in the browser and calculates animation duration
   from this speed, so adding or removing FAQ entries does not change the visible
-  scroll rate.
+  scroll rate. Default is `125`.
 - `duration`: legacy fallback loop duration, used only when `speed` is omitted.
 - `tags`: optional comma-separated tag slugs. Omit to include all FAQ tags.
 - `domains`: optional comma-separated domain slugs.
@@ -21,7 +21,7 @@ Parameters:
 
 {% assign carousel_id = include.id | default: "ifc-faq-carousel" %}
 {% assign faq_path = include.path | default: "/resources/faq/" | relative_url %}
-{% assign speed = include.speed | default: "" %}
+{% assign speed = include.speed | default: "125" %}
 {% assign duration = include.duration | default: "90s" %}
 {% assign limit = include.limit | default: 0 | plus: 0 %}
 {% assign excerpt_length = include.excerpt_length | default: 210 | plus: 0 %}
