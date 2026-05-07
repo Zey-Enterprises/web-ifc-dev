@@ -1,6 +1,8 @@
 ---
 title: "Why do I need a human coach if I can just get guidance from &quot;AI&quot;?"
 sort_order: 11
+concerns:
+tags:
 ---
 
 Tools like LLMs can be useful.

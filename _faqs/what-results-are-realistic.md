@@ -1,6 +1,8 @@
 ---
 title: "What kind of results are realistic?"
 sort_order: 7
+concerns:
+tags:
 ---
 
 Realistic results depend on your starting point, compliance, recovery, schedule, and time horizon. The coaching does not promise dramatic outcomes on unrealistic timelines. It focuses on rates of progress that can survive real life and compound over time.
