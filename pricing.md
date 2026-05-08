@@ -52,7 +52,7 @@ header:
       </div>
       <div class="ifc-panel ifc-panel--soft">
         <h3>Support between sessions</h3>
-        <p>Written support is included for questions and updates related to the coaching plan. Messages are normally answered within 48 hours, including weekends when available.</p>
+        <p>Written support is included for questions and updates related to the coaching plan. Messages are normally answered within 48 hours, excluding holidays, travel, illness, emergencies, and periods of limited availability communicated in advance when possible.</p>
         <p>This support is not emergency support, crisis support, or real-time access. If something requires medical care, psychotherapy, crisis support, physical therapy, or another licensed professional, coaching may proceed alongside that support when appropriate, but coaching does not replace it.</p>
       </div>
     </div>
