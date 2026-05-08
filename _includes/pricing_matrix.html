@@ -1,0 +1,171 @@
+{% assign pricing = site.data.pricing %}
+{% assign support_view = pricing.views.support %}
+{% assign situation_view = pricing.views.situation %}
+{% assign shared_includes = pricing.shared_includes %}
+
+<div class="ifc-section ifc-pricing-compare" data-pricing-compare>
+  <div class="ifc-pricing-compare__header">
+    <div>
+      <h2>Compare coaching tiers</h2>
+      <p>{{ support_view.summary }}</p>
+    </div>
+    <div class="ifc-pricing-toggle" role="group" aria-label="Pricing comparison view">
+      <button class="ifc-pricing-toggle__button is-active" type="button" data-pricing-view-trigger="support" aria-controls="pricing-support-desktop pricing-support-mobile" aria-pressed="true">{{ support_view.label }}</button>
+      <button class="ifc-pricing-toggle__button" type="button" data-pricing-view-trigger="situation" aria-controls="pricing-situation-desktop pricing-situation-mobile" aria-pressed="false">{{ situation_view.label }}</button>
+    </div>
+  </div>
+
+  {% assign matrix_view = support_view %}
+  {% assign matrix_key = "support" %}
+  {% assign show_recommended = true %}
+  <div id="pricing-{{ matrix_key }}-desktop" class="ifc-pricing-desktop" data-pricing-view-panel="{{ matrix_key }}">
+    <table class="ifc-pricing-matrix ifc-pricing-matrix--{{ matrix_key }}">
+      <caption>{{ matrix_view.caption }}</caption>
+      <thead>
+        <tr>
+          <th class="ifc-pricing-matrix__row-heading" scope="col" aria-label="{{ matrix_view.row_header_label }}"><span class="screen-reader-text">{{ matrix_view.row_header_label }}</span></th>
+          {% for tier in pricing.tiers %}
+            {% assign is_recommended = false %}
+            {% if matrix_view.recommended_tier == tier.key %}
+              {% assign is_recommended = true %}
+            {% endif %}
+            <th class="{% if is_recommended and show_recommended %}ifc-pricing-matrix__recommended{% endif %}" scope="col">
+              <span class="ifc-pricing-tier-name">{{ tier.name }}</span>
+              {% if is_recommended and show_recommended %}
+                <span class="ifc-pricing-badge-slot"><span class="ifc-pricing-badge">{{ matrix_view.recommended_label }}</span></span>
+              {% else %}
+                <span class="ifc-pricing-badge-slot"><span class="ifc-pricing-badge ifc-pricing-badge--placeholder">{{ matrix_view.recommended_label | default: tier.badge | default: "Recommended" }}</span></span>
+              {% endif %}
+              <span class="ifc-pricing-tier-price">{{ tier.price }}</span>
+              <span class="ifc-pricing-tier-tagline">{{ tier.tagline }}</span>
+              <span class="ifc-pricing-tier-summary">{{ tier.summary }}</span>
+            </th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in matrix_view.rows %}
+          <tr>
+            <th scope="row">{{ row.label }}</th>
+            {% for tier in pricing.tiers %}
+              {% assign is_recommended = false %}
+              {% if matrix_view.recommended_tier == tier.key %}
+                {% assign is_recommended = true %}
+              {% endif %}
+              {% assign cell = row.cells[tier.key] %}
+              <td class="{% if is_recommended and show_recommended %}ifc-pricing-matrix__recommended{% endif %}">{{ cell }}</td>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  {% assign matrix_view = situation_view %}
+  {% assign matrix_key = "situation" %}
+  {% assign show_recommended = false %}
+  <div id="pricing-{{ matrix_key }}-desktop" class="ifc-pricing-desktop" data-pricing-view-panel="{{ matrix_key }}" hidden>
+    <table class="ifc-pricing-matrix ifc-pricing-matrix--{{ matrix_key }}">
+      <caption>{{ matrix_view.caption }}</caption>
+      <thead>
+        <tr>
+          <!--<th scope="col">{{ matrix_view.row_header_label }}</th>-->
+          <th class="ifc-pricing-matrix__row-heading" scope="col" aria-label="{{ matrix_view.row_header_label }}"><span class="screen-reader-text">{{ matrix_view.row_header_label }}</span></th>
+          {% for tier in pricing.tiers %}
+            {% assign is_featured = false %}
+            {% if tier.badge %}
+              {% assign is_featured = true %}
+            {% endif %}
+            <th class="{% if is_featured %}ifc-pricing-matrix__featured{% endif %}" scope="col">
+              <span class="ifc-pricing-tier-name">{{ tier.name }}</span>
+              <span class="ifc-pricing-badge-slot"><span class="ifc-pricing-badge ifc-pricing-badge--placeholder">{{ tier.badge | default: "Recommended" }}</span></span>
+              <span class="ifc-pricing-tier-price">{{ tier.price }}</span>
+              <span class="ifc-pricing-tier-tagline">{{ tier.tagline }}</span>
+              <span class="ifc-pricing-tier-summary">{{ tier.summary }}</span>
+            </th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in matrix_view.rows %}
+          <tr>
+            <th scope="row">{{ row.label }}</th>
+            {% for tier in pricing.tiers %}
+              {% assign cell = row.cells[tier.key] %}
+              <td class="{% if tier.badge %}ifc-pricing-matrix__featured{% endif %}">{{ cell }}</td>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ifc-pricing-mobile">
+    {% assign matrix_view = support_view %}
+    {% assign matrix_key = "support" %}
+    {% assign show_recommended = true %}
+    <div id="pricing-{{ matrix_key }}-mobile" class="ifc-pricing-mobile__view" data-pricing-view-panel="{{ matrix_key }}">
+      {% for tier in pricing.tiers %}
+        {% assign is_recommended = false %}
+        {% if matrix_view.recommended_tier == tier.key %}
+          {% assign is_recommended = true %}
+        {% endif %}
+        <article class="ifc-pricing-tier-card {% if is_recommended and show_recommended %}ifc-pricing-tier-card--recommended{% endif %}">
+          <p class="ifc-resource-card__eyebrow">
+            {{ tier.name }}
+            {% if is_recommended and show_recommended %}
+              <span class="ifc-pricing-badge">{{ matrix_view.recommended_label }}</span>
+            {% endif %}
+          </p>
+          <h3>{{ tier.price }}</h3>
+          <p class="ifc-pricing-tier-tagline">{{ tier.tagline }}</p>
+          <p>{{ tier.summary }}</p>
+          <dl>
+            {% for row in matrix_view.rows %}
+              {% assign cell = row.cells[tier.key] %}
+              <div>
+                <dt>{{ row.label }}</dt>
+                <dd>{{ cell }}</dd>
+              </div>
+            {% endfor %}
+          </dl>
+        </article>
+      {% endfor %}
+    </div>
+
+    {% assign matrix_view = situation_view %}
+    {% assign matrix_key = "situation" %}
+    {% assign show_recommended = false %}
+    <div id="pricing-{{ matrix_key }}-mobile" class="ifc-pricing-mobile__view" data-pricing-view-panel="{{ matrix_key }}" hidden>
+      {% for tier in pricing.tiers %}
+        <article class="ifc-pricing-tier-card {% if tier.badge %}ifc-pricing-tier-card--recommended{% endif %}">
+          <p class="ifc-resource-card__eyebrow">{{ tier.name }}</p>
+          <h3>{{ tier.price }}</h3>
+          <p class="ifc-pricing-tier-tagline">{{ tier.tagline }}</p>
+          <p>{{ tier.summary }}</p>
+          <dl>
+            {% for row in matrix_view.rows %}
+              {% assign cell = row.cells[tier.key] %}
+              <div>
+                <dt>{{ row.label }}</dt>
+                <dd>{{ cell }}</dd>
+              </div>
+            {% endfor %}
+          </dl>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="ifc-pricing-includes">
+    <div class="ifc-panel ifc-panel--soft">
+      <h2>{{ shared_includes.heading }}</h2>
+      <p>{{ shared_includes.summary }}</p>
+      <ul class="ifc-pricing-includes__list">
+        {% for item in shared_includes.items %}
+          <li class="ifc-pricing-includes__item">{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

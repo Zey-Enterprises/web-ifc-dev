@@ -18,6 +18,9 @@
 <script src="{{ '/assets/js/toc-widget.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/resource-filters.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/social-share.js' | relative_url }}"></script>
+{% if page.pricing_matrix %}
+  <script src="{{ '/assets/js/pricing-toggle.js' | relative_url }}"></script>
+{% endif %}
 {% assign show_read_time = page.show_read_time %}
 {% if show_read_time == nil %}
   {% assign show_read_time = page.read_time %}

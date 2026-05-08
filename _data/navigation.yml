@@ -1,19 +1,16 @@
 main:
 #  - title: "Home"
 #    url: /
-  - title: "Apply"
-    url: /apply/
+  - title: "Pricing"
+    url: /pricing/
   - title: "Approach"
     url: /approach/
   - title: "Resources"
     url: /resources/
   - title: "About"
     url: /about/
-  - title: "Results"
-    url: /results/
   - title: "FAQ"
     url: /faq/
-  - title: "Pricing"
-    url: /pricing/
-  - title: "Terms of Service"
-    url: /terms/
+  - title: "Results"
+    url: /results/
+

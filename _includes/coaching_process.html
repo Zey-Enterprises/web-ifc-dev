@@ -1,0 +1,53 @@
+{% assign process_title = include.title | default: "How coaching begins" %}
+{% assign application_url = include.application_url | default: "https://forms.gle/29cjAn8UZKWNa5qB7" %}
+{% assign consultation_url = include.consultation_url | default: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2tFT1hAw7raJYeKLT9fHtAHbhWkhgCn78WIcANGUt-f-fOxlHb5gJBFuzF5g9zwHsVT524pONP?gv=true" %}
+{% assign consultation_id = include.consultation_id | default: "coaching-process-consultation-scheduler" %}
+
+<div class="ifc-section ifc-process-section">
+  <h2>{{ process_title }}</h2>
+  <ol class="ifc-process-steps ifc-process-steps--detailed">
+    <li>
+      <strong>Optional free 15-minute consultation</strong>
+      <span>If you want to ask questions before completing the application and intake form, start here. This is a brief clarification call, not a coaching session.</span>
+      <div class="ifc-process-step__actions">
+        {% include google_scheduling_proxy_button.html
+          id=consultation_id
+          url=consultation_url
+          label="Book free consultation"
+          class="ifc-button ifc-button--secondary"
+          color="#039BE5"
+        %}
+      </div>
+    </li>
+    <li>
+      <strong>Application and intake form</strong>
+      <span>The form is intentionally comprehensive. It gives enough context to understand your goals, constraints, current patterns, and what kind of support you are seeking.</span>
+      <p class="ifc-process-step__actions">
+        <a class="ifc-button" href="{{ application_url }}" target="_blank" rel="noopener noreferrer">Start application</a>
+      </p>
+    </li>
+    <li>
+      <strong>Review for scope and appropriate package</strong>
+      <span>I review your goals, constraints, current situation, coaching scope, and likely package before recommending next steps.</span>
+    </li>
+    <li>
+      <strong>Optional 15-minute follow-up call</strong>
+      <span>If either of us needs clarification before deciding, we may schedule a brief follow-up call. This is also not a coaching session.</span>
+    </li>
+    <li>
+      <strong>Coaching agreement, package addendum, and first payment</strong>
+      <span>Once the scope is clear and we decide to work together, we complete the agreement, select the package, set up payment, and schedule onboarding.</span>
+      <p class="ifc-process-step__actions">
+        <a class="ifc-button ifc-button--secondary" href="/coaching-agreement/">Review agreement</a>
+      </p>
+    </li>
+    <li>
+      <strong>90-minute onboarding session</strong>
+      <span>This is the first true coaching session, where we establish context, priorities, and the initial direction.</span>
+    </li>
+    <li>
+      <strong>Ongoing monthly cadence</strong>
+      <span>After onboarding, live sessions, written check-ins, review, and plan adjustments begin according to the selected tier.</span>
+    </li>
+  </ol>
+</div>

@@ -107,10 +107,10 @@ My perspective is shaped by
 
 I bring that perspective to helping people navigate the practical challenges of improving their lives, whether the catalyst that brings them to me is physique, emotional wellbeing, intellectual growth, or any other aspect of health and fitness.
 
-If you're looking for a thoughtful, structured approach, someone who can help you make sense of competing ideas, and guidance that holds up outside of ideal conditions, then this work may be a good fit.
+If you're looking for a thoughtful, structured approach, someone who can help you make sense of competing ideas, and guidance that holds up outside of ideal conditions, then this work may be worth considering.
 
 [See how coaching works](/approach/){:.ifc-button .ifc-button--secondary}
-[Apply for coaching](/apply/){:.ifc-button}
+[View coaching options](/pricing/){:.ifc-button}
 
 Curious to learn more about the nerd behind the coach? I'm an open book:
 

@@ -131,18 +131,18 @@ author:
   avatar: "/assets/images/arthurzey-avatar.jpg"
   bio: "Integrated fitness coach focused on sustainable body composition, capability, recovery, and practical self-direction."
   links:
-    - label: "Apply"
+    - label: "Coaching Options"
       icon: "fas fa-arrow-right"
-      url: "/apply/"
+      url: "/pricing/"
     - label: "Resources"
       icon: "fas fa-book-open"
       url: "/resources/"
 
 footer:
   links:
-    - label: "Apply"
+    - label: "Coaching Options"
       icon: "fas fa-arrow-right"
-      url: "/apply/"
+      url: "/pricing/"
       newtab: false
     - label: "Terms of Service"
       icon: "fas fa-scale-balanced"

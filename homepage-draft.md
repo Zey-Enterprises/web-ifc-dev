@@ -18,8 +18,8 @@ header:
       mobile_background_position: 68% center
     - image: /assets/images/overlay/index-reading.webp
   actions:
-    - label: Apply for coaching
-      url: /apply/
+    - label: View coaching options
+      url: /pricing/
       class: btn--primary
     - label: See how coaching works
       url: /approach/
@@ -37,7 +37,7 @@ The starting point can differ. The reason for an integrated approach does not.
 
 This coaching is built on a simple observation: body, intellect, and spirit are distinct, but not separate. Lasting progress usually depends on working with the whole person, rather than treating one visible problem as though it exists in isolation.
 
-[Apply for coaching](/apply/){:.ifc-button}
+[View coaching options](/pricing/){:.ifc-button}
 [See how coaching works](/approach/){:.ifc-button .ifc-button--secondary}
   </div>
   <div class="ifc-panel ifc-panel--soft" markdown="1">
@@ -173,11 +173,11 @@ We can begin anywhere. The point is to work in a way that strengthens the whole 
 
 <div class="ifc-section">
   <div class="ifc-panel" markdown="1">
-## Find out more, then apply if the fit is right
+## Find out more, then apply if the structure makes sense
 
 This is coaching for people who want more than a generic plan, more than short-lived intensity, and more than compartmentalized self-improvement. The aim is durable progress in the broad sense: a stronger body, a steadier spirit, a clearer intellect, and a life that holds together more coherently.
 
-[Apply for coaching](/apply/){:.ifc-button}
+[View coaching options](/pricing/){:.ifc-button}
 [Read the Coaching FAQ](/faq/){:.ifc-button .ifc-button--secondary}
   </div>
 </div>

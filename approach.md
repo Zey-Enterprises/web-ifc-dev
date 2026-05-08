@@ -272,8 +272,14 @@ The aim is to _live_ better.
 
 That requires working on the whole in a principled way.
 
-If that resonates with you, see whether working together would be a good fit:
+<div class="ifc-panel ifc-panel--soft" markdown="1">
 
+## Ready to go further?
+
+Review the coaching options to compare support levels, pricing, and how the process begins. For practical questions about scope, communication, timelines, and who this is for, read the coaching FAQ.
+
+[View coaching options](/pricing/){:.ifc-button}
+[Read coaching FAQ](/faq/){:.ifc-button .ifc-button--secondary}
 [Learn about Arthur](/about/){:.ifc-button .ifc-button--secondary}
-[Review pricing](/pricing/){:.ifc-button .ifc-button--secondary}
-[Apply for coaching](/apply/){:.ifc-button}
+
+</div>

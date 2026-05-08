@@ -16,8 +16,8 @@ header:
       mobile_background_position: 68% center
     - image: /assets/images/overlay/index-reading.webp
   actions:
-    - label: Apply for coaching
-      url: /apply/
+    - label: View coaching options
+      url: /pricing/
       class: btn--primary
     - label: See how coaching works
       url: /approach/
@@ -33,7 +33,7 @@ Physical capability, intellectual clarity, and emotional or spiritual steadiness
 
 That integrated view is the foundation of the coaching. But coaching can still have a specific focus. You may come in wanting better body composition, steadier habits, clearer thinking, or more inner order. We can start in one domain while working in a way that supports the whole person.
 
-[Apply for coaching](/apply/){:.ifc-button}
+[View coaching options](/pricing/){:.ifc-button}
 [See how coaching works](/approach/){:.ifc-button .ifc-button--secondary}
   </div>
   <div class="ifc-panel ifc-panel--soft" markdown="1">
@@ -107,11 +107,15 @@ That integrated view is the foundation of the coaching. But coaching can still h
         <h3>{{ item.client_name }}</h3>
         <p><strong>{{ item.result_summary }}</strong></p>
         <p class="ifc-quote">{{ item.excerpt | strip_html }}</p>
-        <p class="ifc-link-action"><a class="ifc-mini-action" href="{{ item.url }}"><span class="ifc-mini-action__label">Read more</span></a></p>
+        <div class="ifc-link-action">
+          {% include double_icon_button.html href=item.url label="Read more" alignment="center" %}
+        </div>
       </div>
     {% endfor %}
   </div>
-  <p class="ifc-link-action"><a class="ifc-mini-action" href="/results/"><span class="ifc-mini-action__label">See testimonials and case studies</span></a></p>
+  <div class="ifc-link-action">
+    {% include double_icon_button.html href="/results/" label="See testimonials and case studies" alignment="center" %}
+  </div>
 </div>
 
 <div class="ifc-section">
@@ -129,7 +133,9 @@ That integrated view is the foundation of the coaching. But coaching can still h
       </a>
     {% endfor %}
   </div>
-  <p class="ifc-link-action"><a class="ifc-mini-action" href="/resources/"><span class="ifc-mini-action__label">Browse the full resource library</span></a></p>
+  <div class="ifc-link-action">
+    {% include double_icon_button.html href="/resources/" label="Browse the full resource library" alignment="center" %}
+  </div>
 </div>
 
 <div class="ifc-section">
@@ -138,7 +144,7 @@ That integrated view is the foundation of the coaching. But coaching can still h
 
 This is coaching for people who want clarity, accountability, and a realistic path forward. The aim is a better life through better practices and better judgment, not more drama.
 
-[Apply now](/apply/){:.ifc-button}
+[See coaching options](/pricing/){:.ifc-button}
 [Read the FAQ](/faq/){:.ifc-button .ifc-button--secondary}
   </div>
 </div>

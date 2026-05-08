@@ -1,0 +1,203 @@
+{
+  "tiers": [
+    {
+      "key": "foundation",
+      "name": "Foundation",
+      "price": "$395/month",
+      "tagline": "Focused coaching for one clear goal",
+      "summary": "For clients who want structure, accountability, and an integrated lens without broad active work across every domain"
+    },
+    {
+      "key": "integrated",
+      "name": "Integrated",
+      "price": "$595/month",
+      "badge": "Recommended",
+      "tagline": "Whole-context coaching for serious integrated change",
+      "summary": "For clients who want meaningful coaching across body, intellect, and spirit"
+    },
+    {
+      "key": "intensive",
+      "name": "Intensive",
+      "price": "$995/month",
+      "tagline": "Weekly support for complex or demanding seasons",
+      "summary": "For clients who need closer contact, faster iteration, and higher-touch implementation support"
+    }
+  ],
+  "shared_includes": {
+    "heading": "Included in every tier",
+    "summary": "Every coaching package begins with the same serious foundation. The differences are scope, live coaching cadence, complexity, and implementation support.",
+    "items": [
+      "Comprehensive application and intake review",
+      "90-minute onboarding session",
+      "3-month initial engagement, billed monthly",
+      "Weekly written check-in",
+      "Plan adjustments within package scope",
+      "Plan-related written support, normally answered within 48 hours",
+      "Referral or tandem support when a need belongs with a licensed professional"
+    ]
+  },
+  "views": {
+    "support": {
+      "label": "Compare support",
+      "caption": "Compare Integrated Fitness Coaching support levels",
+      "row_header_label": "Decision point",
+      "recommended_tier": "integrated",
+      "recommended_label": "Recommended",
+      "summary": "Compare the level of structure, scope, and support in each coaching tier",
+      "rows": [
+        {
+          "label": "Live coaching cadence",
+          "cells": {
+            "foundation": "1 x 60-minute session/month",
+            "integrated": "2 x 60-minute sessions/month",
+            "intensive": "4 x 60-minute sessions/month or equivalent scheduled live time"
+          }
+        },
+        {
+          "label": "Active scope",
+          "cells": {
+            "foundation": "One primary coaching focus at a time",
+            "integrated": "Broader integrated coaching across the major areas affecting your goals",
+            "intensive": "Weekly integrated coaching with closer support and faster course correction"
+          }
+        },
+        {
+          "label": "Implementation support",
+          "cells": {
+            "foundation": "Focused plan, practices, or assignments tied to the primary goal",
+            "integrated": "Custom strategy across the relevant domains: body, intellect, spirit, habits, and life structure",
+            "intensive": "More active implementation guidance, prioritization, and course correction across relevant domains"
+          }
+        },
+        {
+          "label": "Review and iteration",
+          "cells": {
+            "foundation": "Adjustments tied to the primary focus",
+            "integrated": "Ongoing review and adjustment across the coaching plan",
+            "intensive": "More frequent review and faster iteration when circumstances change or friction appears"
+          }
+        },
+        {
+          "label": "Written support",
+          "cells": {
+            "foundation": "Limited plan-related support",
+            "integrated": "Plan-related support between sessions",
+            "intensive": "Priority plan-related support between sessions"
+          }
+        },
+        {
+          "label": "Local / in-person support",
+          "cells": {
+            "foundation": "Not included by default",
+            "integrated": "Possible by arrangement and quoted separately",
+            "intensive": "Possible by arrangement; substantial local or hybrid support may require Custom"
+          }
+        }
+      ]
+    },
+    "situation": {
+      "label": "Choose by situation",
+      "caption": "Which coaching tier usually matches your situation",
+      "row_header_label": "Client situation",
+      "summary": "Use this view to compare which tier usually matches different client situations",
+      "rows": [
+        {
+          "label": "I have one primary goal and need structure.",
+          "cells": {
+            "foundation": "Strongest match",
+            "integrated": "Good match if broader context matters",
+            "intensive": "Usually more than needed"
+          }
+        },
+        {
+          "label": "I am serious but relatively new to training, nutrition, mindfulness, or behavior change.",
+          "cells": {
+            "foundation": "Strongest match",
+            "integrated": "Good match if you want broader support",
+            "intensive": "Usually more than needed"
+          }
+        },
+        {
+          "label": "I already use an app or program to help me with nutrition, physical exercise, or mindfulness, and I want help applying it well.",
+          "cells": {
+            "foundation": "Strongest match",
+            "integrated": "Good match",
+            "intensive": "Usually more than needed unless broader support is needed"
+          }
+        },
+        {
+          "label": "I want physique, training, or nutrition support with broader life context.",
+          "cells": {
+            "foundation": "Good match if the goal is focused",
+            "integrated": "Strongest match",
+            "intensive": "Good match if support needs are high"
+          }
+        },
+        {
+          "label": "I need a plan that survives work, parenting, travel, or real-world constraints.",
+          "cells": {
+            "foundation": "Good match if the scope is focused",
+            "integrated": "Strongest match",
+            "intensive": "Strongest match if constraints are unusually demanding"
+          }
+        },
+        {
+          "label": "I want coaching that integrates body, intellect, and spirit.",
+          "cells": {
+            "foundation": "Usually too light",
+            "integrated": "Strongest match",
+            "intensive": "Strongest match for higher-touch work"
+          }
+        },
+        {
+          "label": "Stress, emotional patterns, or relationships keep derailing execution.",
+          "cells": {
+            "foundation": "Possible match if the scope is narrow",
+            "integrated": "Strongest match",
+            "intensive": "Strongest match if weekly support is needed"
+          }
+        },
+        {
+          "label": "I want to strengthen my judgment, critical thinking, values clarity, or life direction.",
+          "cells": {
+            "foundation": "Possible match for one focused issue",
+            "integrated": "Strongest match",
+            "intensive": "Strongest match if the situation is complex"
+          }
+        },
+        {
+          "label": "I need weekly contact to stay oriented and adjust quickly.",
+          "cells": {
+            "foundation": "Usually too light",
+            "integrated": "Possible match",
+            "intensive": "Strongest match"
+          }
+        },
+        {
+          "label": "I am in a demanding or high-friction season.",
+          "cells": {
+            "foundation": "Usually too light",
+            "integrated": "Good match",
+            "intensive": "Strongest match"
+          }
+        },
+        {
+          "label": "I want an aggressive short-term push.",
+          "cells": {
+            "foundation": "Usually too light",
+            "integrated": "Possible match",
+            "intensive": "Strongest match if appropriate"
+          }
+        },
+        {
+          "label": "I may need local, hybrid, or in-person support.",
+          "cells": {
+            "foundation": "Rarely the right structure",
+            "integrated": "Possible by arrangement",
+            "intensive": "Possible, though Custom may match better"
+          }
+        }
+      ]
+    }
+  }
+}

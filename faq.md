@@ -1,7 +1,7 @@
 ---
 title: "Frequently Asked Questions"
 permalink: /faq/
-excerpt: "Frequently asked questions about coaching, scope, results, and fit."
+excerpt: "Frequently asked questions about coaching, scope, results, and support."
 header:
   # overlay_image: /assets/images/ifc-faq-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
@@ -28,5 +28,5 @@ One recurring theme below is sustainability. This practice is explicitly not bui
 
 [Understand the approach](/approach/){:.ifc-button .ifc-button--secondary}
 [Review pricing](/pricing/){:.ifc-button .ifc-button--secondary}
-[Apply for coaching](/apply/){:.ifc-button}
+[View coaching options](/pricing/){:.ifc-button}
 </div>
