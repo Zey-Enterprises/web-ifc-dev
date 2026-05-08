@@ -10,10 +10,10 @@ header:
   - label: ← Back to All Resources
     url: /resources/
     class: btn--light-outline
-  - label: Go to Glossary
+  - label: Glossary
     url: /resources/glossary/
     class: btn--light-outline
-  - label: Go to FAQ
+  - label: Fitness FAQ
     url: /resources/faq/
     class: btn--light-outline
 ---

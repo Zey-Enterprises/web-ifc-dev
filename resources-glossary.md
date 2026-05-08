@@ -14,10 +14,10 @@ header:
   - label: ← Back to All Resources
     url: /resources/
     class: btn--light-outline
-  - label: Go to FAQ
+  - label: Fitness FAQ
     url: /resources/faq/
     class: btn--light-outline
-  - label: Go to References
+  - label: References
     url: /resources/references/
     class: btn--light-outline
 ---

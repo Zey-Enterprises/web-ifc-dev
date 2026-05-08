@@ -13,10 +13,10 @@ header:
   - label: ← Back to All Resources
     url: /resources/
     class: btn--light-outline
-  - label: Go to Glossary
+  - label: Glossary
     url: /resources/glossary/
     class: btn--light-outline
-  - label: Go to References
+  - label: References
     url: /resources/references/
     class: btn--light-outline
   - label: Go to Coaching FAQ →

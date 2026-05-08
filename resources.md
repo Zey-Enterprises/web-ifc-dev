@@ -9,13 +9,13 @@ header:
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
   kicker: Resource library
   actions:
-  - label: Go to Glossary
+  - label: Glossary
     url: /resources/glossary/
     class: btn--light-outline
-  - label: Go to FAQ
+  - label: Fitness FAQ
     url: /resources/faq/
     class: btn--light-outline
-  - label: Go to References
+  - label: References
     url: /resources/references/
     class: btn--light-outline
 ---
