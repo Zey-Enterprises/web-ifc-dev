@@ -145,21 +145,21 @@ Refunds will not be granted for unused time after the expiration of the engageme
 
 ## Disclaimers
 
-## No Guarantee of Results
+### No Guarantee of Results
 
 While the Coach is committed to providing high-quality guidance, feedback, and support, Client acknowledges that outcomes--including, but not limited to, fat loss, muscle gain, health outcomes, behavioral changes, interpersonal functioning, and intellectual development--cannot be guaranteed. Success may be impacted by numerous factors outside the Coach's control, including individual effort, unforeseen biological factors, medical conditions, third party interference, and changes in life circumstances.
 
 Accordingly, Client understands and agrees that the Coach makes no representations, warranties, or guarantees regarding any specific outcome or result from the Services provided, and that any examples or prior results are illustrative only and do not constitute promises or guarantees.
 
-## Assumption of Risk
+### Assumption of Risk
 
 Participation in coaching, including the implementation of any recommendations related to exercise, diet, nutrition, recovery, lifestyle, behavior, and other aspects of Fitness Development, is voluntary and undertaken at the Client's own risk. The Client understands that such participation may involve inherent risks, including, but not limited to, illness, injury, aggravation of pre-existing conditions, adverse physiological or psychological responses, and other foreseeable or unforeseeable consequences. The Client accepts full responsibility for monitoring his or her own physical and mental condition and for exercising independent judgment in deciding whether and how to implement any recommendation, including whether to continue, modify, or discontinue any activity at any time.
 
-## Separate Liability Waiver
+### Separate Liability Waiver
 
 The Client acknowledges that, in connection with this Agreement, the Client has executed a separate Liability Waiver and Release of Claims (the "Waiver"). The Client agrees that the Waiver and this Agreement are intended to operate together and shall be given cumulative effect to the fullest extent permitted by law.
 
-## Limitation of Liability
+### Limitation of Liability
 
 To the maximum extent permitted by law, the Coach shall not be liable for any claims, damages, losses, or expenses arising out of or relating to this Agreement or the Services, except to the extent caused by the Coach's gross negligence or willful misconduct where such limitation is prohibited by law.
 
@@ -167,11 +167,11 @@ In no event shall the Coach be liable for any indirect, incidental, special, exe
 
 If, notwithstanding the foregoing, the Coach is found liable for any claim arising out of or relating to this Agreement or the Services, the Client agrees that the total liability of the Coach shall be limited to the total amount actually paid by the Client for the specific Services giving rise to the claim.
 
-## Indemnification
+### Indemnification
 
 The Client agrees to indemnify, defend, and hold harmless the Coach, Zey Enterprises, LLC, and its members, managers, owners, employees, contractors, agents, representatives, affiliates, successors, and assigns from and against any and all claims, liabilities, damages, losses, costs, and expenses, including reasonable attorneys' fees and costs of defense, arising out of or relating to the Client's actions or omissions, the Client's participation in coaching, the Client's implementation or misuse of recommendations, the Client's use or misuse of materials or Services provided by the Coach under this Agreement, or any third-party claims arising from the Client's conduct.
 
-## Not Psychological or Medical Service
+### Not Psychological or Medical Service
 
 Fitness coaching is not formal counseling or therapy, though psychological inquiry and Coach's experience and expertise in that area may be brought to bear in the context of the coaching relationship. Moreover, coaching may include intellectual development via Socratic dialogue or philosophical discussion. These Services are educational in nature and are not a substitute for psychotherapy or mental health services.
 
@@ -183,7 +183,7 @@ Client must disclose to Coach any relevant conditions, injuries, and limitations
 
 The Client further understands that the Coach does not provide emergency, crisis, or on-demand medical, psychiatric, or psychological support. The Coach is not responsible for monitoring the Client's condition in real time or for responding to urgent health or mental health situations. If the Client experiences a medical emergency, acute psychiatric distress, suicidal ideation, or any other urgent condition, the Client must immediately contact an appropriate licensed professional, emergency services, or a crisis resource rather than relying on the Coach.
 
-## Not Legal Advice
+### Not Legal Advice
 
 The Services provided under this Agreement do not include legal advice or legal representation. Although the Coach may, from time to time, offer general observations that touch on legal concepts or legal dimensions of a situation, no attorney-client relationship is created by this Agreement or by any communication between Coach and Client in connection with the Services. The Client is solely responsible for obtaining advice from a qualified attorney licensed in the relevant jurisdiction before taking any action with legal consequences. The Client agrees not to rely on the Coach as legal counsel, and the Coach shall not be liable for any legal claims, losses, or consequences arising from the Client's reliance on any such observations.
 
