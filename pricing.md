@@ -15,7 +15,6 @@ header:
 
 <div class="ifc-pricing">
   <div class="ifc-section ifc-pricing-intro">
-    <h2>Choose the level of support your situation requires</h2>
     <p class="ifc-lead">Integrated Fitness Coaching is not sold as separate silos for nutrition, training, habits, emotional regulation, or intellectual development. The work is one coaching relationship, organized around the real context of your life.</p>
     <p>The packages differ by scope, complexity, live coaching cadence, and implementation support. Foundation is focused. Integrated is recommended for most serious integrated work. Intensive is for demanding seasons or higher-touch support.</p>
     <p>You do not need to know exactly which package you need before applying. These tiers show the standard support levels so you can understand the likely range of scope, cadence, and investment. After reviewing your application and intake form, I may recommend the package that seems most appropriate, suggest a brief follow-up call, or let you know that coaching does not appear appropriate for your situation.</p>
