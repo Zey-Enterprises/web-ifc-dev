@@ -18943,5 +18943,335 @@
       "epistemology",
       "reason"
     ]
+  },
+  "farvid-2014-linoleic-acid-coronary-heart-disease": {
+    "id": "farvid-2014-linoleic-acid-coronary-heart-disease",
+    "type": "journal-article",
+    "title": "Dietary Linoleic Acid and Risk of Coronary Heart Disease: A Systematic Review and Meta-Analysis of Prospective Cohort Studies",
+    "short_title": "Dietary Linoleic Acid and Coronary Heart Disease",
+    "authors": [
+      {
+        "literal": "Maryam S. Farvid"
+      },
+      {
+        "literal": "Ming Ding"
+      },
+      {
+        "literal": "An Pan"
+      },
+      {
+        "literal": "Qi Sun"
+      },
+      {
+        "literal": "Stephanie E. Chiuve"
+      },
+      {
+        "literal": "Lyn M. Steffen"
+      },
+      {
+        "literal": "Walter C. Willett"
+      },
+      {
+        "literal": "Frank B. Hu"
+      }
+    ],
+    "container_title": "Circulation",
+    "issued": {
+      "year": 2014
+    },
+    "year": 2014,
+    "volume": "130",
+    "issue": "18",
+    "pages": "1568-1578",
+    "doi": "10.1161/CIRCULATIONAHA.114.010236",
+    "doi_newtab": true,
+    "tags": [
+      "dietary-fat",
+      "food-quality"
+    ]
+  },
+  "bouvard-2015-carcinogenicity-red-processed-meat": {
+    "id": "bouvard-2015-carcinogenicity-red-processed-meat",
+    "type": "journal-article",
+    "title": "Carcinogenicity of Consumption of Red and Processed Meat",
+    "short_title": "Carcinogenicity of Red and Processed Meat",
+    "authors": [
+      {
+        "literal": "Véronique Bouvard"
+      },
+      {
+        "literal": "Dana Loomis"
+      },
+      {
+        "literal": "Kathryn Z. Guyton"
+      },
+      {
+        "literal": "Yann Grosse"
+      },
+      {
+        "literal": "Fatiha El Ghissassi"
+      },
+      {
+        "literal": "Lamia Benbrahim-Tallaa"
+      },
+      {
+        "literal": "Neela Guha"
+      },
+      {
+        "literal": "Heidi Mattock"
+      },
+      {
+        "literal": "Kurt Straif"
+      },
+      {
+        "literal": "International Agency for Research on Cancer Monograph Working Group"
+      }
+    ],
+    "container_title": "The Lancet Oncology",
+    "issued": {
+      "year": 2015
+    },
+    "year": 2015,
+    "volume": "16",
+    "issue": "16",
+    "pages": "1599-1600",
+    "doi": "10.1016/S1470-2045(15)00444-1",
+    "doi_newtab": true,
+    "tags": [
+      "protein",
+      "food-quality"
+    ]
+  },
+  "johnston-2019-unprocessed-red-meat-processed-meat-guidelines": {
+    "id": "johnston-2019-unprocessed-red-meat-processed-meat-guidelines",
+    "type": "journal-article",
+    "title": "Unprocessed Red Meat and Processed Meat Consumption: Dietary Guideline Recommendations From the Nutritional Recommendations (NutriRECS) Consortium",
+    "short_title": "Unprocessed Red Meat and Processed Meat Recommendations",
+    "authors": [
+      {
+        "literal": "Bradley C. Johnston"
+      },
+      {
+        "literal": "Dena Zeraatkar"
+      },
+      {
+        "literal": "Mi Ah Han"
+      },
+      {
+        "literal": "Robin W. M. Vernooij"
+      },
+      {
+        "literal": "Claudia Valli"
+      },
+      {
+        "literal": "Regina El Dib"
+      },
+      {
+        "literal": "Catherine Marshall"
+      },
+      {
+        "literal": "Patrick J. Stover"
+      },
+      {
+        "literal": "Susan Fairweather-Taitt"
+      },
+      {
+        "literal": "Grzegorz Wójcik"
+      },
+      {
+        "literal": "Faiz Bhatia"
+      },
+      {
+        "literal": "Russell de Souza"
+      },
+      {
+        "literal": "Carlos Brotons"
+      },
+      {
+        "literal": "Joerg J. Meerpohl"
+      },
+      {
+        "literal": "Chirag J. Patel"
+      },
+      {
+        "literal": "Benjamin Djulbegovic"
+      },
+      {
+        "literal": "Pablo Alonso-Coello"
+      },
+      {
+        "literal": "Malgorzata M. Bala"
+      },
+      {
+        "literal": "Gordon H. Guyatt"
+      }
+    ],
+    "container_title": "Annals of Internal Medicine",
+    "issued": {
+      "year": 2019
+    },
+    "year": 2019,
+    "volume": "171",
+    "issue": "10",
+    "pages": "756-764",
+    "doi": "10.7326/M19-1621",
+    "doi_newtab": true,
+    "tags": [
+      "protein",
+      "food-quality"
+    ]
+  },
+  "lozano-castellon-2022-cooking-extra-virgin-olive-oil": {
+    "id": "lozano-castellon-2022-cooking-extra-virgin-olive-oil",
+    "type": "journal-article",
+    "title": "Cooking With Extra-Virgin Olive Oil: A Mixture of Food Components to Prevent Oxidation and Degradation",
+    "short_title": "Cooking With Extra-Virgin Olive Oil",
+    "authors": [
+      {
+        "literal": "Julián Lozano-Castellón"
+      },
+      {
+        "literal": "José Fernando Rinaldi de Alvarenga"
+      },
+      {
+        "literal": "Anna Vallverdú-Queralt"
+      },
+      {
+        "literal": "Rosa M. Lamuela-Raventós"
+      }
+    ],
+    "container_title": "Trends in Food Science & Technology",
+    "issued": {
+      "year": 2022
+    },
+    "year": 2022,
+    "volume": "123",
+    "pages": "28-36",
+    "doi": "10.1016/j.tifs.2022.02.022",
+    "doi_newtab": true,
+    "tags": [
+      "dietary-fat",
+      "food-quality"
+    ]
+  },
+  "choe-2007-chemistry-deep-fat-frying-oils": {
+    "id": "choe-2007-chemistry-deep-fat-frying-oils",
+    "type": "journal-article",
+    "title": "Chemistry of Deep-Fat Frying Oils",
+    "short_title": "Chemistry of Deep-Fat Frying Oils",
+    "authors": [
+      {
+        "literal": "Eunok Choe"
+      },
+      {
+        "literal": "David B. Min"
+      }
+    ],
+    "container_title": "Journal of Food Science",
+    "issued": {
+      "year": 2007
+    },
+    "year": 2007,
+    "volume": "72",
+    "issue": "5",
+    "pages": "R77-R86",
+    "doi": "10.1111/j.1750-3841.2007.00352.x",
+    "doi_newtab": true,
+    "tags": [
+      "dietary-fat",
+      "food-quality"
+    ]
+  },
+  "santarelli-2008-processed-meat-colorectal-cancer": {
+    "id": "santarelli-2008-processed-meat-colorectal-cancer",
+    "type": "journal-article",
+    "title": "Processed Meat and Colorectal Cancer: A Review of Epidemiologic and Experimental Evidence",
+    "short_title": "Processed Meat and Colorectal Cancer",
+    "authors": [
+      {
+        "literal": "Raphaëlle L. Santarelli"
+      },
+      {
+        "literal": "Fabrice Pierre"
+      },
+      {
+        "literal": "Denis E. Corpet"
+      }
+    ],
+    "container_title": "Nutrition and Cancer",
+    "issued": {
+      "year": 2008
+    },
+    "year": 2008,
+    "volume": "60",
+    "issue": "2",
+    "pages": "131-144",
+    "doi": "10.1080/01635580701684872",
+    "doi_newtab": true,
+    "tags": [
+      "protein",
+      "dietary-fat",
+      "food-quality"
+    ]
+  },
+  "u-s-2024-fsis-bacon-food-safety": {
+    "id": "u-s-2024-fsis-bacon-food-safety",
+    "type": "webpage",
+    "title": "Bacon and Food Safety",
+    "short_title": "Bacon and Food Safety",
+    "authors": [
+      {
+        "literal": "U.S. Department of Agriculture Food Safety and Inspection Service"
+      }
+    ],
+    "organization": "U.S. Department of Agriculture Food Safety and Inspection Service",
+    "container_title": "Food Safety and Inspection Service",
+    "issued": {
+      "year": 2024
+    },
+    "year": 2024,
+    "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/meat-catfish/bacon-and-food-safety",
+    "url_newtab": true,
+    "tags": [
+      "protein",
+      "dietary-fat",
+      "food-quality"
+    ]
+  },
+  "lennerz-2021-carnivore-diet-self-reported-health": {
+    "id": "lennerz-2021-carnivore-diet-self-reported-health",
+    "type": "journal-article",
+    "title": "Behavioral Characteristics and Self-Reported Health Status among 2029 Adults Consuming a \"Carnivore Diet\"",
+    "short_title": "Self-Reported Health Status among Adults Consuming a Carnivore Diet",
+    "authors": [
+      {
+        "literal": "Belinda S. Lennerz"
+      },
+      {
+        "literal": "Jacob T. Mey"
+      },
+      {
+        "literal": "Owen H. Henn"
+      },
+      {
+        "literal": "David S. Ludwig"
+      }
+    ],
+    "container_title": "Current Developments in Nutrition",
+    "issued": {
+      "year": 2021
+    },
+    "year": 2021,
+    "volume": "5",
+    "issue": "12",
+    "pages": "nzab133",
+    "doi": "10.1093/cdn/nzab133",
+    "doi_newtab": true,
+    "tags": [
+      "protein",
+      "dietary-fat",
+      "food-quality",
+      "calorie-balance"
+    ]
   }
 }
