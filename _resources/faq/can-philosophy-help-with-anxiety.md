@@ -3,8 +3,14 @@ title: "Can philosophy help with anxiety?"
 date: 2026-04-25
 last_modified_at: 2026-04-25
 resource_type: faq
-redirect_to: "/resources/faq/#can-philosophy-help-with-anxiety"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#can-philosophy-help-with-anxiety
+      class: btn--primary
 domains:
   - psychology
   - philosophy
@@ -15,6 +21,11 @@ tags:
   - values
   - ethics
   - reason
+citations:
+  - label: "1"
+    id: rand-1982-philosophy-who-needs-it
+  - label: "2"
+    id: sep-2024-practical-reason
 ---
 
 Yes, but not necessarily by replacing therapy or pretending anxiety is just a bad argument. Philosophy can help with anxiety when the anxiety is intensified by unclear values, false premises, catastrophizing, or confusion about what is and is not under your control.

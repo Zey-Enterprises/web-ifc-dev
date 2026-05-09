@@ -3,8 +3,14 @@ title: "Do I need to count calories to lose fat?"
 date: 2026-04-24
 last_modified_at: 2026-04-24
 resource_type: faq
-redirect_to: "/resources/faq/#do-i-need-to-count-calories-to-lose-fat"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#do-i-need-to-count-calories-to-lose-fat
+      class: btn--primary
 domains:
   - diet
   - psychology
@@ -18,6 +24,9 @@ tags:
   - adherence
   - behavior-change
   - meal-structure
+citations:
+  - label: "1"
+    id: butryn-2007-consistent-self-monitoring-of-weight
 ---
 
 No, but you do need some reliable way to control intake. Counting calories is one tool. It is not the only tool.

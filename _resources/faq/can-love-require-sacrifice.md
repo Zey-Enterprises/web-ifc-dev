@@ -3,8 +3,14 @@ title: "Can love require sacrifice?"
 date: 2026-04-25
 last_modified_at: 2026-04-26
 resource_type: faq
-redirect_to: "/resources/faq/#can-love-require-sacrifice"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#can-love-require-sacrifice
+      class: btn--primary
 domains:
   - psychology
   - philosophy
@@ -17,6 +23,11 @@ tags:
   - values
   - ethics
   - reason
+citations:
+  - label: "1"
+    id: rand-1964-virtue-of-selfishness
+  - label: "2"
+    id: smith-2006-ayn-rands-normative-ethics
 ---
 
 No. Love does not require {% include glossary.html id="sacrifice" %}. Love can require effort, cost, patience, inconvenience, courage, and difficult tradeoffs, but those are not sacrifices when they are made for a person who is a real {% include glossary.html id="values" text="value" %} to you.

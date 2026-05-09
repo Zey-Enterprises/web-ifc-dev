@@ -2,6 +2,9 @@
 {% assign listing_path = include.target_path %}
 {% if listing_path == nil or listing_path == "" %}
   {% assign listing_path = "/resources/" | relative_url %}
+  {% if document.resource_type == "faq" %}
+    {% assign listing_path = "/resources/faq/" | relative_url %}
+  {% endif %}
 {% endif %}
 
 {% assign has_taxonomy = false %}

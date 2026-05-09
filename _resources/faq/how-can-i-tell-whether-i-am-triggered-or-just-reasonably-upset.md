@@ -3,8 +3,14 @@ title: "How can I tell whether I am triggered or just reasonably upset?"
 date: 2026-04-25
 last_modified_at: 2026-04-27
 resource_type: faq
-redirect_to: "/resources/faq/#how-can-i-tell-whether-i-am-triggered-or-just-reasonably-upset"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#how-can-i-tell-whether-i-am-triggered-or-just-reasonably-upset
+      class: btn--primary
 domains:
   - psychology
 concerns:
@@ -20,6 +26,17 @@ tags:
   - emotional-regulation
   - relationships
   - reason
+citations:
+  - label: "1"
+    id: gross-2015-emotion-regulation-current-status-and-future-prospects
+  - label: "2"
+    id: linehan-2015-dbt-skills-training-manual
+  - label: "3"
+    id: campbell-2021-from-triggered-to-tranquil
+  - label: "4"
+    id: levine-heller-2010-attached
+  - label: "5"
+    id: brown-2021-atlas-of-the-heart
 ---
 
 Both can be true: You can be {% include glossary.html id="trigger" text="triggered" %} and also responding to something real. A trigger means some present cue has activated older learning, unresolved pain, fear, shame, or protective patterns. It does not automatically mean your current interpretation is false. It means the present event may be mixed with the emotional weight of the past, so slower thinking is needed.

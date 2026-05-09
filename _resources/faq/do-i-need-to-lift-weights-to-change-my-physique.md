@@ -3,8 +3,14 @@ title: "Do I need to lift weights to change my physique?"
 date: 2026-04-24
 last_modified_at: 2026-04-26
 resource_type: faq
-redirect_to: "/resources/faq/#do-i-need-to-lift-weights-to-change-my-physique"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#do-i-need-to-lift-weights-to-change-my-physique
+      class: btn--primary
 domains:
   - diet
   - physical-exercise
@@ -17,6 +23,11 @@ tags:
   - strength-training
   - hypertrophy
   - body-composition
+citations:
+  - label: "1"
+    id: morton-2015-nutritional-interventions-to-augment-resistance-training-induced-skeletal-muscle-hypertrophy
+  - label: "2"
+    id: ratamess-2009-acsm-progression-resistance-training
 ---
 
 If your goal is only to reduce scale weight, you do not strictly need to lift weights. But almost nobody wants weight loss in that abstract sense. Most people want fat loss, a leaner shape, better proportions, more visible muscle, or a body that looks and performs more athletically. For that, resistance training is one of the highest-leverage tools available.

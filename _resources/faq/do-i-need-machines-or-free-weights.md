@@ -3,8 +3,14 @@ title: "Do I need machines or free weights?"
 date: 2026-04-24
 last_modified_at: 2026-04-26
 resource_type: faq
-redirect_to: "/resources/faq/#do-i-need-machines-or-free-weights"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#do-i-need-machines-or-free-weights
+      class: btn--primary
 domains:
   - physical-exercise
 concerns:

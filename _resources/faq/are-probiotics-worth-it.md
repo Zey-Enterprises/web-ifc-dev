@@ -3,8 +3,14 @@ title: "Are probiotics worth it?"
 date: 2026-04-24
 last_modified_at: 2026-04-25
 resource_type: faq
-redirect_to: "/resources/faq/#are-probiotics-worth-it"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#are-probiotics-worth-it
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -15,6 +21,9 @@ tags:
   - food-quality
   - dietary-supplements
   - fiber
+citations:
+  - label: "1"
+    id: guarner-2023-wgo-probiotics-prebiotics
 ---
 
 Sometimes, but not as a vague gut-health insurance policy. Probiotic effects are strain-specific, dose-specific, and condition-specific. A product that helps one issue may do nothing for another. Guidelines on probiotics emphasize matching specific strains to specific indications and being careful in people with serious illness or compromised immunity.{% include citation.html id="guarner-2023-wgo-probiotics-prebiotics" label="1" %}

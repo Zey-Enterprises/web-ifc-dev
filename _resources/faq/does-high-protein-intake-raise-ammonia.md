@@ -3,8 +3,14 @@ title: "Does high protein intake raise ammonia?"
 date: 2026-04-24
 last_modified_at: 2026-04-26
 resource_type: faq
-redirect_to: "/resources/faq/#does-high-protein-intake-raise-ammonia"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#does-high-protein-intake-raise-ammonia
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -13,6 +19,11 @@ concerns:
   - physical-health
 tags:
   - protein
+citations:
+  - label: "1"
+    id: jager-2017-issn-position-stand-protein-and-exercise
+  - label: "2"
+    id: griffin-2019-high-protein-diet-liver-disease-ammonia-metabolism
 ---
 
 In healthy people, normal and moderately high protein intakes do not usually cause ammonia to accumulate. Amino acid metabolism produces nitrogen waste, but the liver's {% include glossary.html id="urea-cycle" text="urea cycle" %} converts ammonia into urea so it can be excreted.

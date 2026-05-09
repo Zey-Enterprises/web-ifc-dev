@@ -3,8 +3,14 @@ title: "How can I honor my feelings while still choosing rationally?"
 date: 2026-04-24
 last_modified_at: 2026-04-27
 resource_type: faq
-redirect_to: "/resources/faq/#how-can-i-honor-my-feelings-while-still-choosing-rationally"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#how-can-i-honor-my-feelings-while-still-choosing-rationally
+      class: btn--primary
 domains:
   - psychology
   - philosophy
@@ -19,6 +25,25 @@ tags:
   - values
   - ethics
   - reason
+citations:
+  - label: "1"
+    id: rand-1990-introduction-to-objectivist-epistemology
+  - label: "2"
+    id: peikoff-1991-objectivism-philosophy-of-ayn-rand
+  - label: "3"
+    id: linehan-2015-dbt-skills-training-manual
+  - label: "4"
+    id: brown-2021-atlas-of-the-heart
+  - label: "5"
+    id: brown-2021-atlas-of-the-heart
+  - label: "6"
+    id: lerner-1985-dance-of-anger
+  - label: "7"
+    id: campbell-2005-saying-whats-real
+  - label: "8"
+    id: rosenberg-2003-nonviolent-communication
+  - label: "9"
+    id: scott-2017-radical-candor
 ---
 
 Honoring your feelings does not mean obeying every feeling. It means treating feelings as real psychological data about your inner state, while recognizing that feelings are not automatically final judgments about reality.

@@ -3,8 +3,14 @@ title: "Can caffeine help training or fat loss?"
 date: 2026-04-24
 last_modified_at: 2026-04-24
 resource_type: faq
-redirect_to: "/resources/faq/#can-caffeine-help-training-or-fat-loss"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#can-caffeine-help-training-or-fat-loss
+      class: btn--primary
 domains:
   - diet
   - physical-exercise
@@ -18,6 +24,9 @@ tags:
   - recovery
   - dietary-supplements
   - endurance
+citations:
+  - label: "1"
+    id: spriet-2014-exercise-and-sport-performance-with-low-doses-of-caffeine
 ---
 
 Caffeine can help training performance for many people, especially when it improves alertness, perceived effort, power, or endurance. It is not magic, and more is not automatically better.{% include citation.html id="spriet-2014-exercise-and-sport-performance-with-low-doses-of-caffeine" label="1" %}

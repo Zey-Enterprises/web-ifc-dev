@@ -3,8 +3,14 @@ title: "Are people's interests naturally in conflict?"
 date: 2026-04-25
 last_modified_at: 2026-04-25
 resource_type: faq
-redirect_to: "/resources/faq/#are-peoples-interests-naturally-in-conflict"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#are-peoples-interests-naturally-in-conflict
+      class: btn--primary
 domains:
   - psychology
   - philosophy
@@ -19,6 +25,11 @@ tags:
   - ethics
   - reason
   - epistemology
+citations:
+  - label: "1"
+    id: rand-1964-virtue-of-selfishness
+  - label: "2"
+    id: smith-2006-ayn-rands-normative-ethics
 ---
 
 No. People's genuine {% include glossary.html id="values" text="values" %} and interests are _not_ naturally in conflict. They can appear to conflict in a narrow context, especially when people want the same exclusive thing, but human life is not fundamentally dog-eat-dog. In the broader context, rational people prosper through production, trade, friendship, love, learning, and voluntary cooperation, _not_ predation.{% include citation.html id="rand-1964-virtue-of-selfishness" label="1" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html id="smith-2006-ayn-rands-normative-ethics" label="2" %}

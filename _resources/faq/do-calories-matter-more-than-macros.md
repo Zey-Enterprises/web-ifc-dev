@@ -3,8 +3,14 @@ title: "Do calories matter more than macros?"
 date: 2026-04-24
 last_modified_at: 2026-04-26
 resource_type: faq
-redirect_to: "/resources/faq/#do-calories-matter-more-than-macros"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#do-calories-matter-more-than-macros
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -17,6 +23,9 @@ tags:
   - protein
   - carbohydrates
   - dietary-fat
+citations:
+  - label: "1"
+    id: helms-2014-a-systematic-review-of-dietary-protein-during-caloric-restriction-in-resistance-trained-lean-athletes
 ---
 
 For scale-weight change, {% include glossary.html id="calorie-balance" text="calories matter most" %}. For body-composition quality, training performance, hunger, and {% include glossary.html id="recovery" %}, {% include glossary.html id="macronutrients" text="macros" %} matter a lot. The mistake is treating calories and macros as rivals. They answer different questions.

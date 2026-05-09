@@ -3,8 +3,14 @@ title: "Do I need cardio for fat loss?"
 date: 2026-04-24
 last_modified_at: 2026-04-26
 resource_type: faq
-redirect_to: "/resources/faq/#do-i-need-cardio-for-fat-loss"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#do-i-need-cardio-for-fat-loss
+      class: btn--primary
 domains:
   - diet
   - physical-exercise
@@ -16,6 +22,9 @@ tags:
   - calorie-balance
   - recovery
   - endurance
+citations:
+  - label: "1"
+    id: bull-2020-who-physical-activity-guidelines
 ---
 
 No. Fat loss can happen without formal "cardio" if {% include glossary.html id="calorie-balance" %} is managed. Cardio can be useful for increasing energy expenditure, improving conditioning, supporting health, training for a specific skill or event, general enjoyment and recreation, and sometimes improving mood. It is not a separate fat-loss requirement.

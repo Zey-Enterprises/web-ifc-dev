@@ -3,8 +3,14 @@ title: "Can moral certainty be rational?"
 date: 2026-04-25
 last_modified_at: 2026-04-25
 resource_type: faq
-redirect_to: "/resources/faq/#can-moral-certainty-be-rational"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#can-moral-certainty-be-rational
+      class: btn--primary
 domains:
   - psychology
   - philosophy
@@ -16,6 +22,11 @@ tags:
   - ethics
   - reason
   - epistemology
+citations:
+  - label: "1"
+    id: rand-1990-introduction-to-objectivist-epistemology
+  - label: "2"
+    id: peikoff-1991-objectivism-philosophy-of-ayn-rand
 ---
 
 Yes, if {% include glossary.html id="certainty" %} is earned by evidence and {% include glossary.html id="context" %}. Moral certainty is irrational when it becomes dogmatism, image management, or refusal to consider relevant facts. But uncertainty is not automatically more rational. Sometimes refusing to judge is just another way of evading what the evidence already shows.

@@ -3,8 +3,14 @@ title: "How can I protect my mind from bad intellectual environments?"
 date: 2026-04-25
 last_modified_at: 2026-05-06
 resource_type: faq
-redirect_to: "/resources/faq/#how-can-i-protect-my-mind-from-bad-intellectual-environments"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#how-can-i-protect-my-mind-from-bad-intellectual-environments
+      class: btn--primary
 domains:
   - psychology
   - philosophy
@@ -15,6 +21,11 @@ tags:
   - values
   - ethics
   - reason
+citations:
+  - label: "1"
+    id: rand-1990-introduction-to-objectivist-epistemology
+  - label: "2"
+    id: peikoff-1991-objectivism-philosophy-of-ayn-rand
 ---
 
 Protect your mind by choosing inputs that reward evidence, clarity, {% include glossary.html id="independence" %}, honesty, and long-range {% include glossary.html id="values" %}. Your intellectual environment affects what feels normal, admirable, discussable, and even thinkable over time.

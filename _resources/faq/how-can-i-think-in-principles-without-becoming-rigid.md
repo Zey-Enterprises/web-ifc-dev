@@ -3,8 +3,14 @@ title: "How can I think in principles without becoming rigid?"
 date: 2026-04-25
 last_modified_at: 2026-04-27
 resource_type: faq
-redirect_to: "/resources/faq/#how-can-i-think-in-principles-without-becoming-rigid"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#how-can-i-think-in-principles-without-becoming-rigid
+      class: btn--primary
 domains:
   - psychology
   - philosophy
@@ -16,6 +22,13 @@ tags:
   - ethics
   - reason
   - epistemology
+citations:
+  - label: "1"
+    id: rand-1990-introduction-to-objectivist-epistemology
+  - label: "2"
+    id: peikoff-1991-objectivism-philosophy-of-ayn-rand
+  - label: "3"
+    id: rand-1964-virtue-of-selfishness
 ---
 
 Thinking in principles does not mean treating context as irrelevant. It means identifying the causal relationships that make action succeed or fail. A principle is an abstract statement about how facts connect: what promotes life, trust, freedom, justice, health, training progress, honest communication, or long-range {% include glossary.html id="happiness" %}. The point is not to memorize slogans. The point is to understand reality well enough that you do not have to re-solve every concrete from scratch.{% include citation.html id="rand-1990-introduction-to-objectivist-epistemology" label="1" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html id="peikoff-1991-objectivism-philosophy-of-ayn-rand" label="2" %}

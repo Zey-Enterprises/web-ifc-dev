@@ -3,8 +3,14 @@ title: "Does a good life require one central purpose?"
 date: 2026-04-25
 last_modified_at: 2026-04-25
 resource_type: faq
-redirect_to: "/resources/faq/#does-a-good-life-require-one-central-purpose"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#does-a-good-life-require-one-central-purpose
+      class: btn--primary
 domains:
   - psychology
   - philosophy
@@ -16,6 +22,11 @@ tags:
   - values
   - ethics
   - reason
+citations:
+  - label: "1"
+    id: rand-1964-virtue-of-selfishness
+  - label: "2"
+    id: peikoff-1991-objectivism-philosophy-of-ayn-rand
 ---
 
 Yes, in the Objectivist sense—but not in the cramped sense of having one obsessive passion that crowds out the rest of life.

@@ -3,8 +3,14 @@ title: "How does alcohol affect fat loss, muscle gain, and recovery?"
 date: 2026-04-23
 last_modified_at: 2026-04-25
 resource_type: faq
-redirect_to: "/resources/faq/#how-does-alcohol-affect-fat-loss-muscle-gain-and-recovery"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#alcohol-fat-loss-muscle-gain-recovery
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -19,6 +25,11 @@ tags:
   - adherence
   - recovery
   - hydration
+citations:
+  - label: "1"
+    id: breslow-2020-alcohol-dietary-intake
+  - label: "2"
+    id: barnes-2014-alcohol
 ---
 
 {% include glossary.html id="alcohol" text="Alcohol" %} can fit into a diet, but it is not a neutral input. It provides calories, lowers inhibition, can displace {% include glossary.html id="protein" %} or nutrient-dense food, and often makes the surrounding food decisions more difficult. For fat loss, the biggest issue is usually not a magical fat-storage pathway. It is that alcohol adds energy, is metabolized preferentially, and often leads to dietary and activity choices less consistent with regulating {% include glossary.html id="calorie-balance" %} effectively.{% include citation.html id="breslow-2020-alcohol-dietary-intake" label="1" %}

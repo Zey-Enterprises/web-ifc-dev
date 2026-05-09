@@ -3,8 +3,14 @@ title: "Do high-DIAAS proteins build more muscle?"
 date: 2026-04-24
 last_modified_at: 2026-04-26
 resource_type: faq
-redirect_to: "/resources/faq/#do-high-diaas-proteins-build-more-muscle"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#do-high-diaas-proteins-build-more-muscle
+      class: btn--primary
 domains:
   - diet
   - physical-exercise
@@ -16,6 +22,9 @@ tags:
   - protein
   - food-quality
   - hypertrophy
+citations:
+  - label: "1"
+    id: herreman-2020-comprehensive-overview-protein-quality-diaas
 ---
 
 Not automatically. A high {% include glossary.html id="diaas" %} means a protein source is strong at supplying digestible {% include glossary.html id="indispensable-amino-acids" %}. That is useful, but muscle gain still requires enough total protein, enough calories (or at least not too severe a deficit), progressive training, and recovery.

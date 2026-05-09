@@ -3,8 +3,14 @@ title: "Do carbs make you gain fat?"
 date: 2026-04-23
 last_modified_at: 2026-04-26
 resource_type: faq
-redirect_to: "/resources/faq/#do-carbs-make-you-gain-fat"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#do-carbs-make-you-gain-fat
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -15,6 +21,9 @@ tags:
   - calorie-balance
   - carbohydrates
   - body-composition
+citations:
+  - label: "1"
+    id: hall-2015-fat-vs-carb-restriction
 ---
 
 No. {% include glossary.html id="carbohydrates" text="Carbs" %} do not bypass {% include glossary.html id="calorie-balance" %}. Fat gain requires sustained energy intake above expenditure over time. A higher-carb diet can cause a quick scale increase because carbohydrate is stored as {% include glossary.html id="glycogen" %} with water, but that is not the same thing as gaining body fat.

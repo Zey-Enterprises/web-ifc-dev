@@ -3,8 +3,14 @@ title: "Can diet soda fit a fat-loss plan?"
 date: 2026-04-23
 last_modified_at: 2026-04-25
 resource_type: faq
-redirect_to: "/resources/faq/#can-diet-soda-fit-a-fat-loss-plan"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#can-diet-soda-fit-a-fat-loss-plan
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -17,6 +23,11 @@ tags:
   - calorie-balance
   - food-quality
   - adherence
+citations:
+  - label: "1"
+    id: fda-2025-aspartame-and-other-sweeteners-food
+  - label: "2"
+    id: miller-2014-low-calorie-sweeteners-body-weight-composition
 ---
 
 Usually, yes. Diet soda is not a health food, but it can be a useful adherence tool if it replaces sugar-sweetened beverages and does not lead you to eat more elsewhere. From a body-composition standpoint, the important comparison is the whole pattern: a zero-calorie drink that helps you stay within {% include glossary.html id="calorie-balance" %} is often better than a regular soda that adds calories you did not plan.

@@ -3,8 +3,14 @@ title: "How can I tell whether my independence is healthy or avoidant?"
 date: 2026-04-25
 last_modified_at: 2026-04-27
 resource_type: faq
-redirect_to: "/resources/faq/#how-can-i-tell-whether-my-independence-is-healthy-or-avoidant"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#how-can-i-tell-whether-my-independence-is-healthy-or-avoidant
+      class: btn--primary
 domains:
   - psychology
   - philosophy
@@ -20,6 +26,19 @@ tags:
   - relationships
   - attachment
   - values
+citations:
+  - label: "1"
+    id: rand-1964-virtue-of-selfishness
+  - label: "2"
+    id: smith-2006-ayn-rands-normative-ethics
+  - label: "3"
+    id: fraley-2000-adult-romantic-attachment
+  - label: "4"
+    id: levine-heller-2010-attached
+  - label: "5"
+    id: rosenberg-2003-nonviolent-communication
+  - label: "6"
+    id: brown-2021-atlas-of-the-heart
 ---
 
 Healthy independence is not isolation. It is the capacity to think, choose, act, and take responsibility for your life by your own judgment. That can include asking for help, trading value for value, learning from experts, loving someone deeply, building a family, working on a team, or relying on a trusted friend. None of that negates independence. Dependence means needing someone else to substitute for your judgment, self-responsibility, or agency. Interdependence means two capable people relating by choice, mutual benefit, honesty, and respect.{% include citation.html id="rand-1964-virtue-of-selfishness" label="1" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html id="smith-2006-ayn-rands-normative-ethics" label="2" %}

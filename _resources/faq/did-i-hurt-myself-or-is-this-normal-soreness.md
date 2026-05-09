@@ -3,8 +3,14 @@ title: "Did I hurt myself, or is this normal soreness?"
 date: 2026-04-24
 last_modified_at: 2026-04-26
 resource_type: faq
-redirect_to: "/resources/faq/#did-i-hurt-myself-or-is-this-normal-soreness"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#did-i-hurt-myself-or-is-this-normal-soreness
+      class: btn--primary
 domains:
   - physical-exercise
 concerns:

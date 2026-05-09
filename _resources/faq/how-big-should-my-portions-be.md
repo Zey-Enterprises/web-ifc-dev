@@ -3,8 +3,14 @@ title: "How big should my portions be?"
 date: 2026-04-24
 last_modified_at: 2026-04-26
 resource_type: faq
-redirect_to: "/resources/faq/#how-big-should-my-portions-be"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#how-big-should-my-portions-be
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -16,6 +22,9 @@ tags:
   - protein
   - meal-structure
   - adherence
+citations:
+  - label: "1"
+    id: english-2022-portion-size-ingestive-frequency
 ---
 
 Portions should match your goal, but portion size is not just about volume. A huge bowl of broccoli may contain fewer calories than a small handful of cashews. The actionable question is not only "How much food?", but "How much energy, protein, fiber, and satiety does this portion provide?".

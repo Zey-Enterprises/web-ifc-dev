@@ -3,8 +3,14 @@ title: "Can coffee and tea count toward hydration?"
 date: 2026-04-23
 last_modified_at: 2026-04-25
 resource_type: faq
-redirect_to: "/resources/faq/#can-coffee-and-tea-count-toward-hydration"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#can-coffee-and-tea-count-toward-hydration
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -18,6 +24,9 @@ tags:
   - recovery
   - hydration
   - dietary-supplements
+citations:
+  - label: "1"
+    id: popkin-2010-water-hydration-and-health
 ---
 
 Yes. Coffee and tea contribute fluid. {% include glossary.html id="caffeine" text="Caffeine" %} can have a mild diuretic effect, especially in people who are not habituated, but the water in the drink usually more than offsets that in ordinary servings.{% include citation.html id="popkin-2010-water-hydration-and-health" label="1" %} In practical terms, unsweetened coffee and tea count toward {% include glossary.html id="hydration" %} for most people.

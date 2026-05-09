@@ -3,8 +3,14 @@ title: "Can I lose fat and gain muscle at the same time?"
 date: 2026-04-24
 last_modified_at: 2026-04-25
 resource_type: faq
-redirect_to: "/resources/faq/#can-i-lose-fat-and-gain-muscle-at-the-same-time"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#can-i-lose-fat-and-gain-muscle-at-the-same-time
+      class: btn--primary
 domains:
   - diet
   - physical-exercise
@@ -20,6 +26,9 @@ tags:
   - strength-training
   - hypertrophy
   - recovery
+citations:
+  - label: "1"
+    id: longland-2016-higher-compared-with-lower-dietary-protein-during-an-energy-deficit-combined-with-intense-exercise-promotes-greater-lean-mass-gain-and-fat-mass-loss
 ---
 
 Yes, especially if you are newer to lifting, returning after time off, carrying more body fat, or improving training and {% include glossary.html id="protein" %} intake from a low baseline. This is usually called body recomposition: losing fat while gaining or preserving lean mass. It is less likely if you are already lean, well-trained, and dieting aggressively.

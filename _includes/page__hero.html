@@ -81,7 +81,11 @@
   {%- endif -%}
 {%- endcapture -%}
 
-{%- assign overlay_lead = page.tagline | default: page.excerpt -%}
+{%- if page.resource_type == "faq" -%}
+  {%- assign overlay_lead = page.tagline -%}
+{%- else -%}
+  {%- assign overlay_lead = page.tagline | default: page.excerpt -%}
+{%- endif -%}
 
 {%- if hero.overlay_color or overlay_image or has_carousel -%}
   <div

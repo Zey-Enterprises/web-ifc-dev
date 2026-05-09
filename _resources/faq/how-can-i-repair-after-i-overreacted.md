@@ -3,8 +3,14 @@ title: "How can I repair after I overreacted?"
 date: 2026-04-25
 last_modified_at: 2026-05-06
 resource_type: faq
-redirect_to: "/resources/faq/#how-can-i-repair-after-i-overreacted"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#how-can-i-repair-after-i-overreacted
+      class: btn--primary
 domains:
   - psychology
 concerns:
@@ -20,6 +26,15 @@ tags:
   - relationships
   - boundaries
   - communication
+citations:
+  - label: "1"
+    id: lerner-2017-why-wont-you-apologize
+  - label: "2"
+    id: campbell-2005-saying-whats-real
+  - label: "3"
+    id: campbell-2021-from-triggered-to-tranquil
+  - label: "4"
+    id: brown-2012-daring-greatly
 ---
 
 Repair starts with owning the overreaction before explaining the trigger. The other person needs to know you recognize what happened and understand its impact. Accountability comes before context.
@@ -32,6 +47,6 @@ Then slow down enough to become curious. What landed badly? What did the other p
 
 Repair is also behavioral. If the same rupture keeps happening, apologies eventually stop restoring trust. Identify the prevention step. Maybe you need a pause, more sleep, food before difficult conversations, less alcohol, a written list, clearer boundaries, a calmer time of day for difficult topics, or more direct communication earlier before resentment builds. Sometimes the most meaningful apology is visible change.
 
-It is also important not to collapse into shame. "I overreacted." is different from "I am irredeemable.". Excessive self-condemnation can become another way of centering the focus on yourself instead of repairing the relationship. Stay accountable, grounded, and focused on what helps restore honesty, safety, and connection.{% include citation.html id="brown-2012-daring-greatly" label="3" %}
+It is also important not to collapse into shame. "I overreacted." is different from "I am irredeemable.". Excessive self-condemnation can become another way of centering the focus on yourself instead of repairing the relationship. Stay accountable, grounded, and focused on what helps restore honesty, safety, and connection.{% include citation.html id="brown-2012-daring-greatly" label="4" %}
 
 If overreactions are frequent, frightening, emotionally abusive, physically unsafe, or consistently outside your ability to regulate, get qualified help. Repair is a skill, and some people were never taught it clearly.

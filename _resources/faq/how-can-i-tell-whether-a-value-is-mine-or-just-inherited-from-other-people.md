@@ -3,8 +3,14 @@ title: "How can I tell whether a value is mine or just inherited from other peop
 date: 2026-04-25
 last_modified_at: 2026-04-27
 resource_type: faq
-redirect_to: "/resources/faq/#how-can-i-tell-whether-a-value-is-mine-or-just-inherited-from-other-people"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#how-can-i-tell-whether-a-value-is-mine-or-just-inherited-from-other-people
+      class: btn--primary
 domains:
   - psychology
   - philosophy
@@ -14,6 +20,15 @@ tags:
   - values
   - ethics
   - reason
+citations:
+  - label: "1"
+    id: rand-1964-virtue-of-selfishness
+  - label: "2"
+    id: peikoff-1991-objectivism-philosophy-of-ayn-rand
+  - label: "3"
+    id: brown-2021-atlas-of-the-heart
+  - label: "4"
+    id: campbell-2005-saying-whats-real
 ---
 
 You can tell a value is truly yours when you can explain why it matters to your life, understand its costs and tradeoffs, and continue choosing it without needing constant permission, applause, or pressure from other people. A borrowed value often survives on inertia, guilt, fear, identity signaling, or the wish to belong.

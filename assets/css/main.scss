@@ -1557,6 +1557,14 @@ body {
   height: auto;
 }
 
+.ifc-resource-browser__footer-action {
+  margin: 2rem 0 0;
+}
+
+.ifc-resource-browser__footer-action[hidden] {
+  display: none;
+}
+
 .ifc-active-filters {
   display: flex;
   flex-wrap: wrap;
@@ -2117,6 +2125,44 @@ body.ifc-resource-browser--panel-open {
   box-shadow:
     0 0 0 3px rgba(77, 166, 223, 0.14),
     0 16px 38px rgba(18, 33, 44, 0.08);
+}
+
+.ifc-faq-directory {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.ifc-faq-directory__group {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.ifc-faq-directory__group h3 {
+  margin: 0;
+  color: var(--ifc-muted);
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.ifc-faq-directory__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.85rem;
+}
+
+.ifc-faq-directory__link {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.ifc-faq-directory__meta {
+  color: var(--ifc-muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .ifc-pricing {
@@ -2988,16 +3034,22 @@ body.ifc-resource-browser--panel-open {
 }
 
 .double-icon-button-shell--left {
+  display: flex;
+  justify-content: flex-start;
   margin-left: 0;
   margin-right: 0;
 }
 
 .double-icon-button-shell--center {
+  display: flex;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
 
 .double-icon-button-shell--right {
+  display: flex;
+  justify-content: flex-end;
   margin-left: auto;
   margin-right: 0;
 }

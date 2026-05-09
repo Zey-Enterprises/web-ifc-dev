@@ -3,8 +3,14 @@ title: "Are seed oils unhealthy?"
 date: 2026-04-24
 last_modified_at: 2026-04-24
 resource_type: faq
-redirect_to: "/resources/faq/#are-seed-oils-unhealthy"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#are-seed-oils-unhealthy
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -16,6 +22,11 @@ tags:
   - calorie-balance
   - dietary-fat
   - food-quality
+citations:
+  - label: "1"
+    id: u-s-2020-dietary-guidelines-for-americans-2020-2025-ninth-edition
+  - label: "2"
+    id: american-2021-saturated-fat
 ---
 
 Seed oils are not automatically unhealthy, but the question deserves more nuance than either "toxic sludge" or "nothing to see here". Seed oils are relatively new in the human diet at their current scale, so caution is not irrational. At the same time, the stronger human evidence does not support panic about ordinary intake, and many studies associate replacing some {% include glossary.html id="saturated-fat" %} with unsaturated fats with better cardiovascular markers or outcomes.{% include citation.html id="u-s-2020-dietary-guidelines-for-americans-2020-2025-ninth-edition" label="1" %}

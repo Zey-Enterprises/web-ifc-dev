@@ -3,8 +3,14 @@ title: "Do I need rest days?"
 date: 2026-04-24
 last_modified_at: 2026-04-26
 resource_type: faq
-redirect_to: "/resources/faq/#do-i-need-rest-days"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#do-i-need-rest-days
+      class: btn--primary
 domains:
   - physical-exercise
 concerns:
@@ -18,6 +24,11 @@ tags:
   - recovery
   - endurance
   - fatigue
+citations:
+  - label: "1"
+    id: abd-elfattah-2015-physical-and-cognitive-consequences-of-fatigue
+  - label: "2"
+    id: ratamess-2009-acsm-progression-resistance-training
 ---
 
 Yes, but a rest day does not have to mean doing nothing. It means reducing training stress enough that your body can adapt, performance can rebound, and your joints, connective tissues, nervous system, and motivation are not constantly being asked for more.

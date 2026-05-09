@@ -3,8 +3,14 @@ title: "Do I need a refeed day or diet break?"
 date: 2026-04-24
 last_modified_at: 2026-04-26
 resource_type: faq
-redirect_to: "/resources/faq/#do-i-need-a-refeed-day-or-diet-break"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#do-i-need-a-refeed-day-or-diet-break
+      class: btn--primary
 domains:
   - diet
   - psychology
@@ -18,6 +24,9 @@ tags:
   - adherence
   - recovery
   - meal-structure
+citations:
+  - label: "1"
+    id: trexler-2014-metabolic-adaptation-to-weight-loss
 ---
 
 Not always. Refeed days and diet breaks are tools, not requirements. They are most useful when dieting fatigue, hunger, food preoccupation, training performance, mood, or psychological pressure have accumulated enough that continuing the same deficit is becoming less productive.

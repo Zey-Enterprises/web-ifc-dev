@@ -3,8 +3,14 @@ title: "Do I need to eat right after a workout?"
 date: 2026-04-24
 last_modified_at: 2026-04-24
 resource_type: faq
-redirect_to: "/resources/faq/#do-i-need-to-eat-right-after-a-workout"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#do-i-need-to-eat-right-after-a-workout
+      class: btn--primary
 domains:
   - diet
   - physical-exercise
@@ -18,6 +24,9 @@ tags:
   - carbohydrates
   - recovery
   - meal-structure
+citations:
+  - label: "1"
+    id: mamerow-2014-dietary-protein-distribution-positively-influences-24-h-muscle-protein-synthesis-in-healthy-adults
 ---
 
 Usually, no. You do not need to sprint to a shake the second your last set ends. What matters most is your total daily protein, total calories, and overall meal distribution.

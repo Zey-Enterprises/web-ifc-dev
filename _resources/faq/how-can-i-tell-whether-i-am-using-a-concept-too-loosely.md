@@ -3,8 +3,14 @@ title: "How can I tell whether I am using a concept too loosely?"
 date: 2026-04-25
 last_modified_at: 2026-04-27
 resource_type: faq
-redirect_to: "/resources/faq/#how-can-i-tell-whether-i-am-using-a-concept-too-loosely"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#how-can-i-tell-whether-i-am-using-a-concept-too-loosely
+      class: btn--primary
 domains:
   - philosophy
 concerns:
@@ -14,6 +20,15 @@ tags:
   - ethics
   - reason
   - epistemology
+citations:
+  - label: "1"
+    id: rand-1990-introduction-to-objectivist-epistemology
+  - label: "2"
+    id: peikoff-1991-objectivism-philosophy-of-ayn-rand
+  - label: "3"
+    id: rand-1964-virtue-of-selfishness
+  - label: "4"
+    id: smith-2006-ayn-rands-normative-ethics
 ---
 
 You are using a {% include glossary.html id="concept" text="concept" %} too loosely when it starts covering cases that need to be distinguished.

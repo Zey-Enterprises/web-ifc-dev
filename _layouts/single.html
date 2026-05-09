@@ -81,6 +81,9 @@ layout: default
             </nav>
           </aside>
         {% endif %}
+        {% if page.resource_type == "faq" and has_overlay_hero %}
+          <h2 class="page__title ifc-faq-detail__title">{{ page.title }}</h2>
+        {% endif %}
         <div itemprop="text">
           {{ content }}
           {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
@@ -122,6 +125,26 @@ layout: default
       {% endif %}
     {% endif %}
   </article>
+
+  {% if page.resource_type == "faq" %}
+    {%- assign faq_answer_text = content | markdownify | replace: "</p>", "</p> " | replace: "</li>", "</li> " | replace: "<br>", " " | replace: "<br />", " " | strip_html | strip_newlines | replace: "  ", " " | replace: "  ", " " | strip -%}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": {{ page.title | jsonify }},
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": {{ faq_answer_text | jsonify }}
+            }
+          }
+        ]
+      }
+    </script>
+  {% endif %}
 
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}

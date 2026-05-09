@@ -3,8 +3,14 @@ title: "Do I need creatine?"
 date: 2026-04-23
 last_modified_at: 2026-04-26
 resource_type: faq
-redirect_to: "/resources/faq/#do-i-need-creatine"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#do-i-need-creatine
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -17,6 +23,11 @@ tags:
   - hypertrophy
   - recovery
   - dietary-supplements
+citations:
+  - label: "1"
+    id: kreider-2017-issn-creatine-position-stand
+  - label: "2"
+    id: national-kidney-foundation-2021-ckd-epi-creatinine-cystatin-equation
 ---
 
 No supplement is required for progress, but {% include glossary.html id="creatine" %} is one of the best-supported options for strength, power, repeated high-intensity work, and lean-mass gain when paired with training.{% include citation.html id="kreider-2017-issn-creatine-position-stand" label="1" %} It is not a steroid, stimulant, hormone, or shortcut. It helps your muscles regenerate ATP more effectively during short, intense efforts, which can support better training output over time.

@@ -94,14 +94,13 @@ defaults:
       path: "_resources/faq"
       type: resources
     values:
-      layout: redirect
+      layout: single
       classes: wide
       show_author: false
       show_date: false
       show_modified_date: false
       show_read_time: false
-      share: false
-      sitemap: false
+      share: true
       toc_widget:
         enabled: false
   - scope:

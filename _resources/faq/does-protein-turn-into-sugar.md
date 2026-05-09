@@ -3,8 +3,14 @@ title: "Does protein turn into sugar?"
 date: 2026-04-24
 last_modified_at: 2026-04-26
 resource_type: faq
-redirect_to: "/resources/faq/#does-protein-turn-into-sugar"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#does-protein-turn-into-sugar
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -15,6 +21,9 @@ tags:
   - calorie-balance
   - protein
   - carbohydrates
+citations:
+  - label: "1"
+    id: fromentin-2013-dietary-proteins-glucose-production
 ---
 
 Some amino acids can contribute carbon skeletons for {% include glossary.html id="gluconeogenesis" %}, but that does not mean a normal {% include glossary.html id="protein" %} meal simply turns into a meaningful amount of sugar. Gluconeogenesis is a normal, regulated process that helps maintain blood glucose when needed, especially during fasting, low-carbohydrate intake, and some high-protein contexts. In a controlled study using labeled egg protein in healthy humans after an overnight fast and a no-carbohydrate meal, dietary amino acids contributed only a small amount to glucose production over the following hours.{% include citation.html id="fromentin-2013-dietary-proteins-glucose-production" label="1" %}

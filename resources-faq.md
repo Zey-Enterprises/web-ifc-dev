@@ -281,4 +281,14 @@ header:
       No FAQs match the current filter set.
     </div>
   </section>
+
+  <div class="ifc-resource-browser__footer-action" data-unfiltered-only>
+    {% include double_icon_button.html
+      href="/resources/faq/all/"
+      label="See full Fitness FAQ List"
+      right_icon="fas fa-arrow-right"
+      container_alignment="right"
+      alignment="left"
+    %}
+  </div>
 </div>

@@ -3,8 +3,14 @@ title: "How can I tell if I am dehydrated?"
 date: 2026-04-23
 last_modified_at: 2026-04-23
 resource_type: faq
-redirect_to: "/resources/faq/#how-can-i-tell-if-i-am-dehydrated"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#how-can-i-tell-if-i-am-dehydrated
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -17,6 +23,11 @@ tags:
   - recovery
   - hydration
   - endurance
+citations:
+  - label: "1"
+    id: riebl-2013-the-hydration-equation
+  - label: "2"
+    id: institute-1994-fluid-replacement-and-heat-stress
 ---
 
 Useful everyday signs include thirst, darker urine, dry mouth, headache, lightheadedness, unusual fatigue, and reduced training performance. Urine color is imperfect, but pale yellow is usually a reasonable sign that {% include glossary.html id="hydration" text="hydration" %} is adequate; very dark urine or very low urine output deserves attention.{% include citation.html id="riebl-2013-the-hydration-equation" label="1" %}

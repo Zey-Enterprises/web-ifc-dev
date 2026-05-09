@@ -3,8 +3,14 @@ title: "Do I have to forgive someone to move on?"
 date: 2026-04-25
 last_modified_at: 2026-04-26
 resource_type: faq
-redirect_to: "/resources/faq/#do-i-have-to-forgive-someone-to-move-on"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#do-i-have-to-forgive-someone-to-move-on
+      class: btn--primary
 domains:
   - psychology
 concerns:
@@ -20,6 +26,9 @@ tags:
   - relationships
   - boundaries
   - values
+citations:
+  - label: "1"
+    id: wade-2014-forgiveness-interventions-meta-analysis
 ---
 
 No, not necessarily, but it depends on what you mean by {% include glossary.html id="forgiveness" %} and what you mean by "move on".

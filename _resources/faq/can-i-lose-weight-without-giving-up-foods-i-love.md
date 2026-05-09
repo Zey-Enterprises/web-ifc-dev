@@ -3,8 +3,14 @@ title: "Can I lose weight without giving up foods I love?"
 date: 2026-04-24
 last_modified_at: 2026-04-25
 resource_type: faq
-redirect_to: "/resources/faq/#can-i-lose-weight-without-giving-up-foods-i-love"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#can-i-lose-weight-without-giving-up-foods-i-love
+      class: btn--primary
 domains:
   - diet
   - psychology
@@ -18,6 +24,9 @@ tags:
   - food-quality
   - adherence
   - meal-structure
+citations:
+  - label: "1"
+    id: hall-2012-energy-balance
 ---
 
 Usually, yes. Fat loss requires a sustained calorie deficit, not a joyless food list. The practical question is whether the foods you love can fit in a way that still leaves enough calories, {% include glossary.html id="protein" text="protein" %}, fiber, and meal structure to keep the plan repeatable.

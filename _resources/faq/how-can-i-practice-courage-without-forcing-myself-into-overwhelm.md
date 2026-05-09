@@ -3,8 +3,14 @@ title: "How can I practice courage without forcing myself into overwhelm?"
 date: 2026-04-25
 last_modified_at: 2026-05-06
 resource_type: faq
-redirect_to: "/resources/faq/#how-can-i-practice-courage-without-forcing-myself-into-overwhelm"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#how-can-i-practice-courage-without-forcing-myself-into-overwhelm
+      class: btn--primary
 domains:
   - psychology
 concerns:
@@ -16,6 +22,13 @@ tags:
   - behavior-change
   - emotional-regulation
   - values
+citations:
+  - label: "1"
+    id: brown-2018-dare-to-lead
+  - label: "2"
+    id: linehan-2015-dbt-skills-training-manual
+  - label: "3"
+    id: campbell-2021-from-triggered-to-tranquil
 ---
 
 Courage does not require flooding yourself. It means taking a value-serving step while staying regulated enough to learn, integrate the experience, and recover. Courage is not the absence of fear; it is acting thoughtfully in the presence of fear because something important matters more.{% include citation.html id="brown-2018-dare-to-lead" label="1" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html id="linehan-2015-dbt-skills-training-manual" label="2" %}

@@ -3,8 +3,14 @@ title: "How can physical training become a practice of self-respect?"
 date: 2026-04-24
 last_modified_at: 2026-05-06
 resource_type: faq
-redirect_to: "/resources/faq/#how-can-physical-training-become-a-practice-of-self-respect"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#how-can-physical-training-become-a-practice-of-self-respect
+      class: btn--primary
 domains:
   - physical-exercise
   - philosophy
@@ -19,6 +25,11 @@ tags:
   - ethics
   - strength-training
   - mind-body-integration
+citations:
+  - label: "1"
+    id: rand-1964-virtue-of-selfishness
+  - label: "2"
+    id: smith-2006-ayn-rands-normative-ethics
 ---
 
 Training becomes a practice of self-respect when it is grounded in the recognition that your body is not an enemy, ornament, or disposable vehicle, but part of the means by which you live your life. {% include glossary.html id="mind-body-integration" text="Mind-body integration" %} means treating physical capability, health, energy, and resilience as meaningful human values, rather than superficial afterthoughts.

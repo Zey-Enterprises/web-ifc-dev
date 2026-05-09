@@ -3,8 +3,14 @@ title: "Are emotions evidence?"
 date: 2026-04-24
 last_modified_at: 2026-04-25
 resource_type: faq
-redirect_to: "/resources/faq/#are-emotions-evidence"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#are-emotions-evidence
+      class: btn--primary
 domains:
   - psychology
   - philosophy
@@ -18,6 +24,11 @@ tags:
   - values
   - reason
   - epistemology
+citations:
+  - label: "1"
+    id: bishop-2004-mindfulness
+  - label: "2"
+    id: peikoff-1991-objectivism-philosophy-of-ayn-rand
 ---
 
 Emotions are evidence that something is happening in your experience. They are not automatic evidence that your interpretation of the outside world is true. Fear proves that you feel afraid. It does not prove that the feared outcome is likely. Anger proves that you feel anger. It does not prove that someone violated a real value.

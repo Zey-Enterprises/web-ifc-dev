@@ -685,6 +685,7 @@
     var mobileBackdrop = root.querySelector("[data-mobile-filter-backdrop]");
     var mobileClose = root.querySelector("[data-mobile-filter-close]");
     var mobileSortNode = root.querySelector("[data-mobile-sort-control]");
+    var unfilteredOnlyNodes = Array.prototype.slice.call(root.querySelectorAll("[data-unfiltered-only]"));
     var resourceTopTarget = root.querySelector("[data-mobile-filter-panel]") || root;
     var pageTopTarget = root.querySelector("[data-resource-top-target]") || root;
     var mobileTopTarget = root.querySelector("[data-mobile-filter-toggle]") || root;
@@ -1015,6 +1016,13 @@
       }
     }
 
+    function syncUnfilteredOnly(canonicalState) {
+      var shouldHide = getActiveFilterCount(canonicalState) > 0;
+      unfilteredOnlyNodes.forEach(function (node) {
+        node.hidden = shouldHide;
+      });
+    }
+
     function renderResults(canonicalState) {
       var visibleItems = items.filter(function (item) {
         return matchesItem(item, canonicalState);
@@ -1132,6 +1140,7 @@
       setMode(resultsMode);
       renderActiveFilters(canonicalState);
       syncMobileStatus(canonicalState);
+      syncUnfilteredOnly(canonicalState);
 
       if (summary) {
         if (resultsMode || summaryMode === "always") {

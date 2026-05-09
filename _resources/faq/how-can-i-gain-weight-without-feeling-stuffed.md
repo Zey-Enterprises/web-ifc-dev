@@ -3,8 +3,14 @@ title: "How can I gain weight without feeling stuffed?"
 date: 2026-04-23
 last_modified_at: 2026-04-27
 resource_type: faq
-redirect_to: "/resources/faq/#how-can-i-gain-weight-without-feeling-stuffed"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#how-can-i-gain-weight-without-feeling-stuffed
+      class: btn--primary
 domains:
   - diet
 concerns:

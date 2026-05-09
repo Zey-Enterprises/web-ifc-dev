@@ -3,8 +3,14 @@ title: "How can I tell whether a belief is actually true or just useful to me ri
 date: 2026-04-25
 last_modified_at: 2026-04-25
 resource_type: faq
-redirect_to: "/resources/faq/#how-can-i-tell-whether-a-belief-is-actually-true-or-just-useful-to-me-right-now"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#how-can-i-tell-whether-a-belief-is-actually-true-or-just-useful-to-me-right-now
+      class: btn--primary
 domains:
   - psychology
   - philosophy
@@ -20,6 +26,11 @@ tags:
   - ethics
   - reason
   - epistemology
+citations:
+  - label: "1"
+    id: rand-1990-introduction-to-objectivist-epistemology
+  - label: "2"
+    id: peikoff-1991-objectivism-philosophy-of-ayn-rand
 ---
 
 Truth is the recognition of reality. A belief is not made true by some narrow sense of usefulness, popularity, sincerity, or emotional relief. If it contradicts the facts, reality will eventually collect the debt. A false belief may feel comforting, motivating, socially convenient, or image-protective in the moment, but that does not make it useful in the full sense. If an idea helps you evade facts, avoid responsibility, manipulate yourself or others, or preserve a mood at the cost of reality contact, its benefit is only short-range expediency.

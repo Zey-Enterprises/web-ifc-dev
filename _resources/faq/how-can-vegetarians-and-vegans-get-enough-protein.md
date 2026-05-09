@@ -3,8 +3,14 @@ title: "How can vegetarians and vegans get enough protein?"
 date: 2026-04-23
 last_modified_at: 2026-04-23
 resource_type: faq
-redirect_to: "/resources/faq/#how-can-vegetarians-and-vegans-get-enough-protein"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#how-can-vegetarians-and-vegans-get-enough-protein
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -17,6 +23,9 @@ tags:
   - food-quality
   - hypertrophy
   - meal-structure
+citations:
+  - label: "1"
+    id: van-vliet-2015-the-skeletal-muscle-anabolic-response-to-plant-versus-animal-based-protein-consumption
 ---
 
 Vegetarians and vegans can get enough protein, but they usually need more deliberate planning. Useful staples include Greek yogurt, cottage cheese, eggs, tofu, tempeh, edamame, seitan, soy milk, lentils, beans, textured vegetable protein, pea or soy protein powder, and higher-protein meat alternatives.

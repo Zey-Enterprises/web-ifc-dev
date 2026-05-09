@@ -3,8 +3,14 @@ title: "Are carbs bad for you?"
 date: 2026-04-24
 last_modified_at: 2026-04-25
 resource_type: faq
-redirect_to: "/resources/faq/#are-carbs-bad-for-you"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#are-carbs-bad-for-you
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -18,6 +24,9 @@ tags:
   - carbohydrates
   - food-quality
   - fiber
+citations:
+  - label: "1"
+    id: u-s-2020-dietary-guidelines-for-americans-2020-2025-ninth-edition
 ---
 
 No. Carbs are not inherently bad, and they do not bypass {% include glossary.html id="calorie-balance" text="calorie balance" %}. The better question is what kind of carbs, how much, and in what context.

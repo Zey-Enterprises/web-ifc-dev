@@ -3,8 +3,14 @@ title: "Do I need supplements?"
 date: 2026-04-24
 last_modified_at: 2026-04-26
 resource_type: faq
-redirect_to: "/resources/faq/#do-i-need-supplements"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#do-i-need-supplements
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -16,6 +22,9 @@ tags:
   - food-quality
   - adherence
   - dietary-supplements
+citations:
+  - label: "1"
+    id: kreider-2017-issn-creatine-position-stand
 ---
 
 Usually, no. Supplements can help with specific gaps, convenience needs, or performance goals, but they do not replace {% include glossary.html id="calorie-balance" %}, adequate {% include glossary.html id="protein" %}, enough fruits and vegetables, sleep, training consistency, and medical care when needed.

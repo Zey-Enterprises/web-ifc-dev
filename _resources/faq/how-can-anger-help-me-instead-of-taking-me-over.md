@@ -3,8 +3,14 @@ title: "How can anger help me instead of taking me over?"
 date: 2026-04-25
 last_modified_at: 2026-04-26
 resource_type: faq
-redirect_to: "/resources/faq/#how-can-anger-help-me-instead-of-taking-me-over"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#how-can-anger-help-me-instead-of-taking-me-over
+      class: btn--primary
 domains:
   - psychology
 concerns:
@@ -18,6 +24,11 @@ tags:
   - emotional-regulation
   - relationships
   - values
+citations:
+  - label: "1"
+    id: gross-2015-emotion-regulation-current-status-and-future-prospects
+  - label: "2"
+    id: linehan-2015-dbt-skills-training-manual
 ---
 
 Anger can help by showing you that a {% include glossary.html id="values" text="value" %}, {% include glossary.html id="boundary" %}, or standard may have been violated. It becomes dangerous when it bypasses judgment and turns immediately into attack, contempt, revenge, or self-righteous certainty.

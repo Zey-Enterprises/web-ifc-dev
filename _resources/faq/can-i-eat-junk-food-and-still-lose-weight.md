@@ -3,8 +3,14 @@ title: "Can I eat junk food and still lose weight?"
 date: 2026-04-24
 last_modified_at: 2026-04-25
 resource_type: faq
-redirect_to: "/resources/faq/#can-i-eat-junk-food-and-still-lose-weight"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#can-i-eat-junk-food-and-still-lose-weight
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -16,6 +22,9 @@ tags:
   - food-quality
   - adherence
   - satiety
+citations:
+  - label: "1"
+    id: hall-2019-ultra-processed-diets
 ---
 
 Yes, if total calories are low enough. {% include glossary.html id="calorie-balance" text="Calrorie balance" %} still governs weight loss. But that does not make a mostly low-nutrient, highly rewarding diet a good strategy. You can lose fat with some "junk food" in the diet; the problem is that a diet built around those foods usually makes {% include glossary.html id="satiety" %}, health, training, and adherence worse.
