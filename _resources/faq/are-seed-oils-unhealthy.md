@@ -1,7 +1,7 @@
 ---
 title: "Are seed oils unhealthy?"
 date: 2026-04-24
-last_modified_at: 2026-04-24
+last_modified_at: 2026-05-09
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
@@ -24,17 +24,27 @@ tags:
   - food-quality
 citations:
   - label: "1"
-    id: u-s-2020-dietary-guidelines-for-americans-2020-2025-ninth-edition
+    id: farvid-2014-linoleic-acid-coronary-heart-disease
   - label: "2"
-    id: american-2021-saturated-fat
+    id: khandelwal-2013-impact-of-omega-6-fatty-acids-on-cardiovascular-outcomes
+  - label: "3"
+    id: fazzino-2019-hyperpalatable-foods
+  - label: "4"
+    id: hall-2019-ultra-processed-diets
+  - label: "5"
+    id: u-s-2020-dietary-guidelines-for-americans-2020-2025-ninth-edition
 ---
 
-Seed oils are not automatically unhealthy, but the question deserves more nuance than either "toxic sludge" or "nothing to see here". Seed oils are relatively new in the human diet at their current scale, so caution is not irrational. At the same time, the stronger human evidence does not support panic about ordinary intake, and many studies associate replacing some {% include glossary.html id="saturated-fat" %} with unsaturated fats with better cardiovascular markers or outcomes.{% include citation.html id="u-s-2020-dietary-guidelines-for-americans-2020-2025-ninth-edition" label="1" %}
+Seed oils are not automatically unhealthy, but the question deserves more nuance than either "toxic sludge" or "nothing to see here". Seed oils are relatively new in the human diet at their current scale, so caution is not irrational. At the same time, the stronger human evidence does not support panic about ordinary intake.
 
-The most practical concern is often not the oil by itself, but the foods seed oils commonly appear in: {% include glossary.html id="hyperpalatable" %}, calorie-dense, low-satiety foods that are easy to overeat. Chips, fries, pastries, fast food, and packaged snacks can make {% include glossary.html id="calorie-balance" %} more difficult to manage whether the fat source is soybean oil, butter, lard, coconut oil, or something else. In that context, blaming "seed oils" can distract from the real mechanism: high energy density, high reward value, low {% include glossary.html id="satiety" %}, and passive overconsumption.
+Common "seed oils" include soybean, corn, canola, sunflower, safflower, grapeseed, cottonseed, and similar vegetable oils. Many are high in omega-6 polyunsaturated fat, especially linoleic acid. Internet arguments often claim that linoleic acid is inherently inflammatory or uniquely fattening, but human evidence does not support treating ordinary linoleic-acid intake as a simple poison. Some analyses associate higher linoleic-acid intake with lower coronary heart disease risk, and reviews of omega-6 fatty acids do not justify the claim that they are inherently harmful in normal dietary contexts.{% include citation.html id="farvid-2014-linoleic-acid-coronary-heart-disease" label="1" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html id="khandelwal-2013-impact-of-omega-6-fatty-acids-on-cardiovascular-outcomes" label="2" %}
 
-The saturated-versus-unsaturated fat issue is also more complex than slogans imply. Saturated fat is involved in normal physiology, and some healthy whole foods contain it. The concern is not that saturated fat is poison; it is that higher intakes can raise LDL cholesterol in many people, and LDL is an important cardiovascular-risk marker. Public-health guidance generally recommends limiting saturated fat and replacing some of it with unsaturated fats, but the exact importance for a given person depends on total diet quality, body composition, activity, genetics, medical context, and bloodwork (especially a lipid panel).{% include citation.html id="american-2021-saturated-fat" label="2" %}
+However, individual reactions may vary greatly, ranging from more severe symptoms that cross clinical thresholds to subtle effects that may not be experientially obvious or even show up clearly in bloodwork. A precautionary principle of avoiding seed oils until a proper individualized experiment can be run is not irrational, but absent a well-established sensitivity, that is likely a minor optimization for many people, whose focus is better attended to higher-leverage factors impacting body composition and health.
 
-If you want to avoid seed oils on a precautionary basis, that can be a reasonable values-and-risk-tolerance choice. Just do not let it become nutritional tunnel vision. Olive oil and avocado oil are good non-seed-oil options that are mostly unsaturated, and whole-food fat sources like nuts, seeds, fatty fish, eggs, dairy, and leaner or fattier meats can all fit depending on the broader diet. If you eat at a restaurant occasionally and the food is prepared with seed oils, that is unlikely to be a major issue in the context of an otherwise solid diet.
+The most practical concern is often not the oil by itself, but the foods seed oils commonly appear in: {% include glossary.html id="hyperpalatable" %}, calorie-dense, low-satiety foods that are easy to overeat. Chips, fries, pastries, fast food, packaged snacks, and restaurant foods can make {% include glossary.html id="calorie-balance" %} more difficult to manage, whether the fat source is soybean oil, butter, lard, coconut oil, or something else. In that context, blaming "seed oils" can distract from the real mechanism: high energy density, high reward value, low {% include glossary.html id="satiety" %}, low fiber, and passive overconsumption.{% include citation.html id="fazzino-2019-hyperpalatable-foods" label="3" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html id="hall-2019-ultra-processed-diets" label="4" %}
 
-The best default is measured: prioritize mostly whole foods, adequate {% include glossary.html id="protein" %}, enough {% include glossary.html id="fiber" %}, appropriate calories, and a fat intake pattern that keeps your health markers in range. If cutting seed oils makes your diet simpler and more nutrient-dense, fine. If it turns into fear-based rules while calories, protein, fiber, cholesterol markers, and total {% include glossary.html id="food-quality" %} are ignored, it is the wrong priority.
+There are still reasonable reasons to limit seed oils. You might prefer olive oil or avocado oil. You might want fewer highly processed foods. You might care about the omega-6 to omega-3 balance. You might not like the taste, production methods, or uncertainty around long-term high intakes. Those are legitimate values-and-risk-tolerance considerations. They just do not make seed oils the master variable in fat loss or health.
+
+If you eat at a restaurant occasionally and the food is prepared with seed oils, that is unlikely to be a major issue in the context of an otherwise solid diet. The bigger questions are how often you are eating restaurant food, how many calories it adds, how it affects hunger, whether it displaces higher-quality foods, and what your health markers look like.
+
+The best default is measured: Prioritize mostly whole foods, adequate {% include glossary.html id="protein" %}, enough {% include glossary.html id="fiber" %}, appropriate calories, and a fat pattern that keeps health markers in range. Olive oil, avocado oil, nuts, seeds, fatty fish, eggs, dairy, and meats can all fit depending on the broader diet. If cutting seed oils makes your diet simpler and more nutrient-dense, as well as possibly providing some peace of mind, fine. If it turns into fear-based rules while calories, protein, fiber, cholesterol markers, and total {% include glossary.html id="food-quality" %} are ignored, it is the wrong priority.{% include citation.html id="u-s-2020-dietary-guidelines-for-americans-2020-2025-ninth-edition" label="5" %}
