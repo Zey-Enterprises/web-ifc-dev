@@ -1,6 +1,6 @@
 ---
 title: "What happens if I need to cancel, reschedule, or stop coaching?"
-sort_order: 24
+sort_order: 23
 concerns:
 tags:
 ---
@@ -8,6 +8,8 @@ tags:
 The standard terms are designed to make coaching serious, scheduled, and mutually workable.
 
 For scheduled sessions, please provide at least 24 hours' notice if you need to cancel or reschedule. If you cancel with less than 24 hours' notice, the session may be forfeited. If I agree to reschedule a late cancellation, a $50 late-cancellation fee may apply.
+
+The cancellation policy is symmetric. If I cancel or reschedule with less than 24 hours' notice, you receive either a 30-minute complimentary session credit (in addition to rescheduling any missed session) or an equivalent service credit, at my discretion, except when the change is caused by circumstances beyond my reasonable control.
 
 Standard monthly coaching packages begin with a 3-month initial engagement, billed monthly in advance. This gives us enough time to establish context, implement the first phase, observe patterns, and make meaningful adjustments.
 

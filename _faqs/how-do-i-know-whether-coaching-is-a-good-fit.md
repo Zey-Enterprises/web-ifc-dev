@@ -1,6 +1,6 @@
 ---
 title: "How do I know whether coaching is a good fit?"
-sort_order: 11
+sort_order: 10
 concerns:
 tags:
 ---

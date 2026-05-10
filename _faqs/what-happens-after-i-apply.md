@@ -1,6 +1,6 @@
 ---
 title: "What happens after I apply?"
-sort_order: 12
+sort_order: 11
 concerns:
 tags:
 ---

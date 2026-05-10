@@ -1,6 +1,6 @@
 ---
 title: "How often do we communicate?"
-sort_order: 15
+sort_order: 14
 concerns:
 tags:
 ---

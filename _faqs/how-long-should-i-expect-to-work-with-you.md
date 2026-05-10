@@ -1,6 +1,6 @@
 ---
 title: "How long should I expect to work with you?"
-sort_order: 17
+sort_order: 16
 concerns:
 tags:
 ---

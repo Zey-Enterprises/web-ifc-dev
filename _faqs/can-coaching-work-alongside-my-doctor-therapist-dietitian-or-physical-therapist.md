@@ -1,6 +1,6 @@
 ---
 title: "Can coaching work alongside my doctor, therapist, dietitian, or physical therapist?"
-sort_order: 23
+sort_order: 22
 concerns:
 tags:
 ---

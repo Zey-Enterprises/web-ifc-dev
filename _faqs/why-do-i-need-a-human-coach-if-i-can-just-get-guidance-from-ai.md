@@ -1,6 +1,6 @@
 ---
 title: "Why do I need a human coach if I can just get guidance from \"AI\"?"
-sort_order: 10
+sort_order: 9
 concerns:
 tags:
 ---

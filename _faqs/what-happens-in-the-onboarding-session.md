@@ -1,6 +1,6 @@
 ---
 title: "What happens in the onboarding session?"
-sort_order: 14
+sort_order: 13
 concerns:
 tags:
 ---

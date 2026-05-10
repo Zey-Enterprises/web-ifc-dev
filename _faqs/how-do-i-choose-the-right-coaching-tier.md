@@ -1,6 +1,6 @@
 ---
 title: "How do I choose the right coaching tier?"
-sort_order: 13
+sort_order: 12
 concerns:
 tags:
 ---

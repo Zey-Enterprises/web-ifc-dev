@@ -1,6 +1,6 @@
 ---
 title: "What kind of written support is included between sessions?"
-sort_order: 16
+sort_order: 15
 concerns:
 tags:
 ---

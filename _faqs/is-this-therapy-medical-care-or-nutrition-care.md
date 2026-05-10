@@ -1,6 +1,6 @@
 ---
 title: "Is this therapy, medical care, or nutrition care?"
-sort_order: 22
+sort_order: 21
 concerns:
 tags:
 ---

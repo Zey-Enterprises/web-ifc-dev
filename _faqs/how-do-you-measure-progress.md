@@ -1,6 +1,6 @@
 ---
 title: "How do you measure progress?"
-sort_order: 21
+sort_order: 20
 concerns:
 tags:
 ---
