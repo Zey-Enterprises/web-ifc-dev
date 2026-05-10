@@ -1,8 +1,13 @@
 ---
 title: "Frequently Asked Questions"
 permalink: /faq/
-excerpt: "Frequently asked questions about coaching, scope, results, and support."
+description: "Frequently asked questions about Integrated Fitness Coaching, including scope, results, process, and support."
+excerpt: "Questions about coaching scope, results, process, and support."
+toc_widget:
+  enabled: true
 header:
+  kicker: "Coaching FAQ"
+  overlay_title: "Frequently Asked Questions"
   # overlay_image: /assets/images/ifc-faq-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
   actions:
@@ -10,10 +15,6 @@ header:
       url: /resources/faq/
       class: btn--light-outline
 ---
-
-Below is the list of frequently asked questions about coaching.
-
-One recurring theme below is sustainability. This practice is explicitly not built around crash diets, permanent restriction, or short-term theatrics.
 
 {% assign ordered_faqs = site.faqs | sort: "sort_order" %}
 {% for item in ordered_faqs %}
@@ -23,10 +24,9 @@ One recurring theme below is sustainability. This practice is explicitly not bui
 
 {% endfor %}
 
-<div class="ifc-panel" markdown="1">
+<div class="ifc-panel ifc-faq-next-steps" markdown="1">
 ## Ready for next steps?
 
 [Understand the approach](/approach/){:.ifc-button .ifc-button--secondary}
-[Review pricing](/pricing/){:.ifc-button .ifc-button--secondary}
 [View coaching options](/pricing/){:.ifc-button}
 </div>
