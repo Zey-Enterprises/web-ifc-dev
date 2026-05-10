@@ -1,9 +1,11 @@
 ---
 title: "References"
 permalink: /resources/references/
-description: "Citations used across the resource library"
+description: "References and citations used across the Integrated Fitness Coaching resource library."
+excerpt: "A browsable reference library for sources cited across articles, FAQs, glossary entries, and other resources."
 header:
   kicker: "Resource Library"
+  overlay_title: "References"
   # overlay_image: /assets/images/ifc-references-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.7), rgba(17, 33, 45, 0.22))
   actions:

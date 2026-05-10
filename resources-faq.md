@@ -1,13 +1,14 @@
 ---
 title: "Frequently Asked Questions"
 permalink: /resources/faq/
-excerpt: "FAQ library for substantive fitness questions."
+excerpt: "Answers to substantive questions about nutrition, training, psychology, philosophy, and integrated fitness."
 toc_widget: 
   enabled: true
   min_level: 2
   max_level: 4
 header:
   kicker: "Resource Library"
+  overlay_title: "Fitness FAQ Library"
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.7), rgba(17, 33, 45, 0.22))
   actions:
   - label: ← Back to All Resources

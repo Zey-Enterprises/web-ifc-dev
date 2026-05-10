@@ -1,8 +1,10 @@
 ---
 title: "Results"
 permalink: /results/
-excerpt: "Realistic, sustainable coaching outcomes."
+excerpt: "Examples of meaningful progress interpreted realistically, without hype or guarantees."
 header:
+  kicker: "Client Results"
+  overlay_title: "Realistic Progress, Sustainable Outcomes"
   # overlay_image: /assets/images/ifc-results-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
 ---

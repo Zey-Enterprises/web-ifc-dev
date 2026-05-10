@@ -2,18 +2,20 @@
 title: "Coaching Approach"
 classes: hide-title
 permalink: /approach/
-description: "How Integrated Fitness Coaching approaches development across body, intellect, and spirit through clear principles, practical execution, and long-term integration."
-excerpt: "Fitness is not just about physique, performance, or physical health. It is about developing body, intellect, and spirit in a way that is coherent, sustainable, and mutually reinforcing."
+title: "Coaching Approach"
+description: "How Integrated Fitness Coaching develops body, intellect, and spirit through clear principles, practical execution, and long-term integration."
+excerpt: "Fitness is not just physique, performance, or physical health. It is the integrated development of body, intellect, and spirit in a way that is mutually reinforcing."
 toc_widget: 
   enabled: true
   min_level: 2
   max_level: 4
 header:
+  kicker: "What Integrated Fitness Coaching Means"
+  overlay_title: "Coaching for the Whole Person"
   # overlay_image: /assets/images/ifc-approach-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
   background_position: center -25px
   mobile_background_position: center 0px
-  kicker: What Integrated Fitness Coaching Really Means
 ---
 
 Fitness is often treated as though it means only one thing: physique, athletic performance, or perhaps physical health in general.

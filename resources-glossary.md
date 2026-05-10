@@ -1,13 +1,15 @@
 ---
 title: "Glossary"
 permalink: /resources/glossary/
-excerpt: "Learn about recurring concepts across the resource library."
+description: "A glossary of recurring concepts used across the Integrated Fitness Coaching resource library."
+excerpt: "A structured guide to recurring concepts across the resource library, with related terms, tags, and resources."
 toc_widget: 
   enabled: true
   min_level: 2
   max_level: 4
 header:
   kicker: "Resource Library"
+  overlay_title: "Glossary"
   # overlay_image: /assets/images/ifc-glossary-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.7), rgba(17, 33, 45, 0.22))
   actions:

@@ -3,12 +3,11 @@ title: "Homepage Draft"
 layout: single
 permalink: /homepage-draft/
 classes: wide hide-title
-description: "Draft homepage proposal for Integrated Fitness Coaching."
-excerpt: "Integrated coaching for body, intellect, and spirit, designed to create durable progress in the real conditions of a human life."
-tagline: "Integrated coaching for body, intellect, and spirit, designed to create durable progress in the real conditions of a human life."
+excerpt: "Coaching that integrates physical exercise, nutrition, emotional regulation, relationships, and clear thinking about values, principles, and action—so progress can hold up in real life."
+description: "Integrated Fitness Coaching helps clients make sustainable progress across physical exercise, nutrition, emotional regulation, relationships, and clear thinking about values, principles, and action."
 header:
-  kicker: Integrated coaching for body, intellect, and spirit
-  overlay_title: "Build a stronger body, clearer intellect, and steadier spirit."
+  kicker: "Fitness for the whole person"
+  overlay_title: "Build your body. Sharpen your intellect. Steady your spirit."
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.56), rgba(17, 33, 45, 0.21))
   overlay_interval: 3000
   overlay_images:

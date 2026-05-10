@@ -2,19 +2,19 @@
 title: "About"
 classes: hide-title
 permalink: /about/
-description: "Arthur Zey is a systems-oriented fitness coach with a background in technology, philosophy, and human behavior, focused on helping people make sustainable progress."
-excerpt: "A systems-oriented coach with a background in technology, philosophy, and human behavior, focused on helping people build sustainable progress across physical, intellectual, and emotional domains."
+description: "Arthur Zey is an integrated fitness coach with a background in technology, philosophy, human behavior, nutrition, and physical training."
+excerpt: "A systems-oriented coach with a background in technology, philosophy, human behavior, and physical practice."
 toc_widget: 
   enabled: true
   min_level: 2
   max_level: 4
 header:
-  overlay_title: Arthur Zey
+  kicker: "Integrated Fitness Coach"
+  overlay_title: "Arthur Zey"
   # overlay_image: /assets/images/ifc-about-hero-banner-3.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
   # background_position: center -10px
   mobile_background_position: 72% center
-  kicker: "Integrated Fitness Coach"
   # og_image: /assets/images/ifc-about-social-share-3-1200-630.jpg
 ---
 
