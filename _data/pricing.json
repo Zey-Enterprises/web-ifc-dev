@@ -19,19 +19,18 @@
       "key": "intensive",
       "name": "Intensive",
       "price": "$995/month",
-      "tagline": "Weekly support for complex or demanding seasons",
-      "summary": "For clients who need closer contact, faster iteration, and higher-touch implementation support"
+      "tagline": "Weekly live support for complex or demanding seasons",
+      "summary": "For clients who need weekly live contact, priority written support, closer troubleshooting, and higher-touch implementation support"
     }
   ],
   "shared_includes": {
     "heading": "Included in every tier",
-    "summary": "Every coaching package begins with the same serious foundation. The differences are scope, live coaching cadence, complexity, and implementation support.",
+    "summary": "Every coaching package uses the same integrated coaching model. The differences are active scope, live coaching cadence, complexity, and support depth.",
     "items": [
       "Comprehensive application and intake review",
       "90-minute onboarding session",
-      "Weekly written check-in",
-      "Plan adjustments within package scope",
-      "Plan-related written support, normally answered within 48 hours",
+      "Weekly progress review and feedback as frequently as once per week, including substantive evaluation, recommendations, and appropriate plan adjustments related to your coaching work",
+      "Ad hoc written support for clarification and troubleshooting related to your coaching work",
       "Referral or tandem support when a need belongs with a licensed professional",
       "3-month initial engagement, billed monthly"
     ]
@@ -43,7 +42,7 @@
       "row_header_label": "Decision point",
       "recommended_tier": "integrated",
       "recommended_label": "Recommended",
-      "summary": "Compare the level of structure, scope, and support in each coaching tier",
+      "summary": "Compare the level of structure, scope, live coaching, and between-session support in each coaching tier",
       "rows": [
         {
           "label": "Live coaching cadence",
@@ -54,35 +53,27 @@
           }
         },
         {
-          "label": "Active scope",
+          "label": "Active coaching scope",
           "cells": {
-            "foundation": "One primary coaching focus at a time",
+            "foundation": "One primary focus at a time, considered through an integrated lens",
             "integrated": "Broader integrated coaching across the major areas affecting your goals",
-            "intensive": "Weekly integrated coaching with closer support and faster course correction"
+            "intensive": "Integrated coaching for complex goals, demanding seasons, or higher implementation friction"
           }
         },
         {
-          "label": "Implementation support",
+          "label": "Implementation plan and practices",
           "cells": {
-            "foundation": "Focused plan, practices, or assignments tied to the primary goal",
-            "integrated": "Custom strategy across the relevant domains: body, intellect, spirit, habits, and life structure",
-            "intensive": "More active implementation guidance, prioritization, and course correction across relevant domains"
+            "foundation": "Focused plan or program tied to the primary focus, with practices, assignments, and supporting recommendations as relevant",
+            "integrated": "Integrated plan or program across the relevant domains affecting your goals, with practices and assignments as needed",
+            "intensive": "Higher-touch implementation plan or program with more active prioritization, troubleshooting, and course correction across relevant domains"
           }
         },
         {
-          "label": "Review and iteration",
+          "label": "Ad hoc written support response norm",
           "cells": {
-            "foundation": "Adjustments tied to the primary focus",
-            "integrated": "Ongoing review and adjustment across the coaching plan",
-            "intensive": "More frequent review and faster iteration when circumstances change or friction appears"
-          }
-        },
-        {
-          "label": "Written support",
-          "cells": {
-            "foundation": "Limited plan-related support",
-            "integrated": "Plan-related support between sessions",
-            "intensive": "Priority plan-related support between sessions"
+            "foundation": "48 hours",
+            "integrated": "48 hours",
+            "intensive": "Priority response, sooner than 48 hours when feasible"
           }
         },
         {
@@ -110,7 +101,7 @@
           }
         },
         {
-          "label": "I am serious but relatively new to training, nutrition, mindfulness, or behavior change.",
+          "label": "I am serious but relatively new to physical exercise, nutrition, mindfulness, or behavior change.",
           "cells": {
             "foundation": "Strongest match",
             "integrated": "Good match if you want broader support",
@@ -122,11 +113,11 @@
           "cells": {
             "foundation": "Strongest match",
             "integrated": "Good match",
-            "intensive": "Usually more than needed unless broader support is needed"
+            "intensive": "Usually more than needed unless the broader situation is complex"
           }
         },
         {
-          "label": "I want physique, training, or nutrition support with broader life context.",
+          "label": "I want physique, physical exercise, or nutrition support with broader life context.",
           "cells": {
             "foundation": "Good match if the goal is focused",
             "integrated": "Strongest match",
@@ -144,7 +135,7 @@
         {
           "label": "I want coaching that integrates body, intellect, and spirit.",
           "cells": {
-            "foundation": "Usually too light",
+            "foundation": "Possible match for one focused issue",
             "integrated": "Strongest match",
             "intensive": "Strongest match for higher-touch work"
           }
@@ -154,7 +145,7 @@
           "cells": {
             "foundation": "Possible match if the scope is narrow",
             "integrated": "Strongest match",
-            "intensive": "Strongest match if weekly support is needed"
+            "intensive": "Strongest match if weekly live support is needed"
           }
         },
         {
@@ -166,7 +157,7 @@
           }
         },
         {
-          "label": "I need weekly contact to stay oriented and adjust quickly.",
+          "label": "I need weekly live contact to stay oriented and adjust quickly.",
           "cells": {
             "foundation": "Usually too light",
             "integrated": "Possible match",
@@ -182,11 +173,19 @@
           }
         },
         {
-          "label": "I want an aggressive short-term push.",
+          "label": "I need closer troubleshooting and faster response to implementation friction.",
           "cells": {
             "foundation": "Usually too light",
             "integrated": "Possible match",
-            "intensive": "Strongest match if appropriate"
+            "intensive": "Strongest match"
+          }
+        },
+        {
+          "label": "I have a time-sensitive or unusually demanding short-term goal.",
+          "cells": {
+            "foundation": "Possible match if the scope is narrow and the goal is straightforward",
+            "integrated": "Good match",
+            "intensive": "Strongest match if the goal is demanding enough to require weekly live support"
           }
         },
         {
