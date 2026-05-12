@@ -25,8 +25,6 @@ header:
 
   {% include pricing_matrix.html %}
 
-  {% include coaching_process.html application_url=ifc_application_url consultation_url=ifc_consultation_url %}
-
   <div class="ifc-section">
     <div class="ifc-pricing-custom">
       <div>
@@ -40,26 +38,27 @@ header:
   </div>
 
   <div class="ifc-section ifc-engagement-details">
-    <h2>Engagement details</h2>
+    <h2>Package and engagement details</h2>
     <div class="ifc-engagement-details__grid">
+      <div class="ifc-panel ifc-panel--soft">
+        <h3>Initial engagement and early off-ramp</h3>
+        <p>Standard packages begin with a 3-month initial engagement, billed monthly. This gives the coaching relationship enough time to establish direction, collect useful feedback, and make early adjustments.</p>
+        <p>After onboarding, either of us has 14 days to decide that continuing is not the right move. If so, coaching ends after the first billing period, the first payment remains nonrefundable, and no further payments are due under the initial engagement.</p>
+      </div>
       <div class="ifc-panel ifc-panel--soft">
         <h3>Local and in-person support</h3>
         <p>For local clients, occasional in-person support may be available when it meaningfully serves the coaching plan. This might include movement review, gym orientation, kitchen or meal-structure support, or practical implementation work.</p>
         <p>In-person support is limited, discretionary, and quoted separately based on location, preparation, travel, and session length.</p>
       </div>
       <div class="ifc-panel ifc-panel--soft">
-        <h3>Initial engagement and early off-ramp</h3>
-        <p>Coaching begins with a 3-month initial engagement, billed monthly. The first month gives both of us a chance to confirm that the working relationship is productive and appropriate.</p>
-        <p>Either party may decide within 14 days after the onboarding session that continuing is not appropriate. If that happens, coaching ends after the first month, and no further monthly payments are due. Fees already paid for services provided are not refundable.</p>
-        <p>This is an early off-ramp, not a satisfaction guarantee. After the initial 3 months, coaching continues month-to-month unless otherwise agreed.</p>
-      </div>
-      <div class="ifc-panel ifc-panel--soft">
-        <h3>Support between sessions</h3>
-        <p>Written support is included for questions and updates related to the coaching plan. Messages are normally answered within 48 hours, excluding holidays, travel, illness, emergencies, and periods of limited availability communicated in advance when possible.</p>
-        <p>This support is not emergency support, crisis support, or real-time access. If something requires medical care, psychotherapy, crisis support, physical therapy, or another licensed professional, coaching may proceed alongside that support when appropriate, but coaching does not replace it.</p>
+        <h3>Additional services</h3>
+        <p>Some requests fall outside the selected package or require more time, preparation, review, scheduling, or support than the package includes.</p>
+        <p>Additional services are not included by default. They are quoted or agreed in writing before being billed. Depending on the situation, this might include added live coaching time, extended asynchronous review, short-term intensive support, project-style work, or local/in-person work described separately.</p>
       </div>
     </div>
   </div>
+
+  {% include coaching_process.html application_url=ifc_application_url consultation_url=ifc_consultation_url %}
 
   <div class="ifc-section">
     <div class="ifc-panel ifc-panel--soft">
