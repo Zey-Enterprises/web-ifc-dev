@@ -1,12 +1,13 @@
 ---
-title: ""
+title: "Integrated Fitness Coaching Home"
 layout: single
 permalink: /
-classes: wide
-tagline: "Integrated Fitness Coaching helps you improve training, nutrition, recovery, emotional regulation, cognitive skill, and the habits that keep progress from unraveling. The goal is sustainable, long-term improvement to live your best life."
+classes: wide hide-title
+excerpt: "Coaching that integrates physical exercise, nutrition, emotional regulation, relationships, and clear thinking about values, principles, and action—so progress can hold up in real life."
+description: "Integrated Fitness Coaching helps clients make sustainable progress across physical exercise, nutrition, emotional regulation, relationships, and clear thinking about values, principles, and action."
 header:
-  kicker: Evidence-based coaching for physical capability and vitality, emotional well-being, and intellectual clarity
-  overlay_title: "Build a stronger body, mind, and spirit to 𝑙𝑖𝑣𝑒 𝑤𝑒𝑙𝑙."
+  kicker: "Fitness for the whole person"
+  overlay_title: "Build your body. Sharpen your intellect. Steady your spirit."
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.56), rgba(17, 33, 45, 0.21))
   overlay_interval: 3000
   overlay_images:
@@ -26,91 +27,120 @@ header:
 
 <div class="ifc-rail">
   <div markdown="1">
-## An integrated approach to living well
+## People do not always come in through the same door
 
-Physical capability, intellectual clarity, and emotional or spiritual steadiness are not separate projects. They affect each other constantly: neglect one, and the others become harder to sustain; strengthen one, and the others usually become easier to build.
+Some people come looking for help with physique, nutrition, training, or physical performance. Some come because stress, emotional regulation, or recurring relational patterns are making life more difficult than it needs to be. Others are trying to think more clearly about values, standards, judgment, and how to live.
 {: .ifc-lead}
 
-That integrated view is the foundation of the coaching. But coaching can still have a specific focus. You may come in wanting better body composition, steadier habits, clearer thinking, or more inner order. We can start in one domain while working in a way that supports the whole person.
+The starting point can differ. The reason for an integrated approach does not.
+
+This coaching is built on a simple observation: body, intellect, and spirit are distinct, but not separate. Lasting progress usually depends on working with the whole person, rather than treating one visible problem as though it exists in isolation.
 
 [View coaching options](/pricing/){:.ifc-button}
 [See how coaching works](/approach/){:.ifc-button .ifc-button--secondary}
   </div>
   <div class="ifc-panel ifc-panel--soft" markdown="1">
-## Body, intellect, and spirit
+## Where People Often Begin
 
-**Body:** physical exercise, nutrition, recovery, and energy
+**Body:** physique, nutrition, training, recovery, performance, energy
 
-**Intellect:** judgment, self-understanding, planning, learning, and the ability to think clearly about your life
+**Intellect:** values, judgment, decision-making, self-direction, clearer thinking
 
-**Spirit:** emotional regulation, groundedness, self-command, and the inner stability that keeps action from unraveling
+**Spirit:** emotional regulation, groundedness, resilience, relationships, steadiness
+
+We can begin anywhere. The point is to work in a way that strengthens the whole person.
   </div>
 </div>
 
 <div class="ifc-section">
-  <h2>Start with your goals, not a template</h2>
+  <h2>Why the integrated approach matters</h2>
+  <div class="ifc-grid">
+    <div class="ifc-panel">
+      <h3>Body affects more than the body</h3>
+      <p>A physically neglected, under-recovered, or unhealthy body can drag down energy, resilience, mood, and even clarity of thought.</p>
+    </div>
+    <div class="ifc-panel">
+      <h3>Spirit affects more than emotion</h3>
+      <p>Emotional patterns shape consistency, self-command, relationships, stress response, and whether good intentions translate into sustained action.</p>
+    </div>
+    <div class="ifc-panel">
+      <h3>Intellect affects the whole system</h3>
+      <p>Confused standards, weak judgment, or unclear values can make every other domain more difficult to organize well and sustain.</p>
+    </div>
+  </div>
+  <p>This is why the coaching is not just physique work with a little mindset added on top. It is an attempt to help you improve in a way that respects the full structure of a human life.</p>
+  <div class="ifc-link-action">
+    {% include double_icon_button.html href="/approach/" label="Read the full approach" alignment="center" %}
+  </div>
+</div>
+
+<div class="ifc-section">
+  <h2>Serious coaching, not a generic template</h2>
   <div class="ifc-rail">
     <div>
-      <p>The point is a vital, happy, flourishing life, so coaching starts with what you are actually trying to build. There are universal physiological and psychological principles that apply to human beings as such, but those principles have to be brought into contact with your particular values, priorities, constraints, and ambitions.</p>
-      <p>For example, on the physical side, that might mean strength, endurance, aesthetics, or simply more energy and vitality. Those are not interchangeable goals, so they should not produce identical training, nutrition, recovery, or mindfulness strategies. The same is true elsewhere: The work is grounded in real, universal principles, but shaped around the life you are trying to live.</p>
+      <p>I do not approach coaching as a bag of disconnected tips, a motivational pep talk, or a rigid one-size-fits-all system. The work begins with reality: your goals, your constraints, your history, your patterns, and the actual conditions of your life.</p>
+      <p>From there, we identify the highest-leverage changes and build a process you can actually sustain. Sometimes the immediate emphasis is body composition or training. Sometimes it is emotional steadiness, interpersonal friction, or the habits that keep breaking consistency. Sometimes it is clearer judgment about what you are trying to build and why.</p>
+      <p>The aim is not intensity for its own sake. The aim is progress that holds outside ideal conditions.</p>
     </div>
     <div class="ifc-panel ifc-panel--soft">
-      <h3>Evidence-based and practical</h3>
-      <p>This is not bro science, fad dieting, or social-media panic about whatever is supposedly toxic this week. The first priority is to identify the highest-leverage, most straightforward actions that will move you toward your goals.</p>
-      <p>As your capacity improves, we can get more nuanced and individualized. But we do not begin with complexity for its own sake. We begin with what is true, useful, and actionable.</p>
+      <h3>This is not</h3>
+      <p>Bro science, fad dieting, vague spiritual language, or a brittle life system that collapses the moment reality gets messy.</p>
+      <p>It is structured, evidence-based, and calibrated to the whole person.</p>
     </div>
+  </div>
+</div>
+
+<div class="ifc-section">
+  <h2>Why work with Arthur Zey</h2>
+  <p>I do not come to coaching from a single narrow lane. My background combines formal nutrition coaching, long personal physical practice, systems thinking from years in technology and product work, and sustained study of philosophy, behavior, communication, and human development.</p>
+  <div class="ifc-grid">
+    <div class="ifc-panel">
+      <h3>Evidence-based physical coaching</h3>
+      <p>Certified Nutrition Coach through Renaissance Periodization, with years of serious training and hands-on work helping people improve nutrition and physical development sustainably.</p>
+    </div>
+    <div class="ifc-panel">
+      <h3>Systems thinking and problem-solving</h3>
+      <p>A background across engineering, product management, UX, and developer experience means I think in terms of structure, feedback loops, constraints, and what actually works in complex systems.</p>
+    </div>
+    <div class="ifc-panel">
+      <h3>Human development beyond fitness culture</h3>
+      <p>Longstanding study of philosophy, psychology, relational dynamics, communication, and self-development informs how I think about emotional regulation, self-command, values, and living well.</p>
+    </div>
+  </div>
+  <div class="ifc-link-action">
+    {% include double_icon_button.html href="/about/" label="Read more about Arthur" alignment="center" %}
   </div>
 </div>
 
 <div class="ifc-section ifc-section--tight">
-  <h2>Built for long-term sustainability</h2>
+  <h2>What people often gain</h2>
   <div class="ifc-grid">
     <div class="ifc-panel">
-      <h3>Habits over brute-force effort</h3>
-      <p>The goal is not endless strain, suffering, and theatrical white-knuckling. The goal is a way of eating, training, thinking, and living that you can actually sustain, so progress becomes more stable and less fragile.</p>
+      <h3>Clearer priorities</h3>
+      <p>You stop thrashing between conflicting ideas and begin working from a more coherent standard.</p>
     </div>
     <div class="ifc-panel">
-      <h3>Use difficult phases strategically</h3>
-      <p>If you have aggressive goals, we may use demanding sprints, such as wanting to lose a certain amount of body fat in a timeframe near the extreme of what is safe. But dieting is a tool, not a lifestyle. We avoid approaches that drag on too long, invite cheating and relapse, and produce the familiar cycle of burnout and rebound.</p>
+      <h3>Better follow-through</h3>
+      <p>The plan fits your life better, and the real points of friction are addressed, instead of ignored.</p>
     </div>
     <div class="ifc-panel">
-      <h3>Independence is part of the outcome</h3>
-      <p>I am happy to work with you long term as your needs evolve, but the aim is not dependence. The aim is that you understand what to do, why it works, and how to keep building habits that support you without constant rescue.</p>
-    </div>
-  </div>
-</div>
-
-<div class="ifc-section">
-  <h2>How coaching works</h2>
-  <div class="ifc-grid">
-    <div class="ifc-panel">
-      <h3>1. Assess the system</h3>
-      <p>We look at current habits, schedule constraints, training history, nutrition patterns, recovery, values, and where judgment or emotional regulation repeatedly breaks down.</p>
-    </div>
-    <div class="ifc-panel">
-      <h3>2. Build the next version</h3>
-      <p>You get clear priorities, practical targets, and a plan calibrated to your actual life, rather than an idealized routine, whether the immediate emphasis is training, nutrition, mindset, or philosophy.</p>
-    </div>
-    <div class="ifc-panel">
-      <h3>3. Iterate with feedback</h3>
-      <p>We review outcomes, identify friction, and adjust. The goal is skill acquisition and sustainable independence, not permanent dependence.</p>
+      <h3>More durable progress</h3>
+      <p>Physical, intellectual, and emotional gains begin to reinforce one another, rather than competing for attention.</p>
     </div>
   </div>
 </div>
 
 <div class="ifc-section">
   <h2>Selected client results</h2>
+  <p>Clients do not just get information. They get clearer strategy, better calibration, and support that holds up in the realities of ordinary life.</p>
   <div class="ifc-grid">
     {% assign featured_testimonials = site.testimonials | where: "featured", true | sort: "sort_order" %}
     {% for item in featured_testimonials limit:3 %}
-      <div class="ifc-panel">
-        <h3>{{ item.client_name }}</h3>
-        <p><strong>{{ item.result_summary }}</strong></p>
-        <p class="ifc-quote">{{ item.excerpt | strip_html }}</p>
-        <div class="ifc-link-action">
-          {% include double_icon_button.html href=item.url label="Read more" alignment="center" %}
-        </div>
-      </div>
+      <a class="ifc-card-link" href="{{ item.url }}">
+        <p class="ifc-resource-card__eyebrow">Testimonial</p>
+        <strong>{{ item.client_name }}</strong>
+        <p>{{ item.result_summary }}</p>
+      </a>
     {% endfor %}
   </div>
   <div class="ifc-link-action">
@@ -119,7 +149,8 @@ That integrated view is the foundation of the coaching. But coaching can still h
 </div>
 
 <div class="ifc-section">
-  <h2>Start with a resource, not a sales pitch</h2>
+  <h2>Start with the thinking, not just the pitch</h2>
+  <p>If you want to understand how I think before deciding whether to work with me, start with the articles and guides. They are there to be genuinely useful, whether or not we ever work together.</p>
   <div class="ifc-grid">
     {% assign recent_written_resources = site.resources | where: "format", "written" | sort: "date" | reverse %}
     {% for item in recent_written_resources limit:6 %}
@@ -133,6 +164,7 @@ That integrated view is the foundation of the coaching. But coaching can still h
       </a>
     {% endfor %}
   </div>
+  {% include faq_carousel.html %}
   <div class="ifc-link-action">
     {% include double_icon_button.html href="/resources/" label="Browse the full resource library" alignment="center" %}
   </div>
@@ -140,11 +172,11 @@ That integrated view is the foundation of the coaching. But coaching can still h
 
 <div class="ifc-section">
   <div class="ifc-panel" markdown="1">
-## Apply when you are ready for serious, sustainable work.
+## Find out more, then apply if the structure makes sense
 
-This is coaching for people who want clarity, accountability, and a realistic path forward. The aim is a better life through better practices and better judgment, not more drama.
+This is coaching for people who want more than a generic plan, more than short-lived intensity, and more than compartmentalized self-improvement. The aim is durable progress in the broad sense: a stronger body, a steadier spirit, a clearer intellect, and a life that holds together more coherently.
 
-[See coaching options](/pricing/){:.ifc-button}
-[Read the FAQ](/faq/){:.ifc-button .ifc-button--secondary}
+[View coaching options](/pricing/){:.ifc-button}
+[Read the Coaching FAQ](/faq/){:.ifc-button .ifc-button--secondary}
   </div>
 </div>
