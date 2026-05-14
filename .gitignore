@@ -5,3 +5,4 @@ _site/
 .bundle/
 .playwright-cli/
 /.well-known/
+.codex/
