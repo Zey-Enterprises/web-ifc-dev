@@ -19,4 +19,4 @@ Custom support may make sense when the work does not fit cleanly into a standard
 
 If you are not sure, apply anyway. Part of the intake process is determining what level of support appears appropriate.
 
-[Compare options](/pricing/){:.ifc-button .ifc-button--secondary}
+[Compare options](/pricing/){:.ifc-button}
