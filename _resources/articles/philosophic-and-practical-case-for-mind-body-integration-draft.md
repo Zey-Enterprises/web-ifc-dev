@@ -2,6 +2,7 @@
 #title: "Mind-Body Integration for Living Well"
 title: "The Philosophic and Practical Case for Mind-Body Integration"
 format: written
+published: false
 classes: hide-title
 author: "Arthur Zey"
 date: 2026-04-27

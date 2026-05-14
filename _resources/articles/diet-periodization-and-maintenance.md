@@ -1,5 +1,6 @@
 ---
 title: "SAMPLE: Diet Periodization and Maintenance"
+published: false
 format: written
 date: 2026-03-10
 excerpt: "Why successful nutrition coaching uses phases instead of pretending that a calorie deficit should last forever."

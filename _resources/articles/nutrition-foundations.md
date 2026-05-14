@@ -1,6 +1,7 @@
 ---
 title: "SAMPLE: Nutrition Foundations"
 format: written
+published: false
 date: 2026-02-03
 excerpt: "A practical starting framework for protein, calories, meal structure, and consistency."
 domains:

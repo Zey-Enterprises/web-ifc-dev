@@ -1,6 +1,7 @@
 ---
 title: "SAMPLE: Principles for Self-Direction"
 format: written
+published: false
 date: 2026-03-17
 excerpt: "How values, epistemology, and reflective judgment support more durable fitness and life outcomes."
 domains:

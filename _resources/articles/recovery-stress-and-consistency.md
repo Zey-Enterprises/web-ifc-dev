@@ -1,6 +1,7 @@
 ---
 title: "SAMPLE: Recovery, Stress, and Consistency"
 format: written
+published: false
 date: 2026-03-03
 excerpt: "Why recovery is not a luxury variable and how stress shapes adherence, hunger, and performance."
 domains:

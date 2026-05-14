@@ -1,6 +1,7 @@
 ---
 title: "SAMPLE: Training for Busy Adults"
 format: written
+published: false
 date: 2026-02-10
 excerpt: "A realistic approach to getting stronger and fitter when time and recovery are constrained."
 domains:

@@ -1,7 +1,10 @@
 ---
-title: "SAMPLE: The Best Plan Is the One You Can Run Under Stress"
+title: "The Best Plan Is the One You Can Run Under Stress"
 format: written
-date: 2026-03-30
+author: "Arthur Zey"
+publication_status:
+  status: coming-soon
+  sort_order: 5
 excerpt: "A plan should be judged by how it performs when life becomes difficult, not only when motivation is high."
 domains:
   - psychology
@@ -20,6 +23,4 @@ tags:
   - recovery
 ---
 
-Many fitness plans look effective in perfect conditions. The better question is what happens when travel, deadlines, parenting, poor sleep, or emotional strain show up. If the entire system collapses, the problem is not merely discipline. The system itself may be poorly designed.
-
-A mature approach keeps enough structure to preserve momentum while staying flexible enough to survive high-friction weeks.
+A fitness plan proves itself under friction. Travel, deadlines, parenting, poor sleep, conflict, and emotional strain reveal whether the system is actually usable. When the whole plan collapses under ordinary life pressure, the issue is not always discipline. Sometimes the design is too brittle. A durable plan keeps enough structure to preserve momentum while remaining simple and flexible enough to resume quickly when conditions are imperfect.

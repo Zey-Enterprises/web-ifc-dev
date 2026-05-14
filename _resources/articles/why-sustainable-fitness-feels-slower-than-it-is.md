@@ -1,7 +1,10 @@
 ---
-title: "SAMPLE: Why Sustainable Fitness Feels Slower Than It Is"
+title: "Why Sustainable Fitness Feels Slower Than It Is"
 format: written
-date: 2026-03-30
+author: "Arthur Zey"
+publication_status:
+  status: coming-soon
+  sort_order: 6
 excerpt: "The pace of real progress often feels underwhelming up close because compounding is quieter than intensity."
 domains:
   - psychology
@@ -20,8 +23,4 @@ tags:
   - body-composition
 ---
 
-Sustainable fitness often feels slower than it is because people compare lived progress to highly compressed transformation narratives. Real progress is usually built through ordinary weeks stacked competently on top of each other.
-
-That does not make the process less ambitious. It makes it more truthful. When expectations are grounded, the work becomes easier to evaluate and less vulnerable to emotional overreaction.
-
-It also makes it easier to avoid the trap of yo-yoing. If you understand from the start that fat loss is a phase rather than a permanent state of restriction, you are less likely to chase a dramatic drop and then rebound when the diet becomes intolerable.
+Sustainable progress often feels slow because people compare ordinary weeks to compressed transformation stories. Real change usually comes from repeated competent execution, not from constant novelty or heroic intensity. A plan that can be repeated, reviewed, and adjusted may look unimpressive from day to day while producing major change across months and years. Sustainability is not a lack of ambition. It is ambition with enough structure to survive.

@@ -1,11 +1,15 @@
 ---
-title: "SAMPLE: Body Composition Is Not a Separate Life Project"
+title: "Body Composition Is Not a Separate Life Project"
 format: written
-date: 2026-03-30
+author: "Arthur Zey"
+publication_status:
+  status: coming-soon
+  sort_order: 3
 excerpt: "You can care seriously about physique goals without isolating them from the rest of a meaningful life."
 domains:
   - philosophy
   - psychology
+  - diet
 concerns:
   - body-composition
   - mindset
@@ -17,6 +21,4 @@ tags:
   - behavior-change
 ---
 
-Body composition matters to many people, and there is nothing trivial about wanting to improve it. Problems usually begin when physique work becomes psychologically detached from wider values, responsibilities, and standards for living well.
-
-Integrated coaching treats body composition as one part of a broader effort to become more capable, self-directed, and physically at home in your own life.
+Body composition matters, and there is nothing trivial about wanting to look better, become leaner, build muscle, feel more capable, or be more physically at home in your body. The problem begins when physique work becomes detached from wider values, relationships, health, self-respect, and long-range flourishing. Integrated fitness treats body composition as a real and worthy concern within a larger life, not as an isolated body-management project.

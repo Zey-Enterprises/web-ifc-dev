@@ -1,6 +1,7 @@
 ---
 title: "SAMPLE: Fat Loss Without Burnout"
 format: written
+published: false
 date: 2026-02-17
 excerpt: "How to reduce body fat without recreating the same restrictive cycle that failed before."
 domains:
