@@ -25,7 +25,8 @@ header:
 {% assign faq_path = '/resources/faq/' | relative_url %}
 {% assign references_path = '/resources/references/' | relative_url %}
 {% assign content_resources = site.resources | where_exp: "item", "item.resource_type != 'faq'" %}
-{% assign recent_resources = content_resources | sort: "date" | reverse %}
+{% assign published_content_resources = content_resources | where_exp: "item", "item.publication_status.status != 'coming-soon'" %}
+{% assign recent_resources = published_content_resources | sort: "date" | reverse %}
 {% assign domain_values = "diet,physical-exercise,psychology,philosophy" | split: "," %}
 
 <div class="ifc-resource-browser" data-resource-browser data-resource-path="{{ resources_path }}" data-default-sort="recent-published-desc">
@@ -353,6 +354,12 @@ header:
         {% assign result_author_name = nil %}
         {% assign result_summary = item.excerpt | default: item.description | strip_html | truncate: 180 %}
         {% assign include_result = true %}
+        {% assign result_publication_status = item.publication_status.status | default: item.publication_status %}
+        {% assign result_is_coming_soon = false %}
+        {% if result_publication_status == "coming-soon" %}
+          {% assign result_is_coming_soon = true %}
+        {% endif %}
+        {% assign result_publication_sort_order = item.publication_status.sort_order | default: 9999 %}
 
         {% if item.author %}
           {% if site.data.authors and site.data.authors[item.author] %}
@@ -395,6 +402,11 @@ header:
           {% endif %}
         {% endif %}
 
+        {% if result_is_coming_soon %}
+          {% assign result_published = nil %}
+          {% assign result_updated = nil %}
+        {% endif %}
+
         {% if include_result %}
           <a
             class="ifc-resource-result"
@@ -405,11 +417,16 @@ header:
             data-domain="{{ item.domains | join: '|' }}"
             data-concern="{{ item.concerns | join: '|' }}"
             data-tags="{{ item.tags | join: '|' }}"
-            data-published="{{ result_published | date_to_xmlschema }}"
-            data-updated="{{ result_updated | date_to_xmlschema }}"
+            data-publication-status="{{ result_publication_status }}"
+            data-publication-order="{% if result_is_coming_soon %}{{ result_publication_sort_order }}{% endif %}"
+            data-published="{% if result_published %}{{ result_published | date_to_xmlschema }}{% endif %}"
+            data-updated="{% if result_updated %}{{ result_updated | date_to_xmlschema }}{% endif %}"
           >
             <div class="ifc-resource-result__meta">
               <p class="ifc-resource-card__eyebrow">{{ result_type_label }}</p>
+              {% if result_is_coming_soon %}
+                {% include publication_status_badge.html document=item variant="card" %}
+              {% endif %}
               {% if result_format_value == "article" %}
                 <ul class="ifc-resource-result__meta-list ifc-resource-result__meta-list--article" role="list">
                   {% if result_author_name %}
@@ -424,7 +441,7 @@ header:
                       <time datetime="{{ result_published | date_to_xmlschema }}">{{ result_published | date: site.date_format }}</time>
                     </li>
                   {% endif %}
-                  {% if item.last_modified_at %}
+                  {% if item.last_modified_at and result_is_coming_soon != true %}
                     <li class="ifc-resource-result__meta-item" title="Last modified date">
                       <i class="fas fa-history" aria-hidden="true"></i>
                       <time datetime="{{ item.last_modified_at | date_to_xmlschema }}">{{ item.last_modified_at | date: site.date_format }}</time>

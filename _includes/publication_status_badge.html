@@ -1,0 +1,7 @@
+{% assign document = include.document | default: page %}
+{% assign publication_status = document.publication_status.status | default: document.publication_status %}
+
+{% if publication_status == "coming-soon" %}
+  {% assign badge_variant = include.variant | default: "inline" %}
+  <span class="ifc-publication-status ifc-publication-status--coming-soon ifc-publication-status--{{ badge_variant }}">COMING SOON</span>
+{% endif %}

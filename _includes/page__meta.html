@@ -1,4 +1,9 @@
 {% assign document = post | default: page %}
+{% assign publication_status = document.publication_status.status | default: document.publication_status %}
+{% assign is_coming_soon = false %}
+{% if publication_status == "coming-soon" %}
+  {% assign is_coming_soon = true %}
+{% endif %}
 {% assign author_ref = document.author | default: document.authors[0] | default: site.author %}
 {% assign author_data = site.data.authors[author_ref] | default: author_ref %}
 {% assign author_name = author_data.name | default: author_data %}
@@ -35,7 +40,7 @@
       </span>
     {% endif %}
 
-    {% if show_date and document.date %}
+    {% if show_date and document.date and is_coming_soon != true %}
       {% assign date_format = site.date_format | default: "%Y-%m-%d" %}
       <span class="page__meta-date" title="Published date">
         <i class="far {% if include.type == 'grid' %}fa-fw {% endif %}fa-calendar-alt" aria-hidden="true"></i>
@@ -43,7 +48,7 @@
       </span>
     {% endif %}
 
-    {% if show_modified_date and document.last_modified_at %}
+    {% if show_modified_date and document.last_modified_at and is_coming_soon != true %}
       {% assign date_format = site.date_format | default: "%Y-%m-%d" %}
       <span class="page__meta-modified" title="Last modified date">
         <i class="fas {% if include.type == 'grid' %}fa-fw {% endif %}fa-history" aria-hidden="true"></i>

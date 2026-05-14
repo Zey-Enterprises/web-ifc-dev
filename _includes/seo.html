@@ -53,9 +53,14 @@
   {%- assign site_og_image_raw = site_og_image_path | absolute_url -%}
 {%- endif -%}
 {%- assign site_og_image = site_og_image_raw | escape -%}
+{%- assign page_publication_status = page.publication_status.status | default: page.publication_status -%}
+{%- assign page_is_coming_soon = false -%}
+{%- if page_publication_status == "coming-soon" -%}
+  {%- assign page_is_coming_soon = true -%}
+{%- endif -%}
 {%- assign schema_type = page.schema_type | strip -%}
 {%- if schema_type == "" -%}
-  {%- if page.date -%}
+  {%- if page.date and page_is_coming_soon != true -%}
     {%- assign schema_type = "Article" -%}
   {%- else -%}
     {%- assign schema_type = "CreativeWork" -%}
@@ -67,7 +72,7 @@
 {%- endif -%}
 {%- assign author_name = author.name | default: author -%}
 
-{%- if page.date -%}
+{%- if page.date and page_is_coming_soon != true -%}
   {%- assign og_type = "article" -%}
 {%- else -%}
   {%- assign og_type = "website" -%}
@@ -120,11 +125,11 @@
   {% endif %}
 {% endif %}
 
-{% if page.date %}
+{% if page.date and page_is_coming_soon != true %}
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
 {% endif %}
 
-{% if og_type == "article" and page.last_modified_at %}
+{% if og_type == "article" and page.last_modified_at and page_is_coming_soon != true %}
   <meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">
 {% endif %}
 
@@ -160,8 +165,8 @@
       "headline": {{ page_title | jsonify }},
       "url": {{ canonical_url | jsonify }}{% if seo_description %},
       "description": {{ seo_description | jsonify }}{% endif %}{% if site.locale %},
-      "inLanguage": {{ site.locale | jsonify }}{% endif %}{% if page.date %},
-      "datePublished": {{ page.date | date_to_xmlschema | jsonify }}{% endif %}{% if page.last_modified_at %},
+      "inLanguage": {{ site.locale | jsonify }}{% endif %}{% if page.date and page_is_coming_soon != true %},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }}{% endif %}{% if page.last_modified_at and page_is_coming_soon != true %},
       "dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }}{% endif %}{% if author_name %},
       "author": {
         "@type": "Person",

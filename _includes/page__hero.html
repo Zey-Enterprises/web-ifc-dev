@@ -111,6 +111,8 @@
         <p class="ifc-kicker ifc-kicker--overlay">{{ hero.kicker }}</p>
       {% endif %}
 
+      {% include publication_status_badge.html document=page variant="overlay" %}
+
       {% if overlay_title %}
         <h1 id="page-title" class="page__title p-name" itemprop="headline">
           {{ overlay_title | markdownify | remove: "<p>" | remove: "</p>" }}

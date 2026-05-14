@@ -49,6 +49,24 @@
     return 0;
   }
 
+  function parseSortOrder(value) {
+    var parsed = parseInt(value, 10);
+    return Number.isFinite(parsed) ? parsed : null;
+  }
+
+  function comparePublicationOrder(left, right) {
+    var leftOrder = parseSortOrder(left.getAttribute("data-publication-order"));
+    var rightOrder = parseSortOrder(right.getAttribute("data-publication-order"));
+
+    if (leftOrder !== null && rightOrder !== null && leftOrder !== rightOrder) {
+      return leftOrder - rightOrder;
+    }
+
+    if (leftOrder !== null && rightOrder === null) return -1;
+    if (leftOrder === null && rightOrder !== null) return 1;
+    return 0;
+  }
+
   function isMobileViewport() {
     return window.matchMedia && window.matchMedia("(max-width: 767px)").matches;
   }
@@ -951,18 +969,18 @@
         }
 
         if (sortValue === "published-asc") {
-          return compareDates(left.getAttribute("data-published"), right.getAttribute("data-published"), false) || compareText(leftTitle, rightTitle);
+          return compareDates(left.getAttribute("data-published"), right.getAttribute("data-published"), false) || comparePublicationOrder(left, right) || compareText(leftTitle, rightTitle);
         }
 
         if (sortValue === "recent-updated-desc") {
-          return compareDates(left.getAttribute("data-updated"), right.getAttribute("data-updated"), true) || compareText(leftTitle, rightTitle);
+          return compareDates(left.getAttribute("data-updated"), right.getAttribute("data-updated"), true) || comparePublicationOrder(left, right) || compareText(leftTitle, rightTitle);
         }
 
         if (sortValue === "updated-asc") {
-          return compareDates(left.getAttribute("data-updated"), right.getAttribute("data-updated"), false) || compareText(leftTitle, rightTitle);
+          return compareDates(left.getAttribute("data-updated"), right.getAttribute("data-updated"), false) || comparePublicationOrder(left, right) || compareText(leftTitle, rightTitle);
         }
 
-        return compareDates(left.getAttribute("data-published"), right.getAttribute("data-published"), true) || compareText(leftTitle, rightTitle);
+        return compareDates(left.getAttribute("data-published"), right.getAttribute("data-published"), true) || comparePublicationOrder(left, right) || compareText(leftTitle, rightTitle);
       });
     }
 

@@ -8,9 +8,14 @@ layout: default
 {%- if page.header.overlay_color or page.header.overlay_image or page.header.overlay_images or auto_overlay_image != "" -%}
   {%- assign has_overlay_hero = true -%}
 {%- endif -%}
+{%- assign page_publication_status = page.publication_status.status | default: page.publication_status -%}
+{%- assign page_is_coming_soon = false -%}
+{%- if page_publication_status == "coming-soon" -%}
+  {%- assign page_is_coming_soon = true -%}
+{%- endif -%}
 {%- assign schema_type = page.schema_type | strip -%}
 {%- if schema_type == "" -%}
-  {%- if page.date -%}
+  {%- if page.date and page_is_coming_soon != true -%}
     {%- assign schema_type = "Article" -%}
   {%- else -%}
     {%- assign schema_type = "CreativeWork" -%}
@@ -52,12 +57,13 @@ layout: default
   <article class="page h-entry" itemscope itemtype="{{ schema_itemtype }}"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | replace: '|', '&#124;' | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
-    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
+    {% if page.date and page_is_coming_soon != true %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+    {% if page.last_modified_at and page_is_coming_soon != true %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
 
     <div class="page__inner-wrap">
       {% unless has_overlay_hero %}
         <header class="ifc-page-header ifc-page-header--plain">
+          {% include publication_status_badge.html document=page variant="page" %}
           {% if page.title -%}
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
             <a href="{{ page.url | absolute_url }}" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
