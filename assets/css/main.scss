@@ -3623,6 +3623,32 @@ body.ifc-resource-browser--panel-open {
   margin: 0.35rem 0 0;
 }
 
+.ifc-page-header--plain .page__meta {
+  gap: 0.2rem 0.65rem;
+  margin-bottom: 0 !important;
+}
+
+.ifc-page-header--plain .page__meta-readtime {
+  flex-basis: 100%;
+}
+
+.ifc-page-header--plain .ifc-page-share {
+  float: none !important;
+  clear: both;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0 !important;
+  padding-top: 0.95rem !important;
+  text-align: left;
+}
+
+.ifc-page-header--plain .ifc-page-share__links {
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+}
+
 .page__inner-wrap > header + [data-tldr] {
   margin-top: 0;
 }
