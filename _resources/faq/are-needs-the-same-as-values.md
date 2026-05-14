@@ -33,4 +33,4 @@ A {% include glossary.html id="values" text="value" %} can mean three related th
 
 When deciding what to do, ask three questions: "Is a real need at stake?", "What do I want?", and "What values should govern my action?"
 
-You may need rest, want to skip the gym, and value long-term strength. The right response might be a nap, a lighter workout, an earlier bedtime, or a difficult conversation about workload. Instead of suppressing wants or inflating them into needs, both wants and needs  must be integrated under a clear {% include glossary.html id="value-hierarchy" text="hierarchy of values" %}.
+You may need rest, want to skip the gym, and value long-term strength. The right response might be a nap, a lighter workout, an earlier bedtime, or a difficult conversation about workload. Instead of suppressing wants or inflating them into needs, both wants and needs must be integrated under a clear {% include glossary.html id="value-hierarchy" text="hierarchy of values" %}.
