@@ -1,7 +1,7 @@
 ---
 title: "How can I practice courage without forcing myself into overwhelm?"
 date: 2026-04-25
-last_modified_at: 2026-05-06
+last_modified_at: 2026-05-14
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
@@ -37,7 +37,7 @@ Make the step small enough that you can repeat it. If the fear is speaking up, s
 
 Overwhelm often teaches avoidance, not courage. If you push yourself so aggressively that the experience becomes panic, humiliation, dissociation, or emotional collapse, your nervous system may learn that the activity is dangerous, rather than meaningful. Aim for difficult, but doable. Growth usually happens near the edge of your current capacity, not miles beyond it.{% include citation.html id="campbell-2021-from-triggered-to-tranquil" label="3" %}
 
-It is also important not to confuse courage with emotional suppression. White-knuckling through terror while pretending you are unaffected is often counterproductive. A more sustainable approach is acknowledging the fear honestly, regulating enough to stay functional, and then acting in alignment with your {% include glossary.html id="values" %}. The goal is not becoming numb; it is becoming capable.
+Do not confuse courage with emotional suppression. White-knuckling through terror while pretending you are unaffected is often counterproductive. A more sustainable approach is acknowledging the fear honestly, regulating enough to stay functional, and then acting in alignment with your {% include glossary.html id="values" %}. Courage requires capability, not numbness.
 
 Recovery matters, too. After difficult conversations, strenuous training, social exposure, or emotionally vulnerable moments, give yourself time to process and settle. Reflection, sleep, movement, journaling, supportive relationships, and self-compassion can help convert stressful experiences into integrated growth instead of accumulated exhaustion.
 

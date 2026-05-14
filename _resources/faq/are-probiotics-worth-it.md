@@ -1,7 +1,7 @@
 ---
 title: "Are probiotics worth it?"
 date: 2026-04-24
-last_modified_at: 2026-04-25
+last_modified_at: 2026-05-14
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
@@ -34,4 +34,4 @@ Also distinguish probiotics from prebiotics. Probiotics are live microorganisms 
 
 A probiotic supplement can be worth considering when there is a specific reason, a specific strain, and a plausible outcome to track. One common example is recovering from gut {% include glossary.html id="microbiome" %} disruption after antibiotics, where some probiotic strains may help reduce antibiotic-associated diarrhea or support recovery in certain contexts. Even then, it is worth getting specialized advice on which strains, dose, timing, and duration make sense, while also using whole foods and prebiotic foods to rebuild a supportive gut environment.
 
-The more robust default strategy is to build a gut-supportive diet and lifestyle: Eat enough {% include glossary.html id="fiber" %}, include fermented foods you tolerate, sleep enough, manage stress, and get medical evaluation for persistent gastrointestinal symptoms, bleeding, unexplained weight loss, severe pain, or major changes in bowel habits.
+The stronger default strategy is to build a gut-supportive diet and lifestyle: Eat enough {% include glossary.html id="fiber" %}, include fermented foods you tolerate, sleep enough, manage stress, and get medical evaluation for persistent gastrointestinal symptoms, bleeding, unexplained weight loss, severe pain, or major changes in bowel habits.

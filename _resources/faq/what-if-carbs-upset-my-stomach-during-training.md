@@ -1,10 +1,16 @@
 ---
 title: "What if carbs upset my stomach during training?"
 date: 2026-04-23
-last_modified_at: 2026-04-23
+last_modified_at: 2026-05-14
 resource_type: faq
-redirect_to: "/resources/faq/#what-if-carbs-upset-my-stomach-during-training"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#what-if-carbs-upset-my-stomach-during-training
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -13,8 +19,8 @@ concerns:
   - recovery
 tags:
   - carbohydrates
-  - endurance
   - adherence
+  - endurance
 ---
 
 GI distress usually means the dose, concentration, timing, or food type is wrong for you. Start smaller. Move solid food farther from training, choose lower-fat and lower-fiber pre-workout meals, and use liquids or gels only when they are actually needed.

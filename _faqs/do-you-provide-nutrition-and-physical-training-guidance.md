@@ -17,4 +17,4 @@ The amount of specificity depends on the goal. Some clients need detailed target
 
 If nutrition or physical training is the main focus, we can work on it directly. If the main focus is emotional regulation, stress, relationships, clearer thinking, or life structure, nutrition and physical exercise may still matter because they affect energy, recovery, mood, cognition, and follow-through.
 
-The point is not to force every client into the same template. The point is to use the right tools for the goal.
+Use the right tools for the goal instead of forcing everyone into the same template.

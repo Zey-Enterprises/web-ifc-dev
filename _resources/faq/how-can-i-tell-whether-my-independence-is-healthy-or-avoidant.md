@@ -1,7 +1,7 @@
 ---
 title: "How can I tell whether my independence is healthy or avoidant?"
 date: 2026-04-25
-last_modified_at: 2026-04-27
+last_modified_at: 2026-05-14
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
@@ -51,4 +51,4 @@ For example, it is independent to hire a coach, therapist, accountant, physician
 
 Look at the cost. If your independence helps you train, work, think, love, create, and recover better, it is probably healthy. If it keeps you from asking for support, receiving care, telling the truth, expressing preference, repairing conflict, or letting anyone matter, it may be avoidance. A useful sign is rigidity: Healthy independence gives you options; avoidant independence narrows them.
 
-A practical experiment is to stay self-responsible while making one clean bid for {% include glossary.html id="connection" %}&#58; Ask for help, express appreciation, admit hurt, name a preference, or say what mattered. The goal is not dependency. The goal is flexibility: the ability to stand on your own feet and still let real connection reach you.
+A practical experiment is to stay self-responsible while making one clean bid for {% include glossary.html id="connection" %}&#58; Ask for help, express appreciation, admit hurt, name a preference, or say what mattered. The standard is flexibility, not dependence: the ability to stand on your own feet and still let real connection reach you.

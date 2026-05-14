@@ -66,7 +66,7 @@ The Client acknowledges that not all risks can be predicted or eliminated. The C
 
 Participation in coaching, including the implementation of any recommendations related to exercise, diet, nutrition, recovery, lifestyle, behavior, and other aspects of fitness development, is voluntary and undertaken entirely at the Client's own risk. The Client may decline or discontinue any activity at any time. The Client accepts full responsibility for monitoring his or her own physical and mental condition, readiness, and capacity and for exercising independent judgment in deciding whether and how to implement any recommendation.
 
-The Client further acknowledges that coaching services may be delivered remotely and that the Coach may not directly supervise the Client’s exercise, dietary implementation, use of equipment, supplementation decisions, or other conduct. The Client assumes full responsibility for the selection of exercise environment, equipment, pacing, exercise execution, dietary implementation, supplementation, and for discontinuing any activity, protocol, or recommendation the Client believes may be unsafe, inappropriate, or inconsistent with the Client’s condition or abilities. The Client acknowledges that such risks exist regardless of whether the Coach is present, supervising, or otherwise involved at the time of any activity or implementation.
+The Client further acknowledges that coaching services may be delivered remotely and that the Coach may not directly supervise the Client's exercise, dietary implementation, use of equipment, supplementation decisions, or other conduct. The Client assumes full responsibility for the selection of exercise environment, equipment, pacing, exercise execution, dietary implementation, supplementation, and for discontinuing any activity, protocol, or recommendation the Client believes may be unsafe, inappropriate, or inconsistent with the Client's condition or abilities. The Client acknowledges that such risks exist regardless of whether the Coach is present, supervising, or otherwise involved at the time of any activity or implementation.
 
 ## Health Representations and Disclosures
 
@@ -98,7 +98,7 @@ The Client expressly acknowledges that the foregoing risks are inherent in the a
 
 ## Covenant Not to Sue
 
-The Client agrees that neither the Client nor the Client’s heirs, estate, personal representatives, successors, assigns, or next of kin will initiate, pursue, assist in, or permit to be brought any lawsuit, claim, arbitration demand, administrative complaint, or other proceeding against any of the Released Parties arising out of or related to the matters released under this Waiver, except to the extent prohibited by law. This covenant is intended to operate as a complete and unconditional bar to any such claim or proceeding to the fullest extent permitted by law.
+The Client agrees that neither the Client nor the Client's heirs, estate, personal representatives, successors, assigns, or next of kin will initiate, pursue, assist in, or permit to be brought any lawsuit, claim, arbitration demand, administrative complaint, or other proceeding against any of the Released Parties arising out of or related to the matters released under this Waiver, except to the extent prohibited by law. This covenant is intended to operate as a complete and unconditional bar to any such claim or proceeding to the fullest extent permitted by law.
 
 ## Indemnification
 
@@ -106,7 +106,7 @@ The Client agrees to indemnify, defend, and hold harmless the Released Parties f
 
 ## No Reliance on Medical or Other Professional Advice; Limitation of Care
 
-The Client acknowledges that the Coach is not acting as a physician, physical therapist, psychologist, psychiatrist, registered dietitian providing medical nutrition therapy, or other licensed healthcare provider, and is not providing medical advice, diagnosis, treatment, rehabilitation, psychotherapy, emergency response, or crisis services. The Client understands that the Coach is not responsible for monitoring the Client’s condition in real time, for identifying medical or psychiatric emergencies, or for responding to urgent or emergent situations. The Client is solely responsible for seeking appropriate medical, psychological, nutritional, or emergency care when necessary. Any reliance on coaching recommendations is at the Client’s own risk.
+The Client acknowledges that the Coach is not acting as a physician, physical therapist, psychologist, psychiatrist, registered dietitian providing medical nutrition therapy, or other licensed healthcare provider, and is not providing medical advice, diagnosis, treatment, rehabilitation, psychotherapy, emergency response, or crisis services. The Client understands that the Coach is not responsible for monitoring the Client's condition in real time, for identifying medical or psychiatric emergencies, or for responding to urgent or emergent situations. The Client is solely responsible for seeking appropriate medical, psychological, nutritional, or emergency care when necessary. Any reliance on coaching recommendations is at the Client's own risk.
 
 ## Severability
 
@@ -120,6 +120,6 @@ This Waiver shall be governed by and construed in accordance with the laws of th
 
 By signing below, the Client acknowledges that this Waiver has been read and fully understood, that the Client is knowingly and voluntarily giving up substantial legal rights, including the right to bring certain claims against the Released Parties, that the Client has had the opportunity to ask questions and, if desired, to consult independent legal counsel before signing, and that the Client signs this Waiver freely, voluntarily, and without coercion. The Client further intends this Waiver to be interpreted broadly and enforced to the fullest extent permitted by law.
 
-This Waiver shall be binding upon the Client and the Client’s heirs, estate, personal representatives, successors, assigns, and next of kin.
+This Waiver shall be binding upon the Client and the Client's heirs, estate, personal representatives, successors, assigns, and next of kin.
 
 The Client agrees that this Waiver is intended to be as broad and inclusive as permitted by the laws of the State of Colorado.

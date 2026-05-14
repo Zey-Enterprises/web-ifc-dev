@@ -1,10 +1,16 @@
 ---
 title: "What milk should I use?"
 date: 2026-04-23
-last_modified_at: 2026-04-23
+last_modified_at: 2026-05-14
 resource_type: faq
-redirect_to: "/resources/faq/#what-milk-should-i-use"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#what-milk-should-i-use
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -12,9 +18,9 @@ concerns:
   - adherence
   - busy-life
 tags:
+  - calorie-balance
   - protein
   - dietary-fat
-  - calorie-balance
   - food-quality
 ---
 

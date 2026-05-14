@@ -1,10 +1,16 @@
 ---
-title: "How do I know whether therapy, coaching, or self-directed work is the right fit?"
+title: "How do I know whether therapy, coaching, or self-directed work is the right kind of support?"
 date: 2026-04-24
-last_modified_at: 2026-05-06
+last_modified_at: 2026-05-14
 resource_type: faq
-redirect_to: "/resources/faq/#how-do-i-know-whether-therapy-coaching-or-self-directed-work-is-the-right-fit"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#how-do-i-know-whether-therapy-coaching-or-self-directed-work-is-the-right-fit
+      class: btn--primary
 domains:
   - psychology
 concerns:
@@ -21,7 +27,7 @@ tags:
   - ethics
 ---
 
-The right fit depends on the nature, severity, and scope of the problem, as well as your current level of {% include glossary.html id="agency" %}, support, self-awareness, and functioning. Different forms of help solve different kinds of problems.
+The right kind of support depends on the nature, severity, and scope of the problem, as well as your current level of {% include glossary.html id="agency" %}, support, self-awareness, and functioning. Different forms of help solve different kinds of problems.
 
 Self-directed work is often appropriate when the issue is relatively clear, low-risk, and responsive to honest reflection and experimentation. Books, journaling, educational content, deliberate practice, supportive friendships, and structured self-observation can go surprisingly far when someone is psychologically stable, capable of acting on feedback, and not severely emotionally overwhelmed. Many people can meaningfully improve nutrition, training, sleep, stress management, communication, productivity, or emotional awareness through thoughtful self-directed effort.
 

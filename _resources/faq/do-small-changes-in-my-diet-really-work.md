@@ -1,7 +1,7 @@
 ---
 title: "Do small changes in my diet really work?"
 date: 2026-04-24
-last_modified_at: 2026-04-26
+last_modified_at: 2026-05-14
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
@@ -28,4 +28,4 @@ Yes, if the changes are repeated and large enough to affect the outcome. Swappin
 
 Small does not mean vague. "Eat better." is too inspecific. "Add 30 grams of protein at lunch." or "Replace weekday soda with diet soda." is actionable.
 
-Small changes are especially useful when a dramatic overhaul would fail. The goal is not minimalism for its own sake. It is sustainable leverage.
+Small changes are especially useful when a dramatic overhaul would fail. Minimalism is not the standard; sustainable leverage is.

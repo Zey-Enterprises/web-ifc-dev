@@ -13,6 +13,6 @@ Coaching can provide structure, education, feedback, strategy, accountability, a
 
 That is not a disclaimer against ambition. It is a reality-based view of coaching. What I can commit to is that I will give you my best honest effort to help you work within the real constraints of your body, mind, and life and to adapt as we learn more and as things change. Your part is to communicate honestly, make decisions, take action, and tell me what is and is not working.
 
-The goal is to improve the odds of meaningful progress by making better decisions, building better systems, and adjusting intelligently over time.
+The point is to improve the odds of meaningful progress by making better decisions, building better systems, and adjusting intelligently over time.
 
 Examples, testimonials, or case studies should be treated as illustrations, not promises.

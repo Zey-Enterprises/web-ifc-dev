@@ -4,7 +4,7 @@ classes: hide-title
 permalink: /approach/
 title: "Coaching Approach"
 description: "How Integrated Fitness Coaching develops body, intellect, and spirit through clear principles, practical execution, and long-term integration."
-excerpt: "Fitness is not just physique, performance, or physical health. It is the integrated development of body, intellect, and spirit in a way that is mutually reinforcing."
+excerpt: "Fitness includes physique, performance, and physical health, but in this coaching practice, those belong inside a wider standard: the integrated development of body, intellect, and spirit."
 toc_widget: 
   enabled: true
   min_level: 2
@@ -120,7 +120,7 @@ Others still are more focused on
 
 Any of those can be a legitimate starting point.
 
-The point is not that every coaching engagement looks the same. It is that, wherever we begin, I keep the whole person in view.
+Coaching engagements do not all begin in the same place; wherever we begin, I keep the whole person in view.
 
 If someone comes to me wanting help with stress and emotional regulation, that is a valid first-class coaching focus. But I will still be thinking about sleep, nutrition, movement, environment, habits, and physical practices that support steadiness.
 
@@ -219,9 +219,7 @@ This is true whether the domain is body composition, emotional regulation, or th
 
 ### Aim for increasing competence
 
-The goal is not dependency on a coach forever.
-
-The goal is increasing competence:
+Coaching should not keep you dependent on a coach forever; instead it should make you more competent over time:
 - understanding what you are doing
 - understanding why it works
 - becoming more capable of managing yourself well
@@ -251,9 +249,9 @@ But any of it may become relevant, depending on the goal and the point of fricti
 
 The common denominator is this:
 
-We are not just trying to generate isolated wins. We are trying to build a stronger, clearer, more coherent human being.
+Isolated successes are fine, but they matter only if they begin to accumulate into a stronger, clearer, more coherent human being.
 
-[This is also why coaching is not interchangeable with tools or information sources like "AI" or LLMs.](/faq/#why-do-i-need-a-human-coach-if-i-can-just-get-guidance-from-ai) The value is not just in answers, but in ongoing engagement, feedback, and accountability in the context of your actual life.
+[This is also why coaching is not interchangeable with tools or information sources like "AI" or LLMs.](/faq/#why-do-i-need-a-human-coach-if-i-can-just-get-guidance-from-ai) The value is ongoing engagement: feedback, accountability, and judgment applied to the facts of your actual life—not just answers to prompts.
 
 ## Who this is for
 
@@ -264,11 +262,11 @@ This approach tends to fit people who:
 - want more than a generic diet or exercise template
 - care about physical development without reducing life to physique
 - want to become more self-directed, more capable, and more integrated
-- are open to examining not just what they do, but how they think and live
+- are open to examining what they do, how they think, and how they live
 
 ## The goal
 
-The aim is not merely to look better, perform better, think better, or feel better considered in isolation.
+Looking better, performing better, thinking better, and feeling better all matter. Treated in isolation, each can become too narrow.
 
 The aim is to _live_ better.
 

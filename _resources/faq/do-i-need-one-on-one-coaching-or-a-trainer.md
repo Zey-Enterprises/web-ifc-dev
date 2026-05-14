@@ -1,7 +1,7 @@
 ---
 title: "Do I need one-on-one coaching or a trainer?"
 date: 2026-04-24
-last_modified_at: 2026-05-06
+last_modified_at: 2026-05-14
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
@@ -39,6 +39,6 @@ A useful question is whether your current approach is actually working. Are you 
 
 Choose carefully. A good coach, teacher, therapist, or mentor should increase your competence, {% include glossary.html id="agency" %}, understanding, and independence over time, not cultivate helplessness or dependence. Good guidance helps you internalize principles and become more capable of directing your own life. Be cautious of people who rely heavily on shame, fear, inappropriate black-and-white thinking, emotional manipulation, tribalism, or making themselves seem indispensable.
 
-It is also important to match the professional to the actual problem. A strength coach, nutrition coach, tutor, physician, physical therapist, psychologist, psychotherapist, or psychiatrist each has different training and scope. Serious injuries, eating disorders, severe mental health concerns, trauma, neurological symptoms, or medical conditions may require qualified clinicians outside normal coaching scope.
+Match the professional to the actual problem. A strength coach, nutrition coach, tutor, physician, physical therapist, psychologist, psychotherapist, or psychiatrist each has different training and scope. Serious injuries, eating disorders, severe mental health concerns, trauma, neurological symptoms, or medical conditions may require qualified clinicians outside normal coaching scope.
 
-The deeper point is that seeking guidance is not weakness. Human beings routinely learn faster through mentorship, feedback, collaboration, and structured practice. The goal is not proving you can do everything alone. The goal is building a healthier, stronger, wiser, more reality-oriented, and more flourishing life as effectively and sustainably as possible.
+Seeking guidance is not weakness. Human beings routinely learn faster through mentorship, feedback, collaboration, and structured practice. The standard is not proving you can do everything alone; it is building a healthier, stronger, wiser, more reality-oriented, and more flourishing life as effectively and sustainably as possible.

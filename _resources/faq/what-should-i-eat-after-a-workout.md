@@ -1,10 +1,16 @@
 ---
 title: "What should I eat after a workout?"
 date: 2026-04-23
-last_modified_at: 2026-04-23
+last_modified_at: 2026-05-14
 resource_type: faq
-redirect_to: "/resources/faq/#what-should-i-eat-after-a-workout"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#what-should-i-eat-after-a-workout
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -16,6 +22,9 @@ tags:
   - carbohydrates
   - recovery
   - meal-structure
+citations:
+  - label: "1"
+    id: schoenfeld-2013-the-effect-of-protein-timing-on-muscle-strength-and-hypertrophy
 ---
 
 Eat a normal protein-containing meal within a reasonable window after training. You usually do not need to slam a shake the second the workout ends, especially if you ate protein before training. The total day of protein and calories matters more than a narrow anabolic window.{% include citation.html id="schoenfeld-2013-the-effect-of-protein-timing-on-muscle-strength-and-hypertrophy" label="1" %}

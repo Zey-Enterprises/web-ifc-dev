@@ -45,7 +45,7 @@ That led me into years of serious self-study in psychology, behavior, communicat
 
 Along the way, I engaged deeply with a range of ideas and influences, including {% include glossary.html id="attachment-theory" %}, {% include glossary.html id="positive-discipline" %}, {% include glossary.html id="manager-tools" %}, {% include glossary.html id="authentic-relating" %} and {% include glossary.html id="circling" %}, meditation, {% include glossary.html id="nonviolent-communication" %}, Brené Brown's work on {% include glossary.html id="vulnerability" %} and {% include glossary.html id="shame" %}, Susan Campbell's work on {% include glossary.html id="authenticity" %}, Deb Dana's work on {% include glossary.html id="polyvagal-theory" %}, Sue Johnson's work on attachment in romantic relationships, Harriet Lerner's work on relational boundaries, Carol Dwek's work on {% include glossary.html id="mindset" %}, Kim Scott's work on candid communication, and {% include glossary.html id="cocounseling" %}.
 
-What mattered was not collecting techniques or cycling through frameworks. It was developing a clearer, more principled understanding of how people actually function—intellectually, emotionally, behaviorally, and relationally—and integrating that understanding into how I live and work.
+I wasn't just collecting techniques or frameworks—I needed a clearer, more principled understanding of how people actually function intellectually, emotionally, behaviorally, and relationally, and I needed to integrate that understanding into how I live and work.
 
 ## A Lifelong Thread of Physical Practice
 
@@ -92,7 +92,7 @@ It's applying that knowledge consistently, especially in the context of a real l
 
 That's where I focus my work.
 
-My background in systems thinking, philosophy, and human behavior shapes how I approach coaching: not as a narrow discipline, but as something that spans multiple aspects of life.
+My background in systems thinking, philosophy, and human behavior shapes how I approach coaching. The work is not a narrow discipline: It spans multiple aspects of life.
 
 ## Working With Me
 
@@ -107,7 +107,7 @@ My perspective is shaped by
 
 I bring that perspective to helping people navigate the practical challenges of improving their lives, whether the catalyst that brings them to me is physique, emotional wellbeing, intellectual growth, or any other aspect of health and fitness.
 
-If you're looking for a thoughtful, structured approach, someone who can help you make sense of competing ideas, and guidance that holds up outside of ideal conditions, then this work may be worth considering.
+If you're looking for a thoughtful, structured approach, someone who can help you make sense of competing ideas, and guidance that holds up outside ideal conditions, this work may be worth considering.
 
 [See how coaching works](/approach/){:.ifc-button .ifc-button--secondary}
 [View coaching options](/pricing/){:.ifc-button}

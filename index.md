@@ -68,7 +68,7 @@ We can begin anywhere. The point is to work in a way that strengthens the whole 
       <p>Confused standards, weak judgment, or unclear values can make every other domain more difficult to organize well and sustain.</p>
     </div>
   </div>
-  <p>This is why the coaching is not just physique work with a little mindset added on top. It is an attempt to help you improve in a way that respects the full structure of a human life.</p>
+  <p>This is why the coaching cannot be reduced to physique work with a little mindset language added on top. The point is improvement that respects the full structure of a human life.</p>
   <div class="ifc-link-action">
     {% include double_icon_button.html href="/approach/" label="Read the full approach" alignment="center" %}
   </div>
@@ -80,7 +80,7 @@ We can begin anywhere. The point is to work in a way that strengthens the whole 
     <div>
       <p>I do not approach coaching as a bag of disconnected tips, a motivational pep talk, or a rigid one-size-fits-all system. The work begins with reality: your goals, your constraints, your history, your patterns, and the actual conditions of your life.</p>
       <p>From there, we identify the highest-leverage changes and build a process you can actually sustain. Sometimes the immediate emphasis is body composition or training. Sometimes it is emotional steadiness, interpersonal friction, or the habits that keep breaking consistency. Sometimes it is clearer judgment about what you are trying to build and why.</p>
-      <p>The aim is not intensity for its own sake. The aim is progress that holds outside ideal conditions.</p>
+      <p>Intensity is useful only when it serves progress that holds outside ideal conditions.</p>
     </div>
     <div class="ifc-panel ifc-panel--soft">
       <h3>This is not</h3>
@@ -132,7 +132,7 @@ We can begin anywhere. The point is to work in a way that strengthens the whole 
 
 <div class="ifc-section">
   <h2>Selected client results</h2>
-  <p>Clients do not just get information. They get clearer strategy, better calibration, and support that holds up in the realities of ordinary life.</p>
+  <p>Clients get more than information: clearer strategy, better calibration, and support that holds up in the realities of ordinary life.</p>
   <div class="ifc-grid">
     {% assign featured_testimonials = site.testimonials | where: "featured", true | sort: "sort_order" %}
     {% for item in featured_testimonials limit:3 %}
@@ -149,7 +149,7 @@ We can begin anywhere. The point is to work in a way that strengthens the whole 
 </div>
 
 <div class="ifc-section">
-  <h2>Start with the thinking, not just the pitch</h2>
+  <h2>Start with the thinking behind the pitch</h2>
   <p>If you want to understand how I think before deciding whether to work with me, start with the articles and guides. They are there to be genuinely useful, whether or not we ever work together.</p>
   <div class="ifc-grid">
     {% assign recent_written_resources = site.resources | where: "format", "written" | sort: "date" | reverse %}

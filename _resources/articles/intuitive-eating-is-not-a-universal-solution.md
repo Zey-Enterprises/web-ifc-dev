@@ -22,4 +22,4 @@ tags:
   - calorie-balance
 ---
 
-Intuitive eating can work well for people whose hunger cues, food environment, habits, and goals are already reasonably aligned. Many people are not in that position. Appetite, hyperpalatable foods, stress eating, social cues, dieting history, and specific body composition goals can all make “just listen to your body” too vague to be useful. Structure is not a failure of intuition. For many people, structure is what makes better self-regulation possible.
+Intuitive eating can work well for people whose hunger cues, food environment, habits, and goals are already reasonably aligned. Many people are not in that position. Appetite, hyperpalatable foods, stress eating, social cues, dieting history, and specific body composition goals can all make "just listen to your body" too vague to be useful. Structure is not a failure of intuition. For many people, structure is what makes better self-regulation possible.

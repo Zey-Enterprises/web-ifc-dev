@@ -6,4 +6,4 @@ featured: true
 sort_order: 3
 ---
 
-Arthur brought a level of systems thinking that made the whole process feel coherent. We were not just chasing numbers. We were building a better operating system. The result was better training, less second-guessing, and progress that actually lasted.
+Arthur brought a level of systems thinking that made the whole process feel coherent. We tracked the numbers, but they were not the whole point. We were building a better operating system. The result was better training, less second-guessing, and progress that actually lasted.

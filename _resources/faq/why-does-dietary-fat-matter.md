@@ -1,7 +1,7 @@
 ---
 title: "Why does dietary fat matter?"
 date: 2026-04-23
-last_modified_at: 2026-05-09
+last_modified_at: 2026-05-14
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
@@ -31,7 +31,7 @@ citations:
     id: de-souza-2015-intake-of-saturated-and-trans-unsaturated-fatty-acids-and-risk-of-all-cause-mortality-cardiovascular-disease-and-type-2-diabetes
 ---
 
-{% include glossary.html id="dietary-fat" text="Dietary fat" %} matters because it is both functional and energy-dense. It supports cell membranes, nervous-system function, essential fatty-acid intake, fat-soluble vitamin absorption, hormone physiology, meal satisfaction, and food enjoyment. The goal is not to eliminate fat. The goal is to eat enough of the right kinds, in the right amounts, for your body, goals, preferences, and health markers.{% include citation.html id="aranceta-2012-recommended-dietary-reference-intakes-nutritional-goals-and-dietary-guidelines-for-fat-and-fatty-acids" label="1" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html id="das-2006-essential-fatty-acids-a-review" label="2" %}
+{% include glossary.html id="dietary-fat" text="Dietary fat" %} matters because it is both functional and energy-dense. It supports cell membranes, nervous-system function, essential fatty-acid intake, fat-soluble vitamin absorption, hormone physiology, meal satisfaction, and food enjoyment. Do not eliminate fat. Eat enough of the right kinds, in the right amounts, for your body, goals, preferences, and health markers.{% include citation.html id="aranceta-2012-recommended-dietary-reference-intakes-nutritional-goals-and-dietary-guidelines-for-fat-and-fatty-acids" label="1" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html id="das-2006-essential-fatty-acids-a-review" label="2" %}
 
 For body composition, fat matters because it carries a lot of calories in a small volume. That can be helpful during a muscle-gain phase if appetite is low. It can be a problem during a {% include glossary.html id="cut" %} if oil, butter, dressings, nuts, nut butters, cheese, fatty meats, and restaurant foods quietly push calories above the target. Healthy fat still counts toward {% include glossary.html id="calorie-balance" %}.
 

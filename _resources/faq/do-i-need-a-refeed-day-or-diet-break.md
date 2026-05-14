@@ -1,7 +1,7 @@
 ---
 title: "Do I need a refeed day or diet break?"
 date: 2026-04-24
-last_modified_at: 2026-04-26
+last_modified_at: 2026-05-14
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
@@ -31,7 +31,7 @@ citations:
 
 Not always. Refeed days and diet breaks are tools, not requirements. They are most useful when dieting fatigue, hunger, food preoccupation, training performance, mood, or psychological pressure have accumulated enough that continuing the same deficit is becoming less productive.
 
-A refeed is usually a short, deliberate increase in calories, often mostly from {% include glossary.html id="carbohydrates" %}, for one day or a few days. A diet break is a longer period eating around maintenance calories, often for one or more weeks. Neither is a "cheat day". The point is not to go off the rails under a respectable name; the point is to reduce fatigue, improve adherence, restore some training output, and give appetite and stress systems a temporary reprieve while still staying inside the overall plan.
+A refeed is usually a short, deliberate increase in calories, often mostly from {% include glossary.html id="carbohydrates" %}, for one day or a few days. This isn't just a "cheat day" where you go off the rails under a respectable-sounding name. Used well, the purpose is to reduce fatigue, improve adherence, restore some training output, and give appetite and stress systems a temporary reprieve, while still staying inside the overall plan. Similarly, a diet break is a longer period eating around maintenance calories, often for one or more weeks.
 
 There is a related idea during muscle-gain phases: a temporary break from a surplus. If eating enough food has become unpleasant, digestion is poor, bodyweight is rising too quickly, or training no longer seems to benefit from more calories, a short maintenance phase can be useful. That is not really a "refeed" or a classic diet break; it is a way to restore appetite, digestion, and body-composition control before deciding whether to keep gaining.
 

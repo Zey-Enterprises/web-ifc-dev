@@ -1,7 +1,7 @@
 ---
 title: "How do attachment patterns affect fitness consistency?"
 date: 2026-04-24
-last_modified_at: 2026-05-06
+last_modified_at: 2026-05-14
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
@@ -38,7 +38,7 @@ citations:
     id: brown-2021-atlas-of-the-heart
 ---
 
-{% include glossary.html id="attachment-theory" text="Attachment patterns" %} can affect fitness indirectly through {% include glossary.html id="emotional-regulation" %}, stress responses, shame, support-seeking, self-worth, conflict, avoidance, perfectionism, and how safe it feels to pursue growth or change. This applies not only to physical fitness, but also to intellectual and psychological wellbeing.
+{% include glossary.html id="attachment-theory" text="Attachment patterns" %} can affect fitness indirectly through {% include glossary.html id="emotional-regulation" %}, stress responses, shame, support-seeking, self-worth, conflict, avoidance, perfectionism, and how safe it feels to pursue growth or change. That applies to physical fitness, intellectual development, and psychological wellbeing.
 
 An anxious attachment pattern may show up as emotional overinvestment in outcomes and external validation. A person may panic when the scale fluctuates, interpret missed workouts as personal failure, compare themselves obsessively to others, seek constant reassurance, or abandon routines when relationships feel unstable. Fitness goals can quietly become attempts to secure approval, desirability, safety, or reassurance, rather than expressions of genuine {% include glossary.html id="values" %}.{% include citation.html id="levine-heller-2010-attached" label="1" %}
 
@@ -50,4 +50,4 @@ Secure attachment does not mean never struggling. It usually means greater flexi
 
 Attachment patterns can affect intellectual fitness, too. Someone with insecure attachment may avoid difficult learning because being wrong feels humiliating, become dependent on authority figures for certainty, or attach their identity to appearing knowledgeable, rather than growing. Others may compulsively overperform intellectually in order to secure approval or safety. Emotionally secure people are generally better able to tolerate ambiguity, feedback, disagreement, and gradual learning, without treating them as existential threats.
 
-The important point is that attachment is a lens, not a life sentence. Patterns can become more secure through self-awareness, healthier relationships, honest communication, emotional skill-building, corrective experiences, and sometimes therapy. The goal is not becoming perfectly independent or perfectly attached. It is developing enough {% include glossary.html id="agency" %}, flexibility, self-trust, and relational safety that your pursuit of health no longer rises and falls entirely with fear, shame, avoidance, or reassurance-seeking.{% include citation.html id="campbell-2001-getting-real" label="4" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html id="brown-2021-atlas-of-the-heart" label="5" %}
+The important point is that attachment is a lens, not a life sentence. Patterns can become more secure through self-awareness, healthier relationships, honest communication, emotional skill-building, corrective experiences, and sometimes therapy. The standard is not perfect independence or perfect attachment. It is enough {% include glossary.html id="agency" %}, flexibility, self-trust, and relational safety that your pursuit of health no longer rises and falls entirely with fear, shame, avoidance, or reassurance-seeking.{% include citation.html id="campbell-2001-getting-real" label="4" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html id="brown-2021-atlas-of-the-heart" label="5" %}

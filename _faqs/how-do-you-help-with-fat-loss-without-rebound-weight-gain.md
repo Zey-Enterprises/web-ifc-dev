@@ -5,13 +5,11 @@ concerns:
 tags:
 ---
 
-Fat loss is not just about getting weight down. It is about losing fat in a way that gives you a real chance of keeping it off, while also preserving (or even building) muscle and strength.
+Useful fat loss means more than getting weight down. It means losing fat in a way that gives you a real chance of keeping it off, while also preserving (or even building) muscle and strength.
 
 A common failure pattern is to diet too aggressively, for too long, with too little attention to sustainability. That may produce short-term weight loss, but it often creates enough psychological and physiological fatigue that the end of the diet becomes a rebound.
 
-The goal is different here.
-
-We play the long game.
+Instead, we play the long game.
 
 That usually means using a reasonable calorie deficit, keeping protein high enough, preserving physical training as much as recovery allows, managing hunger intelligently, and building meal structures that can survive real life.
 

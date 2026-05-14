@@ -1,7 +1,7 @@
 ---
 title: "Do I have to forgive someone to move on?"
 date: 2026-04-25
-last_modified_at: 2026-04-26
+last_modified_at: 2026-05-14
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
@@ -41,4 +41,4 @@ Psychologically, forgiveness can sometimes help people reduce resentment and dis
 
 The same distinction applies to apologies. A real {% include glossary.html id="apology" %} names the wrong, accepts responsibility, and supports {% include glossary.html id="repair" %}. It is not a ritual phrase that magically resets the relationship. Likewise, "I accept your apology." should not mean "Nothing happened.", "I trust you again.", or "There will be no consequences.". It can simply mean "I recognize that you are taking responsibility; now we will see whether repair occurs.".
 
-A practical alternative to forced forgiveness is to name what happened, name what it means, decide what justice and safety require, allow the grief, and stop rehearsing the injury when rehearsal no longer serves understanding or action. If the situation involved abuse, trauma, coercion, or ongoing danger, prioritize safety and qualified support over any pressure to forgive. The goal is not to perform forgiveness. The goal is to live in truth, regain agency, and relate to the person—or their absence—according to the full context.
+A practical alternative to forced forgiveness is to name what happened, name what it means, decide what justice and safety require, allow the grief, and stop rehearsing the injury when rehearsal no longer serves understanding or action. If the situation involved abuse, trauma, coercion, or ongoing danger, prioritize safety and qualified support over any pressure to forgive. Do not perform forgiveness; live in truth, regain agency, and relate to the person—or their absence—according to the full context.

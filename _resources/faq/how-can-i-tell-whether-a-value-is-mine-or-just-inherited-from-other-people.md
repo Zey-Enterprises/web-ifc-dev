@@ -1,7 +1,7 @@
 ---
 title: "How can I tell whether a value is mine or just inherited from other people?"
 date: 2026-04-25
-last_modified_at: 2026-04-27
+last_modified_at: 2026-05-14
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
@@ -45,4 +45,4 @@ When values conflict, name the hierarchy and the context. Training, sleep, work,
 
 A practical exercise is to ask three questions: What do I admire? What am I repeatedly willing to make tradeoffs for? What would I still pursue if nobody were watching? The overlap often reveals your real {% include glossary.html id="values" %}.
 
-The goal is not to become value-less and invent yourself from scratch. The goal is to inherit consciously, reject honestly, revise intelligently, and choose deliberately.
+You do not need to become value-less or invent yourself from scratch. You need to inherit consciously, reject honestly, revise intelligently, and choose deliberately.

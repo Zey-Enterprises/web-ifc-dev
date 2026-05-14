@@ -1,23 +1,30 @@
 ---
 title: "Why does my scale weight fluctuate?"
 date: 2026-04-23
-last_modified_at: 2026-04-23
+last_modified_at: 2026-05-14
 resource_type: faq
-redirect_to: "/resources/faq/#why-does-my-scale-weight-fluctuate"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#why-does-my-scale-weight-fluctuate
+      class: btn--primary
 domains:
   - diet
 concerns:
   - fat-loss
   - body-composition
   - mindset
+  - recovery
 tags:
-  - body-composition
   - calorie-balance
   - carbohydrates
   - recovery
+  - body-composition
 ---
 
-Daily scale weight is noisy. Food volume, fluid, sodium, {% include glossary.html id="glycogen" text="glycogen" %}, bowel contents, menstrual cycle, hard training, inflammation, travel, sleep disruption, and stress can all move the number independent of fat gain or loss.
+Daily scale weight is noisy. Food volume, fluid, sodium, {% include glossary.html id="glycogen" text="glycogen" %}, bowel contents, menstrual cycle, demanding training, inflammation, travel, sleep disruption, and stress can all move the number independent of fat gain or loss.
 
 Use trends, not single weigh-ins. Weigh under consistent conditions, compare weekly averages, and interpret changes alongside adherence, measurements, photos, training performance, and how clothes fit. A one-day jump after a salty, higher-carb meal is usually water and food mass, not a sudden body-fat increase.

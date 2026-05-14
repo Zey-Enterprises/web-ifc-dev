@@ -1,7 +1,7 @@
 ---
 title: "How can I manage nighttime hunger?"
 date: 2026-04-23
-last_modified_at: 2026-05-06
+last_modified_at: 2026-05-14
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
@@ -26,7 +26,7 @@ tags:
 
 Nighttime hunger often means the day was underfed, under-proteined, too low in {% include glossary.html id="fiber" %}, too stressful, poorly hydrated, or too loosely structured. Fix the day before trying to win the night with discipline. A larger lunch, more {% include glossary.html id="protein" %} at dinner, more vegetables or potatoes, or a planned evening snack can make a large difference.
 
-Meal timing and structure also matter. Some people let hunger accumulate too aggressively during the day, then become so ravenous at night that their remaining calories no longer feel psychologically or physically satisfying. In that case, more frequent meals or snacks may help keep hunger from snowballing. Other people genuinely prefer fewer larger meals and feel better with that structure. The goal is not following one universal meal frequency rule; it is finding a pattern that supports {% include glossary.html id="satiety" %}, energy, sleep, and adherence.
+Meal timing and structure also matter. Some people let hunger accumulate too aggressively during the day, then become so ravenous at night that their remaining calories no longer feel psychologically or physically satisfying. In that case, more frequent meals or snacks may help keep hunger from snowballing. Other people genuinely prefer fewer larger meals and feel better with that structure. Do not chase one universal meal-frequency rule; find a pattern that supports {% include glossary.html id="satiety" %}, energy, sleep, and adherence.
 
 Food selection matters, too. Slower-digesting meals in the evening can help some people stay fuller longer. Foods rich in {% include glossary.html id="casein-protein" text="casein" %}, such as non-fat Greek yogurt, cottage cheese, or other dairy products, can be especially useful because they digest more gradually and provide substantial protein and overnight caloric support. Higher-volume foods, soups, fruit, potatoes, oats, and vegetables may also help, depending on the person.
 

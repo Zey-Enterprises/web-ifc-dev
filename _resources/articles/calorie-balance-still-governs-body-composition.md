@@ -4,7 +4,7 @@ format: written
 classes: hide-title
 author: "Arthur Zey"
 date: 2026-04-12
-last_modified_at: 2026-04-19
+last_modified_at: 2026-05-14
 excerpt: "Body composition is governed by calorie balance, while diet quality, hormones, sleep, stress, genetics, the microbiome, and environment matter by changing calorie intake, absorption, expenditure, and partitioning."
 tldr: "Most nutrition debates go wrong by treating factors like hormones, diet quality, sleep, stress, genetics, and the microbiome as alternatives to calorie balance. They aren't. They matter, but they operate through energy balance, not instead of it. Body composition is governed by calorie balance, and progress becomes far clearer when you treat it as the central constraint and everything else as inputs into that system."
 domains:
@@ -98,7 +98,7 @@ People do not want to hear that bodyweight change is, at root, about {% include 
 
 That framing is emotionally satisfying. It is also usually confused.
 
-The truth is both simpler and more nuanced:
+The truth is simpler than the rhetoric, but not simplistic:
 
 Bodyweight change is driven by {% include glossary.html id="calorie-balance" %}. But {% include glossary.html id="calorie-balance" %} is not a rival to hormones, sleep, stress, food quality, genetics, or the {% include glossary.html id="microbiome" %}. Those things matter—sometimes a lot—because they influence {% include glossary.html id="calories-in" %} and {% include glossary.html id="calories-out" %}&#58; hunger, satiety, {% include glossary.html id="absorption" %}, {% include glossary.html id="partitioning" %}, spontaneous activity, training output, and adherence.
 
@@ -326,7 +326,7 @@ Certain psychiatric medications also matter here. In particular, antipsychotics 
 
 These are not trivial effects. In many cases, they can significantly change how difficult it is to maintain a given {% include glossary.html id="calorie-balance" %} or how the body responds to a surplus or deficit. But even here, the underlying mechanism remains the same: these factors influence body composition by shifting {% include glossary.html id="calories-in" %}, {% include glossary.html id="calories-out" %}, {% include glossary.html id="absorption" %}, and {% include glossary.html id="partitioning" %}, not by replacing the system altogether.
 
-This is also where it becomes important to distinguish between body composition goals and clinical health management. Individuals dealing with medical conditions should always prioritize guidance from qualified healthcare professionals. The goal in those contexts is not just fat loss or muscle gain, but overall health and risk management.
+This is also where body composition goals have to be distinguished from clinical health management. Individuals dealing with medical conditions should always prioritize guidance from qualified healthcare professionals. In those contexts, fat loss or muscle gain sits inside the wider task of health and risk management.
 
 At the same time, recognizing that these conditions and interventions still operate through {% include glossary.html id="calorie-balance" text="energy balance" %} can be clarifying, rather than dismissive. It helps explain _why_ different individuals experience different outcomes under similar conditions and why effective strategies often focus on managing appetite, improving adherence, or adjusting activity in ways that are compatible with a given clinical context.
 
@@ -386,7 +386,7 @@ A real mechanism is observed.
 
 Then it is promoted as replacing {% include glossary.html id="calorie-balance" %} instead of feeding into it.
 
-But many people will say, "Of course calories matter—I never said they didn't!". What's actually happening is subtler: They are overweighting secondary factors—seed oils, sunshine, gut health, toxins—because those feel like cleaner, lower-friction fixes. It's psychologically appealing to believe that changing a single ingredient, supplement, or exposure will unlock progress without having to directly manage intake.
+But many people will say, "Of course calories matter—I never said they didn't!". What often happens is subtler: They overweight secondary factors—seed oils, sunshine, gut health, toxins—because those feel like cleaner, lower-friction fixes. It is psychologically appealing to believe that changing a single ingredient, supplement, or exposure will produce progress without having to directly manage intake.
 
 But this often turns into a kind of nutritional whack-a-mole: swapping foods, chasing mechanisms, increasing cognitive load, and dealing with a growing list of rules—while the primary lever (effective {% include glossary.html id="calorie-balance" %}) remains unaddressed. The result is a lot of complexity for relatively small effects.
 
@@ -400,9 +400,9 @@ This doesn't mean seed oils, sunlight, or environmental exposures are irrelevant
 
 In practice, these levers are deeply interconnected—protein affects satiety, sleep affects hunger, stress affects food choice, and so on. But it is still useful to think about them in a rough order of importance, especially for someone just starting out, so that effort is directed where it has the greatest impact.
 
-At the foundation is <strong>{% include glossary.html id="calorie-balance" %}</strong>, which determines the direction of change. Next are **protein intake and resistance training**, which largely determine {% include glossary.html id="partitioning" text="the quality of that change" %} (fat versus muscle). From there, **food selection**—especially managing hyperpalatability—makes {% include glossary.html id="calorie-balance" %} easier to sustain by improving satiety and reducing passive overeating. **Sleep, stress, and daily routine** further support or undermine all of the above by influencing appetite, energy, decision making, and activity levels. Finally, there are **refinements**—timing, supplements, environmental factors, and more nuanced optimizations—that can provide incremental improvements once the fundamentals are in place.
+At the foundation is <strong>{% include glossary.html id="calorie-balance" %}</strong>, which determines the direction of change. Next are **protein intake and resistance training**, which largely determine {% include glossary.html id="partitioning" text="the quality of that change" %} (fat versus muscle). From there, **food selection**—especially managing hyperpalatability—makes {% include glossary.html id="calorie-balance" %} easier to sustain by improving satiety and reducing passive overeating. **Sleep, stress, and daily routine** further support or undermine all of the above by influencing appetite, energy, decision making, and activity levels. Finally, there are **refinements**—timing, supplements, environmental factors, and finer optimizations—that can provide incremental improvements once the fundamentals are in place.
 
-The goal of this hierarchy is not to create rigid categories, but to reduce overwhelm. By focusing first on the highest-leverage factors and then layering in refinements as cognitive bandwidth, habits, and consistency improve, this approach allows for steady progress without getting lost in complexity.
+This hierarchy is meant to reduce overwhelm, not create rigid categories. Focus first on the highest-leverage factors. Then layer in refinements as cognitive bandwidth, habits, and consistency improve. That allows for steady progress without getting lost in complexity.
 
 As capacity allows, the right questions to ask and answer include
 

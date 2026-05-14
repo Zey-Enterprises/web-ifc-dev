@@ -1,7 +1,7 @@
 ---
 title: "Are needs the same as values?"
 date: 2026-04-25
-last_modified_at: 2026-04-25
+last_modified_at: 2026-05-14
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
@@ -33,4 +33,4 @@ A {% include glossary.html id="values" text="value" %} can mean three related th
 
 When deciding what to do, ask three questions: "Is a real need at stake?", "What do I want?", and "What values should govern my action?"
 
-You may need rest, want to skip the gym, and value long-term strength. The right response might be a nap, a lighter workout, an earlier bedtime, or a difficult conversation about workload. The point is not to suppress wants or inflate them into needs, but to integrate them under a clear {% include glossary.html id="value-hierarchy" text="hierarchy of values" %}.
+You may need rest, want to skip the gym, and value long-term strength. The right response might be a nap, a lighter workout, an earlier bedtime, or a difficult conversation about workload. Instead of suppressing wants or inflating them into needs, both wants and needs  must be integrated under a clear {% include glossary.html id="value-hierarchy" text="hierarchy of values" %}.

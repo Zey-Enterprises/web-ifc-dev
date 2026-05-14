@@ -1,7 +1,7 @@
 ---
 title: "Are vegetables really that important?"
 date: 2026-04-23
-last_modified_at: 2026-04-23
+last_modified_at: 2026-05-14
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
@@ -31,4 +31,4 @@ citations:
 
 Yes, but not because vegetables have magic fat-loss properties. They are useful because they provide {% include glossary.html id="dietary-fiber" text="fiber" %}, volume, potassium and other {% include glossary.html id="micronutrients" text="micronutrients" %}, phytochemicals, and meal structure for relatively few calories. That combination helps health and often makes fat-loss diets more tolerable.{% include citation.html id="dahl-2015-position-of-the-academy-of-nutrition-and-dietetics" label="1" %}
 
-The goal is not to force a perfect vegetable list. The goal is to build meals that are more filling and nutrient-dense. Raw, cooked, fresh, frozen, canned, roasted, blended into sauces, or added to soups can all count if the total diet improves.
+Do not start by forcing a perfect vegetable list. Start by building meals that are more filling and nutrient-dense. Raw, cooked, fresh, frozen, canned, roasted, blended into sauces, or added to soups can all count if the total diet improves.

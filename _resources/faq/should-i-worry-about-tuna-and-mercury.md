@@ -1,21 +1,31 @@
 ---
 title: "Should I worry about tuna and mercury?"
 date: 2026-04-23
-last_modified_at: 2026-04-23
+last_modified_at: 2026-05-14
 resource_type: faq
-redirect_to: "/resources/faq/#should-i-worry-about-tuna-and-mercury"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#should-i-worry-about-tuna-and-mercury
+      class: btn--primary
 domains:
   - diet
 concerns:
   - body-composition
   - recovery
   - maintenance
+  - physical-health
 tags:
   - protein
   - dietary-fat
-  - micronutrients
   - food-quality
+  - micronutrients
+citations:
+  - label: "1"
+    id: fda-epa-2024-advice-about-eating-fish
 ---
 
 Fish can be an excellent protein source, and fatty fish can contribute beneficial fats. Mercury risk depends on fish species, amount, and life stage. The FDA/EPA guidance places canned light tuna in a lower-mercury category than albacore or yellowfin, and recommends more caution for people who are pregnant, may become pregnant, breastfeeding, or feeding young children.{% include citation.html id="fda-epa-2024-advice-about-eating-fish" label="1" %}

@@ -15,11 +15,11 @@ Those can all be valuable. But many real problems do not stay inside one categor
 
 A fat-loss problem may also be a stress, sleep, environment, relationship, or self-regulation problem. A consistency problem may involve nutrition, physical training, perfectionism, avoidance, unclear values, or unrealistic expectations. A life-direction problem may be affected by physical energy, emotional regulation, relationships, and the quality of one's thinking.
 
-Integrated Fitness Coaching treats physical training, nutrition, recovery, habits, emotional regulation, relationships, and thinking as one system. The point is not to optimize everything at once. The point is to understand what is actually affecting your progress and intervene where it matters most.
+Integrated Fitness Coaching treats physical training, nutrition, recovery, habits, emotional regulation, relationships, and thinking as one system. We do not optimize everything at once. We identify what is actually affecting your progress and intervene where it matters most.
 
 Another differentiator is me.
 
-My background cuts across technology, product thinking, mathematics, philosophy, law, athletics, nutrition coaching, physical training, mindfulness, and serious self-study of psychology and interpersonal dynamics. That matters because the coaching is not just a script. It is an applied judgment process.
+My background cuts across technology, product thinking, mathematics, philosophy, law, athletics, nutrition coaching, physical training, mindfulness, and serious self-study of psychology and interpersonal dynamics. That matters because the coaching is an applied judgment process, not a script.
 
 That may mean simplifying your diet, adjusting your physical training, clarifying a value conflict, changing a routine, improving self-observation, working through avoidance, or identifying a relational pattern that keeps derailing execution.
 

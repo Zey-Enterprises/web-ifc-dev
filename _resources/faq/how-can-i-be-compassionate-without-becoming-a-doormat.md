@@ -1,7 +1,7 @@
 ---
 title: "How can I be compassionate without becoming a doormat?"
 date: 2026-04-25
-last_modified_at: 2026-04-26
+last_modified_at: 2026-05-14
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
@@ -54,4 +54,4 @@ This is also where {% include glossary.html id="sympathy" %} can go wrong. Sympa
 
 The practical structure is two-part: one sentence for care, one sentence for the limit. "I understand this matters to you, and I am not available tonight.", or "I care that you are hurting, and I will not continue this conversation while I am being insulted.", or "I want to understand you, and I also need us to talk about what actually happened.". This is close to the leadership principle of caring personally while challenging directly: warmth without appeasement, directness without cruelty.{% include citation.html id="scott-2017-radical-candor" label="7" %}
 
-The goal is not softness without standards or standards without warmth. The goal is to hold people accountable with love in your heart—without pretending harm is harmless, without surrendering your self-respect, and without using your boundary as a disguised punishment. If you repeatedly become smaller to preserve the relationship, that is not compassion. If you use "honesty" as a cover for contempt, that is not accountability. The standard is compassionate truth: stay connected to the person where possible, and always stay loyal to reality.
+Do not choose softness without standards or standards without warmth. Hold people accountable with love in your heart, without pretending harm is harmless, surrendering your self-respect, or using your boundary as a disguised punishment. If you repeatedly become smaller to preserve the relationship, that is not compassion. If you use "honesty" as a cover for contempt, that is not accountability. The standard is compassionate truth: stay connected to the person where possible, and always stay loyal to reality.

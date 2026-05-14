@@ -24,13 +24,13 @@ tags:
   - adherence
 ---
 
-Effective fat loss is not just about creating a deficit. It is about creating a deficit that can be sustained without making your life so constrained that you rebound the moment discipline slips.
+Effective fat loss requires a deficit you can sustain without making life so constrained that you rebound the moment discipline slips.
 
 ## Avoid false urgency
 
 Aggressive timelines often make people choose methods they cannot maintain. Slower progress can feel less exciting in the moment, but it usually produces better retention and less backlash.
 
-That matters because the real enemy is not merely slow progress. It is the lose-regain cycle. A method that gets you lighter quickly and then predictably bounces you back in the opposite direction is not a good method.
+Slow progress can be frustrating. The bigger problem is the lose-regain cycle. A method that gets you lighter quickly and then predictably bounces you back in the opposite direction is not a good method.
 
 ## Protect protein, training, and sleep
 
@@ -42,7 +42,7 @@ Low-cost movement like walking can also be extremely useful. It can raise expend
 
 A useful plan acknowledges that hunger, boredom, and social pressure will happen. Strategy matters most when things become inconvenient, not when motivation is high.
 
-This is also why food quality matters. Lower-calorie-density foods and meals with more fiber and protein generally make the deficit easier to live with. The goal is not to suffer more heroically. It is to create a setup you can actually hold.
+This is also why food quality matters. Lower-calorie-density foods and meals with more fiber and protein generally make the deficit easier to live with. Suffering more heroically is not the standard. A workable setup is.
 
 ## Review the actual bottleneck
 

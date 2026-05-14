@@ -1,21 +1,26 @@
 ---
 title: "What should I do if I get sick?"
 date: 2026-04-23
-last_modified_at: 2026-04-23
+last_modified_at: 2026-05-14
 resource_type: faq
-redirect_to: "/resources/faq/#what-should-i-do-if-i-get-sick"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#what-should-i-do-if-i-get-sick
+      class: btn--primary
 domains:
   - diet
 concerns:
   - recovery
-  - adherence
   - energy
+  - physical-health
 tags:
-  - recovery
-  - adherence
   - protein
   - food-quality
+  - recovery
 ---
 
 When you are sick, the goal shifts from optimization to recovery. Prioritize fluids, electrolytes when needed, easy-to-digest foods, enough protein if appetite allows, and sleep. Do not force aggressive dieting when fever, vomiting, diarrhea, significant respiratory symptoms, or systemic fatigue are present.

@@ -1,7 +1,7 @@
 ---
 title: "How can I think in principles without becoming rigid?"
 date: 2026-04-25
-last_modified_at: 2026-04-27
+last_modified_at: 2026-05-14
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
@@ -31,7 +31,7 @@ citations:
     id: rand-1964-virtue-of-selfishness
 ---
 
-Thinking in principles does not mean treating context as irrelevant. It means identifying the causal relationships that make action succeed or fail. A principle is an abstract statement about how facts connect: what promotes life, trust, freedom, justice, health, training progress, honest communication, or long-range {% include glossary.html id="happiness" %}. The point is not to memorize slogans. The point is to understand reality well enough that you do not have to re-solve every concrete from scratch.{% include citation.html id="rand-1990-introduction-to-objectivist-epistemology" label="1" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html id="peikoff-1991-objectivism-philosophy-of-ayn-rand" label="2" %}
+Thinking in principles does not mean treating context as irrelevant. It means identifying the causal relationships that make action succeed or fail. A principle is an abstract statement about how facts connect: what promotes life, trust, freedom, justice, health, training progress, honest communication, or long-range {% include glossary.html id="happiness" %}. The point is to understand reality well enough that you do not have to work out every concrete case from scratch or memorize slogans.{% include citation.html id="rand-1990-introduction-to-objectivist-epistemology" label="1" %}<span class="ifc-citation-marker" aria-hidden="true">,</span>{% include citation.html id="peikoff-1991-objectivism-philosophy-of-ayn-rand" label="2" %}
 
 "Rigid" can be a misleading label. It often packages together very different things: {% include glossary.html id="integrity" %}, dogmatism, consistency, legalism, closed-mindedness, and loyalty to reality. Those are not the same. Refusing to reconsider a false belief is not the same as refusing to betray a true principle. Applying a rule mechanically is not the same as applying a principle consistently. The real question is not whether you are "yielding" or "unyielding". The question is _unyielding about what, and why_.
 

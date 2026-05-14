@@ -24,7 +24,7 @@ tags:
   - adherence
 ---
 
-Recovery is not merely what happens after the real work. It is one of the conditions that determines whether the real work can continue productively.
+Recovery is one of the conditions that determines whether the real work can continue productively.
 
 ## Sleep drives more than energy
 
@@ -32,7 +32,7 @@ Sleep affects appetite regulation, training performance, emotional stability, an
 
 ## Stress changes behavior
 
-Under stress, people do not just feel worse. They often default to the easiest available behaviors, which means poor food choices, skipped training, and degraded self-monitoring become more likely.
+Under stress, people often default to the easiest available behaviors. Poor food choices, skipped training, and degraded self-monitoring become more likely.
 
 Habits matter here because stress often magnifies whatever is already automatized. If the default pattern is impulsive eating, self-criticism, or skipping the walk and skipping the workout, stress tends to make that pattern louder.
 

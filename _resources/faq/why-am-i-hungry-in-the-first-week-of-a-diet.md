@@ -1,10 +1,16 @@
 ---
 title: "Why am I hungry in the first week of a diet?"
 date: 2026-04-23
-last_modified_at: 2026-04-23
+last_modified_at: 2026-05-14
 resource_type: faq
-redirect_to: "/resources/faq/#why-am-i-hungry-in-the-first-week-of-a-diet"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#why-am-i-hungry-in-the-first-week-of-a-diet
+      class: btn--primary
 domains:
   - diet
 concerns:
@@ -12,10 +18,10 @@ concerns:
   - adherence
   - beginners
 tags:
-  - satiety
   - calorie-balance
   - carbohydrates
   - adherence
+  - satiety
 ---
 
 The first week often combines real hunger with habit disruption. Your stomach, schedule, food cues, sodium intake, and carbohydrate intake may all be changing at once. If calories drop and food volume is not managed well, hunger is expected.

@@ -1,22 +1,28 @@
 ---
 title: "Should I snack between meals?"
 date: 2026-04-23
-last_modified_at: 2026-04-23
+last_modified_at: 2026-05-14
 resource_type: faq
-redirect_to: "/resources/faq/#should-i-snack-between-meals"
-sitemap: false
+header:
+  overlay_image: /assets/images/overlay/resources-faq.webp
+  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_title: "Frequently Asked Questions"
+  actions:
+    - label: "← See in FAQ Library"
+      url: /resources/faq/#should-i-snack-between-meals
+      class: btn--primary
 domains:
   - diet
 concerns:
-  - fat-loss
-  - muscle-gain
   - adherence
   - busy-life
+  - fat-loss
+  - muscle-gain
 tags:
+  - calorie-balance
+  - adherence
   - meal-structure
   - satiety
-  - adherence
-  - calorie-balance
 ---
 
 Snacks are useful when they solve a problem: long gaps between meals, pre-workout fueling, protein distribution, travel, or muscle-gain calories. Snacks are harmful when they are unplanned grazing that adds calories without improving hunger or performance.

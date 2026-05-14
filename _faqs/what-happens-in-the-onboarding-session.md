@@ -13,4 +13,4 @@ Depending on your needs, the onboarding session may touch on physical exercise, 
 
 The onboarding session does not guarantee that every plan, program, target, or deliverable will be completed during that session. Sometimes the right first step is clarification. Sometimes it is an initial plan. Sometimes it is identifying what information we still need.
 
-The goal is to begin deliberately, rather than rushing into generic prescriptions.
+We begin deliberately, instead of rushing into generic prescriptions.
