@@ -150,9 +150,9 @@ We can begin anywhere. The point is to work in a way that strengthens the whole 
 
 <div class="ifc-section">
   <h2>Start with the thinking behind the pitch</h2>
-  <p>If you want to understand how I think before deciding whether to work with me, start with the articles and guides. They are there to be genuinely useful, whether or not we ever work together.</p>
+  <p>If you want to understand how I think before deciding whether to work with me, start with the articles, FAQs, and other resources. They are there to be genuinely useful, whether or not we ever work together.</p>
   <div class="ifc-grid">
-    {% assign recent_written_resources = site.resources | where: "format", "written" | sort: "date" | reverse %}
+    {% assign recent_written_resources = site.resources | where: "format", "written" | where_exp: "item", "item.publication_status.status != 'coming-soon'" | sort: "date" | reverse %}
     {% for item in recent_written_resources limit:6 %}
       <a class="ifc-card-link" href="{{ item.url }}">
         <p class="ifc-resource-card__eyebrow">Article</p>

@@ -28,6 +28,54 @@ header:
 {% assign published_content_resources = content_resources | where_exp: "item", "item.publication_status.status != 'coming-soon'" %}
 {% assign recent_resources = published_content_resources | sort: "date" | reverse %}
 {% assign domain_values = "diet,physical-exercise,psychology,philosophy" | split: "," %}
+{% assign has_article_resources = false %}
+{% assign has_image_resources = false %}
+{% assign has_short_video_resources = false %}
+{% assign has_long_video_resources = false %}
+{% assign has_audio_resources = false %}
+{% for item in published_content_resources %}
+  {% if item.format == "visual-media" %}
+    {% assign media_item = site.data.visual-media | where: "id", item.slug | first %}
+    {% if media_item %}
+      {% if media_item.format == "image" %}
+        {% assign has_image_resources = true %}
+      {% elsif media_item["sub-format"] == "short-video" %}
+        {% assign has_short_video_resources = true %}
+      {% elsif media_item["sub-format"] == "long-video" %}
+        {% assign has_long_video_resources = true %}
+      {% elsif media_item.format == "audio" %}
+        {% assign has_audio_resources = true %}
+      {% endif %}
+    {% endif %}
+  {% else %}
+    {% assign has_article_resources = true %}
+  {% endif %}
+{% endfor %}
+{% assign has_visual_media_resources = false %}
+{% if has_image_resources or has_short_video_resources or has_long_video_resources %}
+  {% assign has_visual_media_resources = true %}
+{% endif %}
+{% assign format_category_count = 0 %}
+{% if has_article_resources %}
+  {% assign format_category_count = format_category_count | plus: 1 %}
+{% endif %}
+{% if has_visual_media_resources %}
+  {% assign format_category_count = format_category_count | plus: 1 %}
+{% endif %}
+{% if has_audio_resources %}
+  {% assign format_category_count = format_category_count | plus: 1 %}
+{% endif %}
+{% assign visual_media_format_query = "" %}
+{% if has_image_resources %}
+  {% assign visual_media_format_query = visual_media_format_query | append: "&format=image" %}
+{% endif %}
+{% if has_short_video_resources %}
+  {% assign visual_media_format_query = visual_media_format_query | append: "&format=short-video" %}
+{% endif %}
+{% if has_long_video_resources %}
+  {% assign visual_media_format_query = visual_media_format_query | append: "&format=long-video" %}
+{% endif %}
+{% assign visual_media_format_query = visual_media_format_query | remove_first: "&" %}
 
 <div class="ifc-resource-browser" data-resource-browser data-resource-path="{{ resources_path }}" data-default-sort="recent-published-desc">
   <div class="ifc-resource-browser__toolbar">
@@ -95,26 +143,36 @@ header:
             <button type="button" data-filter-action="clear-all">Clear all</button>
           </div>
           <div class="ifc-resource-filter__options">
-            <label class="ifc-resource-filter__option">
-              <input type="checkbox" value="article" data-option-label="Article">
-              <span>Article</span>
-            </label>
-            <label class="ifc-resource-filter__option">
-              <input type="checkbox" value="image" data-option-label="Image">
-              <span>Image</span>
-            </label>
-            <label class="ifc-resource-filter__option">
-              <input type="checkbox" value="short-video" data-option-label="Short Video">
-              <span>Short Video</span>
-            </label>
-            <label class="ifc-resource-filter__option">
-              <input type="checkbox" value="long-video" data-option-label="Long-Form Video">
-              <span>Long-Form Video</span>
-            </label>
-            <label class="ifc-resource-filter__option">
-              <input type="checkbox" value="audio" data-option-label="Audio">
-              <span>Audio</span>
-            </label>
+            {% if has_article_resources %}
+              <label class="ifc-resource-filter__option">
+                <input type="checkbox" value="article" data-option-label="Article">
+                <span>Article</span>
+              </label>
+            {% endif %}
+            {% if has_image_resources %}
+              <label class="ifc-resource-filter__option">
+                <input type="checkbox" value="image" data-option-label="Image">
+                <span>Image</span>
+              </label>
+            {% endif %}
+            {% if has_short_video_resources %}
+              <label class="ifc-resource-filter__option">
+                <input type="checkbox" value="short-video" data-option-label="Short Video">
+                <span>Short Video</span>
+              </label>
+            {% endif %}
+            {% if has_long_video_resources %}
+              <label class="ifc-resource-filter__option">
+                <input type="checkbox" value="long-video" data-option-label="Long-Form Video">
+                <span>Long-Form Video</span>
+              </label>
+            {% endif %}
+            {% if has_audio_resources %}
+              <label class="ifc-resource-filter__option">
+                <input type="checkbox" value="audio" data-option-label="Audio">
+                <span>Audio</span>
+              </label>
+            {% endif %}
           </div>
         </div>
       </div>
@@ -306,23 +364,31 @@ header:
     </div>
   </section>
 
-  <section class="ifc-section ifc-section--tight" data-resource-landing-section>
-    <h2>Browse by format</h2>
-    <div class="ifc-grid">
-      <a class="ifc-card-link" href="{{ resources_path }}?format=article" data-resource-shortcut>
-        <strong>Article</strong>
-        <p>Longer-form written resources designed to hold up as a durable reference library.</p>
-      </a>
-      <a class="ifc-card-link" href="{{ resources_path }}?format=image&format=short-video&format=long-video" data-resource-shortcut>
-        <strong>Visual media</strong>
-        <p>Image and video content indexed locally so platform distribution still feeds back into the site.</p>
-      </a>
-      <a class="ifc-card-link" href="{{ resources_path }}?format=audio" data-resource-shortcut>
-        <strong>Audio</strong>
-        <p>Reserved for future clips, interviews, and audio-based teaching when that becomes part of the library.</p>
-      </a>
-    </div>
-  </section>
+  {% if format_category_count > 1 %}
+    <section class="ifc-section ifc-section--tight" data-resource-landing-section>
+      <h2>Browse by format</h2>
+      <div class="ifc-grid">
+        {% if has_article_resources %}
+          <a class="ifc-card-link" href="{{ resources_path }}?format=article" data-resource-shortcut>
+            <strong>Article</strong>
+            <p>Longer-form written resources designed to hold up as a durable reference library.</p>
+          </a>
+        {% endif %}
+        {% if has_visual_media_resources %}
+          <a class="ifc-card-link" href="{{ resources_path }}?{{ visual_media_format_query }}" data-resource-shortcut>
+            <strong>Visual media</strong>
+            <p>Image and video content indexed locally so platform distribution still feeds back into the site.</p>
+          </a>
+        {% endif %}
+        {% if has_audio_resources %}
+          <a class="ifc-card-link" href="{{ resources_path }}?format=audio" data-resource-shortcut>
+            <strong>Audio</strong>
+            <p>Audio resources for clips, interviews, and teaching you can listen to away from the page.</p>
+          </a>
+        {% endif %}
+      </div>
+    </section>
+  {% endif %}
 
   <section class="ifc-section ifc-section--tight" data-resource-landing-section>
     <h2>Learning tools</h2>
