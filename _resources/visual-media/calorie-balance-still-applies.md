@@ -1,5 +1,5 @@
 ---
-# published: false
+published: false
 title: "SAMPLE: Calorie Balance Still Applies"
 format: visual-media
 date: 2026-04-10

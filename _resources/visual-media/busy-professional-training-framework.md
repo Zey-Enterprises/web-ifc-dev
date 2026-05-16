@@ -1,4 +1,5 @@
 ---
+published: false
 title: "SAMPLE: A Training Framework For Busy Professionals"
 format: visual-media
 date: 2026-03-27

@@ -63,9 +63,9 @@
         {
           "label": "Implementation plan and practices",
           "cells": {
-            "foundation": "Focused plan or program tied to the primary focus, with practices, assignments, and supporting recommendations as relevant",
-            "integrated": "Integrated plan or program across the relevant domains affecting your goals, with practices and assignments as needed",
-            "intensive": "Higher-touch implementation plan or program with more active prioritization, troubleshooting, and course correction across relevant domains"
+            "foundation": "Focused plan or program tied to the primary focus, with supporting practices, assignments, and recommendations as relevant",
+            "integrated": "Integrated plan or program across the relevant areas affecting Client's goals, with practices and assignments as needed",
+            "intensive": "Higher-touch plan or program with more active prioritization, troubleshooting, and course correction across relevant areas"
           }
         },
         {
@@ -80,8 +80,8 @@
           "label": "Local / in-person support",
           "cells": {
             "foundation": "Not included by default",
-            "integrated": "Possible by arrangement and quoted separately",
-            "intensive": "Possible by arrangement; substantial local or hybrid support may require Custom"
+            "integrated": "Not included by default; possible by arrangement and quoted separately",
+            "intensive": "Not included by default; possible by arrangement, with recurring or substantial support handled through Custom Integrated Support or separate written terms"
           }
         }
       ]

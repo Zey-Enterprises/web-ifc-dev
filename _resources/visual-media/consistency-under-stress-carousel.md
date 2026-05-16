@@ -1,4 +1,5 @@
 ---
+published: false
 title: "SAMPLE: Consistency During High-Stress Weeks"
 format: visual-media
 date: 2026-04-01

@@ -1,4 +1,5 @@
 ---
+published: false
 title: "SAMPLE: What Integrated Coaching Actually Means"
 format: visual-media
 date: 2026-04-08
