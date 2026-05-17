@@ -1,7 +1,8 @@
 ---
 title: "Privacy Policy"
+date: "2026-04-15"
+last_modified_at: "2026-05-16"
 permalink: /privacy/
-last_modified_at: 2026-04-16
 show_modified_date: true
 header:
   # overlay_image: /assets/images/ifc-legal-hero-banner-1.jpg
@@ -18,6 +19,9 @@ header:
       class: btn--light-outline
     - label: Coaching Agreement
       url: /coaching-agreement/
+      class: btn--light-outline
+    - label: Coaching Package Addendum
+      url: /coaching-package-addendum/
       class: btn--light-outline
     - label: Liability Waiver and Release of Claims
       url: /liability-waiver/

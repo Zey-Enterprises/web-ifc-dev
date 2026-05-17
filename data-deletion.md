@@ -1,7 +1,8 @@
 ---
 title: "Data Deletion Instructions"
+date: "2026-04-15"
+last_modified_at: "2026-05-16"
 permalink: /data-deletion/
-last_modified_at: 2026-04-22
 show_modified_date: true
 toc_widget: 
   enabled: true
@@ -22,6 +23,9 @@ header:
       class: btn--light-outline
     - label: Coaching Agreement
       url: /coaching-agreement/
+      class: btn--light-outline
+    - label: Coaching Package Addendum
+      url: /coaching-package-addendum/
       class: btn--light-outline
     - label: Liability Waiver and Release of Claims
       url: /liability-waiver/
@@ -64,7 +68,7 @@ We may request additional information to verify your identity before processing 
 
 ## Relationship to Other Agreements
 
-If you are a coaching client, your data may also be governed by your Coaching Agreement and any related documents. In the event of any conflict, those agreements will control with respect to coaching-related records.
+If you are a coaching client, your data may also be governed by your [Coaching Agreement](/coaching-agreement/) and any related documents. In the event of any conflict, those agreements will control with respect to coaching-related records.
 
 ## Contact
 
@@ -72,4 +76,4 @@ If you have questions about this policy or would like to submit a request, conta
 
 Integrated Fitness Coaching  
 Zey Enterprises, LLC  
-arthur@integratedfitnesscoaching.com  
+arthur@integratedfitnesscoaching.com

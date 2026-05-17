@@ -1,8 +1,8 @@
 ---
 title: "Terms of Service"
-permalink: /terms/
 date: 2026-04-16
-last_modified_at: 2026-04-22
+last_modified_at: "2026-05-16"
+permalink: /terms/
 show_modified_date: true
 show_read_time: true
 toc_widget: 
@@ -23,6 +23,9 @@ header:
       class: btn--light-outline
     - label: Coaching Agreement
       url: /coaching-agreement/
+      class: btn--light-outline
+    - label: Coaching Package Addendum
+      url: /coaching-package-addendum/
       class: btn--light-outline
     - label: Liability Waiver and Release of Claims
       url: /liability-waiver/
@@ -103,13 +106,13 @@ You retain full autonomy over whether and how to implement any recommendation.
 
 If you purchase or engage coaching services, those services are governed by:
 
-- a Coaching Agreement  
-- a Liability Waiver and Release of Claims  
-- any applicable addenda, invoices, or written terms  
+- a [Coaching Agreement](/coaching-agreement/)
+- a [Liability Waiver and Release of Claims](/liability-waiver/)
+- any applicable [Coaching Package Addendum](/coaching-package-addendum/), invoices, or written terms
 
 Those documents are incorporated by reference where applicable.
 
-To the extent there is any conflict, the separately executed Coaching Agreement and Liability Waiver control with respect to coaching services.
+To the extent there is any conflict, the separately executed [Coaching Agreement](/coaching-agreement/) and [Liability Waiver](/liability-waiver/) control with respect to coaching services.
 
 ## 8. Payments, cancellations, and refunds
 
@@ -214,7 +217,7 @@ We may modify, suspend, or discontinue any part of the website or services at an
 
 These Terms shall be governed by and construed in accordance with the laws of the State of Colorado.
 
-Any dispute arising out of or relating to these Terms or the website shall be resolved in accordance with the dispute-resolution provisions set forth in any applicable Coaching Agreement, where such agreement exists.
+Any dispute arising out of or relating to these Terms or the website shall be resolved in accordance with the dispute-resolution provisions set forth in any applicable [Coaching Agreement](/coaching-agreement/), where such agreement exists.
 
 If no such agreement applies, disputes shall be resolved in the state or federal courts located in Colorado.
 
@@ -228,4 +231,4 @@ Your continued use of the website constitutes acceptance of any updated Terms.
 
 Integrated Fitness Coaching  
 Zey Enterprises, LLC  
-arthur@integratedfitnesscoaching.com  
+arthur@integratedfitnesscoaching.com

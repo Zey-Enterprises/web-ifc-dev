@@ -1,8 +1,8 @@
 ---
 title: "Liability Waiver and Release of Claims"
-permalink: /liability-waiver/
 date: 2026-04-21
-last_modified_at: 2026-05-07
+last_modified_at: "2026-05-16"
+permalink: /liability-waiver/
 show_modified_date: true
 show_read_time: true
 toc_widget: 
@@ -29,6 +29,9 @@ header:
       class: btn--light-outline
     - label: Coaching Agreement
       url: /coaching-agreement/
+      class: btn--light-outline
+    - label: Coaching Package Addendum
+      url: /coaching-package-addendum/
       class: btn--light-outline
 ---
 
@@ -114,7 +117,7 @@ If any provision of this Waiver is held to be invalid, illegal, or unenforceable
 
 ## Governing Law; Relationship to Agreement
 
-This Waiver shall be governed by and construed in accordance with the laws of the State of Colorado. If the Client has executed a coaching agreement relating to the coaching services described in this Waiver (the "Coaching Agreement"), the dispute-resolution provisions of the Coaching Agreement shall apply to any dispute arising out of or relating to this Waiver to the fullest extent permitted by law. This Waiver is intended to supplement, and not to narrow, limit, replace, or supersede, any protections, disclaimers, releases, indemnification obligations, risk allocations, or liability limitations contained in the Coaching Agreement or any related addendum executed in connection with such coaching services. To the extent there is overlap, this Waiver and the Coaching Agreement shall be given cumulative effect to the fullest extent permitted by law.
+This Waiver shall be governed by and construed in accordance with the laws of the State of Colorado. If the Client has executed a coaching agreement relating to the coaching services described in this Waiver (the "[Coaching Agreement](/coaching-agreement/)"), the dispute-resolution provisions of the [Coaching Agreement](/coaching-agreement/) shall apply to any dispute arising out of or relating to this Waiver to the fullest extent permitted by law. This Waiver is intended to supplement, and not to narrow, limit, replace, or supersede, any protections, disclaimers, releases, indemnification obligations, risk allocations, or liability limitations contained in the [Coaching Agreement](/coaching-agreement/) or any related addendum executed in connection with such coaching services. To the extent there is overlap, this Waiver and the [Coaching Agreement](/coaching-agreement/) shall be given cumulative effect to the fullest extent permitted by law.
 
 ## Acknowledgement
 

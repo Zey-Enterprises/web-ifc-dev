@@ -1,8 +1,8 @@
 ---
 title: "Coaching Agreement"
-permalink: /coaching-agreement/
 date: 2026-04-21
-last_modified_at: 2026-05-07
+last_modified_at: "2026-05-16"
+permalink: /coaching-agreement/
 show_modified_date: true
 show_read_time: true
 toc_widget: 
@@ -27,12 +27,15 @@ header:
     - label: Data Deletion
       url: /data-deletion/
       class: btn--light-outline
+    - label: Coaching Package Addendum
+      url: /coaching-package-addendum/
+      class: btn--light-outline
     - label: Liability Waiver and Release of Claims
       url: /liability-waiver/
       class: btn--light-outline
 ---
 
-This fitness coaching agreement ("Agreement") is entered into by and between Zey Enterprises, LLC (DBA Integrated Fitness Coaching), a Colorado limited liability company ("Coach") and \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ("Client"). Arthur Zey shall serve as the designated coach under this Agreement.  This Agreement is effective as of \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ("Effective Date"). Services will begin as stated in the applicable Coaching Package Addendum and will consist of the services described in this Agreement and any applicable Coaching Package Addendum ("Services").
+This fitness coaching agreement ("Agreement") is entered into by and between Zey Enterprises, LLC (DBA Integrated Fitness Coaching), a Colorado limited liability company ("Coach") and \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ("Client"). Arthur Zey shall serve as the designated coach under this Agreement.  This Agreement is effective as of \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ("Effective Date"). Services will begin as stated in the applicable [Coaching Package Addendum](/coaching-package-addendum/) and will consist of the services described in this Agreement and any applicable [Coaching Package Addendum](/coaching-package-addendum/) ("Services").
 
 ## Purpose and Nature of the Relationship
 
@@ -73,39 +76,41 @@ The Coach agrees to provide services tailored to the Client's goals, constraints
 * values clarification, decision-making support, critical-thinking development, Socratic dialogue, conceptual analysis, and reflective inquiry  
 * progress monitoring, feedback, review, and plan iteration
 
-The specific structure, frequency, and delivery of services shall be defined in a separate Coaching Package Addendum, which is incorporated by reference into this Agreement.
+The specific structure, frequency, and delivery of services shall be defined in a separate [Coaching Package Addendum](/coaching-package-addendum/), which is incorporated by reference into this Agreement.
 
-If there is any conflict between this Agreement and a Coaching Package Addendum, the Coaching Package Addendum controls with respect to package selection, fees, service cadence, included services, billing start date, renewal date, and package-specific limitations. This Agreement controls with respect to general legal terms, scope limitations, disclaimers, confidentiality, recordings, intellectual property, liability, and dispute resolution unless the Addendum expressly states otherwise.
+If there is any conflict between this Agreement and a [Coaching Package Addendum](/coaching-package-addendum/), the [Coaching Package Addendum](/coaching-package-addendum/) controls with respect to package selection, fees, service cadence, included services, billing start date, renewal date, and package-specific limitations. This Agreement controls with respect to general legal terms, scope limitations, disclaimers, confidentiality, recordings, intellectual property, liability, and dispute resolution unless the [Addendum](/coaching-package-addendum/) expressly states otherwise.
 
-Standard monthly coaching packages normally begin with an onboarding session, the length and scope of which are defined in the Coaching Package Addendum.
+Standard monthly coaching packages normally begin with an onboarding session, the length and scope of which are defined in the [Coaching Package Addendum](/coaching-package-addendum/).
 
 The Coach reserves the right to modify coaching methods, tools, and approaches in the interest of effectiveness and professional judgment.
 
-Unless otherwise agreed in writing or provided for in the Coaching Package Addendum, all synchronous Services are conducted via voice or video call (as mutually agreed between Client and Coach). Local, hybrid, or in-person support is not included, unless expressly stated in the Coaching Package Addendum or separately agreed in writing. Any such support may be quoted separately based on location, preparation, travel, session length, and scope.
+Unless otherwise agreed in writing or provided for in the [Coaching Package Addendum](/coaching-package-addendum/), all synchronous Services are conducted via voice or video call (as mutually agreed between Client and Coach). Local, hybrid, or in-person support is not included, unless expressly stated in the [Coaching Package Addendum](/coaching-package-addendum/) or separately agreed in writing. Any such support may be quoted separately based on location, preparation, travel, session length, and scope.
 
 ## Payment Terms
 
-All fixed-price Services must be paid in full prior to delivery, and monthly Services must be paid in advance for the applicable billing period, unless otherwise agreed in writing. At the discretion of Coach, additional Services not paid in advance may be billed when the outstanding balance has reached $100, 30 days have elapsed since the last invoice, or at the conclusion of Services. Payment must be received within 5 business days of invoice, unless otherwise agreed in writing. Payments are non-refundable except as expressly stated in the Refunds section, the applicable Coaching Package Addendum, or as required by law. Failure to pay may result in immediate suspension or termination of Services, including forfeiture of any future contracted-for Services under this Agreement.
+All fixed-price Services must be paid in full prior to delivery, and monthly Services must be paid in advance for the applicable billing period, unless otherwise agreed in writing. At the discretion of Coach, additional Services not paid in advance may be billed when the outstanding balance has reached $100, 30 days have elapsed since the last invoice, or at the conclusion of Services. Payment must be received within 5 business days of invoice, unless otherwise agreed in writing. Payments are non-refundable except as expressly stated in the [Refunds](#refunds) section, the applicable [Coaching Package Addendum](/coaching-package-addendum/), or as required by law. Failure to pay may result in immediate suspension or termination of Services, including forfeiture of any future contracted-for Services under this Agreement.
 
 Unless otherwise agreed in writing, payment must be made by one of the following methods:
 
-* Cash App: [$ArthurZey](https://cash.app/$ArthurZey)  
-* Zelle
+* Cash App: [$ArthurZey](https://cash.app/$ArthurZey){: target="&lowbar;blank" rel="noopener noreferrer" }
+  [![Cash App QR Code for $ArthurZey]({{ '/assets/images/Cash App QR Code - $ArthurZey.png' | relative_url }}){: width="200" }](https://cash.app/$ArthurZey?qr=1){: target="&lowbar;blank" rel="noopener noreferrer" }
+* Zelle: arthur@integratedfitnesscoaching.com
+  [![Zelle QR Code for arthur@integratedfitnesscoaching.com]({{ '/assets/images/Zelle QR Code - arthur@integratedfitnesscoaching.com.png' | relative_url }}){: width="200" }](https://enroll.zellepay.com/qr-codes?data=eyJuYW1lIjoiWkVZIEVOVEVSUFJJU0VTLCBMTEMiLCJ0b2tlbiI6ImFydGh1ckBpbnRlZ3JhdGVkZml0bmVzc2NvYWNoaW5nLmNvbSIsImFjdGlvbiI6InBheW1lbnQifQ==){:target="&lowbar;blank" rel="noopener" }
 * paper check
 
 The Client agrees that any failure to make timely payment constitutes a material breach of this Agreement.
 
 ## Duration of Engagement and Termination of Agreement
 
-All Services purchased under this Agreement with a monthly fee shall renew on a monthly basis on the same day of the month as the start date in the Coaching Package Addendum. If that day is the 29th, 30th, or 31st of a month, those remaining days of the calendar month containing the Coaching Package Addendum's start date will be rolled into the following month, with the first renewal on the 1st of the next month. (For example, if the Coaching Package Addendum includes monthly services with a start date of July 29, the first month's fee will cover services between July 29 and August 31, with the first renewal on September 1.)
+All Services purchased under this Agreement with a monthly fee shall renew on a monthly basis on the same day of the month as the start date in the [Coaching Package Addendum](/coaching-package-addendum/). If that day is the 29th, 30th, or 31st of a month, those remaining days of the calendar month containing the [Coaching Package Addendum's](/coaching-package-addendum/) start date will be rolled into the following month, with the first renewal on the 1st of the next month. (For example, if the [Coaching Package Addendum](/coaching-package-addendum/) includes monthly services with a start date of July 29, the first month's fee will cover services between July 29 and August 31, with the first renewal on September 1.)
 
-Unless otherwise provided in the applicable Coaching Package Addendum, standard monthly coaching packages begin with a 3-month initial engagement, billed monthly in advance.
+Unless otherwise provided in the applicable [Coaching Package Addendum](/coaching-package-addendum/), standard monthly coaching packages begin with a 3-month initial engagement, billed monthly in advance.
 
 Either party may decide within 14 days after the onboarding session that continuing is not appropriate. If that happens, Services will end after the first month, and no further monthly payments will be due. Fees already paid for Services provided are not refundable. This is an early off-ramp, not a satisfaction guarantee.
 
 After the initial 3-month engagement, monthly Services renew month-to-month, unless discontinued by either party with at least 14 days' written notice before the next renewal date.
 
-All other fixed-price Services purchased under this Agreement must be used within 90 days of the start date on the Coaching Package Addendum, unless otherwise specified in writing. Unused time or Services after this period will be forfeited without refund.
+All other fixed-price Services purchased under this Agreement must be used within 90 days of the start date on the [Coaching Package Addendum](/coaching-package-addendum/), unless otherwise specified in writing. Unused time or Services after this period will be forfeited without refund.
 
 This Agreement will conclude when all monthly Services have been cancelled, all fixed-price Services have been provided or expired, and all outstanding invoices for additional Services have been paid.
 
@@ -123,7 +128,7 @@ Under the immediately foregoing conditions, refunds will be issued entirely at t
 
 ## Scheduling and Cancellations
 
-As part of contracted Services under the Coaching Package Addendum, the Coach and Client will schedule some number of synchronous sessions. The Coach and Client mutually agree to make reasonable efforts to schedule sessions within the timeframes specified for the contracted Services to best facilitate achievement of identified Fitness Development goals, but in the event that mutually convenient scheduling is not possible within those timeframes, the Coach and Client will make reasonable accommodations to carry over sessions into subsequent months to align as closely as possible with preexisting commitments. Any such accommodation shall be discretionary, case-specific, and shall not create an ongoing entitlement, waiver, or modification of the general service period unless expressly agreed in writing.
+As part of contracted Services under the [Coaching Package Addendum](/coaching-package-addendum/), the Coach and Client will schedule some number of synchronous sessions. The Coach and Client mutually agree to make reasonable efforts to schedule sessions within the timeframes specified for the contracted Services to best facilitate achievement of identified Fitness Development goals, but in the event that mutually convenient scheduling is not possible within those timeframes, the Coach and Client will make reasonable accommodations to carry over sessions into subsequent months to align as closely as possible with preexisting commitments. Any such accommodation shall be discretionary, case-specific, and shall not create an ongoing entitlement, waiver, or modification of the general service period unless expressly agreed in writing.
 
 The Client may reschedule or cancel a scheduled session without penalty by providing at least 24 hours' notice via email or another mutually agreed-upon communication method.
 
@@ -131,7 +136,7 @@ If less than 24 hours' notice is given for fixed-price or monthly Services that 
 
 If less than 24 hours' notice is given for a session involving additional Services, a $50 late-cancellation fee will be charged unless Coach agrees otherwise in writing.
 
-If the Coach must reschedule a session, reasonable effort will be made to offer alternative times that accommodate the Client's schedule. If Coach cancels or reschedules a session with less than 24 hours' notice to Client, Client shall receive, at Coach's discretion, either a 30-minute complimentary session credit or an equivalent service credit. Use of any such credit is subject to the same limitations in the "Duration of Engagement and Termination of Agreement" section. This remedy does not apply when cancellation or rescheduling is caused by circumstances beyond Coach's reasonable control.
+If the Coach must reschedule a session, reasonable effort will be made to offer alternative times that accommodate the Client's schedule. If Coach cancels or reschedules a session with less than 24 hours' notice to Client, Client shall receive, at Coach's discretion, either a 30-minute complimentary session credit or an equivalent service credit. Use of any such credit is subject to the same limitations in the [Duration of Engagement and Termination of Agreement](#duration-of-engagement-and-termination-of-agreement) section. This remedy does not apply when cancellation or rescheduling is caused by circumstances beyond Coach's reasonable control.
 
 Failure by Client to attend a scheduled session within 10 minutes of the scheduled start time may be treated as a late cancellation, unless Coach agrees otherwise. Failure by Coach to attend a scheduled session within 10 minutes of the scheduled start time may be treated as a Coach late cancellation, unless Client agrees otherwise.
 
@@ -141,7 +146,7 @@ The early off-ramp described in this Agreement does not entitle Client to a refu
 
 No refunds will be issued once Services have commenced. If a refund is requested before any Services have been delivered and no scheduled time has been used, the Coach may, at their sole discretion, approve a partial refund.
 
-Refunds will not be granted for unused time after the expiration of the engagement period, as outlined in the "Duration of Engagement and Termination of Agreement" section.
+Refunds will not be granted for unused time after the expiration of the engagement period, as outlined in the [Duration of Engagement and Termination of Agreement](#duration-of-engagement-and-termination-of-agreement) section.
 
 ## Disclaimers
 
@@ -157,7 +162,7 @@ Participation in coaching, including the implementation of any recommendations r
 
 ### Separate Liability Waiver
 
-The Client acknowledges that, in connection with this Agreement, the Client has executed a separate Liability Waiver and Release of Claims (the "Waiver"). The Client agrees that the Waiver and this Agreement are intended to operate together and shall be given cumulative effect to the fullest extent permitted by law.
+The Client acknowledges that, in connection with this Agreement, the Client has executed a separate [Liability Waiver and Release of Claims](/liability-waiver/) (the "Waiver"). The Client agrees that the [Waiver](/liability-waiver/) and this Agreement are intended to operate together and shall be given cumulative effect to the fullest extent permitted by law.
 
 ### Limitation of Liability
 
