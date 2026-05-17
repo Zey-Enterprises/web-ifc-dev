@@ -54,7 +54,7 @@
             {% if related_resource %}
               <a class="ifc-card-link" href="{{ related_resource.url }}">
                 <strong>{{ related_resource.title }}</strong>
-                <p>{{ related_resource.excerpt | strip_html | truncate: 140 }}</p>
+                <p>{% include word_boundary_truncate.html text=related_resource.excerpt max=140 %}</p>
               </a>
             {% endif %}
           {% endfor %}
@@ -71,7 +71,7 @@
             {% if related_media %}
               <a class="ifc-card-link" href="/resources/visual-media/{{ related_media.id }}/">
                 <strong>{{ related_media.title }}</strong>
-                <p>{{ related_media.description | truncate: 140 }}</p>
+                <p>{% include word_boundary_truncate.html text=related_media.description max=140 %}</p>
               </a>
             {% endif %}
           {% endfor %}

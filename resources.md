@@ -1,5 +1,7 @@
 ---
 title: "Resources"
+date: "2026-04-14"
+last_modified_at: "2026-05-16"
 # classes: hide-title
 permalink: /resources/
 excerpt: "A unified library for articles, visual media, fitness FAQs, references, and glossary-based learning."
@@ -301,12 +303,12 @@ header:
     <div class="ifc-grid">
       {% for item in recent_resources limit:6 %}
         {% assign recent_label = "Article" %}
-        {% assign recent_summary = item.excerpt | default: item.description | strip_html | truncate: 150 %}
+        {% capture recent_summary %}{% include word_boundary_truncate.html text=item.excerpt max=150 %}{% endcapture %}
         {% assign recent_date = item.date %}
         {% if item.format == "visual-media" %}
           {% assign recent_media = site.data.visual-media | where: "id", item.slug | first %}
           {% if recent_media %}
-            {% assign recent_summary = recent_media.description | default: recent_summary %}
+            {% capture recent_summary %}{% include word_boundary_truncate.html text=recent_media.description max=150 %}{% endcapture %}
             {% assign recent_date = recent_media.published_at | default: item.date %}
             {% if recent_media.format == "image" %}
               {% assign recent_label = "Image" %}
@@ -325,7 +327,7 @@ header:
           {% if recent_date %}
             <p class="ifc-resource-card__meta">{{ recent_date | date: site.date_format }}</p>
           {% endif %}
-          <p>{{ recent_summary }}</p>
+          <p>{{ recent_summary | strip }}</p>
         </a>
       {% endfor %}
     </div>
@@ -418,7 +420,7 @@ header:
         {% assign result_published = item.date %}
         {% assign result_updated = item.last_modified_at | default: item.date %}
         {% assign result_author_name = nil %}
-        {% assign result_summary = item.excerpt | default: item.description | strip_html | truncate: 180 %}
+        {% capture result_summary %}{% include word_boundary_truncate.html text=item.excerpt max=180 %}{% endcapture %}
         {% assign include_result = true %}
         {% assign result_publication_status = item.publication_status.status | default: item.publication_status %}
         {% assign result_is_coming_soon = false %}
@@ -449,7 +451,7 @@ header:
           {% if media_item %}
             {% assign result_published = media_item.published_at | default: item.date %}
             {% assign result_updated = item.last_modified_at | default: media_item.published_at | default: item.date %}
-            {% assign result_summary = media_item.description | default: result_summary %}
+            {% capture result_summary %}{% include word_boundary_truncate.html text=media_item.description max=180 %}{% endcapture %}
             {% if media_item.format == "image" %}
               {% assign result_format_value = "image" %}
               {% assign result_type_label = "Image" %}
@@ -525,7 +527,7 @@ header:
             </div>
             <div class="ifc-resource-result__body">
               <h2 class="ifc-resource-result__title">{{ item.title }}</h2>
-              <p class="ifc-resource-result__summary">{{ result_summary }}</p>
+              <p class="ifc-resource-result__summary">{{ result_summary | strip }}</p>
               <div class="ifc-resource-result__taxonomy">
                 {% if item.domains and item.domains.size > 0 %}
                   <div class="ifc-taxonomy-pills">

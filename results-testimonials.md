@@ -1,5 +1,7 @@
 ---
 title: "Testimonials Archive"
+date: "2026-03-30"
+last_modified_at: "2026-05-16"
 permalink: /results/testimonials/
 description: "Archive page for testimonial entries."
 ---
@@ -10,7 +12,7 @@ description: "Archive page for testimonial entries."
     <a class="ifc-card-link" href="{{ item.url }}">
       <strong>{{ item.client_name }}</strong>
       <p>{{ item.result_summary }}</p>
-      <p>{{ item.excerpt | strip_html | truncate: 130 }}</p>
+      <p>{% include word_boundary_truncate.html text=item.excerpt max=130 %}</p>
     </a>
   {% endfor %}
 </div>

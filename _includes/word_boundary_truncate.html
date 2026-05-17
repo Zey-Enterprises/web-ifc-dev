@@ -1,0 +1,15 @@
+{%- assign text = include.text | default: "" | markdownify | strip_html | strip_newlines | replace: "  ", " " | replace: "  ", " " | strip -%}
+{%- assign max_length = include.max | default: 160 | plus: 0 -%}
+{%- assign ellipsis = include.ellipsis | default: "..." -%}
+{%- if max_length <= 0 or text.size <= max_length -%}
+  {{- text -}}
+{%- else -%}
+  {%- assign available_length = max_length | minus: ellipsis.size -%}
+  {%- assign clipped = text | slice: 0, available_length | strip -%}
+  {%- assign words = clipped | split: " " -%}
+  {%- if words.size > 1 -%}
+    {%- assign keep_count = words.size | minus: 1 -%}
+    {%- assign clipped = words | slice: 0, keep_count | join: " " | strip -%}
+  {%- endif -%}
+  {{- clipped -}}{{- ellipsis -}}
+{%- endif -%}

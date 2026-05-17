@@ -1,5 +1,7 @@
 ---
 title: "Case Studies Archive"
+date: "2026-03-30"
+last_modified_at: "2026-05-16"
 permalink: /results/case-studies/
 description: "Archive page for case study entries."
 ---
@@ -9,7 +11,7 @@ description: "Archive page for case study entries."
   {% for item in cases %}
     <a class="ifc-card-link" href="{{ item.url }}">
       <strong>{{ item.title }}</strong>
-      <p>{{ item.excerpt | strip_html | truncate: 150 }}</p>
+      <p>{% include word_boundary_truncate.html text=item.excerpt max=150 %}</p>
     </a>
   {% endfor %}
 </div>

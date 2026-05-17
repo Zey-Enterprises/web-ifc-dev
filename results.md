@@ -1,5 +1,7 @@
 ---
 title: "Results"
+date: "2026-03-30"
+last_modified_at: "2026-05-16"
 permalink: /results/
 excerpt: "Examples of meaningful progress interpreted realistically, without hype or guarantees."
 header:
@@ -35,7 +37,7 @@ No testimonials or case studies are published yet. When examples are available, 
     <a class="ifc-card-link" href="{{ item.url }}">
       <strong>{{ item.client_name }}</strong>
       <p>{{ item.result_summary }}</p>
-      <!--<p>{{ item.excerpt | strip_html | truncate: 130 }}</p>-->
+      <!--<p>{% include word_boundary_truncate.html text=item.excerpt max=130 %}</p>-->
     </a>
   {% endfor %}
 </div>
@@ -46,7 +48,7 @@ No testimonials or case studies are published yet. When examples are available, 
   {% for item in ordered_cases %}
     <a class="ifc-card-link" href="{{ item.url }}">
       <strong>{{ item.title }}</strong>
-      <p>{{ item.excerpt | strip_html | truncate: 140 }}</p>
+      <p>{% include word_boundary_truncate.html text=item.excerpt max=140 %}</p>
     </a>
   {% endfor %}
 </div>
@@ -60,7 +62,7 @@ No testimonials or case studies are published yet. When examples are available, 
     <a class="ifc-card-link" href="{{ item.url }}">
       <strong>{{ item.client_name }}</strong>
       <p>{{ item.result_summary }}</p>
-      <p>{{ item.excerpt | strip_html | truncate: 130 }}</p>
+      <p>{% include word_boundary_truncate.html text=item.excerpt max=130 %}</p>
     </a>
   {% endfor %}
 </div>
@@ -73,7 +75,7 @@ No testimonials or case studies are published yet. When examples are available, 
   {% for item in ordered_cases %}
     <a class="ifc-card-link" href="{{ item.url }}">
       <strong>{{ item.title }}</strong>
-      <p>{{ item.excerpt | strip_html | truncate: 140 }}</p>
+      <p>{% include word_boundary_truncate.html text=item.excerpt max=140 %}</p>
     </a>
   {% endfor %}
 </div>

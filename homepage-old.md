@@ -1,5 +1,7 @@
 ---
 title: ""
+date: "2026-05-06"
+last_modified_at: "2026-05-16"
 layout: single
 permalink: /homepage-old/
 classes: wide
@@ -129,7 +131,7 @@ That integrated view is the foundation of the coaching. But coaching can still h
         {% if item.date %}
           <p class="ifc-resource-card__meta">{{ item.date | date: site.date_format }}</p>
         {% endif %}
-        <p>{{ item.excerpt | strip_html | truncate: 130 }}</p>
+        <p>{% include word_boundary_truncate.html text=item.excerpt max=130 %}</p>
       </a>
     {% endfor %}
   </div>
