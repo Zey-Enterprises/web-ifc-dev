@@ -1,7 +1,7 @@
 ---
 title: "How do I accept support without feeling controlled?"
 date: 2026-04-25
-last_modified_at: 2026-04-25
+last_modified_at: 2026-05-18
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
