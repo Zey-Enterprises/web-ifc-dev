@@ -173,6 +173,14 @@
 
   function syncHeaderLinks() {
     getHeaderLinks().forEach(function (link) {
+      Array.from(link.childNodes).forEach(function (node) {
+        if (node.nodeType === Node.TEXT_NODE && node.textContent.trim() === "Permalink") {
+          node.remove();
+        } else if (node.nodeType === Node.ELEMENT_NODE && node.classList.contains("sr-only")) {
+          node.remove();
+        }
+      });
+
       if (!link.hasAttribute("aria-label") || link.getAttribute("aria-label") === "Permalink copied") {
         link.setAttribute("aria-label", "Copy permalink");
       }

@@ -3692,60 +3692,34 @@ input[type="submit"] {
 }
 
 .ifc-annotation {
-  --ifc-annotation-shift: 0px;
-  --ifc-annotation-gap: 0.18rem;
-  position: relative;
-  display: inline-block;
+  display: inline;
   vertical-align: baseline;
   line-height: inherit;
-}
-
-.ifc-annotation__trigger {
-  display: inline;
-  padding: 0;
-  border: 0;
-  margin: 0;
-  background: transparent;
-  color: inherit;
-  font: inherit;
-  line-height: inherit;
-  box-shadow: none;
   cursor: pointer;
 }
 
-.ifc-annotation__trigger:hover,
-.ifc-annotation__trigger:focus,
-.ifc-annotation__trigger:focus-visible {
-  color: inherit;
-  background: transparent;
-  box-shadow: none;
-}
-
-.ifc-annotation [hidden] {
-  display: none !important;
-}
-
-.ifc-annotation__trigger:focus,
-.ifc-annotation__trigger:focus-visible,
-.ifc-annotation[data-open="true"] .ifc-annotation__trigger {
+.ifc-annotation:focus,
+.ifc-annotation:focus-visible,
+.ifc-annotation[data-open="true"] {
   outline: 0;
 }
 
-.ifc-annotation--glossary .ifc-annotation__trigger-text {
+.ifc-annotation--glossary {
   border-radius: 0.35rem;
   border-bottom: 1px dotted rgba(43, 95, 135, 0.58);
   color: var(--ifc-accent-deep);
   padding: 0.02em 0.08em;
+  text-decoration: none;
   transition:
     color 120ms ease,
     border-color 120ms ease,
     background-color 120ms ease;
 }
 
-.ifc-annotation--glossary .ifc-annotation__trigger:hover .ifc-annotation__trigger-text,
-.ifc-annotation--glossary .ifc-annotation__trigger:focus .ifc-annotation__trigger-text,
-.ifc-annotation--glossary .ifc-annotation__trigger:focus-visible .ifc-annotation__trigger-text,
-.ifc-annotation--glossary[data-open="true"] .ifc-annotation__trigger-text {
+.ifc-annotation--glossary:hover,
+.ifc-annotation--glossary:focus,
+.ifc-annotation--glossary:focus-visible,
+.ifc-annotation--glossary[data-open="true"] {
   color: #163b57;
   border-color: rgba(22, 59, 87, 0.82);
   background: rgba(77, 166, 223, 0.14);
@@ -3767,95 +3741,55 @@ input[type="submit"] {
   margin-right: 0.04em;
 }
 
-.ifc-citation-cluster {
-  display: inline;
+.ifc-citation-marker--sep::before {
+  content: attr(data-citation-separator);
+}
+
+.ifc-annotation--citation {
+  color: var(--ifc-accent-deep);
   white-space: nowrap;
 }
 
-.ifc-annotation--citation .ifc-annotation__trigger {
-  color: var(--ifc-accent-deep);
-}
-
-.ifc-annotation--citation .ifc-annotation__trigger:hover .ifc-citation-marker,
-.ifc-annotation--citation .ifc-annotation__trigger:focus .ifc-citation-marker,
-.ifc-annotation--citation .ifc-annotation__trigger:focus-visible .ifc-citation-marker,
+.ifc-annotation--citation:hover .ifc-citation-marker,
+.ifc-annotation--citation:focus .ifc-citation-marker,
+.ifc-annotation--citation:focus-visible .ifc-citation-marker,
 .ifc-annotation--citation[data-open="true"] .ifc-citation-marker {
   color: #163b57;
 }
 
+.ifc-annotation-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  pointer-events: none;
+}
+
+.ifc-annotation-layer [hidden] {
+  display: none !important;
+}
+
 .ifc-annotation__popover {
-  position: absolute;
-  left: 50%;
-  top: calc(100% + var(--ifc-annotation-gap));
-  z-index: 40;
+  position: fixed;
+  left: var(--ifc-annotation-left, 0);
+  top: var(--ifc-annotation-top, 0);
+  z-index: 80;
   width: min(28rem, calc(100vw - 1.5rem));
   white-space: normal;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateX(calc(-50% + var(--ifc-annotation-shift))) translateY(0.3rem);
+  transform: translateY(0.3rem);
   transition:
     opacity 140ms ease,
     transform 140ms ease,
     visibility 140ms ease;
 }
 
-.ifc-annotation::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  width: 0;
-  height: 0;
-  transform: translateX(-50%);
-  background: transparent;
-  pointer-events: none;
-}
-
-.ifc-annotation--citation::after {
-  width: 0;
-  height: 0;
-}
-
-.ifc-annotation:hover::after,
-.ifc-annotation:focus-within::after,
-.ifc-annotation[data-open="true"]::after {
-  width: min(24rem, 90vw);
-  height: 1.25rem;
-}
-
-.ifc-annotation--citation:hover::after,
-.ifc-annotation--citation:focus-within::after,
-.ifc-annotation--citation[data-open="true"]::after {
-  width: 1.1rem;
-  height: 0.55rem;
-}
-
-.ifc-annotation:hover .ifc-annotation__popover,
-.ifc-annotation:focus-within .ifc-annotation__popover,
-.ifc-annotation[data-open="true"] .ifc-annotation__popover {
+.ifc-annotation-layer[data-open="true"] .ifc-annotation__popover {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translateX(calc(-50% + var(--ifc-annotation-shift))) translateY(0);
-}
-
-.ifc-annotation-pinned .ifc-annotation:not([data-pinned="true"]):hover .ifc-annotation__popover,
-.ifc-annotation-pinned .ifc-annotation:not([data-pinned="true"]):focus-within .ifc-annotation__popover,
-.ifc-annotation-pinned .ifc-annotation:not([data-pinned="true"])[data-open="true"] .ifc-annotation__popover {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transform: translateX(calc(-50% + var(--ifc-annotation-shift))) translateY(0.3rem);
-}
-
-.ifc-annotation[data-suspend-hover="true"]:hover .ifc-annotation__popover,
-.ifc-annotation[data-suspend-hover="true"]:focus-within .ifc-annotation__popover,
-.ifc-annotation[data-suspend-hover="true"][data-open="false"] .ifc-annotation__popover {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transform: translateX(calc(-50% + var(--ifc-annotation-shift))) translateY(0.3rem);
+  transform: translateY(0);
 }
 
 .ifc-annotation__card {
@@ -3875,6 +3809,13 @@ input[type="submit"] {
   letter-spacing: normal;
   text-transform: none;
   text-indent: 0;
+}
+
+.ifc-annotation__card,
+.ifc-annotation__card * {
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
 }
 
 .ifc-annotation__card::before {
@@ -3945,10 +3886,6 @@ input[type="submit"] {
 .ifc-annotation__close:focus-visible {
   background: rgba(77, 166, 223, 0.12);
   color: #163b57;
-}
-
-.ifc-annotation[data-pinned="true"] .ifc-annotation__close {
-  display: inline-flex;
 }
 
 .ifc-annotation__eyebrow {
@@ -4150,6 +4087,17 @@ input[type="submit"] {
   border-radius: 1rem;
   background: rgba(255, 255, 255, 0.78);
   box-shadow: 0 16px 34px rgba(18, 33, 44, 0.05);
+}
+
+.ifc-bibliography::before {
+  content: attr(data-bibliography-title);
+  display: block;
+  font-size: 1.563em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--ifc-ink);
 }
 
 .ifc-bibliography__title {
@@ -4360,25 +4308,6 @@ input[type="submit"] {
 
   .ifc-annotation__popover {
     width: min(24rem, calc(100vw - 1.25rem));
-  }
-
-  .ifc-annotation:hover .ifc-annotation__popover,
-  .ifc-annotation:focus-within .ifc-annotation__popover {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transform: translateX(calc(-50% + var(--ifc-annotation-shift))) translateY(0.3rem);
-  }
-
-  .ifc-annotation[data-open="true"] .ifc-annotation__popover {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transform: translateX(calc(-50% + var(--ifc-annotation-shift))) translateY(0);
-  }
-
-  .ifc-annotation[data-open="true"] .ifc-annotation__close {
-    display: inline-flex;
   }
 
   .ifc-bibliography {

@@ -1,0 +1,110 @@
+{% comment %}
+Return annotation-safe plain text for metadata, schema, and search excerpts.
+
+Input:
+- `text`: rendered HTML or Markdown-ish text.
+- `truncatewords`: optional word count applied after cleanup.
+
+Rules:
+- citation annotations and citation separators are removed using the comment
+  sentinels emitted by `_annotation.html` and `citation_sep.html`
+- legacy raw citation separator spans and unrendered citation include calls are
+  also removed as a defensive fallback for search/metadata contexts
+- glossary annotations remain as their visible trigger text
+- HTML tags are stripped after annotation-only regions are removed
+{% endcomment %}
+{%- assign clean_source = include.text | default: "" -%}
+
+{%- assign citation_chunks = clean_source | split: "<!-- ifc-citation-start -->" -%}
+{%- capture without_citations -%}
+  {{- citation_chunks[0] -}}
+  {%- for chunk in citation_chunks offset: 1 -%}
+    {%- assign after_citation = chunk | split: "<!-- ifc-citation-end -->" -%}
+    {%- if after_citation.size > 1 -%}
+      {{- after_citation | last -}}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+{%- assign sep_chunks = without_citations | split: "<!-- ifc-citation-sep-start -->" -%}
+{%- capture without_separators -%}
+  {{- sep_chunks[0] -}}
+  {%- for chunk in sep_chunks offset: 1 -%}
+    {%- assign after_sep = chunk | split: "<!-- ifc-citation-sep-end -->" -%}
+    {%- if after_sep.size > 1 -%}
+      {{- after_sep | last -}}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+{%- capture legacy_sep_plain -%}<span class="ifc-citation-marker" aria-hidden="true">,</span>{%- endcapture -%}
+{%- capture legacy_sep_empty -%}<span class="ifc-citation-marker ifc-citation-marker--sep" aria-hidden="true" data-citation-separator=","></span>{%- endcapture -%}
+{%- capture legacy_sep_visible -%}<span class="ifc-citation-marker ifc-citation-marker--sep" aria-hidden="true" data-citation-separator=",">,</span>{%- endcapture -%}
+{%- assign liquid_open = "{" | append: "%" -%}
+{%- assign liquid_open_trim = "{" | append: "%-" -%}
+{%- assign liquid_close = "%" | append: "}" -%}
+{%- assign liquid_close_trim = "-%" | append: "}" -%}
+{%- assign raw_sep_include = liquid_open | append: " include citation_sep.html " | append: liquid_close -%}
+{%- assign raw_sep_include_trimmed = liquid_open_trim | append: " include citation_sep.html " | append: liquid_close_trim -%}
+{%- assign raw_sep_include_left_trim = liquid_open_trim | append: " include citation_sep.html " | append: liquid_close -%}
+{%- assign raw_sep_include_right_trim = liquid_open | append: " include citation_sep.html " | append: liquid_close_trim -%}
+{%- assign without_legacy_separators = without_separators
+  | replace: legacy_sep_plain, ''
+  | replace: legacy_sep_empty, ''
+  | replace: legacy_sep_visible, ''
+  | replace: raw_sep_include, ''
+  | replace: raw_sep_include_trimmed, ''
+  | replace: raw_sep_include_left_trim, ''
+  | replace: raw_sep_include_right_trim, ''
+-%}
+
+{%- assign raw_citation_open = liquid_open | append: " include citation.html" -%}
+{%- assign raw_citation_open_trim = liquid_open_trim | append: " include citation.html" -%}
+{%- assign raw_citation_chunks = without_legacy_separators | split: raw_citation_open -%}
+{%- capture without_raw_citations_standard -%}
+  {{- raw_citation_chunks[0] -}}
+  {%- for chunk in raw_citation_chunks offset: 1 -%}
+    {%- assign after_raw_citation = chunk | split: "%}" -%}
+    {%- if after_raw_citation.size > 1 -%}
+      {{- after_raw_citation | last -}}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign raw_citation_trim_chunks = without_raw_citations_standard | split: raw_citation_open_trim -%}
+{%- capture without_raw_citations -%}
+  {{- raw_citation_trim_chunks[0] -}}
+  {%- for chunk in raw_citation_trim_chunks offset: 1 -%}
+    {%- assign after_raw_citation = chunk | split: "%}" -%}
+    {%- if after_raw_citation.size > 1 -%}
+      {{- after_raw_citation | last -}}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+{%- capture clean_text -%}
+  {{- without_raw_citations
+    | replace: "</p>", "</p> "
+    | replace: "</li>", "</li> "
+    | replace: "</h1>", "</h1> "
+    | replace: "</h2>", "</h2> "
+    | replace: "</h3>", "</h3> "
+    | replace: "</h4>", "</h4> "
+    | replace: "</h5>", "</h5> "
+    | replace: "</h6>", "</h6> "
+    | replace: "<br>", " "
+    | replace: "<br />", " "
+    | strip_html
+    | strip_newlines
+    | replace: "&#8203;", ""
+    | replace: "⁠", ""
+    | replace: "  ", " "
+    | replace: "  ", " "
+    | strip
+  -}}
+{%- endcapture -%}
+
+{%- if include.truncatewords -%}
+  {{- clean_text | truncatewords: include.truncatewords -}}
+{%- else -%}
+  {{- clean_text -}}
+{%- endif -%}

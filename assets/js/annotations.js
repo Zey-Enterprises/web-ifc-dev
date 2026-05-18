@@ -1,23 +1,27 @@
 /*
   Shared annotation behavior for glossary and citation popovers.
 
-  Responsibilities:
-  - support hover and focus on desktop
-  - support tap/click toggling on touch devices
-  - dismiss on outside click and Escape
-  - keep popovers within the viewport as reasonably as possible
-
-  Markup contract:
-  - root: [data-annotation]
-  - trigger: [data-annotation-trigger]
-  - popover: [data-annotation-popover]
+  Phase 1 architecture:
+  - article prose contains only text-like annotation triggers
+  - the popover shell lives once in the global annotation layer
+  - glossary/citation content hydrates from window.IFC_ANNOTATIONS
+  - selected/copied prose serializes citations as bracketed references
 */
 
 (function () {
+  const annotationData = window.IFC_ANNOTATIONS || {};
+  const glossaryData = annotationData.glossary || {};
+  const citationData = annotationData.citation || {};
+  const pageCitations = annotationData.pageCitations || {};
   const annotations = Array.from(document.querySelectorAll("[data-annotation]"));
-  const glossaryData = (window.IFC_ANNOTATIONS && window.IFC_ANNOTATIONS.glossary) || {};
-  const citationData = (window.IFC_ANNOTATIONS && window.IFC_ANNOTATIONS.citation) || {};
-  const pageCitations = (window.IFC_ANNOTATIONS && window.IFC_ANNOTATIONS.pageCitations) || {};
+  const coarsePointerQuery = window.matchMedia("(pointer: coarse)");
+  const viewportMargin = 12;
+  const popoverGap = 10;
+  const WORD_JOINER = "\u2060";
+
+  let activeAnnotation = null;
+  let activePinned = null;
+  let hoverCloseTimer = 0;
 
   decorateExternalLinks(document);
 
@@ -25,27 +29,74 @@
     return;
   }
 
-  const viewportMargin = 12;
-  const coarsePointerQuery = window.matchMedia("(pointer: coarse)");
-  const WORD_JOINER = "\u2060";
-  let activePinned = null;
-  let lastPopoverLinkHandledAt = 0;
+  const layer = ensureLayer();
+  const popoverParts = ensurePopover(layer);
+
   document.documentElement.classList.add("ifc-annotations-enhanced");
 
-  function syncPinnedMode() {
-    document.documentElement.classList.toggle("ifc-annotation-pinned", !!activePinned);
+  function ensureLayer() {
+    let existingLayer = document.querySelector("[data-annotation-layer]");
+
+    if (!existingLayer) {
+      existingLayer = document.createElement("div");
+      existingLayer.id = "ifc-annotation-layer";
+      existingLayer.className = "ifc-annotation-layer";
+      existingLayer.setAttribute("data-annotation-layer", "");
+      document.body.appendChild(existingLayer);
+    }
+
+    return existingLayer;
   }
 
-  function getParts(annotation) {
+  function ensurePopover(layerElement) {
+    let popover = layerElement.querySelector("[data-annotation-popover]");
+
+    if (!popover) {
+      popover = document.createElement("span");
+      popover.className = "ifc-annotation__popover";
+      popover.id = "ifc-annotation-popover";
+      popover.setAttribute("data-annotation-popover", "");
+      popover.setAttribute("role", "dialog");
+      popover.setAttribute("aria-modal", "false");
+      popover.setAttribute("aria-hidden", "true");
+      popover.setAttribute("aria-labelledby", "ifc-annotation-heading");
+      popover.innerHTML = [
+        '<span class="ifc-annotation__card">',
+        '<span class="ifc-annotation__nav">',
+        '<button class="ifc-annotation__back" type="button" data-annotation-back hidden aria-label="Go back to the previous glossary entry"><span aria-hidden="true">&#8249;</span></button>',
+        "</span>",
+        '<button class="ifc-annotation__close" type="button" data-annotation-close hidden aria-label="Close popover"><span aria-hidden="true">&times;</span></button>',
+        '<span class="ifc-annotation__eyebrow"></span>',
+        '<span class="ifc-annotation__heading" id="ifc-annotation-heading"></span>',
+        '<span class="ifc-annotation__body"></span>',
+        '<span class="ifc-annotation__extra" hidden></span>',
+        "</span>"
+      ].join("");
+      layerElement.appendChild(popover);
+    }
+
     return {
-      trigger: annotation.querySelector("[data-annotation-trigger]"),
-      popover: annotation.querySelector("[data-annotation-popover]"),
-      heading: annotation.querySelector(".ifc-annotation__heading"),
-      body: annotation.querySelector(".ifc-annotation__body"),
-      extra: annotation.querySelector(".ifc-annotation__extra"),
-      back: annotation.querySelector("[data-annotation-back]"),
-      close: annotation.querySelector("[data-annotation-close]")
+      popover: popover,
+      card: popover.querySelector(".ifc-annotation__card"),
+      eyebrow: popover.querySelector(".ifc-annotation__eyebrow"),
+      heading: popover.querySelector(".ifc-annotation__heading"),
+      body: popover.querySelector(".ifc-annotation__body"),
+      extra: popover.querySelector(".ifc-annotation__extra"),
+      back: popover.querySelector("[data-annotation-back]"),
+      close: popover.querySelector("[data-annotation-close]")
     };
+  }
+
+  function getTrigger(annotation) {
+    if (!annotation) {
+      return null;
+    }
+
+    if (annotation.matches("[data-annotation-trigger]")) {
+      return annotation;
+    }
+
+    return annotation.querySelector("[data-annotation-trigger]");
   }
 
   function getEventElement(event) {
@@ -66,373 +117,599 @@
     return null;
   }
 
-  function normalizeGlossarySpacing() {
-    annotations.forEach(function (annotation) {
-      let sibling = annotation.nextSibling;
+  function getTriggerVisualRect(trigger) {
+    const rects = trigger ? Array.from(trigger.getClientRects()).filter(function (rect) {
+      return rect.width > 0 && rect.height > 0;
+    }) : [];
 
-      while (sibling && sibling.nodeType === Node.COMMENT_NODE) {
-        sibling = sibling.nextSibling;
-      }
-
-      if (!sibling || sibling.nodeType !== Node.TEXT_NODE || !sibling.nodeValue) {
-        return;
-      }
-
-      if (/^\s+$/u.test(sibling.nodeValue)) {
-        sibling.nodeValue = "";
-        return;
-      }
-
-      sibling.nodeValue = sibling.nodeValue.replace(/^(\s+)([.,;:!?"'“”‘’)\]}\u2014\u2013-])/u, "$2");
-    });
-  }
-
-  function previousSignificantSibling(node) {
-    let sibling = node ? node.previousSibling : null;
-
-    while (
-      sibling &&
-      (
-        sibling.nodeType === Node.COMMENT_NODE ||
-        (sibling.nodeType === Node.TEXT_NODE && !sibling.nodeValue.replace(/\u2060/g, "").trim())
-      )
-    ) {
-      sibling = sibling.previousSibling;
+    if (!rects.length) {
+      return trigger ? trigger.getBoundingClientRect() : null;
     }
 
-    return sibling;
+    return rects.reduce(function (selected, rect) {
+      if (rect.bottom > selected.bottom) {
+        return rect;
+      }
+
+      if (rect.bottom === selected.bottom && rect.left > selected.left) {
+        return rect;
+      }
+
+      return selected;
+    }, rects[0]);
   }
 
-  function nextSignificantSibling(node) {
-    let sibling = node ? node.nextSibling : null;
+  function getGlossaryEntry(entryId) {
+    return entryId ? glossaryData[entryId] || null : null;
+  }
 
-    while (
-      sibling &&
-      (
-        sibling.nodeType === Node.COMMENT_NODE ||
-        (sibling.nodeType === Node.TEXT_NODE && !sibling.nodeValue.replace(/\u2060/g, "").trim())
-      )
-    ) {
-      sibling = sibling.nextSibling;
+  function getPageCitationMap() {
+    return pageCitations || {};
+  }
+
+  function resolveCitationSourceId(annotation) {
+    const directSourceId = annotation && annotation.dataset ? annotation.dataset.sourceId : "";
+    const label = annotation && annotation.dataset ? annotation.dataset.citationLabel : "";
+    const citationMap = getPageCitationMap();
+
+    if (directSourceId) {
+      return directSourceId;
     }
 
-    return sibling;
-  }
-
-  function appendWordJoinerToTextNode(node) {
-    if (!node || node.nodeType !== Node.TEXT_NODE || !node.nodeValue) {
-      return false;
+    if (!label) {
+      return "";
     }
 
-    if (/\s$/u.test(node.nodeValue) || node.nodeValue.endsWith(WORD_JOINER)) {
-      return false;
+    if (Array.isArray(citationMap)) {
+      for (let index = 0; index < citationMap.length; index += 1) {
+        const entry = citationMap[index];
+
+        if (entry && String(entry.label) === String(label)) {
+          return entry.id || "";
+        }
+      }
+
+      return "";
     }
 
-    node.nodeValue += WORD_JOINER;
-    return true;
-  }
+    if (citationMap && typeof citationMap === "object") {
+      const keys = Object.keys(citationMap);
 
-  function isGlossaryAnnotationNode(node) {
-    return !!(
-      node &&
-      node.nodeType === Node.ELEMENT_NODE &&
-      node.matches &&
-      node.matches("[data-annotation][data-annotation-kind='glossary']")
-    );
-  }
+      for (let index = 0; index < keys.length; index += 1) {
+        const key = keys[index];
 
-  function prependWordJoinerToNode(node) {
-    if (!node || !node.parentNode) {
-      return false;
+        if (String(key) === String(label)) {
+          return citationMap[key] || "";
+        }
+      }
     }
 
-    const previous = previousSignificantSibling(node);
+    return "";
+  }
 
-    if (previous && previous.nodeType === Node.TEXT_NODE) {
-      return appendWordJoinerToTextNode(previous);
+  function getCitationSource(annotation) {
+    const sourceId = resolveCitationSourceId(annotation);
+
+    if (sourceId && annotation && annotation.dataset) {
+      annotation.dataset.sourceId = sourceId;
     }
 
-    if (previous && previous.nodeType === Node.ELEMENT_NODE) {
-      node.parentNode.insertBefore(document.createTextNode(WORD_JOINER), node);
-      return true;
+    return sourceId ? citationData[sourceId] || null : null;
+  }
+
+  function syncPinnedMode() {
+    document.documentElement.classList.toggle("ifc-annotation-pinned", !!activePinned);
+  }
+
+  function isOpen(annotation) {
+    return annotation && annotation.dataset.open === "true";
+  }
+
+  function isPinned(annotation) {
+    return annotation && annotation.dataset.pinned === "true";
+  }
+
+  function setExpanded(annotation, expanded) {
+    const trigger = getTrigger(annotation);
+
+    if (trigger) {
+      trigger.setAttribute("aria-expanded", expanded ? "true" : "false");
     }
-
-    return false;
   }
 
-  function bindAnnotationLineWrapping() {
-    annotations.forEach(function (annotation) {
-      const previous = previousSignificantSibling(annotation);
-      const next = nextSignificantSibling(annotation);
-
-      if (annotation.dataset.annotationKind === "citation") {
-        prependWordJoinerToNode(annotation);
-      }
-
-      if (next && next.nodeType === Node.TEXT_NODE && next.nodeValue) {
-        const trimmed = next.nodeValue.replace(/^(\s+)([.,;:!?"'“”‘’)\]}\u2014\u2013-])/u, "$2");
-
-        if (trimmed !== next.nodeValue) {
-          next.nodeValue = trimmed;
-        }
-
-        if (/^[.,;:!?"'“”‘’)\]}\u2014\u2013-]/u.test(next.nodeValue) && !next.nodeValue.startsWith(WORD_JOINER)) {
-          next.nodeValue = WORD_JOINER + next.nodeValue;
-        }
-      } else if (next && next.nodeType === Node.ELEMENT_NODE && next.matches("[data-annotation]")) {
-        prependWordJoinerToNode(next);
-      }
-
-      if (annotation.dataset.annotationKind === "glossary" && previous && previous.nodeType === Node.TEXT_NODE && previous.nodeValue) {
-        previous.nodeValue = previous.nodeValue.replace(/\s+$/u, function (match) {
-          return /\s/u.test(match) ? match : "";
-        });
-      }
-    });
-  }
-
-  function normalizeCitationSeparatorSpacing() {
-    const separators = Array.from(document.querySelectorAll(".ifc-citation-marker"));
-
-    separators.forEach(function (marker) {
-      if ((marker.textContent || "").trim() !== ",") {
-        return;
-      }
-
-      marker.classList.add("ifc-citation-marker--sep");
-
-      let previous = marker.previousSibling;
-
-      while (previous && previous.nodeType === Node.COMMENT_NODE) {
-        previous = previous.previousSibling;
-      }
-
-      if (previous && previous.nodeType === Node.TEXT_NODE && previous.nodeValue) {
-        previous.nodeValue = previous.nodeValue.replace(/\s+$/u, "");
-      }
-
-      let next = marker.nextSibling;
-
-      while (next && next.nodeType === Node.COMMENT_NODE) {
-        next = next.nextSibling;
-      }
-
-      if (next && next.nodeType === Node.TEXT_NODE && next.nodeValue) {
-        next.nodeValue = next.nodeValue.replace(/^\s+/u, "");
-      }
-    });
-  }
-
-  function bindCitationRuns() {
-    const citationTriggers = Array.from(document.querySelectorAll('.ifc-annotation--citation'));
-
-    citationTriggers.forEach(function (annotation) {
-      if (annotation.closest(".ifc-citation-cluster")) {
-        return;
-      }
-
-      const previous = previousSignificantSibling(annotation);
-      const chain = [annotation];
-      let cursor = annotation;
-
-      while (true) {
-        const separator = nextSignificantSibling(cursor);
-
-        if (!separator || separator.nodeType !== Node.ELEMENT_NODE || !separator.classList || !separator.classList.contains("ifc-citation-marker")) {
-          break;
-        }
-
-        const followingCitation = nextSignificantSibling(separator);
-
-        if (!followingCitation || followingCitation.nodeType !== Node.ELEMENT_NODE || !followingCitation.matches("[data-annotation][data-annotation-kind=\"citation\"]")) {
-          break;
-        }
-
-        chain.push(separator, followingCitation);
-        cursor = followingCitation;
-      }
-
-      if (!previous || previous.nodeType !== Node.TEXT_NODE || !previous.nodeValue || !/\S/u.test(previous.nodeValue)) {
-        if (!isGlossaryAnnotationNode(previous) || !previous.parentNode) {
-          return;
-        }
-
-        const cluster = document.createElement("span");
-        cluster.className = "ifc-citation-cluster";
-        previous.parentNode.insertBefore(cluster, previous);
-        cluster.appendChild(previous);
-
-        chain.forEach(function (node) {
-          if (node.parentNode) {
-            cluster.appendChild(node);
-          }
-        });
-
-        return;
-      }
-
-      const punctuationTailMatch = previous.nodeValue.match(/((?:\u2060)*[.,;:!?"'“”‘’)\]}\u2014\u2013-]+(?:\u2060)*)$/u);
-      const punctuationPrefix = punctuationTailMatch
-        ? previous.nodeValue.slice(0, previous.nodeValue.length - punctuationTailMatch[1].length)
-        : "";
-      const glossaryPrefix = punctuationTailMatch ? previousSignificantSibling(previous) : null;
-
-      const punctuationPrefixHasContent = punctuationPrefix.replace(/\u2060/g, "").trim().length > 0;
-
-      if (punctuationTailMatch && !punctuationPrefixHasContent && isGlossaryAnnotationNode(glossaryPrefix) && glossaryPrefix.parentNode) {
-        const cluster = document.createElement("span");
-        cluster.className = "ifc-citation-cluster";
-        glossaryPrefix.parentNode.insertBefore(cluster, glossaryPrefix);
-        cluster.appendChild(glossaryPrefix);
-        cluster.appendChild(document.createTextNode(punctuationTailMatch[1]));
-
-        chain.forEach(function (node) {
-          if (node.parentNode) {
-            cluster.appendChild(node);
-          }
-        });
-
-        if (punctuationPrefix) {
-          previous.nodeValue = punctuationPrefix;
-        } else if (previous.parentNode) {
-          previous.parentNode.removeChild(previous);
-        }
-
-        return;
-      }
-
-      const tailMatch = previous.nodeValue.match(/(\S+)$/u);
-
-      if (!tailMatch) {
-        return;
-      }
-
-      const tail = tailMatch[1];
-      const prefix = previous.nodeValue.slice(0, previous.nodeValue.length - tail.length);
-      const cluster = document.createElement("span");
-      cluster.className = "ifc-citation-cluster";
-      cluster.appendChild(document.createTextNode(tail));
-
-      chain.forEach(function (node) {
-        if (node.parentNode) {
-          cluster.appendChild(node);
-        }
-      });
-
-      const afterRun = nextSignificantSibling(cursor);
-
-      if (afterRun && afterRun.nodeType === Node.TEXT_NODE && afterRun.nodeValue) {
-        const punctuationMatch = afterRun.nodeValue.match(/^([.,;:!?"'“”‘’)\]}\u2014\u2013-]+)/u);
-
-        if (punctuationMatch) {
-          cluster.appendChild(document.createTextNode(punctuationMatch[1]));
-          afterRun.nodeValue = afterRun.nodeValue.slice(punctuationMatch[1].length);
-        }
-      }
-
-      if (prefix) {
-        previous.nodeValue = prefix;
-        previous.parentNode.insertBefore(cluster, previous.nextSibling);
-      } else if (previous.parentNode) {
-        previous.parentNode.insertBefore(cluster, previous);
-        previous.parentNode.removeChild(previous);
-      }
-    });
-  }
-
-  function setCitationLabel(annotation, label) {
-    if (!annotation || annotation.dataset.annotationKind !== "citation") {
+  function resetAnnotationState(annotation) {
+    if (!annotation) {
       return;
     }
 
-    const normalizedLabel = String(label || "");
-    annotation.dataset.citationLabel = normalizedLabel;
+    annotation.dataset.open = "false";
+    annotation.dataset.pinned = "false";
+    setExpanded(annotation, false);
+  }
 
-    const { trigger } = getParts(annotation);
+  function closeActive(options) {
+    const settings = options || {};
+    const annotation = activeAnnotation;
+    const trigger = getTrigger(annotation);
+
+    clearHoverTimer();
+
+    if (annotation) {
+      resetAnnotationState(annotation);
+    }
+
+    activeAnnotation = null;
+    activePinned = null;
+    layer.dataset.open = "false";
+    layer.dataset.pinned = "false";
+    layer.dataset.coarse = coarsePointerQuery.matches ? "true" : "false";
+    layer.removeAttribute("data-kind");
+    popoverParts.popover.setAttribute("aria-hidden", "true");
+    popoverParts.popover.hidden = true;
+    popoverParts.close.hidden = true;
+    popoverParts.back.hidden = true;
+    syncPinnedMode();
+
+    if (settings.restoreFocus && trigger) {
+      trigger.focus();
+    }
+  }
+
+  function closeIfHoverInactive() {
+    if (!activeAnnotation || isPinned(activeAnnotation)) {
+      return;
+    }
+
+    const trigger = getTrigger(activeAnnotation);
+    const triggerHovered = !!(trigger && trigger.matches(":hover"));
+    const popoverHovered = popoverParts.popover.matches(":hover");
+    const focusInside = !!(
+      (trigger && trigger.contains(document.activeElement)) ||
+      popoverParts.popover.contains(document.activeElement)
+    );
+
+    if (!triggerHovered && !popoverHovered && !focusInside) {
+      closeActive();
+    }
+  }
+
+  function scheduleHoverClose() {
+    clearHoverTimer();
+    hoverCloseTimer = window.setTimeout(closeIfHoverInactive, 160);
+  }
+
+  function clearHoverTimer() {
+    if (hoverCloseTimer) {
+      window.clearTimeout(hoverCloseTimer);
+      hoverCloseTimer = 0;
+    }
+  }
+
+  function openAnnotation(annotation, options) {
+    const settings = options || {};
+    const shouldPin = settings.pin === true || coarsePointerQuery.matches || isPinned(annotation) || activePinned === annotation;
+
+    if (!annotation) {
+      return;
+    }
+
+    if (activePinned && activePinned !== annotation && !shouldPin) {
+      return;
+    }
+
+    if (activeAnnotation && activeAnnotation !== annotation) {
+      resetAnnotationState(activeAnnotation);
+    }
+
+    if (annotation.dataset.annotationKind === "glossary" && !settings.preserveGlossary) {
+      annotation._activeGlossaryEntryId = annotation.dataset.entryId || "";
+      annotation._glossaryHistory = [];
+    }
+
+    activeAnnotation = annotation;
+    activePinned = shouldPin ? annotation : null;
+    annotation.dataset.open = "true";
+    annotation.dataset.pinned = shouldPin ? "true" : "false";
+    setExpanded(annotation, true);
+
+    layer.dataset.open = "true";
+    layer.dataset.pinned = shouldPin ? "true" : "false";
+    layer.dataset.coarse = coarsePointerQuery.matches ? "true" : "false";
+    layer.dataset.kind = annotation.dataset.annotationKind || "annotation";
+    popoverParts.popover.hidden = false;
+    popoverParts.popover.setAttribute("aria-hidden", "false");
+
+    renderActivePopover();
+    syncPinnedMode();
+    positionPopover();
+
+    window.requestAnimationFrame(function () {
+      positionPopover();
+    });
+  }
+
+  function pinActiveAnnotation() {
+    if (!activeAnnotation) {
+      return;
+    }
+
+    activePinned = activeAnnotation;
+    activeAnnotation.dataset.pinned = "true";
+    layer.dataset.pinned = "true";
+    popoverParts.close.hidden = false;
+    syncPinnedMode();
+  }
+
+  function renderActivePopover() {
+    if (!activeAnnotation) {
+      return;
+    }
+
+    const kind = activeAnnotation.dataset.annotationKind || "annotation";
+
+    popoverParts.eyebrow.textContent = kind === "citation" ? "Citation" : "Glossary";
+    popoverParts.heading.hidden = false;
+    popoverParts.heading.textContent = "";
+    popoverParts.body.innerHTML = "";
+    popoverParts.extra.innerHTML = "";
+    popoverParts.extra.hidden = true;
+    popoverParts.back.hidden = true;
+    popoverParts.close.hidden = !(isPinned(activeAnnotation) || coarsePointerQuery.matches);
+
+    if (kind === "citation") {
+      renderCitationPopover(activeAnnotation);
+    } else if (kind === "glossary") {
+      renderGlossaryPopover(activeAnnotation);
+    }
+
+    decorateExternalLinks(popoverParts.popover);
+  }
+
+  function renderGlossaryPopover(annotation) {
+    const entryId = annotation._activeGlossaryEntryId || annotation.dataset.entryId || "";
+    const entry = getGlossaryEntry(entryId);
+
+    if (!entry) {
+      popoverParts.heading.textContent = "Missing glossary entry";
+      popoverParts.body.innerHTML = '<span class="ifc-annotation__para">No glossary entry was found for <code>' + escapeHtml(entryId) + "</code>.</span>";
+      return;
+    }
+
+    annotation._activeGlossaryEntryId = entryId;
+    popoverParts.heading.textContent = entry.term || entryId;
+    popoverParts.body.innerHTML = renderGlossaryBody(entry);
+    popoverParts.back.hidden = !(annotation._glossaryHistory && annotation._glossaryHistory.length);
+
+    const extraHtml = annotation.dataset.extraHtml || "";
+
+    if (extraHtml) {
+      popoverParts.extra.innerHTML = extraHtml;
+      popoverParts.extra.hidden = false;
+    }
+  }
+
+  function renderCitationPopover(annotation) {
+    const source = getCitationSource(annotation);
+    const sourceId = resolveCitationSourceId(annotation);
+
+    popoverParts.heading.hidden = true;
+
+    if (!source) {
+      popoverParts.heading.hidden = false;
+      popoverParts.heading.textContent = "Missing citation";
+      popoverParts.body.innerHTML = '<span class="ifc-annotation__para">No citation source was found' + (sourceId ? " for <code>" + escapeHtml(sourceId) + "</code>" : "") + ".</span>";
+      return;
+    }
+
+    let bodyHtml = '<span class="ifc-annotation__para ifc-annotation__lede ifc-annotation__lede--citation">' + formatCitationReference(source) + "</span>";
+
+    if (source.quote) {
+      bodyHtml += '<span class="ifc-annotation__quote">' + escapeHtml(source.quote) + "</span>";
+    } else if (source.excerpt) {
+      bodyHtml += '<span class="ifc-annotation__quote">' + escapeHtml(source.excerpt) + "</span>";
+    }
+
+    if (source.notes) {
+      bodyHtml += '<span class="ifc-annotation__para ifc-annotation__meta">' + escapeHtml(source.notes) + "</span>";
+    }
+
+    popoverParts.body.innerHTML = bodyHtml;
+
+    const extraHtml = annotation.dataset.extraHtml || "";
+
+    if (extraHtml) {
+      popoverParts.extra.innerHTML = extraHtml;
+      popoverParts.extra.hidden = false;
+    }
+
+    const trigger = getTrigger(annotation);
+    const label = annotation.dataset.citationLabel || "";
+
+    if (trigger) {
+      trigger.setAttribute("aria-label", "Show citation" + (label ? " " + label : "") + " for " + (source.short_title || source.title || "source"));
+    }
+  }
+
+  function positionPopover() {
+    if (!activeAnnotation || popoverParts.popover.hidden) {
+      return;
+    }
+
+    const trigger = getTrigger(activeAnnotation);
 
     if (!trigger) {
       return;
     }
 
-    let marker = trigger.querySelector(".ifc-citation-marker");
-    let screenReaderText = trigger.querySelector(".screen-reader-text");
+    const triggerRect = getTriggerVisualRect(trigger);
+    const popover = popoverParts.popover;
 
-    if (!marker) {
-      marker = document.createElement("span");
-      marker.className = "ifc-citation-marker";
-      marker.setAttribute("aria-hidden", "true");
-      trigger.textContent = "";
-      trigger.appendChild(marker);
+    if (!triggerRect) {
+      return;
     }
 
-    marker.textContent = normalizedLabel;
+    popover.style.removeProperty("--ifc-annotation-left");
+    popover.style.removeProperty("--ifc-annotation-top");
+    popover.style.removeProperty("--ifc-annotation-pointer");
 
-    if (!screenReaderText) {
-      screenReaderText = document.createElement("span");
-      screenReaderText.className = "screen-reader-text";
-      trigger.appendChild(screenReaderText);
-    }
+    const popoverRect = popover.getBoundingClientRect();
+    const width = popoverRect.width || Math.min(448, window.innerWidth - (viewportMargin * 2));
+    const centeredLeft = triggerRect.left + (triggerRect.width / 2) - (width / 2);
+    const maxLeft = window.innerWidth - width - viewportMargin;
+    const left = Math.min(Math.max(centeredLeft, viewportMargin), Math.max(viewportMargin, maxLeft));
+    const pointer = Math.min(Math.max((triggerRect.left + (triggerRect.width / 2)) - left, 18), width - 18);
+    const top = Math.max(viewportMargin, triggerRect.bottom + popoverGap);
 
-    screenReaderText.textContent = "Citation " + normalizedLabel;
+    popover.style.setProperty("--ifc-annotation-left", left.toFixed(2) + "px");
+    popover.style.setProperty("--ifc-annotation-top", top.toFixed(2) + "px");
+    popover.style.setProperty("--ifc-annotation-pointer", pointer.toFixed(2) + "px");
   }
 
-  function applyScopedCitationNumbering() {
-    const scopes = Array.from(document.querySelectorAll("[data-citation-numbering='global']"));
+  function loadRelatedGlossary(annotation, relatedId) {
+    const entry = getGlossaryEntry(relatedId);
 
-    scopes.forEach(function (scope) {
-      const scopedCitations = Array.from(scope.querySelectorAll("[data-annotation][data-annotation-kind='citation']"));
+    if (!annotation || annotation.dataset.annotationKind !== "glossary" || !entry) {
+      return;
+    }
 
-      scopedCitations.forEach(function (annotation, index) {
-        setCitationLabel(annotation, index + 1);
-      });
-    });
+    annotation._glossaryHistory = annotation._glossaryHistory || [];
+    annotation._glossaryHistory.push(annotation._activeGlossaryEntryId || annotation.dataset.entryId || "");
+    annotation._activeGlossaryEntryId = relatedId;
+
+    openAnnotation(annotation, { pin: true, preserveGlossary: true });
   }
 
-  function getAnnotationCopyText(annotation) {
-    if (!annotation) {
-      return "";
+  function goBackGlossary(annotation) {
+    const history = annotation && annotation._glossaryHistory ? annotation._glossaryHistory : [];
+
+    if (!history.length) {
+      return;
     }
 
-    if (annotation.dataset.annotationKind === "citation") {
-      const label = annotation.dataset.citationLabel || "";
-      return label ? "[" + label + "]" : "";
-    }
-
-    const triggerText = annotation.querySelector(".ifc-annotation__trigger-text");
-
-    if (triggerText) {
-      return triggerText.textContent || "";
-    }
-
-    const trigger = annotation.querySelector("[data-annotation-trigger]");
-
-    return trigger ? (trigger.textContent || "") : "";
+    annotation._activeGlossaryEntryId = history.pop();
+    openAnnotation(annotation, { pin: true, preserveGlossary: true });
   }
 
-  function getCopiedCitationEntries(fragment) {
-    const entries = [];
-    const seen = {};
+  function escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
 
-    if (!fragment) {
-      return entries;
-    }
+  function decorateExternalLinks(root) {
+    const scope = root || document;
+    const links = scope.querySelectorAll('a[target="_blank"]:not([data-no-external-icon])');
 
-    fragment.querySelectorAll('[data-annotation][data-annotation-kind="citation"]').forEach(function (annotation) {
-      const label = annotation.dataset.citationLabel || "";
-      const sourceId = resolveCitationSourceId(annotation);
-
-      if (!label || !sourceId || seen[label]) {
+    links.forEach(function (link) {
+      if (
+        link.querySelector(".ifc-link-icon") ||
+        link.closest(".ifc-mini-action") ||
+        link.querySelector(".ifc-mini-action__aside")
+      ) {
         return;
       }
 
-      seen[label] = true;
-      entries.push({
-        label: label,
-        source: citationData[sourceId] || null
-      });
+      const icon = document.createElement("i");
+      icon.className = "fas fa-external-link-alt ifc-link-icon";
+      icon.setAttribute("aria-hidden", "true");
+      link.appendChild(icon);
     });
+  }
 
-    return entries;
+  function normalizeNewtabValue(value, fallback) {
+    if (value === true || value === "true") {
+      return true;
+    }
+
+    if (value === false || value === "false") {
+      return false;
+    }
+
+    return fallback;
+  }
+
+  function renderAnnotationLink(options) {
+    const href = options && options.href ? String(options.href) : "";
+
+    if (!href) {
+      return "";
+    }
+
+    const label = options && options.label ? String(options.label) : href;
+    const defaultNewtab = !!(options && options.defaultNewtab);
+    const openNewtab = normalizeNewtabValue(options && options.newtab, defaultNewtab);
+    const icon = '<i class="fas fa-external-link-alt ifc-link-icon" aria-hidden="true"></i>';
+    const targetAttrs = openNewtab ? ' target="_blank" rel="noopener noreferrer"' : "";
+
+    return '<a href="' + escapeHtml(href) + '"' + targetAttrs + ">" + escapeHtml(label) + (openNewtab ? icon : "") + "</a>";
+  }
+
+  function renderGlossaryBody(entry) {
+    if (!entry) {
+      return "";
+    }
+
+    const parts = [];
+
+    if (entry.short) {
+      parts.push('<span class="ifc-annotation__para ifc-annotation__lede">' + escapeHtml(entry.short) + "</span>");
+    }
+
+    if (entry.long) {
+      parts.push('<span class="ifc-annotation__para">' + escapeHtml(entry.long) + "</span>");
+    }
+
+    if (Array.isArray(entry.see_also) && entry.see_also.length) {
+      const pills = entry.see_also.map(function (relatedId) {
+        const relatedEntry = getGlossaryEntry(relatedId) || {};
+        const label = relatedEntry.term || relatedId;
+        return '<button class="ifc-annotation__pill" type="button" data-related-glossary="' + escapeHtml(relatedId) + '">' + escapeHtml(label) + "</button>";
+      }).join("");
+
+      parts.push('<span class="ifc-annotation__para ifc-annotation__meta"><strong>See also:</strong>' + pills + "</span>");
+    }
+
+    if (Array.isArray(entry.links) && entry.links.length) {
+      const links = entry.links.map(function (link) {
+        return '<span class="ifc-annotation__link-item">' + renderAnnotationLink({
+          href: link.url,
+          label: link.label,
+          newtab: link.newtab,
+          defaultNewtab: false
+        }) + "</span>";
+      }).join("");
+
+      parts.push('<span class="ifc-annotation__link-list">' + links + "</span>");
+    }
+
+    return parts.join("");
+  }
+
+  function formatCitationAuthors(source) {
+    if (Array.isArray(source.authors) && source.authors.length) {
+      return source.authors
+        .map(function (author) {
+          if (author.literal) {
+            return author.literal;
+          }
+
+          const name = [author.given, author.family].filter(Boolean).join(" ").trim();
+          return author.suffix ? (name ? name + ", " + author.suffix : author.suffix) : name;
+        })
+        .filter(Boolean)
+        .join(", ")
+        .replace(/, ([^,]+)$/, ", and $1")
+        .replace(/^([^,]+), and /, "$1 and ");
+    }
+
+    return source.organization || "";
+  }
+
+  function formatCitationIssued(source) {
+    const issued = source.issued;
+
+    if (issued && issued.year) {
+      if (issued.month && issued.day) {
+        return issued.month + "/" + issued.day + "/" + issued.year;
+      }
+
+      if (issued.month) {
+        return issued.month + "/" + issued.year;
+      }
+
+      return String(issued.year);
+    }
+
+    return source.year ? String(source.year) : "";
+  }
+
+  function formatCitationReference(source) {
+    if (!source) {
+      return "";
+    }
+
+    const authors = formatCitationAuthors(source);
+    const title = escapeHtml(source.title || "");
+    const subtitle = source.subtitle ? ': <span class="ifc-citation-ref__subtitle">' + escapeHtml(source.subtitle) + "</span>" : "";
+    const titleLine = '<span class="ifc-citation-ref__title">' + title + "</span>" + subtitle;
+    const containerTitle = source.container_title || source.publication || source.journal || "";
+    const issued = formatCitationIssued(source);
+    let html = '<span class="ifc-citation-ref ifc-citation-ref--popover ifc-citation-ref--' + escapeHtml(source.type || "source") + '">';
+
+    if (source.type === "journal-article") {
+      if (authors) {
+        html += '<span class="ifc-citation-ref__authors">' + escapeHtml(authors) + "</span>. ";
+      }
+      html += titleLine + ".";
+      if (containerTitle) {
+        html += ' <span class="ifc-citation-ref__container">' + escapeHtml(containerTitle) + "</span>";
+      }
+      if (source.volume) {
+        html += ' <span class="ifc-citation-ref__volume">' + escapeHtml(source.volume) + "</span>";
+      }
+      if (source.issue) {
+        html += '<span class="ifc-citation-ref__issue">, no. ' + escapeHtml(source.issue) + "</span>";
+      }
+      if (issued) {
+        html += " (" + escapeHtml(issued) + ")";
+      }
+      if (source.pages) {
+        html += ': <span class="ifc-citation-ref__pages">' + escapeHtml(source.pages) + "</span>";
+      }
+      html += ".";
+      if (source.doi) {
+        const doiHref = "https://doi.org/" + String(source.doi).replace(/^https:\/\/doi\.org\//, "");
+        html += " DOI: " + renderAnnotationLink({
+          href: doiHref,
+          label: source.doi,
+          newtab: source.doi_newtab,
+          defaultNewtab: true
+        }) + ".";
+      } else if (source.url) {
+        html += " " + renderAnnotationLink({
+          href: source.url,
+          label: "Source",
+          newtab: source.url_newtab,
+          defaultNewtab: true
+        }) + ".";
+      }
+    } else {
+      if (authors) {
+        html += '<span class="ifc-citation-ref__authors">' + escapeHtml(authors) + "</span>. ";
+      }
+      html += titleLine + ".";
+      if (containerTitle) {
+        html += ' <span class="ifc-citation-ref__container">' + escapeHtml(containerTitle) + "</span>.";
+      } else if (issued) {
+        html += " " + escapeHtml(issued) + ".";
+      }
+      if (source.url) {
+        html += " " + renderAnnotationLink({
+          href: source.url,
+          label: "Source",
+          newtab: source.url_newtab,
+          defaultNewtab: true
+        }) + ".";
+      }
+    }
+
+    if (Array.isArray(source.links) && source.links.length) {
+      html += " ";
+      html += source.links.map(function (link) {
+        return renderAnnotationLink({
+          href: link.url,
+          label: link.label,
+          newtab: link.newtab,
+          defaultNewtab: true
+        });
+      }).join(" ");
+    }
+
+    html += "</span>";
+    return html;
   }
 
   function formatCitationReferencePlain(source) {
@@ -494,12 +771,215 @@
     return parts.join(" ").replace(/\s+/g, " ").trim();
   }
 
+  function setCitationLabel(annotation, label) {
+    if (!annotation || annotation.dataset.annotationKind !== "citation") {
+      return;
+    }
+
+    const normalizedLabel = String(label || "");
+    annotation.dataset.citationLabel = normalizedLabel;
+
+    let marker = annotation.querySelector(".ifc-citation-marker");
+
+    if (!marker) {
+      marker = document.createElement("span");
+      marker.className = "ifc-citation-marker";
+      marker.setAttribute("aria-hidden", "true");
+      annotation.textContent = "";
+      annotation.appendChild(marker);
+    }
+
+    marker.dataset.citationLabel = normalizedLabel;
+    marker.textContent = normalizedLabel;
+    annotation.setAttribute("aria-label", "Show citation " + normalizedLabel);
+  }
+
+  function applyScopedCitationNumbering() {
+    const scopes = Array.from(document.querySelectorAll("[data-citation-numbering='global']"));
+
+    scopes.forEach(function (scope) {
+      const scopedCitations = Array.from(scope.querySelectorAll("[data-annotation][data-annotation-kind='citation']"));
+
+      scopedCitations.forEach(function (annotation, index) {
+        setCitationLabel(annotation, index + 1);
+      });
+    });
+  }
+
+  function previousSignificantSibling(node) {
+    let sibling = node ? node.previousSibling : null;
+
+    while (
+      sibling &&
+      (
+        sibling.nodeType === Node.COMMENT_NODE ||
+        (sibling.nodeType === Node.TEXT_NODE && !sibling.nodeValue.replace(/\u2060/g, "").trim())
+      )
+    ) {
+      sibling = sibling.previousSibling;
+    }
+
+    return sibling;
+  }
+
+  function nextSignificantSibling(node) {
+    let sibling = node ? node.nextSibling : null;
+
+    while (
+      sibling &&
+      (
+        sibling.nodeType === Node.COMMENT_NODE ||
+        (sibling.nodeType === Node.TEXT_NODE && !sibling.nodeValue.replace(/\u2060/g, "").trim())
+      )
+    ) {
+      sibling = sibling.nextSibling;
+    }
+
+    return sibling;
+  }
+
+  function appendWordJoinerToTextNode(node) {
+    if (!node || node.nodeType !== Node.TEXT_NODE || !node.nodeValue) {
+      return false;
+    }
+
+    if (/\s$/u.test(node.nodeValue) || node.nodeValue.endsWith(WORD_JOINER)) {
+      return false;
+    }
+
+    node.nodeValue += WORD_JOINER;
+    return true;
+  }
+
+  function prependWordJoinerToNode(node) {
+    if (!node || !node.parentNode) {
+      return false;
+    }
+
+    const previous = previousSignificantSibling(node);
+
+    if (previous && previous.nodeType === Node.TEXT_NODE) {
+      return appendWordJoinerToTextNode(previous);
+    }
+
+    if (previous && previous.nodeType === Node.ELEMENT_NODE) {
+      node.parentNode.insertBefore(document.createTextNode(WORD_JOINER), node);
+      return true;
+    }
+
+    return false;
+  }
+
+  function normalizeCitationSeparatorSpacing() {
+    Array.from(document.querySelectorAll(".ifc-citation-marker")).forEach(function (marker) {
+      if ((marker.textContent || "").trim() !== "," && marker.dataset.citationSeparator !== ",") {
+        return;
+      }
+
+      marker.classList.add("ifc-citation-marker--sep");
+      marker.setAttribute("aria-hidden", "true");
+      marker.dataset.citationSeparator = ",";
+      marker.textContent = "";
+
+      let previous = marker.previousSibling;
+
+      while (previous && previous.nodeType === Node.COMMENT_NODE) {
+        previous = previous.previousSibling;
+      }
+
+      if (previous && previous.nodeType === Node.TEXT_NODE && previous.nodeValue) {
+        previous.nodeValue = previous.nodeValue.replace(/\s+$/u, "");
+      }
+
+      let next = marker.nextSibling;
+
+      while (next && next.nodeType === Node.COMMENT_NODE) {
+        next = next.nextSibling;
+      }
+
+      if (next && next.nodeType === Node.TEXT_NODE && next.nodeValue) {
+        next.nodeValue = next.nodeValue.replace(/^\s+/u, "");
+      }
+    });
+  }
+
+  function bindAnnotationLineWrapping() {
+    annotations.forEach(function (annotation) {
+      const next = nextSignificantSibling(annotation);
+
+      if (annotation.dataset.annotationKind === "citation") {
+        prependWordJoinerToNode(annotation);
+      }
+
+      if (next && next.nodeType === Node.TEXT_NODE && next.nodeValue) {
+        const trimmed = next.nodeValue.replace(/^(\s+)([.,;:!?"'“”‘’)\]}\u2014\u2013-])/u, "$2");
+
+        if (trimmed !== next.nodeValue) {
+          next.nodeValue = trimmed;
+        }
+
+        if (/^[.,;:!?"'“”‘’)\]}\u2014\u2013-]/u.test(next.nodeValue) && !next.nodeValue.startsWith(WORD_JOINER)) {
+          next.nodeValue = WORD_JOINER + next.nodeValue;
+        }
+      } else if (next && next.nodeType === Node.ELEMENT_NODE && next.matches("[data-annotation][data-annotation-kind='citation']")) {
+        prependWordJoinerToNode(next);
+      }
+    });
+  }
+
+  function getAnnotationCopyText(annotation) {
+    if (!annotation) {
+      return "";
+    }
+
+    if (annotation.dataset.annotationKind === "citation") {
+      const label = annotation.dataset.citationLabel || "";
+      return label ? "[" + label + "]" : "";
+    }
+
+    const clone = annotation.cloneNode(true);
+    clone.querySelectorAll(".screen-reader-text, .ifc-link-icon").forEach(function (node) {
+      node.remove();
+    });
+
+    return (clone.textContent || "").replace(/\u2060/g, "").trim();
+  }
+
+  function getCopiedCitationEntries(fragment) {
+    const entries = [];
+    const seen = {};
+
+    if (!fragment) {
+      return entries;
+    }
+
+    fragment.querySelectorAll('[data-annotation][data-annotation-kind="citation"]').forEach(function (annotation) {
+      const label = annotation.dataset.citationLabel || "";
+      const sourceId = resolveCitationSourceId(annotation);
+
+      if (!label || !sourceId || seen[label]) {
+        return;
+      }
+
+      seen[label] = true;
+      entries.push({
+        label: label,
+        source: citationData[sourceId] || null
+      });
+    });
+
+    return entries;
+  }
+
   function normalizeCopiedText(text) {
     return String(text || "")
       .replace(/\u2060/g, "")
       .replace(/[ \t]+\n/g, "\n")
       .replace(/\n[ \t]+/g, "\n")
       .replace(/\n{3,}/g, "\n\n")
+      .replace(/\[\d+[^\]]*\]\s*,\s*\[/g, function (match) {
+        return match.replace(/\]\s*,\s*\[/g, "][");
+      })
       .trim();
   }
 
@@ -510,7 +990,7 @@
 
     const copiedCitations = getCopiedCitationEntries(fragment);
 
-    fragment.querySelectorAll("[data-annotation-popover], [data-annotation-close], [data-annotation-back], .screen-reader-text, .ifc-link-icon").forEach(function (node) {
+    fragment.querySelectorAll("[data-annotation-layer], [data-annotation-popover], [data-annotation-close], [data-annotation-back], .screen-reader-text, .ifc-link-icon").forEach(function (node) {
       node.remove();
     });
 
@@ -555,459 +1035,13 @@
     return text + "\n\n" + references.join("\n");
   }
 
-  function isOpen(annotation) {
-    return annotation.dataset.open === "true";
-  }
-
-  function isPinned(annotation) {
-    return annotation.dataset.pinned === "true";
-  }
-
-  function setExpanded(annotation, expanded) {
-    const { trigger, popover, close } = getParts(annotation);
-
-    if (trigger) {
-      trigger.setAttribute("aria-expanded", expanded ? "true" : "false");
-    }
-
-    if (popover) {
-      popover.setAttribute("aria-hidden", expanded ? "false" : "true");
-    }
-
-    if (close) {
-      close.hidden = !expanded || (!isPinned(annotation) && !coarsePointerQuery.matches);
-    }
-  }
-
-  function escapeHtml(value) {
-    return String(value)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#39;");
-  }
-
-  function decorateExternalLinks(root) {
-    const scope = root || document;
-    const links = scope.querySelectorAll('a[target="_blank"]:not([data-no-external-icon])');
-
-    links.forEach(function (link) {
-      if (
-        link.querySelector(".ifc-link-icon") ||
-        link.closest(".ifc-mini-action") ||
-        link.querySelector(".ifc-mini-action__aside")
-      ) {
-        return;
-      }
-
-      const icon = document.createElement("i");
-      icon.className = "fas fa-external-link-alt ifc-link-icon";
-      icon.setAttribute("aria-hidden", "true");
-      link.appendChild(icon);
-    });
-  }
-
-  function renderGlossaryBody(entry) {
-    if (!entry) {
-      return "";
-    }
-
-    const parts = [];
-
-    if (entry.short) {
-      parts.push('<span class="ifc-annotation__para ifc-annotation__lede">' + escapeHtml(entry.short) + "</span>");
-    }
-
-    if (entry.long) {
-      parts.push('<span class="ifc-annotation__para">' + escapeHtml(entry.long) + "</span>");
-    }
-
-    if (Array.isArray(entry.see_also) && entry.see_also.length) {
-      const pills = entry.see_also.map(function (relatedId) {
-        const relatedEntry = glossaryData[relatedId] || {};
-        const label = relatedEntry.term || relatedId;
-        return '<button class="ifc-annotation__pill" type="button" data-related-glossary="' + escapeHtml(relatedId) + '">' + escapeHtml(label) + "</button>";
-      }).join("");
-
-      parts.push('<span class="ifc-annotation__para ifc-annotation__meta"><strong>See also:</strong>' + pills + "</span>");
-    }
-
-    if (Array.isArray(entry.links) && entry.links.length) {
-      const links = entry.links.map(function (link) {
-        return '<span class="ifc-annotation__link-item">' + renderAnnotationLink({
-          href: link.url,
-          label: link.label,
-          newtab: link.newtab,
-          defaultNewtab: false
-        }) + "</span>";
-      }).join("");
-
-      parts.push('<span class="ifc-annotation__link-list">' + links + "</span>");
-    }
-
-    return parts.join("");
-  }
-
-  function normalizeNewtabValue(value, fallback) {
-    if (value === true || value === "true") {
-      return true;
-    }
-
-    if (value === false || value === "false") {
-      return false;
-    }
-
-    return fallback;
-  }
-
-  function renderAnnotationLink(options) {
-    const href = options && options.href ? String(options.href) : "";
-
-    if (!href) {
-      return "";
-    }
-
-    const label = options && options.label ? String(options.label) : href;
-    const defaultNewtab = !!(options && options.defaultNewtab);
-    const openNewtab = normalizeNewtabValue(options && options.newtab, defaultNewtab);
-    const icon = "<i class=\"fas fa-external-link-alt ifc-link-icon\" aria-hidden=\"true\"></i>";
-    const targetAttrs = openNewtab ? " target=\"_blank\" rel=\"noopener\"" : "";
-
-    return "<a href=\"" + escapeHtml(href) + "\"" + targetAttrs + ">" + escapeHtml(label) + (openNewtab ? icon : "") + "</a>";
-  }
-
-  function formatCitationAuthors(source) {
-    if (Array.isArray(source.authors) && source.authors.length) {
-      return source.authors
-        .map(function (author) {
-          if (author.literal) {
-            return author.literal;
-          }
-
-          const name = [author.given, author.family].filter(Boolean).join(" ").trim();
-          return author.suffix ? (name ? name + ", " + author.suffix : author.suffix) : name;
-        })
-        .filter(Boolean)
-        .join(", ")
-        .replace(/, ([^,]+)$/, ", and $1")
-        .replace(/^([^,]+), and /, "$1 and ");
-    }
-
-    return source.organization || "";
-  }
-
-  function formatCitationIssued(source) {
-    const issued = source.issued;
-
-    if (issued && issued.year) {
-      if (issued.month && issued.day) {
-        return issued.month + "/" + issued.day + "/" + issued.year;
-      }
-
-      if (issued.month) {
-        return issued.month + "/" + issued.year;
-      }
-
-      return String(issued.year);
-    }
-
-    return source.year ? String(source.year) : "";
-  }
-
-  function formatCitationReference(source) {
-    if (!source) {
-      return "";
-    }
-
-    const authors = formatCitationAuthors(source);
-    const title = escapeHtml(source.title || "");
-    const subtitle = source.subtitle ? ": <span class=\"ifc-citation-ref__subtitle\">" + escapeHtml(source.subtitle) + "</span>" : "";
-    const titleLine = "<span class=\"ifc-citation-ref__title\">" + title + "</span>" + subtitle;
-    const containerTitle = source.container_title || source.publication || source.journal || "";
-    const issued = formatCitationIssued(source);
-    let html = "<span class=\"ifc-citation-ref ifc-citation-ref--popover ifc-citation-ref--" + escapeHtml(source.type || "source") + "\">";
-
-    if (source.type === "journal-article") {
-      if (authors) {
-        html += "<span class=\"ifc-citation-ref__authors\">" + escapeHtml(authors) + "</span>. ";
-      }
-      html += titleLine + ".";
-      if (containerTitle) {
-        html += " <span class=\"ifc-citation-ref__container\">" + escapeHtml(containerTitle) + "</span>";
-      }
-      if (source.volume) {
-        html += " <span class=\"ifc-citation-ref__volume\">" + escapeHtml(source.volume) + "</span>";
-      }
-      if (source.issue) {
-        html += "<span class=\"ifc-citation-ref__issue\">, no. " + escapeHtml(source.issue) + "</span>";
-      }
-      if (issued) {
-        html += " (" + escapeHtml(issued) + ")";
-      }
-      if (source.pages) {
-        html += ": <span class=\"ifc-citation-ref__pages\">" + escapeHtml(source.pages) + "</span>";
-      }
-      html += ".";
-      if (source.doi) {
-        const doiHref = "https://doi.org/" + String(source.doi).replace(/^https:\/\/doi\.org\//, "");
-        html += " DOI: " + renderAnnotationLink({
-          href: doiHref,
-          label: source.doi,
-          newtab: source.doi_newtab,
-          defaultNewtab: true
-        }) + ".";
-      } else if (source.url) {
-        html += " " + renderAnnotationLink({
-          href: source.url,
-          label: "Source",
-          newtab: source.url_newtab,
-          defaultNewtab: true
-        }) + ".";
-      }
-    } else {
-      if (authors) {
-        html += "<span class=\"ifc-citation-ref__authors\">" + escapeHtml(authors) + "</span>. ";
-      }
-      html += titleLine + ".";
-      if (containerTitle) {
-        html += " <span class=\"ifc-citation-ref__container\">" + escapeHtml(containerTitle) + "</span>.";
-      } else if (issued) {
-        html += " " + escapeHtml(issued) + ".";
-      }
-      if (source.url) {
-        html += " " + renderAnnotationLink({
-          href: source.url,
-          label: "Source",
-          newtab: source.url_newtab,
-          defaultNewtab: true
-        }) + ".";
-      }
-    }
-
-    if (Array.isArray(source.links) && source.links.length) {
-      html += " ";
-      html += source.links.map(function (link) {
-        return renderAnnotationLink({
-          href: link.url,
-          label: link.label,
-          newtab: link.newtab,
-          defaultNewtab: true
-        });
-      }).join(" ");
-    }
-
-    html += "</span>";
-    return html;
-  }
-
-  function resolveCitationSourceId(annotation) {
-    const directSourceId = annotation.dataset.sourceId;
-    const label = annotation.dataset.citationLabel;
-
-    if (directSourceId) {
-      return directSourceId;
-    }
-
-    if (!label) {
-      return "";
-    }
-
-    if (Array.isArray(pageCitations)) {
-      for (let index = 0; index < pageCitations.length; index += 1) {
-        const entry = pageCitations[index];
-
-        if (entry && String(entry.label) === String(label)) {
-          return entry.id || "";
-        }
-      }
-
-      return "";
-    }
-
-    if (pageCitations && typeof pageCitations === "object") {
-      const keys = Object.keys(pageCitations);
-
-      for (let index = 0; index < keys.length; index += 1) {
-        const key = keys[index];
-
-        if (String(key) === String(label)) {
-          return pageCitations[key] || "";
-        }
-      }
-    }
-
-    return "";
-  }
-
-  function hydrateCitation(annotation) {
-    if (annotation.dataset.annotationKind !== "citation") {
-      return;
-    }
-
-    const sourceId = resolveCitationSourceId(annotation);
-    const source = sourceId ? citationData[sourceId] : null;
-
-    if (!source) {
-      return;
-    }
-
-    annotation.dataset.sourceId = sourceId;
-
-    const parts = getParts(annotation);
-    const label = annotation.dataset.citationLabel || "";
-    const referenceHtml = formatCitationReference(source);
-    let bodyHtml = "<span class=\"ifc-annotation__para ifc-annotation__lede ifc-annotation__lede--citation\">" + referenceHtml + "</span>";
-
-    if (source.quote) {
-      bodyHtml += "<span class=\"ifc-annotation__quote\">" + escapeHtml(source.quote) + "</span>";
-    } else if (source.excerpt) {
-      bodyHtml += "<span class=\"ifc-annotation__quote\">" + escapeHtml(source.excerpt) + "</span>";
-    }
-
-    if (source.notes) {
-      bodyHtml += "<span class=\"ifc-annotation__para ifc-annotation__meta\">" + escapeHtml(source.notes) + "</span>";
-    }
-
-    if (parts.body) {
-      parts.body.innerHTML = bodyHtml;
-    }
-
-    if (parts.trigger) {
-      parts.trigger.setAttribute("aria-label", "Show citation" + (label ? " " + label : "") + " for " + (source.short_title || source.title || "Citation"));
-    }
-  }
-
-  function captureGlossaryState(annotation) {
-    const parts = getParts(annotation);
-
-    return {
-      entryId: annotation.dataset.entryId || "",
-      heading: parts.heading ? parts.heading.textContent : "",
-      body: parts.body ? parts.body.innerHTML : "",
-      extra: parts.extra && !parts.extra.hidden ? parts.extra.innerHTML : ""
-    };
-  }
-
-  function setGlossaryState(annotation, state) {
-    const parts = getParts(annotation);
-
-    if (parts.heading) {
-      parts.heading.textContent = state.heading || "";
-    }
-
-    if (parts.body) {
-      parts.body.innerHTML = state.body || "";
-    }
-
-    if (parts.extra) {
-      const hasExtra = !!state.extra;
-      parts.extra.innerHTML = state.extra || "";
-      parts.extra.hidden = !hasExtra;
-    }
-
-    if (state.entryId) {
-      annotation.dataset.entryId = state.entryId;
-    }
-  }
-
-  function syncBackButton(annotation) {
-    const { back } = getParts(annotation);
-    const history = annotation._glossaryHistory || [];
-
-    if (back) {
-      back.hidden = history.length === 0;
-    }
-  }
-
-  function loadRelatedGlossary(annotation, relatedId) {
-    const entry = glossaryData[relatedId];
-
-    if (!entry) {
-      return;
-    }
-
-    annotation._glossaryHistory = annotation._glossaryHistory || [];
-    annotation._glossaryHistory.push(captureGlossaryState(annotation));
-
-    setGlossaryState(annotation, {
-      entryId: relatedId,
-      heading: entry.term || relatedId,
-      body: renderGlossaryBody(entry),
-      extra: ""
-    });
-
-    syncBackButton(annotation);
-    openAnnotation(annotation, { pin: true });
-  }
-
-  function goBackGlossary(annotation) {
-    const history = annotation._glossaryHistory || [];
-
-    if (!history.length) {
-      return;
-    }
-
-    setGlossaryState(annotation, history.pop());
-    syncBackButton(annotation);
-    openAnnotation(annotation, { pin: true });
-  }
-
-  function positionPopover(annotation) {
-    const { popover } = getParts(annotation);
-
-    if (!popover) {
-      return;
-    }
-
-    annotation.style.removeProperty("--ifc-annotation-shift");
-    annotation.style.removeProperty("--ifc-annotation-pointer");
-
-    const annotationRect = annotation.getBoundingClientRect();
-    const popoverRect = popover.getBoundingClientRect();
-    const centeredLeft = annotationRect.left + (annotationRect.width / 2) - (popoverRect.width / 2);
-    const minLeft = viewportMargin;
-    const maxLeft = window.innerWidth - popoverRect.width - viewportMargin;
-    const clampedLeft = Math.min(Math.max(centeredLeft, minLeft), Math.max(minLeft, maxLeft));
-    const shift = clampedLeft - centeredLeft;
-    const pointerLeft = (annotationRect.left + (annotationRect.width / 2)) - clampedLeft;
-
-    annotation.style.setProperty("--ifc-annotation-shift", shift.toFixed(2) + "px");
-    annotation.style.setProperty("--ifc-annotation-pointer", pointerLeft.toFixed(2) + "px");
-  }
-
-  function openAnnotation(annotation, options) {
-    const settings = options || {};
-    const pin = coarsePointerQuery.matches || settings.pin === true || isPinned(annotation) || activePinned === annotation;
-
-    if (pin) {
-      annotations.forEach(function (item) {
-        if (item !== annotation && isOpen(item)) {
-          closeAnnotation(item);
-        }
-      });
-    }
-
-    hydrateCitation(annotation);
-    annotation.dataset.open = "true";
-    annotation.dataset.pinned = pin ? "true" : "false";
-    setExpanded(annotation, true);
-    positionPopover(annotation);
-
-    if (pin) {
-      activePinned = annotation;
-    }
-
-    syncPinnedMode();
-  }
-
   function openPopoverLink(link) {
     if (!link || !link.href) {
       return false;
     }
 
     if (link.target === "_blank") {
-      const opened = window.open(link.href, "_blank", "noopener");
+      const opened = window.open(link.href, "_blank", "noopener,noreferrer");
 
       if (opened) {
         opened.opener = null;
@@ -1019,87 +1053,48 @@
     return true;
   }
 
-  function handlePopoverLink(event, annotation) {
-    const eventElement = getEventElement(event);
-    const link = eventElement ? eventElement.closest("[data-annotation-popover] a[href]") : null;
-
-    if (!link || !annotation.contains(link)) {
-      return false;
-    }
-
-    if (event.type === "mousedown") {
-      event.stopPropagation();
-      return true;
-    }
-
-    if (event.type === "mouseup") {
-      event.preventDefault();
-      event.stopPropagation();
-      lastPopoverLinkHandledAt = Date.now();
-      return openPopoverLink(link);
-    }
-
-    return false;
-  }
-
-  function closeAnnotation(annotation) {
-    if (!annotation) {
-      return;
-    }
-
-    annotation.dataset.open = "false";
-    annotation.dataset.pinned = "false";
-    annotation.style.removeProperty("--ifc-annotation-shift");
-    annotation.style.removeProperty("--ifc-annotation-pointer");
-    if (annotation.dataset.annotationKind === "glossary" && annotation._glossaryRoot) {
-      setGlossaryState(annotation, annotation._glossaryRoot);
-      annotation._glossaryHistory = [];
-      syncBackButton(annotation);
-    }
-
-    if (annotation.contains(document.activeElement)) {
-      document.activeElement.blur();
-    }
-
-    setExpanded(annotation, false);
-
-    if (activePinned === annotation) {
-      activePinned = null;
-    }
-
-    syncPinnedMode();
-  }
-
-  function closeAll() {
-    annotations.forEach(closeAnnotation);
-  }
-
   applyScopedCitationNumbering();
-  normalizeGlossarySpacing();
   normalizeCitationSeparatorSpacing();
   bindAnnotationLineWrapping();
-  bindCitationRuns();
 
   annotations.forEach(function (annotation) {
-    const { trigger, close } = getParts(annotation);
+    annotation.dataset.open = "false";
+    annotation.dataset.pinned = "false";
+    annotation._glossaryHistory = [];
+    annotation._activeGlossaryEntryId = annotation.dataset.entryId || "";
+
+    const trigger = getTrigger(annotation);
 
     if (!trigger) {
       return;
     }
 
-    annotation.dataset.open = "false";
-    annotation.dataset.pinned = "false";
-    annotation.dataset.suspendHover = "false";
-    annotation._glossaryHistory = [];
-    annotation._suppressTriggerClickOnce = false;
-    annotation._suppressControlClickOnce = false;
-    if (annotation.dataset.annotationKind === "glossary") {
-      syncBackButton(annotation);
-      annotation._glossaryRoot = captureGlossaryState(annotation);
+    if (annotation.dataset.annotationKind === "citation") {
+      const marker = annotation.querySelector(".ifc-citation-marker");
+
+      if (marker && !marker.textContent.trim()) {
+        marker.textContent = annotation.dataset.citationLabel || "";
+      }
     }
-    hydrateCitation(annotation);
 
     annotation.addEventListener("mouseenter", function () {
+      if (activePinned && activePinned !== annotation) {
+        return;
+      }
+
+      if (coarsePointerQuery.matches) {
+        return;
+      }
+
+      clearHoverTimer();
+      openAnnotation(annotation);
+    });
+
+    annotation.addEventListener("mouseleave", function () {
+      scheduleHoverClose();
+    });
+
+    annotation.addEventListener("focusin", function () {
       if (activePinned && activePinned !== annotation) {
         return;
       }
@@ -1111,218 +1106,116 @@
       openAnnotation(annotation);
     });
 
-    annotation.addEventListener("mouseleave", function (event) {
-      if (event.relatedTarget && annotation.contains(event.relatedTarget)) {
-        return;
-      }
-
-      annotation.dataset.suspendHover = "false";
-
-      if (!isPinned(annotation) && !annotation.matches(":focus-within")) {
-        closeAnnotation(annotation);
-      }
-    });
-
-    annotation.addEventListener("focusin", function () {
-      if (activePinned && activePinned !== annotation) {
-        return;
-      }
-
-      openAnnotation(annotation);
-    });
-
     annotation.addEventListener("focusout", function () {
-      window.setTimeout(function () {
-        if (!annotation.contains(document.activeElement) && !isPinned(annotation) && !annotation.matches(":hover")) {
-          closeAnnotation(annotation);
-        }
-      }, 0);
+      window.setTimeout(scheduleHoverClose, 0);
     });
 
-    function pinTrigger(event) {
+    annotation.addEventListener("click", function (event) {
       event.preventDefault();
       event.stopPropagation();
 
       if (isOpen(annotation) && isPinned(annotation)) {
-        closeAnnotation(annotation);
-        return true;
-      }
-
-      if (annotation.dataset.annotationKind === "glossary" && annotation._glossaryRoot) {
-        setGlossaryState(annotation, annotation._glossaryRoot);
-        annotation._glossaryHistory = [];
-        syncBackButton(annotation);
-      }
-      openAnnotation(annotation, { pin: true });
-      return true;
-    }
-
-    trigger.addEventListener("mousedown", function (event) {
-      annotation._suppressTriggerClickOnce = true;
-      pinTrigger(event);
-    });
-
-    trigger.addEventListener("click", function (event) {
-      if (annotation._suppressTriggerClickOnce) {
-        annotation._suppressTriggerClickOnce = false;
-        event.preventDefault();
-        event.stopPropagation();
+        closeActive();
         return;
       }
 
-      pinTrigger(event);
+      openAnnotation(annotation, { pin: true });
     });
 
-    function forceCloseAnnotation(event) {
+    annotation.addEventListener("keydown", function (event) {
+      if (event.key !== "Enter" && event.key !== " ") {
+        return;
+      }
+
       event.preventDefault();
       event.stopPropagation();
-      annotation.dataset.suspendHover = "true";
-      closeAnnotation(annotation);
-      return true;
+      openAnnotation(annotation, { pin: true });
+    });
+  });
+
+  popoverParts.popover.addEventListener("mouseenter", clearHoverTimer);
+  popoverParts.popover.addEventListener("mouseleave", scheduleHoverClose);
+  popoverParts.popover.addEventListener("focusin", clearHoverTimer);
+  popoverParts.popover.addEventListener("focusout", function () {
+    window.setTimeout(scheduleHoverClose, 0);
+  });
+
+  popoverParts.popover.addEventListener("pointerdown", function (event) {
+    const eventElement = getEventElement(event);
+
+    if (eventElement && eventElement.closest("[data-annotation-close], [data-annotation-back], [data-related-glossary], a[href]")) {
+      event.stopPropagation();
+    }
+  });
+
+  popoverParts.popover.addEventListener("click", function (event) {
+    const eventElement = getEventElement(event);
+
+    if (!eventElement) {
+      return;
     }
 
-    if (close) {
-      close.addEventListener("pointerdown", function (event) {
-        forceCloseAnnotation(event);
-      });
+    const closeButton = eventElement.closest("[data-annotation-close]");
+    const backButton = eventElement.closest("[data-annotation-back]");
+    const relatedGlossary = eventElement.closest("[data-related-glossary]");
+    const link = eventElement.closest("a[href]");
 
-      close.addEventListener("click", function (event) {
-        if (annotation.dataset.open === "false") {
-          event.preventDefault();
-          event.stopPropagation();
-          return;
-        }
-
-        forceCloseAnnotation(event);
-      });
+    if (closeButton) {
+      event.preventDefault();
+      event.stopPropagation();
+      closeActive();
+      return;
     }
 
-    function handleGlossaryControl(event) {
-      if (event.type === "click" && annotation._suppressControlClickOnce) {
-        annotation._suppressControlClickOnce = false;
-        event.preventDefault();
-        event.stopPropagation();
-        return true;
-      }
-
-      const relatedGlossary = event.target.closest("[data-related-glossary]");
-      const backButton = event.target.closest("[data-annotation-back]");
-      const closeButton = event.target.closest("[data-annotation-close]");
-
-      if (event.type === "mousedown" && (relatedGlossary || backButton || closeButton)) {
-        annotation._suppressControlClickOnce = true;
-      }
-
-      if (relatedGlossary) {
-        event.preventDefault();
-        event.stopPropagation();
-        loadRelatedGlossary(annotation, relatedGlossary.getAttribute("data-related-glossary"));
-        return true;
-      }
-
-      if (backButton) {
-        event.preventDefault();
-        event.stopPropagation();
-        goBackGlossary(annotation);
-        return true;
-      }
-
-      if (closeButton) {
-        event.preventDefault();
-        event.stopPropagation();
-        annotation.dataset.suspendHover = "true";
-        closeAnnotation(annotation);
-        return true;
-      }
-
-      return false;
+    if (backButton) {
+      event.preventDefault();
+      event.stopPropagation();
+      goBackGlossary(activeAnnotation);
+      return;
     }
 
-    annotation.addEventListener("mousedown", function (event) {
-      if (handlePopoverLink(event, annotation)) {
-        return;
-      }
+    if (relatedGlossary) {
+      event.preventDefault();
+      event.stopPropagation();
+      loadRelatedGlossary(activeAnnotation, relatedGlossary.getAttribute("data-related-glossary"));
+      return;
+    }
 
-      handleGlossaryControl(event);
-    });
-
-    annotation.addEventListener("mouseup", function (event) {
-      if (handlePopoverLink(event, annotation)) {
-        return;
-      }
-    });
-
-    annotation.addEventListener("click", function (event) {
-      if (handlePopoverLink(event, annotation)) {
-        return;
-      }
-
-      handleGlossaryControl(event);
-    });
+    if (link) {
+      event.preventDefault();
+      event.stopPropagation();
+      openPopoverLink(link);
+    }
   });
 
   document.addEventListener("click", function (event) {
-    if (activePinned && !activePinned.contains(event.target)) {
-      closeAnnotation(activePinned);
+    if (!activeAnnotation) {
+      return;
+    }
+
+    const eventElement = getEventElement(event);
+
+    if (
+      eventElement &&
+      (
+        activeAnnotation.contains(eventElement) ||
+        popoverParts.popover.contains(eventElement)
+      )
+    ) {
+      return;
+    }
+
+    if (isPinned(activeAnnotation)) {
+      closeActive();
     }
   });
 
-  document.addEventListener(
-    "click",
-    function (event) {
-      const eventElement = getEventElement(event);
-      const link = eventElement ? eventElement.closest("[data-annotation-popover] a[href]") : null;
-
-      if (!link) {
-        return;
-      }
-
-      event.preventDefault();
-      event.stopPropagation();
-
-      if (Date.now() - lastPopoverLinkHandledAt < 750) {
-        return;
-      }
-
-      openPopoverLink(link);
-    },
-    true
-  );
-
-  document.addEventListener(
-    "mouseup",
-    function (event) {
-      const eventElement = getEventElement(event);
-      const link = eventElement ? eventElement.closest("[data-annotation-popover] a[href]") : null;
-
-      if (!link) {
-        return;
-      }
-
-      event.preventDefault();
-      event.stopPropagation();
-      openPopoverLink(link);
-    },
-    true
-  );
-
   document.addEventListener("keydown", function (event) {
-    if (event.key !== "Escape") {
+    if (event.key !== "Escape" || !activeAnnotation) {
       return;
     }
 
-    if (!activePinned) {
-      return;
-    }
-
-    const { trigger } = getParts(activePinned);
-    const annotationToClose = activePinned;
-
-    closeAnnotation(annotationToClose);
-
-    if (trigger) {
-      trigger.focus();
-    }
+    closeActive({ restoreFocus: true });
   });
 
   document.addEventListener("copy", function (event) {
@@ -1362,21 +1255,17 @@
   });
 
   window.addEventListener("resize", function () {
-    annotations.forEach(function (annotation) {
-      if (isOpen(annotation)) {
-        positionPopover(annotation);
-      }
-    });
+    if (activeAnnotation) {
+      positionPopover();
+    }
   });
 
   window.addEventListener(
     "scroll",
     function () {
-      annotations.forEach(function (annotation) {
-        if (isOpen(annotation)) {
-          positionPopover(annotation);
-        }
-      });
+      if (activeAnnotation) {
+        positionPopover();
+      }
     },
     true
   );

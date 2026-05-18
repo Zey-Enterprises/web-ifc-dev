@@ -18,29 +18,14 @@ var store = [
         "title": {{ doc.title | jsonify }},
         "excerpt":
           {%- if doc.excerpt -%}
-            {{ doc.excerpt | markdownify | strip_html | strip_newlines | jsonify }},
+            {%- capture clean_excerpt -%}{% include clean_text.html text=doc.excerpt %}{%- endcapture -%}
+            {{ clean_excerpt | jsonify }},
           {%- elsif site.search_full_content == true -%}
-            {{ doc.content | newline_to_br |
-              replace:"<br />", " " |
-              replace:"</p>", " " |
-              replace:"</h1>", " " |
-              replace:"</h2>", " " |
-              replace:"</h3>", " " |
-              replace:"</h4>", " " |
-              replace:"</h5>", " " |
-              replace:"</h6>", " "|
-            strip_html | strip_newlines | jsonify }},
+            {%- capture clean_content -%}{% include clean_text.html text=doc.content %}{%- endcapture -%}
+            {{ clean_content | jsonify }},
           {%- else -%}
-            {{ doc.content | newline_to_br |
-              replace:"<br />", " " |
-              replace:"</p>", " " |
-              replace:"</h1>", " " |
-              replace:"</h2>", " " |
-              replace:"</h3>", " " |
-              replace:"</h4>", " " |
-              replace:"</h5>", " " |
-              replace:"</h6>", " "|
-            strip_html | strip_newlines | truncatewords: 50 | jsonify }},
+            {%- capture clean_content -%}{% include clean_text.html text=doc.content truncatewords=50 %}{%- endcapture -%}
+            {{ clean_content | jsonify }},
           {%- endif -%}
         "categories": {{ doc.categories | jsonify }},
         "tags": {{ doc.tags | jsonify }},
@@ -58,29 +43,14 @@ var store = [
     "title": {{ doc.title | jsonify }},
     "excerpt":
       {%- if doc.excerpt -%}
-        {{ doc.excerpt | markdownify | strip_html | strip_newlines | jsonify }},
+        {%- capture clean_excerpt -%}{% include clean_text.html text=doc.excerpt %}{%- endcapture -%}
+        {{ clean_excerpt | jsonify }},
       {%- elsif site.search_full_content == true -%}
-        {{ doc.content | newline_to_br |
-          replace:"<br />", " " |
-          replace:"</p>", " " |
-          replace:"</h1>", " " |
-          replace:"</h2>", " " |
-          replace:"</h3>", " " |
-          replace:"</h4>", " " |
-          replace:"</h5>", " " |
-          replace:"</h6>", " "|
-        strip_html | strip_newlines | jsonify }},
+        {%- capture clean_content -%}{% include clean_text.html text=doc.content %}{%- endcapture -%}
+        {{ clean_content | jsonify }},
       {%- else -%}
-        {{ doc.content | newline_to_br |
-          replace:"<br />", " " |
-          replace:"</p>", " " |
-          replace:"</h1>", " " |
-          replace:"</h2>", " " |
-          replace:"</h3>", " " |
-          replace:"</h4>", " " |
-          replace:"</h5>", " " |
-          replace:"</h6>", " "|
-        strip_html | strip_newlines | truncatewords: 50 | jsonify }},
+        {%- capture clean_content -%}{% include clean_text.html text=doc.content truncatewords=50 %}{%- endcapture -%}
+        {{ clean_content | jsonify }},
       {%- endif -%}
     "url": {{ doc.url | absolute_url | jsonify }}
   }{%- unless forloop.last and l -%},{%- endunless -%}

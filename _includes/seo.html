@@ -13,10 +13,14 @@
 
 {%- assign canonical_url = page.canonical_url | default: page.url | replace: "/index.html", "/" | absolute_url -%}
 
-{%- if page.resource_type == "faq" and page.schema_answer -%}
-  {%- assign seo_description = page.schema_answer -%}
+{%- if page.description -%}
+  {%- assign seo_description = page.description -%}
+{%- elsif page.excerpt -%}
+  {%- capture seo_description -%}{% include clean_text.html text=page.excerpt truncatewords=55 %}{%- endcapture -%}
+{%- elsif content -%}
+  {%- capture seo_description -%}{% include clean_text.html text=content truncatewords=55 %}{%- endcapture -%}
 {%- else -%}
-  {%- assign seo_description = page.description | default: page.excerpt | default: site.description -%}
+  {%- assign seo_description = site.description -%}
 {%- endif -%}
 {%- if seo_description -%}
   {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip -%}

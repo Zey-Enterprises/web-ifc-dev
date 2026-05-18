@@ -41,10 +41,10 @@ Notes:
 
 {% assign style_name = include.style | default: "site" %}
 {% assign bibliography_class = include.class | default: "" | strip %}
+{% assign bibliography_title = include.title | default: "References" %}
 
 {% if page.citations %}
-  <section class="ifc-bibliography{% if bibliography_class != "" %} {{ bibliography_class }}{% endif %}" data-bibliography>
-    <h2 class="ifc-bibliography__title">{{ include.title | default: "References" }}</h2>
+  <aside class="ifc-bibliography{% if bibliography_class != "" %} {{ bibliography_class }}{% endif %}" data-bibliography role="doc-endnotes" aria-label="{{ bibliography_title | escape }}" data-bibliography-title="{{ bibliography_title | escape }}">
     <ol class="ifc-bibliography__list">
       {% if page.citations.first and page.citations.first.label %}
         {% for citation_entry in page.citations %}
@@ -78,5 +78,5 @@ Notes:
         {% endfor %}
       {% endif %}
     </ol>
-  </section>
+  </aside>
 {% endif %}

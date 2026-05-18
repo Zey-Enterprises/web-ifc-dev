@@ -58,11 +58,13 @@ layout: default
 
   <article class="page h-entry" itemscope itemtype="{{ schema_itemtype }}"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | replace: '|', '&#124;' | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.excerpt or page.schema_answer %}
-      {%- if page.resource_type == "faq" -%}
-        {%- assign itemprop_description = page.schema_answer -%}
+    {% if page.description or page.excerpt or content %}
+      {%- if page.description -%}
+        {%- assign itemprop_description = page.description -%}
+      {%- elsif page.excerpt -%}
+        {%- capture itemprop_description -%}{% include clean_text.html text=page.excerpt truncatewords=55 %}{%- endcapture -%}
       {%- else -%}
-        {%- assign itemprop_description = page.excerpt | markdownify | strip_html | strip_newlines -%}
+        {%- capture itemprop_description -%}{% include clean_text.html text=content truncatewords=55 %}{%- endcapture -%}
       {%- endif -%}
       <meta itemprop="description" content="{{ itemprop_description | escape_once }}">
     {% endif %}
@@ -142,11 +144,7 @@ layout: default
   </article>
 
   {% if page.resource_type == "faq" %}
-    {%- if page.schema_answer -%}
-      {%- assign faq_answer_text = page.schema_answer -%}
-    {%- else -%}
-      {%- assign faq_answer_text = content | markdownify | replace: "</p>", "</p> " | replace: "</li>", "</li> " | replace: "<br>", " " | replace: "<br />", " " | strip_html | strip_newlines | replace: "  ", " " | replace: "  ", " " | strip -%}
-    {%- endif -%}
+    {%- capture faq_answer_text -%}{% include clean_text.html text=content %}{%- endcapture -%}
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
