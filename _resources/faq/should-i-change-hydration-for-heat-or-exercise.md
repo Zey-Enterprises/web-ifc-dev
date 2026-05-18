@@ -1,7 +1,7 @@
 ---
 title: "Should I change hydration for heat or exercise?"
 date: 2026-04-23
-last_modified_at: 2026-05-14
+last_modified_at: "2026-05-18"
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
@@ -28,8 +28,12 @@ citations:
     id: coyle-2004-fluid-and-fuel-intake-during-exercise
 ---
 
-Yes. Heat, humidity, elevation, longer sessions, and high sweat rates all raise fluid needs. For ordinary lifting or short conditioning, drinking to thirst is often enough. For long sessions, hot environments, or repeated training days, plan fluids and sodium more deliberately.
+Yes. Heat, humidity, elevation, longer sessions, repeated training days, and high sweat rates can all raise fluid and sodium needs. For ordinary lifting, short conditioning, or casual activity, drinking to thirst is often enough. For long sessions, hot environments, endurance work, outdoor training, or multiple sweaty days in a row, hydration needs more deliberate planning.
 
-A practical method is to weigh before and after a representative session. A large drop suggests you under-replaced fluid; a gain suggests you may have overdone fluid. Sweat contains sodium, so repeated heavy sweating may call for {% include glossary.html id="electrolytes" text="electrolytes" %}, not just plain water.{% include citation.html id="coyle-2004-fluid-and-fuel-intake-during-exercise" label="1" %}
+The issue is not just water. Sweat contains sodium, and heavy repeated sweating can make plain water insufficient. If you are drinking plenty but still getting headaches, cramping, dizziness, unusual fatigue, poor performance, or strong salt cravings, {% include glossary.html id="electrolytes" %} may matter more than adding still more water.{% include citation.html id="coyle-2004-fluid-and-fuel-intake-during-exercise" label="1" %}
 
-If you train in heat, acclimate gradually. Performance, appetite, sleep, and body weight can all look noisy while your body adjusts.
+A useful method is to weigh before and after a representative session. A meaningful short-term drop usually reflects fluid loss. A gain suggests you may have overdone fluid relative to losses. This does not need to become obsessive; it is just a way to learn whether your usual drinking pattern matches your actual sweat rate.
+
+Heat also changes tolerance. If you train in hot weather, acclimate gradually instead of expecting normal performance immediately. Keep intensity more conservative at first, use shade or cooler times of day when possible, and pay attention to sleep, appetite, body weight, and training output while your body adjusts.
+
+Most people should focus on the major signals: Drink before long or hot sessions, sip during training when thirst and sweat rate call for it, include sodium when sweating heavily, and adjust when performance, headaches, cramping, dizziness, or bodyweight changes suggest the current pattern is not working.
