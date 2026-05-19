@@ -81,6 +81,7 @@ layout: default
           </h1>
           {%- endif %}
           {% include page__meta.html locale=locale %}
+          {% include print_source.html document=page %}
           {% include page__share.html locale=locale %}
         </header>
       {% endunless %}

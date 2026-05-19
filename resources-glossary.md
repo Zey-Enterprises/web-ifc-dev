@@ -1,5 +1,7 @@
 ---
 title: "Glossary"
+date: "2026-04-14"
+last_modified_at: "2026-05-19"
 permalink: /resources/glossary/
 description: "A glossary of recurring concepts used across the Integrated Fitness Coaching resource library."
 excerpt: "A structured guide to recurring concepts across the resource library, with related terms, tags, and resources."
@@ -97,6 +99,8 @@ header:
     <div class="ifc-resource-browser__status-row">
       <p class="ifc-filter-summary" data-filter-summary></p>
     </div>
+    <p class="ifc-print-resource-filters ifc-print-only" data-print-filter-summary hidden></p>
+    <p class="ifc-print-resource-count ifc-print-only" data-print-count-summary></p>
   </div>
 
   <div class="ifc-glossary-list" data-glossary-list>

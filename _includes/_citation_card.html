@@ -100,7 +100,8 @@ Parameters:
           {%- capture doi_href -%}https://doi.org/{{ source.doi | replace: 'https://doi.org/', '' }}{%- endcapture -%}
           DOI: {% include _link.html href=doi_href label=source.doi newtab=source.doi_newtab default_newtab=true %}
         {%- elsif source.url -%}
-          {% include _link.html href=source.url label="Source" newtab=source.url_newtab default_newtab=true %}
+          {%- capture source_label -%}<span class="ifc-citation-ref__source-label">Source</span><span class="ifc-citation-ref__source-url ifc-print-only">{{ source.url }}</span>{%- endcapture -%}
+          {% include _link.html href=source.url label=source_label newtab=source.url_newtab default_newtab=true %}
         {%- endif -%}
         {%- if has_secondary_links -%}
           {%- for link in source.links -%}

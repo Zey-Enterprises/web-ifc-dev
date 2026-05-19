@@ -1,5 +1,7 @@
 ---
 title: "References"
+date: "2026-05-06"
+last_modified_at: "2026-05-19"
 permalink: /resources/references/
 description: "References and citations used across the Integrated Fitness Coaching resource library."
 excerpt: "A browsable reference library for sources cited across articles, FAQs, glossary entries, and other resources."
@@ -168,6 +170,9 @@ header:
     <div class="ifc-resource-browser__status-row">
       <p class="ifc-filter-summary" data-filter-summary></p>
     </div>
+    <p class="ifc-print-resource-filters ifc-print-only" data-print-filter-summary hidden></p>
+    <p class="ifc-print-resource-sort ifc-print-only" data-print-sort-summary></p>
+    <p class="ifc-print-resource-count ifc-print-only" data-print-count-summary></p>
   </div>
 
   <section class="ifc-section ifc-section--tight" data-resource-results>

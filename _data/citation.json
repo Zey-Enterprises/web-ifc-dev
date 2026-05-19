@@ -19273,5 +19273,62 @@
       "food-quality",
       "calorie-balance"
     ]
+  },
+  "maslach-2016-understanding-burnout-experience": {
+    "id": "maslach-2016-understanding-burnout-experience",
+    "type": "journal-article",
+    "title": "Understanding the burnout experience: Recent research and its implications for psychiatry",
+    "short_title": "Understanding the burnout experience",
+    "authors": [
+      {
+        "literal": "Maslach, C."
+      },
+      {
+        "literal": "Leiter, M. P."
+      }
+    ],
+    "container_title": "World Psychiatry",
+    "issued": {
+      "year": 2016
+    },
+    "year": 2016,
+    "doi": "10.1002/wps.20311",
+    "doi_newtab": true,
+    "volume": "15",
+    "issue": "2",
+    "pages": "103-111",
+    "tags": [
+      "recovery",
+      "fatigue",
+      "emotional-regulation"
+    ]
+  },
+  "holland-2016-social-networking-sites-body-image-disordered-eating": {
+    "id": "holland-2016-social-networking-sites-body-image-disordered-eating",
+    "type": "journal-article",
+    "title": "A systematic review of the impact of the use of social networking sites on body image and disordered eating outcomes",
+    "short_title": "Social Networking Sites, Body Image, and Disordered Eating",
+    "authors": [
+      {
+        "literal": "Holland, G."
+      },
+      {
+        "literal": "Tiggemann, M."
+      }
+    ],
+    "container_title": "Body Image",
+    "issued": {
+      "year": 2016
+    },
+    "year": 2016,
+    "doi": "10.1016/j.bodyim.2016.02.008",
+    "doi_newtab": true,
+    "volume": "17",
+    "pages": "100-110",
+    "tags": [
+      "body-image",
+      "self-esteem",
+      "behavior-change"
+    ]
   }
 }

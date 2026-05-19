@@ -50,6 +50,9 @@ Notes:
         {% for citation_entry in page.citations %}
           {% assign source = site.data.citation[citation_entry.id] %}
           <li class="ifc-bibliography__item" id="reference-{{ citation_entry.label | slugify }}">
+            {% if forloop.first %}
+              <h2 class="ifc-bibliography__title ifc-bibliography__title--print ifc-print-only">{{ bibliography_title }}</h2>
+            {% endif %}
             <span class="ifc-bibliography__label">{{ citation_entry.label }}</span>
             <span class="ifc-bibliography__content">
               {% if source %}
@@ -66,6 +69,9 @@ Notes:
           {% assign source_id = citation_pair[1] %}
           {% assign source = site.data.citation[source_id] %}
           <li class="ifc-bibliography__item" id="reference-{{ label | slugify }}">
+            {% if forloop.first %}
+              <h2 class="ifc-bibliography__title ifc-bibliography__title--print ifc-print-only">{{ bibliography_title }}</h2>
+            {% endif %}
             <span class="ifc-bibliography__label">{{ label }}</span>
             <span class="ifc-bibliography__content">
               {% if source %}

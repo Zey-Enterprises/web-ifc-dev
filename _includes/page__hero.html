@@ -88,11 +88,19 @@
 {%- endif -%}
 
 {%- if hero.overlay_color or overlay_image or has_carousel -%}
+  {%- assign print_hero_image = overlay_image -%}
+  {%- if has_carousel and overlay_images[0].image -%}
+    {%- assign print_hero_image = overlay_images[0].image -%}
+  {%- endif -%}
   <div
     class="page__hero--overlay {% if has_carousel %}ifc-hero-carousel{% else %}ifc-overlay-hero{% endif %}"
     {% if has_carousel %}data-overlay-carousel data-carousel-interval="{{ hero.overlay_interval | default: 3000 }}"{% endif %}
     style="--ifc-hero-base-color: {{ hero.overlay_color | default: '#1d2e3f' }}; --ifc-hero-overlay-filter: {{ overlay_filter_css | strip }};{% if overlay_image %} --ifc-hero-image: url('{{ overlay_image | relative_url }}'); --ifc-hero-position: {{ overlay_position }};{% endif %}{% if mobile_overlay_position %} --ifc-hero-mobile-position: {{ mobile_overlay_position }};{% endif %}"
   >
+    {% if print_hero_image %}
+      <img class="ifc-print-hero-image ifc-print-only" src="{{ print_hero_image | relative_url }}" alt="">
+    {% endif %}
+
     {% if has_carousel %}
       <div class="ifc-hero-carousel__viewport" aria-hidden="true">
         {% for slide in overlay_images %}
@@ -166,6 +174,11 @@
     {% if hero.caption %}
       <span class="page__hero-caption">{{ hero.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
     {% endif %}
+  </div>
+
+  <div class="ifc-print-hero-meta ifc-print-only">
+    {% include page__meta.html locale=include.locale %}
+    {% include print_source.html document=page %}
   </div>
 
   {% if has_carousel %}

@@ -1,0 +1,7 @@
+{% assign document = include.document | default: page %}
+{% assign print_source_path = document.url | default: page.url | relative_url %}
+{% assign print_source_url = site.url | append: print_source_path %}
+
+{% if print_source_url != "" %}
+  <p class="ifc-print-source"><a href="{{ print_source_url }}">{{ print_source_url }}</a></p>
+{% endif %}

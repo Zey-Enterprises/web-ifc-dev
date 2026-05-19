@@ -19,9 +19,14 @@
     {% endif %}
 
     {% unless site.atom_feed.hide %}
-      <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+      <li class="ifc-footer-feed"><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
     {% endunless %}
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} <a href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title }}</a><br />Website developed by <a href="https://www.altustechservices.com" target="_blank" rel="noopener">Altus Tech Services</a>.<br />{{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> &amp; the <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" target="_blank" rel="noopener">Minimal Mistakes</a> theme.<br />Hosted on <a href="https://docs.github.com/en/pages" target="_blank" rel="noopener">GitHub Pages</a>.</div>
+<div class="page__footer-copyright">
+  &copy; {{ site.time | date: '%Y' }} <a href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title }}</a><br />
+  <span class="ifc-footer-credit ifc-footer-credit--developer">Website developed by <a href="https://www.altustechservices.com" target="_blank" rel="noopener">Altus Tech Services</a>.</span><br class="ifc-footer-credit-break--platform" />
+  <span class="ifc-footer-credit ifc-footer-credit--platform">{{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> &amp; the <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" target="_blank" rel="noopener">Minimal Mistakes</a> theme.</span><br class="ifc-footer-credit-break--platform" />
+  <span class="ifc-footer-credit ifc-footer-credit--platform">Hosted on <a href="https://docs.github.com/en/pages" target="_blank" rel="noopener">GitHub Pages</a>.</span>
+</div>

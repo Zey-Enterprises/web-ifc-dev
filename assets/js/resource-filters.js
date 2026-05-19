@@ -278,6 +278,8 @@
 
     var items = Array.prototype.slice.call(list.querySelectorAll("[data-filter-item]"));
     var summary = root.querySelector("[data-filter-summary]");
+    var printFilterSummary = root.querySelector("[data-print-filter-summary]");
+    var printCountSummary = root.querySelector("[data-print-count-summary]");
     var emptyState = root.querySelector("[data-filter-empty]");
     var activeFilters = root.querySelector("[data-active-filters]");
     var mobilePanel = root.querySelector("[data-mobile-filter-panel]");
@@ -470,6 +472,18 @@
 
       if (summary) {
         summary.textContent = visibleItems.length === 1 ? "1 item" : visibleItems.length + " items";
+      }
+
+      if (printFilterSummary) {
+        var activeTagLabels = canonicalState.tag.map(function (value) {
+          return tagGroup.labels[value] || value;
+        });
+        printFilterSummary.hidden = activeTagLabels.length === 0;
+        printFilterSummary.textContent = activeTagLabels.length ? "Filters: " + activeTagLabels.join(", ") : "";
+      }
+
+      if (printCountSummary) {
+        printCountSummary.textContent = visibleItems.length === 1 ? "1 glossary entry" : visibleItems.length + " glossary entries";
       }
 
       renderActiveFilters(canonicalState);
@@ -691,6 +705,9 @@
 
     var items = Array.prototype.slice.call(resultsList.querySelectorAll("[data-result-item]"));
     var summary = root.querySelector("[data-filter-summary]");
+    var printFilterSummary = root.querySelector("[data-print-filter-summary]");
+    var printSortSummary = root.querySelector("[data-print-sort-summary]");
+    var printCountSummary = root.querySelector("[data-print-count-summary]");
     var glossaryAction = root.querySelector("[data-results-glossary-action]");
     var emptyState = root.querySelector("[data-filter-empty]");
     var activeFilters = root.querySelector("[data-active-filters]");
@@ -830,6 +847,15 @@
       return filterKeys.reduce(function (memo, key) {
         return memo + canonicalState[key].length;
       }, 0);
+    }
+
+    function getActiveFilterLabels(canonicalState) {
+      return filterKeys.reduce(function (memo, key) {
+        canonicalState[key].forEach(function (value) {
+          memo.push((groups[key] && groups[key].labels[value]) || value);
+        });
+        return memo;
+      }, []);
     }
 
     function hasActiveState(canonicalState) {
@@ -1157,6 +1183,17 @@
 
       setMode(resultsMode);
       renderActiveFilters(canonicalState);
+      if (printFilterSummary) {
+        var activeFilterLabels = getActiveFilterLabels(canonicalState);
+        printFilterSummary.hidden = activeFilterLabels.length === 0;
+        printFilterSummary.textContent = activeFilterLabels.length ? "Filters: " + activeFilterLabels.join(", ") : "";
+      }
+      if (printSortSummary) {
+        printSortSummary.textContent = "Sort: " + (sortLabels[canonicalState.sort] || canonicalState.sort);
+      }
+      if (printCountSummary) {
+        printCountSummary.textContent = visibleCount === 1 ? "1 " + resultLabelSingular : visibleCount + " " + resultLabelPlural;
+      }
       syncMobileStatus(canonicalState);
       syncUnfilteredOnly(canonicalState);
 

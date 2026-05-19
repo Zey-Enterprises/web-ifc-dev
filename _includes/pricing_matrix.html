@@ -104,6 +104,7 @@
     {% assign matrix_view = support_view %}
     {% assign matrix_key = "support" %}
     {% assign show_recommended = true %}
+    <h2 class="ifc-pricing-print-heading ifc-print-only">Compare support</h2>
     <div id="pricing-{{ matrix_key }}-mobile" class="ifc-pricing-mobile__view" data-pricing-view-panel="{{ matrix_key }}">
       {% for tier in pricing.tiers %}
         {% assign is_recommended = false %}
@@ -136,6 +137,7 @@
     {% assign matrix_view = situation_view %}
     {% assign matrix_key = "situation" %}
     {% assign show_recommended = false %}
+    <h2 class="ifc-pricing-print-heading ifc-print-only">Choose by situation</h2>
     <div id="pricing-{{ matrix_key }}-mobile" class="ifc-pricing-mobile__view" data-pricing-view-panel="{{ matrix_key }}" hidden>
       {% for tier in pricing.tiers %}
         <article class="ifc-pricing-tier-card {% if tier.badge %}ifc-pricing-tier-card--recommended{% endif %}">

@@ -175,6 +175,7 @@ social_share:
     - facebook
     - linkedin
     - os-share
+    - print
     - link
   message: "Check this out from {account}!"
 

@@ -1,5 +1,7 @@
 ---
 title: "Frequently Asked Questions"
+date: "2026-04-23"
+last_modified_at: "2026-05-19"
 permalink: /resources/faq/
 excerpt: "Answers to substantive questions about nutrition, training, psychology, philosophy, and integrated fitness."
 toc_widget: 
@@ -208,6 +210,9 @@ header:
     <div class="ifc-active-filters" data-active-filters hidden></div>
     <div class="ifc-resource-browser__status-row">
       <p class="ifc-filter-summary" data-filter-summary hidden></p>
+      <p class="ifc-print-resource-filters ifc-print-only" data-print-filter-summary hidden></p>
+      <p class="ifc-print-resource-sort ifc-print-only" data-print-sort-summary></p>
+      <p class="ifc-print-resource-count ifc-print-only" data-print-count-summary></p>
     </div>
   </div>
 

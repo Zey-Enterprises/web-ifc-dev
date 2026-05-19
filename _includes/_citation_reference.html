@@ -33,6 +33,10 @@ Link behavior:
 {%- if source -%}
   {%- assign style_name = include.style | default: "site" -%}
   {%- assign context = include.context | default: "bibliography" -%}
+  {%- assign source_link_label = "Source" -%}
+  {%- if context == "bibliography" and source.url -%}
+    {%- capture source_link_label -%}<span class="ifc-citation-ref__source-label">Source</span><span class="ifc-citation-ref__source-url ifc-print-only">{{ source.url }}</span>{%- endcapture -%}
+  {%- endif -%}
   {%- assign container_title = source.container_title | default: source.publication | default: source.journal -%}
   {%- capture doi_href -%}https://doi.org/{{ source.doi | replace: 'https://doi.org/', '' }}{%- endcapture -%}
   {%- assign doi_href = doi_href | strip -%}
@@ -88,7 +92,7 @@ Link behavior:
           {% if source.issue %}<span class="ifc-citation-ref__issue">, no. {{ source.issue }}</span>{% endif %}
           {% if issued_display != "" %} ({{ issued_display }}){% endif %}
           {% if source.pages %}: <span class="ifc-citation-ref__pages">{{ source.pages }}</span>{% endif %}.
-          {% if source.doi %} DOI: {% include _link.html href=doi_href label=source.doi newtab=source.doi_newtab default_newtab=true %}.{% elsif source.url %} {% include _link.html href=source.url label="Source" newtab=source.url_newtab default_newtab=true %}.{% endif %}
+          {% if source.doi %} DOI: {% include _link.html href=doi_href label=source.doi newtab=source.doi_newtab default_newtab=true %}.{% elsif source.url %} {% include _link.html href=source.url label=source_link_label newtab=source.url_newtab default_newtab=true %}.{% endif %}
         {% elsif source.type == "book" %}
           {% if author_list != "" %}<span class="ifc-citation-ref__authors">{{ author_list }}</span>. {% endif %}
           {{ title_line }}.
@@ -107,7 +111,7 @@ Link behavior:
           {% elsif issued_display != "" %}
             {{ issued_display }}.
           {% endif %}
-          {% if source.url %} {% include _link.html href=source.url label="Source" newtab=source.url_newtab default_newtab=true %}.{% endif %}
+          {% if source.url %} {% include _link.html href=source.url label=source_link_label newtab=source.url_newtab default_newtab=true %}.{% endif %}
         {% elsif source.type == "legal-case" %}
           <span class="ifc-citation-ref__title">{{ source.title }}</span>.
           {% if source.reporter_volume %} {{ source.reporter_volume }}{% endif %}
@@ -116,19 +120,19 @@ Link behavior:
           {% if source.pinpoint %}, {{ source.pinpoint }}{% endif %}
           {% if source.court or issued_display != "" %} ({% if source.court %}{{ source.court }}{% endif %}{% if source.court and issued_display != "" %} {% endif %}{% if issued_display != "" %}{{ source.year | default: issued_display }}{% endif %}){% endif %}.
           {% if source.docket %} {{ source.docket }}.{% endif %}
-          {% if source.url %} {% include _link.html href=source.url label="Source" newtab=source.url_newtab default_newtab=true %}.{% endif %}
+          {% if source.url %} {% include _link.html href=source.url label=source_link_label newtab=source.url_newtab default_newtab=true %}.{% endif %}
         {% elsif source.type == "preprint" %}
           {% if author_list != "" %}<span class="ifc-citation-ref__authors">{{ author_list }}</span>. {% endif %}
           {{ title_line }}.
           {% if container_title %} <span class="ifc-citation-ref__container">{{ container_title }}</span>{% endif %}
           {% if issued_display != "" %} ({{ issued_display }}){% endif %}.
-          {% if source.doi %} DOI: {% include _link.html href=doi_href label=source.doi newtab=source.doi_newtab default_newtab=true %}.{% elsif source.url %} {% include _link.html href=source.url label="Source" newtab=source.url_newtab default_newtab=true %}.{% endif %}
+          {% if source.doi %} DOI: {% include _link.html href=doi_href label=source.doi newtab=source.doi_newtab default_newtab=true %}.{% elsif source.url %} {% include _link.html href=source.url label=source_link_label newtab=source.url_newtab default_newtab=true %}.{% endif %}
         {% else %}
           {% if author_list != "" %}<span class="ifc-citation-ref__authors">{{ author_list }}</span>. {% endif %}
           {{ title_line }}.
           {% if container_title %} <span class="ifc-citation-ref__container">{{ container_title }}</span>.{% elsif source.organization %} <span class="ifc-citation-ref__container">{{ source.organization }}</span>.{% endif %}
           {% if issued_display != "" %} {{ issued_display }}.{% endif %}
-          {% if source.url %} {% include _link.html href=source.url label="Source" newtab=source.url_newtab default_newtab=true %}.{% endif %}
+          {% if source.url %} {% include _link.html href=source.url label=source_link_label newtab=source.url_newtab default_newtab=true %}.{% endif %}
           {% if accessed_display != "" %} Accessed {{ accessed_display }}.{% endif %}
         {% endif %}
         {% if source.links and source.links.size > 0 %}

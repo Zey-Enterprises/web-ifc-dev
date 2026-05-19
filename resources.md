@@ -1,7 +1,7 @@
 ---
 title: "Resources"
 date: "2026-04-14"
-last_modified_at: "2026-05-16"
+last_modified_at: "2026-05-19"
 # classes: hide-title
 permalink: /resources/
 excerpt: "A unified library for articles, visual media, fitness FAQs, references, and glossary-based learning."
@@ -295,6 +295,9 @@ header:
     <div class="ifc-active-filters" data-active-filters hidden></div>
     <div class="ifc-resource-browser__status-row">
       <p class="ifc-filter-summary" data-filter-summary hidden></p>
+      <p class="ifc-print-resource-filters ifc-print-only" data-print-filter-summary hidden></p>
+      <p class="ifc-print-resource-sort ifc-print-only" data-print-sort-summary></p>
+      <p class="ifc-print-resource-count ifc-print-only" data-print-count-summary></p>
     </div>
   </div>
 
@@ -531,6 +534,7 @@ header:
               <div class="ifc-resource-result__taxonomy">
                 {% if item.domains and item.domains.size > 0 %}
                   <div class="ifc-taxonomy-pills">
+                    <span class="ifc-resource-result__print-label ifc-print-only">Domains:</span>
                     {% for domain in item.domains %}
                       <span class="ifc-taxonomy-pill">{{ domain | replace: "-", " " | capitalize }}</span>
                     {% endfor %}
@@ -538,8 +542,18 @@ header:
                 {% endif %}
                 {% if item.concerns and item.concerns.size > 0 %}
                   <div class="ifc-taxonomy-pills">
+                    <span class="ifc-resource-result__print-label ifc-print-only">Concerns:</span>
                     {% for concern in item.concerns %}
                       <span class="ifc-taxonomy-pill ifc-taxonomy-pill--soft">{{ concern | replace: "-", " " | capitalize }}</span>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+                {% if item.tags and item.tags.size > 0 %}
+                  <div class="ifc-taxonomy-pills ifc-resource-result__print-tags ifc-print-only">
+                    <span class="ifc-resource-result__print-label">Tags:</span>
+                    {% for tag_slug in item.tags %}
+                      {% assign tag_data = site.data.tags[tag_slug] %}
+                      <span class="ifc-taxonomy-pill ifc-taxonomy-pill--light">{{ tag_data.label | default: tag_slug }}</span>
                     {% endfor %}
                   </div>
                 {% endif %}

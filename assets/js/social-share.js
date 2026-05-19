@@ -293,8 +293,20 @@
     var shareButtons = Array.prototype.slice.call(
       document.querySelectorAll("[data-share-button]")
     );
+    var printButtons = Array.prototype.slice.call(
+      document.querySelectorAll("[data-share-print]")
+    );
 
     shareButtons.forEach(configureShareButton);
+
+    printButtons.forEach(function (button) {
+      button.addEventListener("click", function (event) {
+        event.preventDefault();
+        if (typeof window.print === "function") {
+          window.print();
+        }
+      });
+    });
 
     shareButtons.forEach(function (button) {
       button.addEventListener("click", function (event) {
