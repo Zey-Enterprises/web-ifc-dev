@@ -1,7 +1,7 @@
 ---
 title: "Results"
 date: "2026-03-30"
-last_modified_at: "2026-05-16"
+last_modified_at: "2026-05-19"
 permalink: /results/
 excerpt: "Examples of meaningful progress interpreted realistically, without hype or guarantees."
 header:
@@ -41,6 +41,7 @@ No testimonials or case studies are published yet. When examples are available, 
     </a>
   {% endfor %}
 </div>
+More testimonials coming soon!
 {% endif %}
 
 {% if results_group_count == 1 and case_count > 0 %}

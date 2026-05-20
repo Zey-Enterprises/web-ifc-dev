@@ -1,8 +1,11 @@
 ---
 title: "PERSON 2 Testimonial"
+date: "2026-03-30"
+last_modified_at: "2026-05-19"
 client_name: "PERSON 2"
 result_summary: "Regained training consistency during a demanding work season and improved energy management."
-featured: true
+featured: false
+published: false
 sort_order: 2
 ---
 
