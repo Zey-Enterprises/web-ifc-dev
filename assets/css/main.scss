@@ -3736,6 +3736,11 @@ input[type="submit"] {
   vertical-align: baseline;
 }
 
+.ifc-citation-cluster {
+  display: inline;
+  white-space: nowrap;
+}
+
 .ifc-citation-marker--sep {
   margin-left: -0.08em;
   margin-right: 0.04em;

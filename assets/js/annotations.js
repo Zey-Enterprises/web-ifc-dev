@@ -870,6 +870,127 @@
     return false;
   }
 
+  function isCitationAnnotationNode(node) {
+    return Boolean(
+      node &&
+      node.nodeType === Node.ELEMENT_NODE &&
+      node.matches("[data-annotation][data-annotation-kind='citation']")
+    );
+  }
+
+  function isCitationSeparatorNode(node) {
+    return Boolean(
+      node &&
+      node.nodeType === Node.ELEMENT_NODE &&
+      node.matches(".ifc-citation-marker--sep")
+    );
+  }
+
+  function previousCitationRunSibling(node) {
+    let sibling = node ? node.previousSibling : null;
+
+    while (
+      sibling &&
+      (
+        sibling.nodeType === Node.COMMENT_NODE ||
+        (sibling.nodeType === Node.TEXT_NODE && !sibling.nodeValue.replace(/\u2060/g, "").trim())
+      )
+    ) {
+      sibling = sibling.previousSibling;
+    }
+
+    return sibling;
+  }
+
+  function nextCitationRunSibling(node) {
+    let sibling = node ? node.nextSibling : null;
+
+    while (
+      sibling &&
+      (
+        sibling.nodeType === Node.COMMENT_NODE ||
+        (sibling.nodeType === Node.TEXT_NODE && !sibling.nodeValue.replace(/\u2060/g, "").trim())
+      )
+    ) {
+      sibling = sibling.nextSibling;
+    }
+
+    return sibling;
+  }
+
+  function appendPreviousWordToCluster(cluster, firstCitation) {
+    const previous = previousCitationRunSibling(firstCitation);
+
+    if (!previous || previous.nodeType !== Node.TEXT_NODE || !previous.nodeValue) {
+      return;
+    }
+
+    const match = previous.nodeValue.match(/([^\s\u2060]+)\u2060*$/u);
+
+    if (!match) {
+      return;
+    }
+
+    const word = match[1];
+    const start = previous.nodeValue.length - match[0].length;
+    previous.nodeValue = previous.nodeValue.slice(0, start);
+    cluster.appendChild(document.createTextNode(word));
+  }
+
+  function appendTerminalPunctuationToCluster(cluster, afterRunNode) {
+    if (!afterRunNode || afterRunNode.nodeType !== Node.TEXT_NODE || !afterRunNode.nodeValue) {
+      return;
+    }
+
+    const match = afterRunNode.nodeValue.match(/^\u2060*([.,;:!?"'“”‘’)\]}]+)/u);
+
+    if (!match) {
+      return;
+    }
+
+    cluster.appendChild(document.createTextNode(match[1]));
+    afterRunNode.nodeValue = afterRunNode.nodeValue.slice(match[0].length);
+  }
+
+  function wrapCitationRuns() {
+    Array.from(document.querySelectorAll("[data-annotation][data-annotation-kind='citation']")).forEach(function (annotation) {
+      if (!annotation.parentNode || annotation.closest(".ifc-citation-cluster")) {
+        return;
+      }
+
+      const previous = previousCitationRunSibling(annotation);
+
+      if (isCitationAnnotationNode(previous) || isCitationSeparatorNode(previous)) {
+        return;
+      }
+
+      const parent = annotation.parentNode;
+      const cluster = document.createElement("span");
+      cluster.className = "ifc-citation-cluster";
+
+      appendPreviousWordToCluster(cluster, annotation);
+      parent.insertBefore(cluster, annotation);
+
+      let current = annotation;
+
+      while (current && (isCitationAnnotationNode(current) || isCitationSeparatorNode(current))) {
+        const next = nextCitationRunSibling(current);
+        cluster.appendChild(current);
+
+        if (isCitationSeparatorNode(next) || isCitationAnnotationNode(next)) {
+          current = next;
+        } else {
+          appendTerminalPunctuationToCluster(cluster, next);
+          current = null;
+        }
+      }
+
+      if (!cluster.textContent.replace(/\u2060/g, "").trim()) {
+        cluster.remove();
+      }
+    });
+  }
+
   function normalizeCitationSeparatorSpacing() {
     Array.from(document.querySelectorAll(".ifc-citation-marker")).forEach(function (marker) {
       if ((marker.textContent || "").trim() !== "," && marker.dataset.citationSeparator !== ",") {
@@ -925,6 +1046,8 @@
         prependWordJoinerToNode(next);
       }
     });
+
+    wrapCitationRuns();
   }
 
   function getAnnotationCopyText(annotation) {
