@@ -1,5 +1,7 @@
 ---
-title: "Frequently Asked Questions"
+title: "Coaching FAQs"
+date: "2026-03-30"
+last_modified_at: "2026-05-19"
 permalink: /faq/
 description: "Frequently asked questions about Integrated Fitness Coaching, including scope, results, process, and support."
 excerpt: "Questions about coaching scope, results, process, and support."

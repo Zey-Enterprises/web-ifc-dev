@@ -1,5 +1,5 @@
 ---
-title: "Frequently Asked Questions"
+title: "Fitness FAQ Library"
 date: "2026-04-23"
 last_modified_at: "2026-05-19"
 permalink: /resources/faq/
