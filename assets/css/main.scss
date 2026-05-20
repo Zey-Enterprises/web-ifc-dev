@@ -3996,7 +3996,7 @@ input[type="submit"] {
 .ifc-annotation__card .ifc-annotation__link-item a,
 .ifc-annotation__card .ifc-citation-ref a {
   color: var(--ifc-accent-deep);
-  text-decoration-color: rgba(43, 95, 135, 0.48);
+  text-decoration: none;
   text-underline-offset: 0.12em;
 }
 
@@ -4012,12 +4012,23 @@ input[type="submit"] {
 .ifc-annotation__card .ifc-citation-ref a:focus,
 .ifc-annotation__card .ifc-citation-ref a:focus-visible {
   color: #163b57;
+}
+
+.ifc-annotation__card .ifc-annotation__link-item a:hover .ifc-annotation__link-label,
+.ifc-annotation__card .ifc-annotation__link-item a:focus .ifc-annotation__link-label,
+.ifc-annotation__card .ifc-annotation__link-item a:focus-visible .ifc-annotation__link-label,
+.ifc-annotation__card .ifc-citation-ref a:hover .ifc-annotation__link-label,
+.ifc-annotation__card .ifc-citation-ref a:focus .ifc-annotation__link-label,
+.ifc-annotation__card .ifc-citation-ref a:focus-visible .ifc-annotation__link-label {
+  text-decoration: underline;
   text-decoration-color: currentColor;
+  text-underline-offset: 0.12em;
 }
 
 .ifc-annotation__card .ifc-annotation__link-item a .ifc-link-icon,
 .ifc-annotation__card .ifc-citation-ref a .ifc-link-icon {
   color: currentColor;
+  text-decoration: none;
 }
 
 .ifc-annotation__link-item a *,

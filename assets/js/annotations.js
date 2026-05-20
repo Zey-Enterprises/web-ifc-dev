@@ -544,7 +544,7 @@
     const icon = '<i class="fas fa-external-link-alt ifc-link-icon" aria-hidden="true"></i>';
     const targetAttrs = openNewtab ? ' target="_blank" rel="noopener noreferrer"' : "";
 
-    return '<a href="' + escapeHtml(href) + '"' + targetAttrs + ">" + escapeHtml(label) + (openNewtab ? icon : "") + "</a>";
+    return '<a href="' + escapeHtml(href) + '"' + targetAttrs + '><span class="ifc-annotation__link-label">' + escapeHtml(label) + "</span>" + (openNewtab ? icon : "") + "</a>";
   }
 
   function renderGlossaryBody(entry) {
@@ -667,14 +667,14 @@
           label: source.doi,
           newtab: source.doi_newtab,
           defaultNewtab: true
-        }) + ".";
+        });
       } else if (source.url) {
         html += " " + renderAnnotationLink({
           href: source.url,
           label: "Source",
           newtab: source.url_newtab,
           defaultNewtab: true
-        }) + ".";
+        });
       }
     } else {
       if (authors) {
@@ -692,7 +692,7 @@
           label: "Source",
           newtab: source.url_newtab,
           defaultNewtab: true
-        }) + ".";
+        });
       }
     }
 
