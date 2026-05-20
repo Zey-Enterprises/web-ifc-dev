@@ -266,7 +266,7 @@
       "cortisol",
       "hypothyroidism",
       "hyperthyroidism",
-      "pcos",
+      "pmos",
       "menopause"
     ]
   },
@@ -429,7 +429,7 @@
     "id": "insulin-sensitivity",
     "term": "insulin sensitivity",
     "short": "How responsive the body is to insulin's signals.",
-    "long": "Higher insulin sensitivity generally means the body needs less insulin to manage glucose effectively. It is influenced by body fat, sleep, training, meal timing, medication use, menopause, PCOS, and overall metabolic health.",
+    "long": "Higher insulin sensitivity generally means the body needs less insulin to manage glucose effectively. It is influenced by body fat, sleep, training, meal timing, medication use, menopause, PMOS (previously called \"PCOS\"), and overall metabolic health.",
     "tags": [
       "body-composition"
     ],
@@ -437,7 +437,7 @@
       "insulin",
       "glp-1",
       "metabolism",
-      "pcos",
+      "pmos",
       "menopause"
     ]
   },
@@ -482,7 +482,7 @@
     "see_also": [
       "endocrine",
       "insulin-sensitivity",
-      "pcos",
+      "pmos",
       "calorie-balance"
     ]
   },
@@ -564,20 +564,20 @@
       "periodization"
     ]
   },
-  "pcos": {
-    "id": "pcos",
-    "term": "PCOS",
-    "short": "Polycystic ovary syndrome, a common endocrine condition that can affect hormones, insulin sensitivity, and reproductive health.",
-    "long": "PCOS often interacts with appetite, blood-glucose control, recovery, and symptom burden. It can make body-composition management more difficult, but the relevant mechanism still runs through intake, expenditure, and overall health context.",
-    "tags": [
-      "body-composition"
-    ],
-    "see_also": [
-      "endocrine",
-      "insulin-sensitivity",
-      "insulin",
-      "menopause"
-    ]
+  "pmos": {
+  "id": "pmos",
+  "term": "PMOS",
+  "short": "Polyendocrine metabolic ovarian syndrome, previously called PCOS, is a common endocrine-metabolic condition that can affect hormones, insulin sensitivity, and reproductive health.",
+  "long": "PMOS can affect insulin sensitivity, androgen signaling, ovulation, menstrual cycles, skin symptoms, fertility, mood, and cardiometabolic risk. The name PMOS replaces PCOS because the older term overemphasized ovarian cysts and did not capture the condition's broader endocrine and metabolic nature. In body-composition work, PMOS can change appetite, blood-glucose control, recovery, and symptom burden, but the relevant strategy still depends on intake, expenditure, medical care, and the broader health context.",
+  "tags": [
+    "body-composition"
+  ],
+  "see_also": [
+    "endocrine",
+    "insulin-sensitivity",
+    "insulin",
+    "menopause"
+  ]
   },
   "periodization": {
     "id": "periodization",

@@ -1,7 +1,7 @@
 ---
 title: "Does glycemic index matter for fat loss?"
 date: 2026-04-23
-last_modified_at: 2026-04-26
+last_modified_at: "2026-05-19"
 resource_type: faq
 header:
   overlay_image: /assets/images/overlay/resources-faq.webp
@@ -36,4 +36,4 @@ Lower-glycemic foods can be useful when the goal is steadier hunger, easier appe
 
 Higher-glycemic foods can also be useful in the right context. White rice, potatoes, cereal, bread, low-fiber carbs, or sports drinks may be useful around training, during long endurance work, after strenuous sessions, during high-volume training phases, or when digestion needs to be easy. In those cases, faster glucose availability and insulin signaling can support performance, {% include glossary.html id="glycogen" %} replenishment, and recovery, rather than being a problem.
 
-Use glycemic index as an optimization tool, not a moral ranking system. If you have diabetes, reactive hypoglycemia, {% include glossary.html id="pcos" text="PCOS" %}, or another blood-glucose-related condition, glycemic response may deserve more direct attention with qualified guidance. Otherwise, prioritize calorie balance, protein, fiber, food volume, training needs, and repeatability first; then use glycemic index when it helps you choose the right carbohydrate for the right job.
+Use glycemic index as an optimization tool, not a moral ranking system. If you have diabetes, reactive hypoglycemia, {% include glossary.html id="pmos" %} (previously called "PCOS"), or another blood-glucose-related condition, glycemic response may deserve more direct attention with qualified guidance. Otherwise, prioritize calorie balance, protein, fiber, food volume, training needs, and repeatability first; then use glycemic index when it helps you choose the right carbohydrate for the right job.
