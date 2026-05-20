@@ -63,8 +63,6 @@
       this.field("tags");
       this.ref("id");
 
-      this.pipeline.remove(lunr.trimmer);
-
       for (var item in store) {
         this.add({
           title: store[item].title,

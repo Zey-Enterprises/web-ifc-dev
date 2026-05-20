@@ -17,12 +17,12 @@ var store = [
       {
         "title": {{ doc.title | jsonify }},
         "excerpt":
-          {%- if doc.excerpt -%}
-            {%- capture clean_excerpt -%}{% include clean_text.html text=doc.excerpt %}{%- endcapture -%}
-            {{ clean_excerpt | jsonify }},
-          {%- elsif site.search_full_content == true -%}
+          {%- if site.search_full_content == true -%}
             {%- capture clean_content -%}{% include clean_text.html text=doc.content %}{%- endcapture -%}
             {{ clean_content | jsonify }},
+          {%- elsif doc.excerpt -%}
+            {%- capture clean_excerpt -%}{% include clean_text.html text=doc.excerpt %}{%- endcapture -%}
+            {{ clean_excerpt | jsonify }},
           {%- else -%}
             {%- capture clean_content -%}{% include clean_text.html text=doc.content truncatewords=50 %}{%- endcapture -%}
             {{ clean_content | jsonify }},
@@ -42,12 +42,12 @@ var store = [
   {
     "title": {{ doc.title | jsonify }},
     "excerpt":
-      {%- if doc.excerpt -%}
-        {%- capture clean_excerpt -%}{% include clean_text.html text=doc.excerpt %}{%- endcapture -%}
-        {{ clean_excerpt | jsonify }},
-      {%- elsif site.search_full_content == true -%}
+      {%- if site.search_full_content == true -%}
         {%- capture clean_content -%}{% include clean_text.html text=doc.content %}{%- endcapture -%}
         {{ clean_content | jsonify }},
+      {%- elsif doc.excerpt -%}
+        {%- capture clean_excerpt -%}{% include clean_text.html text=doc.excerpt %}{%- endcapture -%}
+        {{ clean_excerpt | jsonify }},
       {%- else -%}
         {%- capture clean_content -%}{% include clean_text.html text=doc.content truncatewords=50 %}{%- endcapture -%}
         {{ clean_content | jsonify }},

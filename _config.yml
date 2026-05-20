@@ -16,6 +16,7 @@ logo: "/assets/images/ifc-logo.png"
 masthead_title: "Integrated Fitness Coaching"
 minimal_mistakes_skin: "air"
 search: true
+search_full_content: true
 
 remote_theme: "mmistakes/minimal-mistakes@4.27.1"
 
