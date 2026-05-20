@@ -1,9 +1,8 @@
 ---
 title: "Calorie Balance Still Governs Body Composition"
 date: 2026-04-12
-last_modified_at: "2026-05-19"
+last_modified_at: "2026-05-20"
 format: written
-classes: hide-title
 author: "Arthur Zey"
 excerpt: "Body composition is governed by calorie balance, while diet quality, hormones, sleep, stress, genetics, the microbiome, and environment matter by changing calorie intake, absorption, expenditure, and partitioning."
 tldr: "Most nutrition debates go wrong by treating factors like hormones, diet quality, sleep, stress, genetics, and the microbiome as alternatives to calorie balance. They aren't. They matter, but they operate through energy balance, not instead of it. Body composition is governed by calorie balance, and progress becomes far clearer when you treat it as the central constraint and everything else as inputs into that system."

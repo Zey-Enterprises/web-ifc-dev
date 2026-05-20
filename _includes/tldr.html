@@ -32,18 +32,17 @@ Notes:
 {% assign tldr_value = page.tldr %}
 
 {% if tldr_value %}
-  <section class="ifc-bibliography ifc-bibliography--summary" data-tldr>
-    <h2 class="ifc-bibliography__title">TL;DR</h2>
+  <aside class="ifc-bibliography ifc-bibliography--summary" data-tldr data-tldr-title="TL;DR" role="note">
     <div class="ifc-bibliography__content">
       {% if tldr_value.first %}
         <ul class="ifc-summary__list">
           {% for item in tldr_value %}
-            <li class="ifc-summary__item">{{ item }}</li>
+            <li class="ifc-summary__item" data-tldr-item="{{ item | strip | escape }}"></li>
           {% endfor %}
         </ul>
       {% else %}
-        <p class="ifc-summary__text">{{ tldr_value }}</p>
+        <p class="ifc-summary__text" data-tldr-text="{{ tldr_value | strip | escape }}"></p>
       {% endif %}
     </div>
-  </section>
+  </aside>
 {% endif %}

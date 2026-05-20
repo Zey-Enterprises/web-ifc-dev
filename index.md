@@ -1,15 +1,15 @@
 ---
 title: "Integrated Fitness Coaching Home"
 date: "2026-04-15"
-last_modified_at: "2026-05-16"
+last_modified_at: "2026-05-20"
 layout: single
 permalink: /
-classes: wide hide-title
+classes: wide
 excerpt: "Coaching that integrates physical exercise, nutrition, emotional regulation, relationships, and clear thinking about values, principles, and action—so progress can hold up in real life."
 description: "Integrated Fitness Coaching helps clients make sustainable progress across physical exercise, nutrition, emotional regulation, relationships, and clear thinking about values, principles, and action."
 header:
   kicker: "Fitness for the whole person"
-  overlay_title: "Build your body. Sharpen your intellect. Steady your spirit."
+  overlay_title: "Build your body.<br />Sharpen your intellect.<br />Steady your spirit."
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.56), rgba(17, 33, 45, 0.21))
   overlay_interval: 3000
   overlay_images:

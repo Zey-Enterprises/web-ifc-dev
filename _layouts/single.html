@@ -8,6 +8,12 @@ layout: default
 {%- if page.header.overlay_color or page.header.overlay_image or page.header.overlay_images or auto_overlay_image != "" -%}
   {%- assign has_overlay_hero = true -%}
 {%- endif -%}
+{%- assign has_page_hero = false -%}
+{%- if has_overlay_hero or page.header.image -%}
+  {%- assign has_page_hero = true -%}
+{%- elsif page.header.video.id and page.header.video.provider -%}
+  {%- assign has_page_hero = true -%}
+{%- endif -%}
 {%- assign page_publication_status = page.publication_status.status | default: page.publication_status -%}
 {%- assign page_is_coming_soon = false -%}
 {%- if page_publication_status == "coming-soon" -%}
@@ -56,6 +62,19 @@ layout: default
     {% assign is_results_entry = true %}
   {% endif %}
 
+  {% assign tldr_outside_article = false %}
+  {% if page.tldr and schema_type == "Article" and page_is_coming_soon != true and has_page_hero %}
+    {% assign tldr_outside_article = true %}
+  {% endif %}
+
+  {% if tldr_outside_article %}
+    <div class="page ifc-page-summary-host" role="complementary" aria-label="TL;DR" aria-hidden="true" data-nosnippet{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
+      <div class="page__inner-wrap">
+        {% include tldr.html %}
+      </div>
+    </div>
+  {% endif %}
+
   <article class="page h-entry" itemscope itemtype="{{ schema_itemtype }}"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | replace: '|', '&#124;' | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.description or page.excerpt or content %}
@@ -72,7 +91,7 @@ layout: default
     {% if page.last_modified_at and page_is_coming_soon != true %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
 
     <div class="page__inner-wrap">
-      {% unless has_overlay_hero %}
+      {% unless has_page_hero %}
         <header class="ifc-page-header ifc-page-header--plain">
           {% include publication_status_badge.html document=page variant="page" %}
           {% if page.title -%}
@@ -86,7 +105,25 @@ layout: default
         </header>
       {% endunless %}
 
-      {% if page.tldr %}
+      {% if schema_type == "Article" and page_is_coming_soon != true %}
+        {% assign reader_author_ref = page.author | default: page.authors[0] | default: site.author %}
+        {% assign reader_author_data = site.data.authors[reader_author_ref] | default: reader_author_ref %}
+        {% assign reader_author_name = reader_author_data.name | default: reader_author_data %}
+        {% assign reader_updated_at = page.last_updated_at | default: page.last_modified_at %}
+        <div class="ifc-reader-meta" data-reader-meta>
+          {% if reader_author_name %}
+            <p>Written by {{ reader_author_name }}</p>
+          {% endif %}
+          {% if page.date %}
+            <p>Published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time></p>
+          {% endif %}
+          {% if reader_updated_at %}
+            <p>Updated on <time datetime="{{ reader_updated_at | date_to_xmlschema }}">{{ reader_updated_at | date: "%Y-%m-%d" }}</time></p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if page.tldr and tldr_outside_article != true %}
         {% include tldr.html %}
       {% endif %}
 

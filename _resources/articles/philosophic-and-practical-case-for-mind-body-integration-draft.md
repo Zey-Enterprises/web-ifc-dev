@@ -1,12 +1,11 @@
 ---
-#title: "Mind-Body Integration for Living Well"
 title: "The Philosophic and Practical Case for Mind-Body Integration"
+date: 2026-04-27
+last_modified_at: "2026-05-20"
+#title: "Mind-Body Integration for Living Well"
 format: written
 published: false
-classes: hide-title
 author: "Arthur Zey"
-date: 2026-04-27
-last_modified_at: 2026-04-27
 excerpt: "Mind-body integration is not a vague wellness slogan. It is the recognition that thought, emotion, action, health, energy, and physical capacity belong to one living organism, and that a flourishing life requires deliberate development of body, intellect, and spirit."
 tldr: "Mind-body integration means treating body, intellect, and spirit as distinct but inseparable aspects of one human life. The mind is not a ghost floating above the body; it is the activity of a living brain in a living organism. Physical training, nutrition, sleep, emotional regulation, intellectual clarity, and value-directed action all affect one another. The practical conclusion is simple: develop the whole person, start with the highest-leverage basics, personalize the details, and use regular reflection to keep your life aligned with your values."
 domains:
@@ -387,4 +386,3 @@ Move your body. Think on paper. Name your feelings before reacting to them.
 That is enough to begin.
 
 The mind and body are already integrated in reality. Your task is to make that integration conscious, chosen, and practiced.
-

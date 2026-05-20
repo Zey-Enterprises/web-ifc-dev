@@ -18,6 +18,8 @@
   IFC extensions:
   - header.kicker
   - header.overlay_title
+  - header.overlay_title_width
+  - header.mobile_overlay_title_width
   - header.background_position
   - header.mobile_background_position
   - automatic overlay image fallback via /assets/images/overlay/<derived-page-key>.{webp,jpg,png}
@@ -47,6 +49,18 @@
   - 65% center
   - center -10px
   - right 24px top 10px
+
+  overlay_title_width and mobile_overlay_title_width accept any valid CSS
+  max-width value, for example:
+  - 100%
+  - 50%
+  - 12ch
+  - 42rem
+  - 300px
+
+  If overlay_title_width is omitted, overlay titles use 100% of the overlay
+  wrapper. If mobile_overlay_title_width is omitted, it inherits
+  overlay_title_width.
 {% endcomment %}
 {%- assign hero = page.header -%}
 {%- assign overlay_images = hero.overlay_images -%}
@@ -56,6 +70,8 @@
 {%- assign overlay_position = hero.background_position | default: "center" -%}
 {%- assign mobile_overlay_position = hero.mobile_background_position -%}
 {%- assign overlay_title = hero.overlay_title | default: page.title -%}
+{%- assign overlay_title_width = hero.overlay_title_width | default: "100%" -%}
+{%- assign mobile_overlay_title_width = hero.mobile_overlay_title_width | default: overlay_title_width -%}
 {%- assign has_carousel = false -%}
 
 {%- if overlay_images and overlay_images.size > 1 -%}
@@ -95,7 +111,7 @@
   <div
     class="page__hero--overlay {% if has_carousel %}ifc-hero-carousel{% else %}ifc-overlay-hero{% endif %}"
     {% if has_carousel %}data-overlay-carousel data-carousel-interval="{{ hero.overlay_interval | default: 3000 }}"{% endif %}
-    style="--ifc-hero-base-color: {{ hero.overlay_color | default: '#1d2e3f' }}; --ifc-hero-overlay-filter: {{ overlay_filter_css | strip }};{% if overlay_image %} --ifc-hero-image: url('{{ overlay_image | relative_url }}'); --ifc-hero-position: {{ overlay_position }};{% endif %}{% if mobile_overlay_position %} --ifc-hero-mobile-position: {{ mobile_overlay_position }};{% endif %}"
+    style="--ifc-hero-base-color: {{ hero.overlay_color | default: '#1d2e3f' }}; --ifc-hero-overlay-filter: {{ overlay_filter_css | strip }}; --ifc-overlay-title-width: {{ overlay_title_width }}; --ifc-overlay-title-mobile-width: {{ mobile_overlay_title_width }};{% if overlay_image %} --ifc-hero-image: url('{{ overlay_image | relative_url }}'); --ifc-hero-position: {{ overlay_position }};{% endif %}{% if mobile_overlay_position %} --ifc-hero-mobile-position: {{ mobile_overlay_position }};{% endif %}"
   >
     {% if print_hero_image %}
       <img class="ifc-print-hero-image ifc-print-only" src="{{ print_hero_image | relative_url }}" alt="">
@@ -128,7 +144,7 @@
       {% endif %}
 
       {% if overlay_lead %}
-        <p class="page__lead">{{ overlay_lead | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+        <p class="page__lead" aria-hidden="true" data-nosnippet>{{ overlay_lead | markdownify | remove: "<p>" | remove: "</p>" }}</p>
       {% endif %}
 
       {% include page__meta.html locale=include.locale %}

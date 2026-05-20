@@ -44,7 +44,7 @@ Notes:
 {% assign bibliography_title = include.title | default: "References" %}
 
 {% if page.citations %}
-  <aside class="ifc-bibliography{% if bibliography_class != "" %} {{ bibliography_class }}{% endif %}" data-bibliography role="doc-endnotes" aria-label="{{ bibliography_title | escape }}" data-bibliography-title="{{ bibliography_title | escape }}">
+  <aside class="ifc-bibliography{% if bibliography_class != "" %} {{ bibliography_class }}{% endif %}" data-bibliography role="doc-endnotes" aria-label="{{ bibliography_title | escape }}" data-bibliography-title="{{ bibliography_title | escape }}" aria-hidden="true" data-nosnippet>
     <ol class="ifc-bibliography__list">
       {% if page.citations.first and page.citations.first.label %}
         {% for citation_entry in page.citations %}
