@@ -83,7 +83,7 @@
 {%- assign author_name = author.name | default: author -%}
 
 {%- if page.resource_type == "faq" -%}
-  {%- assign og_type = "website" -%}
+  {%- assign og_type = "article" -%}
 {%- elsif page.date and page_is_coming_soon != true -%}
   {%- assign og_type = "article" -%}
 {%- else -%}
