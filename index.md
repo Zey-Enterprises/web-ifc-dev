@@ -1,7 +1,7 @@
 ---
 title: "Integrated Fitness Coaching Home"
 date: "2026-04-15"
-last_modified_at: "2026-05-20"
+last_modified_at: "2026-05-21"
 layout: single
 permalink: /
 classes: wide
@@ -166,7 +166,7 @@ We can begin anywhere. The point is to work in a way that strengthens the whole 
       </a>
     {% endfor %}
   </div>
-  {% include faq_carousel.html %}
+  {% include faq_carousel.html speed=100 %}
   <div class="ifc-link-action">
     {% include double_icon_button.html href="/resources/" label="Browse full resource library" alignment="center" %}
   </div>
