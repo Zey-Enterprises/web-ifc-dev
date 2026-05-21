@@ -1,7 +1,7 @@
 ---
 title: "Coaching Agreement"
 date: 2026-04-21
-last_modified_at: "2026-05-16"
+last_modified_at: "2026-05-20"
 permalink: /coaching-agreement/
 show_modified_date: true
 show_read_time: true
@@ -12,8 +12,6 @@ toc_widget:
 excerpt: This Coaching Agreement is the latest draft. Your Coaching Agreement may differ.
 header:
   kicker: Sample
-  # overlay_image: /assets/images/ifc-legal-hero-banner-1.jpg
-  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
   actions:
     - label: Terms of Service
       url: /terms/

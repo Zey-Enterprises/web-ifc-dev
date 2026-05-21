@@ -12,10 +12,7 @@ toc_widget:
 header:
   kicker: "Integrated Fitness Coach"
   overlay_title: "Arthur Zey"
-  # overlay_image: /assets/images/ifc-about-hero-banner-3.jpg
-  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
-  # background_position: center -10px
-  mobile_background_position: 72% center
+  overlay_image_focal_point: "67% 50%"
   # og_image: /assets/images/ifc-about-social-share-3-1200-630.jpg
 ---
 

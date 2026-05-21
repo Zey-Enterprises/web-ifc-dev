@@ -1,13 +1,9 @@
 ---
 title: "Should I weigh protein raw or cooked?"
 date: 2026-04-23
-last_modified_at: "2026-05-17"
+last_modified_at: "2026-05-20"
 published: false
-resource_type: faq
 header:
-  overlay_image: /assets/images/overlay/resources-faq.webp
-  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
-  overlay_title: "Frequently Asked Questions"
   actions:
     - label: "← See in FAQ Library"
       url: /resources/faq/#should-i-weigh-protein-raw-or-cooked

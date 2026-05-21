@@ -61,6 +61,8 @@ defaults:
       show_modified_date: false
       show_read_time: false
       toc: false
+      header:
+        overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
       toc_widget:
         enabled: false
   - scope:
@@ -99,9 +101,15 @@ defaults:
       classes: wide
       show_author: false
       show_date: false
-      show_modified_date: false
+      show_modified_date: true
       show_read_time: false
       share: true
+      resource_type: faq
+      header:
+        overlay_images:
+          - image: /assets/images/overlay/resources-faq.webp
+        overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+        overlay_title: "Frequently Asked Questions"
       toc_widget:
         enabled: false
   - scope:

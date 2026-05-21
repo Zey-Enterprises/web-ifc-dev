@@ -1,7 +1,7 @@
 ---
 title: "Terms of Service"
 date: 2026-04-16
-last_modified_at: "2026-05-16"
+last_modified_at: "2026-05-20"
 permalink: /terms/
 show_modified_date: true
 show_read_time: true
@@ -10,7 +10,6 @@ toc_widget:
   min_level: 2
   max_level: 4
 header:
-  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
   actions:
     - label: Privacy Policy
       url: /privacy/

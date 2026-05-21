@@ -1,7 +1,7 @@
 ---
 title: ""
 date: "2026-05-06"
-last_modified_at: "2026-05-16"
+last_modified_at: "2026-05-20"
 layout: single
 permalink: /homepage-old/
 classes: wide
@@ -15,7 +15,7 @@ header:
     - image: /assets/images/overlay/index-weightlifting.webp
     - image: /assets/images/overlay/index-nutrition.webp
     - image: /assets/images/overlay/index-mindfulness.webp
-      mobile_background_position: 68% center
+      focal_point: "68% 50%"
     - image: /assets/images/overlay/index-reading.webp
   actions:
     - label: View coaching options

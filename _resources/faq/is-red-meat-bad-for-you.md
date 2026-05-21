@@ -1,12 +1,8 @@
 ---
 title: "Is red meat bad for you?"
 date: 2026-04-24
-last_modified_at: 2026-05-09
-resource_type: faq
+last_modified_at: "2026-05-20"
 header:
-  overlay_image: /assets/images/overlay/resources-faq.webp
-  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
-  overlay_title: "Frequently Asked Questions"
   actions:
     - label: "← See in FAQ Library"
       url: /resources/faq/#is-red-meat-bad-for-you

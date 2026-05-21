@@ -1,5 +1,7 @@
 ---
 title: "Pricing"
+date: "2026-05-07"
+last_modified_at: "2026-05-20"
 excerpt: "Compare coaching packages, engagement details, and next steps for working together."
 description: "Integrated Fitness Coaching pricing, package comparison, engagement details, and next steps."
 permalink: /pricing/
@@ -9,8 +11,6 @@ pricing_matrix: true
 header:
   kicker: "Coaching Options"
   overlay_title: "Pricing and Packages"
-  # overlay_image: /assets/images/ifc-pricing-hero-banner-1.jpg
-  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
 ---
 
 {% assign ifc_application_url = "https://forms.gle/29cjAn8UZKWNa5qB7" %}

@@ -1,14 +1,12 @@
 ---
 title: "Results"
 date: "2026-03-30"
-last_modified_at: "2026-05-19"
+last_modified_at: "2026-05-20"
 permalink: /results/
 excerpt: "Examples of meaningful progress interpreted realistically, without hype or guarantees."
 header:
   kicker: "Client Results"
   overlay_title: "Realistic Progress, Sustainable Outcomes"
-  # overlay_image: /assets/images/ifc-results-hero-banner-1.jpg
-  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
 ---
 
 {% assign ordered_testimonials = site.testimonials | sort: "sort_order" %}

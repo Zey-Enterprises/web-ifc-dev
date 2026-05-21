@@ -1,7 +1,7 @@
 ---
 title: "Coaching FAQs"
 date: "2026-03-30"
-last_modified_at: "2026-05-19"
+last_modified_at: "2026-05-20"
 permalink: /faq/
 description: "Frequently asked questions about Integrated Fitness Coaching, including scope, results, process, and support."
 excerpt: "Questions about coaching scope, results, process, and support."
@@ -10,8 +10,6 @@ toc_widget:
 header:
   kicker: "Coaching FAQ"
   overlay_title: "Frequently Asked Questions"
-  # overlay_image: /assets/images/ifc-faq-hero-banner-1.jpg
-  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
   actions:
     - label: Go to Fitness FAQ Library →
       url: /resources/faq/

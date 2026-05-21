@@ -13,10 +13,6 @@ toc_widget:
 header:
   kicker: "What Integrated Fitness Coaching Means"
   overlay_title: "Coaching for the Whole Person"
-  # overlay_image: /assets/images/ifc-approach-hero-banner-1.jpg
-  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
-  background_position: center -25px
-  mobile_background_position: center 0px
 ---
 
 Fitness is often treated as though it means only one thing: physique, athletic performance, or perhaps physical health in general.

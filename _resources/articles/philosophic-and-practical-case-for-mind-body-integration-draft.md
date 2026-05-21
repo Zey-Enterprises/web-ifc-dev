@@ -38,9 +38,6 @@ tags:
 - objectivity
 - adherence
 header:
-  # overlay\_image: /assets/images/ifc-hero-banner-article-mind-body-integration-1.jpg
-  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
-  mobile_background_position: -450px center
   # kicker: Integrated fitness
   # og_image: /assets/images/ifc-social-share-mind-body-integration-1.jpg
 citations:

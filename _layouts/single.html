@@ -5,7 +5,7 @@ layout: default
 {%- capture auto_overlay_image -%}{% include resolve_page_image.html page=page bucket="overlay" %}{%- endcapture -%}
 {%- assign auto_overlay_image = auto_overlay_image | strip -%}
 {%- assign has_overlay_hero = false -%}
-{%- if page.header.overlay_color or page.header.overlay_image or page.header.overlay_images or auto_overlay_image != "" -%}
+{%- if page.header.overlay_color or page.header.overlay_images or auto_overlay_image != "" -%}
   {%- assign has_overlay_hero = true -%}
 {%- endif -%}
 {%- assign has_page_hero = false -%}

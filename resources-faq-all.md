@@ -1,5 +1,7 @@
 ---
 title: "Full Fitness FAQ List"
+date: "2026-05-08"
+last_modified_at: "2026-05-20"
 permalink: /resources/faq/all/
 classes: wide
 show_author: false
@@ -10,8 +12,8 @@ share: true
 toc_widget:
   enabled: false
 header:
-  overlay_image: /assets/images/overlay/resources-faq.webp
-  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+  overlay_images:
+    - image: /assets/images/overlay/resources-faq.webp
   overlay_title: "Full Fitness FAQ List"
   actions:
     - label: "← Filterable Fitness FAQ Library"

@@ -16,7 +16,7 @@ header:
     - image: /assets/images/overlay/index-weightlifting.webp
     - image: /assets/images/overlay/index-nutrition.webp
     - image: /assets/images/overlay/index-mindfulness.webp
-      mobile_background_position: 68% center
+      focal_point: "68% 50%"
     - image: /assets/images/overlay/index-reading.webp
   actions:
     - label: View coaching options
@@ -146,7 +146,7 @@ We can begin anywhere. The point is to work in a way that strengthens the whole 
     {% endfor %}
   </div>
   <div class="ifc-link-action">
-    {% include double_icon_button.html href="/results/" label="See testimonials and case studies" alignment="center" %}
+    {% include double_icon_button.html href="/results/" label="See all results" alignment="center" %}
   </div>
 </div>
 
@@ -168,7 +168,7 @@ We can begin anywhere. The point is to work in a way that strengthens the whole 
   </div>
   {% include faq_carousel.html %}
   <div class="ifc-link-action">
-    {% include double_icon_button.html href="/resources/" label="Browse the full resource library" alignment="center" %}
+    {% include double_icon_button.html href="/resources/" label="Browse full resource library" alignment="center" %}
   </div>
 </div>
 

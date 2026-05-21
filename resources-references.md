@@ -1,14 +1,13 @@
 ---
 title: "References"
 date: "2026-05-06"
-last_modified_at: "2026-05-19"
+last_modified_at: "2026-05-20"
 permalink: /resources/references/
 description: "References and citations used across the Integrated Fitness Coaching resource library."
 excerpt: "A browsable reference library for sources cited across articles, FAQs, glossary entries, and other resources."
 header:
   kicker: "Resource Library"
   overlay_title: "References"
-  # overlay_image: /assets/images/ifc-references-hero-banner-1.jpg
   overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.7), rgba(17, 33, 45, 0.22))
   actions:
   - label: ← Back to All Resources

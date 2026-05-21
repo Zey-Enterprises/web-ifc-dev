@@ -1,15 +1,13 @@
 ---
 title: "Resources"
 date: "2026-04-14"
-last_modified_at: "2026-05-19"
+last_modified_at: "2026-05-20"
 # classes: hide-title
 permalink: /resources/
 excerpt: "A unified library for articles, visual media, fitness FAQs, references, and glossary-based learning."
 header:
   kicker: "Resource Library"
   overlay_title: "Resources"
-  # overlay_image: /assets/images/ifc-resources-hero-banner-1.jpg
-  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
   actions:
   - label: Glossary
     url: /resources/glossary/

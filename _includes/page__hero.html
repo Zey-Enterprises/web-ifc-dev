@@ -1,8 +1,11 @@
 {% comment %}
-  Minimal Mistakes overlay extension for IFC.
+  Minimal Mistakes-compatible overlay include for IFC.
 
-  Native fields preserved:
-  - header.overlay_image
+  This file intentionally remains named _includes/page__hero.html because
+  Minimal Mistakes uses the "hero" include internally. IFC authoring
+  terminology uses "overlay" for the front matter API.
+
+  Native Minimal Mistakes fields preserved:
   - header.overlay_filter
   - header.overlay_color
   - header.caption
@@ -20,14 +23,48 @@
   - header.overlay_title
   - header.overlay_title_width
   - header.mobile_overlay_title_width
-  - header.background_position
-  - header.mobile_background_position
-  - automatic overlay image fallback via /assets/images/overlay/<derived-page-key>.{webp,jpg,png}
+  - header.overlay_image_focal_point
+  - header.overlay_image_anchor_point
   - header.overlay_images
     - image
-    - background_position
-    - mobile_background_position
-  - header.overlay_interval (milliseconds)
+    - focal_point
+    - anchor_point
+  - header.overlay_interval
+  - automatic overlay image fallback via /assets/images/overlay/<derived-page-key>.{webp,jpg,png}
+
+  Canonical overlay image API:
+
+    header:
+      overlay_images:
+        - image: /assets/images/overlay/example.webp
+          focal_point: "72% 50%"
+          anchor_point: "66% 50%"
+
+  A single-item overlay_images array renders one static overlay image. A
+  multi-item overlay_images array renders a carousel. overlay_interval defaults
+  to 3000 milliseconds and only matters when two or more overlay images exist.
+
+  focal_point identifies the point in the source image to keep visually
+  important. anchor_point identifies the point in the overlay container where
+  that focal point should land. Both default to "50% 50%".
+
+  Top-level defaults:
+
+    header:
+      overlay_image_focal_point: "50% 50%"
+      overlay_image_anchor_point: "50% 50%"
+
+  Slide-level focal_point and anchor_point override the top-level defaults.
+  If JavaScript is disabled or has not run yet, overlay images still render as
+  centered background-size: cover images.
+
+  If header.overlay_images is omitted and the automatic overlay resolver finds
+  /assets/images/overlay/<derived-page-key>.{webp,jpg,png}, this include
+  synthesizes one internal slide from that image. The synthesized slide inherits
+  header.overlay_image_focal_point and header.overlay_image_anchor_point.
+
+  If no overlay image exists, header.overlay_color and header.overlay_filter
+  can still render a color/filter-only overlay.
 
   <derived-page-key> is determined from page.path by:
   1. removing the file extension
@@ -41,15 +78,6 @@
   - _resources/articles/calorie-balance-still-governs-body-composition.md
     -> resources_articles_calorie-balance-still-governs-body-composition
 
-  background_position and mobile_background_position accept any valid CSS
-  background-position string, for example:
-  - center
-  - center top
-  - center 20%
-  - 65% center
-  - center -10px
-  - right 24px top 10px
-
   overlay_title_width and mobile_overlay_title_width accept any valid CSS
   max-width value, for example:
   - 100%
@@ -61,27 +89,75 @@
   If overlay_title_width is omitted, overlay titles use 100% of the overlay
   wrapper. If mobile_overlay_title_width is omitted, it inherits
   overlay_title_width.
+
+  Examples:
+
+  1. Static one-image overlay:
+
+    header:
+      overlay_images:
+        - image: /assets/images/overlay/example.webp
+
+  2. Carousel:
+
+    header:
+      overlay_interval: 3000
+      overlay_images:
+        - image: /assets/images/overlay/example-1.webp
+        - image: /assets/images/overlay/example-2.webp
+
+  3. Top-level focal/anchor defaults inherited by slides:
+
+    header:
+      overlay_image_focal_point: "72% 50%"
+      overlay_image_anchor_point: "66% 50%"
+      overlay_images:
+        - image: /assets/images/overlay/example.webp
+
+  4. Slide-level focal/anchor overrides:
+
+    header:
+      overlay_image_focal_point: "50% 50%"
+      overlay_image_anchor_point: "50% 50%"
+      overlay_images:
+        - image: /assets/images/overlay/example-1.webp
+        - image: /assets/images/overlay/example-2.webp
+          focal_point: "42% 50%"
+          anchor_point: "50% 50%"
+
+  5. Automatic overlay image fallback with focal/anchor values:
+
+    header:
+      overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
+      overlay_image_focal_point: "72% 50%"
+      overlay_image_anchor_point: "66% 50%"
+
+  6. Overlay color/filter with no image:
+
+    header:
+      overlay_color: "#1d2e3f"
+      overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.9), rgba(17, 33, 45, 0.55))
 {% endcomment %}
 {%- assign hero = page.header -%}
 {%- assign overlay_images = hero.overlay_images -%}
 {%- capture auto_overlay_image -%}{% include resolve_page_image.html page=page bucket="overlay" %}{%- endcapture -%}
 {%- assign auto_overlay_image = auto_overlay_image | strip -%}
-{%- assign overlay_image = hero.overlay_image -%}
-{%- assign overlay_position = hero.background_position | default: "center" -%}
-{%- assign mobile_overlay_position = hero.mobile_background_position -%}
 {%- assign overlay_title = hero.overlay_title | default: page.title -%}
 {%- assign overlay_title_width = hero.overlay_title_width | default: "100%" -%}
 {%- assign mobile_overlay_title_width = hero.mobile_overlay_title_width | default: overlay_title_width -%}
+{%- assign overlay_image_focal_point = hero.overlay_image_focal_point | default: "50% 50%" -%}
+{%- assign overlay_image_anchor_point = hero.overlay_image_anchor_point | default: "50% 50%" -%}
+{%- assign overlay_image_count = 0 -%}
 {%- assign has_carousel = false -%}
 
-{%- if overlay_images and overlay_images.size > 1 -%}
+{%- if overlay_images and overlay_images.size > 0 -%}
+  {%- assign overlay_image_count = overlay_images.size -%}
+{%- elsif auto_overlay_image != "" -%}
+  {%- assign overlay_image_count = 1 -%}
+{%- endif -%}
+
+{%- if overlay_image_count > 1 -%}
   {%- assign has_carousel = true -%}
-{%- elsif overlay_images and overlay_images.size == 1 and overlay_image == nil -%}
-  {%- assign overlay_image = overlay_images[0].image -%}
-  {%- assign overlay_position = overlay_images[0].background_position | default: overlay_position -%}
-  {%- assign mobile_overlay_position = overlay_images[0].mobile_background_position | default: mobile_overlay_position -%}
-{%- elsif overlay_image == nil -%}
-  {%- assign overlay_image = auto_overlay_image -%}
 {%- endif -%}
 
 {%- capture overlay_filter_css -%}
@@ -103,30 +179,48 @@
   {%- assign overlay_lead = page.tagline | default: page.excerpt -%}
 {%- endif -%}
 
-{%- if hero.overlay_color or overlay_image or has_carousel -%}
-  {%- assign print_hero_image = overlay_image -%}
-  {%- if has_carousel and overlay_images[0].image -%}
+{%- if hero.overlay_color or overlay_image_count > 0 -%}
+  {%- assign print_hero_image = "" -%}
+  {%- if overlay_images and overlay_images[0].image -%}
     {%- assign print_hero_image = overlay_images[0].image -%}
+  {%- elsif auto_overlay_image != "" -%}
+    {%- assign print_hero_image = auto_overlay_image -%}
   {%- endif -%}
   <div
-    class="page__hero--overlay {% if has_carousel %}ifc-hero-carousel{% else %}ifc-overlay-hero{% endif %}"
-    {% if has_carousel %}data-overlay-carousel data-carousel-interval="{{ hero.overlay_interval | default: 3000 }}"{% endif %}
-    style="--ifc-hero-base-color: {{ hero.overlay_color | default: '#1d2e3f' }}; --ifc-hero-overlay-filter: {{ overlay_filter_css | strip }}; --ifc-overlay-title-width: {{ overlay_title_width }}; --ifc-overlay-title-mobile-width: {{ mobile_overlay_title_width }};{% if overlay_image %} --ifc-hero-image: url('{{ overlay_image | relative_url }}'); --ifc-hero-position: {{ overlay_position }};{% endif %}{% if mobile_overlay_position %} --ifc-hero-mobile-position: {{ mobile_overlay_position }};{% endif %}"
+    class="page__hero--overlay ifc-overlay {% if has_carousel %}ifc-overlay-carousel{% else %}ifc-overlay-hero{% endif %}"
+    {% if overlay_image_count > 0 %}data-overlay{% endif %}
+    {% if has_carousel %}data-overlay-carousel data-overlay-interval="{{ hero.overlay_interval | default: 3000 }}"{% endif %}
+    style="--ifc-overlay-base-color: {{ hero.overlay_color | default: '#1d2e3f' }}; --ifc-overlay-filter: {{ overlay_filter_css | strip }}; --ifc-overlay-title-width: {{ overlay_title_width }}; --ifc-overlay-title-mobile-width: {{ mobile_overlay_title_width }};"
   >
     {% if print_hero_image %}
       <img class="ifc-print-hero-image ifc-print-only" src="{{ print_hero_image | relative_url }}" alt="">
     {% endif %}
 
-    {% if has_carousel %}
-      <div class="ifc-hero-carousel__viewport" aria-hidden="true">
+    {% if overlay_image_count > 0 %}
+      <div class="ifc-overlay-viewport" aria-hidden="true">
         {% for slide in overlay_images %}
+          {%- assign slide_focal_point = slide.focal_point | default: overlay_image_focal_point -%}
+          {%- assign slide_anchor_point = slide.anchor_point | default: overlay_image_anchor_point -%}
           <div
-            class="ifc-hero-carousel__slide{% if forloop.first %} is-active{% endif %}"
-            data-carousel-slide
-            style="background-image: url('{{ slide.image | relative_url }}'); --ifc-bg-position: {{ slide.background_position | default: 'center' }};{% if slide.mobile_background_position %} --ifc-mobile-bg-position: {{ slide.mobile_background_position }};{% endif %}"
+            class="ifc-overlay-slide{% if forloop.first %} is-active{% endif %}"
+            data-overlay-slide
+            data-overlay-image="{{ slide.image | relative_url }}"
+            data-focal-point="{{ slide_focal_point }}"
+            data-anchor-point="{{ slide_anchor_point }}"
+            style="background-image: url('{{ slide.image | relative_url }}');"
             {% unless forloop.first %}aria-hidden="true"{% endunless %}
           ></div>
         {% endfor %}
+        {% unless overlay_images and overlay_images.size > 0 %}
+          <div
+            class="ifc-overlay-slide is-active"
+            data-overlay-slide
+            data-overlay-image="{{ auto_overlay_image | relative_url }}"
+            data-focal-point="{{ overlay_image_focal_point }}"
+            data-anchor-point="{{ overlay_image_anchor_point }}"
+            style="background-image: url('{{ auto_overlay_image | relative_url }}');"
+          ></div>
+        {% endunless %}
       </div>
     {% endif %}
 
@@ -197,7 +291,7 @@
     {% include print_source.html document=page %}
   </div>
 
-  {% if has_carousel %}
+  {% if overlay_image_count > 0 %}
     <script src="{{ '/assets/js/page-hero-carousel.js' | relative_url }}"></script>
   {% endif %}
 {% elsif hero.image %}

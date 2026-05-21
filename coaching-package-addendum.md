@@ -1,7 +1,7 @@
 ---
 title: "Coaching Package Addendum"
 date: 2026-05-16
-last_modified_at: 2026-05-16
+last_modified_at: "2026-05-20"
 permalink: /coaching-package-addendum/
 show_modified_date: true
 show_read_time: true
@@ -12,8 +12,6 @@ toc_widget:
 excerpt: This Coaching Package Addendum is the latest draft. Your Coaching Package Addendum may differ.
 header:
   kicker: Sample
-  # overlay_image: /assets/images/ifc-legal-hero-banner-1.jpg
-  overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
   actions:
     - label: Terms of Service
       url: /terms/
