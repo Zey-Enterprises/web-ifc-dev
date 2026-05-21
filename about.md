@@ -1,10 +1,11 @@
 ---
 title: "About"
 date: "2026-03-30"
-last_modified_at: "2026-05-20"
+last_modified_at: "2026-05-21"
 permalink: /about/
 description: "Arthur Zey is an integrated fitness coach with a background in technology, philosophy, human behavior, nutrition, and physical training."
 excerpt: "A systems-oriented coach with a background in technology, philosophy, human behavior, and physical practice."
+og_type: article
 toc_widget: 
   enabled: true
   min_level: 2

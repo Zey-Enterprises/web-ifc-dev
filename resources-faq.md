@@ -1,9 +1,10 @@
 ---
 title: "Fitness FAQ Library"
 date: "2026-04-23"
-last_modified_at: "2026-05-19"
+last_modified_at: "2026-05-21"
 permalink: /resources/faq/
 excerpt: "Answers to substantive questions about nutrition, training, psychology, philosophy, and integrated fitness."
+og_type: article
 toc_widget: 
   enabled: true
   min_level: 2

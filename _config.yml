@@ -29,6 +29,11 @@ plugins:
 
 facebook:
   app_id: 983167900906148
+  publisher: https://www.facebook.com/IntegratedFitnessCoaching
+
+twitter:
+  username: IntFitCoaching
+
 google_analytics: G-CX08MNNEXZ
 
 include:

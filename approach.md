@@ -1,11 +1,12 @@
 ---
 title: "Coaching Approach"
 date: "2026-04-06"
-last_modified_at: "2026-05-20"
+last_modified_at: "2026-05-21"
 permalink: /approach/
 title: "Coaching Approach"
 description: "How Integrated Fitness Coaching develops body, intellect, and spirit through clear principles, practical execution, and long-term integration."
 excerpt: "Fitness includes physique, performance, and physical health, but in this coaching practice, those belong inside a wider standard: the integrated development of body, intellect, and spirit."
+og_type: article
 toc_widget: 
   enabled: true
   min_level: 2
