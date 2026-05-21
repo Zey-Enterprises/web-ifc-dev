@@ -215,6 +215,11 @@
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
+    object-position: center center !important;
+  }
+
+  .page__hero--overlay .ifc-overlay-viewport {
+    display: none !important;
   }
 
   .page__hero--overlay .wrapper {
