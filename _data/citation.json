@@ -19330,5 +19330,278 @@
       "self-esteem",
       "behavior-change"
     ]
+  },
+  "happ-2022-nmes-vs-conventional-strength-training": {
+    "id": "happ-2022-nmes-vs-conventional-strength-training",
+    "type": "journal-article",
+    "title": "Neuromuscular Electrical Stimulation Training vs. Conventional Strength Training: A Systematic Review and Meta-Analysis of the Effect on Strength Development",
+    "short_title": "NMES Training vs. Conventional Strength Training",
+    "authors": [
+      {
+        "literal": "Kevin A. Happ"
+      },
+      {
+        "literal": "Michael Behringer"
+      }
+    ],
+    "container_title": "Journal of Strength and Conditioning Research",
+    "issued": {
+      "year": 2022
+    },
+    "year": 2022,
+    "doi": "10.1519/JSC.0000000000004119",
+    "doi_newtab": true,
+    "tags": [
+      "hypertrophy",
+      "strength-training",
+      "physical-exercise"
+    ]
+  },
+  "mukherjee-2023-electrical-stimulation-strength-gains": {
+    "id": "mukherjee-2023-electrical-stimulation-strength-gains",
+    "type": "journal-article",
+    "title": "Electrical Stimulation and Muscle Strength Gains in Healthy Adults: A Systematic Review",
+    "short_title": "Electrical Stimulation and Strength Gains",
+    "authors": [
+      {
+        "literal": "Swarup Mukherjee"
+      },
+      {
+        "literal": "Jeryn Ruiwen Fok"
+      },
+      {
+        "literal": "Willem van Mechelen"
+      }
+    ],
+    "container_title": "Journal of Strength and Conditioning Research",
+    "issued": {
+      "year": 2023
+    },
+    "year": 2023,
+    "doi": "10.1519/JSC.0000000000004359",
+    "doi_newtab": true,
+    "tags": [
+      "strength-training",
+      "physical-exercise"
+    ]
+  },
+  "akagi-2023-eight-week-nmes-hypertrophy": {
+    "id": "akagi-2023-eight-week-nmes-hypertrophy",
+    "type": "journal-article",
+    "title": "Eight-week neuromuscular electrical stimulation training produces muscle strength gains and hypertrophy, and partial muscle quality improvement in the knee extensors",
+    "short_title": "Eight-week NMES Training and Hypertrophy",
+    "authors": [
+      {
+        "literal": "Ryota Akagi"
+      },
+      {
+        "literal": "Yusuke Miyokawa"
+      },
+      {
+        "literal": "Daigo Shiozaki"
+      },
+      {
+        "literal": "Yoshinari Yajima"
+      },
+      {
+        "literal": "Koki Yamada"
+      },
+      {
+        "literal": "Kosuke Kano"
+      },
+      {
+        "literal": "Yuto Hashimoto"
+      },
+      {
+        "literal": "Takanobu Okamoto"
+      },
+      {
+        "literal": "Soichi Ando"
+      }
+    ],
+    "container_title": "Journal of Sports Sciences",
+    "issued": {
+      "year": 2023
+    },
+    "year": 2023,
+    "doi": "10.1080/02640414.2024.2318540",
+    "doi_newtab": true,
+    "tags": [
+      "hypertrophy",
+      "strength-training",
+      "physical-exercise"
+    ]
+  },
+  "borzuola-2023-superimposed-nmes-strength-mass": {
+    "id": "borzuola-2023-superimposed-nmes-strength-mass",
+    "type": "journal-article",
+    "title": "Superimposing neuromuscular electrical stimulation onto voluntary contractions to improve muscle strength and mass: A systematic review",
+    "short_title": "Superimposed NMES for Strength and Mass",
+    "authors": [
+      {
+        "literal": "Riccardo Borzuola"
+      },
+      {
+        "literal": "Luca Laudani"
+      },
+      {
+        "literal": "Luciana Labanca"
+      },
+      {
+        "literal": "Andrea Macaluso"
+      }
+    ],
+    "container_title": "European Journal of Sport Science",
+    "issued": {
+      "year": 2023
+    },
+    "year": 2023,
+    "doi": "10.1080/17461391.2022.2104656",
+    "doi_newtab": true,
+    "tags": [
+      "hypertrophy",
+      "strength-training",
+      "physical-exercise"
+    ]
+  },
+  "rodrigues-santana-2023-wbems-body-composition-strength": {
+    "id": "rodrigues-santana-2023-wbems-body-composition-strength",
+    "type": "journal-article",
+    "title": "The effects of whole-body muscle stimulation on body composition and strength parameters: A PRISMA systematic review and meta-analysis",
+    "short_title": "Whole-body Muscle Stimulation, Body Composition, and Strength",
+    "authors": [
+      {
+        "literal": "L. Rodrigues-Santana"
+      },
+      {
+        "literal": "L. Hugo"
+      },
+      {
+        "literal": "J. Pérez-Gómez"
+      },
+      {
+        "literal": "M. A. Hernández-Mocholí"
+      },
+      {
+        "literal": "J. Carlos-Vivas"
+      },
+      {
+        "literal": "P. Saldaña-Cortés"
+      },
+      {
+        "literal": "N. Contreras-Barraza"
+      },
+      {
+        "literal": "J. C. Adsuar"
+      }
+    ],
+    "container_title": "Medicine",
+    "issued": {
+      "year": 2023
+    },
+    "year": 2023,
+    "doi": "10.1097/MD.0000000000032668",
+    "doi_newtab": true,
+    "tags": [
+      "hypertrophy",
+      "body-composition",
+      "strength-training",
+      "physical-exercise"
+    ]
+  },
+  "kemmler-2018-wbems-efficacy-safety": {
+    "id": "kemmler-2018-wbems-efficacy-safety",
+    "type": "journal-article",
+    "title": "Efficacy and Safety of Low Frequency Whole-Body Electromyostimulation (WB-EMS) to Improve Health-Related Outcomes in Non-athletic Adults. A Systematic Review",
+    "short_title": "Efficacy and Safety of Low Frequency WB-EMS",
+    "authors": [
+      {
+        "literal": "Wolfgang Kemmler"
+      },
+      {
+        "literal": "Anja Weissenfels"
+      },
+      {
+        "literal": "Sebastian Willert"
+      },
+      {
+        "literal": "Mahdieh Shojaa"
+      },
+      {
+        "literal": "Simon von Stengel"
+      },
+      {
+        "literal": "André Filipovic"
+      },
+      {
+        "literal": "Heinz Kleinöder"
+      },
+      {
+        "literal": "Joshua Berger"
+      },
+      {
+        "literal": "Michael Fröhlich"
+      }
+    ],
+    "container_title": "Frontiers in Physiology",
+    "issued": {
+      "year": 2018
+    },
+    "year": 2018,
+    "doi": "10.3389/fphys.2018.00573",
+    "doi_newtab": true,
+    "tags": [
+      "hypertrophy",
+      "body-composition",
+      "strength-training",
+      "physical-exercise"
+    ]
+  },
+  "fda-electronic-muscle-stimulators": {
+    "id": "fda-electronic-muscle-stimulators",
+    "type": "webpage",
+    "title": "Electronic Muscle Stimulators",
+    "short_title": "Electronic Muscle Stimulators",
+    "authors": [
+      {
+        "literal": "U.S. Food and Drug Administration"
+      }
+    ],
+    "issued": {
+      "year": 2018
+    },
+    "year": 2018,
+    "url": "https://www.fda.gov/medical-devices/consumer-products/electronic-muscle-stimulators",
+    "url_newtab": true,
+    "organization": "U.S. Food and Drug Administration",
+    "tags": [
+      "physical-exercise",
+      "hypertrophy",
+      "physical-health"
+    ]
+  },
+  "cdc-2025-benefits-of-physical-activity": {
+    "id": "cdc-2025-benefits-of-physical-activity",
+    "type": "webpage",
+    "title": "Benefits of Physical Activity",
+    "short_title": "Benefits of Physical Activity",
+    "authors": [
+      {
+        "literal": "Centers for Disease Control and Prevention"
+      }
+    ],
+    "issued": {
+      "year": 2025
+    },
+    "year": 2025,
+    "url": "https://www.cdc.gov/physical-activity-basics/benefits/index.html",
+    "url_newtab": true,
+    "organization": "Centers for Disease Control and Prevention",
+    "tags": [
+      "physical-exercise",
+      "emotional-regulation",
+      "physical-health",
+      "sleep"
+    ]
   }
 }
