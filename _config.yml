@@ -111,6 +111,7 @@ defaults:
       share: true
       resource_type: faq
       header:
+        og_image: /assets/images/overlay/resources-faq.webp
         overlay_images:
           - image: /assets/images/overlay/resources-faq.webp
         overlay_filter: linear-gradient(135deg, rgba(17, 33, 45, 0.62), rgba(17, 33, 45, 0.24))
