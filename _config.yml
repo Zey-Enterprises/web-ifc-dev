@@ -51,8 +51,7 @@ collections:
     output: true
     permalink: /results/case-studies/:slug/
   faqs:
-    output: true
-    permalink: /faq/library/:slug/
+    output: false
 
 defaults:
   - scope:

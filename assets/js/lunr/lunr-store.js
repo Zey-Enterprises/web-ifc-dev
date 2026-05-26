@@ -14,6 +14,11 @@ var store = [
       {%- else -%}
         {%- assign teaser = site.teaser -%}
       {%- endif -%}
+      {%- assign search_url = doc.url -%}
+      {%- if c.label == "faqs" -%}
+        {%- assign faq_anchor = doc.title | slugify -%}
+        {%- assign search_url = "/faq/#" | append: faq_anchor -%}
+      {%- endif -%}
       {
         "title": {{ doc.title | jsonify }},
         "excerpt":
@@ -29,7 +34,7 @@ var store = [
           {%- endif -%}
         "categories": {{ doc.categories | jsonify }},
         "tags": {{ doc.tags | jsonify }},
-        "url": {{ doc.url | relative_url | jsonify }},
+        "url": {{ search_url | relative_url | jsonify }},
         "teaser": {{ teaser | relative_url | jsonify }}
       }{%- unless forloop.last and l -%},{%- endunless -%}
     {%- endfor -%}
