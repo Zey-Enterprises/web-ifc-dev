@@ -1,0 +1,69 @@
+{%- assign view = include.view -%}
+{%- assign view_items = view.items -%}
+{%- assign view_item_count = view_items.size | default: 0 -%}
+{%- assign view_loop = view.loop | default: false -%}
+{%- assign all_items_are_images = true -%}
+{%- for view_item in view_items -%}
+  {%- assign item_type = view_item.type | default: "" | downcase | strip -%}
+  {%- unless item_type == "image" and view_item.url -%}
+    {%- assign all_items_are_images = false -%}
+  {%- endunless -%}
+{%- endfor -%}
+
+{%- if view_item_count == 1 -%}
+  {%- assign view_item = view_items | first -%}
+  <div class="ifc-visual-render ifc-visual-render--single">
+    {% include visual_media_render_item.html item=view_item index=1 %}
+  </div>
+{%- elsif view_item_count > 1 and all_items_are_images -%}
+  <div class="ifc-visual-carousel" data-visual-carousel data-visual-carousel-loop="{{ view_loop }}" tabindex="0" aria-label="IFC image carousel">
+    <div class="ifc-visual-carousel__viewport" data-visual-carousel-viewport>
+      <div class="ifc-visual-carousel__track" data-visual-carousel-track>
+        {%- for view_item in view_items -%}
+          {%- assign fallback_alt = page.tagline | default: page.excerpt | default: page.description | default: page.title | strip_html | strip -%}
+          {%- assign image_alt = view_item.alt | default: fallback_alt -%}
+          <figure
+            class="ifc-visual-carousel__slide{% if forloop.first %} is-active{% endif %}"
+            data-visual-carousel-slide
+            aria-label="Slide {{ forloop.index }} of {{ forloop.length }}"
+          >
+            <img
+              src="{{ view_item.url | relative_url }}"
+              alt="{{ image_alt | escape_once }}"
+              loading="eager"
+              decoding="async"
+            >
+            {%- if view_item.caption -%}
+              <figcaption>{{ view_item.caption }}</figcaption>
+            {%- endif -%}
+          </figure>
+        {%- endfor -%}
+      </div>
+    </div>
+    <div class="ifc-visual-carousel__controls" aria-label="Carousel controls">
+      <button class="ifc-visual-carousel__button" type="button" data-visual-carousel-first aria-label="First slide">
+        <i class="fas fa-step-backward" aria-hidden="true"></i>
+      </button>
+      <button class="ifc-visual-carousel__button" type="button" data-visual-carousel-prev aria-label="Previous slide">
+        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+      </button>
+      <span class="ifc-visual-carousel__count" data-visual-carousel-count aria-live="polite">1 / {{ view_item_count }}</span>
+      <button class="ifc-visual-carousel__button" type="button" data-visual-carousel-next aria-label="Next slide">
+        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+      </button>
+      <button class="ifc-visual-carousel__button" type="button" data-visual-carousel-last aria-label="Last slide">
+        <i class="fas fa-step-forward" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+{%- elsif view_item_count > 1 -%}
+  <div class="ifc-visual-render ifc-visual-render--stack">
+    {%- for view_item in view_items -%}
+      {% include visual_media_render_item.html item=view_item index=forloop.index %}
+    {%- endfor -%}
+  </div>
+{%- else -%}
+  <div class="notice--warning">
+    Development warning: this local visual media view has no <code>items</code> entries.
+  </div>
+{%- endif -%}

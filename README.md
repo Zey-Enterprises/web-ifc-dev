@@ -7,15 +7,15 @@ GitHub Pages compatible Jekyll site for **Integrated Fitness Coaching**, built o
 - Jekyll with GitHub Pages-compatible plugins
 - Minimal Mistakes via `remote_theme`
 - Markdown-first collections for durable site content
-- JSON and YAML data files for glossary, citations, tags, and visual media
+- JSON and YAML data files for glossary, citations, tags, and reusable platform rules
 
 ## Resource Architecture
 
 The site now uses a single Jekyll collection for user-facing resources:
 
 - [`_resources/articles/`](/Users/arthur/Zey Insurance Group Dropbox/Arthur Zey/Backups/GitHub/zey-enterprises/web-ifc/_resources/articles) for every written resource
-- [`_resources/visual-media/`](/Users/arthur/Zey Insurance Group Dropbox/Arthur Zey/Backups/GitHub/zey-enterprises/web-ifc/_resources/visual-media) for local visual-media detail pages
-- [`_data/visual-media.json`](/Users/arthur/Zey Insurance Group Dropbox/Arthur Zey/Backups/GitHub/zey-enterprises/web-ifc/_data/visual-media.json) as the canonical visual-media index
+- [`_resources/visual-media/`](/Users/arthur/Zey Insurance Group Dropbox/Arthur Zey/Backups/GitHub/zey-enterprises/web-ifc/_resources/visual-media) for visual-media detail pages and canonical visual-media metadata
+- [`_data/platforms.yml`](/Users/arthur/Zey Insurance Group Dropbox/Arthur Zey/Backups/GitHub/zey-enterprises/web-ifc/_data/platforms.yml) for reusable platform labels, icons, URL templates, and share behavior
 - [`_data/glossary.json`](/Users/arthur/Zey Insurance Group Dropbox/Arthur Zey/Backups/GitHub/zey-enterprises/web-ifc/_data/glossary.json) for glossary entries
 - [`_data/citation.json`](/Users/arthur/Zey Insurance Group Dropbox/Arthur Zey/Backups/GitHub/zey-enterprises/web-ifc/_data/citation.json) for reusable citations
 - [`_data/tags.yml`](/Users/arthur/Zey Insurance Group Dropbox/Arthur Zey/Backups/GitHub/zey-enterprises/web-ifc/_data/tags.yml) for the canonical tag registry
@@ -24,7 +24,7 @@ Collection routing is configured in [`_config.yml`](/Users/arthur/Zey Insurance 
 
 - The canonical browser lives at `/resources/`
 - Written article detail pages live at `/resources/articles/<slug>/`
-- Visual-media detail pages live at `/resources/visual-media/<id>/`
+- Visual-media detail pages live at `/resources/visual-media/<slug>/`
 - `/resources/articles/` and `/resources/visual-media/` are compatibility redirects into canonical `/resources/?...` filters
 
 The legacy `_guides`, `_posts`, and `_media` split has been consolidated into this unified system. The following systems are intentionally unchanged:
@@ -99,60 +99,7 @@ tags:
 
 ## Adding A Visual Media Item
 
-Visual media has two parts:
-
-1. Add the canonical record to [`_data/visual-media.json`](/Users/arthur/Zey Insurance Group Dropbox/Arthur Zey/Backups/GitHub/zey-enterprises/web-ifc/_data/visual-media.json).
-2. Add a matching local page in [`_resources/visual-media/`](/Users/arthur/Zey Insurance Group Dropbox/Arthur Zey/Backups/GitHub/zey-enterprises/web-ifc/_resources/visual-media).
-
-Each `visual-media.json` item must use this schema:
-
-- `id`
-- `title`
-- `description`
-- `format`
-  - `image` or `video`
-- `sub-format`
-  - optional
-  - `short-video` or `long-video`
-- `domains`
-- `concerns`
-- `tags`
-- `published_at`
-- `local_url`
-- `platforms`
-  - `platform`
-  - `url`
-- `thumbnail`
-- `featured`
-- `related_resources`
-- `related_media`
-
-Example:
-
-```json
-{
-  "id": "meal-structure-for-fat-loss",
-  "title": "Meal Structure For Fat Loss",
-  "description": "A static visual on simple meal architecture that improves satiety and reduces impulsive drift during a deficit.",
-  "format": "image",
-  "domains": ["diet", "psychology"],
-  "concerns": ["fat-loss", "adherence", "busy-life"],
-  "tags": ["meal-structure", "satiety", "protein", "environment-design"],
-  "published_at": "2026-03-22",
-  "local_url": "meal-structure-for-fat-loss",
-  "platforms": [
-    { "platform": "Instagram", "url": "https://example.com" }
-  ],
-  "thumbnail": "/assets/images/example.jpg",
-  "featured": false,
-  "related_resources": ["nutrition-foundations"],
-  "related_media": ["protein-distribution-clip"]
-}
-```
-
-## Creating The Local Visual Media Page
-
-The local page filename must match the `id` from `visual-media.json`.
+Visual media is front-matter only. The Markdown file in [`_resources/visual-media/`](/Users/arthur/Zey Insurance Group Dropbox/Arthur Zey/Backups/GitHub/zey-enterprises/web-ifc/_resources/visual-media) is the canonical record, and its slug comes from the filename.
 
 Example file:
 
@@ -162,14 +109,44 @@ The page URL becomes:
 
 - `/resources/visual-media/meal-structure-for-fat-loss/`
 
-The page resolves its content by matching `page.slug` to the `id` in `visual-media.json`. If no match exists, the page renders a visible development warning.
+Use front matter like this:
 
-## How `visual-media.json` Works
+```yaml
+---
+title: "Meal Structure For Fat Loss"
+date: 2026-03-22
+last_modified_at: 2026-03-22
+excerpt: "A static visual on simple meal architecture that improves satiety and reduces impulsive drift during a deficit."
+domains:
+  - diet
+  - psychology
+concerns:
+  - fat-loss
+  - adherence
+tags:
+  - meal-structure
+  - satiety
+  - protein
+thumbnail: /assets/images/example.jpg
+views:
+  - type: local
+    default: true
+    items:
+      - type: image
+        url: /assets/images/example.jpg
+        alt: "A simple meal structure for fat loss."
+  - type: platform
+    platform: instagram
+    variant: post
+    id: EXAMPLEID
+featured: false
+related_resources:
+  - nutrition-foundations
+related_media: []
+---
+```
 
-- It is the canonical metadata index for all visual media surfaced through `/resources/`
-- Listing filters read from its `domains`, `concerns`, and `tags`
-- Detail pages pull title, description, platform links, related resources, and related media from it
-- `local_url` is the intended local slug or filename, not a full URL
+`views` controls the available ways to view the visual media. Use `type: local` for IFC-hosted images or carousels, and `type: platform` for external platform views such as Instagram, Facebook, X, YouTube, or LinkedIn. Platform URL templates live in `_data/platforms.yml`; use an explicit `url` on a platform view only when it cannot be generated from `platform`, `variant`, `id`, optional `urn`, and optional `account`.
 
 ## Glossary Linking Via Tags
 

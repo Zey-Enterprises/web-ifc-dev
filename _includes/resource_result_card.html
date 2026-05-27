@@ -1,0 +1,149 @@
+{%- assign item = include.document | default: include.item -%}
+{%- assign show_taxonomy = true -%}
+{%- if include.show_taxonomy == false -%}
+  {%- assign show_taxonomy = false -%}
+{%- endif -%}
+{%- assign data_attrs = true -%}
+{%- if include.data_attrs == false -%}
+  {%- assign data_attrs = false -%}
+{%- endif -%}
+{%- assign title_level = include.title_level | default: 2 -%}
+{%- assign result_format_value = "article" -%}
+{%- assign result_type_label = "Article" -%}
+{%- assign result_published = item.date -%}
+{%- assign result_updated = item.last_modified_at | default: item.date -%}
+{%- assign result_author_name = nil -%}
+{%- assign result_source_summary = item.description | default: item.excerpt -%}
+{%- capture result_summary -%}{% include word_boundary_truncate.html text=result_source_summary max=180 %}{%- endcapture -%}
+{%- assign result_thumbnail = "" -%}
+{%- assign result_publication_status = item.publication_status.status | default: item.publication_status -%}
+{%- assign result_is_coming_soon = false -%}
+{%- if result_publication_status == "coming-soon" -%}
+  {%- assign result_is_coming_soon = true -%}
+{%- endif -%}
+{%- assign result_publication_sort_order = item.publication_status.sort_order | default: 9999 -%}
+
+{%- if item.author -%}
+  {%- if site.data.authors and site.data.authors[item.author] -%}
+    {%- assign result_author_name = site.data.authors[item.author].name | default: site.data.authors[item.author] -%}
+  {%- else -%}
+    {%- assign result_author_name = item.author -%}
+  {%- endif -%}
+{%- elsif item.authors and item.authors.size > 0 -%}
+  {%- assign primary_author = item.authors[0] -%}
+  {%- if site.data.authors and site.data.authors[primary_author] -%}
+    {%- assign result_author_name = site.data.authors[primary_author].name | default: site.data.authors[primary_author] -%}
+  {%- else -%}
+    {%- assign result_author_name = primary_author -%}
+  {%- endif -%}
+{%- elsif site.author -%}
+  {%- assign result_author_name = site.author.name | default: site.author -%}
+{%- endif -%}
+
+{%- if item.format == "visual-media" -%}
+  {%- capture result_format_value -%}{% include visual_media_type.html document=item %}{%- endcapture -%}
+  {%- assign result_format_value = result_format_value | strip -%}
+  {%- capture result_type_label -%}{% include visual_media_type_label.html document=item %}{%- endcapture -%}
+  {%- assign result_type_label = result_type_label | strip -%}
+  {%- capture result_thumbnail -%}{% include resolve_page_image.html page=item bucket="visual-media/thumbnails" %}{%- endcapture -%}
+  {%- assign result_thumbnail = result_thumbnail | strip -%}
+{%- elsif item.format == "audio" -%}
+  {%- assign result_format_value = "audio" -%}
+  {%- assign result_type_label = "Audio" -%}
+{%- endif -%}
+
+{%- if result_is_coming_soon -%}
+  {%- assign result_published = nil -%}
+  {%- assign result_updated = nil -%}
+{%- endif -%}
+
+<a
+  class="ifc-resource-result{% if show_taxonomy != true %} ifc-resource-result--related{% endif %}"
+  href="{{ item.url | relative_url }}"
+  {%- if data_attrs == true %}
+  data-result-item
+  data-title="{{ item.title | escape }}"
+  data-format="{{ result_format_value }}"
+  data-domain="{{ item.domains | join: '|' }}"
+  data-concern="{{ item.concerns | join: '|' }}"
+  data-tags="{{ item.tags | join: '|' }}"
+  data-publication-status="{{ result_publication_status }}"
+  data-publication-order="{% if result_is_coming_soon %}{{ result_publication_sort_order }}{% endif %}"
+  data-published="{% if result_published %}{{ result_published | date_to_xmlschema }}{% endif %}"
+  data-updated="{% if result_updated %}{{ result_updated | date_to_xmlschema }}{% endif %}"
+  {%- endif %}
+>
+  <div class="ifc-resource-result__meta">
+    <p class="ifc-resource-card__eyebrow">{{ result_type_label }}</p>
+    {%- if result_thumbnail != "" -%}
+      <span class="ifc-resource-result__thumbnail" aria-hidden="true">
+        <img src="{{ result_thumbnail | relative_url }}" alt="" loading="lazy" decoding="async">
+      </span>
+    {%- endif -%}
+    {%- if result_is_coming_soon -%}
+      {% include publication_status_badge.html document=item variant="card" %}
+    {%- endif -%}
+    {%- if result_format_value == "article" -%}
+      <ul class="ifc-resource-result__meta-list ifc-resource-result__meta-list--article" role="list">
+        {%- if result_author_name -%}
+          <li class="ifc-resource-result__meta-item">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            <span>{{ result_author_name }}</span>
+          </li>
+        {%- endif -%}
+        {%- if result_published -%}
+          <li class="ifc-resource-result__meta-item" title="Published date">
+            <i class="far fa-calendar-alt" aria-hidden="true"></i>
+            <time datetime="{{ result_published | date_to_xmlschema }}">{{ result_published | date: site.date_format }}</time>
+          </li>
+        {%- endif -%}
+        {%- if item.last_modified_at and result_is_coming_soon != true -%}
+          <li class="ifc-resource-result__meta-item" title="Last modified date">
+            <i class="fas fa-history" aria-hidden="true"></i>
+            <time datetime="{{ item.last_modified_at | date_to_xmlschema }}">{{ item.last_modified_at | date: site.date_format }}</time>
+          </li>
+        {%- endif -%}
+      </ul>
+    {%- elsif result_published -%}
+      <ul class="ifc-resource-result__meta-list" role="list">
+        <li class="ifc-resource-result__meta-item" title="Published date">
+          <i class="far fa-calendar-alt" aria-hidden="true"></i>
+          <time datetime="{{ result_published | date_to_xmlschema }}">{{ result_published | date: site.date_format }}</time>
+        </li>
+      </ul>
+    {%- endif -%}
+  </div>
+  <div class="ifc-resource-result__body">
+    <h{{ title_level }} class="ifc-resource-result__title">{{ item.title }}</h{{ title_level }}>
+    <p class="ifc-resource-result__summary">{{ result_summary | strip }}</p>
+    {%- if show_taxonomy == true -%}
+      <div class="ifc-resource-result__taxonomy">
+        {%- if item.domains and item.domains.size > 0 -%}
+          <div class="ifc-taxonomy-pills">
+            <span class="ifc-resource-result__print-label ifc-print-only">Domains:</span>
+            {%- for domain in item.domains -%}
+              <span class="ifc-taxonomy-pill">{{ domain | replace: "-", " " | capitalize }}</span>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+        {%- if item.concerns and item.concerns.size > 0 -%}
+          <div class="ifc-taxonomy-pills">
+            <span class="ifc-resource-result__print-label ifc-print-only">Concerns:</span>
+            {%- for concern in item.concerns -%}
+              <span class="ifc-taxonomy-pill ifc-taxonomy-pill--soft">{{ concern | replace: "-", " " | capitalize }}</span>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+        {%- if item.tags and item.tags.size > 0 -%}
+          <div class="ifc-taxonomy-pills ifc-resource-result__print-tags ifc-print-only">
+            <span class="ifc-resource-result__print-label">Tags:</span>
+            {%- for tag_slug in item.tags -%}
+              {%- assign tag_data = site.data.tags[tag_slug] -%}
+              <span class="ifc-taxonomy-pill ifc-taxonomy-pill--light">{{ tag_data.label | default: tag_slug }}</span>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+</a>

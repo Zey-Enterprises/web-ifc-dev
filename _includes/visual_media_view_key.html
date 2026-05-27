@@ -1,0 +1,9 @@
+{%- assign view = include.view -%}
+{%- assign view_type = view.type | default: "" | downcase | strip -%}
+{%- if view_type == "local" -%}
+  local
+{%- elsif view_type == "platform" -%}
+  {%- include platform_key.html platform=view.platform -%}
+{%- else -%}
+  {{- view_type -}}
+{%- endif -%}

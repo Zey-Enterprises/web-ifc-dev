@@ -1,0 +1,198 @@
+{%- assign view = include.view -%}
+{%- capture platform_key_capture -%}{% include platform_key.html platform=view.platform %}{%- endcapture -%}
+{%- assign platform_key = platform_key_capture | strip -%}
+{%- assign platform_meta = site.data.platforms[platform_key] -%}
+{%- assign platform_label = platform_meta.label | default: view.platform | default: "Platform" -%}
+{%- assign platform_icon = platform_meta.icon | default: "fas fa-external-link-alt" -%}
+{%- assign platform_variant = view.variant | default: "post" | downcase | strip -%}
+{%- assign variant_data = platform_meta.variants[platform_variant] -%}
+{%- capture variant_label_capture -%}{% include platform_variant_label.html variant=platform_variant %}{%- endcapture -%}
+{%- assign variant_label = variant_label_capture | strip -%}
+{%- capture platform_url -%}{% include platform_url.html entry=view %}{%- endcapture -%}
+{%- assign platform_url = platform_url | strip -%}
+{%- capture embed_url -%}{% include platform_url.html entry=view mode="embed" %}{%- endcapture -%}
+{%- assign embed_url = embed_url | strip -%}
+{%- assign is_secondary = include.secondary | default: false -%}
+{%- assign embed_supported = variant_data.embed_supported | default: false -%}
+{%- assign embed_width_raw = view.embed_width | default: variant_data.embed_width_default | default: platform_meta.embed.default_width | default: 720 -%}
+{%- assign embed_height_raw = view.embed_height | default: variant_data.embed_height_default | default: platform_meta.embed.default_height | default: "" -%}
+{%- assign embed_width = embed_width_raw | append: "" | strip -%}
+{%- assign embed_height = embed_height_raw | append: "" | strip -%}
+{%- assign embed_width_number = embed_width | replace: "px", "" | replace: "rem", "" | replace: "%", "" | replace: "vw", "" | replace: "vh", "" | strip -%}
+{%- assign embed_height_number = embed_height | replace: "px", "" | replace: "rem", "" | replace: "%", "" | replace: "vw", "" | replace: "vh", "" | strip -%}
+{%- if embed_width != "" and embed_width contains "px" -%}
+  {%- assign embed_width_value = embed_width -%}
+{%- elsif embed_width != "" and embed_width contains "rem" -%}
+  {%- assign embed_width_value = embed_width -%}
+{%- elsif embed_width != "" and embed_width contains "%" -%}
+  {%- assign embed_width_value = embed_width -%}
+{%- elsif embed_width != "" and embed_width contains "vw" -%}
+  {%- assign embed_width_value = embed_width -%}
+{%- elsif embed_width != "" and embed_width contains "vh" -%}
+  {%- assign embed_width_value = embed_width -%}
+{%- elsif embed_width != "" -%}
+  {%- assign embed_width_value = embed_width | append: "px" -%}
+{%- else -%}
+  {%- assign embed_width_value = "" -%}
+{%- endif -%}
+{%- if embed_height != "" and embed_height contains "px" -%}
+  {%- assign embed_height_value = embed_height -%}
+{%- elsif embed_height != "" and embed_height contains "rem" -%}
+  {%- assign embed_height_value = embed_height -%}
+{%- elsif embed_height != "" and embed_height contains "%" -%}
+  {%- assign embed_height_value = embed_height -%}
+{%- elsif embed_height != "" and embed_height contains "vw" -%}
+  {%- assign embed_height_value = embed_height -%}
+{%- elsif embed_height != "" and embed_height contains "vh" -%}
+  {%- assign embed_height_value = embed_height -%}
+{%- elsif embed_height != "" -%}
+  {%- assign embed_height_value = embed_height | append: "px" -%}
+{%- else -%}
+  {%- assign embed_height_value = "" -%}
+{%- endif -%}
+{%- capture embed_style -%}
+  {%- if embed_width_value != "" -%}--ifc-platform-embed-width: {{ embed_width_value }};{%- endif -%}
+  {%- if embed_height_value != "" -%}--ifc-platform-embed-height: {{ embed_height_value }};{%- endif -%}
+{%- endcapture -%}
+{%- assign embed_style = embed_style | strip -%}
+{%- capture embed_shell_attrs -%}data-visual-embed-shell data-visual-platform="{{ platform_key }}" data-visual-embed-state="loading"{%- endcapture -%}
+{%- assign embed_shell_attrs = embed_shell_attrs | strip -%}
+{%- assign embed_data_attrs = "" -%}
+{%- if embed_width_value != "" -%}
+  {%- capture embed_data_attrs -%}data-visual-embed-width="{{ embed_width_value }}"{%- endcapture -%}
+{%- endif -%}
+{%- if embed_height_value != "" -%}
+  {%- capture embed_data_attrs -%}{{ embed_data_attrs }} data-visual-embed-height="{{ embed_height_value }}"{%- endcapture -%}
+{%- endif -%}
+{%- assign embed_data_attrs = embed_data_attrs | strip -%}
+
+{%- capture fallback_link -%}
+  {%- if platform_url != "" -%}
+    <div class="ifc-visual-platform-render__action{% if is_secondary %} ifc-visual-platform-render__action--secondary{% endif %}">
+      {%- if platform_key == "instagram" and platform_variant == "highlight" -%}
+        {%- assign action_label = "View Instagram Story&nbsp;&nbsp;&nbsp;" -%}
+      {%- elsif platform_key == "youtube" -%}
+        {%- assign action_label = "Watch on YouTube&nbsp;&nbsp;&nbsp;" -%}
+      {%- else -%}
+        {%- assign action_label = "View on " | append: platform_label | append: "&nbsp;&nbsp;&nbsp;" -%}
+      {%- endif -%}
+      {% include double_icon_button.html href=platform_url label=action_label left_icon=platform_icon left_tint=false right_icon="fas fa-external-link-alt" newtab=true width="18rem" stack=true alignment="center" container_alignment="center" %}
+    </div>
+  {%- endif -%}
+{%- endcapture -%}
+{%- assign fallback_link = fallback_link | strip -%}
+{%- capture loading_indicator -%}
+  <div class="ifc-visual-platform-render__loading" aria-live="polite">
+    <span class="ifc-visual-platform-render__loading-spinner" aria-hidden="true"></span>
+    <span>Loading {{ platform_label}} post...</span>
+  </div>
+{%- endcapture -%}
+{%- assign loading_indicator = loading_indicator | strip -%}
+
+{%- if platform_key == "instagram" and platform_variant == "highlight" and platform_url != "" and is_secondary -%}
+  {{ fallback_link }}
+{%- elsif view.embed_html -%}
+  <div class="ifc-visual-platform-render ifc-visual-platform-render--{{ platform_key }}" {{ embed_shell_attrs }}{% if embed_data_attrs != "" %} {{ embed_data_attrs }}{% endif %}{% if embed_style != "" %} style="{{ embed_style }}"{% endif %}>
+    {{ loading_indicator }}
+    <div class="ifc-visual-embed ifc-visual-embed--custom" data-platform-embed="{{ platform_key }}">
+      {{ view.embed_html }}
+    </div>
+    {{ fallback_link }}
+  </div>
+{%- elsif platform_key == "youtube" and embed_url != "" -%}
+  <div class="ifc-visual-platform-render ifc-visual-platform-render--youtube" {{ embed_shell_attrs }}{% if embed_data_attrs != "" %} {{ embed_data_attrs }}{% endif %}{% if embed_style != "" %} style="{{ embed_style }}"{% endif %}>
+    {{ loading_indicator }}
+    <div class="ifc-visual-render__video" data-visual-render-type="youtube">
+      <iframe
+        src="{{ embed_url }}"
+        title="{{ view.title | default: page.title | escape_once }}"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    {{ fallback_link }}
+  </div>
+{%- elsif platform_key == "linkedin" and platform_variant == "post" and embed_url != "" and is_secondary != true -%}
+  <div class="ifc-visual-platform-render ifc-visual-platform-render--linkedin" {{ embed_shell_attrs }}{% if embed_data_attrs != "" %} {{ embed_data_attrs }}{% endif %}{% if embed_style != "" %} style="{{ embed_style }}"{% endif %}>
+    {{ loading_indicator }}
+    <div class="ifc-visual-embed ifc-visual-embed--iframe ifc-visual-embed--linkedin" data-platform-embed="linkedin">
+      <iframe
+        src="{{ embed_url }}"
+        title="{{ view.title | default: page.title | escape_once }} on LinkedIn"
+        width="{{ embed_width_number }}"
+        height="{{ embed_height_number }}"
+        loading="lazy"
+        allowfullscreen
+      ></iframe>
+    </div>
+    {{ fallback_link }}
+  </div>
+{%- elsif platform_key == "facebook" and platform_variant == "post" and platform_url != "" and embed_supported and is_secondary != true -%}
+  <div class="ifc-visual-platform-render ifc-visual-platform-render--facebook" {{ embed_shell_attrs }}{% if embed_data_attrs != "" %} {{ embed_data_attrs }}{% endif %}{% if embed_style != "" %} style="{{ embed_style }}"{% endif %}>
+    {{ loading_indicator }}
+    <div
+      class="ifc-visual-embed ifc-visual-embed--facebook fb-post"
+      data-platform-embed="facebook"
+      data-href="{{ platform_url }}"
+      data-width="{{ embed_width_number | default: 700 }}"
+      data-show-text="true"
+    ></div>
+    {{ fallback_link }}
+  </div>
+{%- elsif platform_key == "instagram" and platform_url != "" and embed_supported and is_secondary != true -%}
+  <div class="ifc-visual-platform-render ifc-visual-platform-render--instagram" {{ embed_shell_attrs }}{% if embed_data_attrs != "" %} {{ embed_data_attrs }}{% endif %}{% if embed_style != "" %} style="{{ embed_style }}"{% endif %}>
+    {{ loading_indicator }}
+    <blockquote
+      class="ifc-visual-embed ifc-visual-embed--instagram instagram-media"
+      data-platform-embed="instagram"
+      data-instgrm-permalink="{{ platform_url }}"
+      data-instgrm-version="14"
+      style="max-width: min(100%, {{ embed_width_value }}); width: min(100%, {{ embed_width_value }});"
+    ></blockquote>
+    {{ fallback_link }}
+  </div>
+{%- elsif platform_key == "x" and platform_variant == "post" and platform_url != "" and embed_supported and is_secondary != true -%}
+  <div class="ifc-visual-platform-render ifc-visual-platform-render--x" {{ embed_shell_attrs }}{% if embed_data_attrs != "" %} {{ embed_data_attrs }}{% endif %}{% if embed_style != "" %} style="{{ embed_style }}"{% endif %}>
+    {{ loading_indicator }}
+    <blockquote class="ifc-visual-embed ifc-visual-embed--x twitter-tweet" data-platform-embed="x" data-width="{{ embed_width_number | default: 550 }}">
+      <a href="{{ platform_url }}"></a>
+    </blockquote>
+    {{ fallback_link }}
+  </div>
+{%- elsif platform_url != "" -%}
+  <article class="ifc-visual-platform-card{% if is_secondary %} ifc-visual-platform-card--secondary{% endif %}">
+    <div class="ifc-visual-platform-card__icon" aria-hidden="true">
+      <i class="{{ platform_icon }}"></i>
+    </div>
+    <div class="ifc-visual-platform-card__body">
+      <p class="ifc-resource-card__eyebrow">{{ platform_label }} {{ variant_label }}</p>
+      <h3>
+        {%- if is_secondary -%}
+          Also available as a {{ variant_label }}
+        {%- elsif platform_key == "youtube" -%}
+          Watch this {{ variant_label }} on {{ platform_label }}
+        {%- else -%}
+          View this {{ variant_label }} on {{ platform_label }}
+        {%- endif -%}
+      </h3>
+      <p>Open the original platform view in a new tab.</p>
+      {{ fallback_link }}
+    </div>
+  </article>
+{%- elsif jekyll.environment != "production" -%}
+  <div class="notice--warning">
+    Development warning: {{ platform_label }} {{ variant_label }} view is missing a resolvable URL.
+  </div>
+{%- else -%}
+  <article class="ifc-visual-platform-card ifc-visual-platform-card--unavailable">
+    <div class="ifc-visual-platform-card__icon" aria-hidden="true">
+      <i class="{{ platform_icon }}"></i>
+    </div>
+    <div class="ifc-visual-platform-card__body">
+      <p class="ifc-resource-card__eyebrow">{{ platform_label }}</p>
+      <h3>Platform view unavailable</h3>
+      <p>This platform view is listed but does not currently have a public URL.</p>
+    </div>
+  </article>
+{%- endif -%}

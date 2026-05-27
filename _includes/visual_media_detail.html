@@ -1,86 +1,186 @@
-{% assign media_item = site.data.visual-media | where: "id", page.slug | first %}
+{%- assign visual_views = page.views -%}
+{%- assign visual_view_count = visual_views.size | default: 0 -%}
 
-{% if media_item %}
-  <div class="ifc-detail-stack">
-    <p class="ifc-resource-card__eyebrow">Visual media</p>
-    <h1>{{ media_item.title }}</h1>
-    <p class="ifc-lead">{{ media_item.description }}</p>
+<div class="ifc-visual-media">
+  {%- if visual_view_count > 0 -%}
+    {%- assign uses_facebook_embed = false -%}
+    {%- for view in visual_views -%}
+      {%- capture embed_view_key_capture -%}{% include visual_media_view_key.html view=view %}{%- endcapture -%}
+      {%- assign embed_view_key = embed_view_key_capture | strip -%}
+      {%- assign embed_view_variant = view.variant | default: "post" | downcase | strip -%}
+      {%- if embed_view_key == "facebook" and embed_view_variant == "post" -%}
+        {%- assign uses_facebook_embed = true -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- assign default_group_key = "" -%}
+    {%- for view in visual_views -%}
+      {%- if view.default and default_group_key == "" -%}
+        {%- capture default_group_key_capture -%}{% include visual_media_view_key.html view=view %}{%- endcapture -%}
+        {%- assign default_group_key = default_group_key_capture | strip -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if default_group_key == "" -%}
+      {%- assign first_view = visual_views | first -%}
+      {%- capture default_group_key_capture -%}{% include visual_media_view_key.html view=first_view %}{%- endcapture -%}
+      {%- assign default_group_key = default_group_key_capture | strip -%}
+    {%- endif -%}
 
-    <div class="ifc-grid">
-      <div class="ifc-panel">
-        <h2>Watch Or View</h2>
-        <div class="ifc-platform-list">
-          {% for platform in media_item.platforms %}
-            <a class="ifc-card-link" href="{{ platform.url }}" target="_blank" rel="noopener">
-              <strong>{{ platform.platform }}</strong>
-              <p>{{ media_item.title }}</p>
-            </a>
-          {% endfor %}
+    {%- if uses_facebook_embed -%}
+      <div id="fb-root"></div>
+    {%- endif -%}
+    <section class="ifc-visual-viewer" data-visual-viewer aria-label="Visual media views">
+      <div class="ifc-visual-tabs">
+        <div class="ifc-visual-tabs__rail" role="tablist" aria-label="Available visual media views">
+          {%- assign rendered_tab_keys = "|" -%}
+          {%- for view in visual_views -%}
+            {%- capture view_group_key_capture -%}{% include visual_media_view_key.html view=view %}{%- endcapture -%}
+            {%- assign view_group_key = view_group_key_capture | strip -%}
+            {%- assign view_group_marker = "|" | append: view_group_key | append: "|" -%}
+            {%- unless rendered_tab_keys contains view_group_marker -%}
+              {%- assign rendered_tab_keys = rendered_tab_keys | append: view_group_key | append: "|" -%}
+              {%- assign view_meta = site.data.platforms[view_group_key] -%}
+              {%- assign view_label = view_meta.label | default: view.platform | default: view_group_key | default: "View" -%}
+              {%- assign view_icon = view_meta.icon | default: "fas fa-external-link-alt" -%}
+              {%- assign panel_id = page.slug | append: "-visual-view-" | append: view_group_key -%}
+              {%- assign tab_id = panel_id | append: "-tab" -%}
+              {%- assign is_active_view = false -%}
+              {%- if view_group_key == default_group_key -%}
+                {%- assign is_active_view = true -%}
+              {%- endif -%}
+              <button
+                class="ifc-visual-tab{% if is_active_view %} is-active{% endif %}"
+                id="{{ tab_id }}"
+                type="button"
+                role="tab"
+                aria-selected="{% if is_active_view %}true{% else %}false{% endif %}"
+                aria-controls="{{ panel_id }}"
+                tabindex="{% if is_active_view %}0{% else %}-1{% endif %}"
+                title="{{ view_label | escape_once }}"
+                aria-label="{{ view_label | escape_once }}"
+                data-visual-tab
+                data-visual-tab-key="{{ view_group_key }}"
+              >
+                <i class="{{ view_icon }}" aria-hidden="true"></i>
+                <span class="ifc-visual-tab__label">{{ view_label }}</span>
+              </button>
+            {%- endunless -%}
+          {%- endfor -%}
         </div>
       </div>
-      <div class="ifc-panel ifc-panel--soft">
-        <h2>Media Details</h2>
-        <dl class="ifc-definition-list">
-          <div>
-            <dt>Format</dt>
-            <dd>{{ media_item.format | capitalize }}{% if media_item["sub-format"] %} · {{ media_item["sub-format"] | replace: "-", " " }}{% endif %}</dd>
-          </div>
-          <div>
-            <dt>Published</dt>
-            <dd>{{ media_item.published_at | date: "%B %-d, %Y" }}</dd>
-          </div>
-          <div>
-            <dt>Local slug</dt>
-            <dd><code>{{ media_item.local_url }}</code></dd>
-          </div>
-          {% if media_item.thumbnail %}
-            <div>
-              <dt>Thumbnail</dt>
-              <dd><code>{{ media_item.thumbnail }}</code></dd>
+
+      <div class="ifc-visual-viewer__panels">
+        {%- assign rendered_panel_keys = "|" -%}
+        {%- for seed_view in visual_views -%}
+          {%- capture panel_group_key_capture -%}{% include visual_media_view_key.html view=seed_view %}{%- endcapture -%}
+          {%- assign panel_group_key = panel_group_key_capture | strip -%}
+          {%- assign panel_group_marker = "|" | append: panel_group_key | append: "|" -%}
+          {%- unless rendered_panel_keys contains panel_group_marker -%}
+            {%- assign rendered_panel_keys = rendered_panel_keys | append: panel_group_key | append: "|" -%}
+            {%- assign panel_id = page.slug | append: "-visual-view-" | append: panel_group_key -%}
+            {%- assign tab_id = panel_id | append: "-tab" -%}
+            {%- assign is_active_panel = false -%}
+            {%- if panel_group_key == default_group_key -%}
+              {%- assign is_active_panel = true -%}
+            {%- endif -%}
+            <div
+              class="ifc-visual-panel{% if is_active_panel %} is-active{% endif %}"
+              id="{{ panel_id }}"
+              role="tabpanel"
+              aria-labelledby="{{ tab_id }}"
+              aria-hidden="{% if is_active_panel %}false{% else %}true{% endif %}"
+              data-visual-panel
+              data-visual-panel-key="{{ panel_group_key }}"
+              {% unless is_active_panel %}hidden{% endunless %}
+            >
+              {%- assign panel_view_count = 0 -%}
+              {%- for grouped_view in visual_views -%}
+                {%- capture grouped_view_key_capture -%}{% include visual_media_view_key.html view=grouped_view %}{%- endcapture -%}
+                {%- assign grouped_view_key = grouped_view_key_capture | strip -%}
+                {%- if grouped_view_key == panel_group_key -%}
+                  {%- assign panel_view_count = panel_view_count | plus: 1 -%}
+                  {%- assign is_secondary_view = false -%}
+                  {%- if panel_view_count > 1 -%}
+                    {%- assign is_secondary_view = true -%}
+                  {%- endif -%}
+                  {% include visual_media_view.html view=grouped_view secondary=is_secondary_view %}
+                {%- endif -%}
+              {%- endfor -%}
             </div>
-          {% endif %}
-        </dl>
+          {%- endunless -%}
+        {%- endfor -%}
       </div>
+    </section>
+    {%- capture visual_embed_config -%}
+      {
+      {%- assign visual_embed_config_count = 0 -%}
+      {%- for platform_pair in site.data.platforms -%}
+        {%- assign platform_key = platform_pair[0] -%}
+        {%- assign platform_meta = platform_pair[1] -%}
+        {%- if platform_meta.embed -%}
+          {%- if visual_embed_config_count > 0 -%},{%- endif -%}
+          "{{ platform_key }}":{"embed":{{ platform_meta.embed | jsonify }}{%- if platform_key == "facebook" and site.facebook.app_id -%},"app_id":"{{ site.facebook.app_id }}"{%- endif -%}}
+          {%- assign visual_embed_config_count = visual_embed_config_count | plus: 1 -%}
+        {%- endif -%}
+      {%- endfor -%}
+      }
+    {%- endcapture -%}
+    <script
+      type="application/json"
+      data-visual-embed-config
+      data-facebook-app-id="{{ site.facebook.app_id | default: '' | escape }}"
+    >{{ visual_embed_config | strip }}</script>
+    <script src="{{ '/assets/js/visual-media.js' | relative_url }}" defer></script>
+  {%- else -%}
+    <div class="notice--warning">
+      Development warning: this visual media page has no <code>views</code> entries.
     </div>
+  {%- endif -%}
 
-    {% include resource_taxonomy.html document=page %}
-
-    {% if media_item.related_resources and media_item.related_resources.size > 0 %}
-      <section class="ifc-section ifc-section--tight">
-        <h2>Related Written Resources</h2>
-        <div class="ifc-grid">
-          {% for resource_slug in media_item.related_resources %}
-            {% assign related_resource = site.resources | where: "slug", resource_slug | first %}
-            {% if related_resource %}
-              <a class="ifc-card-link" href="{{ related_resource.url }}">
-                <strong>{{ related_resource.title }}</strong>
-                <p>{% include word_boundary_truncate.html text=related_resource.excerpt max=140 %}</p>
-              </a>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </section>
-    {% endif %}
-
-    {% if media_item.related_media and media_item.related_media.size > 0 %}
-      <section class="ifc-section ifc-section--tight">
-        <h2>Related Visual Media</h2>
-        <div class="ifc-grid">
-          {% for related_media_id in media_item.related_media %}
-            {% assign related_media = site.data.visual-media | where: "id", related_media_id | first %}
-            {% if related_media %}
-              <a class="ifc-card-link" href="/resources/visual-media/{{ related_media.id }}/">
-                <strong>{{ related_media.title }}</strong>
-                <p>{% include word_boundary_truncate.html text=related_media.description max=140 %}</p>
-              </a>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </section>
-    {% endif %}
-  </div>
-{% else %}
-  <div class="notice--warning">
-    Development warning: no visual media entry matched the slug <code>{{ page.slug }}</code> in <code>_data/visual-media.json</code>.
-  </div>
-{% endif %}
+  {%- assign has_related_resources = false -%}
+  {%- if page.related_resources and page.related_resources.size > 0 -%}
+    {%- assign has_related_resources = true -%}
+  {%- endif -%}
+  {%- if page.related_media and page.related_media.size > 0 -%}
+    {%- assign has_related_resources = true -%}
+  {%- endif -%}
+  {%- if has_related_resources -%}
+    <section class="ifc-section ifc-section--tight ifc-visual-related">
+      <h2>Related Resources</h2>
+      <div class="ifc-resource-results ifc-visual-related__results">
+        {%- assign rendered_related_slugs = "|" -%}
+        {%- for resource_slug in page.related_resources -%}
+          {%- assign related_marker = "|" | append: resource_slug | append: "|" -%}
+          {%- assign related_resource = site.resources | where: "slug", resource_slug | first -%}
+          {%- assign related_already_rendered = false -%}
+          {%- if rendered_related_slugs contains related_marker -%}
+            {%- assign related_already_rendered = true -%}
+          {%- endif -%}
+          {%- if related_resource and related_already_rendered != true -%}
+            {%- assign rendered_related_slugs = rendered_related_slugs | append: resource_slug | append: "|" -%}
+            {% include resource_result_card.html document=related_resource show_taxonomy=false data_attrs=false title_level=3 %}
+          {%- elsif related_resource == nil and jekyll.environment != "production" -%}
+            <div class="notice--warning">
+              Development warning: related resource <code>{{ resource_slug }}</code> was not found.
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+        {%- for related_media_slug in page.related_media -%}
+          {%- assign related_marker = "|" | append: related_media_slug | append: "|" -%}
+          {%- assign related_media = site.resources | where: "slug", related_media_slug | first -%}
+          {%- assign related_already_rendered = false -%}
+          {%- if rendered_related_slugs contains related_marker -%}
+            {%- assign related_already_rendered = true -%}
+          {%- endif -%}
+          {%- if related_media and related_already_rendered != true -%}
+            {%- assign rendered_related_slugs = rendered_related_slugs | append: related_media_slug | append: "|" -%}
+            {% include resource_result_card.html document=related_media show_taxonomy=false data_attrs=false title_level=3 %}
+          {%- elsif related_media == nil and jekyll.environment != "production" -%}
+            <div class="notice--warning">
+              Development warning: related visual media <code>{{ related_media_slug }}</code> was not found.
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </section>
+  {%- endif -%}
+</div>

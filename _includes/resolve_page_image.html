@@ -10,9 +10,14 @@ Filename convention:
 - collection doc `_resources/articles/example.md`
   -> /assets/images/<bucket>/resources_articles_example.{webp,jpg,png}
 
+For visual-media resource documents, `thumbnail` is also a valid fallback for
+the overlay bucket so visual-media pages can get a coherent hero without
+duplicating header image data. The `visual-media/thumbnails` bucket first uses
+an explicit `thumbnail`, then a slug-matched thumbnail convention.
+
 Priority of callers should be:
 1. explicit front matter value
-2. resolved auto image from this include
+2. resolved visual-media thumbnail or convention-based image from this include
 
 This include outputs the resolved relative path or nothing.
 {% endcomment %}
@@ -21,7 +26,37 @@ This include outputs the resolved relative path or nothing.
 {%- assign image_bucket = include.bucket | default: "" | strip -%}
 {%- assign image_page_path = image_page.path | default: "" | strip -%}
 
-{%- if image_bucket != "" and image_page_path != "" -%}
+{%- if image_bucket == "overlay" and image_page.format == "visual-media" and image_page.thumbnail -%}
+  {{ image_page.thumbnail }}
+{%- elsif image_bucket == "visual-media/thumbnails" and image_page.format == "visual-media" -%}
+  {%- if image_page.thumbnail -%}
+    {{ image_page.thumbnail }}
+  {%- else -%}
+    {%- assign visual_media_thumbnail_extensions = "webp,png,jpg" | split: "," -%}
+    {%- assign visual_media_thumbnail_slug = image_page.slug | default: "" | strip -%}
+    {%- if visual_media_thumbnail_slug == "" and image_page_path != "" -%}
+      {%- assign image_path_parts = image_page_path | split: "/" -%}
+      {%- assign image_filename = image_path_parts | last -%}
+      {%- assign visual_media_thumbnail_slug = image_filename
+        | replace: ".markdown", ""
+        | replace: ".md", ""
+        | replace: ".html", ""
+        | replace: ".htm", ""
+        | strip
+      -%}
+    {%- endif -%}
+    {%- if visual_media_thumbnail_slug != "" -%}
+      {%- for image_extension in visual_media_thumbnail_extensions -%}
+        {%- assign candidate_path = "/assets/images/visual-media/thumbnails/" | append: visual_media_thumbnail_slug | append: "." | append: image_extension -%}
+        {%- assign matching_files = site.static_files | where_exp: "file", "file.path == candidate_path" -%}
+        {%- if matching_files and matching_files.size > 0 -%}
+          {{ candidate_path }}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- elsif image_bucket != "" and image_page_path != "" -%}
   {%- assign image_extensions = "webp,jpg,png" | split: "," -%}
   {%- assign image_path_parts = image_page_path | split: "/" -%}
 

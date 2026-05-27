@@ -1,0 +1,43 @@
+{%- assign item = include.item -%}
+{%- assign index = include.index | default: 1 -%}
+{%- assign render_type = item.type | default: "" | downcase | strip -%}
+{%- assign fallback_alt = page.tagline | default: page.excerpt | default: page.description | default: page.title | strip_html | strip -%}
+
+{%- if render_type == "image" and item.url -%}
+  {%- assign image_alt = item.alt | default: fallback_alt -%}
+  <figure class="ifc-visual-render__figure">
+    <img
+      class="ifc-visual-render__image"
+      src="{{ item.url | relative_url }}"
+      alt="{{ image_alt | escape_once }}"
+      loading="{% if index == 1 %}eager{% else %}lazy{% endif %}"
+      decoding="async"
+    >
+    {%- if item.caption -%}
+      <figcaption>{{ item.caption }}</figcaption>
+    {%- endif -%}
+  </figure>
+{%- elsif render_type == "youtube" and item.id -%}
+  {%- assign youtube_variant = item.variant | default: "video" -%}
+  {%- capture youtube_embed_url -%}{% include platform_url.html platform="youtube" variant=youtube_variant id=item.id mode="embed" %}{%- endcapture -%}
+  {%- assign youtube_embed_url = youtube_embed_url | strip -%}
+  {%- if youtube_embed_url != "" -%}
+    <div class="ifc-visual-render__video" data-visual-render-type="youtube">
+      <iframe
+        src="{{ youtube_embed_url }}"
+        title="{{ item.title | default: page.title | escape_once }}"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  {%- else -%}
+    <div class="notice--warning">
+      Development warning: this YouTube render item is missing a usable video ID.
+    </div>
+  {%- endif -%}
+{%- else -%}
+  <div class="notice--warning">
+    Development warning: unsupported visual media render type <code>{{ render_type | default: "unknown" }}</code>.
+  </div>
+{%- endif -%}

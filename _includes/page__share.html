@@ -22,6 +22,30 @@
     {% for provider in share_providers %}
       {% assign provider_key = provider | downcase | strip %}
       {% assign provider_link = nil %}
+      {% assign original_platform_entry = nil %}
+      {% assign original_platform_url = "" %}
+      {% assign original_repost_url = "" %}
+      {% assign original_share_url = "" %}
+
+      {% if document.format == "visual-media" and document.views %}
+        {% for platform_entry in document.views %}
+          {% assign platform_entry_type = platform_entry.type | default: "" | downcase | strip %}
+          {% if platform_entry_type == "platform" %}
+            {% capture entry_platform_key_capture %}{% include platform_key.html platform=platform_entry.platform %}{% endcapture %}
+            {% assign entry_platform_key = entry_platform_key_capture | strip %}
+            {% if entry_platform_key == provider_key %}
+              {% assign original_platform_entry = platform_entry %}
+              {% capture original_platform_url %}{% include platform_url.html entry=platform_entry %}{% endcapture %}
+              {% assign original_platform_url = original_platform_url | strip %}
+              {% capture original_repost_url %}{% include platform_url.html entry=platform_entry mode="repost" %}{% endcapture %}
+              {% assign original_repost_url = original_repost_url | strip %}
+              {% capture original_share_url %}{% include platform_url.html entry=platform_entry mode="share" %}{% endcapture %}
+              {% assign original_share_url = original_share_url | strip %}
+              {% break %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
 
       {% for footer_link in site.footer.links %}
         {% assign footer_label = footer_link.label | default: "" | downcase %}
@@ -127,14 +151,20 @@
           <i class="{{ provider_icon }}" aria-hidden="true"></i>
         </a>
       {% elsif provider_key == "x" %}
-        {% capture provider_href %}https://twitter.com/intent/tweet?text={{ provider_message | uri_escape }}&url={{ share_url | uri_escape }}{% endcapture %}
+        {% if original_repost_url != "" %}
+          {% assign provider_share_label = "Repost on X" %}
+          {% assign provider_href = original_repost_url %}
+        {% else %}
+          {% assign provider_share_label = "Share on X" %}
+          {% capture provider_href %}https://twitter.com/intent/tweet?text={{ provider_message | uri_escape }}&url={{ share_url | uri_escape }}{% endcapture %}
+        {% endif %}
         <a
           class="ifc-page-share__link"
           href="{{ provider_href | strip }}"
           target="_blank"
           rel="noopener"
-          aria-label="Share on {{ provider_name }}"
-          title="Share on {{ provider_name }}"
+          aria-label="{{ provider_share_label }}"
+          title="{{ provider_share_label }}"
           data-share-link
           data-share-provider="{{ provider_key }}"
           data-share-popup="true"
@@ -142,14 +172,21 @@
           <i class="{{ provider_icon }}" aria-hidden="true"></i>
         </a>
       {% elsif provider_key == "facebook" %}
-        {% capture provider_href %}https://www.facebook.com/sharer/sharer.php?u={{ share_url | uri_escape }}{% endcapture %}
+        {% if original_platform_url != "" %}
+          {% assign facebook_share_target = original_platform_url %}
+          {% assign provider_share_label = "Share Facebook post" %}
+        {% else %}
+          {% assign facebook_share_target = share_url %}
+          {% assign provider_share_label = "Share on Facebook" %}
+        {% endif %}
+        {% capture provider_href %}https://www.facebook.com/sharer/sharer.php?u={{ facebook_share_target | uri_escape }}{% endcapture %}
         <a
           class="ifc-page-share__link"
           href="{{ provider_href | strip }}"
           target="_blank"
           rel="noopener"
-          aria-label="Share on {{ provider_name }}"
-          title="Share on {{ provider_name }}"
+          aria-label="{{ provider_share_label }}"
+          title="{{ provider_share_label }}"
           data-share-link
           data-share-provider="{{ provider_key }}"
           data-share-popup="true"
@@ -176,14 +213,23 @@
           <i class="{{ provider_icon }}" aria-hidden="true"></i>
         </a>
       {% elsif provider_key == "linkedin" %}
-        {% capture provider_href %}https://www.linkedin.com/sharing/share-offsite/?url={{ share_url | uri_escape }}{% endcapture %}
+        {% if original_share_url != "" %}
+          {% assign provider_share_label = "Share LinkedIn post" %}
+          {% assign provider_href = original_share_url %}
+        {% elsif original_platform_url != "" %}
+          {% assign provider_share_label = "Share LinkedIn post" %}
+          {% capture provider_href %}https://www.linkedin.com/sharing/share-offsite/?url={{ original_platform_url | uri_escape }}{% endcapture %}
+        {% else %}
+          {% assign provider_share_label = "Share on LinkedIn" %}
+          {% capture provider_href %}https://www.linkedin.com/sharing/share-offsite/?url={{ share_url | uri_escape }}{% endcapture %}
+        {% endif %}
         <a
           class="ifc-page-share__link"
           href="{{ provider_href | strip }}"
           target="_blank"
           rel="noopener"
-          aria-label="Share on {{ provider_name }}"
-          title="Share on {{ provider_name }}"
+          aria-label="{{ provider_share_label }}"
+          title="{{ provider_share_label }}"
           data-share-link
           data-share-provider="{{ provider_key }}"
           data-share-popup="true"

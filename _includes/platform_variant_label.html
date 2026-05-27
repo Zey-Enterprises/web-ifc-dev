@@ -1,0 +1,16 @@
+{%- assign variant = include.variant | default: "" | downcase | strip -%}
+{%- if variant == "reel" -%}
+  reel
+{%- elsif variant == "highlight" -%}
+  Story highlight
+{%- elsif variant == "short" or variant == "shorts" -%}
+  Short
+{%- elsif variant == "video" -%}
+  video
+{%- elsif variant == "post" -%}
+  post
+{%- elsif variant != "" -%}
+  {{- variant | replace: "-", " " -}}
+{%- else -%}
+  view
+{%- endif -%}

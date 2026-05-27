@@ -57,12 +57,14 @@
 {%- assign auto_overlay_image = auto_overlay_image | strip -%}
 {%- capture auto_og_image -%}{% include resolve_page_image.html page=page bucket="og" %}{%- endcapture -%}
 {%- assign auto_og_image = auto_og_image | strip -%}
+{%- capture auto_visual_media_thumbnail -%}{% include resolve_page_image.html page=page bucket="visual-media/thumbnails" %}{%- endcapture -%}
+{%- assign auto_visual_media_thumbnail = auto_visual_media_thumbnail | strip -%}
 {%- assign carousel_overlay_image = nil -%}
 {%- if page.header.overlay_images and page.header.overlay_images.size > 0 -%}
   {%- assign carousel_overlay_image = page.header.overlay_images[0].image -%}
 {%- endif -%}
 {%- assign default_social_image_path = "/assets/images/ifc-logo-square.png" -%}
-{%- assign resolved_og_image = page.og_image | default: page.header.og_image | default: auto_og_image -%}
+{%- assign resolved_og_image = page.og_image | default: page.header.og_image | default: auto_visual_media_thumbnail | default: auto_og_image -%}
 {%- if page.url == "/" -%}
   {%- assign page_large_image_path = default_social_image_path -%}
 {%- else -%}

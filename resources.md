@@ -1,7 +1,7 @@
 ---
 title: "Resources"
 date: "2026-04-14"
-last_modified_at: "2026-05-20"
+last_modified_at: "2026-05-25"
 # classes: hide-title
 permalink: /resources/
 excerpt: "A unified library for articles, visual media, fitness FAQs, references, and glossary-based learning."
@@ -35,18 +35,19 @@ header:
 {% assign has_audio_resources = false %}
 {% for item in published_content_resources %}
   {% if item.format == "visual-media" %}
-    {% assign media_item = site.data.visual-media | where: "id", item.slug | first %}
-    {% if media_item %}
-      {% if media_item.format == "image" %}
-        {% assign has_image_resources = true %}
-      {% elsif media_item["sub-format"] == "short-video" %}
-        {% assign has_short_video_resources = true %}
-      {% elsif media_item["sub-format"] == "long-video" %}
-        {% assign has_long_video_resources = true %}
-      {% elsif media_item.format == "audio" %}
-        {% assign has_audio_resources = true %}
-      {% endif %}
+    {% capture item_visual_media_type %}{% include visual_media_type.html document=item %}{% endcapture %}
+    {% assign item_visual_media_type = item_visual_media_type | strip %}
+    {% if item_visual_media_type == "image" %}
+      {% assign has_image_resources = true %}
+    {% elsif item_visual_media_type == "short-video" %}
+      {% assign has_short_video_resources = true %}
+    {% elsif item_visual_media_type == "long-video" %}
+      {% assign has_long_video_resources = true %}
+    {% elsif item_visual_media_type == "audio" %}
+      {% assign has_audio_resources = true %}
     {% endif %}
+  {% elsif item.format == "audio" %}
+    {% assign has_audio_resources = true %}
   {% else %}
     {% assign has_article_resources = true %}
   {% endif %}
@@ -304,27 +305,28 @@ header:
     <div class="ifc-grid">
       {% for item in recent_resources limit:6 %}
         {% assign recent_label = "Article" %}
-        {% capture recent_summary %}{% include word_boundary_truncate.html text=item.excerpt max=150 %}{% endcapture %}
+        {% assign recent_source_summary = item.description | default: item.excerpt %}
+        {% capture recent_summary %}{% include word_boundary_truncate.html text=recent_source_summary max=150 %}{% endcapture %}
         {% assign recent_date = item.date %}
+        {% assign recent_thumbnail = "" %}
         {% if item.format == "visual-media" %}
-          {% assign recent_media = site.data.visual-media | where: "id", item.slug | first %}
-          {% if recent_media %}
-            {% capture recent_summary %}{% include word_boundary_truncate.html text=recent_media.description max=150 %}{% endcapture %}
-            {% assign recent_date = recent_media.published_at | default: item.date %}
-            {% if recent_media.format == "image" %}
-              {% assign recent_label = "Image" %}
-            {% elsif recent_media["sub-format"] == "short-video" %}
-              {% assign recent_label = "Short Video" %}
-            {% elsif recent_media["sub-format"] == "long-video" %}
-              {% assign recent_label = "Long-Form Video" %}
-            {% else %}
-              {% assign recent_label = "Visual Media" %}
-            {% endif %}
-          {% endif %}
+          {% capture recent_label %}{% include visual_media_type_label.html document=item %}{% endcapture %}
+          {% assign recent_label = recent_label | strip %}
+          {% capture recent_thumbnail %}{% include resolve_page_image.html page=item bucket="visual-media/thumbnails" %}{% endcapture %}
+          {% assign recent_thumbnail = recent_thumbnail | strip %}
+        {% elsif item.format == "audio" %}
+          {% assign recent_label = "Audio" %}
         {% endif %}
         <a class="ifc-card-link" href="{{ item.url }}">
           <p class="ifc-resource-card__eyebrow">{{ recent_label }}</p>
-          <strong>{{ item.title }}</strong>
+          {% if recent_thumbnail != "" %}
+            <span class="ifc-resource-card__thumbnail">
+              <img src="{{ recent_thumbnail | relative_url }}" alt="" loading="lazy" decoding="async">
+              <span class="ifc-resource-card__thumbnail-title">{{ item.title }}</span>
+            </span>
+          {% else %}
+            <strong>{{ item.title }}</strong>
+          {% endif %}
           {% if recent_date %}
             <p class="ifc-resource-card__meta">{{ recent_date | date: site.date_format }}</p>
           {% endif %}
@@ -416,149 +418,7 @@ header:
     <h2 data-resource-results-heading>All resources</h2>
     <div class="ifc-resource-results" data-resource-results-list>
       {% for item in content_resources %}
-        {% assign result_format_value = "article" %}
-        {% assign result_type_label = "Article" %}
-        {% assign result_published = item.date %}
-        {% assign result_updated = item.last_modified_at | default: item.date %}
-        {% assign result_author_name = nil %}
-        {% capture result_summary %}{% include word_boundary_truncate.html text=item.excerpt max=180 %}{% endcapture %}
-        {% assign include_result = true %}
-        {% assign result_publication_status = item.publication_status.status | default: item.publication_status %}
-        {% assign result_is_coming_soon = false %}
-        {% if result_publication_status == "coming-soon" %}
-          {% assign result_is_coming_soon = true %}
-        {% endif %}
-        {% assign result_publication_sort_order = item.publication_status.sort_order | default: 9999 %}
-
-        {% if item.author %}
-          {% if site.data.authors and site.data.authors[item.author] %}
-            {% assign result_author_name = site.data.authors[item.author].name | default: site.data.authors[item.author] %}
-          {% else %}
-            {% assign result_author_name = item.author %}
-          {% endif %}
-        {% elsif item.authors and item.authors.size > 0 %}
-          {% assign primary_author = item.authors[0] %}
-          {% if site.data.authors and site.data.authors[primary_author] %}
-            {% assign result_author_name = site.data.authors[primary_author].name | default: site.data.authors[primary_author] %}
-          {% else %}
-            {% assign result_author_name = primary_author %}
-          {% endif %}
-        {% elsif site.author %}
-          {% assign result_author_name = site.author.name | default: site.author %}
-        {% endif %}
-
-        {% if item.format == "visual-media" %}
-          {% assign media_item = site.data.visual-media | where: "id", item.slug | first %}
-          {% if media_item %}
-            {% assign result_published = media_item.published_at | default: item.date %}
-            {% assign result_updated = item.last_modified_at | default: media_item.published_at | default: item.date %}
-            {% capture result_summary %}{% include word_boundary_truncate.html text=media_item.description max=180 %}{% endcapture %}
-            {% if media_item.format == "image" %}
-              {% assign result_format_value = "image" %}
-              {% assign result_type_label = "Image" %}
-            {% elsif media_item["sub-format"] == "short-video" %}
-              {% assign result_format_value = "short-video" %}
-              {% assign result_type_label = "Short Video" %}
-            {% elsif media_item["sub-format"] == "long-video" %}
-              {% assign result_format_value = "long-video" %}
-              {% assign result_type_label = "Long-Form Video" %}
-            {% elsif media_item.format == "audio" %}
-              {% assign result_format_value = "audio" %}
-              {% assign result_type_label = "Audio" %}
-            {% endif %}
-          {% else %}
-            {% assign include_result = false %}
-          {% endif %}
-        {% endif %}
-
-        {% if result_is_coming_soon %}
-          {% assign result_published = nil %}
-          {% assign result_updated = nil %}
-        {% endif %}
-
-        {% if include_result %}
-          <a
-            class="ifc-resource-result"
-            href="{{ item.url }}"
-            data-result-item
-            data-title="{{ item.title | escape }}"
-            data-format="{{ result_format_value }}"
-            data-domain="{{ item.domains | join: '|' }}"
-            data-concern="{{ item.concerns | join: '|' }}"
-            data-tags="{{ item.tags | join: '|' }}"
-            data-publication-status="{{ result_publication_status }}"
-            data-publication-order="{% if result_is_coming_soon %}{{ result_publication_sort_order }}{% endif %}"
-            data-published="{% if result_published %}{{ result_published | date_to_xmlschema }}{% endif %}"
-            data-updated="{% if result_updated %}{{ result_updated | date_to_xmlschema }}{% endif %}"
-          >
-            <div class="ifc-resource-result__meta">
-              <p class="ifc-resource-card__eyebrow">{{ result_type_label }}</p>
-              {% if result_is_coming_soon %}
-                {% include publication_status_badge.html document=item variant="card" %}
-              {% endif %}
-              {% if result_format_value == "article" %}
-                <ul class="ifc-resource-result__meta-list ifc-resource-result__meta-list--article" role="list">
-                  {% if result_author_name %}
-                    <li class="ifc-resource-result__meta-item">
-                      <i class="fas fa-user" aria-hidden="true"></i>
-                      <span>{{ result_author_name }}</span>
-                    </li>
-                  {% endif %}
-                  {% if result_published %}
-                    <li class="ifc-resource-result__meta-item" title="Published date">
-                      <i class="far fa-calendar-alt" aria-hidden="true"></i>
-                      <time datetime="{{ result_published | date_to_xmlschema }}">{{ result_published | date: site.date_format }}</time>
-                    </li>
-                  {% endif %}
-                  {% if item.last_modified_at and result_is_coming_soon != true %}
-                    <li class="ifc-resource-result__meta-item" title="Last modified date">
-                      <i class="fas fa-history" aria-hidden="true"></i>
-                      <time datetime="{{ item.last_modified_at | date_to_xmlschema }}">{{ item.last_modified_at | date: site.date_format }}</time>
-                    </li>
-                  {% endif %}
-                </ul>
-              {% elsif result_published %}
-                <ul class="ifc-resource-result__meta-list" role="list">
-                  <li class="ifc-resource-result__meta-item" title="Published date">
-                    <i class="far fa-calendar-alt" aria-hidden="true"></i>
-                    <time datetime="{{ result_published | date_to_xmlschema }}">{{ result_published | date: site.date_format }}</time>
-                  </li>
-                </ul>
-              {% endif %}
-            </div>
-            <div class="ifc-resource-result__body">
-              <h2 class="ifc-resource-result__title">{{ item.title }}</h2>
-              <p class="ifc-resource-result__summary">{{ result_summary | strip }}</p>
-              <div class="ifc-resource-result__taxonomy">
-                {% if item.domains and item.domains.size > 0 %}
-                  <div class="ifc-taxonomy-pills">
-                    <span class="ifc-resource-result__print-label ifc-print-only">Domains:</span>
-                    {% for domain in item.domains %}
-                      <span class="ifc-taxonomy-pill">{{ domain | replace: "-", " " | capitalize }}</span>
-                    {% endfor %}
-                  </div>
-                {% endif %}
-                {% if item.concerns and item.concerns.size > 0 %}
-                  <div class="ifc-taxonomy-pills">
-                    <span class="ifc-resource-result__print-label ifc-print-only">Concerns:</span>
-                    {% for concern in item.concerns %}
-                      <span class="ifc-taxonomy-pill ifc-taxonomy-pill--soft">{{ concern | replace: "-", " " | capitalize }}</span>
-                    {% endfor %}
-                  </div>
-                {% endif %}
-                {% if item.tags and item.tags.size > 0 %}
-                  <div class="ifc-taxonomy-pills ifc-resource-result__print-tags ifc-print-only">
-                    <span class="ifc-resource-result__print-label">Tags:</span>
-                    {% for tag_slug in item.tags %}
-                      {% assign tag_data = site.data.tags[tag_slug] %}
-                      <span class="ifc-taxonomy-pill ifc-taxonomy-pill--light">{{ tag_data.label | default: tag_slug }}</span>
-                    {% endfor %}
-                  </div>
-                {% endif %}
-              </div>
-            </div>
-          </a>
-        {% endif %}
+        {% include resource_result_card.html document=item show_taxonomy=true data_attrs=true title_level=2 %}
       {% endfor %}
     </div>
 

@@ -1,0 +1,11 @@
+{%- assign view = include.view -%}
+{%- assign view_type = view.type | default: "" | downcase | strip -%}
+{%- if view_type == "local" -%}
+  {% include visual_media_local_view.html view=view %}
+{%- elsif view_type == "platform" -%}
+  {% include visual_media_platform_view.html view=view secondary=include.secondary %}
+{%- elsif jekyll.environment != "production" -%}
+  <div class="notice--warning">
+    Development warning: unsupported visual media view type <code>{{ view_type | default: "unknown" }}</code>.
+  </div>
+{%- endif -%}

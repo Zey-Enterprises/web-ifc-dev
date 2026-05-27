@@ -88,13 +88,20 @@ defaults:
       path: "_resources/visual-media"
       type: resources
     values:
-      layout: single
+      layout: visual_media
       classes: wide
+      format: visual-media
       show_author: false
       show_date: true
       show_modified_date: false
       show_read_time: false
       share: true
+      header:
+        kicker: Visual Media
+        overlay_image_focal_point: "75% 50%"
+        overlay_image_anchor_point: "75% 50%"
+        overlay_images:
+          - image: /assets/images/overlay/resources_visual-media.webp
       toc_widget:
         enabled: false
   - scope:

@@ -1,0 +1,13 @@
+{%- capture visual_media_type_value -%}{% include visual_media_type.html document=include.document %}{%- endcapture -%}
+{%- assign visual_media_type_value = visual_media_type_value | strip -%}
+{%- if visual_media_type_value == "image" -%}
+  Image
+{%- elsif visual_media_type_value == "short-video" -%}
+  Short Video
+{%- elsif visual_media_type_value == "long-video" -%}
+  Long-Form Video
+{%- elsif visual_media_type_value == "audio" -%}
+  Audio
+{%- else -%}
+  Visual Media
+{%- endif -%}

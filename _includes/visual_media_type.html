@@ -1,0 +1,50 @@
+{%- assign document = include.document | default: page -%}
+{%- assign explicit_media_type = document.media_type | default: document.visual_media_type -%}
+{%- if explicit_media_type -%}
+  {{- explicit_media_type -}}
+{%- else -%}
+  {%- assign default_view = nil -%}
+  {%- if document.views and document.views.size > 0 -%}
+    {%- for view in document.views -%}
+      {%- if view.default and default_view == nil -%}
+        {%- assign default_view = view -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if default_view == nil -%}
+      {%- assign default_view = document.views | first -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- assign view_type = default_view.type | default: "" | downcase | strip -%}
+  {%- assign view_platform = default_view.platform | default: "" | downcase | strip -%}
+  {%- capture view_platform_key_capture -%}{% include platform_key.html platform=view_platform %}{%- endcapture -%}
+  {%- assign view_platform_key = view_platform_key_capture | strip -%}
+  {%- assign view_variant = default_view.variant | default: "" | downcase | strip -%}
+  {%- assign first_local_item = default_view.items | first -%}
+  {%- assign local_item_type = first_local_item.type | default: "" | downcase | strip -%}
+  {%- if view_type == "local" and local_item_type == "image" -%}
+    image
+  {%- elsif view_type == "local" and local_item_type == "youtube" -%}
+    {%- assign local_item_variant = first_local_item.variant | default: "" | downcase | strip -%}
+    {%- if local_item_variant == "short" or local_item_variant == "shorts" -%}
+      short-video
+    {%- else -%}
+      long-video
+    {%- endif -%}
+  {%- elsif view_type == "platform" and view_platform_key == "youtube" -%}
+    {%- if view_variant == "short" or view_variant == "shorts" -%}
+      short-video
+    {%- else -%}
+      long-video
+    {%- endif -%}
+  {%- elsif view_type == "platform" -%}
+    {%- if view_variant == "reel" or view_variant == "short" or view_variant == "shorts" -%}
+      short-video
+    {%- else -%}
+      visual-media
+    {%- endif -%}
+  {%- elsif document.format == "audio" -%}
+    audio
+  {%- else -%}
+    visual-media
+  {%- endif -%}
+{%- endif -%}

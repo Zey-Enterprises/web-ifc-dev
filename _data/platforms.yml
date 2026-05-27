@@ -1,0 +1,106 @@
+local:
+  label: Local
+  icon: "fas fa-image"
+
+facebook:
+  label: Facebook
+  icon: "fab fa-facebook"
+  default_account: IntegratedFitnessCoaching
+  embed:
+    supported: true
+    script_id: facebook-jssdk
+    root_id: fb-root
+    script_url: "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v25.0"
+    ready_check: "FB.XFBML.parse"
+    refresh_method: "facebook"
+  variants:
+    post:
+      url_template: "https://www.facebook.com/{{ account }}/posts/{{ id }}"
+      embed_supported: true
+      embed_width_default: 760
+      embed_height_default:
+    reel:
+      url_template: "https://www.facebook.com/reel/{{ id }}"
+      embed_supported: true
+      embed_width_default: 760
+      embed_height_default:
+
+instagram:
+  label: Instagram
+  icon: "fab fa-instagram"
+  default_account: integratedfitnesscoaching
+  embed:
+    supported: true
+    script_id: instagram-embed-js
+    script_url: "https://www.instagram.com/embed.js"
+    ready_check: "instgrm.Embeds.process"
+    refresh_method: "instagram"
+  variants:
+    post:
+      url_template: "https://www.instagram.com/p/{{ id }}/"
+      embed_supported: true
+      embed_width_default: 540
+      embed_height_default:
+    reel:
+      url_template: "https://www.instagram.com/reel/{{ id }}/"
+      embed_supported: true
+      embed_width_default: 540
+      embed_height_default:
+    highlight:
+      url_template: "https://www.instagram.com/stories/highlights/{{ id }}/"
+      embed_supported: false
+
+x:
+  label: Twitter
+  icon: "fab fa-twitter"
+  default_account: IntFitCoaching
+  embed:
+    supported: true
+    script_id: twitter-wjs
+    script_url: "https://platform.twitter.com/widgets.js"
+    ready_check: "twttr.widgets.load"
+    refresh_method: "x"
+  variants:
+    post:
+      url_template: "https://x.com/{{ account }}/status/{{ id }}"
+      embed_supported: true
+      repost_url_template: "https://x.com/intent/retweet?tweet_id={{ id }}"
+      embed_width_default: 550
+      embed_height_default:
+
+youtube:
+  label: YouTube
+  icon: "fab fa-youtube"
+  embed:
+    supported: true
+    script_url:
+    refresh_method: "iframe"
+  variants:
+    video:
+      url_template: "https://www.youtube.com/watch?v={{ id }}"
+      embed_url_template: "https://www.youtube.com/embed/{{ id }}"
+      embed_supported: true
+      embed_width_default: 860
+      embed_height_default:
+    short:
+      url_template: "https://www.youtube.com/shorts/{{ id }}"
+      embed_url_template: "https://www.youtube.com/embed/{{ id }}"
+      embed_supported: true
+      embed_width_default: 520
+      embed_height_default:
+
+linkedin:
+  label: LinkedIn
+  icon: "fab fa-linkedin"
+  embed:
+    supported: true
+    script_url:
+    refresh_method: "iframe"
+  variants:
+    post:
+      url_template: "https://www.linkedin.com/feed/update/{{ urn }}/"
+      embed_url_template: "https://www.linkedin.com/embed/feed/update/{{ urn }}"
+      embed_supported: true
+      embed_width_default: 760
+      embed_height_default: 1200 #760
+      share_url_template: "https://www.linkedin.com/sharing/share-offsite/?url={{ encoded_url }}"
