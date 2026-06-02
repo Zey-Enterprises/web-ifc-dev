@@ -3364,36 +3364,26 @@ body.ifc-resource-browser--panel-open {
 }
 
 .ifc-visual-tabs {
-  --ifc-visual-tabs-solid-start: 22%;
-  --ifc-visual-tabs-solid-end: 78%;
+  --ifc-visual-tabs-rail-thickness: 1px;
+  --ifc-visual-tabs-rail-color: rgba(43, 95, 135, 0.28);
+  /*
+   * Tab rail taper tuning:
+   * The tab group rail stays solid. The left/right extensions are anchored
+   * to the tab-group edges and fade outward until they reach these viewport
+   * x-positions. JS measures the resulting extension widths.
+   */
+  --ifc-visual-tabs-left-transparent-at: 25vw;
+  --ifc-visual-tabs-right-transparent-at: 75vw;
+  --ifc-visual-tabs-left-fade-width: clamp(3rem, 18vw, 24rem);
+  --ifc-visual-tabs-right-fade-width: clamp(3rem, 18vw, 24rem);
+
   position: relative;
   justify-self: stretch;
   width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: visible;
   padding: 0 0.15rem 1px;
   text-align: center;
   scrollbar-width: thin;
-}
-
-.ifc-visual-tabs::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  z-index: 0;
-  pointer-events: none;
-  background: linear-gradient(
-    to right,
-    rgba(43, 95, 135, 0) 0%,
-    rgba(43, 95, 135, 0.08) 10%,
-    rgba(43, 95, 135, 0.2) 24%,
-    rgba(43, 95, 135, 0.2) 76%,
-    rgba(43, 95, 135, 0.08) 90%,
-    rgba(43, 95, 135, 0) 100%
-  );
 }
 
 .ifc-visual-tabs__rail {
@@ -3408,17 +3398,30 @@ body.ifc-resource-browser--panel-open {
   min-width: min(100%, 16rem);
   margin-inline: auto;
   padding: 0 0.25rem;
+  background: linear-gradient(var(--ifc-visual-tabs-rail-color), var(--ifc-visual-tabs-rail-color))
+    bottom / 100% var(--ifc-visual-tabs-rail-thickness) no-repeat;
+}
+
+.ifc-visual-tabs__rail::before,
+.ifc-visual-tabs__rail::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  height: var(--ifc-visual-tabs-rail-thickness);
+  pointer-events: none;
 }
 
 .ifc-visual-tabs__rail::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  background: rgba(43, 95, 135, 0.24);
-  pointer-events: none;
+  right: 100%;
+  width: var(--ifc-visual-tabs-left-fade-width);
+  background: linear-gradient(to right, rgba(43, 95, 135, 0), var(--ifc-visual-tabs-rail-color));
+}
+
+.ifc-visual-tabs__rail::after {
+  left: 100%;
+  width: var(--ifc-visual-tabs-right-fade-width);
+  background: linear-gradient(to right, var(--ifc-visual-tabs-rail-color), rgba(43, 95, 135, 0));
 }
 
 .ifc-visual-tab {
@@ -3433,7 +3436,7 @@ body.ifc-resource-browser--panel-open {
   min-height: 2.75rem;
   padding: 0.68rem 0.82rem 0.72rem;
   border: 0;
-  border-radius: 0.75rem 0.75rem 0 0;
+  border-radius: 0;
   background: transparent;
   color: var(--ifc-muted);
   font-size: 0.9rem;
@@ -3443,7 +3446,6 @@ body.ifc-resource-browser--panel-open {
   cursor: pointer;
   transition:
     color 160ms ease,
-    background-color 160ms ease,
     transform 160ms ease;
 }
 
@@ -3464,16 +3466,24 @@ body.ifc-resource-browser--panel-open {
 }
 
 .ifc-visual-tab:hover,
-.ifc-visual-tab:focus,
-.ifc-visual-tab:focus-visible,
 .ifc-visual-tab.is-active {
   color: var(--ifc-accent-deep);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.2));
+  background: transparent;
   outline: none;
 }
 
+.ifc-visual-tab:focus {
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
 .ifc-visual-tab:focus-visible {
-  box-shadow: 0 0 0 3px rgba(77, 166, 223, 0.16);
+  color: var(--ifc-accent-deep);
+  background: transparent;
+  outline: 2px solid rgba(77, 166, 223, 0.58);
+  outline-offset: 2px;
+  box-shadow: none;
 }
 
 .ifc-visual-tab.is-active::after {

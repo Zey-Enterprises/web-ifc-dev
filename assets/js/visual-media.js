@@ -539,20 +539,20 @@
     if (!tabs.length || !panels.length) return;
 
     function updateTabRailMetrics() {
-      var containerRect;
+      var leftFadeWidth;
       var railRect;
-      var solidStart;
-      var solidEnd;
+      var rightFadeWidth;
+      var viewportWidth;
 
       if (!tabsContainer || !tabsRail) return;
 
-      containerRect = tabsContainer.getBoundingClientRect();
+      viewportWidth = document.documentElement.clientWidth || window.innerWidth || 0;
       railRect = tabsRail.getBoundingClientRect();
-      solidStart = Math.max(0, railRect.left - containerRect.left);
-      solidEnd = Math.min(containerRect.width, railRect.right - containerRect.left);
+      leftFadeWidth = Math.max(0, railRect.left / 2);
+      rightFadeWidth = Math.max(0, (viewportWidth - railRect.right) / 2);
 
-      tabsContainer.style.setProperty("--ifc-visual-tabs-solid-start", solidStart + "px");
-      tabsContainer.style.setProperty("--ifc-visual-tabs-solid-end", solidEnd + "px");
+      tabsContainer.style.setProperty("--ifc-visual-tabs-left-fade-width", leftFadeWidth + "px");
+      tabsContainer.style.setProperty("--ifc-visual-tabs-right-fade-width", rightFadeWidth + "px");
     }
 
     function activateTab(tab, shouldFocus) {
@@ -584,6 +584,8 @@
       if (shouldFocus) {
         tab.focus();
       }
+
+      window.requestAnimationFrame(updateTabRailMetrics);
     }
 
     function getRequestedInitialViewKey() {
@@ -643,6 +645,7 @@
     preloadPlatformEmbeds(viewer);
     activateTab(activeTab, false);
     updateTabRailMetrics();
+    window.requestAnimationFrame(updateTabRailMetrics);
     window.addEventListener("resize", updateTabRailMetrics);
   }
 
