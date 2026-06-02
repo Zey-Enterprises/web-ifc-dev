@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: "2026-03-30"
-last_modified_at: "2026-05-21"
+last_modified_at: "2026-06-02"
 permalink: /about/
 description: "Arthur Zey is an integrated fitness coach with a background in technology, philosophy, human behavior, nutrition, and physical training."
 excerpt: "A systems-oriented coach with a background in technology, philosophy, human behavior, and physical practice."
@@ -114,6 +114,7 @@ If you're looking for a thoughtful, structured approach, someone who can help yo
 Curious to learn more about the nerd behind the coach? I'm an open book:
 
 {% include double_icon_button.html href="https://www.arthurzey.com" label="Visit arthurzey.com&nbsp;&nbsp;&nbsp;" left_icon="fas fa-globe" left_tint=false right_icon="fas fa-external-link-alt" newtab=true width="18rem" stack=true alignment="center" container_alignment="center" %}
+{% include double_icon_button.html href="https://www.goodreads.com/user/show/112945867-arthur-zey" label="View Goodreads Profile&nbsp;&nbsp;&nbsp;" left_icon="fas fa-book" left_tint=false right_icon="fas fa-external-link-alt" newtab=true width="18rem" stack=true alignment="center" container_alignment="center" %}
 {% include double_icon_button.html href="https://www.facebook.com/ArthurZey" label="Follow on Facebook&nbsp;&nbsp;&nbsp;" left_icon="fab fa-facebook-f" left_tint=false right_icon="fas fa-external-link-alt" newtab=true width="18rem" stack=true alignment="center" container_alignment="center" %}
 {% include double_icon_button.html href="https://www.linkedin.com/in/arthurzey" label="Connect on LinkedIn&nbsp;&nbsp;&nbsp;" left_icon="fab fa-linkedin-in" left_tint=false right_icon="fas fa-external-link-alt" newtab=true width="18rem" stack=true alignment="center" container_alignment="center" %}
 {% include double_icon_button.html href="https://twitter.com/LogicalArthur" label="Follow on Twitter&nbsp;&nbsp;&nbsp;" left_icon="fab fa-twitter" left_tint=false right_icon="fas fa-external-link-alt" newtab=true width="18rem" stack=true alignment="center" container_alignment="center" %}
